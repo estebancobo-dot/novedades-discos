@@ -1,0 +1,75 @@
+# Configuración general. Todo lo que el robot decide sale de aquí,
+# de data/fuentes.yaml y de data/taxonomia.yaml. Cambiar estos valores
+# no requiere tocar código.
+
+ventana:
+  meses_atras: 5          # discos publicados desde hace N meses...
+  meses_adelante: 6       # ...y anunciados hasta dentro de N meses ("próximamente")
+
+identificacion:
+  # Cómo se presenta el robot a las webs. Sin datos personales.
+  user_agent: "Mozilla/5.0 (compatible; music-release-tracker/0.1)"
+  user_agent_musicbrainz: "music-release-tracker/0.1 ( generic research client )"
+
+peticiones:
+  intervalo_por_defecto: 2.0     # segundos entre peticiones a una misma web
+  intervalos:                    # excepciones por web
+    musicbrainz.org: 1.1
+    bandcamp.com: 4.0
+    coverartarchive.org: 1.0
+  timeout: 30
+  respetar_robots_txt: true
+  cache_horas: 20                # no repetir la misma petición en este tiempo
+  reintentos_503: 5              # MusicBrainz responde 503 cuando está saturado
+
+# Señales de verificación anti-bots o bloqueo. Si aparecen, se deja la web
+# y se apunta en el informe. Nunca se intentan saltar.
+bloqueo:
+  estados: [401, 403, 429]
+  textos:
+    - "<title>Just a moment..."
+    - "<title>Client Challenge"
+    - "<title>Verifying your connection"
+    - "<title>Attention Required! | Cloudflare"
+    - "<title>429 Too Many Requests"
+    - "cf-mitigated"
+  cabeceras:
+    cf-mitigated: challenge
+
+reglas:
+  idiomas_permitidos: [eng]
+  # Si MusicBrainz no sabe el idioma: "mantener" (marcado como sin verificar) o "descartar".
+  idioma_desconocido: mantener
+  # EP: se descarta si alguna fuente o MusicBrainz lo dice. Si nadie dice el
+  # tipo, cuenta como EP con <= pistas_max_ep pistas.
+  pistas_max_ep: 6
+  # Tipos secundarios de MusicBrainz que no son "disco nuevo".
+  tipos_secundarios_excluidos: [Compilation, Soundtrack, Remix, DJ-mix, Mixtape/Street, Demo, Interview, Audiobook, Spokenword]
+  # Palabras en el título o en la descripción de la fuente que indican reedición.
+  reedicion: '(?i)\b(re-?release|reissue|re-?issue|remaster(ed)?|anniversary edition|\d+(st|nd|rd|th) anniversary|expanded edition|vinyl reissue|cd version|deluxe reissue|box set)\b'
+  ep: '(?i)(^|\W)(EP|E\.P\.)(\W|$)'
+  # Similitud mínima (0-1) para aceptar que un disco de MusicBrainz es el mismo.
+  similitud_minima: 0.86
+  # Títulos que significan "se llama como el artista".
+  titulo_homonimo: '(?i)^(self[- ]?titled|s/t)$'
+  # Número de canciones mencionado en una descripción ("13-song record", "five-song EP").
+  pistas_en_texto: '(?i)\b(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)[- ](?:song|track)s?\b'
+  # Días de margen antes del inicio de la ventana (fechas de fuentes aproximadas).
+  margen_dias: 14
+
+enriquecimiento:
+  musicbrainz: true
+  bandcamp:
+    activo: true
+    max_paginas_por_ejecucion: 600
+
+rutas:
+  fuentes: data/fuentes.yaml
+  taxonomia: data/taxonomia.yaml
+  mapeo_etiquetas: data/mapeo_etiquetas.csv
+  discos: data/discos.json
+  descartados: data/descartados.json
+  estado_fuentes: data/estado_fuentes.json
+  cache_http: data/cache/http
+  cache_musicbrainz: data/cache/musicbrainz.json
+  cache_bandcamp: data/cache/bandcamp.json

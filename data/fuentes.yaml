@@ -1,0 +1,449 @@
+# Fuentes de datos. Para añadir una web nueva basta con añadir una entrada.
+#
+# Campos:
+#   id, nombre, web       identificación
+#   familia               country | hardrock   (las familias están en taxonomia.yaml)
+#   rol                   listado (anuncia lanzamientos) | resena | noticia | sello
+#   lector                texto | rss | sonda
+#   urls                  páginas a leer
+#   paginacion            {plantilla: "...{n}...", desde: 2, hasta: 5}
+#   fecha_es              lanzamiento | publicacion | alta   (qué significa la fecha)
+#   mixta                 true si la fuente mezcla otros géneros (metal, pop…):
+#                         sus discos solo entran si se les reconoce un subgénero
+#   texto                 cómo convertir el HTML: selector, marcas, enlaces, imagenes,
+#                         desde, hasta, quitar
+#   cabecera_fecha        regex: línea que fija la fecha de los items siguientes
+#   patrones              lista de regex con grupos con nombre:
+#                         artista, titulo, fecha, sello, genero, tipo, nota, url, portada, extra
+#   filtro / excluir      regex que el texto debe cumplir / no cumplir
+#   nota                  regex para la nota de una reseña (en el contenido)
+#   detalle               abrir la página de cada item: {texto, campos, contar, patrones, max, solo_si}
+#
+# Marcas que añade el conversor:  «…» (lo que digan las marcas, p. ej. cursivas),
+# ⟦url⟧ delante del texto de un enlace, ⟪src⟫ en lugar de una imagen, " | " entre celdas.
+
+# ---- Macros: trozos de regex reutilizables. En un patrón se escriben {{NOMBRE}} ----
+macros:
+  MES: '(?:January|February|March|April|May|June|July|August|September|October|November|December)'
+  # Título entre comillas (curvas, rectas, simples o dobles); admite apóstrofos dentro.
+  T: '(?:“(?P<titulo>[^”\n]+)”|‘(?P<titulo_2>(?:[^’\n]|’(?=[a-zA-Z]))+)’|"(?P<titulo_3>[^"\n]+)"|''(?P<titulo_4>(?:[^''\n]|''(?=[a-zA-Z]))+)'')'
+  ART: '(?P<artista>[^:“"‘\n]+?)'
+  VERBO: '(?:announces?|unveils?|reveals?|readies|confirms?|details?|shares?|releases?|drops?|launch(?:es)?|unleash(?:es)?|premieres?|debuts?|returns?\s+with|previews?|streams?|sets?|plots?|teases?)'
+
+# ---- Patrones compartidos (se reutilizan con *nombre) ----
+patrones_noticias: &noticias
+  # "X announces new album “Y”", "X Readies New Album “Y”", "X Announces Release Date for New Album, ‘Y’"
+  - '(?i)^{{ART}}\s+{{VERBO}}\b[^“"‘\n]*?\b(?:album|LP|record|full-length)\b[,:]?\s*{{T}}'
+  # "X Announces ‘Y’ New Album"
+  - '(?i)^{{ART}}\s+{{VERBO}}\s+{{T}}\s*(?:new\s+|debut\s+|studio\s+)*(?:album|LP|record)\b'
+  # "X share video for … from upcoming album ‘Y’"
+  - '(?i)^{{ART}}\s+(?:share|unveil|drop|release|launch|unleash|premiere|debut|reveal|stream|issue|celebrate)s?\b.*?\bfrom\s+(?:the\s+|their\s+|his\s+|her\s+)?(?:upcoming|forthcoming|new|debut|latest|next)\s+(?:\w+\s+)?(?:album|record|LP)\s+{{T}}'
+  # Notas de prensa en mayúsculas: "SAXON RETURN WITH 25TH STUDIO ALBUM GODS OF THUNDER ARRIVING JANUARY 22"
+  - '(?i)^{{ART}}\s+(?:announce|return\s+with|release|reveal|unveil)s?\s+(?:their\s+|new\s+|\d+(?:st|nd|rd|th)\s+)*(?:studio\s+|live\s+|debut\s+)?album\s+[“"‘]?\s*(?P<titulo>[^”"’\n]+?)\s*[”"’]?\s+(?:arriving|out|due|available|coming|released?)\b'
+
+nota_10: &nota_10 '(?P<nota>\b\d{1,2}(?:\.\d)?\s?/\s?10\b)'
+
+fuentes:
+
+# ============================================================ COUNTRY / AMERICANA / FOLK
+- id: scm_radar
+  nombre: Saving Country Music – Release Radar
+  web: https://savingcountrymusic.com
+  familia: country
+  rol: listado
+  lector: texto
+  fecha_es: lanzamiento
+  anio_desde_publicacion: true      # las fechas no traen año: se toma el de la página
+  urls:
+    - https://savingcountrymusic.com/release-radar-most-anticipated-new-albums-for-2nd-half-of-2026/
+    - https://savingcountrymusic.com/release-radar-most-anticipated-new-albums-for-final-portion-of-2026/
+  texto:
+    selector: article
+    marcas: {"em, i": "«»", "strong, b": ["**", "**"]}
+    desde: "OTHER ANTICIPATED/CONFIRMED RELEASES"
+    hasta: "THE RUMOR MILL"
+  cabecera_fecha: '^\*\*\s*(?P<fecha>{{MES}}\s+\d{1,2}(?:st|nd|rd|th)?(?:,?\s+\d{4})?)\s*\*\*'
+  patrones:
+    - '^(?:\((?P<fecha>\d{1,2}-\d{1,2})\)\s*)?(?P<artista>[^«\n*]+?)\s*[–-]\s*«(?P<titulo>[^»]+)»\s*(?P<tipo>EP\b)?\s*(?:\((?P<fecha_2>\d{1,2}-\d{1,2})\)|\((?P<genero>[^)\n]+)\))?[^\n]*$'
+
+- id: scm_resenas
+  nombre: Saving Country Music – reseñas
+  web: https://savingcountrymusic.com
+  familia: country
+  rol: resena
+  lector: rss
+  urls: [https://savingcountrymusic.com/feed/]
+  paginacion: {plantilla: "https://savingcountrymusic.com/feed/?paged={n}", desde: 2, hasta: 25}
+  filtro: '^Album Review'
+  patrones:
+    - '^Album Review\s*[–-]\s*(?P<artista>.+?)\s*[–-]\s*{{T}}'
+  detalle:                      # la nota (X/10) solo está en la página de la reseña
+    max: 80
+    texto: {selector: article}
+    campos: {nota: *nota_10}
+
+- id: scm_noticias
+  nombre: Saving Country Music – noticias
+  web: https://savingcountrymusic.com
+  familia: country
+  rol: noticia
+  lector: rss
+  urls: [https://savingcountrymusic.com/feed/]
+  paginacion: {plantilla: "https://savingcountrymusic.com/feed/?paged={n}", desde: 2, hasta: 25}
+  excluir: '^Album Review'
+  patrones: *noticias
+
+- id: holler
+  nombre: Holler – First Listen
+  web: https://holler.country
+  familia: country
+  rol: resena
+  lector: texto
+  fecha_es: publicacion
+  urls: [https://holler.country/, https://holler.country/reviews/album-review]
+  texto: {enlaces: true}
+  patrones:
+    - '⟦(?P<url>https://holler\.country/reviews/album-review/first-listen[^⟧]+)⟧'
+  detalle:
+    max: 20
+    texto: {selector: "h2, h3"}
+    patrones:
+      - '^(?P<artista>[^\n]{2,60}?) - (?P<titulo>[^\n]{1,100})$'
+
+- id: whiskeyriff
+  nombre: Whiskey Riff
+  web: https://www.whiskeyriff.com
+  familia: country
+  rol: noticia
+  lector: rss
+  urls: [https://www.whiskeyriff.com/feed/]
+  paginacion: {plantilla: "https://www.whiskeyriff.com/feed/?paged={n}", desde: 2, hasta: 40}
+  patrones: *noticias
+
+- id: americanauk
+  nombre: Americana UK
+  web: https://americana-uk.com
+  familia: country
+  rol: resena
+  lector: rss
+  urls: [https://americana-uk.com/category/reviews/album-reviews/feed]
+  paginacion: {plantilla: "https://americana-uk.com/category/reviews/album-reviews/feed?paged={n}", desde: 2, hasta: 40}
+  patrones:
+    - '^(?P<artista>[^“"‘\n]+?)\s+{{T}}\s*$'
+  detalle:                      # la nota (X/10) solo está en la página de la reseña
+    max: 400
+    texto: {selector: article}
+    campos: {nota: *nota_10}
+
+- id: twangville
+  nombre: Twangville
+  web: https://twangville.com
+  familia: country
+  rol: resena
+  lector: rss
+  urls: [https://twangville.com/feed/]
+  paginacion: {plantilla: "https://twangville.com/feed/?paged={n}", desde: 2, hasta: 20}
+  excluir: '(?i)^(Monday Morning Video|Now & Then|Videos?\b|Playlist|Podcast)'
+  patrones:
+    - '^(?:Readers[’'']\s*Pick:\s*)?(?P<artista>[^–:\n]+?)\s+–\s+(?P<titulo>[^–\n]+)$'
+
+- id: countryuniverse
+  nombre: Country Universe
+  web: https://www.countryuniverse.net
+  familia: country
+  rol: resena
+  lector: rss
+  urls: [https://www.countryuniverse.net/feed/]
+  paginacion: {plantilla: "https://www.countryuniverse.net/feed/?paged={n}", desde: 2, hasta: 20}
+  excluir: '(?i)^Every No\. 1'
+  patrones:
+    - '(?i)^(?:Album Review|Review)\s*[:–-]\s*(?P<artista>[^,“"\n]+?),?\s+{{T}}'
+
+- id: cst
+  nombre: Country Standard Time – CD releases
+  web: https://www.countrystandardtime.com
+  familia: country
+  rol: listado
+  lector: texto
+  fecha_es: lanzamiento
+  urls: [https://www.countrystandardtime.com/cdreleases.asp]
+  texto:
+    marcas: {"span.italic": "«»"}
+  cabecera_fecha: '^(?P<fecha>{{MES}}\s+\d{1,2},\s+\d{4})$'
+  patrones:
+    - '^(?P<artista>[^«\n]+?)\s*–\s*«(?P<titulo>[^»]+)»\s*(?:\((?P<sello>[^)\n]+)\))?[ \t]*(?:–[ \t]*(?P<extra>[^\n]*))?$'
+
+- id: nodepression
+  nombre: No Depression
+  web: https://nodepression.org
+  familia: country
+  rol: resena
+  lector: rss
+  urls: [https://nodepression.org/rss/]
+  filtro: '^ALBUM REVIEW'
+  patrones:
+    - '^ALBUM REVIEW:\s*(?P<artista>[A-Z][^’''‘:,\n]{1,40}?)[’'']s\s+{{T}}'
+    - '^ALBUM REVIEW:\s*(?P<mencion>.+)$'
+
+- id: bluegrasstoday
+  nombre: Bluegrass Today
+  web: https://bluegrasstoday.com
+  familia: country
+  rol: noticia
+  lector: rss
+  urls: [https://bluegrasstoday.com/feed/]
+  paginacion: {plantilla: "https://bluegrasstoday.com/feed/?paged={n}", desde: 2, hasta: 40}
+  patrones: *noticias
+
+- id: klof
+  nombre: KLOF Mag (antes Folk Radio UK)
+  web: https://klofmag.com
+  familia: country
+  rol: resena
+  lector: rss
+  urls: [https://klofmag.com/feed/]
+  paginacion: {plantilla: "https://klofmag.com/feed/?paged={n}", desde: 2, hasta: 30}
+  excluir: '(?i)(interview|^KLOF No|premiere|\blive at\b|session|playlist|in conversation)'
+  patrones:
+    - '^(?P<artista>[^–:\n“"‘]+?)\s+–\s+(?P<titulo>[^–\n]+)$'
+    - '(?i)^{{ART}}\s+{{VERBO}}\b[^“"‘\n]*?\b(?:album|LP|record)\b[,:]?\s*{{T}}'
+
+- id: glide
+  nombre: Glide Magazine
+  web: https://glidemagazine.com
+  familia: country
+  rol: resena
+  lector: rss
+  urls: [https://glidemagazine.com/feed.xml]
+  filtro: '\(ALBUM REVIEW\)'
+  excluir: '(?i)reissue|remaster|anniversary'
+  patrones:
+    - '^(?P<mencion>.+)\(ALBUM REVIEW\)'
+
+# ============================================================ HARD ROCK / AOR
+- id: heavyharmonies
+  nombre: Heavy Harmonies – New Additions
+  web: https://heavyharmonies.com
+  familia: hardrock
+  rol: listado
+  lector: texto
+  fecha_es: alta                 # fecha de alta en su base de datos, no de salida
+  urls: [https://heavyharmonies.com/cgi-bin/newcds.cgi]
+  texto: {enlaces: true, desde: "Date Added"}
+  patrones:
+    - '^(?P<artista>[^|\n⟦]+?)\s*\|\s*⟦(?P<url>[^⟧]*glamcd\.cgi[^⟧]*)⟧(?P<titulo>[^|\n]+?)\s*\|\s*(?P<fecha>{{MES}}\s+\d{1,2},\s+\d{4})'
+  detalle:
+    max: 500
+    campos:
+      anio: '^Year:\n(\d{4})'
+      sello: '^Label:\n(.+)$'
+    contar:
+      pistas: '^\d{1,2}\.$'
+
+- id: melodicrock
+  nombre: MelodicRock.com
+  web: https://www.melodicrock.com
+  familia: hardrock
+  rol: resena
+  lector: rss
+  urls: [https://www.melodicrock.com/rss.xml]
+  patrones:
+    - '^(?P<artista>.+?)\s+-\s+(?P<titulo>.+?)\s+\(Album Review\)$'
+
+- id: fireworks
+  nombre: Fireworks Magazine – reseñas del número actual
+  web: https://www.fireworks-magazine.com
+  familia: hardrock
+  rol: resena
+  lector: texto
+  fecha_es: publicacion
+  urls: [https://www.fireworks-magazine.com/albumreviewsnew]
+  texto: {enlaces: true}
+  patrones:
+    - '^(?!More Reviews|Our Top)(?P<artista>[^\n⟦]+)\n(?P<titulo>[^\n⟦]+)\n(?:(?P<extra>[^\n⟦]+)\n)?(?:(?P<genero>[^\n⟦]+)\n)?⟦(?P<url>[^⟧]+)⟧Read Review(?:\n(?P<tipo>New Release|Reissue|Compilation|Live|EP)$)?'
+
+- id: angelicwarlord
+  nombre: Angelic Warlord – Release Dates
+  web: https://www.angelicwarlord.com
+  familia: hardrock
+  rol: listado
+  mixta: true
+  lector: texto
+  fecha_es: lanzamiento
+  urls: ["https://www.angelicwarlord.com/release%20dates/releasedates.html"]
+  texto:
+    marcas: {"em, i": "«»"}
+  patrones:
+    - '^(?P<artista>[^\n«|]+?)(?:\s*-\s*NEW)?\s*(?:\||\n)\s*«(?P<titulo>[^»]+)»\s*(?:\((?P<extra>[^)\n]+)\))?\s*(?:\||\n)\s*(?P<fecha>{{MES}}\s+(?:\d{1,2},\s+)?\d{4})'
+
+- id: getreadytorock
+  nombre: Get Ready to ROCK!
+  web: https://www.getreadytorock.me.uk
+  familia: hardrock
+  rol: resena
+  lector: rss
+  urls: [https://www.getreadytorock.me.uk/blog/feed/]
+  paginacion: {plantilla: "https://www.getreadytorock.me.uk/blog/feed/?paged={n}", desde: 2, hasta: 60}
+  filtro: '(?i)^album review'
+  patrones:
+    - '(?i)^album review\s*:\s*(?P<artista>.+?)\s+[–-]\s+(?P<titulo>.+?)(?:\s*\((?P<extra>[^)]*)\))?\s*$'
+  nota: '(?P<nota>\b\d{1,2}(?:\.\d)?\s?/\s?10\b|\b[1-5](?:\.5)?\s?/\s?5\b)'
+
+- id: loudwire
+  nombre: Loudwire – 2026 Hard Rock + Metal Release Calendar
+  web: https://loudwire.com
+  familia: hardrock
+  rol: listado
+  mixta: true
+  lector: texto
+  fecha_es: lanzamiento
+  urls:
+    - https://loudwire.com/2026-hard-rock-metal-album-release-calendar/
+    - https://loudwire.com/2027-hard-rock-metal-album-release-calendar/
+  texto:
+    marcas: {"em, i": "«»", "strong, b": ["**", "**"]}
+  cabecera_fecha: '^\*\*\s*(?P<fecha>{{MES}}\s+\d{1,2},\s+\d{4})\s*\*\*'
+  patrones:
+    - '^(?P<artista>[^«\n*]+?)\s+[-–]\s+«(?P<titulo>[^»]+)»\s*(?P<extra>[^(\n]*?)\s*(?:\((?P<sello>[^)\n]+)\))?\s*$'
+
+- id: sleazeroxx
+  nombre: Sleaze Roxx
+  web: https://sleazeroxx.com
+  familia: hardrock
+  rol: noticia
+  lector: rss
+  urls: [https://sleazeroxx.com/feed/]
+  paginacion: {plantilla: "https://sleazeroxx.com/feed/?paged={n}", desde: 2, hasta: 60}
+  patrones: *noticias
+
+- id: metalplanet
+  nombre: Metal Planet Music
+  web: https://metalplanetmusic.com
+  familia: hardrock
+  rol: resena
+  mixta: true
+  lector: rss
+  urls: [https://metalplanetmusic.com/feed/]
+  paginacion: {plantilla: "https://metalplanetmusic.com/feed/?paged={n}", desde: 2, hasta: 60}
+  filtro: '(?i)^(album|ep) review'
+  patrones:
+    - '(?i)^(?P<tipo>Album|EP) Review\s*:\s*(?P<artista>.+?)\s+[–:-]\s+(?:{{T}}|(?P<titulo_5>[^(\n]+?))\s*(?:\((?P<extra>[^)]*)\))?\s*$'
+  nota: *nota_10
+
+- id: rockandbluesmuse
+  nombre: Rock & Blues Muse
+  web: https://rockandbluesmuse.com
+  familia: hardrock
+  rol: resena
+  lector: rss
+  urls: [https://rockandbluesmuse.com/feed/]
+  paginacion: {plantilla: "https://rockandbluesmuse.com/feed/?paged={n}", desde: 2, hasta: 40}
+  excluir: '(?i)gig review|live review|single'
+  patrones:
+    - '^Review:\s*(?P<mencion>.+)$'
+    - '(?i)^{{ART}}\s+{{VERBO}}\s+{{T}}\s*(?:new\s+|debut\s+|studio\s+)*(?:album|LP|record)\b'
+
+- id: louder
+  nombre: Louder (Classic Rock / Prog) – reseñas
+  web: https://www.loudersound.com
+  familia: hardrock
+  rol: resena
+  mixta: true
+  lector: texto
+  fecha_es: publicacion
+  urls: [https://www.loudersound.com/reviews]
+  paginacion: {plantilla: "https://www.loudersound.com/reviews/page/{n}", desde: 2, hasta: 12}
+  texto:
+    marcas: {".article-name": "«»"}
+  patrones:
+    - '«(?P<mencion>[^»]{8,})»'
+
+# ============================================================ SELLOS
+- id: newwest
+  nombre: New West Records – Recent Releases
+  web: https://newwestrecords.com
+  familia: country
+  rol: sello
+  sello: New West Records
+  lector: texto
+  fecha_es: ninguna
+  urls: [https://newwestrecords.com/collections/recent-releases, https://newwestrecords.com/collections/new-from-new-west]
+  texto: {enlaces: true}
+  patrones:
+    - '^(?P<artista>[^\n⟦]+?) - (?P<titulo>[^\n⟦\[]+?)\s*(?:\[(?P<extra>[^\]\n]*)\]?)?$'
+  excluir: '(?i)koozie|sticker|t-shirt|tote|hat|bin card|gift card|poster|hoodie'
+
+- id: ohboy
+  nombre: Oh Boy Records – New Releases
+  web: https://ohboy.com
+  familia: country
+  rol: sello
+  sello: Oh Boy Records
+  intercambiable: true           # a veces pone "Título - Artista"
+  lector: texto
+  fecha_es: ninguna
+  urls: [https://ohboy.com/collections/new-releases-from-oh-boy-records]
+  texto: {enlaces: true}
+  patrones:
+    - '^(?P<artista>[^\n⟦$]+?) - (?P<titulo>[^\n⟦$]+?) - (?P<extra>[^\n]*)$'
+
+- id: frontiers
+  nombre: Frontiers – New Releases
+  web: https://frontiers-us.shop
+  familia: hardrock
+  rol: sello
+  sello: Frontiers Music
+  lector: texto
+  fecha_es: ninguna
+  urls: [https://frontiers-us.shop/collections/new-releases]
+  paginacion: {plantilla: "https://frontiers-us.shop/collections/new-releases?page={n}", desde: 2, hasta: 6}
+  texto: {enlaces: true}
+  patrones:
+    - '^⟦[^⟧]*/products/[^⟧]*⟧(?P<artista>[^\n⟦]+?) - (?P<titulo>[^\n⟦]+?) - (?P<extra>[^\n]*)$'
+
+- id: roar
+  nombre: ROAR / Reigning Phoenix Music – Releases
+  web: https://www.reigningphoenixmusic.com
+  familia: hardrock
+  rol: sello
+  sello: Reigning Phoenix Music
+  mixta: true
+  lector: texto
+  fecha_es: lanzamiento
+  urls: [https://www.reigningphoenixmusic.com/releases]
+  texto:
+    marcas: {"strong, b": ["**", "**"]}
+  patrones:
+    - '^\*\*(?P<artista>[^*\n]+)\*\*\n(?P<titulo>[^\n]+)\n\((?P<fecha>\d{2}/\d{2}/\d{4})\)'
+
+- id: silverlining
+  nombre: Silver Lining Music – noticias
+  web: https://silverliningmusic.co.uk
+  familia: hardrock
+  rol: sello
+  sello: Silver Lining Music
+  mixta: true
+  lector: rss
+  urls: [https://silverliningmusic.co.uk/blogs/news-stories.rss]
+  patrones: *noticias
+
+- id: escape
+  nombre: Escape Music – News
+  web: https://www.escape-music.com
+  familia: hardrock
+  rol: sello
+  sello: Escape Music
+  lector: texto
+  fecha_es: lanzamiento
+  urls: [https://www.escape-music.com/news.htm]
+  patrones:
+    - '^COMING (?P<fecha>\d{1,2}(?:st|nd|rd|th)?\s+(?:January|February|March|April|May|June|July|August|September|October|November|December|JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER)(?:\s+\d{4})?)\n(?P<artista>[^\n]+)\n-?\s*(?P<titulo>[^\n]+)$'
+
+# ============================================================ SONDAS
+- id: bandcamp
+  nombre: Bandcamp (comprobar si sigue bloqueado)
+  web: https://bandcamp.com
+  familia: ninguna
+  rol: sonda
+  lector: sonda
+  urls: [https://newwestrecords.bandcamp.com/music]
