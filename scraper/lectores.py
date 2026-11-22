@@ -143,6 +143,23 @@ def _items_de_texto(texto: str, cfg: dict, fuente: str, hoy: dt.date, fecha_defe
     return items
 
 
+def _aplicar_campos(it: Item, campos: dict | None, texto: str, hoy: dt.date) -> None:
+    """campos: {nombre_del_campo: regex}. "fecha" pasa a ser fecha de salida."""
+    for campo, rx in (campos or {}).items():
+        m = re.search(rx, texto, re.M)
+        if not m:
+            continue
+        v = limpiar(m.groupdict().get(campo) or (m.group(1) if m.groups() else m.group(0)))
+        if campo == "fecha":
+            f = parse_fecha(v, hoy)
+            if f:
+                it.fecha, it.fecha_tipo = f, "lanzamiento"
+        elif campo == "anio" and v and v[:4].isdigit():
+            it.anio = int(v[:4])
+        elif v:
+            setattr(it, campo, v)
+
+
 def _detalle(nav: Navegador, it: Item, cfg: dict, hoy: dt.date) -> list[Item]:
     """Abre la página de un item y completa campos (o saca varios items)."""
     r = nav.get(it.url)
@@ -160,17 +177,7 @@ def _detalle(nav: Navegador, it: Item, cfg: dict, hoy: dt.date) -> list[Item]:
                 h.extra = f"{it.artista}: {it.titulo}".strip(": ")
             h.url = h.url or it.url
         return hijos
-    for campo, rx in (cfg.get("campos") or {}).items():
-        m = re.search(rx, t, re.M)
-        if not m:
-            continue
-        v = limpiar(m.groupdict().get(campo) or (m.group(1) if m.groups() else m.group(0)))
-        if campo == "fecha":
-            it.fecha = parse_fecha(v, hoy) or it.fecha
-        elif campo == "anio" and v and v[:4].isdigit():
-            it.anio = int(v[:4])
-        elif v:
-            setattr(it, campo, v)
+    _aplicar_campos(it, cfg.get("campos"), t, hoy)
     for campo, rx in (cfg.get("contar") or {}).items():
         n = len(re.findall(rx, t, re.M))
         if n:
@@ -193,7 +200,8 @@ def _urls(cfg: dict, hoy: dt.date | None = None, desde: dt.date | None = None) -
     an = pag.get("anios")        # {plantilla: "...{anio}...", desde: 2016, hasta: "actual"}
     if an:
         hoy_ = hoy or dt.date.today()
-        hasta_a = hoy_.year if str(an.get("hasta", "actual")) == "actual" else int(an["hasta"])
+        h = str(an.get("hasta", "actual"))      # "actual", "anterior" (año cerrado) o un año
+        hasta_a = hoy_.year if h == "actual" else hoy_.year - 1 if h == "anterior" else int(h)
         for a in range(int(an.get("desde", hasta_a)), hasta_a + 1):
             urls.append(an["plantilla"].format(anio=a))
             for n in range(2, int(an.get("paginas", 1)) + 1):     # páginas dentro de cada año
@@ -324,6 +332,7 @@ def leer_rss(nav, cfg, hoy, desde=None) -> ResultadoFuente:
                     mn = rx_nota.search(texto_cont)
                     if mn:
                         it.nota = limpiar(mn.groupdict().get("nota") or mn.group(0))
+                _aplicar_campos(it, cfg.get("campos_contenido"), texto_cont, hoy)
                 res.items.append(it)
                 break
         if _todo_antiguo(fechas_pag, desde):

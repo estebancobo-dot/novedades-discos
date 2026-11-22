@@ -554,6 +554,134 @@ fuentes:
   excluir: '(?i)reissue|anniversary|interview|festival|live album'
   patrones: *noticias
 
+# ============================================================ NUEVAS (22-nov): synth/dark, metal, punk
+- id: sideline
+  nombre: Side-Line (dark electrónico, EBM, synth, goth)
+  web: https://www.side-line.com
+  familia: synthdark
+  rol: noticia
+  mixta: true          # también industrial, ambient y experimental: solo entra con subgénero
+  lector: rss
+  urls: [https://www.side-line.com/feed/]
+  paginacion: {plantilla: "https://www.side-line.com/feed/?paged={n}", desde: 2, hasta: 75}
+  excluir: '(?i)reissue|re-?release|remaster|anniversary|for the first time|remix|\bsingle\b|\bEP\b|interview|birthday|tour|festival|lineup'
+  patrones:
+    # "Maciek Szymczuk – Gandobendy (Digital/CD Album – Zoharum)"
+    - '^(?P<artista>[^–\n]+?)\s+–\s+(?P<titulo>.+?)\s+\((?P<tipo>[^()]*\bAlbum\b[^()]*?)\s+–\s+(?P<sello>[^()]+)\)\s*$'
+    - '(?i)^{{ART}}\s+{{VERBO}}\b[^“"‘\n]*?\b(?:album|LP|record|full-length)\b[,:]?\s*{{T}}'
+    - '(?i)^{{ART}}\s+{{VERBO}}\s+{{T}}\s*(?:new\s+|debut\s+|studio\s+)*(?:album|LP|record)\b'
+    - '(?i)^{{ART}}\s+(?:share|unveil|drop|release|launch|unleash|premiere|debut|reveal|stream|issue)s?\b.*?\b(?:from|ahead of)\s+(?:the\s+|their\s+|his\s+|her\s+)?(?:upcoming|forthcoming|new|debut|latest|next)\s+(?:\w+\s+)?(?:album|record|LP)\s+{{T}}'
+
+- id: regen
+  nombre: ReGen Magazine – reseñas (industrial, synthpop, darkwave)
+  web: https://www.regenmag.com
+  familia: synthdark
+  rol: resena
+  mixta: true
+  lector: rss
+  urls: [https://www.regenmag.com/category/reviews/feed/]
+  paginacion: {plantilla: "https://www.regenmag.com/category/reviews/feed/?paged={n}", desde: 2, hasta: 15}
+  patrones:
+    - '^ReView:\s*(?P<artista>.+?)\s+[–-]\s+(?P<titulo>.+)$'
+  # El cuerpo trae ficha: "Album: X Category: Synthpop / Dark Electro Label: Y Release Date: 2026-10-23"
+  campos_contenido:
+    genero: 'Category:\s*(?P<genero>.+?)\s+Label:'
+    sello: 'Label:\s*(?P<sello>.+?)\s+Release Date:'
+    fecha: 'Release Date:\s*(?P<fecha>\d{4}-\d{2}-\d{2})'
+
+- id: angrymetalguy
+  nombre: Angry Metal Guy – reseñas
+  web: https://www.angrymetalguy.com
+  familia: rockmetal
+  rol: resena
+  lector: rss
+  urls: [https://www.angrymetalguy.com/feed/]
+  paginacion: {plantilla: "https://www.angrymetalguy.com/feed/?paged={n}", desde: 2, hasta: 70}
+  excluir: '(?i)^(Things You Might|Record|Stuck in the Filter|Angry Metal|Ask |Top Ten|Rodeo)'
+  patrones:
+    - '^(?P<artista>.+?)\s+[–-]\s+(?P<titulo>.+?)\s+Review$'
+  nota: '(?i)Rating:\s*(?P<nota>\d(?:\.\d)?\s*/\s*5)(?:\.0)?'
+
+- id: distortedsound
+  nombre: Distorted Sound – reseñas
+  web: https://distortedsoundmag.com
+  familia: rockmetal
+  rol: resena
+  mixta: true          # también rock alternativo e indie
+  lector: rss
+  urls: [https://distortedsoundmag.com/category/reviews/feed/]
+  paginacion: {plantilla: "https://distortedsoundmag.com/category/reviews/feed/?paged={n}", desde: 2, hasta: 50}
+  patrones:
+    # aquí va primero el título y luego el artista: "ALBUM REVIEW: Crown In The Grave – Trivium"
+    - '^ALBUM REVIEW:\s*(?P<titulo>.+?)\s+[–-]\s+(?P<artista>[^–\n]+)$'
+  nota: '(?i)Rating:\s*(?P<nota>\d{1,2}(?:\.\d)?\s*/\s*10)'
+
+- id: blabbermouth
+  nombre: Blabbermouth – noticias (metal y hard rock)
+  web: https://blabbermouth.net
+  familia: rockmetal
+  rol: noticia
+  mixta: true          # también hard rock: la familia la decide el subgénero
+  lector: rss
+  urls: [https://blabbermouth.net/feed]
+  excluir: '(?i)reissue|re-?release|remaster|anniversary|box set|live album|tour|festival|dies|dead at|interview|says|cancel'
+  patrones:
+    # "ARTIST To Release 'Title' Album In March"
+    - '(?i)^{{ART}}\s+(?:To\s+Release|Will\s+Release|Sets?|Completes?|Finishes)\s+{{T}}\s*(?:\w+\s+)?Album\b'
+    - '(?i)^{{ART}}\s+{{VERBO}}\b[^“"‘''\n]*?\b(?:album|LP|record|full-length)\b[,:]?\s*{{T}}'
+    - '(?i)^{{ART}}\s+{{VERBO}}\s+{{T}}\s*(?:new\s+|debut\s+|studio\s+)*(?:album|LP|record)\b'
+    - '(?i)^{{ART}}\s+(?:share|unveil|drop|release|launch|unleash|premiere|debut|reveal|stream|issue)s?\b.*?\bfrom\s+(?:the\s+|their\s+|his\s+|her\s+)?(?:upcoming|forthcoming|new|debut|latest|next)\s+(?:\w+\s+)?(?:album|record|LP)\s+{{T}}'
+    # "... Music Video For 'Song' From 'Album' Album"
+    - '(?i)^{{ART}}\s+(?:share|unveil|drop|release|launch|premiere|debut|reveal|stream)s?\b.*?\bFrom\s+(?:Upcoming\s+|Forthcoming\s+|New\s+)?{{T}}\s+(?:\w+\s+)?Album\b'
+
+- id: louderthanwar
+  nombre: Louder Than War (punk, post-punk, indie)
+  web: https://louderthanwar.com
+  familia: todas
+  rol: resena
+  mixta: true
+  lector: rss
+  urls: [https://louderthanwar.com/feed/]
+  paginacion: {plantilla: "https://louderthanwar.com/feed/?paged={n}", desde: 2, hasta: 110}
+  excluir: '(?i)reissue|re-?release|box set|anniversary|live review|festival|single review|ep review|compilation|book'
+  patrones:
+    # "Armitage Shanks: Charge Of The Shite Brigade – album review"
+    - '(?i)^(?P<artista>[^:\n]{2,60}):\s*(?P<titulo>.+?)\s+[–-]\s+album review\b'
+    - '(?i)^{{ART}}\s+{{VERBO}}\b[^“"‘\n]*?\b(?:album|LP|record|full-length)\b[,:]?\s*{{T}}'
+    - '(?i)^{{ART}}\s+{{VERBO}}\s+{{T}}\s*(?:new\s+|debut\s+|studio\s+)*(?:album|LP|record)\b'
+    # "Aerial Salad announce new album Ideal World" (sin comillas, al final del titular)
+    - '^{{ART}}\s+(?:announce|reveal|unveil)s?\s+(?:their\s+|new\s+|debut\s+|second\s+|third\s+|fourth\s+|fifth\s+)*album,?\s+(?P<titulo>[A-Z0-9][^‘’“”"\n:]{1,60})$'
+
+- id: psychedelicbaby
+  nombre: Psychedelic Baby Magazine (psicodelia, garage, prog)
+  web: https://www.psychedelicbabymag.com
+  familia: todas
+  rol: noticia
+  mixta: true
+  lector: rss
+  urls: [https://www.psychedelicbabymag.com/feed]
+  paginacion: {plantilla: "https://www.psychedelicbabymag.com/feed?paged={n}", desde: 2, hasta: 90}
+  excluir: '(?i)reissue|re-?release|anniversary|interview|episode|\bEP\b|single|compilation'
+  patrones:
+    - '(?i)^{{ART}}\s+{{VERBO}}\b[^“"‘\n]*?\b(?:album|LP|record|full-length)\b[,:]?\s*{{T}}'
+    - '(?i)^{{ART}}\s+{{VERBO}}\s+{{T}}\s*(?:new\s+|debut\s+|studio\s+)*(?:album|LP|record)\b'
+    - '(?i)^{{ART}}\s+(?:share|unveil|drop|release|launch|unleash|premiere|debut|reveal|stream|issue)s?\b.*?\bfrom\s+(?:the\s+|their\s+|his\s+|her\s+)?(?:upcoming|forthcoming|new|debut|latest|next)\s+(?:\w+\s+)?(?:album|record|LP)\s+{{T}}'
+
+- id: punkrocktheory
+  nombre: Punk Rock Theory – noticias
+  web: https://www.punkrocktheory.com
+  activa: false        # 22-nov: 40 titulares leídos, todos sencillos o vídeos; ningún álbum
+  familia: punkgarage
+  rol: noticia
+  lector: rss
+  urls: [https://www.punkrocktheory.com/feed]
+  paginacion: {plantilla: "https://www.punkrocktheory.com/feed?paged={n}", desde: 2, hasta: 60}
+  excluir: '(?i)reissue|re-?release|anniversary|soundtrack|\bEP\b'
+  patrones:
+    - '(?i)^{{ART}}\s+{{VERBO}}\b[^“"‘\n]*?\b(?:album|LP|record|full-length)\b[,:]?\s*{{T}}'
+    - '(?i)^{{ART}}\s+{{VERBO}}\s+{{T}}\s*(?:new\s+|debut\s+|studio\s+)*(?:album|LP|record)\b'
+    - '(?i)^{{ART}}\s+(?:share|unveil|drop|release|launch|unleash|premiere|debut|reveal|stream|issue)s?\b.*?\bfrom\s+(?:the\s+|their\s+|his\s+|her\s+)?(?:upcoming|forthcoming|new|debut|latest|next)\s+(?:\w+\s+)?(?:album|record|LP)\s+{{T}}'
+
 # ============================================================ RADAR DE ARTISTAS
 # Idea de Thrasher2020/home-assistant-upcoming-music-releases: todos los álbumes de
 # MusicBrainz con fecha en la ventana, cruzados con los artistas de nuestras familias.
@@ -845,6 +973,114 @@ fuentes:
   texto: {enlaces: true}
   patrones:
     - '^⟦[^⟧]*/album/[^⟧]*⟧(?P<titulo>[^\n⟦]+)\n(?P<artista>[^\n⟦]+)$'
+
+- id: rmr_blues
+  nombre: Roots Music Report – Top Blues Album Chart del año
+  web: https://www.rootsmusicreport.com
+  familia: blues
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: 'yearly/(\d{4})'
+  urls: []
+  paginacion:
+    # gráfica anual de radios de raíces; solo años cerrados (la del año en curso está a medias)
+    anios: {plantilla: "https://www.rootsmusicreport.com/charts/print_chart/album/genre/blues/yearly/{anio}", desde: 2025, hasta: anterior}
+  patrones:
+    # "1 | Ain't Done with the Blues | Buddy Guy | RCA/Silvertone | Electric Blues" (solo los 50 primeros)
+    - '^(?:[1-9]|[1-4]\d|50)\s*\|\s*(?P<titulo>[^|\n]+?)\s*\|\s*(?P<artista>[^|\n]+?)\s*\|\s*(?P<sello>[^|\n]*?)\s*\|\s*(?P<genero>[^|\n]*?)\s*$'
+
+- id: rmr_country
+  nombre: Roots Music Report – Top Country Album Chart del año
+  web: https://www.rootsmusicreport.com
+  familia: country
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: 'yearly/(\d{4})'
+  urls: []
+  paginacion:
+    anios: {plantilla: "https://www.rootsmusicreport.com/charts/print_chart/album/genre/country/yearly/{anio}", desde: 2025, hasta: anterior}
+  patrones:
+    - '^(?:[1-9]|[1-4]\d|50)\s*\|\s*(?P<titulo>[^|\n]+?)\s*\|\s*(?P<artista>[^|\n]+?)\s*\|\s*(?P<sello>[^|\n]*?)\s*\|\s*(?P<genero>[^|\n]*?)\s*$'
+
+- id: rmr_folk
+  nombre: Roots Music Report – Top Folk Album Chart del año
+  web: https://www.rootsmusicreport.com
+  familia: country
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: 'yearly/(\d{4})'
+  urls: []
+  paginacion:
+    anios: {plantilla: "https://www.rootsmusicreport.com/charts/print_chart/album/genre/folk/yearly/{anio}", desde: 2025, hasta: anterior}
+  patrones:
+    - '^(?:[1-9]|[1-4]\d|50)\s*\|\s*(?P<titulo>[^|\n]+?)\s*\|\s*(?P<artista>[^|\n]+?)\s*\|\s*(?P<sello>[^|\n]*?)\s*\|\s*(?P<genero>[^|\n]*?)\s*$'
+
+- id: rmr_bluegrass
+  nombre: Roots Music Report – Top Bluegrass Album Chart del año
+  web: https://www.rootsmusicreport.com
+  familia: country
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: 'yearly/(\d{4})'
+  urls: []
+  paginacion:
+    anios: {plantilla: "https://www.rootsmusicreport.com/charts/print_chart/album/genre/bluegrass/yearly/{anio}", desde: 2025, hasta: anterior}
+  patrones:
+    - '^(?:[1-9]|[1-4]\d|50)\s*\|\s*(?P<titulo>[^|\n]+?)\s*\|\s*(?P<artista>[^|\n]+?)\s*\|\s*(?P<sello>[^|\n]*?)\s*\|\s*(?P<genero>[^|\n]*?)\s*$'
+
+- id: rmr_bluesrock
+  nombre: Roots Music Report – Top Blues Rock Album Chart del año
+  web: https://www.rootsmusicreport.com
+  familia: blues
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: 'yearly/(\d{4})'
+  urls: []
+  paginacion:
+    anios: {plantilla: "https://www.rootsmusicreport.com/charts/print_chart/album/sub_genre/blues-rock/yearly/{anio}", desde: 2025, hasta: anterior}
+  patrones:
+    - '^(?:[1-9]|[1-4]\d|50)\s*\|\s*(?P<titulo>[^|\n]+?)\s*\|\s*(?P<artista>[^|\n]+?)\s*\|\s*(?P<sello>[^|\n]*?)\s*$'   # sin columna de subgénero
+
+- id: rushonrock_blues
+  nombre: Rush On Rock – The best blues albums
+  web: https://rushonrock.com
+  familia: blues
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: 'albums-of-(\d{4})'
+  urls: ["https://rushonrock.com/2026/01/10/the-best-blues-albums-of-2025/"]
+  texto:
+    marcas: {"em, i": "«»", "h2, h3, h4": ["##", ""]}
+  patrones:
+    - '^##\s*\d+\.\s*(?P<artista>[^–«\n]+?)\s*–\s*«(?P<titulo>[^»]+)»'
+    - '^\d+\.\s*(?P<artista>[^–«\n]+?)\s*–\s*«(?P<titulo>[^»]+)»'
+
+- id: synthpopfanatic_mejores
+  nombre: Synthpop Fanatic – The 25 best synthpop albums
+  web: https://www.synthpopfanatic.com
+  familia: synthdark
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: 'albums-of-(\d{4})'
+  urls: []
+  paginacion:
+    anios: {plantilla: "https://www.synthpopfanatic.com/best/the-25-best-synthpop-albums-of-{anio}/", desde: 2025, hasta: actual}
+  patrones:
+    # puesto, artista y disco en líneas seguidas: "25\nKite\nKite on Ice\n"
+    - '^(?:0?[1-9]|1\d|2[0-5])\n(?P<artista>[^\n]{1,80})\n(?P<titulo>[^\n]{1,100})\n'
+
+- id: postpunk_mejores
+  nombre: Post-Punk.com – The best of the year
+  web: https://post-punk.com
+  familia: synthdark
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: 'best-of-(\d{4})'
+  urls: []
+  paginacion:
+    anios: {plantilla: "https://post-punk.com/post-punk-com-the-best-of-{anio}", desde: 2025, hasta: actual}
+  patrones:
+    - '^\d{1,2}\.\s+(?P<artista>[^–\n]+?)\s+–\s+(?P<titulo>[^\n<]+?)\s*$'
 
 # ============================================================ SONDAS
 - id: bandcamp

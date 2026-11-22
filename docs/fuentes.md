@@ -189,7 +189,31 @@ sus condiciones: identificarse y 1 petición/s. Está declarada como excepción 
 | American Blues Scene | ⚠️ No se usa | Solo artículos e historia, sin discos nuevos |
 | Metal Injection: The Weekly Injection | ❌ | El RSS solo trae un resumen y los artículos piden la verificación de Cloudflare |
 | BrooklynVegan | ❌ | Su `robots.txt` no permite el feed de novedades |
-| Punknews | ❌ | El RSS de reseñas no existe (404) |
+| Punknews | ❌ | El RSS de reseñas existe (`static.punknews.org/feeds/punknews-reviews.rdf`) pero lleva parado desde el 17-sep-2026; el de noticias solo trae los 15 últimos titulares, casi nunca con el título del disco |
+
+**Segunda búsqueda (22-nov, tarde): synthwave/dark wave, metal, punk y blues.** Todas probadas con el robot real (`python -m scraper.probar ID`), respetando `robots.txt` y sin saltar ninguna verificación.
+
+| Fuente | Familia | Estado | Uso |
+|---|---|---|---|
+| **Side-Line** (side-line.com) | Synthwave y dark wave | ✅ | Noticias de discos del mundo dark electrónico, EBM, synth y goth. Titulares con ficha: `Artista – Título (Digital/CD Album – Sello)` y anuncios. Fuente mixta (también industrial y ambient): solo entra el disco con subgénero |
+| **ReGen Magazine** (regenmag.com) | Synthwave y dark wave | ✅ | Reseñas con ficha en el cuerpo: género (`Category: Synthpop / Dark Electro`), sello y **fecha de salida** exacta |
+| **Angry Metal Guy** | Rock y metal | ✅ | Reseñas `Artista – Título Review` con nota sobre 5 |
+| **Distorted Sound** | Rock y metal | ✅ | Reseñas `ALBUM REVIEW: Título – Artista` con nota sobre 10 |
+| **Blabbermouth** | Rock y metal / hard rock | ✅ | Anuncios de discos de metal y hard rock (`ARTIST To Release 'Title' Album…`). Su RSS solo trae los ~30 últimos titulares: sirve para la ejecución semanal, no para el pasado |
+| **Louder Than War** | Punk, post-punk, indie | ✅ | Reseñas `Artista: Título – Album Review` y anuncios |
+| **Psychedelic Baby Magazine** | Psicodelia, garage, prog | ✅ | Anuncios de discos |
+| Punk Rock Theory | Punk | ⚠️ Desactivada | Leídos 40 titulares: todos sencillos o vídeos, ningún álbum |
+| Post-Punk.com | Dark wave / post-punk | ⚠️ Solo su lista anual | Los titulares son frases ("La banda X explora… en “Título”") y no separan el artista; sí se usa su lista del año |
+| Synthpop Fanatic | Synth-pop | ⚠️ Solo su lista anual | Poca actividad de discos (entrevistas y canciones del mes) |
+| Electrozombies | Dark wave | ❌ | Solo canciones sueltas |
+| NewRetroWave | Synthwave | ❌ | Su RSS lleva parado desde julio de 2026 |
+| Making a Scene | Blues / roots | ❌ | Titulares `Artista TÍTULO` sin separador fiable |
+| Elmore Magazine | Blues / roots | ❌ | RSS con 3 entradas, la última de agosto |
+| No Clean Singing | Metal extremo | ❌ No se usa | Titulares en mayúsculas mezclando estrenos de canciones y discos |
+| IDIOTEQ | Hardcore | ❌ No se usa | Titulares narrativos, casi siempre de canciones |
+| Invisible Oranges | Metal | ❌ | Su `robots.txt` no permite el feed |
+| Ghost Cult, Cvlt Nation | Metal / dark | ❌ | Verificación de Cloudflare |
+| New Noise, Northern Transmissions, The Big Takeover, Kerrang! | — | ❌ | Sin RSS (o 404) |
 
 ### Listas de fin de año (para "Lo mejor de cada año")
 
@@ -206,6 +230,11 @@ sus condiciones: identificarse y 1 petición/s. Está declarada como excepción 
 | Paste: The 50 best albums | Todas (indie sobre todo) | 2025 (plantilla) | ✅ |
 | Beats Per Minute: Top 50 | Todas (indie sobre todo) | 2025 (plantilla) | ✅ |
 | **Year End Lists** (yearendlists.com): todas las listas de discos del año (Mojo, Uncut, Decibel, AllMusic, Clash, Rough Trade, críticos…) | Todas | 2025 (≈135 listas) y 2026 (las que se van publicando) | ✅ Sugerida por el usuario. `robots.txt` solo prohíbe `/search`. Incluye las de **AllMusic**, que no se puede leer directamente |
+| **Roots Music Report**: gráficas anuales de álbumes (Country, Folk, Bluegrass, Blues, Blues Rock; 50 primeros) | Country / Blues | 2025 y siguientes, solo años cerrados (plantilla por año) | ✅ Basadas en las radios de raíces: popularidad, no crítica |
+| Rush On Rock: Best blues albums | Blues | 2025 (dirección con fecha) | ✅ |
+| Synthpop Fanatic: The 25 best synthpop albums | Synthwave y dark wave | 2025 (plantilla por año) | ✅ |
+| Post-Punk.com: The best of the year | Synthwave y dark wave / post-punk | 2025 (plantilla por año) | ✅ |
+| Punk, metal y emo | — | — | Ya entran por Year End Lists: Alternative Press, Kerrang!, Louder Than War (top 100), Decibel, Loudwire, Ian Cohen (emo), A.A. Dowd (metal) |
 | Treble: 50 best | — | — | ❌ Verificación de Cloudflare |
 | Whiskey Riff: 40 best, Loudwire: best rock & metal | — | — | ❌ La lista no está en la página (se carga aparte) |
 
