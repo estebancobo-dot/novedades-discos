@@ -288,6 +288,11 @@ def main():
     estado["menciones"] = {"total": len(menciones), "sin_pareja": sin_pareja}
     _escribir(ruta(config["rutas"]["candidatos"]), salida)
     _escribir(ruta(config["rutas"]["descartados"]), sorted(descartados, key=lambda x: x["motivo"]))
+    if solo and os.path.exists(ruta(config["rutas"]["estado_fuentes"])):
+        with open(ruta(config["rutas"]["estado_fuentes"]), encoding="utf-8") as fe:
+            previo_estado = json.load(fe)
+        previo_estado.get("fuentes", {}).update(estado["fuentes"])
+        estado["fuentes"] = previo_estado.get("fuentes", estado["fuentes"])
     _escribir(ruta(config["rutas"]["estado_fuentes"]), estado)
     log(f"Discos: {len(salida)} · descartados: {len(descartados)} · peticiones: {nav.peticiones}")
 
@@ -338,9 +343,14 @@ def _anadir_fuente(disco, it: Item, por_id):
     if not any(x["id"] == f["id"] for x in disco["fuentes"]):
         disco["fuentes"].append({"id": f["id"], "nombre": f["nombre"], "rol": f.get("rol"), "url": it.url or f.get("web"),
                                  "fecha": _iso(it.fecha_publicacion or (it.fecha if it.fecha_tipo != "lanzamiento" else None))})
-    if f.get("rol") == "resena" and not any(r["fuente"] == f["id"] for r in disco["resenas"]):
+    if f.get("rol") == "resena" and not it.resenas_extra and not any(r["fuente"] == f["id"] for r in disco["resenas"]):
         disco["resenas"].append({"fuente": f["id"], "nombre": f["nombre"], "url": it.url, "nota": it.nota,
                                  "fecha": _iso(it.fecha_publicacion or it.fecha)})
+    for rx in it.resenas_extra:      # reseñas de otros medios citadas por un agregador
+        clave_r = f"{f['id']}:{normalizar(rx['medio'])}"
+        if not any(r["fuente"] == clave_r for r in disco["resenas"]):
+            disco["resenas"].append({"fuente": clave_r, "nombre": f"{rx['medio']} (vía {f['nombre'].split(' –')[0]})",
+                                     "url": it.url, "nota": rx.get("nota"), "fecha": _iso(it.fecha_publicacion)})
     for e in it.etiquetas + ([it.genero] if it.genero else []):
         if e and e not in disco["etiquetas_originales"]:
             disco["etiquetas_originales"].append(e)

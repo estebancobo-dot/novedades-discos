@@ -421,6 +421,24 @@ fuentes:
   patrones:
     - '^(?:\s*{{MES}}\s+\d{1,2}\s*\|)?\s*(?P<artista>[^|«\n]+?)\s*\|\s*«(?P<titulo>[^»]+)»\s*\|\s*(?P<genero>[^|\n]*?)\s*\|\s*(?P<sello>[^|\n]*?)\s*(?:\||$)'
 
+- id: anydecentmusic
+  nombre: Any Decent Music – agregador de crítica
+  web: http://www.anydecentmusic.com
+  familia: todas
+  rol: resena
+  mixta: true
+  lector: texto
+  fecha_es: publicacion
+  urls:
+    - http://www.anydecentmusic.com/
+    - http://www.anydecentmusic.com/chart/JustOut.aspx
+    - http://www.anydecentmusic.com/chart/Unlisted.aspx
+  texto: {enlaces: true}
+  patrones:
+    - '^⟦(?P<url>[^⟧]*/review/\d+/[^⟧]*)⟧(?P<artista>[^⟦\n]+)⟦[^⟧]*⟧(?P<titulo>[^\n⟦]+)\n(?:⟦[^⟧]*⟧\n)?(?:⟦[^⟧]*⟧)?(?P<extra>[^\n]*)'
+  # Cada cita "(9/10 - Rolling Stone)" se guarda como una reseña de ese medio.
+  resenas_en_texto: '\((?P<nota>\d{1,2}(?:\.\d)?/10)\s*-\s*(?P<medio>[^)]+)\)'
+
 - id: bandcampdaily
   nombre: Bandcamp Daily – Essential Releases
   web: https://daily.bandcamp.com

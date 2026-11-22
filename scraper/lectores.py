@@ -40,6 +40,7 @@ class Item:
     anio: int | None = None
     pistas: int | None = None
     mencion: str | None = None     # titular sin artista/título claros: se empareja después
+    resenas_extra: list = field(default_factory=list)   # reseñas citadas: [{"medio", "nota"}]
     fecha_publicacion: dt.date | None = None
     etiquetas: list[str] = field(default_factory=list)
 
@@ -97,6 +98,7 @@ def _items_de_texto(texto: str, cfg: dict, fuente: str, hoy: dt.date, fecha_defe
     patrones = _compilar(cfg.get("patrones"))
     cab = _rx(cfg.get("cabecera_fecha"))
     excluir = _rx(cfg.get("excluir"))
+    rx_resenas = _rx(cfg.get("resenas_en_texto"))
     dia_primero = bool(cfg.get("dia_primero", False))
     cabeceras = []
     if cab:
@@ -132,6 +134,11 @@ def _items_de_texto(texto: str, cfg: dict, fuente: str, hoy: dt.date, fecha_defe
                     setattr(it, k, limpiar(g[k]) if k not in ("url", "portada") else g[k].strip())
             if g.get("anio", "").isdigit():
                 it.anio = int(g["anio"])
+            if rx_resenas:
+                for mr in rx_resenas.finditer(m.group(0)):
+                    gr = mr.groupdict()
+                    if gr.get("medio"):
+                        it.resenas_extra.append({"medio": limpiar(gr["medio"]), "nota": limpiar(gr.get("nota"))})
             items.append(it)
     return items
 
