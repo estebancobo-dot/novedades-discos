@@ -832,6 +832,20 @@ fuentes:
     patrones:
       - '⟦[^⟧]*/artists/[^⟧]*⟧(?P<artista>[^\n⟦]+)\n⟦[^⟧]*/albums/[^⟧]*⟧(?P<titulo>[^\n⟦]+)'
 
+- id: shfl
+  nombre: Shfl – selección de músicos y críticos
+  web: https://theshfl.com
+  familia: todas
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: '/year/(\d{4})'
+  urls: []
+  paginacion:
+    anios: {plantilla: "https://theshfl.com/year/{anio}", desde: 2025, hasta: actual}
+  texto: {enlaces: true}
+  patrones:
+    - '^⟦[^⟧]*/album/[^⟧]*⟧(?P<titulo>[^\n⟦]+)\n(?P<artista>[^\n⟦]+)$'
+
 # ============================================================ SONDAS
 - id: bandcamp
   nombre: Bandcamp (comprobar si sigue bloqueado)

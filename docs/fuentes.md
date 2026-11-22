@@ -209,6 +209,14 @@ sus condiciones: identificarse y 1 petición/s. Está declarada como excepción 
 | Treble: 50 best | — | — | ❌ Verificación de Cloudflare |
 | Whiskey Riff: 40 best, Loudwire: best rock & metal | — | — | ❌ La lista no está en la página (se carga aparte) |
 
+### Webs sociales y de recomendación (22-nov)
+
+| Web | Qué es | ¿Se usa? |
+|---|---|---|
+| **Shfl** (theshfl.com) | Selección de discos recomendados por músicos y críticos, con página por año | ✅ Como **lista anual** ("selección de 2025/2026") para "Lo mejor del año". `/year/` está permitido; `/best-of` no (se respeta) |
+| Musicboard (musicboard.app) | Red social de valoraciones (estilo Letterboxd) | ❌ La página solo funciona con JavaScript y su `robots.txt` bloquea expresamente a los rastreadores de IA. Se respeta. Idea de UX: valoraciones y listas de usuarios (no aplicable sin comunidad) |
+| MusicTaste (musictaste.xyz) | Red social de reseñas y listas | ❌ Solo funciona con JavaScript (sus datos van por una API interna, que no se usa) |
+
 ## 7. Resumen
 
 - **En uso: 30 fuentes activas en `data/fuentes.yaml`.** Son 13 de prensa y listados de country, 8 de hard rock, 2 generalistas (Pause & Play y Bandcamp Daily), 6 de sellos y la comprobación de Bandcamp. Hay otras 3 desactivadas: Americana Highways, pendiente de tu OK, y Sleaze Roxx y Rock & Blues Muse, por su `robots.txt`. A eso se suma el enriquecimiento con MusicBrainz, Cover Art Archive y Bandcamp. Las que fallen o se bloqueen en una ejecución quedan anotadas en `data/estado_fuentes.json` y en el informe.
