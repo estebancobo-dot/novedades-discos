@@ -1758,6 +1758,46 @@
 "nombre": "Danny Golden",
 "pais": null
 },
+"art:67270a0f-4a3c-471c-a728-67d65147b8ad": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0002989775",
+"apple": "https://itunes.apple.com/us/artist/id522234713",
+"bandsintown.com": "https://www.bandsintown.com/a/873436",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb16568790r",
+"d-nb.info": "https://d-nb.info/gnd/1043031278",
+"deezer": "https://www.deezer.com/artist/1992471",
+"discogs": "https://www.discogs.com/artist/3297647",
+"facebook": "https://www.facebook.com/IAmMaggieRose",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2011168916",
+"instagram": "https://www.instagram.com/iammaggierose/",
+"last.fm": "https://www.last.fm/music/Maggie+Rose",
+"maggierosemusic.com": "http://www.maggierosemusic.com/",
+"muzikum.eu": "http://muzikum.eu/en/122-12401/maggie-rose/lyrics.html",
+"plus.google.com": "https://plus.google.com/+MaggieRoseMusic",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/maggie_rose",
+"songkick.com": "https://www.songkick.com/artists/5193328",
+"soundcloud": "https://soundcloud.com/maggieroseofficial",
+"spotify": "https://open.spotify.com/artist/4FrAfXWWNZapoX4O1LEoLn",
+"tidal": "https://tidal.com/artist/4731797",
+"twitter.com": "https://twitter.com/IAmMaggieRose",
+"viaf.org": "http://viaf.org/viaf/194780673",
+"wikidata": "https://www.wikidata.org/wiki/Q6730304",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no2011168916",
+"youtube": "https://www.youtube.com/channel/UCsc8KXnpKKTGVdUr1lWxElw"
+},
+"etiquetas": [
+"contemporary country",
+"country pop",
+"neo soul"
+],
+"generos": [
+"contemporary country",
+"country pop",
+"neo soul"
+],
+"nombre": "Maggie Rose",
+"pais": "US"
+},
 "art:6d9e7506-8b53-4dd8-992a-512b18f3b6ba": {
 "enlaces": {
 "apple": "https://music.apple.com/us/artist/1545729343",
@@ -6081,6 +6121,28 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Dying In This House"
+},
+"rg:maggie rose|half moon": {
+"artista": "Maggie Rose",
+"artistas_id": [
+"67270a0f-4a3c-471c-a728-67d65147b8ad"
+],
+"enlaces": {},
+"fecha_release": "2026-08-14",
+"idioma": "eng",
+"pais": "US",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/2c8cb478-bc0d-487e-ab3f-5767ca51c9b3/front-250",
+"primera_fecha": "2026-08-14",
+"puntuacion": 1.0,
+"release": "3e9735a3-4ca7-46bd-a45d-9511825469d6",
+"rg": "2c8cb478-bc0d-487e-ab3f-5767ca51c9b3",
+"sellos": [
+"One Riot Music"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Half Moon"
 },
 "rg:mary gauthier|reckoning": {
 "artista": "Mary Gauthier",
