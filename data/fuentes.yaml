@@ -393,7 +393,7 @@ fuentes:
   fecha_es: lanzamiento
   urls: [https://www.pauseandplay.com/release-dates/on-the-cd-front/]
   paginacion:
-    fechas: {plantilla: "https://www.pauseandplay.com/new-releases-{fecha}/", formato: "%b-%-d-%Y", minusculas: true, dia_semana: 4, semanas: 24}
+    fechas: {plantilla: "https://www.pauseandplay.com/new-releases-{fecha}/", formato: "%b-%-d-%Y", minusculas: true, dia_semana: 4, semanas: 56}
   fecha_pagina: '(?:New Music Friday|New Releases):\s*(?P<fecha>[A-Z][a-z]{2,8}\.? \d{1,2}, \d{4})'
   texto:
     desde: "New Releases (CDs + Vinyl)"

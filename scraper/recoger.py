@@ -87,6 +87,9 @@ def main():
     hasta = restar_meses(hoy, -config["ventana"]["meses_adelante"])
     margen = dt.timedelta(days=int(reglas.get("margen_dias", 14)))
     incremental = "--incremental" in args and os.path.exists(ruta(config["rutas"]["candidatos"]))
+    # --fusionar: lee toda la ventana (no solo las últimas semanas) pero conserva lo recogido antes;
+    # útil con --solo para añadir fuentes nuevas sin rehacer la recogida completa.
+    fusionar = incremental or ("--fusionar" in args and os.path.exists(ruta(config["rutas"]["candidatos"])))
     rec = config.get("recogida") or {}
     lectura_desde = hoy - dt.timedelta(days=int(rec.get("dias_relectura_incremental", 21))) if incremental else desde - margen
     nav = Navegador(config, RAIZ)
@@ -292,7 +295,7 @@ def main():
             sin_pareja += 1
     log(f"Menciones emparejadas: {len(menciones) - sin_pareja}/{len(menciones)}")
 
-    if incremental:
+    if fusionar:
         salida = _fusionar(salida, previos, desde)
     # listas de fin de año: se guardan aparte y se marcan en los discos que las tienen
     p_listas = ruta(config["rutas"].get("listas_anuales", "data/listas_anuales.json"))
