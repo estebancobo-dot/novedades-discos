@@ -11,7 +11,7 @@ import re
 import urllib.parse
 from collections import Counter
 
-from .http import Bloqueado, Navegador
+from .http import Bloqueado, Navegador, guardar_json
 from .util import normalizar, similitud
 
 API = "https://musicbrainz.org/ws/2/"
@@ -36,8 +36,12 @@ class MusicBrainz:
 
     def guardar(self):
         os.makedirs(os.path.dirname(self.ruta), exist_ok=True)
-        with open(self.ruta, "w", encoding="utf-8") as f:
-            json.dump(self.cache, f, ensure_ascii=False, indent=0, sort_keys=True)
+        for _ in range(5):      # otro hilo puede estar completando una entrada justo ahora
+            try:
+                guardar_json(self.ruta, dict(self.cache), ensure_ascii=False, indent=0, sort_keys=True)
+                return
+            except RuntimeError:
+                continue
 
     def _json(self, ruta: str) -> dict | None:
         if self.bloqueado:

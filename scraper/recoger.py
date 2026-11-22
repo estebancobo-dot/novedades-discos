@@ -12,6 +12,7 @@ import datetime as dt
 import json
 import os
 import re
+from concurrent.futures import ThreadPoolExecutor
 import sys
 from collections import defaultdict
 
@@ -193,7 +194,7 @@ def main():
                 return True
         return False
 
-    for n, d in enumerate(discos, 1):
+    def enriquecer_mb(d: dict) -> None:
         it0 = d["items"][0]
         inter = any(por_id[i.fuente].get("intercambiable") for i in d["items"])
         solo_mixta = all(por_id[i.fuente].get("mixta") for i in d["items"])
@@ -201,19 +202,25 @@ def main():
             textos = [x for i in d["items"] for x in (i.extra, i.genero) if x]
             if any(rx_ajena.search(t) for t in textos) and not de_nuestras_familias(textos):
                 d["ajeno"] = "según la descripción de la fuente"
-                continue
+                return
         d["mb"] = mb.buscar(it0.artista, it0.titulo, inter, completar=not solo_mixta) if mb else None
         d["mb_artistas"] = [mb.artista(a) for a in (d["mb"] or {}).get("artistas_id", [])[:2]] if mb and d["mb"] else []
         if solo_mixta and d["mb"]:
             etiquetas = [e for a in d["mb_artistas"] for e in (a.get("generos") or []) + (a.get("etiquetas") or [])]
             if etiquetas and not de_nuestras_familias(etiquetas):
                 d["ajeno"] = "según MusicBrainz: " + ", ".join(etiquetas[:3])
-                continue
+                return
             mb.completar(d["mb"])
-        if n % 50 == 0:
-            log(f"  MusicBrainz {n}/{len(discos)} · consultas {mb.consultas if mb else 0}")
-            if mb:
-                mb.guardar()
+
+    # MusicBrainz tarda segundos en responder: con varios hilos se aprovecha la espera, pero el
+    # ritmo sigue limitado por el intervalo de config (una petición cada 1,1 s como máximo).
+    hilos = max(1, int(config["peticiones"].get("hilos_musicbrainz", 1)))
+    with ThreadPoolExecutor(max_workers=hilos) as ex:
+        for n, _ in enumerate(ex.map(enriquecer_mb, discos), 1):
+            if n % 50 == 0:
+                log(f"  MusicBrainz {n}/{len(discos)} · consultas {mb.consultas if mb else 0}")
+                if mb:
+                    mb.guardar()
     if mb:
         mb.guardar()
 

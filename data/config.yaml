@@ -44,6 +44,9 @@ peticiones:
     - https://itunes.apple.com/search   # API de búsqueda de iTunes (Apple)
   cache_horas: 20                # no repetir la misma petición en este tiempo
   reintentos_503: 5              # MusicBrainz responde 503 cuando está saturado
+  # MusicBrainz tarda ~3-4 s en responder. Con 4 consultas en paralelo se aprovecha esa
+  # espera sin pasar nunca del intervalo de arriba (1 petición cada 1,1 s).
+  hilos_musicbrainz: 4
 
 # Señales de verificación anti-bots o bloqueo. Si aparecen, se deja la web
 # y se apunta en el informe. Nunca se intentan saltar.

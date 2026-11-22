@@ -13,7 +13,7 @@ import os
 import re
 from urllib.parse import urljoin, urlparse
 
-from .http import Bloqueado, Navegador, Prohibido
+from .http import Bloqueado, Navegador, guardar_json, Prohibido
 from .util import similitud
 
 
@@ -28,8 +28,7 @@ class Bandcamp:
                 self.cache = json.load(f)
 
     def guardar(self):
-        with open(self.ruta, "w", encoding="utf-8") as f:
-            json.dump(self.cache, f, ensure_ascii=False, indent=0, sort_keys=True)
+        guardar_json(self.ruta, dict(self.cache), ensure_ascii=False, indent=0, sort_keys=True)
 
     def _get(self, url):
         if self.bloqueado or self.abiertas >= self.maximo:

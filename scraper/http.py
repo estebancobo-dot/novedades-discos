@@ -5,12 +5,21 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import threading
 import time
 import urllib.robotparser
 from dataclasses import dataclass
 from urllib.parse import urlparse
 
 import requests
+
+
+def guardar_json(ruta: str, datos, **kw) -> None:
+    """Escritura atómica: si el proceso se corta a medias, el archivo anterior queda intacto."""
+    tmp = f"{ruta}.{os.getpid()}.{threading.get_ident()}.tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(datos, f, **kw)
+    os.replace(tmp, ruta)
 
 
 class Bloqueado(Exception):
@@ -48,6 +57,8 @@ class Navegador:
         self.dir_cache = os.path.join(raiz, config["rutas"]["cache_http"])
         os.makedirs(self.dir_cache, exist_ok=True)
         self.ultimo: dict[str, float] = {}
+        self._candados: dict[str, threading.Lock] = {}
+        self._candado_global = threading.Lock()
         self.hosts_bloqueados: dict[str, str] = {}
         self._robots: dict[str, urllib.robotparser.RobotFileParser | None] = {}
         self.sesion = requests.Session()
@@ -65,10 +76,15 @@ class Navegador:
         return self.intervalo_def
 
     def _esperar(self, host: str) -> None:
-        falta = self._intervalo(host) - (time.time() - self.ultimo.get(host, 0))
-        if falta > 0:
-            time.sleep(falta)
-        self.ultimo[host] = time.time()
+        """Respeta el intervalo entre el inicio de dos peticiones a la misma web,
+        también si varias consultas van en paralelo (un candado por web)."""
+        with self._candado_global:
+            candado = self._candados.setdefault(host, threading.Lock())
+        with candado:
+            falta = self._intervalo(host) - (time.time() - self.ultimo.get(host, 0))
+            if falta > 0:
+                time.sleep(falta)
+            self.ultimo[host] = time.time()
 
     def _ruta_cache(self, url: str) -> str:
         return os.path.join(self.dir_cache, hashlib.sha1(url.encode()).hexdigest() + ".json")
@@ -150,6 +166,5 @@ class Navegador:
             raise Bloqueado(self.hosts_bloqueados[host])
         resp = Respuesta(r.url, r.status_code, texto)
         if r.status_code == 200:
-            with open(ruta, "w", encoding="utf-8") as f:
-                json.dump({"url": r.url, "estado": r.status_code, "texto": texto}, f)
+            guardar_json(ruta, {"url": r.url, "estado": r.status_code, "texto": texto})
         return resp
