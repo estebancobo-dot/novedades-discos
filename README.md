@@ -22,6 +22,7 @@ Para probar una fuente nueva sin guardar nada: `python -m scraper.probar ID --te
 
 ```
 python -m scraper.recoger [--incremental]   # lee las fuentes, MusicBrainz y Bandcamp → data/candidatos.json
+python -m scraper.enriquecer                # Wikidata, Discogs y Last.fm, solo para discos sin subgénero
 python -m scraper.clasificar                # taxonomía + mapeo de etiquetas → data/discos.json
 python -m scraper.informe                   # → docs/informe.md
 python -m scraper.web                       # → site/data/discos.json
@@ -35,6 +36,15 @@ python -m scraper.web                       # → site/data/discos.json
   y la respuesta queda en `data/mapeo_etiquetas.csv`. La Action semanal no tiene clave de API, así
   que las nuevas quedan como `pendiente` y se resuelven en una sesión de Claude Code.
 - **Nunca se crean subgéneros nuevos automáticamente:** se proponen en el informe.
+
+## Claves opcionales (secretos del repositorio)
+
+En **Settings → Secrets and variables → Actions → New repository secret**:
+
+| Secreto | Para qué | Sin él |
+|---|---|---|
+| `LASTFM_KEY` | Etiquetas de los oyentes de Last.fm para clasificar mejor | Se omite Last.fm |
+| `DISCOGS_TOKEN` | Buscar en Discogs discos sin enlace directo | Solo se consultan los discos con enlace en MusicBrainz |
 
 ## Publicación (una sola vez)
 

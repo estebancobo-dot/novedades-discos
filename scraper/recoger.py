@@ -410,6 +410,7 @@ def _disco(d, fecha, exacta, origen, pistas, sec, por_id, hoy, previos, bc):
         "enlace_artista_bandcamp": art_enl.get("bandcamp"),
         "en_bandcamp": bool(enlaces.get("bandcamp") or art_enl.get("bandcamp")),
         "mbid": m.get("rg"),
+        "mbid_artistas": m.get("artistas_id", []),
         "requiere_subgenero": all(por_id[i.fuente].get("mixta") for i in grupo),
         "primera_mencion": None,
         "detectado": previo.get("detectado") or hoy.isoformat(),

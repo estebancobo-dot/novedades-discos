@@ -19,7 +19,8 @@ from collections import Counter, defaultdict
 from .config import cargar_config, cargar_yaml, ruta
 from .util import normalizar
 
-PESOS = {"fuente": 3, "bandcamp": 2, "musicbrainz_top": 2, "musicbrainz": 1, "descripcion": 2, "categoria": 1}
+PESOS = {"fuente": 3, "bandcamp": 2, "musicbrainz_top": 2, "musicbrainz": 1, "descripcion": 2, "categoria": 1,
+         "discogs": 3, "wikidata": 2, "lastfm": 2}
 CAMPOS_CSV = ["etiqueta", "subgenero", "origen", "fecha", "veces", "ejemplo", "nota"]
 
 
@@ -74,6 +75,8 @@ def etiquetas_de(d: dict, tax: Taxonomia) -> list[tuple[str, str]]:
     nmb = int(tax.reglas.get("max_etiquetas_musicbrainz", 8))
     for i, e in enumerate(mbbc[:nmb]):
         out.append((e, "musicbrainz_top" if i < 3 else "musicbrainz"))
+    for x in d.get("etiquetas_extra", []):
+        out.append((x["etiqueta"], x["origen"]))
     return out
 
 

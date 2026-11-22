@@ -23,6 +23,9 @@ peticiones:
   intervalos:                    # excepciones por web
     musicbrainz.org: 1.1
     bandcamp.com: 4.0
+    api.discogs.com: 2.5          # sin clave: máximo 25 peticiones/minuto
+    wikidata.org: 1.0
+    ws.audioscrobbler.com: 1.0
     coverartarchive.org: 1.0
   timeout: 30
   respetar_robots_txt: true
@@ -30,6 +33,10 @@ peticiones:
   # rastreadores web; se cumplen sus condiciones de uso (identificarse, ritmo).
   apis_documentadas:
     - https://musicbrainz.org/ws/2/     # https://musicbrainz.org/doc/MusicBrainz_API (1 petición/s)
+    - https://www.wikidata.org/wiki/Special:EntityData/   # https://www.wikidata.org/wiki/Wikidata:Data_access
+    - https://www.wikidata.org/w/api.php
+    - https://api.discogs.com/          # https://www.discogs.com/developers
+    - https://ws.audioscrobbler.com/2.0/  # https://www.last.fm/api
   cache_horas: 20                # no repetir la misma petición en este tiempo
   reintentos_503: 5              # MusicBrainz responde 503 cuando está saturado
 
@@ -80,6 +87,11 @@ enriquecimiento:
   bandcamp:
     activo: true
     max_paginas_por_ejecucion: 600
+  # Etiquetas extra solo para los discos que se quedan sin subgénero (scraper.enriquecer).
+  etiquetas_extra:
+    wikidata: {activo: true}
+    discogs: {activo: true, variable_token: DISCOGS_TOKEN}   # el token es opcional
+    lastfm: {activo: true, variable_clave: LASTFM_KEY}       # sin clave, se omite
 
 rutas:
   fuentes: data/fuentes.yaml
@@ -92,3 +104,4 @@ rutas:
   cache_http: data/cache/http
   cache_musicbrainz: data/cache/musicbrainz.json
   cache_bandcamp: data/cache/bandcamp.json
+  cache_etiquetas_extra: data/cache/etiquetas_extra.json
