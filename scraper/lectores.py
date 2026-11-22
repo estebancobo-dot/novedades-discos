@@ -168,37 +168,77 @@ def _detalle(nav: Navegador, it: Item, cfg: dict, hoy: dt.date) -> list[Item]:
     return [it]
 
 
-def _urls(cfg: dict) -> list[str]:
+def _urls(cfg: dict, hoy: dt.date | None = None, desde: dt.date | None = None) -> list[str]:
+    """Direcciones de una fuente: fijas, paginadas por número o por fecha.
+
+    paginacion: {plantilla: "...{n}...", desde: 2, hasta: 5}
+    paginacion: {fechas: {plantilla: "...{fecha}...", formato: "%b-%-d-%Y", minusculas: true,
+                          dia_semana: 4, semanas: 22}}     # 0=lunes … 4=viernes
+    """
     urls = list(cfg.get("urls") or [])
-    pag = cfg.get("paginacion")
-    if pag:
+    pag = cfg.get("paginacion") or {}
+    if pag.get("plantilla"):
         for n in range(int(pag.get("desde", 2)), int(pag.get("hasta", 3)) + 1):
             urls.append(pag["plantilla"].format(n=n))
+    fx = pag.get("fechas")
+    if fx:
+        hoy = hoy or dt.date.today()
+        d = hoy - dt.timedelta(days=(hoy.weekday() - int(fx.get("dia_semana", 4))) % 7)
+        if fx.get("excluir_actual", True):
+            d -= dt.timedelta(days=7)
+        for _ in range(int(fx.get("semanas", 4))):
+            if desde and d < desde - dt.timedelta(days=7):
+                break
+            f = d.strftime(fx.get("formato", "%Y-%m-%d"))
+            urls.append(fx["plantilla"].format(fecha=f.lower() if fx.get("minusculas") else f))
+            d -= dt.timedelta(days=7)
     return urls
+
+
+def recortar(texto: str, desde: str | None, hasta: str | None) -> str:
+    if desde and desde in texto:
+        texto = texto[texto.index(desde) + len(desde):]
+    if hasta and hasta in texto:
+        texto = texto[: texto.index(hasta)]
+    return texto
 
 
 def leer_texto(nav, cfg, hoy, desde=None) -> ResultadoFuente:
     res = ResultadoFuente(cfg["id"])
-    for url in _urls(cfg):
-        r = nav.get(url)
+    tcfg = dict(cfg.get("texto") or {})
+    desde_txt, hasta_txt = tcfg.pop("desde", None), tcfg.pop("hasta", None)
+    por_fechas = bool((cfg.get("paginacion") or {}).get("fechas"))
+    rx_fpag = _rx(cfg.get("fecha_pagina"))
+    for url in _urls(cfg, hoy, desde):
+        try:
+            r = nav.get(url)
+        except ConnectionError as e:
+            res.detalle += f" {url} → {e};"
+            continue
         res.paginas += 1
         if r.estado != 200:
-            res.detalle += f" {url} → HTTP {r.estado};"
-            if cfg.get("paginacion") and res.items:
+            if not por_fechas:
+                res.detalle += f" {url} → HTTP {r.estado};"
+            if cfg.get("paginacion") and res.items and not por_fechas:
                 break
             continue
-        t = html_a_texto(r.texto, r.url, **(cfg.get("texto") or {}))
+        completo = html_a_texto(r.texto, r.url, **tcfg)
+        t = recortar(completo, desde_txt, hasta_txt)
         ref = (fecha_de_pagina(r.texto) if cfg.get("anio_desde_publicacion") else None) or hoy
-        nuevos = _items_de_texto(t, cfg, cfg["id"], ref,
+        fdef = None
+        if rx_fpag:
+            mf = rx_fpag.search(completo)
+            fdef = parse_fecha(mf.groupdict().get("fecha") or mf.group(0), hoy) if mf else None
+        nuevos = _items_de_texto(t, cfg, cfg["id"], ref, fecha_defecto=fdef,
                                  indice=bool((cfg.get("detalle") or {}).get("patrones")))
         for it in nuevos:
             it.fecha_tipo = cfg.get("fecha_es", "lanzamiento")
             if it.fecha_tipo == "publicacion":
                 it.fecha_publicacion = it.fecha
         res.items.extend(nuevos)
-        if cfg.get("paginacion") and (not nuevos or _todo_antiguo([i.fecha for i in nuevos], desde)):
+        if cfg.get("paginacion") and not por_fechas and (not nuevos or _todo_antiguo([i.fecha for i in nuevos], desde)):
             break
-    _seguir_detalles(nav, cfg, res, hoy)
+    _seguir_detalles(nav, cfg, res, hoy, desde)
     return res
 
 
@@ -212,7 +252,7 @@ def leer_rss(nav, cfg, hoy, desde=None) -> ResultadoFuente:
     patrones = _compilar(cfg.get("patrones"))
     filtro, excluir, rx_nota = _rx(cfg.get("filtro")), _rx(cfg.get("excluir")), _rx(cfg.get("nota"))
     vistos = set()
-    for url in _urls(cfg):
+    for url in _urls(cfg, hoy):
         r = nav.get(url, acepta="application/rss+xml, application/xml, text/xml")
         res.paginas += 1
         if r.estado != 200:
@@ -261,11 +301,11 @@ def leer_rss(nav, cfg, hoy, desde=None) -> ResultadoFuente:
                 break
         if _todo_antiguo(fechas_pag, desde):
             break
-    _seguir_detalles(nav, cfg, res, hoy)
+    _seguir_detalles(nav, cfg, res, hoy, desde)
     return res
 
 
-def _seguir_detalles(nav, cfg, res: ResultadoFuente, hoy):
+def _seguir_detalles(nav, cfg, res: ResultadoFuente, hoy, desde=None):
     det = cfg.get("detalle")
     if not det:
         return
@@ -276,6 +316,8 @@ def _seguir_detalles(nav, cfg, res: ResultadoFuente, hoy):
         if det.get("patrones") and it.url in abiertas:
             continue
         quiere = it.url and not parar and abiertos < maximo
+        if quiere and desde and it.fecha and it.fecha < desde:
+            quiere = False          # fuera de la lectura de esta ejecución
         if quiere and solo_si:
             quiere = bool(solo_si.search(f"{it.artista} – {it.titulo} {it.extra or ''}"))
         if not quiere:
@@ -301,7 +343,7 @@ def _txt(e, nombre):
 
 def leer_sonda(nav, cfg, hoy, desde=None) -> ResultadoFuente:
     res = ResultadoFuente(cfg["id"])
-    for url in _urls(cfg):
+    for url in _urls(cfg, hoy):
         r = nav.get(url, usar_cache=False)
         res.paginas += 1
         res.detalle = f"responde HTTP {r.estado}"

@@ -38,6 +38,7 @@ class Navegador:
         self.intervalos = {k: float(v) for k, v in (p.get("intervalos") or {}).items()}
         self.timeout = p.get("timeout", 30)
         self.robots = p.get("respetar_robots_txt", True)
+        self.apis = list(p.get("apis_documentadas") or [])
         self.cache_seg = float(p.get("cache_horas", 20)) * 3600
         self.reintentos_503 = int(p.get("reintentos_503", 5))
         b = config["bloqueo"]
@@ -77,7 +78,7 @@ class Navegador:
 
     # ---------------------------------------------------------------- robots
     def _permitido(self, url: str) -> bool:
-        if not self.robots:
+        if not self.robots or any(url.startswith(a) for a in self.apis):
             return True
         u = urlparse(url)
         base = f"{u.scheme}://{u.netloc}"

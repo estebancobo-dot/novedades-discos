@@ -1,0 +1,191 @@
+# Taxonomía cerrada. Un disco puede tener varios subgéneros.
+# - alias: variantes de escritura de las etiquetas de origen (MusicBrainz, Bandcamp,
+#   prensa…). Se comparan sin mayúsculas, acentos ni signos.
+# - frontera: true → se etiqueta, pero no es el foco: un disco que solo tenga
+#   subgéneros frontera y venga solo de fuentes "mixtas" no entra en la web.
+# - Los subgéneros nuevos NUNCA se crean solos: se proponen en docs/informe.md.
+#
+# Para añadir una familia o un subgénero basta con editar este archivo.
+
+reglas:
+  max_subgeneros: 4
+  # Etiquetas de MusicBrainz que se miran (están ordenadas por votos).
+  max_etiquetas_musicbrainz: 8
+  # En descripciones de texto libre solo se buscan alias de 2+ palabras o con guion,
+  # para evitar falsos positivos ("western Pennsylvania").
+  alias_en_texto_min_palabras: 2
+
+familias:
+
+  country:
+    nombre: Country / Americana / Folk
+    nombre_corto: Country · Americana · Folk
+    # Indican la familia pero no un subgénero concreto.
+    genericas: [country, country music, country and western, country & western, c&w, nashville]
+    grupos:
+      Country:
+        traditional-country:
+          nombre: Traditional country
+          alias: [traditional country, classic country, neotraditional, neotraditional country, neo-traditional country, neo traditional country, old-school country, real country, traditional country music]
+        honky-tonk:
+          nombre: Honky-tonk
+          alias: [honky tonk, honky-tonk, honkytonk, honky tonk country]
+        outlaw-country:
+          nombre: Outlaw country
+          alias: [outlaw country, outlaw, outlaw music]
+        bakersfield:
+          nombre: Bakersfield
+          alias: [bakersfield, bakersfield sound]
+        western-swing:
+          nombre: Western swing
+          alias: [western swing]
+        texas-red-dirt:
+          nombre: Texas / Red Dirt
+          alias: [texas country, red dirt, red dirt country, texas red dirt, red dirt music, texas music]
+        country-pop:
+          nombre: Country pop
+          alias: [country pop, country-pop, pop country, contemporary country, mainstream country, modern country, bro-country, bro country, nashville pop, new country]
+        country-rock:
+          nombre: Country rock
+          alias: [country rock, country-rock, southern country rock]
+        cosmic-country:
+          nombre: Cosmic country
+          alias: [cosmic country, progressive country, cosmic american music, psychedelic country, psych country]
+        western:
+          nombre: Western
+          alias: [western, cowboy, cowboy songs, cowboy music, western music, cowboy western]
+      Americana:
+        americana:
+          nombre: Americana
+          alias: [americana, roots, roots music, american roots, american roots music, roots americana]
+        alt-country:
+          nombre: Alt-country
+          alias: [alt-country, alt country, alternative country, insurgent country, altcountry]
+        roots-rock:
+          nombre: Roots rock
+          alias: [roots rock, roots-rock, american roots rock]
+        southern-gothic:
+          nombre: Southern gothic
+          alias: [southern gothic, gothic americana, gothic country, dark americana, dark country]
+        country-soul:
+          nombre: Country soul
+          alias: [country soul, country-soul]
+        cowpunk:
+          nombre: Cowpunk
+          alias: [cowpunk, cow punk, country punk, punk country]
+      Bluegrass y old-time:
+        bluegrass:
+          nombre: Bluegrass
+          alias: [bluegrass, traditional bluegrass, bluegrass music]
+        newgrass:
+          nombre: Newgrass
+          alias: [newgrass, progressive bluegrass, jamgrass, new grass]
+        old-time:
+          nombre: Old-time
+          alias: [old-time, old time, oldtime, old-time music, string band, appalachian, appalachian music, clawhammer, old time music]
+      Folk:
+        singer-songwriter:
+          nombre: Singer-songwriter
+          alias: [singer-songwriter, singer songwriter, singer/songwriter, songwriter]
+        contemporary-folk:
+          nombre: Contemporary folk
+          alias: [contemporary folk, folk, modern folk, folk music, acoustic folk, american folk]
+        indie-folk:
+          nombre: Indie folk
+          alias: [indie folk, indie-folk, folk indie]
+        folk-rock:
+          nombre: Folk rock
+          alias: [folk rock, folk-rock, electric folk]
+        traditional-folk:
+          nombre: Traditional folk
+          alias: [traditional folk, trad folk, british folk, english folk, celtic folk, irish folk, scottish folk, appalachian folk, celtic, folk traditional]
+        psych-folk:
+          nombre: Psych folk
+          alias: [psych folk, psych-folk, psychedelic folk, freak folk, acid folk, freak-folk]
+        folk-pop:
+          nombre: Folk pop
+          alias: [folk pop, folk-pop, indie folk pop]
+      Fronteras:
+        country-blues:
+          nombre: Country blues
+          frontera: true
+          alias: [country blues, acoustic blues, delta blues, piedmont blues]
+        southern-gospel:
+          nombre: Southern gospel
+          frontera: true
+          alias: [southern gospel, country gospel, bluegrass gospel]
+        heartland-rock:
+          nombre: Heartland rock
+          frontera: true
+          alias: [heartland rock, heartland]
+
+  hardrock:
+    nombre: Hard rock / AOR
+    nombre_corto: Hard rock · AOR
+    genericas: [hard rock, hard-rock, hardrock, rock, classic rock, heavy rock]
+    grupos:
+      AOR y melodic:
+        aor:
+          nombre: AOR
+          alias: [aor, adult oriented rock, album oriented rock, melodic rock / aor, melodic rock aor]
+        melodic-rock:
+          nombre: Melodic rock
+          alias: [melodic rock, melodic rock / aor, melodic rock aor]
+        westcoast:
+          nombre: Westcoast
+          alias: [westcoast, west coast, west coast aor, pop aor, pop aor / westcoast, yacht rock]
+        arena-rock:
+          nombre: Arena rock
+          alias: [arena rock, stadium rock]
+        melodic-hard-rock:
+          nombre: Melodic hard rock
+          alias: [melodic hard rock, scandinavian melodic rock, swedish melodic rock, scandinavian hard rock, swedish hard rock]
+      Hard rock:
+        classic-hard-rock:
+          nombre: Classic hard rock (70s)
+          alias: [classic hard rock, 70s hard rock, 1970s hard rock, 70s rock, proto-metal, proto metal]
+        80s-hard-rock:
+          nombre: 80s hard rock
+          alias: [80s hard rock, 1980s hard rock, 80s rock, 80s hard rock / heavy metal]
+        glam-sleaze:
+          nombre: Glam / sleaze
+          alias: [glam metal, hair metal, sleaze rock, sleaze, sleaze glam, sleaze metal, pop metal, glam sleaze, hair rock]
+        blues-rock:
+          nombre: Blues rock
+          alias: [blues rock, blues-rock, hard blues, heavy blues, southern or blues rock, blues rock / hard rock]
+        southern-rock:
+          nombre: Southern rock
+          alias: [southern rock, southern or blues rock, southern hard rock]
+        modern-hard-rock:
+          nombre: Modern hard rock
+          alias: [modern hard rock, post-grunge, post grunge, active rock, modern rock, hard rock modern]
+        retro-rock:
+          nombre: Retro rock
+          alias: [retro rock, new wave of classic rock, nwocr, classic rock revival, 70s rock revival, rock revival]
+        stoner-rock:
+          nombre: Stoner rock
+          alias: [stoner rock, stoner, desert rock, fuzz rock, stoner metal]
+      Prog:
+        prog-rock:
+          nombre: Prog rock
+          alias: [progressive rock, prog rock, prog, prog-rock, symphonic prog, symphonic rock, art rock]
+        prog-aor:
+          nombre: Prog AOR / neo-prog
+          alias: [melodic prog, neo-prog, neo prog, neo-progressive, neo-progressive rock, prog aor, progressive aor, crossover prog]
+      Fronteras:
+        melodic-metal:
+          nombre: Melodic metal
+          frontera: true
+          alias: [melodic metal, melodic heavy metal]
+        power-metal:
+          nombre: Power metal
+          frontera: true
+          alias: [power metal, melodic power metal, symphonic power metal]
+        soft-rock:
+          nombre: Soft rock
+          frontera: true
+          alias: [soft rock, soft-rock, adult contemporary rock]
+
+# Etiquetas que no dicen nada de género (lugares, décadas, formatos…). No se
+# consultan al LLM ni cuentan como "sin encajar".
+ignorar: [usa, us, uk, american, british, canadian, australian, english, scottish, irish, swedish, norwegian, finnish, german, italian, nashville tennessee, texas usa, male vocalists, female vocalists, female vocals, male vocals, vocal, vocals, live, album, albums, music, new, 2020s, 2026, 2025, 2027, guitar, acoustic, instrumental, band, cover, covers, christmas, holiday, vinyl, cd, cassette, digital, debut, ep, lp, seen live, favorites, favourite, a]

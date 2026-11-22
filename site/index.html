@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Novedades · Country & Hard Rock</title>
+<meta name="description" content="Novedades discográficas de country, americana y folk, y de hard rock y AOR. Actualizado cada semana.">
+<meta name="theme-color" content="#14110f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23c8742f'/%3E%3Ccircle cx='32' cy='32' r='9' fill='%2314110f'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="cab">
+  <div class="cab-fila">
+    <h1 class="marca"><span class="disco" aria-hidden="true"></span>Novedades</h1>
+    <button class="btn-filtros" id="abrirFiltros" aria-controls="panel" aria-expanded="false">
+      Filtros <span class="contador" id="numFiltros" hidden></span>
+    </button>
+  </div>
+  <div class="cab-fila">
+    <label class="buscar">
+      <span class="sr">Buscar</span>
+      <input id="q" type="search" placeholder="Artista, disco o sello" autocomplete="off" enterkeyhint="search">
+    </label>
+  </div>
+  <nav class="familias" id="familias" role="tablist" aria-label="Familia de géneros"></nav>
+</header>
+
+<main id="contenido" aria-live="polite">
+  <p class="estado" id="estado">Cargando discos…</p>
+</main>
+
+<aside class="panel" id="panel" aria-label="Filtros" hidden>
+  <div class="panel-caja" role="dialog" aria-modal="true" aria-labelledby="tituloFiltros">
+    <div class="panel-cab">
+      <h2 id="tituloFiltros">Filtros</h2>
+      <button class="cerrar" id="cerrarFiltros" aria-label="Cerrar filtros">×</button>
+    </div>
+    <section>
+      <h3>Fechas</h3>
+      <div class="fechas">
+        <label>Desde <input type="date" id="fDesde"></label>
+        <label>Hasta <input type="date" id="fHasta"></label>
+      </div>
+    </section>
+    <section>
+      <h3>Sello</h3>
+      <input id="fSello" list="sellos" placeholder="Cualquier sello" autocomplete="off">
+      <datalist id="sellos"></datalist>
+    </section>
+    <section>
+      <h3>Subgéneros</h3>
+      <div id="subgeneros" class="grupos"></div>
+    </section>
+    <div class="panel-pie">
+      <button class="sec" id="limpiar">Limpiar</button>
+      <button class="pri" id="aplicar">Ver <span id="numResultados">0</span> discos</button>
+    </div>
+  </div>
+</aside>
+
+<dialog id="ficha" aria-labelledby="fichaTitulo"></dialog>
+
+<footer class="pie">
+  <p id="actualizado"></p>
+  <p>Datos de prensa especializada, sellos, <a href="https://musicbrainz.org">MusicBrainz</a> y Bandcamp.
+     <a href="https://github.com/estebancobo-dot/novedades-discos/blob/main/docs/informe.md">Informe</a> ·
+     <a href="https://github.com/estebancobo-dot/novedades-discos/blob/main/docs/fuentes.md">Fuentes</a></p>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

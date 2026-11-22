@@ -6,6 +6,13 @@ ventana:
   meses_atras: 5          # discos publicados desde hace N meses...
   meses_adelante: 6       # ...y anunciados hasta dentro de N meses ("próximamente")
 
+recogida:
+  # En la ejecución semanal (--incremental) solo se releen las páginas de los
+  # últimos N días; lo recogido antes se conserva mientras siga en la ventana.
+  dias_relectura_incremental: 21
+  # MusicBrainz: si un disco no aparece, se vuelve a buscar pasados N días.
+  dias_reintento_musicbrainz: 10
+
 identificacion:
   # Cómo se presenta el robot a las webs. Sin datos personales.
   user_agent: "Mozilla/5.0 (compatible; music-release-tracker/0.1)"
@@ -19,6 +26,10 @@ peticiones:
     coverartarchive.org: 1.0
   timeout: 30
   respetar_robots_txt: true
+  # APIs públicas documentadas para uso por programas. Su robots.txt va dirigido a
+  # rastreadores web; se cumplen sus condiciones de uso (identificarse, ritmo).
+  apis_documentadas:
+    - https://musicbrainz.org/ws/2/     # https://musicbrainz.org/doc/MusicBrainz_API (1 petición/s)
   cache_horas: 20                # no repetir la misma petición en este tiempo
   reintentos_503: 5              # MusicBrainz responde 503 cuando está saturado
 
@@ -46,8 +57,11 @@ reglas:
   # Tipos secundarios de MusicBrainz que no son "disco nuevo".
   tipos_secundarios_excluidos: [Compilation, Soundtrack, Remix, DJ-mix, Mixtape/Street, Demo, Interview, Audiobook, Spokenword]
   # Palabras en el título o en la descripción de la fuente que indican reedición.
-  reedicion: '(?i)\b(re-?release|reissue|re-?issue|remaster(ed)?|anniversary edition|\d+(st|nd|rd|th) anniversary|expanded edition|vinyl reissue|cd version|deluxe reissue|box set)\b'
-  ep: '(?i)(^|\W)(EP|E\.P\.)(\W|$)'
+  reedicion: '(?i)\b(re-?release|reissue|re-?issue|remaster(ed)?|anniversary edition|\d+(st|nd|rd|th) anniversary|expanded edition|vinyl reissue|cd version|deluxe reissue|deluxe (version|edition) of|box set)\b'
+  ep: '(?i)(^|\W)(EP|E\.P\.)(\W|$)'          # en tipo, título o notas cortas
+  # En descripciones largas solo cuenta si se dice que ESTE disco es un EP.
+  ep_en_descripcion: '(?i)\b(\d+|one|two|three|four|five|six|seven)[- ](song|track)\s+EP\b|^(an?|new|debut)\s+EP\b|\b(releases?|shares?|drops?|unveils?|is)\s+(an?|her|his|their|the|new|debut)\s+(new\s+|debut\s+)?EP\b'
+  largo_nota_corta: 30
   # Similitud mínima (0-1) para aceptar que un disco de MusicBrainz es el mismo.
   similitud_minima: 0.86
   # Títulos que significan "se llama como el artista".
@@ -67,7 +81,8 @@ rutas:
   fuentes: data/fuentes.yaml
   taxonomia: data/taxonomia.yaml
   mapeo_etiquetas: data/mapeo_etiquetas.csv
-  discos: data/discos.json
+  candidatos: data/candidatos.json     # salida de la recogida, antes de clasificar
+  discos: data/discos.json             # lo que publica la web
   descartados: data/descartados.json
   estado_fuentes: data/estado_fuentes.json
   cache_http: data/cache/http

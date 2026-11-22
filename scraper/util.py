@@ -73,6 +73,7 @@ def parse_fecha(texto: str | None, hoy: dt.date, dia_primero: bool = False) -> d
         return None
     t = limpiar(texto) or ""
     t = re.sub(r"(\d)(st|nd|rd|th)\b", r"\1", t, flags=re.I)
+    t = re.sub(r"\bSept\b", "Sep", t, flags=re.I)
     t = re.sub(r"\(.*?\)", "", t).strip()
     if not t:
         return None

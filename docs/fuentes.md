@@ -50,14 +50,17 @@ Leyenda: ✅ funciona · ⚠️ funciona a medias · ❌ descartada
 | **Silver Lining Music** | ✅ | La web buena es **silverliningmusic.co.uk**; silverliningmusic.com es de otra persona. RSS `/blogs/news-stories.rss` con 51 noticias (anuncios de discos, la última del 17-nov). Hay también una página `/latest-releases`, aunque muestra menús por años y no una lista con fechas. |
 | **HNE Recordings** | ❌ | hnerecordings.com no responde. Su página en Cherry Red no muestra productos en el HTML. |
 
-### Bandcamp: ❌ BLOQUEADO
+### Bandcamp: ✅ (con condiciones; ver la sección 6)
 
-Todas las páginas de Bandcamp probadas (15 subdominios de sellos, a 1 petición cada 4 s)
-devuelven **"Client Challenge – JavaScript is disabled"**, una verificación anti-bots.
-**Se ha parado y no se intenta saltar.** Consecuencias:
-- Las portadas, pistas y etiquetas se sacan de **MusicBrainz + Cover Art Archive** y de las propias fuentes.
-- El "% en Bandcamp" del informe se calcula con los **enlaces a Bandcamp que guarda MusicBrainz**, no visitando Bandcamp.
-- El robot semanal volverá a probar **una sola** página de Bandcamp. Si sigue bloqueada, no hará más peticiones y lo dirá en el informe.
+En la primera prueba, con identidad de navegador Chrome, todas las páginas devolvían
+**"Client Challenge"**, una verificación anti-bots. Con la identidad real del robot
+(`music-release-tracker/0.1`), Bandcamp sirve las páginas con normalidad. Su `robots.txt`:
+- **prohíbe** la búsqueda (`/search`), así que no se usa;
+- **permite** las páginas de disco y de artista.
+
+Por eso solo se abren discos cuyo enlace ya conocemos: lo da MusicBrainz o la página
+del artista. Ritmo: 1 petición cada 4 s. Si vuelve a aparecer la verificación, el robot
+para y lo dice en el informe.
 
 ## 4. Enriquecimiento y comparación
 
@@ -91,9 +94,42 @@ Probadas y descartadas: *The Rockpit*, *Prog Archives* y *My Global Mind* (verif
 
 ---
 
-## 6. Resumen
+## 6. Segunda verificación (21-nov, ya con el robot real)
 
-- **Funcionan bien:** 14. Prensa country: Saving Country Music, Americana UK y Twangville. Hard rock: Heavy Harmonies, Fireworks, Angelic Warlord y Get Ready to Rock. Sellos: New West, Oh Boy, Frontiers, ROAR y Silver Lining. Enriquecimiento: MusicBrainz y Cover Art Archive.
-- **A medias:** 5 (Holler, Whiskey Riff, Country Universe, MelodicRock y Escape).
-- **Descartadas:** 7 (Bandcamp, Album of the Year, Rounder, Yep Roc, Free Dirt, Thirty Tigers y HNE).
-- El mayor problema para el objetivo es que **no se puede leer Album of the Year**, y por tanto no hay comparación directa con él, y que **Bandcamp está bloqueado**.
+La fase 1 se probó con identidad de navegador. El robot se identifica honestamente
+(`Mozilla/5.0 (compatible; music-release-tracker/0.1)`) y **respeta `robots.txt`**. Con esa
+identidad, varias webs cambian:
+
+| Fuente | Antes | Ahora | Motivo |
+|---|---|---|---|
+| Bandcamp | ❌ | ✅ | Sirve las páginas al robot identificado. La búsqueda está prohibida por `robots.txt`. |
+| Rounder | ❌ | ❌ | La web ya responde, pero no tiene página de novedades y `robots.txt` prohíbe ordenar el catálogo por fecha. |
+| Americana Highways | ❌ | ✅ | El RSS responde. Está en `fuentes.yaml` desactivada, a la espera de tu OK. |
+| Sleaze Roxx | ✅ | ❌ | Su `robots.txt` prohíbe todo a cualquier robot salvo Google y similares. Se respeta. |
+| Rock & Blues Muse | ✅ | ❌ | Su `robots.txt` no permite leer el feed. Se respeta. |
+| Album of the Year, The Rockpit, Prog Archives, My Global Mind | ❌ | ❌ | Siguen con la verificación de Cloudflare. |
+
+**MusicBrainz:** su `robots.txt` cierra `/ws` a los rastreadores. Pero `/ws/2` es su
+[API pública documentada](https://musicbrainz.org/doc/MusicBrainz_API) para programas, y se cumplen
+sus condiciones: identificarse y 1 petición/s. Está declarada como excepción explícita en
+`data/config.yaml` (`apis_documentadas`).
+
+### Fuentes recomendadas en r/Music
+
+| Fuente | Estado | Uso |
+|---|---|---|
+| **Pause & Play**: On the CD Front | ✅ | Lista semanal `Artista \| "Título" (descripción) \| Sello`, con archivo por fechas (`/new-releases-nov-13-2026/`). Mezcla todos los géneros (`mixta`). Unos 580 lanzamientos en 24 semanas. **En uso.** |
+| **Bandcamp Daily**: Essential Releases | ✅ | Selección semanal con enlace directo al disco en Bandcamp. Generalista. **En uso.** |
+| Metacritic (música) | ❌ | Verificación de Cloudflare. |
+| AllMusic (New Releases) | ❌ | Verificación de Cloudflare. |
+| Album of the Year | ❌ | Verificación de Cloudflare (ver arriba). |
+| Hello Weimar Republic (Substack) | — | Se lee, pero recomienda **canciones**, no discos. No se usa. |
+
+## 7. Resumen
+
+- **En uso: 30 fuentes activas en `data/fuentes.yaml`.** Son 13 de prensa y listados de country, 8 de hard rock, 2 generalistas (Pause & Play y Bandcamp Daily), 6 de sellos y la comprobación de Bandcamp. Hay otras 3 desactivadas: Americana Highways, pendiente de tu OK, y Sleaze Roxx y Rock & Blues Muse, por su `robots.txt`. A eso se suma el enriquecimiento con MusicBrainz, Cover Art Archive y Bandcamp. Las que fallen o se bloqueen en una ejecución quedan anotadas en `data/estado_fuentes.json` y en el informe.
+- **Descartadas:**
+  - Por verificación anti-bots: Album of the Year, Metacritic, AllMusic, The Rockpit, Prog Archives y My Global Mind.
+  - Por `robots.txt`: Sleaze Roxx y Rock & Blues Muse.
+  - Por otros motivos: Rounder (sin página de novedades), Yep Roc (web parada desde 2024), Free Dirt (error de conexión segura), Thirty Tigers (sin página de novedades) y HNE (no responde).
+- **El mayor problema** para el objetivo sigue siendo que **Album of the Year no se puede leer**, así que no hay comparación directa con él.

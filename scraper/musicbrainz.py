@@ -4,6 +4,7 @@ Se guarda un resumen de cada consulta en data/cache/musicbrainz.json para no
 repetirla en ejecuciones futuras (la Action semanal reutiliza esa caché)."""
 from __future__ import annotations
 
+import datetime as dt
 import json
 import os
 import re
@@ -21,7 +22,8 @@ def _esc(s: str) -> str:
 
 
 class MusicBrainz:
-    def __init__(self, nav: Navegador, ruta_cache: str, umbral: float = 0.86):
+    def __init__(self, nav: Navegador, ruta_cache: str, umbral: float = 0.86, dias_reintento: int = 10):
+        self.dias_reintento = dias_reintento
         self.nav = nav
         self.ruta = ruta_cache
         self.umbral = umbral
@@ -58,13 +60,18 @@ class MusicBrainz:
     # ------------------------------------------------------------ búsqueda
     def buscar(self, artista: str, titulo: str, intercambiable: bool = False) -> dict | None:
         k = f"rg:{normalizar(artista)}|{normalizar(titulo)}"
-        if k in self.cache:
-            res = self.cache[k]
-        else:
+        res = self.cache.get(k)
+        if res is not None and "no_encontrado" in res:
+            dias = (dt.date.today() - dt.date.fromisoformat(res["no_encontrado"])).days
+            if dias >= self.dias_reintento:
+                res = None
+        if res is None:
             res = self._buscar(artista, titulo)
-            if res is None and self.bloqueado:
+            if res is None:          # error de red o bloqueo: no se guarda
                 return None
-            self.cache[k] = res or {}
+            self.cache[k] = res or {"no_encontrado": dt.date.today().isoformat()}
+        if "no_encontrado" in res:
+            res = {}
         if not res and intercambiable:
             return self.buscar(titulo, artista, False)
         return res or None

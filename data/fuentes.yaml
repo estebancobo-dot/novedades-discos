@@ -220,6 +220,19 @@ fuentes:
   patrones:
     - '^(?P<mencion>.+)\(ALBUM REVIEW\)'
 
+- id: americanahighways
+  nombre: Americana Highways
+  web: https://americanahighways.org
+  activa: false                 # verificada el 21-nov; pendiente de tu OK para activarla
+  familia: country
+  rol: resena
+  lector: rss
+  urls: [https://americanahighways.org/feed/]
+  paginacion: {plantilla: "https://americanahighways.org/feed/?paged={n}", desde: 2, hasta: 40}
+  filtro: '^REVIEW:'
+  patrones:
+    - '^REVIEW:\s*(?P<artista>[^“"‘\n]+?)\s+{{T}}\s*$'
+
 # ============================================================ HARD ROCK / AOR
 - id: heavyharmonies
   nombre: Heavy Harmonies – New Additions
@@ -256,11 +269,15 @@ fuentes:
   familia: hardrock
   rol: resena
   lector: texto
-  fecha_es: publicacion
+  fecha_es: lanzamiento          # la fecha sale de "Release Date:" en cada reseña
   urls: [https://www.fireworks-magazine.com/albumreviewsnew]
   texto: {enlaces: true}
   patrones:
     - '^(?!More Reviews|Our Top)(?P<artista>[^\n⟦]+)\n(?P<titulo>[^\n⟦]+)\n(?:(?P<extra>[^\n⟦]+)\n)?(?:(?P<genero>[^\n⟦]+)\n)?⟦(?P<url>[^⟧]+)⟧Read Review(?:\n(?P<tipo>New Release|Reissue|Compilation|Live|EP)$)?'
+  detalle:
+    max: 40
+    campos:
+      fecha: '^Release Date:\n(.+)$'
 
 - id: angelicwarlord
   nombre: Angelic Warlord – Release Dates
@@ -307,6 +324,7 @@ fuentes:
     - '^(?P<artista>[^«\n*]+?)\s+[-–]\s+«(?P<titulo>[^»]+)»\s*(?P<extra>[^(\n]*?)\s*(?:\((?P<sello>[^)\n]+)\))?\s*$'
 
 - id: sleazeroxx
+  activa: false                 # su robots.txt no permite leer el feed a robots (21-nov)
   nombre: Sleaze Roxx
   web: https://sleazeroxx.com
   familia: hardrock
@@ -331,6 +349,7 @@ fuentes:
   nota: *nota_10
 
 - id: rockandbluesmuse
+  activa: false                 # su robots.txt no permite leer el feed a robots (21-nov)
   nombre: Rock & Blues Muse
   web: https://rockandbluesmuse.com
   familia: hardrock
@@ -357,6 +376,45 @@ fuentes:
     marcas: {".article-name": "«»"}
   patrones:
     - '«(?P<mencion>[^»]{8,})»'
+
+# ============================================================ GENERALISTAS (todas las familias)
+# Recomendadas en r/Music. Mezclan todos los géneros: sus discos solo entran
+# si la clasificación les reconoce un subgénero de nuestra taxonomía.
+- id: pauseandplay
+  nombre: Pause & Play – On the CD Front
+  web: https://www.pauseandplay.com
+  familia: todas
+  rol: listado
+  mixta: true
+  lector: texto
+  fecha_es: lanzamiento
+  urls: [https://www.pauseandplay.com/release-dates/on-the-cd-front/]
+  paginacion:
+    fechas: {plantilla: "https://www.pauseandplay.com/new-releases-{fecha}/", formato: "%b-%-d-%Y", minusculas: true, dia_semana: 4, semanas: 24}
+  fecha_pagina: '(?:New Music Friday|New Releases):\s*(?P<fecha>[A-Z][a-z]{2,8}\.? \d{1,2}, \d{4})'
+  texto:
+    desde: "New Releases (CDs + Vinyl)"
+    hasta: "Reissues (CDs + Vinyl)"
+  patrones:
+    - '^(?P<artista>[^|\n*]+?)\s*\|\s*“(?P<titulo>[^”\n]+)”\s*(?:\((?P<extra>[^\n]*)\))?\s*\|\s*(?P<sello>[^|\n]+)$'
+
+- id: bandcampdaily
+  nombre: Bandcamp Daily – Essential Releases
+  web: https://daily.bandcamp.com
+  familia: todas
+  rol: resena
+  mixta: true
+  lector: texto
+  fecha_es: publicacion
+  urls: [https://daily.bandcamp.com/essential-releases]
+  texto: {enlaces: true}
+  patrones:
+    - '⟦(?P<url>https://daily\.bandcamp\.com/essential-releases/essential-releases-[^⟧]+)⟧'
+  detalle:
+    max: 30
+    texto: {enlaces: true}
+    patrones:
+      - '^(?P<artista>[^\n⟦]+)\n⟦(?P<url>https://[^⟧]+/album/[^⟧]+)⟧(?P<titulo>[^\n]+)$'
 
 # ============================================================ SELLOS
 - id: newwest
