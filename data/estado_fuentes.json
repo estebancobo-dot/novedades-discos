@@ -1,0 +1,53 @@
+{
+ "fecha": "2026-11-21",
+ "ventana": [
+  "2026-06-21",
+  "2027-05-21"
+ ],
+ "fuentes": {
+  "cst": {
+   "nombre": "Country Standard Time – CD releases",
+   "web": "https://www.countrystandardtime.com",
+   "familia": "country",
+   "rol": "listado",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 1,
+   "items": 34
+  },
+  "melodicrock": {
+   "nombre": "MelodicRock.com",
+   "web": "https://www.melodicrock.com",
+   "familia": "hardrock",
+   "rol": "resena",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 1,
+   "items": 7
+  },
+  "fireworks": {
+   "nombre": "Fireworks Magazine – reseñas del número actual",
+   "web": "https://www.fireworks-magazine.com",
+   "familia": "hardrock",
+   "rol": "resena",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 1,
+   "items": 9
+  }
+ },
+ "musicbrainz": {
+  "consultas": 97,
+  "bloqueado": null
+ },
+ "bandcamp": {
+  "paginas": 4,
+  "bloqueado": null
+ },
+ "peticiones": 166,
+ "hosts_bloqueados": {},
+ "menciones": {
+  "total": 0,
+  "sin_pareja": 0
+ }
+}
