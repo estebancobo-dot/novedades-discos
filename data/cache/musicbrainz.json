@@ -67,6 +67,19 @@
 "nombre": "AJ Lee & Blue Summit",
 "pais": "US"
 },
+"art:00f0cfa6-724e-4d50-8779-79a21d11654a": {
+"enlaces": {
+"apple": "https://music.apple.com/us/artist/1078649544",
+"facebook": "https://www.facebook.com/trainhoppers",
+"instagram": "https://www.instagram.com/thetrainhoppers/",
+"legendarytrainhoppers.com": "https://www.legendarytrainhoppers.com/",
+"spotify": "https://open.spotify.com/artist/0JMeGoqlc608VDsSgPGOFD"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "The Legendary Trainhoppers",
+"pais": "US"
+},
 "art:0144a479-f531-4e4c-8ca1-6db226f113d7": {
 "enlaces": {
 "apple": "https://music.apple.com/us/artist/1744636210",
@@ -438,6 +451,43 @@
 "generos": [],
 "nombre": "Jack Browning",
 "pais": "US"
+},
+"art:125dbfb8-2938-44c5-a507-6a8d457413ae": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0004724810",
+"amazon": "https://music.amazon.co.uk/artists/B07KS1S56B",
+"apple": "https://music.apple.com/gb/artist/1682933085",
+"bandsintown.com": "https://www.bandsintown.com/a/15520792",
+"deezer": "https://www.deezer.com/artist/186506977",
+"discogs": "https://www.discogs.com/artist/14740045",
+"facebook": "https://www.facebook.com/keysideliverpool",
+"genius.com": "https://genius.com/artists/Keyside",
+"instagram": "https://www.instagram.com/keysideliverpool/",
+"keysidemusic.com": "https://www.keysidemusic.com/",
+"last.fm": "https://www.last.fm/music/Keyside",
+"musixmatch.com": "https://www.musixmatch.com/artist/Keyside-1",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/keyside",
+"setlist.fm": "https://www.setlist.fm/setlists/keyside-7bf89ac0.html",
+"songkick.com": "https://www.songkick.com/artists/10315875",
+"soundcloud": "https://soundcloud.com/keyside",
+"spotify": "https://open.spotify.com/artist/5MeZ5u4TlMBV5juRYYqVVo",
+"ticketmaster.co.uk": "https://www.ticketmaster.co.uk/artist/5419693",
+"tidal": "https://tidal.com/artist/34971318",
+"tiktok.com": "https://www.tiktok.com/@keysideliverpool",
+"twitter.com": "https://twitter.com/keysideliv",
+"wikidata": "https://www.wikidata.org/wiki/Q140957968",
+"youtube": "https://www.youtube.com/@keyside"
+},
+"etiquetas": [
+"indie pop",
+"indie rock"
+],
+"generos": [
+"indie pop",
+"indie rock"
+],
+"nombre": "Keyside",
+"pais": "GB"
 },
 "art:13513a8a-e9a8-4367-b9e4-410fef5bed3a": {
 "enlaces": {
@@ -842,6 +892,44 @@
 "nombre": "Scotty McCreery",
 "pais": "US"
 },
+"art:231ff972-4e8e-4157-95e2-12f963cb478c": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0001939829",
+"apple": "https://music.apple.com/us/artist/187237323",
+"bbc.co.uk": "https://www.bbc.co.uk/music/artists/231ff972-4e8e-4157-95e2-12f963cb478c",
+"beatport.com": "https://www.beatport.com/artist/seasick-steve/43171",
+"deezer": "https://www.deezer.com/artist/133271",
+"discogs": "https://www.discogs.com/artist/259408",
+"facebook": "https://www.facebook.com/seasicksteve",
+"imdb.com": "https://www.imdb.com/name/nm3342132/",
+"last.fm": "https://www.last.fm/music/Seasick+Steve",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/seasick-steve/",
+"muzikum.eu": "http://muzikum.eu/en/122-12884/seasick-steve/lyrics.html",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/seasick_steve",
+"seasicksteve.com": "http://www.seasicksteve.com/",
+"spotify": "https://open.spotify.com/artist/6OVkHZQP8QoBYqr1ejCGDv",
+"tidal": "https://tidal.com/artist/23477",
+"twitter.com": "https://twitter.com/seasicksteve",
+"wikidata": "https://www.wikidata.org/wiki/Q460682",
+"worldelectricguitar.ru": "http://worldelectricguitar.ru/musician/Seasick_Steve.php",
+"youtube": "https://www.youtube.com/channel/UCdtsqrY3su1p2NoAZ0m8TJQ"
+},
+"etiquetas": [
+"blues",
+"acoustic blues",
+"country blues",
+"jazz and blues",
+"modern blues"
+],
+"generos": [
+"blues",
+"acoustic blues",
+"country blues",
+"modern blues"
+],
+"nombre": "Seasick Steve",
+"pais": "US"
+},
 "art:2449300a-6ca7-45da-8102-22789d256475": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0000299394",
@@ -1095,6 +1183,16 @@
 "nombre": "Kaitlin Butts",
 "pais": "US"
 },
+"art:2a5b99aa-4afe-4890-895b-669b493403cd": {
+"enlaces": {
+"bandcamp": "https://startercar.bandcamp.com/",
+"instagram": "https://www.instagram.com/starter.car/"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Starter Car",
+"pais": "GB"
+},
 "art:2b062b0c-5324-40a6-b437-0692a099cfa9": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0001993836",
@@ -1147,6 +1245,25 @@
 "generos": [],
 "nombre": "Jon Allen",
 "pais": "GB"
+},
+"art:2e84443c-dc23-4b65-922a-f96b8a73d602": {
+"enlaces": {
+"bandcamp": "https://personaltrainer.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/1703284",
+"discogs": "https://www.discogs.com/artist/4887515",
+"facebook": "https://www.facebook.com/personaltrainermusic",
+"instagram": "https://www.instagram.com/personaltrainertheband/",
+"last.fm": "https://www.last.fm/music/Personal+Trainer",
+"personaltrainertheband.com": "https://www.personaltrainertheband.com/",
+"qobuz": "https://open.qobuz.com/artist/3653028",
+"soundcloud": "https://soundcloud.com/user-861607557",
+"spotify": "https://open.spotify.com/artist/2zm5WsGFYihLD85ZTRcpoc",
+"twitter.com": "https://twitter.com/prsnl_trnr"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Personal Trainer",
+"pais": "NL"
 },
 "art:306ebc54-d11c-4bf4-9f37-27adc37d00b4": {
 "enlaces": {
@@ -1353,6 +1470,35 @@
 "generos": [],
 "nombre": "Fanny Lumsden",
 "pais": "AU"
+},
+"art:340e6808-2442-4e05-8bf1-f422f6e0da2e": {
+"enlaces": {
+"bandcamp": "https://mrplowsplace.bandcamp.com/",
+"discogs": "https://www.discogs.com/artist/1472383"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Mr Plow",
+"pais": "GB"
+},
+"art:35f96e44-0f8c-495b-979a-55de67ff3b4f": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1572692241",
+"bandcamp": "https://elanormoss.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/136456762",
+"discogs": "https://www.discogs.com/artist/11105003",
+"elanormoss.com": "https://www.elanormoss.com/",
+"facebook": "https://www.facebook.com/elanor.moss",
+"instagram": "https://www.instagram.com/elanor.moss/",
+"qobuz": "https://open.qobuz.com/artist/12301137",
+"spotify": "https://open.spotify.com/artist/0zyFWHrZsZXBupeqrDkLtz",
+"tidal": "https://tidal.com/artist/26121878",
+"twitter.com": "https://twitter.com/elanor_moss"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Elanor Moss",
+"pais": "GB"
 },
 "art:369d3523-46b1-4127-8664-128f214d0a65": {
 "enlaces": {
@@ -1912,6 +2058,13 @@
 "nombre": "Jess Williamson",
 "pais": "US"
 },
+"art:48630c3c-0c89-483f-a0d5-1291c9c764cf": {
+"enlaces": {},
+"etiquetas": [],
+"generos": [],
+"nombre": "Sequoia",
+"pais": null
+},
 "art:48a6d065-1fda-4280-ae39-df1394d419cd": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0002083707",
@@ -2259,6 +2412,29 @@
 "nombre": "Elijah Ocean",
 "pais": null
 },
+"art:547e23af-e455-41dd-baae-a3b58e065d0c": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000226612",
+"bbc.co.uk": "https://www.bbc.co.uk/music/artists/547e23af-e455-41dd-baae-a3b58e065d0c",
+"damiendempsey.com": "http://www.damiendempsey.com/",
+"discogs": "https://www.discogs.com/artist/920155",
+"genius.com": "https://genius.com/artists/Damien-dempsey",
+"last.fm": "https://www.last.fm/music/Damien%20Dempsey",
+"myspace.com": "https://myspace.com/damiendempsey",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/damien_dempsey",
+"spotify": "https://open.spotify.com/artist/0bmF1w9eyJrY4CHyjpTQOW",
+"wikidata": "https://www.wikidata.org/wiki/Q5212415"
+},
+"etiquetas": [
+"eye of the clock",
+"folk"
+],
+"generos": [
+"folk"
+],
+"nombre": "Damien Dempsey",
+"pais": "IE"
+},
 "art:576bd7b1-d134-4888-a353-cb32539d67a0": {
 "enlaces": {
 "apple": "https://music.apple.com/gb/artist/193505292",
@@ -2319,6 +2495,23 @@
 "etiquetas": [],
 "generos": [],
 "nombre": "Andrew Sa",
+"pais": "US"
+},
+"art:5948581e-35e6-43ee-9cbe-6db50c9b9003": {
+"enlaces": {
+"alex-dupree.com": "https://alex-dupree.com/",
+"bandcamp": "https://alexdupree.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/61028042",
+"discogs": "https://www.discogs.com/artist/3430325",
+"instagram": "https://www.instagram.com/alexdupreemusic/",
+"qobuz": "https://www.qobuz.com/us-en/interpreter/alex-dupree/4364657",
+"spotify": "https://open.spotify.com/artist/0Bmjykn6NrXq1BLkGPf8lF",
+"tidal": "https://tidal.com/artist/15211794",
+"twitter.com": "https://twitter.com/dupralex"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Alex Dupree",
 "pais": "US"
 },
 "art:59a755d0-a244-4771-8142-484a43cc1686": {
@@ -2445,6 +2638,16 @@
 "etiquetas": [],
 "generos": [],
 "nombre": "Jude Brothers",
+"pais": "US"
+},
+"art:5fe3a59e-b6a1-46e1-8aab-b70392bc2615": {
+"enlaces": {
+"bandcamp": "https://davidcoller.bandcamp.com/",
+"davidcoller.com": "https://davidcoller.com/"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "David Coller",
 "pais": "US"
 },
 "art:6198dafd-9515-49a5-925c-1cb056d92ae4": {
@@ -2668,6 +2871,28 @@
 "neo soul"
 ],
 "nombre": "Maggie Rose",
+"pais": "US"
+},
+"art:6b46ed33-fea4-41ef-abc9-192c6f8a6082": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000339394",
+"beatport.com": "https://www.beatport.com/artist/chris-pierce/785142",
+"chrispierce.com": "http://www.chrispierce.com/",
+"discogs": "https://www.discogs.com/artist/4073169",
+"facebook": "https://www.facebook.com/chrispiercemusic",
+"imdb.com": "https://www.imdb.com/name/nm5134334/",
+"instagram": "https://www.instagram.com/iamchrispierce/",
+"last.fm": "https://www.last.fm/music/Chris%20Pierce",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/chris_pierce",
+"spotify": "https://open.spotify.com/artist/559oVBc653k5TOpiwhhr3r",
+"tidal": "https://tidal.com/artist/4609766",
+"twitter.com": "https://twitter.com/chrispierce",
+"wikidata": "https://www.wikidata.org/wiki/Q5107761",
+"youtube": "https://www.youtube.com/channel/UCRrelNCMCS1VF36N-b4Azfw"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Chris Pierce",
 "pais": "US"
 },
 "art:6d9e7506-8b53-4dd8-992a-512b18f3b6ba": {
@@ -2905,6 +3130,17 @@
 "nombre": "The Chrome Hearts",
 "pais": "US"
 },
+"art:776c0a47-11a6-42f1-8313-185f2d81ea03": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1472633673",
+"bandcamp": "https://paulmcclure.bandcamp.com/",
+"paulmccluremusic.com": "https://www.paulmccluremusic.com/"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Paul McClure",
+"pais": "GB"
+},
 "art:79ea86cf-ced7-4109-859d-66e3db5b5797": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0002780418",
@@ -2975,6 +3211,23 @@
 "nombre": "Brothers Osborne",
 "pais": "US"
 },
+"art:7c61c427-8c9b-43a3-8735-5ec2b475a5e7": {
+"enlaces": {
+"bronwynkeithhynes.com": "http://www.bronwynkeithhynes.com/",
+"discogs": "https://www.discogs.com/artist/4083734",
+"facebook": "https://www.facebook.com/bkhfiddler",
+"spotify": "https://open.spotify.com/artist/03d64K2pahKcY9cyDvh1XO",
+"youtube": "https://www.youtube.com/channel/UCLtaGB54e74SCEpqa-zgHlw"
+},
+"etiquetas": [
+"bluegrass"
+],
+"generos": [
+"bluegrass"
+],
+"nombre": "Bronwyn Keith-Hynes",
+"pais": "US"
+},
 "art:7cf95471-55e9-411f-a242-eebfea1e501f": {
 "enlaces": {
 "bandcamp": "https://louisebichan.bandcamp.com/",
@@ -3018,6 +3271,15 @@
 ],
 "nombre": "Katie Pruitt",
 "pais": "US"
+},
+"art:7f8fe777-4c9c-4e48-bd95-c81d1fd541f6": {
+"enlaces": {
+"discogs": "https://www.discogs.com/artist/8122828"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Moon Attendant",
+"pais": null
 },
 "art:80ccfede-c258-4575-a7ad-c982e9932e0f": {
 "enlaces": {
@@ -3240,6 +3502,56 @@
 "nombre": "Boy Golden",
 "pais": "CA"
 },
+"art:8951c87f-f730-4247-b442-52ed14ad6a97": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000138844",
+"apple": "https://music.apple.com/us/artist/6417520",
+"bandcamp": "https://lauraveirs.bandcamp.com/",
+"bbc.co.uk": "https://www.bbc.co.uk/music/artists/8951c87f-f730-4247-b442-52ed14ad6a97",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb145437362",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:Laura_Veirs.jpg",
+"d-nb.info": "https://d-nb.info/gnd/135422272",
+"deezer": "https://www.deezer.com/artist/2037",
+"discogs": "https://www.discogs.com/artist/360660",
+"facebook": "https://www.facebook.com/LauraVeirs",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2004100368",
+"imdb.com": "https://www.imdb.com/name/nm2238344/",
+"last.fm": "https://www.last.fm/music/Laura+Veirs",
+"lauraveirs.com": "http://www.lauraveirs.com/",
+"muzikum.eu": "http://muzikum.eu/en/122-13975/laura-veirs/lyrics.html",
+"myspace.com": "https://myspace.com/lauraveirs",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/laura_veirs",
+"songkick.com": "https://www.songkick.com/artists/531115",
+"spotify": "https://open.spotify.com/artist/0jkK3K1ATFFHofEWjd2i00",
+"tidal": "https://tidal.com/artist/15465",
+"twitter.com": "https://twitter.com/lauraveirs",
+"viaf.org": "http://viaf.org/viaf/10087893",
+"wikidata": "https://www.wikidata.org/wiki/Q508462",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no2004100368/",
+"youtube": "https://www.youtube.com/user/RavenMarchingBand"
+},
+"etiquetas": [
+"indie folk",
+"folk",
+"singer-songwriter",
+"alternative country",
+"alternative rock",
+"female vocalist",
+"folk rock",
+"indie rock"
+],
+"generos": [
+"indie folk",
+"folk",
+"singer-songwriter",
+"alternative country",
+"alternative rock",
+"folk rock",
+"indie rock"
+],
+"nombre": "Laura Veirs",
+"pais": "US"
+},
 "art:89ad4ac3-39f7-470e-963a-56509c546377": {
 "enlaces": {
 "amazon": "https://music.amazon.com/artists/B000QJO93Y",
@@ -3314,6 +3626,33 @@
 "nombre": "Sam Morrow",
 "pais": "US"
 },
+"art:8d1e1f75-ddc2-4a45-a63f-e8ea61bb4175": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000848592",
+"deezer": "https://www.deezer.com/artist/390334",
+"discogs": "https://www.discogs.com/artist/340742",
+"facebook": "https://www.facebook.com/ListenToPieta",
+"instagram": "https://www.instagram.com/pieta_music/",
+"pietabrown.com": "http://www.pietabrown.com/",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/pieta_brown",
+"spotify": "https://open.spotify.com/artist/43NpjLskaVb5j2Jgt6fdbP",
+"twitter.com": "https://twitter.com/pietabrown",
+"viaf.org": "http://viaf.org/viaf/102741499",
+"wikidata": "https://www.wikidata.org/wiki/Q7192739",
+"worldcat.org": "http://www.worldcat.org/wcidentities/lccn-no2003-36646",
+"youtube": "https://www.youtube.com/user/pietabrown"
+},
+"etiquetas": [
+"country",
+"folk"
+],
+"generos": [
+"country",
+"folk"
+],
+"nombre": "Pieta Brown",
+"pais": "US"
+},
 "art:8fec36ae-abfa-4ab9-bd48-87f42203255b": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0000129254",
@@ -3368,6 +3707,35 @@
 "etiquetas": [],
 "generos": [],
 "nombre": "Jack Blocker",
+"pais": "US"
+},
+"art:91e07743-761b-40f4-b4cb-f3dd72b4c26c": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0003906533",
+"apple": "https://music.apple.com/se/artist/988096342",
+"bandcamp": "https://margocilker.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/12287480",
+"discogs": "https://www.discogs.com/artist/10277866",
+"facebook": "https://www.facebook.com/margocilker",
+"instagram": "https://www.instagram.com/margocilker/",
+"last.fm": "https://www.last.fm/music/Margo+Cilker",
+"margocilkermusic.com": "https://www.margocilkermusic.com/",
+"qobuz": "https://open.qobuz.com/artist/8890572",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/margo-cilker",
+"spotify": "https://open.spotify.com/artist/5E9q1sbVJ2MCiI8MMdPvj7",
+"tidal": "https://tidal.com/artist/13428903",
+"twitter.com": "https://twitter.com/margocilker",
+"wikidata": "https://www.wikidata.org/wiki/Q122538354"
+},
+"etiquetas": [
+"alternative country",
+"country folk"
+],
+"generos": [
+"alternative country",
+"country folk"
+],
+"nombre": "Margo Cilker",
 "pais": "US"
 },
 "art:91e617ef-bf31-479c-abc5-0df20cf5365f": {
@@ -3542,6 +3910,28 @@
 "generos": [],
 "nombre": "Addison Johnson",
 "pais": "US"
+},
+"art:9cf1a619-de7c-4753-8e70-195d9e03cccb": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1091343483",
+"bandcamp": "https://mygirltheriver.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/9986930",
+"discogs": "https://www.discogs.com/artist/5741694",
+"qobuz": "https://open.qobuz.com/artist/2583304",
+"spotify": "https://open.spotify.com/artist/3803fXOC386pR51se9ypMB",
+"supertinyrecords.com": "http://www.supertinyrecords.com/mgtr/",
+"tidal": "https://tidal.com/artist/7664905"
+},
+"etiquetas": [
+"americana",
+"folk rock"
+],
+"generos": [
+"americana",
+"folk rock"
+],
+"nombre": "My Girl The River",
+"pais": null
 },
 "art:9dd9a2fb-891e-44d8-97ef-ca1d69aa2d7a": {
 "enlaces": {
@@ -3722,6 +4112,37 @@
 "nombre": "Sera Cahoone",
 "pais": "US"
 },
+"art:a475b03f-2074-41e3-a8f0-8ec007414289": {
+"enlaces": {
+"apple": "https://music.apple.com/us/artist/1554990781",
+"bandcamp": "https://tworunner.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/124384462",
+"discogs": "https://www.discogs.com/artist/12744383",
+"last.fm": "https://www.last.fm/music/Two+Runner",
+"qobuz": "https://open.qobuz.com/artist/14106112",
+"spotify": "https://open.spotify.com/artist/4pMqJEcrPoNT1QZgIUKBWg",
+"tidal": "https://tidal.com/artist/23644746",
+"tworunnermusic.com": "https://tworunnermusic.com/",
+"web.archive.org": "https://web.archive.org/web/0/https://i.scdn.co/image/ab6761610000e5ebe1ed69b02a758814effe819f"
+},
+"etiquetas": [
+"americana",
+"bluegrass",
+"acoustic folk",
+"american roots",
+"folk",
+"progressive bluegrass",
+"yallternative"
+],
+"generos": [
+"americana",
+"bluegrass",
+"folk",
+"progressive bluegrass"
+],
+"nombre": "Two Runner",
+"pais": "US"
+},
 "art:a67cfd12-4129-4fb6-8772-24ef77a3798f": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0004992099",
@@ -3738,6 +4159,30 @@
 "generos": [],
 "nombre": "Dogwood Tales",
 "pais": "US"
+},
+"art:a9dfcd98-ccd4-4482-adfa-23ca892e405b": {
+"enlaces": {
+"discogs": "https://www.discogs.com/artist/7085781",
+"facebook": "https://www.facebook.com/FerrisandSylvester",
+"ferrisandsylvester.co.uk": "http://www.ferrisandsylvester.co.uk/",
+"instagram": "https://www.instagram.com/ferrisandsylvestermusic/",
+"paradigmagency.com": "https://www.paradigmagency.com/music/ferris-and-sylvester/",
+"soundcloud": "https://soundcloud.com/ferrisandsylvester",
+"spotify": "https://open.spotify.com/artist/1LnhhjMNydIGawXsnfNhCf",
+"twitter.com": "https://twitter.com/FerrisSylvester",
+"youtube": "https://www.youtube.com/channel/UCnwh5bFthR6r-X0jQTZuFcA"
+},
+"etiquetas": [
+"americana",
+"ferris & sylvester",
+"folk"
+],
+"generos": [
+"americana",
+"folk"
+],
+"nombre": "Ferris & Sylvester",
+"pais": "GB"
 },
 "art:aab35942-f176-4f77-bbf9-1d6aa98ccf3f": {
 "enlaces": {
@@ -3972,6 +4417,56 @@
 "nombre": "JP Harris",
 "pais": "US"
 },
+"art:b53b9322-7d65-4b17-ae4c-9190d347fcea": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0003269644",
+"apple": "https://music.apple.com/us/artist/383027971",
+"bandcamp": "https://margoprice.bandcamp.com/",
+"d-nb.info": "https://d-nb.info/gnd/114488134X",
+"deezer": "https://www.deezer.com/artist/9587668",
+"discogs": "https://www.discogs.com/artist/4319603",
+"facebook": "https://www.facebook.com/MargoAndThePriceTags",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2016062925",
+"imdb.com": "https://www.imdb.com/name/nm7863869/",
+"instagram": "https://www.instagram.com/missmargoprice/",
+"last.fm": "https://www.last.fm/music/Margo%20Price",
+"margoprice.net": "http://margoprice.net/",
+"qobuz": "https://open.qobuz.com/artist/2521362",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/margo-price",
+"songkick.com": "https://www.songkick.com/artists/8320753",
+"spotify": "https://open.spotify.com/artist/09yvLritEUxHrzx5TlFvbl",
+"tidal": "https://tidal.com/artist/7432496",
+"twitter.com": "https://twitter.com/MissMargoPrice",
+"viaf.org": "http://viaf.org/viaf/107146331912618691844",
+"wikidata": "https://www.wikidata.org/wiki/Q22073688",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no2016062925/",
+"youtube": "https://www.youtube.com/channel/UCLdh7XEd3vOGDTAPa0D7H5g"
+},
+"etiquetas": [
+"country",
+"americana",
+"alternative country",
+"alternative rock",
+"country rock",
+"country soul",
+"outlaw country",
+"rock",
+"singer-songwriter"
+],
+"generos": [
+"country",
+"americana",
+"alternative country",
+"alternative rock",
+"country rock",
+"country soul",
+"outlaw country",
+"rock",
+"singer-songwriter"
+],
+"nombre": "Margo Price",
+"pais": "US"
+},
 "art:b5da0159-3838-4696-9959-947cc641db79": {
 "enlaces": {
 "apple": "https://music.apple.com/gb/artist/1043797030",
@@ -3988,6 +4483,45 @@
 "etiquetas": [],
 "generos": [],
 "nombre": "Kelly Hunt",
+"pais": "US"
+},
+"art:b7c4125d-2867-4e29-ba44-b19a69309c68": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000342541",
+"apple": "https://music.apple.com/us/artist/2322622",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb16149825q",
+"d-nb.info": "https://d-nb.info/gnd/13523302X",
+"deezer": "https://www.deezer.com/artist/4097091",
+"discogs": "https://www.discogs.com/artist/286040",
+"facebook": "https://www.facebook.com/jimjamesmusic",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2008064818",
+"imdb.com": "https://www.imdb.com/name/nm1655180/",
+"imvdb.com": "https://imvdb.com/n/jim-james",
+"last.fm": "https://www.last.fm/music/Jim+James",
+"pitchfork.com": "http://pitchfork.com/features/interview/5868-my-morning-jacket/",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/jim_james",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/46892",
+"songkick.com": "https://www.songkick.com/artists/596190",
+"spotify": "https://open.spotify.com/artist/1MhtYlJvUqfd2EgHSQTGK4",
+"tidal": "https://tidal.com/artist/4162102",
+"twitter.com": "https://twitter.com/jimjames",
+"viaf.org": "http://viaf.org/viaf/101025673",
+"wikidata": "https://www.wikidata.org/wiki/Q3178845",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no2008064818",
+"yimyames.com": "http://www.yimyames.com/",
+"youtube": "https://www.youtube.com/channel/UCzv3wrFXUjC-BcsXIfijDiQ"
+},
+"etiquetas": [
+"folk rock",
+"indie folk",
+"indie rock"
+],
+"generos": [
+"folk rock",
+"indie folk",
+"indie rock"
+],
+"nombre": "Jim James",
 "pais": "US"
 },
 "art:ba20e3b1-4ee9-4a5a-b4fe-efaf4388686e": {
@@ -4068,6 +4602,32 @@
 "etiquetas": [],
 "generos": [],
 "nombre": "Riley Downing",
+"pais": "US"
+},
+"art:c02617f9-2408-4434-8588-d06a123b73c0": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0003181047",
+"apple": "https://music.apple.com/us/artist/189732852",
+"bandcamp": "https://fruition.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/5119675",
+"discogs": "https://www.discogs.com/artist/2822805",
+"facebook": "https://www.facebook.com/fruitionpdx",
+"fruitionband.com": "https://www.fruitionband.com/",
+"spotify": "https://open.spotify.com/artist/4dDqxbEKfPN3RZYrGr36y8"
+},
+"etiquetas": [
+"folk",
+"folk rock",
+"rock",
+"soul"
+],
+"generos": [
+"folk",
+"folk rock",
+"rock",
+"soul"
+],
+"nombre": "Fruition",
 "pais": "US"
 },
 "art:c20fd948-fb2b-482d-9582-1fe53f15d546": {
@@ -4278,6 +4838,53 @@
 ],
 "nombre": "Ashley Cooke",
 "pais": "US"
+},
+"art:cb0b7933-a5bc-48dc-a36b-00315d12ca8c": {
+"enlaces": {
+"45cat.com": "https://www.45cat.com/cdalbum/artist/gin-wigmore",
+"allmusic": "https://www.allmusic.com/artist/mn0001022240",
+"apple": "https://itunes.apple.com/mx/artist/id280322993",
+"bandsintown.com": "https://www.bandsintown.com/a/199530",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:Gin_Wigmore.jpg",
+"d-nb.info": "https://d-nb.info/gnd/140859675",
+"deezer": "https://www.deezer.com/artist/132842",
+"discogs": "https://www.discogs.com/artist/1551843",
+"facebook": "https://www.facebook.com/GinWigmore",
+"ginwigmore.com": "https://www.ginwigmore.com/",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2009203968",
+"id.oclc.org": "https://id.oclc.org/worldcat/entity/E39PBJckJDGM7kYtB3TC4cMwYP",
+"imvdb.com": "https://imvdb.com/n/gin-wigmore",
+"instagram": "https://www.instagram.com/ginwigmore/",
+"jaxsta.com": "https://jaxsta.com/profile/824eec5b-e13c-40a7-8f2d-a24e5f74e274",
+"last.fm": "https://www.last.fm/music/Gin%20Wigmore",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/363213/",
+"myspace.com": "https://myspace.com/ginwigmore",
+"qobuz": "https://open.qobuz.com/artist/118480",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/gin_wigmore",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/121031",
+"setlist.fm": "https://www.setlist.fm/setlists/wd-23d43897.html",
+"songkick.com": "https://www.songkick.com/artists/2501116",
+"spotify": "https://open.spotify.com/artist/4Gzfk9Lxm67nBs7E9BZjzG",
+"tidal": "https://tidal.com/artist/3562466",
+"twitter.com": "https://twitter.com/gin_wigmore",
+"viaf.org": "http://viaf.org/viaf/107836529",
+"wikidata": "https://www.wikidata.org/wiki/Q441908",
+"youtube": "https://www.youtube.com/channel/UC89m7zFv8ozNUvU4ucXXbIQ"
+},
+"etiquetas": [
+"alternative rock",
+"blues rock",
+"pop rock",
+"rock"
+],
+"generos": [
+"alternative rock",
+"blues rock",
+"pop rock",
+"rock"
+],
+"nombre": "Gin Wigmore",
+"pais": "NZ"
 },
 "art:cc45b39c-c7c2-4db3-98f2-9c0220c76d7c": {
 "enlaces": {
@@ -5130,6 +5737,41 @@
 "nombre": "Frontline",
 "pais": "DE"
 },
+"art:eb04cb4e-9a20-4f89-9b73-652653844cab": {
+"enlaces": {
+"allisonrussellmusic.com": "https://allisonrussellmusic.com/",
+"allmusic": "https://www.allmusic.com/artist/mn0000106294",
+"apple": "https://music.apple.com/us/artist/451740458",
+"bandcamp": "https://allisonrussell.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/5481344",
+"discogs": "https://www.discogs.com/artist/975648",
+"facebook": "https://www.facebook.com/allisonrussellmusic",
+"genius.com": "https://genius.com/artists/Allison-russell",
+"instagram": "https://www.instagram.com/allisonrussellmusic/",
+"last.fm": "https://www.last.fm/music/Allison+Russell",
+"qobuz": "https://open.qobuz.com/artist/863920",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/allison-russell",
+"spotify": "https://open.spotify.com/artist/3JBmecDGXTll46ygrnGTM6",
+"tidal": "https://tidal.com/artist/11168374",
+"twitter.com": "https://twitter.com/outsidechild13",
+"wikidata": "https://www.wikidata.org/wiki/Q96337353",
+"youtube": "https://www.youtube.com/channel/UClZHWIcBImm2xTPukkj1iCw"
+},
+"etiquetas": [
+"folk",
+"singer-songwriter",
+"alternative pop",
+"country"
+],
+"generos": [
+"folk",
+"singer-songwriter",
+"alternative pop",
+"country"
+],
+"nombre": "Allison Russell",
+"pais": "CA"
+},
 "art:eb7a42aa-36d2-4dc2-9cc2-d083a13e1788": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0000389378",
@@ -5230,6 +5872,24 @@
 "etiquetas": [],
 "generos": [],
 "nombre": "Mountain Grass Unit",
+"pais": "US"
+},
+"art:ed830ed0-605c-4977-b289-43b2ec3af027": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/379242685",
+"deezer": "https://www.deezer.com/artist/656698",
+"discogs": "https://www.discogs.com/artist/2756497",
+"facebook": "https://www.facebook.com/pages/Laurelyn-Dossett/136236293084330",
+"flickr.com": "https://www.flickr.com/photos/devixes/6792715687/#",
+"laurelyndossett.com": "http://www.laurelyndossett.com/",
+"qobuz": "https://open.qobuz.com/artist/3655013",
+"spotify": "https://open.spotify.com/artist/6JRag43ihazbLj7xxn6vli",
+"tidal": "https://tidal.com/artist/5203370",
+"twitter.com": "https://twitter.com/laurelyndossett"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Laurelyn Dossett",
 "pais": "US"
 },
 "art:ee57afb2-1c4f-4389-8b87-5b628c959430": {
@@ -5347,6 +6007,59 @@
 ],
 "nombre": "The Northern Belle",
 "pais": "NO"
+},
+"art:f75150f0-d80d-4c34-903b-6acfb47b63ee": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000126782",
+"apple": "https://itunes.apple.com/us/artist/id5046590",
+"bandcamp": "https://lambchop.bandcamp.com/",
+"bbc.co.uk": "https://www.bbc.co.uk/music/artists/f75150f0-d80d-4c34-903b-6acfb47b63ee",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb13975204q",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:Lambchop_Dachau.jpg",
+"d-nb.info": "https://d-nb.info/gnd/10307629-3",
+"deezer": "https://www.deezer.com/artist/1677",
+"discogs": "https://www.discogs.com/artist/10551",
+"facebook": "https://www.facebook.com/lambchopisaband",
+"genius.com": "https://genius.com/artists/Lambchop",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no99008897",
+"instagram": "https://www.instagram.com/lambchopisaband/",
+"lambchop.info": "http://lambchop.info/",
+"lambchop.net": "http://www.lambchop.net/",
+"last.fm": "https://www.last.fm/music/Lambchop",
+"muzikum.eu": "http://muzikum.eu/en/122-11743/lambchop/lyrics.html",
+"myspace.com": "https://myspace.com/lambchopisaband",
+"qobuz": "https://open.qobuz.com/artist/52153",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/lambchop",
+"songkick.com": "https://www.songkick.com/artists/99766",
+"spotify": "https://open.spotify.com/artist/2Lhs0asnFQiLuntn3s8p78",
+"tidal": "https://tidal.com/artist/11273",
+"twitter.com": "https://twitter.com/lambchopisaband",
+"viaf.org": "http://viaf.org/viaf/138694185",
+"wikidata": "https://www.wikidata.org/wiki/Q374679",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no99008897"
+},
+"etiquetas": [
+"alternative country",
+"chamber pop",
+"country",
+"alternative",
+"americana",
+"art pop",
+"chamber folk",
+"indietronica",
+"nashville"
+],
+"generos": [
+"alternative country",
+"chamber pop",
+"country",
+"americana",
+"art pop",
+"chamber folk",
+"indietronica"
+],
+"nombre": "Lambchop",
+"pais": "US"
 },
 "art:f9d9e995-c8a1-48f5-a112-90353670f91d": {
 "enlaces": {
@@ -5633,6 +6346,31 @@
 "rg:alex amen|son of amen": {
 "no_encontrado": "2026-11-22"
 },
+"rg:alex dupree|talking to the dog": {
+"artista": "Alex Dupree",
+"artistas_id": [
+"5948581e-35e6-43ee-9cbe-6db50c9b9003"
+],
+"enlaces": {
+"bandcamp": "https://alexdupree.bandcamp.com/album/talking-to-the-dog",
+"discogs": "https://www.discogs.com/release/38274720"
+},
+"fecha_release": "2026-08-14",
+"idioma": null,
+"pais": "US",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/578ac6a3-3dd2-4a1a-9d5c-043d4808f07b/front-250",
+"primera_fecha": "2026-08-14",
+"puntuacion": 1.0,
+"release": "a8216a11-ca75-4b8f-86ae-3bc53d9c5d9a",
+"rg": "578ac6a3-3dd2-4a1a-9d5c-043d4808f07b",
+"sellos": [
+"Scissor Tail"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Talking To The Dog"
+},
 "rg:ali holder|garden of the underworld": {
 "no_encontrado": "2026-11-22"
 },
@@ -5658,6 +6396,32 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Country Desire"
+},
+"rg:allison russell|in the hour of chaos": {
+"artista": "Allison Russell",
+"artistas_id": [
+"eb04cb4e-9a20-4f89-9b73-652653844cab"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/1891159897",
+"qobuz": "https://www.qobuz.com/us-en/album/in-the-hour-of-chaos-allison-russell/bbh4hp12wna5s",
+"tidal": "https://tidal.com/album/539666529"
+},
+"fecha_release": "2026-07-10",
+"idioma": null,
+"pais": "US",
+"pistas": 11,
+"portada": "https://coverartarchive.org/release-group/379d22db-05e9-4a67-b9c5-23a00c3f7a2c/front-250",
+"primera_fecha": "2026-07-10",
+"puntuacion": 1.0,
+"release": "013fa197-d34f-4241-bc08-f3cf5975c077",
+"rg": "379d22db-05e9-4a67-b9c5-23a00c3f7a2c",
+"sellos": [
+"Fantasy"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "In the Hour of Chaos"
 },
 "rg:alyssa hankey|good country people": {
 "no_encontrado": "2026-11-22"
@@ -6134,10 +6898,22 @@
 "tipos_secundarios": [],
 "titulo": "So Much for Goodbyes"
 },
+"rg:bird|held here together": {
+"no_encontrado": "2026-11-22"
+},
+"rg:blaine todd|angle of repose": {
+"no_encontrado": "2026-11-22"
+},
 "rg:blair dunlop|what still survives": {
 "no_encontrado": "2026-11-22"
 },
 "rg:blank instrument|jumping at ghosts": {
+"no_encontrado": "2026-11-22"
+},
+"rg:bloodkin|flowers and ash": {
+"no_encontrado": "2026-11-22"
+},
+"rg:blue twisted steel|turnstile of romance": {
 "no_encontrado": "2026-11-22"
 },
 "rg:bob bradshaw|times got a mind of its own": {
@@ -6393,6 +7169,28 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Leaf Miner's Daughter"
+},
+"rg:bronwyn|rattlin bones": {
+"artista": "Bronwyn",
+"artistas_id": [
+"7c61c427-8c9b-43a3-8735-5ec2b475a5e7"
+],
+"enlaces": {
+"bronwynkeithhynes.com": "https://www.bronwynkeithhynes.com/music/rattlin-bones"
+},
+"fecha_release": "2026-08-13",
+"idioma": null,
+"pais": "US",
+"pistas": 13,
+"portada": "https://coverartarchive.org/release-group/b6c700c3-2553-43d2-b3ab-09dff223a490/front-250",
+"primera_fecha": "2026-08-13",
+"puntuacion": 1.0,
+"release": "fa573b61-b32f-4acd-a5bc-9fd8aaf8758f",
+"rg": "b6c700c3-2553-43d2-b3ab-09dff223a490",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Rattlin' Bones"
 },
 "rg:brother dege|great unknown": {
 "no_encontrado": "2026-11-22"
@@ -6788,6 +7586,9 @@
 "tipos_secundarios": [],
 "titulo": "Once Upon A Second Time Around"
 },
+"rg:chasen wayne and the honky tonk machine|diamond saloon": {
+"no_encontrado": "2026-11-22"
+},
 "rg:chasen wayne|diamond saloon": {
 "no_encontrado": "2026-11-22"
 },
@@ -6806,6 +7607,37 @@
 "rg:chris johnson|from the cowboy place": {
 "no_encontrado": "2026-11-22"
 },
+"rg:chris murphy|songs from the trees": {
+"no_encontrado": "2026-11-22"
+},
+"rg:chris pierce|songs for the heavy hearted": {
+"artista": "Chris Pierce",
+"artistas_id": [
+"6b46ed33-fea4-41ef-abc9-192c6f8a6082"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/1895751778",
+"deezer": "https://www.deezer.com/album/971471161",
+"qobuz": "https://www.qobuz.com/gb-en/album/songs-for-the-heavy-hearted-chris-pierce/iq0eb549sbifm",
+"spotify": "https://open.spotify.com/album/4ImdGMSJ2twGZJG7S9ke3C",
+"tidal": "https://tidal.com/album/519870552"
+},
+"fecha_release": "2026-08-21",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/fdc75284-3a55-42a5-8ff9-71edbf18bb40/front-250",
+"primera_fecha": "2026-08-21",
+"puntuacion": 1.0,
+"release": "a4f9a9da-4fa1-40ad-9fbf-2141e1805ea3",
+"rg": "fdc75284-3a55-42a5-8ff9-71edbf18bb40",
+"sellos": [
+"Missing Piece Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Songs for the Heavy Hearted"
+},
 "rg:christopher seymore|child of the south": {
 "no_encontrado": "2026-11-22"
 },
@@ -6822,6 +7654,9 @@
 "no_encontrado": "2026-11-22"
 },
 "rg:clay street unit|live from the road vol 1": {
+"no_encontrado": "2026-11-22"
+},
+"rg:clayton denwood|looking for a road": {
 "no_encontrado": "2026-11-22"
 },
 "rg:clayton ryan|gas station social club": {
@@ -7028,7 +7863,34 @@
 "rg:dallas burrow|modern day vagabond": {
 "no_encontrado": "2026-11-22"
 },
+"rg:damien dempsey|holywell": {
+"artista": "Damien Dempsey",
+"artistas_id": [
+"547e23af-e455-41dd-baae-a3b58e065d0c"
+],
+"enlaces": {
+"discogs": "https://www.discogs.com/release/37940580"
+},
+"fecha_release": "2026",
+"idioma": "eng",
+"pais": "IE",
+"pistas": 12,
+"portada": null,
+"primera_fecha": "2026",
+"puntuacion": 1.0,
+"release": "8b790777-048e-4b49-870a-0bc3bd2b22c8",
+"rg": "93f4277d-8063-43ae-9885-5411f6e000b4",
+"sellos": [
+"Sony Music"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Holywell"
+},
 "rg:dan alley|keepin on": {
+"no_encontrado": "2026-11-22"
+},
+"rg:dan pye|room 7 on the 7th": {
 "no_encontrado": "2026-11-22"
 },
 "rg:dan seals and friends|last duet": {
@@ -7160,6 +8022,30 @@
 "rg:david banks|all the dreams we left behind": {
 "no_encontrado": "2026-11-22"
 },
+"rg:david coller|blue water": {
+"artista": "David Coller",
+"artistas_id": [
+"5fe3a59e-b6a1-46e1-8aab-b70392bc2615"
+],
+"enlaces": {
+"davidcoller.com": "https://davidcoller.com/album/4026466/blue-water"
+},
+"fecha_release": "2026",
+"idioma": "eng",
+"pais": "US",
+"pistas": 10,
+"portada": null,
+"primera_fecha": "2026",
+"puntuacion": 1.0,
+"release": "109416d6-3bdc-4f35-a5bc-a0051d8cb2c2",
+"rg": "88bf9b76-310a-4405-ae78-5a34aa80a764",
+"sellos": [
+"[no label]"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Blue Water"
+},
 "rg:david g smith|hero street": {
 "no_encontrado": "2026-11-22"
 },
@@ -7228,6 +8114,9 @@
 "titulo": "Texas Angel"
 },
 "rg:dennis ellsworth|living": {
+"no_encontrado": "2026-11-22"
+},
+"rg:devyn brinsfield|dreamers and losers": {
 "no_encontrado": "2026-11-22"
 },
 "rg:dingo|nightwire": {
@@ -7375,6 +8264,9 @@
 "tipos_secundarios": [],
 "titulo": "Clean Slate"
 },
+"rg:dusty wright|maximus americanus": {
+"no_encontrado": "2026-11-22"
+},
 "rg:dylan marlowe|dylan marlowe": {
 "artista": "Dylan Marlowe",
 "artistas_id": [
@@ -7401,6 +8293,35 @@
 },
 "rg:effie zilch|higher calling": {
 "no_encontrado": "2026-11-22"
+},
+"rg:elanor moss|knife the needle": {
+"artista": "Elanor Moss",
+"artistas_id": [
+"35f96e44-0f8c-495b-979a-55de67ff3b4f"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/6767351310",
+"bandcamp": "https://elanormoss.bandcamp.com/album/the-knife-the-needle",
+"deezer": "https://www.deezer.com/album/978060541",
+"qobuz": "https://www.qobuz.com/gb-en/album/the-knife-the-needle-elanor-moss/f9f51aepo7owg",
+"spotify": "https://open.spotify.com/album/1AdsKirDq40xEEPn9LIN9P",
+"tidal": "https://tidal.com/album/522510990"
+},
+"fecha_release": "2026-08-21",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/2a24ffed-56db-46bb-9362-aa50fdcd18e5/front-250",
+"primera_fecha": "2026-08-21",
+"puntuacion": 1.0,
+"release": "6335f9f2-56cf-4f02-82cb-4926625ef4c7",
+"rg": "2a24ffed-56db-46bb-9362-aa50fdcd18e5",
+"sellos": [
+"Merge Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "The Knife, The Needle"
 },
 "rg:eli paperboy reed|getting there": {
 "artista": "Eli “Paperboy” Reed",
@@ -7620,6 +8541,9 @@
 "tipos_secundarios": [],
 "titulo": "Come This Madness"
 },
+"rg:ewan macintyre and herding cats|on these islands we sing": {
+"no_encontrado": "2026-11-22"
+},
 "rg:fanny lumsden|traditions": {
 "artista": "Fanny Lumsden",
 "artistas_id": [
@@ -7646,6 +8570,28 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Traditions"
+},
+"rg:ferris and sylvester|its a joy to be alive": {
+"artista": "Ferris & Sylvester",
+"artistas_id": [
+"a9dfcd98-ccd4-4482-adfa-23ca892e405b"
+],
+"enlaces": {},
+"fecha_release": "2026-08-14",
+"idioma": "eng",
+"pais": null,
+"pistas": 11,
+"portada": "https://coverartarchive.org/release-group/9c388ec4-acbe-4589-8103-19e91480a298/front-250",
+"primera_fecha": "2026-08-14",
+"puntuacion": 1.0,
+"release": "6761322c-9e44-43e4-a26f-f7027488cd2a",
+"rg": "9c388ec4-acbe-4589-8103-19e91480a298",
+"sellos": [
+"Archtop Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "It's A Joy To Be Alive"
 },
 "rg:flatland cavalry|work of heart heartstrings": {},
 "rg:forsyth|forsyth": {
@@ -7708,6 +8654,30 @@
 "tipos_secundarios": [],
 "titulo": "The Landfill"
 },
+"rg:fruition|something more": {
+"artista": "Fruition",
+"artistas_id": [
+"c02617f9-2408-4434-8588-d06a123b73c0"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/1891129455"
+},
+"fecha_release": "2026-08-28",
+"idioma": null,
+"pais": "US",
+"pistas": 11,
+"portada": "https://coverartarchive.org/release-group/f1ac70ab-2150-434f-84e9-b8dbf50fce42/front-250",
+"primera_fecha": "2026-08-28",
+"puntuacion": 1.0,
+"release": "565b1a9c-7427-4ad0-8d32-2ec183111cf6",
+"rg": "f1ac70ab-2150-434f-84e9-b8dbf50fce42",
+"sellos": [
+"Bloodshot Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Something More"
+},
 "rg:garron frith|rub": {
 "no_encontrado": "2026-11-22"
 },
@@ -7739,6 +8709,30 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "The Day I Hang It Up"
+},
+"rg:gin wigmore|beautiful mess": {
+"artista": "Gin Wigmore",
+"artistas_id": [
+"cb0b7933-a5bc-48dc-a36b-00315d12ca8c"
+],
+"enlaces": {
+"qobuz": "https://www.qobuz.com/album/beautiful-mess-gin-wigmore/spn1l4a9xfly6"
+},
+"fecha_release": "2026-07-17",
+"idioma": null,
+"pais": "XW",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/c9fc9ae9-fc20-4a84-8646-3f7c1cb2176e/front-250",
+"primera_fecha": "2026-07-17",
+"puntuacion": 1.0,
+"release": "b04cf86f-8cf4-418e-b09b-26f302363d7f",
+"rg": "c9fc9ae9-fc20-4a84-8646-3f7c1cb2176e",
+"sellos": [
+"Universal Music New Zealand Limited"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Beautiful Mess"
 },
 "rg:grace potter|trespasser": {
 "artista": "Grace Potter",
@@ -8329,6 +9323,9 @@
 "rg:jason james|cut the chain": {
 "no_encontrado": "2026-11-22"
 },
+"rg:jason mcniff|ten blue songs": {
+"no_encontrado": "2026-11-22"
+},
 "rg:jayhawks|sanctuary park": {
 "artista": "The Jayhawks",
 "artistas_id": [
@@ -8388,6 +9385,9 @@
 "tipos_secundarios": [],
 "titulo": "Used Parts"
 },
+"rg:jerry joseph and the jackmormons|panther tracks volume 2": {
+"no_encontrado": "2026-11-22"
+},
 "rg:jess kerber|world is dark but i want it to be funny": {
 "artista": "Jess Kerber",
 "artistas_id": [
@@ -8438,6 +9438,35 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "A Mile South of Heaven"
+},
+"rg:jim james|wowed out": {
+"artista": "Jim James",
+"artistas_id": [
+"b7c4125d-2867-4e29-ba44-b19a69309c68"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/6772870603",
+"bandcamp": "https://jimjames.bandcamp.com/album/wowed-out",
+"deezer": "https://www.deezer.com/album/996249871",
+"mymorningjacket.com": "https://mymorningjacket.com/products/wowed-out-cd",
+"spotify": "https://open.spotify.com/album/65AADj5uYQYxQYxuXHfl9e",
+"tidal": "https://tidal.com/album/527715153"
+},
+"fecha_release": "2026-08-28",
+"idioma": "eng",
+"pais": null,
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/1cb96671-a8f6-411e-9af3-72a758c13636/front-250",
+"primera_fecha": "2026-08-28",
+"puntuacion": 1.0,
+"release": "44312798-6ad2-4fa5-8cad-9ee190b9a5c4",
+"rg": "1cb96671-a8f6-411e-9af3-72a758c13636",
+"sellos": [
+"ATO Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Wowed Out"
 },
 "rg:joe ray mcdonald|harvester": {
 "no_encontrado": "2026-11-22"
@@ -8931,6 +9960,30 @@
 "rg:kenyon lockry|further than california": {
 "no_encontrado": "2026-11-22"
 },
+"rg:keyside|keyside": {
+"artista": "Keyside",
+"artistas_id": [
+"125dbfb8-2938-44c5-a507-6a8d457413ae"
+],
+"enlaces": {
+"spotify": "https://open.spotify.com/album/6Gdu9YxOmo9HnfU3bb3O2X"
+},
+"fecha_release": "2026-08-07",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/a05ce812-b068-45e5-96f3-bd284bd685f7/front-250",
+"primera_fecha": "2026-08-07",
+"puntuacion": 1.0,
+"release": "744aa2ba-17eb-490d-a4b2-27a01f195a44",
+"rg": "a05ce812-b068-45e5-96f3-bd284bd685f7",
+"sellos": [
+"Modern Sky UK"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Keyside"
+},
 "rg:kimmi bitter|bittersweet": {
 "artista": "Kimmi Bitter",
 "artistas_id": [
@@ -8971,6 +10024,36 @@
 },
 "rg:lady nade|identity": {
 "no_encontrado": "2026-11-22"
+},
+"rg:lambchop|punching the clown": {
+"artista": "Lambchop",
+"artistas_id": [
+"f75150f0-d80d-4c34-903b-6acfb47b63ee"
+],
+"enlaces": {
+"amazon": "https://www.amazon.com/gp/product/B0GZLX9HLK",
+"apple": "https://music.apple.com/us/album/1892045992",
+"bandcamp": "https://lambchop.bandcamp.com/album/punching-the-clown",
+"deezer": "https://www.deezer.com/album/957923091",
+"discogs": "https://www.discogs.com/release/38238024",
+"mergerecords.com": "https://www.mergerecords.com/product/punching_the_clown",
+"qobuz": "https://www.qobuz.com/at-de/album/punching-the-clown-lambchop/kqppwoskbi0hl",
+"spotify": "https://open.spotify.com/album/6ZZiqP4T7teY9nwGxlkSTz",
+"tidal": "https://tidal.com/album/514532178"
+},
+"fecha_release": "2026-08",
+"idioma": "eng",
+"pais": "US",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/d6429337-ab62-44d0-a57d-df816141f5a9/front-250",
+"primera_fecha": "2026-08-21",
+"puntuacion": 1.0,
+"release": "9a00758b-d7b7-4357-b4b0-72146db9000d",
+"rg": "d6429337-ab62-44d0-a57d-df816141f5a9",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Punching the Clown"
 },
 "rg:lance cowan|air that you breathe": {
 "no_encontrado": "2026-11-22"
@@ -9027,6 +10110,64 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Lucky Water"
+},
+"rg:laura veirs|temple songs": {
+"artista": "Laura Veirs",
+"artistas_id": [
+"8951c87f-f730-4247-b442-52ed14ad6a97"
+],
+"enlaces": {
+"amazon": "https://www.amazon.co.uk/gp/product/B0H15TYLNR",
+"apple": "https://music.apple.com/us/album/1893701124",
+"deezer": "https://www.deezer.com/album/962285591",
+"spotify": "https://open.spotify.com/album/3rOWnHxRyUjNvYiyKCeYR4",
+"tidal": "https://tidal.com/album/516182959"
+},
+"fecha_release": "2026-08-14",
+"idioma": "eng",
+"pais": "US",
+"pistas": 11,
+"portada": "https://coverartarchive.org/release-group/8fa525ca-496a-4e30-af08-d27765cf16f4/front-250",
+"primera_fecha": "2026-08-14",
+"puntuacion": 1.0,
+"release": "3647c516-fec3-4806-a633-af5ced7cdb94",
+"rg": "8fa525ca-496a-4e30-af08-d27765cf16f4",
+"sellos": [
+"Raven Marching Band Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Temple Songs"
+},
+"rg:laurelyn dossett|how many moons": {
+"artista": "Laurelyn Dossett",
+"artistas_id": [
+"ed830ed0-605c-4977-b289-43b2ec3af027"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/1894883384",
+"bandcamp": "https://laurelyndossett.bandcamp.com/album/how-many-moons",
+"deezer": "https://www.deezer.com/album/965569471",
+"qobuz": "https://www.qobuz.com/gb-en/album/how-many-moons-laurelyn-dossett/ca42n47qwtfdu",
+"soundcloud": "https://soundcloud.com/laurelyndossett-music/sets/how-many-moons-2",
+"spotify": "https://open.spotify.com/album/3iucIhFhQN2pDwIIqpIehl",
+"tidal": "https://tidal.com/album/517591965"
+},
+"fecha_release": "2026-08-28",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/f861a1ca-df8c-490b-a816-75ae5a8613ec/front-250",
+"primera_fecha": "2026-08-28",
+"puntuacion": 1.0,
+"release": "8bbec6ee-7c93-46b0-906a-c8d87718a97f",
+"rg": "f861a1ca-df8c-490b-a816-75ae5a8613ec",
+"sellos": [
+"Sycamore Road"
+],
+"tipo": "EP",
+"tipos_secundarios": [],
+"titulo": "How Many Moons"
 },
 "rg:lauren watkins|if im being honest": {
 "artista": "Lauren Watkins",
@@ -9088,8 +10229,31 @@
 "tipos_secundarios": [],
 "titulo": "Sunriser"
 },
+"rg:lee edwards|interpreting heart sounds vol 2": {
+"no_encontrado": "2026-11-22"
+},
 "rg:left arm tan|when tigers smoked": {
 "no_encontrado": "2026-11-22"
+},
+"rg:legendary trainhoppers|conspiracy of ravens": {
+"artista": "The Legendary Trainhoppers",
+"artistas_id": [
+"00f0cfa6-724e-4d50-8779-79a21d11654a"
+],
+"enlaces": {},
+"fecha_release": "2026-02-20",
+"idioma": "eng",
+"pais": "US",
+"pistas": 10,
+"portada": null,
+"primera_fecha": "2026-02-20",
+"puntuacion": 1.0,
+"release": "788480b0-3017-4800-9f91-a18431401a59",
+"rg": "c3a262af-e379-4c42-9723-43daec4a1ee6",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "A Conspiracy of Ravens"
 },
 "rg:lena rich|emerald city": {
 "no_encontrado": "2026-11-22"
@@ -9308,6 +10472,59 @@
 "rg:marc silver|dark of our hymn": {
 "no_encontrado": "2026-11-22"
 },
+"rg:margo cilker|little white cross": {
+"artista": "Margo Cilker",
+"artistas_id": [
+"91e07743-761b-40f4-b4cb-f3dd72b4c26c"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/6793167072"
+},
+"fecha_release": "2026-08-06",
+"idioma": null,
+"pais": "US",
+"pistas": 1,
+"portada": "https://coverartarchive.org/release-group/f8b69f22-726c-4d8d-9de7-8dbb786f22ab/front-250",
+"primera_fecha": "2026-08-06",
+"puntuacion": 1.0,
+"release": "72aab1ea-545d-45ea-a3e3-0734394c7f32",
+"rg": "f8b69f22-726c-4d8d-9de7-8dbb786f22ab",
+"sellos": [
+"Fossil Records"
+],
+"tipo": "Single",
+"tipos_secundarios": [],
+"titulo": "Little White Cross"
+},
+"rg:margo price|days of unrest": {
+"artista": "Margo Price",
+"artistas_id": [
+"b53b9322-7d65-4b17-ae4c-9190d347fcea"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/6778522169",
+"hdtracks.com": "https://www.hdtracks.com/#/album/6a42add03c246253f1a247c3",
+"qobuz": "https://www.qobuz.com/us-en/album/days-of-unrest-margo-price/jaoasqdj0xlfz",
+"soundcloud": "https://soundcloud.com/margo-price-official/sets/days-of-unrest-1",
+"spotify": "https://open.spotify.com/album/48Pi5bbsz8A0ND4rAEfrX1",
+"tidal": "https://tidal.com/album/536929273"
+},
+"fecha_release": "2026-07-03",
+"idioma": "eng",
+"pais": null,
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/095fe1a8-10c6-41a3-9d2b-4c876c8cf82f/front-250",
+"primera_fecha": "2026-07-03",
+"puntuacion": 1.0,
+"release": "623036f0-a05d-448c-b86d-88831c79230e",
+"rg": "095fe1a8-10c6-41a3-9d2b-4c876c8cf82f",
+"sellos": [
+"Loma Vista Recordings"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Days of Unrest"
+},
 "rg:mark wills|grand ole revival": {
 "no_encontrado": "2026-11-22"
 },
@@ -9426,6 +10643,9 @@
 "rg:megan and shane|tourist": {
 "no_encontrado": "2026-11-22"
 },
+"rg:michael mcdermott|flowers from the graveyard": {
+"no_encontrado": "2026-11-22"
+},
 "rg:michael rudd|midnight at dawn": {
 "no_encontrado": "2026-11-22"
 },
@@ -9517,6 +10737,30 @@
 "rg:mistaken for wayne|whitefish": {
 "no_encontrado": "2026-11-22"
 },
+"rg:moon attendant|dum evol": {
+"artista": "Moon Attendant",
+"artistas_id": [
+"7f8fe777-4c9c-4e48-bd95-c81d1fd541f6"
+],
+"enlaces": {
+"apple": "https://music.apple.com/fr/album/6774566108"
+},
+"fecha_release": "2026-08-21",
+"idioma": "eng",
+"pais": null,
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/ee6eebf0-aba1-4ced-9cd2-69f9d909e8b0/front-250",
+"primera_fecha": "2026-08-21",
+"puntuacion": 1.0,
+"release": "571bbd9d-8122-44d8-bcb5-1bd75088187f",
+"rg": "ee6eebf0-aba1-4ced-9cd2-69f9d909e8b0",
+"sellos": [
+"Big Potato Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Dum Evol"
+},
 "rg:moot davis|gypsy love thief": {
 "no_encontrado": "2026-11-22"
 },
@@ -9547,8 +10791,61 @@
 "tipos_secundarios": [],
 "titulo": "Appalachian Smoke"
 },
+"rg:mr plow|at one with nature": {
+"artista": "Mr Plow",
+"artistas_id": [
+"340e6808-2442-4e05-8bf1-f422f6e0da2e"
+],
+"enlaces": {
+"bandcamp": "https://mrplowsplace.bandcamp.com/album/at-one-with-nature"
+},
+"fecha_release": "2026-09-11",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 12,
+"portada": null,
+"primera_fecha": "2026-09-11",
+"puntuacion": 1.0,
+"release": "a3a036cb-a170-4d59-a148-6607882192fd",
+"rg": "96e95afd-b848-4e8f-927c-6db1a47707d6",
+"sellos": [
+"[no label]"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "At One With Nature"
+},
 "rg:murray hammond|another idle day": {
 "no_encontrado": "2026-11-22"
+},
+"rg:my girl the river|manifest good things": {
+"artista": "My Girl The River",
+"artistas_id": [
+"9cf1a619-de7c-4753-8e70-195d9e03cccb"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/6800292506",
+"bandcamp": "https://mygirltheriver.bandcamp.com/album/manifest-good-things",
+"deezer": "https://www.deezer.com/album/1051426062",
+"qobuz": "https://www.qobuz.com/gb-en/album/manfiest-good-things-my-girl-the-river/well2g39riryj",
+"spotify": "https://open.spotify.com/album/0mKBdO5wXHGEyfnlPCQJza",
+"tidal": "https://tidal.com/album/551382171"
+},
+"fecha_release": "2026-09-04",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/31c9dff3-4bfe-42bd-b47d-5a6883aa8a31/front-250",
+"primera_fecha": "2026-09-04",
+"puntuacion": 1.0,
+"release": "6f936bee-ea4e-4f58-9654-b69c9b5eb56c",
+"rg": "31c9dff3-4bfe-42bd-b47d-5a6883aa8a31",
+"sellos": [
+"Super Tiny Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Manifest Good Things"
 },
 "rg:naomi jane|kinda sorta country": {
 "no_encontrado": "2026-11-22"
@@ -9620,6 +10917,9 @@
 "titulo": "Day Late And A Dollar Short"
 },
 "rg:nershis|songs for the road": {
+"no_encontrado": "2026-11-22"
+},
+"rg:nick mitchell maiato|naquera": {
 "no_encontrado": "2026-11-22"
 },
 "rg:nicole mish|hope is restless": {
@@ -9798,6 +11098,32 @@
 "titulo": "Hold The Mash EP"
 },
 "rg:parker mccollum|live from sound city": {},
+"rg:paul mcclure|good and the bad of it": {
+"artista": "Paul McClure",
+"artistas_id": [
+"776c0a47-11a6-42f1-8313-185f2d81ea03"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/1886811577",
+"bandcamp": "https://paulmcclure.bandcamp.com/album/the-good-and-the-bad-of-it",
+"deezer": "https://www.deezer.com/album/944391321",
+"qobuz": "https://www.qobuz.com/gb-en/album/the-good-and-the-bad-of-it-paul-mcclure/fjj2mjj8rohsg",
+"tidal": "https://tidal.com/album/508921009"
+},
+"fecha_release": "2026-06-05",
+"idioma": "eng",
+"pais": null,
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/97460972-f226-42d8-a1ec-1d332444d93b/front-250",
+"primera_fecha": "2026-06-05",
+"puntuacion": 1.0,
+"release": "37f6dda2-e801-4764-bf1c-320552873acf",
+"rg": "97460972-f226-42d8-a1ec-1d332444d93b",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "The Good and the Bad of It"
+},
 "rg:paula fong|bird on the wing": {
 "no_encontrado": "2026-11-22"
 },
@@ -9830,8 +11156,63 @@
 "tipos_secundarios": [],
 "titulo": "3"
 },
+"rg:personal trainer|human assholes": {
+"artista": "Personal Trainer",
+"artistas_id": [
+"2e84443c-dc23-4b65-922a-f96b8a73d602"
+],
+"enlaces": {
+"bandcamp": "https://personaltrainer.bandcamp.com/album/human-assholes",
+"bellaunion.com": "https://bellaunion.com/products/personal-trainer-human-assholes?variant=54315813339465"
+},
+"fecha_release": "2026-09-04",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 15,
+"portada": "https://coverartarchive.org/release-group/07a0e030-6e51-4792-96ba-8f5376c0a2fb/front-250",
+"primera_fecha": "2026-09-04",
+"puntuacion": 1.0,
+"release": "233cd163-2f63-4c3d-a074-acf3ea4420d9",
+"rg": "07a0e030-6e51-4792-96ba-8f5376c0a2fb",
+"sellos": [
+"Bella Union"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Human Assholes"
+},
 "rg:peter autio|country soul and rock n roll": {
 "no_encontrado": "2026-11-22"
+},
+"rg:phil hooley|everything well never need": {
+"no_encontrado": "2026-11-22"
+},
+"rg:phil odgers and john kettle|war is over the songs of phil ochs vol 2": {
+"no_encontrado": "2026-11-22"
+},
+"rg:pieta brown|dreamin of": {
+"artista": "Pieta Brown",
+"artistas_id": [
+"8d1e1f75-ddc2-4a45-a63f-e8ea61bb4175"
+],
+"enlaces": {
+"discogs": "https://www.discogs.com/release/38239122"
+},
+"fecha_release": "2026-08-21",
+"idioma": null,
+"pais": "US",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/e0a6433d-5d36-4e4d-8d3c-899a771bc15b/front-250",
+"primera_fecha": "2026-08-21",
+"puntuacion": 1.0,
+"release": "8b4cc439-5037-441c-af6e-d4c7b873e35e",
+"rg": "e0a6433d-5d36-4e4d-8d3c-899a771bc15b",
+"sellos": [
+"Righteous Babe Records, Inc."
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Dreamin' Of"
 },
 "rg:po ramblin boys|welcome to the club": {
 "artista": "The Po' Ramblin' Boys",
@@ -10386,6 +11767,57 @@
 "rg:sean burns|better off in time and other songs for the dance floor": {
 "no_encontrado": "2026-11-22"
 },
+"rg:seasick steve|last season of america": {
+"artista": "Seasick Steve",
+"artistas_id": [
+"231ff972-4e8e-4157-95e2-12f963cb478c"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/6787131933",
+"deezer": "https://www.deezer.com/album/1026391422",
+"spotify": "https://open.spotify.com/album/3luLLeiHfXMhFGDRiCqZbF",
+"tidal": "https://tidal.com/album/542153035"
+},
+"fecha_release": "2026-06-04",
+"idioma": "eng",
+"pais": null,
+"pistas": 3,
+"portada": "https://coverartarchive.org/release-group/8d375746-a7de-4b24-b63d-e0c28f41d991/front-250",
+"primera_fecha": "2026-06-04",
+"puntuacion": 1.0,
+"release": "109cf893-56a6-4a5e-b21d-f719ed2f0af3",
+"rg": "8d375746-a7de-4b24-b63d-e0c28f41d991",
+"sellos": [
+"Eastcote Recording"
+],
+"tipo": "Single",
+"tipos_secundarios": [],
+"titulo": "The Last Season of America"
+},
+"rg:sequoia|so long": {
+"artista": "Sequoia",
+"artistas_id": [
+"48630c3c-0c89-483f-a0d5-1291c9c764cf"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/6783160575"
+},
+"fecha_release": "2026-06-26",
+"idioma": null,
+"pais": "US",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/cc791b4d-7d2e-4d96-9c4d-7826f4c15eec/front-250",
+"primera_fecha": "2026-06-26",
+"puntuacion": 1.0,
+"release": "36fe594d-1617-42e4-a36c-159a3565ec0d",
+"rg": "cc791b4d-7d2e-4d96-9c4d-7826f4c15eec",
+"sellos": [
+"Vocal Rest Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "So Long"
+},
 "rg:sera cahoone|ive missed you all these years": {
 "artista": "Sera Cahoone",
 "artistas_id": [
@@ -10509,6 +11941,9 @@
 "tipos_secundarios": [],
 "titulo": "Pick You Up"
 },
+"rg:sian and rob colquhoun|sourwood honey": {
+"no_encontrado": "2026-11-22"
+},
 "rg:silver linings|bygones": {
 "no_encontrado": "2026-11-22"
 },
@@ -10547,6 +11982,9 @@
 "no_encontrado": "2026-11-22"
 },
 "rg:sons n britches|its about time": {
+"no_encontrado": "2026-11-22"
+},
+"rg:sophie moore|trouble in mind": {
 "no_encontrado": "2026-11-22"
 },
 "rg:sorrel nation|creeping thyme": {
@@ -10604,6 +12042,30 @@
 "tipos_secundarios": [],
 "titulo": "The Brutal Divine"
 },
+"rg:starter car|afterlight": {
+"artista": "Starter Car",
+"artistas_id": [
+"2a5b99aa-4afe-4890-895b-669b493403cd"
+],
+"enlaces": {
+"bandcamp": "https://startercar.bandcamp.com/album/afterlight"
+},
+"fecha_release": "2026-08-28",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/a738601c-3d8c-4fd3-97b4-4bc3fdd74b69/front-250",
+"primera_fecha": "2026-08-28",
+"puntuacion": 1.0,
+"release": "07db0944-3bd3-4df0-bb4d-1d5c63984583",
+"rg": "a738601c-3d8c-4fd3-97b4-4bc3fdd74b69",
+"sellos": [
+"Tapete Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Afterlight"
+},
 "rg:stephanie sammons|head noise": {
 "artista": "Stephanie Sammons",
 "artistas_id": [
@@ -10631,6 +12093,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Head Noise"
+},
+"rg:stephen jacques|les surfeurs de santa cruz": {
+"no_encontrado": "2026-11-22"
 },
 "rg:stephen wilson jr|impressi n of a human children of the c rnerman": {
 "no_encontrado": "2026-11-22"
@@ -10935,6 +12400,34 @@
 },
 "rg:troubadour blue|tennessee gothic": {
 "no_encontrado": "2026-11-22"
+},
+"rg:two runner|porchlight": {
+"artista": "Two Runner",
+"artistas_id": [
+"a475b03f-2074-41e3-a8f0-8ec007414289"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/1892169975",
+"deezer": "https://www.deezer.com/album/958218761",
+"qobuz": "https://www.qobuz.com/us-en/album/porchlight-two-runner/s76i8uojw0jwg",
+"spotify": "https://open.spotify.com/album/6AfKQ41w6aEH5bL7WdVW0Z",
+"tidal": "https://tidal.com/album/514646043"
+},
+"fecha_release": "2026-08-28",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/84e17ec5-2add-4bdd-ad67-9158dfb59d39/front-250",
+"primera_fecha": "2026-08-28",
+"puntuacion": 1.0,
+"release": "e9b9da81-5944-4b15-8743-d93c6c6e68af",
+"rg": "84e17ec5-2add-4bdd-ad67-9158dfb59d39",
+"sellos": [
+"Gar Hole Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Porchlight"
 },
 "rg:tygers of pan tang|electrifyed": {
 "artista": "Tygers Of Pan Tang",
@@ -11261,6 +12754,9 @@
 "tipo": "Single",
 "tipos_secundarios": [],
 "titulo": "Hell on the Highway"
+},
+"rg:wild high|listen to the wild high": {
+"no_encontrado": "2026-11-22"
 },
 "rg:wilder blue|cinco": {
 "artista": "The Wilder Blue",
