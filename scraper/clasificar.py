@@ -37,7 +37,8 @@ class Taxonomia:
             for grupo, subs in fd["grupos"].items():
                 for sid, sd in subs.items():
                     self.sub[sid] = {"id": sid, "nombre": sd.get("nombre", sid), "familia": fam, "grupo": grupo,
-                                     "frontera": bool(sd.get("frontera"))}
+                                     "frontera": bool(sd.get("frontera")),
+                                     "familias": [fam] + [str(x) for x in sd.get("tambien_en", [])]}
                     for a in [sid.replace("-", " ")] + list(sd.get("alias", [])):
                         self.alias[normalizar(str(a))].add(sid)
         minp = int(self.reglas.get("alias_en_texto_min_palabras", 2))
@@ -142,7 +143,8 @@ def main():
             continue
         r = clasificar_disco(d, tax, mapeo, desconocidas, ejemplo)
         subs = r["subgeneros"]
-        fam_subs = {tax.sub[s]["familia"] for s in subs if not tax.sub[s]["frontera"]} or {tax.sub[s]["familia"] for s in subs}
+        fam_subs = {f for s in subs if not tax.sub[s]["frontera"] for f in tax.sub[s]["familias"]} \
+            or {f for s in subs for f in tax.sub[s]["familias"]}
         fam_fuentes = {fuentes[x["id"]].get("familia") for x in d["fuentes"]
                        if x["id"] in fuentes and not fuentes[x["id"]].get("mixta")} - {None, "todas", "ninguna"}
         familias = fam_subs | fam_fuentes

@@ -115,7 +115,7 @@ function pintarFamilias() {
   nav.onclick = e => {
     const b = e.target.closest("button"); if (!b) return;
     estado.familia = b.dataset.f;
-    if (estado.familia !== "todas") estado.subs = new Set([...estado.subs].filter(s => s === SIN_SUB || SUB[s]?.familia === estado.familia));
+    if (estado.familia !== "todas") estado.subs = new Set([...estado.subs].filter(s => s === SIN_SUB || SUB[s]?.familias?.includes(estado.familia)));
     estado.tandas = 1; actualizar();
   };
 }
@@ -200,8 +200,10 @@ function pintarPanel() {
   for (const [fk, fam] of Object.entries(DATOS.familias)) {
     if (estado.familia !== "todas" && estado.familia !== fk) continue;
     if (estado.familia === "todas") html += `<p class="fam-titulo fam-${fk}">${esc(fam.nombre)}</p>`;
-    for (const g of fam.grupos)
+    for (const g of fam.grupos) {
+      if (estado.familia === "todas" && g.nombre === "De otras familias") continue;
       html += `<div class="grupo"><h4>${esc(g.nombre)}</h4><div class="chips">${g.subs.map(s => chip(s.id, s.nombre, s.descripcion)).join("")}</div></div>`;
+    }
   }
   html += `<div class="grupo"><h4>Otros</h4><div class="chips">${chip(SIN_SUB, "Sin subgénero", "")}</div></div>`;
   $("#subgeneros").innerHTML = html;
@@ -370,7 +372,10 @@ fetch("data/discos.json", { cache: "no-cache" })
     DATOS = datos;
     HOY = datos.actualizado;
     for (const [fk, f] of Object.entries(datos.familias))
-      for (const g of f.grupos) for (const s of g.subs) SUB[s.id] = { ...s, familia: fk };
+      for (const g of f.grupos) for (const s of g.subs) {
+        const prev = SUB[s.id];
+        SUB[s.id] = { ...(prev || s), familias: [...new Set([...(prev?.familias || []), fk])] };
+      }
     for (const d of datos.discos) POR_ID[d.id] = d;
     const sellos = [...new Set(datos.discos.map(d => d.sello).filter(Boolean))].sort((a, b) => a.localeCompare(b));
     $("#sellos").innerHTML = sellos.map(s => `<option value="${esc(s)}">`).join("");

@@ -81,6 +81,9 @@ def main():
         fuentes = [f for f in fuentes if f["id"] in solo]
     hoy = dt.date.today()
     desde = restar_meses(hoy, config["ventana"]["meses_atras"])
+    anios = [int(a) for a in (config["ventana"].get("anios_completos") or [])]
+    if anios:                       # años enteros además de los últimos N meses
+        desde = min(desde, dt.date(min(anios), 1, 1))
     hasta = restar_meses(hoy, -config["ventana"]["meses_adelante"])
     margen = dt.timedelta(days=int(reglas.get("margen_dias", 14)))
     incremental = "--incremental" in args and os.path.exists(ruta(config["rutas"]["candidatos"]))

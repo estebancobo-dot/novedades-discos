@@ -55,6 +55,7 @@ fuentes:
   fecha_es: lanzamiento
   anio_desde_publicacion: true      # las fechas no traen año: se toma el de la página
   urls:
+    - https://savingcountrymusic.com/release-radar-most-anticipated-new-country-albums-for-2026/
     - https://savingcountrymusic.com/release-radar-most-anticipated-new-albums-for-2nd-half-of-2026/
     - https://savingcountrymusic.com/release-radar-most-anticipated-new-albums-for-final-portion-of-2026/
   texto:

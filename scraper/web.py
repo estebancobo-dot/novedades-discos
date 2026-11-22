@@ -55,16 +55,23 @@ def main():
     if os.path.exists(estado_p):
         with open(estado_p, encoding="utf-8") as f:
             actualizado = json.load(f).get("fecha", actualizado)
-    familias, nombres_sub = {}, {}
+    familias, nombres_sub, prestados = {}, {}, {}
     for fk, fd in tax["familias"].items():
         familias[fk] = {"nombre": fd["nombre"], "corto": fd.get("nombre_corto", fd["nombre"]), "grupos": [
             {"nombre": g, "subs": [{"id": sid, "nombre": sd.get("nombre", sid), "frontera": bool(sd.get("frontera")),
-                                    "descripcion": sd.get("descripcion", "")}
+                                    "descripcion": sd.get("descripcion", ""), "familia": fk}
                                    for sid, sd in subs.items()]}
             for g, subs in fd["grupos"].items()]}
         for subs in fd["grupos"].values():
             for sid, sd in subs.items():
                 nombres_sub[sid] = sd.get("nombre", sid)
+                for otra in sd.get("tambien_en", []) or []:
+                    prestados.setdefault(str(otra), []).append(
+                        {"id": sid, "nombre": sd.get("nombre", sid), "frontera": False,
+                         "descripcion": sd.get("descripcion", ""), "familia": fk})
+    for fk, subs in prestados.items():     # subgéneros que también cuentan en otra familia
+        if fk in familias:
+            familias[fk]["grupos"].append({"nombre": "De otras familias", "subs": subs})
     reglas = (tax.get("reglas") or {})
     umbral_dest = float(reglas.get("destacado_nota", 8.0))
     salida = []
