@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//novedades-discos//ES
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Próximos discos · Punk y garage
+BEGIN:VEVENT
+UID:king-gizzard-and-the-lizard-wizard-entropy@novedades-discos
+DTSTAMP:20261122T104321Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:King Gizzard & the Lizard Wizard – Entropy
+DESCRIPTION:p(doom) Records
+END:VEVENT
+BEGIN:VEVENT
+UID:factory-floor-one-trip@novedades-discos
+DTSTAMP:20261122T104321Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Factory Floor – One Trip
+DESCRIPTION:Phantasy Sound
+END:VEVENT
+END:VCALENDAR

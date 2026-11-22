@@ -89,7 +89,10 @@ def main():
             "id": d["id"], "artista": d["artista"], "titulo": d["titulo"],
             "fecha": d["fecha"], "fecha_exacta": d.get("fecha_exacta", True),
             "sello": d.get("sello"), "familias": d.get("familias", []), "subgeneros": d.get("subgeneros", []),
-            "portada": peq, "portada_grande": gra, "pistas": d.get("pistas"), "tipo": d.get("tipo"),
+            "portada": peq, "portada_grande": gra,
+            # si la portada principal no carga (p. ej. Cover Art Archive sin imagen), la de Deezer
+            "portada_alt": dz_port if (dz_port := (d.get("deezer") or {}).get("portada")) and dz_port != peq else None,
+            "pistas": d.get("pistas"), "tipo": d.get("tipo"),
             "idioma": d.get("idioma"), "nota": media, "n_notas": len(notas), "destacado": destacado,
             "puntos": puntos, "listas": en_listas,
             "deezer_id": (d.get("deezer") or {}).get("id"),

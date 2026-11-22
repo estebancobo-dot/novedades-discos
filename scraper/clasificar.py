@@ -31,6 +31,7 @@ class Taxonomia:
         self.alias: dict[str, set[str]] = defaultdict(set)
         self.genericas: dict[str, str] = {}
         self.ignorar = {normalizar(str(x)) for x in datos.get("ignorar", [])}
+        self.rx_ignorar = re.compile(datos["ignorar_regex"]) if datos.get("ignorar_regex") else None
         for fam, fd in datos["familias"].items():
             for g in fd.get("genericas", []):
                 self.genericas[normalizar(str(g))] = fam
@@ -105,6 +106,8 @@ def clasificar_disco(d: dict, tax: Taxonomia, mapeo: dict, desconocidas: Counter
                 reconocida = True
         if not reconocida:
             n = normalizar(etiqueta)
+            if tax.rx_ignorar and tax.rx_ignorar.search(etiqueta):
+                continue
             if n and len(n) <= 40:
                 desconocidas[n] += 1
                 ejemplo.setdefault(n, (etiqueta, f"{d['artista']} – {d['titulo']}"))
@@ -133,6 +136,13 @@ def main():
     # Corte exacto de la ventana (por si la recogida se hizo con otra configuración).
     estado_p = ruta(rutas["estado_fuentes"])
     ventana = (json.load(open(estado_p, encoding="utf-8")).get("ventana") if os.path.exists(estado_p) else None) or ["", "9999"]
+    # nombres de artistas y sellos del propio conjunto: como etiqueta no dicen nada del género
+    for d in discos:
+        tax.ignorar.add(normalizar(d.get("artista")))
+        if d.get("sello"):
+            for sello in re.split(r"\s*[/,]\s*", d["sello"]):
+                tax.ignorar.add(normalizar(sello))
+    tax.ignorar.discard("")
     desconocidas, ejemplo = Counter(), {}
     quedan = []
     for d in discos:

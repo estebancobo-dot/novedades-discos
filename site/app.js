@@ -48,8 +48,15 @@ function color(texto) {
 function portadaHTML(d, grande = false) {
   const vacia = `<div class="vacia" style="background:${color(d.artista + d.titulo)}">${esc(d.artista)}</div>`;
   const url = grande ? (d.portada_grande || d.portada) : d.portada;
-  return url ? `${vacia}<img src="${esc(url)}" alt="" loading="lazy" decoding="async" onerror="this.remove()">` : vacia;
+  const alt = d.portada_alt ? ` data-alt="${esc(d.portada_alt)}"` : "";
+  return url ? `${vacia}<img src="${esc(url)}"${alt} alt="" loading="lazy" decoding="async" onerror="portadaFallida(this)">` : vacia;
 }
+// portada que no carga: se prueba la alternativa (Deezer) y, si tampoco, queda el fondo con el nombre
+function portadaFallida(img) {
+  const alt = img.dataset.alt;
+  if (alt && img.src !== alt) { img.removeAttribute("data-alt"); img.src = alt; } else img.remove();
+}
+window.portadaFallida = portadaFallida;
 function toast(texto) {
   const t = $("#toast"); t.textContent = texto; t.hidden = false;
   clearTimeout(toast.t); toast.t = setTimeout(() => { t.hidden = true; }, 2200);
@@ -224,7 +231,7 @@ function pintarPanel() {
   const base = DATOS.discos.filter(d => pasa(d, "subs"));
   const cuenta = {};
   for (const d of base) { for (const s of d.subgeneros) cuenta[s] = (cuenta[s] || 0) + 1; if (!d.subgeneros.length) cuenta[SIN_SUB] = (cuenta[SIN_SUB] || 0) + 1; }
-  const chip = (id, nombre, desc) => `<span class="chip-grupo"><button class="chip" data-s="${id}" aria-pressed="${estado.subs.has(id)}">
+  const chip = (id, nombre, desc) => `<span class="chip-grupo"><button class="chip" data-s="${id}" data-vacio="${cuenta[id] ? 0 : 1}" aria-pressed="${estado.subs.has(id)}">
       ${esc(nombre)}<small>${cuenta[id] || 0}</small></button>${desc ? `<button class="info" data-info="${id}" aria-label="Qué es ${esc(nombre)}">ⓘ</button>` : ""}</span>`;
   let html = `<p class="sub-desc nota-info" id="subInfo" hidden></p>`;
   for (const [fk, fam] of Object.entries(DATOS.familias)) {
@@ -427,3 +434,23 @@ fetch("data/discos.json", { cache: "no-cache" })
   .catch(err => { $("#estado").textContent = "No se pudieron cargar los datos (" + err.message + ")."; });
 
 if ("serviceWorker" in navigator) addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+
+// cabecera que se esconde al bajar y reaparece al subir (solo pantallas estrechas)
+(() => {
+  const cab = document.querySelector(".cab");
+  if (!cab) return;
+  let ultima = window.scrollY, pendiente = false;
+  window.addEventListener("scroll", () => {
+    if (pendiente) return;
+    pendiente = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY, estrecha = window.innerWidth < 760;
+      const abierto = document.querySelector("dialog[open]") || !document.querySelector("#panel")?.hidden;
+      if (!estrecha || y < 160 || abierto) cab.classList.remove("oculta");
+      else if (y > ultima + 6) cab.classList.add("oculta");
+      else if (y < ultima - 6) cab.classList.remove("oculta");
+      ultima = y; pendiente = false;
+    });
+  }, { passive: true });
+  cab.addEventListener("focusin", () => cab.classList.remove("oculta"));
+})();

@@ -253,3 +253,17 @@ dialog#ficha::backdrop { background: rgb(0 0 0 / .55); }
 .ranking li .aviso { display: block; }
 .ranking .busqueda { font-size: 12px; border: 1px dashed var(--linea); border-radius: 999px; padding: 2px 8px; text-decoration: none; color: var(--tinta-suave); }
 .barra { flex-wrap: wrap; }
+/* la barra cabe en una línea en móvil */
+.orden { min-width: 0; }
+.orden select { max-width: 42vw; text-overflow: ellipsis; }
+.vistas button { width: 34px; }
+.orden select { max-width: 38vw; }
+/* en móvil la cabecera se esconde al bajar y vuelve al subir: deja más sitio a las portadas */
+.cab { transition: transform .22s ease; will-change: transform; }
+.cab.oculta { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .cab { transition: none; } }
+/* subgéneros sin discos con los filtros actuales: se atenúan */
+.chip[data-vacio="1"] { opacity: .45; }
+/* lista: cada fila ocupa todo el ancho (los <button> se encogen por defecto); en escritorio, dos columnas */
+.lista .tarjeta { width: 100%; box-sizing: border-box; }
+@media (min-width: 1100px) { .lista .rejilla { display: grid; grid-template-columns: 1fr 1fr; column-gap: 32px; } }
