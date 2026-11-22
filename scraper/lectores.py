@@ -187,6 +187,12 @@ def _urls(cfg: dict, hoy: dt.date | None = None, desde: dt.date | None = None) -
     if pag.get("plantilla"):
         for n in range(int(pag.get("desde", 2)), int(pag.get("hasta", 3)) + 1):
             urls.append(pag["plantilla"].format(n=n))
+    an = pag.get("anios")        # {plantilla: "...{anio}...", desde: 2016, hasta: "actual"}
+    if an:
+        hoy_ = hoy or dt.date.today()
+        hasta_a = hoy_.year if str(an.get("hasta", "actual")) == "actual" else int(an["hasta"])
+        for a in range(int(an.get("desde", hasta_a)), hasta_a + 1):
+            urls.append(an["plantilla"].format(anio=a))
     fx = pag.get("fechas")
     if fx:
         hoy = hoy or dt.date.today()
@@ -226,7 +232,7 @@ def leer_texto(nav, cfg, hoy, desde=None) -> ResultadoFuente:
         if r.estado != 200:
             if not por_fechas:
                 res.detalle += f" {url} → HTTP {r.estado};"
-            if cfg.get("paginacion") and res.items and not por_fechas:
+            if cfg.get("paginacion") and res.items and not por_fechas and not (cfg.get("paginacion") or {}).get("anios"):
                 break
             continue
         completo = html_a_texto(r.texto, r.url, **tcfg)
@@ -242,12 +248,17 @@ def leer_texto(nav, cfg, hoy, desde=None) -> ResultadoFuente:
             fdef = parse_fecha(mf.groupdict().get("fecha") or mf.group(0), hoy) if mf else None
         nuevos = _items_de_texto(t, cfg, cfg["id"], ref, fecha_defecto=fdef,
                                  indice=bool((cfg.get("detalle") or {}).get("patrones")))
+        if cfg.get("rol") == "lista_anual" and cfg.get("anio_desde_url"):
+            ma = re.search(cfg["anio_desde_url"], url)
+            for it in nuevos:
+                it.anio = int(ma.group(1)) if ma else None
         for it in nuevos:
             it.fecha_tipo = cfg.get("fecha_es", "lanzamiento")
             if it.fecha_tipo == "publicacion":
                 it.fecha_publicacion = it.fecha
         res.items.extend(nuevos)
-        if cfg.get("paginacion") and not por_fechas and (not nuevos or _todo_antiguo([i.fecha for i in nuevos], desde)):
+        por_anios = bool((cfg.get("paginacion") or {}).get("anios"))
+        if cfg.get("paginacion") and not por_fechas and not por_anios and (not nuevos or _todo_antiguo([i.fecha for i in nuevos], desde)):
             break
     _seguir_detalles(nav, cfg, res, hoy, desde)
     return res

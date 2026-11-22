@@ -12,7 +12,7 @@ const SIN_SUB = "_sin";
 
 let DATOS = null, SUB = {}, HOY = "", POR_ID = {};
 const estado = { familia: "todas", subs: new Set(), desde: "", hasta: "", sello: "", q: "",
-  orden: "fecha", destacados: false, milista: false, tandas: 1 };
+  orden: "fecha", destacados: false, milista: false, tandas: 1, anio: "" };
 
 // ------------------------------------------------------------ almacenamiento local (sin cuentas)
 const local = {
@@ -71,6 +71,7 @@ function leerURL() {
   estado.orden = p.get("orden") || "fecha";
   estado.destacados = p.get("dest") === "1";
   estado.milista = p.get("milista") === "1";
+  estado.anio = p.get("anio") || "";
 }
 function urlEstado() {
   const p = new URLSearchParams();
@@ -83,6 +84,7 @@ function urlEstado() {
   if (estado.orden !== "fecha") p.set("orden", estado.orden);
   if (estado.destacados) p.set("dest", "1");
   if (estado.milista) p.set("milista", "1");
+  if (estado.orden === "mejor" && estado.anio) p.set("anio", estado.anio);
   const qs = p.toString();
   return qs ? "?" + qs : location.pathname;
 }
@@ -90,6 +92,13 @@ function escribirURL() { history.replaceState(null, "", urlEstado() + location.h
 
 // ------------------------------------------------------------ filtrado
 function pasa(d, ignorar = "") {
+  if (estado.orden === "mejor") {             // en "lo mejor del año" manda el año, no el rango de fechas
+    if (!d.fecha.startsWith(estado.anio)) return false;
+    return pasaSinFechas(d, ignorar);
+  }
+  return pasaSinFechas(d, ignorar, true);
+}
+function pasaSinFechas(d, ignorar = "", conFechas = false) {
   if (estado.milista && !MI_LISTA[d.id]) return false;
   if (estado.familia !== "todas" && !d.familias.includes(estado.familia)) return false;
   if (ignorar !== "subs" && estado.subs.size) {
@@ -97,7 +106,7 @@ function pasa(d, ignorar = "") {
     if (!ok) return false;
   }
   if (estado.destacados && !d.destacado) return false;
-  if (!estado.milista) {
+  if (conFechas && !estado.milista) {
     if (estado.desde && d.fecha < estado.desde) return false;
     if (estado.hasta && d.fecha > estado.hasta) return false;
   }
@@ -154,11 +163,13 @@ function pintar() {
   const lista = DATOS.discos.filter(d => pasa(d));
   const main = $("#contenido");
   main.classList.toggle("lista", VISTA === "lista");
-  if (!lista.length) {
+  const info = estado.orden === "mejor" ? DATOS.mejores?.[estado.anio] : null;
+  if (!lista.length && !(info && info.tipo === "listas")) {
     main.innerHTML = `<p class="estado">${estado.milista ? "Aún no has guardado discos. Abre uno y pulsa ☆ Guardar." : "No hay discos con estos filtros."}</p>`;
     pintarMeses([]); return;
   }
   let html = "";
+  if (estado.orden === "mejor") { pintarMejores(lista, main); return; }
   if (estado.orden !== "fecha") {
     const clave = estado.orden === "nota" ? (d => (d.nota ?? -1) * 100 + d.n_notas) : (d => d.resenas.length * 100 + (d.nota ?? 0));
     const orden = [...lista].sort((a, b) => clave(b) - clave(a) || b.fecha.localeCompare(a.fecha));
@@ -188,6 +199,25 @@ function pintar() {
   }
   const mas = $("#mas");
   if (mas) mas.onclick = () => { estado.tandas++; pintar(); };
+}
+
+function pintarMejores(lista, main) {
+  const info = DATOS.mejores?.[estado.anio] || {};
+  pintarMeses([]);
+  if (info.tipo === "discos") {
+    const orden = [...lista].sort((a, b) => b.puntos - a.puntos || b.fecha.localeCompare(a.fecha)).slice(0, 100);
+    main.innerHTML = `<section class="semana"><h2><span>Lo mejor de ${estado.anio}</span><span>top ${orden.length}</span></h2>
+      <p class="aviso">Orden: nota media de las reseñas, listas de fin de año, número de reseñas y de fuentes.</p>
+      <div class="rejilla">${orden.map((d, i) => tarjeta(d).replace('<div class="portada">', `<div class="portada"><span class="puesto">${i + 1}</span>`)).join("")}</div></section>`;
+    return;
+  }
+  const filas = (info.lista || []).filter(e => estado.familia === "todas" || (e.familias || []).includes(estado.familia))
+    .filter(e => !estado.q || norm(`${e.artista} ${e.titulo}`).includes(norm(estado.q)));
+  main.innerHTML = `<section class="semana"><h2><span>Lo mejor de ${estado.anio}</span><span>${filas.length}</span></h2>
+    <p class="aviso">Según las listas de fin de año de la prensa especializada (más arriba, en más listas).</p>
+    <ol class="ranking">${filas.map(e => `<li><b>${esc(e.artista)}</b> – ${esc(e.titulo)}
+      <span class="aviso">${esc(e.listas.join(" · "))}</span>
+      <a class="busqueda" href="https://www.albumoftheyear.org/search/albums/?q=${enc(e.artista + " " + e.titulo)}" target="_blank" rel="noopener">AOTY 🔍</a></li>`).join("")}</ol></section>`;
 }
 
 function pintarPanel() {
@@ -227,6 +257,7 @@ function contarFiltros() {
   $("#btnLista").setAttribute("aria-pressed", estado.milista);
   $("#btnDest").setAttribute("aria-pressed", estado.destacados);
   $("#orden").value = estado.orden;
+  $("#selAnio").hidden = estado.orden !== "mejor";
   $("#vRejilla").setAttribute("aria-pressed", VISTA === "rejilla");
   $("#vLista").setAttribute("aria-pressed", VISTA === "lista");
 }
@@ -358,7 +389,13 @@ function eventos() {
   $("#fHasta").onchange = e => { estado.hasta = e.target.value; actualizar(); };
   $("#fSello").onchange = e => { estado.sello = e.target.value.trim(); actualizar(); };
   $("#limpiar").onclick = () => { estado.subs.clear(); estado.sello = ""; estado.hasta = ""; estado.desde = restarMeses(HOY, 5); actualizar(); };
-  $("#orden").onchange = e => { estado.orden = e.target.value; estado.tandas = 1; actualizar(); };
+  $("#orden").onchange = e => {
+    estado.orden = e.target.value; estado.tandas = 1;
+    if (estado.orden === "mejor" && !estado.anio) estado.anio = Object.keys(DATOS.mejores || {}).sort().reverse()[0] || HOY.slice(0, 4);
+    actualizar();
+  };
+  $("#anio").value = estado.anio || $("#anio").value;
+  $("#anio").onchange = e => { estado.anio = e.target.value; actualizar(); };
   $("#btnDest").onclick = () => { estado.destacados = !estado.destacados; estado.tandas = 1; actualizar(); };
   $("#btnLista").onclick = () => { estado.milista = !estado.milista; estado.tandas = 1; actualizar(); };
   $("#vRejilla").onclick = () => { VISTA = "rejilla"; local.set("vista", VISTA); actualizar(); };
@@ -380,7 +417,10 @@ fetch("data/discos.json", { cache: "no-cache" })
     const sellos = [...new Set(datos.discos.map(d => d.sello).filter(Boolean))].sort((a, b) => a.localeCompare(b));
     $("#sellos").innerHTML = sellos.map(s => `<option value="${esc(s)}">`).join("");
     $("#actualizado").textContent = `${datos.discos.length} discos · actualizado el ${fechaLarga(datos.actualizado)}`;
-    leerURL(); eventos(); actualizar();
+    $("#anio").innerHTML = Object.keys(datos.mejores || {}).sort().reverse().map(a => `<option>${a}</option>`).join("");
+    leerURL();
+    if (estado.anio) $("#anio").value = estado.anio;
+    eventos(); actualizar();
     const m = location.hash.match(/disco=([^&]+)/);
     if (m) abrirFicha(decodeURIComponent(m[1]));
   })

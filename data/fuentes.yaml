@@ -596,6 +596,55 @@ fuentes:
   patrones:
     - '^COMING (?P<fecha>\d{1,2}(?:st|nd|rd|th)?\s+(?:January|February|March|April|May|June|July|August|September|October|November|December|JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER)(?:\s+\d{4})?)\n(?P<artista>[^\n]+)\n-?\s*(?P<titulo>[^\n]+)$'
 
+# ============================================================ LISTAS DE FIN DE AÑO
+# rol lista_anual: no aportan discos nuevos; sirven para "Lo mejor de cada año".
+- id: hh_mejores
+  nombre: Heavy Harmonies – Best CDs of the year
+  web: https://heavyharmonies.com
+  familia: hardrock
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: '/(\d{4})best\.cgi'
+  urls: []
+  paginacion:
+    anios: {plantilla: "https://heavyharmonies.com/cgi-bin/{anio}best.cgi", desde: 2016, hasta: actual}
+  texto:
+    marcas: {"b, strong": ["**", "**"]}
+  patrones:
+    - '^\s*(?:\d+\.\s*)?\*\*(?P<artista>[^–*\n]{2,60}?)\s+–\s+(?P<titulo>[^*\n]{1,100}?)\.?\*\*'
+
+- id: scm_esenciales
+  nombre: Saving Country Music – Essential Albums
+  web: https://savingcountrymusic.com
+  familia: country
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: '(\d{4})'
+  urls: []
+  paginacion:
+    anios: {plantilla: "https://savingcountrymusic.com/saving-country-musics-{anio}-essential-albums-list/", desde: 2020, hasta: actual}
+  texto:
+    selector: article
+    marcas: {"em, i": "«»", "strong, b": ["**", "**"]}
+  patrones:
+    - '^\**(?:MOST ESSENTIAL –\**\s*\**)?(?P<artista>[^–«\n*]{2,60}?)\s*–\s*«\s*(?P<titulo>[^»]+?)\s*»\s*\**\s*$'
+
+- id: scm_nominados
+  nombre: Saving Country Music – Album of the Year nominees
+  web: https://savingcountrymusic.com
+  familia: country
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: '(\d{4})'
+  urls: []
+  paginacion:
+    anios: {plantilla: "https://savingcountrymusic.com/{anio}-saving-country-music-album-of-the-year-nominees/", desde: 2020, hasta: actual}
+  texto:
+    selector: article
+    marcas: {"em, i": "«»", "strong, b": ["**", "**"]}
+  patrones:
+    - '^\**(?P<artista>[^–«\n*]{2,60}?)\s*–\s*«\s*(?P<titulo>[^»]+?)\s*»\s*\**\s*$'
+
 # ============================================================ SONDAS
 - id: bandcamp
   nombre: Bandcamp (comprobar si sigue bloqueado)

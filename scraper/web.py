@@ -72,6 +72,8 @@ def main():
     for fk, subs in prestados.items():     # subgéneros que también cuentan en otra familia
         if fk in familias:
             familias[fk]["grupos"].append({"nombre": "De otras familias", "subs": subs})
+    p_listas = ruta(config["rutas"].get("listas_anuales", "data/listas_anuales.json"))
+    listas = json.load(open(p_listas, encoding="utf-8")) if os.path.exists(p_listas) else {}
     reglas = (tax.get("reglas") or {})
     umbral_dest = float(reglas.get("destacado_nota", 8.0))
     salida = []
@@ -80,12 +82,16 @@ def main():
         notas = [n for n in (nota_10(r.get("nota")) for r in d.get("resenas", [])) if n is not None]
         media = round(sum(notas) / len(notas), 1) if notas else None
         destacado = bool((media is not None and media >= umbral_dest and len(notas) >= 1) or len(d.get("resenas", [])) >= 3)
+        en_listas = d.get("listas_anuales", [])
+        puntos = round((media or 0) + 1.5 * len(en_listas) + 0.3 * min(len(d.get("resenas", [])), 5)
+                       + 0.2 * min(len({x["id"] for x in d.get("fuentes", [])}), 5) + (1 if destacado else 0), 2)
         salida.append({
             "id": d["id"], "artista": d["artista"], "titulo": d["titulo"],
             "fecha": d["fecha"], "fecha_exacta": d.get("fecha_exacta", True),
             "sello": d.get("sello"), "familias": d.get("familias", []), "subgeneros": d.get("subgeneros", []),
             "portada": peq, "portada_grande": gra, "pistas": d.get("pistas"), "tipo": d.get("tipo"),
             "idioma": d.get("idioma"), "nota": media, "n_notas": len(notas), "destacado": destacado,
+            "puntos": puntos, "listas": en_listas,
             "deezer_id": (d.get("deezer") or {}).get("id"),
             "dicen": [t for t in d.get("descripciones", []) if len(t) > 30][:2],
             "resenas": [{"nombre": r["nombre"], "url": r.get("url"), "nota": r.get("nota"), "fecha": r.get("fecha")}
@@ -96,9 +102,20 @@ def main():
         })
     base = ruta("site")
     os.makedirs(os.path.join(base, "data"), exist_ok=True)
+    # "Lo mejor de cada año": con nuestros discos si el año tiene datos; si no, con las listas de fin de año
+    mejores = {}
+    anios_discos = {}
+    for d in salida:
+        anios_discos[d["fecha"][:4]] = anios_discos.get(d["fecha"][:4], 0) + 1
+    for anio in sorted(set(anios_discos) | set(listas), reverse=True):
+        if anios_discos.get(anio, 0) >= 20:
+            mejores[anio] = {"tipo": "discos"}
+        elif listas.get(anio):
+            entradas = sorted(listas[anio].values(), key=lambda e: (-len(e["listas"]), e["artista"].lower()))
+            mejores[anio] = {"tipo": "listas", "lista": entradas[:150]}
     with open(os.path.join(base, "data/discos.json"), "w", encoding="utf-8") as f:
-        json.dump({"actualizado": actualizado, "familias": familias, "discos": salida}, f, ensure_ascii=False,
-                  separators=(",", ":"))
+        json.dump({"actualizado": actualizado, "familias": familias, "mejores": mejores, "discos": salida}, f,
+                  ensure_ascii=False, separators=(",", ":"))
     _rss(base, salida, familias, nombres_sub, actualizado)
     _ics(base, salida, familias, actualizado)
     print(f"site/data/discos.json: {len(salida)} discos · RSS y calendarios generados")

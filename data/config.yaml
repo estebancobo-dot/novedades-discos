@@ -111,3 +111,4 @@ rutas:
   cache_musicbrainz: data/cache/musicbrainz.json
   cache_bandcamp: data/cache/bandcamp.json
   cache_etiquetas_extra: data/cache/etiquetas_extra.json
+  listas_anuales: data/listas_anuales.json   # listas de fin de año (lo mejor de cada año)

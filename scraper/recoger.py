@@ -115,8 +115,18 @@ def main():
     descartados = []
     grupos: dict[str, list[Item]] = defaultdict(list)
     menciones: list[Item] = []
+    listas = defaultdict(dict)        # año → clave → {artista, titulo, listas}
     for it in items:
         f = por_id[it.fuente]
+        if f.get("rol") == "lista_anual":          # listas de fin de año: para "lo mejor de cada año"
+            if it.anio:
+                e = listas[str(it.anio)].setdefault(clave(it.artista, it.titulo),
+                                                    {"artista": it.artista, "titulo": it.titulo, "listas": [], "familias": []})
+                if f["nombre"] not in e["listas"]:
+                    e["listas"].append(f["nombre"])
+                if f.get("familia") and f["familia"] not in e["familias"]:
+                    e["familias"].append(f["familia"])
+            continue
         if it.mencion:
             menciones.append(it)
             continue
@@ -283,6 +293,18 @@ def main():
 
     if incremental:
         salida = _fusionar(salida, previos, desde)
+    # listas de fin de año: se guardan aparte y se marcan en los discos que las tienen
+    p_listas = ruta(config["rutas"].get("listas_anuales", "data/listas_anuales.json"))
+    previas = json.load(open(p_listas, encoding="utf-8")) if os.path.exists(p_listas) else {}
+    for anio, entradas in listas.items():
+        previas.setdefault(anio, {}).update(entradas)
+    if listas or previas:
+        _escribir(p_listas, previas)
+    for s_ in salida:
+        k = clave(s_["artista"], s_["titulo"])
+        en = previas.get(s_["fecha"][:4], {}).get(k)
+        if en:
+            s_["listas_anuales"] = en["listas"]
     salida.sort(key=lambda s: (s["fecha"], s["artista"].lower()), reverse=True)
     estado["musicbrainz"] = {"consultas": mb.consultas if mb else 0, "bloqueado": mb.bloqueado if mb else None}
     estado["bandcamp"] = {"paginas": bc.abiertas if bc else 0, "bloqueado": bc.bloqueado if bc else None}

@@ -150,6 +150,23 @@
 "url": "https://angelaeasterling.bandcamp.com/album/songs-from-the-knoxville-project"
 },
 "https://aprilart.bandcamp.com/|RED": {},
+"https://audrey-horne.bandcamp.com/album/achilles": {
+"artista": "Audrey Horne",
+"etiquetas": [
+"Rock",
+"alternative rock",
+"hard rock",
+"post-grunge",
+"stoner rock",
+"Bergen"
+],
+"fecha": "04 Sep 2026 00:00:00 GMT",
+"pistas": 11,
+"portada": "https://f4.bcbits.com/img/a2137327464_10.jpg",
+"sello": "Audrey Horne",
+"titulo": "Achilles",
+"url": "https://audrey-horne.bandcamp.com/album/achilles"
+},
 "https://babehoven.bandcamp.com/album/i-see-them-i-see-me": {
 "artista": "Babehoven",
 "etiquetas": [
@@ -205,6 +222,22 @@
 "url": "https://beaujennings.bandcamp.com/album/sings-tom-petty"
 },
 "https://benjamintod.bandcamp.com/|Country Is Dead": {},
+"https://bigbrave.bandcamp.com/album/in-grief-or-in-hope": {
+"artista": "BIG BRAVE",
+"etiquetas": [
+"Montréal",
+"Rock",
+"Southern Lord Records",
+"thrill jockey",
+"Montreal"
+],
+"fecha": "12 Jun 2026 00:00:00 GMT",
+"pistas": 8,
+"portada": "https://f4.bcbits.com/img/a3846375388_10.jpg",
+"sello": "BIG BRAVE",
+"titulo": "in grief or in hope",
+"url": "https://bigbrave.bandcamp.com/album/in-grief-or-in-hope"
+},
 "https://biitahoudei.bandcamp.com/album/this-bed-was-made-for-me": {
 "artista": "Biita Houdei",
 "etiquetas": [
@@ -470,6 +503,42 @@
 "titulo": "All the light in the world",
 "url": "https://colinstetson.bandcamp.com/album/all-the-light-in-the-world"
 },
+"https://continentalrecordservices.bandcamp.com/album/50th-birthday-live-2026-double-album": {
+"artista": "Erja Lyytinen",
+"etiquetas": [
+"Americana",
+"Folk",
+"alt-country",
+"blues",
+"country",
+"singer-songwriter",
+"Netherlands"
+],
+"fecha": "09 Oct 2026 00:00:00 GMT",
+"pistas": 27,
+"portada": "https://f4.bcbits.com/img/a3752776323_10.jpg",
+"sello": "Continental Record Services",
+"titulo": "50th Birthday Live 2026 (double album)",
+"url": "https://continentalrecordservices.bandcamp.com/album/50th-birthday-live-2026-double-album"
+},
+"https://continentalrecordservices.bandcamp.com/album/broken-souvenirs": {
+"artista": "Bywater Call",
+"etiquetas": [
+"Americana",
+"Folk",
+"alt-country",
+"blues",
+"country",
+"singer-songwriter",
+"Netherlands"
+],
+"fecha": "29 Jul 2026 00:00:00 GMT",
+"pistas": 11,
+"portada": "https://f4.bcbits.com/img/a1281193798_10.jpg",
+"sello": "Continental Record Services",
+"titulo": "Broken Souvenirs",
+"url": "https://continentalrecordservices.bandcamp.com/album/broken-souvenirs"
+},
 "https://crandthewhitelights.bandcamp.com/|My Old Self": {
 "artista": "CR & The White Lights",
 "etiquetas": [
@@ -487,6 +556,23 @@
 "sello": "CR & The White Lights",
 "titulo": "My Old Self",
 "url": "https://crandthewhitelights.bandcamp.com/album/my-old-self"
+},
+"https://credoprog.bandcamp.com/album/we-the-disconnected": {
+"artista": "Credo",
+"etiquetas": [
+"Neo-Prog",
+"Prog",
+"Prog Rock",
+"Progressive Rock",
+"Rock",
+"United Kingdom"
+],
+"fecha": "23 Oct 2026 00:00:00 GMT",
+"pistas": 8,
+"portada": "https://f4.bcbits.com/img/a0618992039_10.jpg",
+"sello": "Credo",
+"titulo": "We The Disconnected",
+"url": "https://credoprog.bandcamp.com/album/we-the-disconnected"
 },
 "https://creekbedcarter.bandcamp.com/album/peasants-revolt": {
 "artista": "Creekbed Carter Hogan",
@@ -579,6 +665,25 @@
 "titulo": "I'm Your Team",
 "url": "https://darrenhayman.bandcamp.com/album/im-your-team"
 },
+"https://diedrunk.bandcamp.com/album/fading-failing-ruin": {
+"artista": "Solace",
+"etiquetas": [
+"Metal",
+"Stoner Metal",
+"dirt metal",
+"doom metal",
+"heavy metal - hard rock",
+"riff rock",
+"stoner metal",
+"Asbury Park"
+],
+"fecha": "03 Jul 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a1640873798_10.jpg",
+"sello": "Solace",
+"titulo": "Fading Failing Ruin",
+"url": "https://diedrunk.bandcamp.com/album/fading-failing-ruin"
+},
 "https://dogwoodtales.bandcamp.com/|Every Star in Rockingham County": {
 "artista": "Dogwood Tales",
 "etiquetas": [
@@ -597,6 +702,23 @@
 "sello": "Dogwood Tales",
 "titulo": "Every Star in Rockingham County",
 "url": "https://dogwoodtales.bandcamp.com/album/every-star-in-rockingham-county"
+},
+"https://dominum.bandcamp.com/album/night-is-calling": {
+"artista": "DOMINUM",
+"etiquetas": [
+"Metal",
+"germany",
+"heavy metal",
+"horror punk",
+"symphonic metal",
+"Nuremberg"
+],
+"fecha": "03 Jul 2026 00:00:00 GMT",
+"pistas": 13,
+"portada": "https://f4.bcbits.com/img/a1715606574_10.jpg",
+"sello": "DOMINUM",
+"titulo": "Night is Calling",
+"url": "https://dominum.bandcamp.com/album/night-is-calling"
 },
 "https://duffyuhlmann.bandcamp.com/|Hot Creek": {
 "artista": "Duffy x Uhlmann",
@@ -631,6 +753,7 @@
 "titulo": "The Final Painting",
 "url": "https://edaskew.bandcamp.com/album/the-final-painting"
 },
+"https://eidolamusic.bandcamp.com/|The Will to Power": {},
 "https://elanormoss.bandcamp.com/album/the-knife-the-needle": {
 "artista": "Elanor Moss",
 "etiquetas": [
@@ -719,6 +842,24 @@
 "sello": "Fanny Lumsden",
 "titulo": "Traditions",
 "url": "https://fannylumsden.bandcamp.com/album/traditions"
+},
+"https://ff-signumregis.bandcamp.com/album/beyond-spacetime": {
+"artista": "Signum Regis",
+"etiquetas": [
+" progressive metal",
+"Metal",
+"heavy metal",
+"neo-classical metal",
+"power metal",
+"symphonic metal",
+"Bratislava"
+],
+"fecha": "05 Oct 2026 00:00:00 GMT",
+"pistas": 12,
+"portada": "https://f4.bcbits.com/img/a3950993778_10.jpg",
+"sello": "Signum Regis",
+"titulo": "Beyond Spacetime",
+"url": "https://ff-signumregis.bandcamp.com/album/beyond-spacetime"
 },
 "https://fikarecordings.bandcamp.com/album/looking-for-love": {},
 "https://fredadsouza.bandcamp.com/album/and-remade": {
@@ -875,6 +1016,30 @@
 "titulo": "tiarn",
 "url": "https://hanastretton.bandcamp.com/album/tiarn-2"
 },
+"https://hatsoffgentlemen.bandcamp.com/|Parallel Lives": {
+"artista": "Hats Off Gentlemen It's Adequate",
+"etiquetas": [
+"Hard Rock",
+"Progressive Rock",
+"Rock",
+"alt-rock",
+"art rock",
+"bass flute",
+"classic rock",
+"electronica",
+"flute",
+"guitar",
+"prog",
+"prog rock",
+"London"
+],
+"fecha": "25 Aug 2026 00:00:00 GMT",
+"pistas": 13,
+"portada": "https://f4.bcbits.com/img/a0009436184_10.jpg",
+"sello": "Hats Off Gentlemen It's Adequate",
+"titulo": "Parallel Lives",
+"url": "https://hatsoffgentlemen.bandcamp.com/album/parallel-lives"
+},
 "https://hayden4.bandcamp.com/album/the-recent-past": {
 "artista": "Hayden",
 "etiquetas": [
@@ -892,6 +1057,24 @@
 "sello": "Hayden",
 "titulo": "The Recent Past",
 "url": "https://hayden4.bandcamp.com/album/the-recent-past"
+},
+"https://heilung.bandcamp.com/|Sagas": {
+"artista": "Heilung",
+"etiquetas": [
+"Amplified History",
+"Nordic",
+"World",
+"experimental",
+"folk",
+"neofolk",
+"Denmark"
+],
+"fecha": "11 Dec 2026 00:00:00 GMT",
+"pistas": 11,
+"portada": "https://f4.bcbits.com/img/a1111209985_10.jpg",
+"sello": "Heilung",
+"titulo": "Sagas",
+"url": "https://heilung.bandcamp.com/album/sagas"
 },
 "https://hollowhand.bandcamp.com/album/wish-road-south": {
 "artista": "Hollow Hand",
@@ -929,6 +1112,63 @@
 "sello": "Hovvdy",
 "titulo": "Big World",
 "url": "https://hovvdy.bandcamp.com/album/big-world"
+},
+"https://ifthesetreescouldtalk.bandcamp.com/album/the-hidden-hand": {
+"artista": "If These Trees Could Talk",
+"etiquetas": [
+"Rock",
+"alternative",
+"cinematic",
+"experimental rock",
+"post rock instrumental",
+"post-metal",
+"Akron"
+],
+"fecha": "10 Jul 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a2198158713_10.jpg",
+"sello": "If These Trees Could Talk",
+"titulo": "The Hidden Hand",
+"url": "https://ifthesetreescouldtalk.bandcamp.com/album/the-hidden-hand"
+},
+"https://insideoutmusic.bandcamp.com/album/far-and-wide-24-bit-hd-audio": {
+"artista": "The Pineapple Thief",
+"etiquetas": [
+"Atmospheric rock",
+"Inside Out",
+"Porcupine Tree",
+"Progressive Alternative Rock",
+"Progressive Rock",
+"Riverside",
+"Rock",
+"alternative rock",
+"king crimson",
+"London"
+],
+"fecha": "09 Oct 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a3779714236_10.jpg",
+"sello": "InsideOutMusic",
+"titulo": "Far and Wide (24-bit HD audio)",
+"url": "https://insideoutmusic.bandcamp.com/album/far-and-wide-24-bit-hd-audio"
+},
+"https://insideoutmusic.bandcamp.com/album/the-roaring-waves-24-bit-hd-audio": {
+"artista": "Steve Hackett, Steve Rothery",
+"etiquetas": [
+"London UK",
+"Marillion",
+"Rock Guitarist",
+"Steve Wilson",
+"Yes",
+"genesis",
+"London"
+],
+"fecha": "28 Aug 2026 00:00:00 GMT",
+"pistas": 7,
+"portada": "https://f4.bcbits.com/img/a3690850314_10.jpg",
+"sello": "InsideOutMusic",
+"titulo": "The Roaring Waves (24-bit HD audio)",
+"url": "https://insideoutmusic.bandcamp.com/album/the-roaring-waves-24-bit-hd-audio"
 },
 "https://intlanthem.bandcamp.com/album/spontaneous-music-live": {
 "artista": "SML",
@@ -1200,6 +1440,21 @@
 "titulo": "Dogwood Maiden Voyage",
 "url": "https://judebrothersmusic.bandcamp.com/album/dogwood-maiden-voyage"
 },
+"https://junius.bandcamp.com/album/sotera": {
+"artista": "Junius",
+"etiquetas": [
+"Alternative",
+"Heavy Metal",
+"Rock",
+"Boston"
+],
+"fecha": "26 Jun 2026 00:00:00 GMT",
+"pistas": 8,
+"portada": "https://f4.bcbits.com/img/a2143068205_10.jpg",
+"sello": "Junius",
+"titulo": "Sotera",
+"url": "https://junius.bandcamp.com/album/sotera"
+},
 "https://kamelot.bandcamp.com/album/dark-asylum": {
 "artista": "Kamelot",
 "etiquetas": [
@@ -1325,6 +1580,33 @@
 "titulo": "Bittersweet",
 "url": "https://kimmibitter.bandcamp.com/album/bittersweet"
 },
+"https://kissindynamite.bandcamp.com/|Kissin' Dynamite": {},
+"https://krisbarrasband.bandcamp.com/|Monsters We Made": {
+"artista": "Kris Barras Band",
+"etiquetas": [
+"Rock",
+"hard rock",
+"Torquay"
+],
+"fecha": "14 Aug 2026 00:00:00 GMT",
+"pistas": 11,
+"portada": "https://f4.bcbits.com/img/a2387171356_10.jpg",
+"sello": "Kris Barras Band",
+"titulo": "Monsters We Made",
+"url": "https://krisbarrasband.bandcamp.com/album/monsters-we-made"
+},
+"https://kscopemusic.bandcamp.com/album/harmonic-mind": {
+"artista": "Ozric Tentacles",
+"etiquetas": [
+"London"
+],
+"fecha": "18 Sep 2026 00:00:00 GMT",
+"pistas": 6,
+"portada": "https://f4.bcbits.com/img/a3135506782_10.jpg",
+"sello": "Kscope",
+"titulo": "Harmonic Mind",
+"url": "https://kscopemusic.bandcamp.com/album/harmonic-mind"
+},
 "https://lambchop.bandcamp.com/album/punching-the-clown": {
 "artista": "Lambchop",
 "etiquetas": [
@@ -1423,6 +1705,58 @@
 "titulo": "I Remember Everything",
 "url": "https://lesthomasmusic.bandcamp.com/album/i-remember-everything"
 },
+"https://lexlegion.bandcamp.com/album/lex-legion": {
+"artista": "Lex Legion",
+"etiquetas": [
+"Heavy Metal",
+"Metal",
+"Rock",
+"Sweden"
+],
+"fecha": "12 Jun 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a4195901098_10.jpg",
+"sello": "Lex Legion",
+"titulo": "Lex Legion",
+"url": "https://lexlegion.bandcamp.com/album/lex-legion"
+},
+"https://liminalskyband.bandcamp.com/album/all-tomorrows-darkness": {
+"artista": "Liminal Sky",
+"etiquetas": [
+"Rock",
+"alternative rock",
+"post rock",
+"prog rock",
+"United Kingdom"
+],
+"fecha": "19 Jun 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a3220621813_10.jpg",
+"sello": "Liminal Sky",
+"titulo": "All Tomorrow's Darkness",
+"url": "https://liminalskyband.bandcamp.com/album/all-tomorrows-darkness"
+},
+"https://listentolockhart.bandcamp.com/|City Pulse": {},
+"https://longearth.bandcamp.com/album/towards-the-sky": {
+"artista": "Long Earth",
+"etiquetas": [
+"Melodic Rock",
+"Progressive Rock",
+"Rock",
+"female fronted rock",
+"female vocals",
+"prog rock",
+"space",
+"space rock",
+"Glasgow"
+],
+"fecha": "27 Jun 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a3092221726_10.jpg",
+"sello": "Long Earth",
+"titulo": "Towards the Sky",
+"url": "https://longearth.bandcamp.com/album/towards-the-sky"
+},
 "https://louisebichan.bandcamp.com/album/binnorie": {
 "artista": "Louise Bichan",
 "etiquetas": [
@@ -1456,6 +1790,38 @@
 "titulo": "Sweet Thief",
 "url": "https://luluc.bandcamp.com/album/sweet-thief"
 },
+"https://madfishmusic.bandcamp.com/album/return-to-the-red-planet": {
+"artista": "Rick Wakeman",
+"etiquetas": [
+"Progressive Rock",
+"Rock",
+"prog",
+"progressive",
+"psychedelic",
+"psychedelic rock",
+"London"
+],
+"fecha": "16 Oct 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a1900793916_10.jpg",
+"sello": "MadfishMusic",
+"titulo": "Return To The Red Planet",
+"url": "https://madfishmusic.bandcamp.com/album/return-to-the-red-planet"
+},
+"https://magenta.bandcamp.com/album/an-ending": {
+"artista": "Lonely Robot",
+"etiquetas": [
+"Progressive Rock",
+"Rock",
+"United Kingdom"
+],
+"fecha": "11 Sep 2026 00:00:00 GMT",
+"pistas": 12,
+"portada": "https://f4.bcbits.com/img/a1669497434_10.jpg",
+"sello": "Magenta",
+"titulo": "An Ending",
+"url": "https://magenta.bandcamp.com/album/an-ending"
+},
 "https://mali-obomsawin.bandcamp.com/album/automatic": {
 "artista": "Mali Obomsawin",
 "etiquetas": [
@@ -1481,6 +1847,24 @@
 "url": "https://mali-obomsawin.bandcamp.com/album/automatic"
 },
 "https://mamasbroke.bandcamp.com/|Reunion": {},
+"https://manntra.bandcamp.com/|Wild Hunt": {
+"artista": "Manntra",
+"etiquetas": [
+"Industrial Metal",
+"Melodic Metal",
+"Metal",
+"folk metal",
+"gothic metal",
+"slavic folk metal",
+"Umag"
+],
+"fecha": "25 Dec 2026 00:00:00 GMT",
+"pistas": 11,
+"portada": "https://f4.bcbits.com/img/a1712153536_10.jpg",
+"sello": "Manntra",
+"titulo": "Wild Hunt",
+"url": "https://manntra.bandcamp.com/album/wild-hunt"
+},
 "https://margoprice.bandcamp.com/|Days of Unrest": {
 "artista": "Margo Price",
 "etiquetas": [
@@ -1563,6 +1947,61 @@
 "titulo": "Hell or High Water",
 "url": "https://mikomarks.bandcamp.com/album/hell-or-high-water"
 },
+"https://miracle.bandcamp.com/album/the-living-likeness-of-my-electric-daemon": {
+"artista": "Miracle",
+"etiquetas": [
+"Electronic",
+"dream pop",
+"electro pop",
+"experimental pop",
+"pop",
+"synth pop",
+"United Kingdom"
+],
+"fecha": "26 Jun 2026 00:00:00 GMT",
+"pistas": 10,
+"portada": "https://f4.bcbits.com/img/a0499795602_10.jpg",
+"sello": "Miracle",
+"titulo": "The Living Likeness Of My  Electric Daemon",
+"url": "https://miracle.bandcamp.com/album/the-living-likeness-of-my-electric-daemon"
+},
+"https://molly-hatchet.bandcamp.com/album/lost-horizon": {
+"artista": "Molly Hatchet",
+"etiquetas": [
+"Rock",
+"Southern Rock",
+"blues rock",
+"jacksonville",
+"rock",
+"southern rock",
+"Jacksonville"
+],
+"fecha": "27 Nov 2026 00:00:00 GMT",
+"pistas": 12,
+"portada": "https://f4.bcbits.com/img/a1404874666_10.jpg",
+"sello": "Molly Hatchet",
+"titulo": "Lost Horizon",
+"url": "https://molly-hatchet.bandcamp.com/album/lost-horizon"
+},
+"https://mortiis.bandcamp.com/album/ghosts-of-europa-deluxe-edition": {
+"artista": "Mortiis (Official)",
+"etiquetas": [
+"Alternative",
+"Industrial",
+"Metal",
+"dungeon synth",
+"gothic",
+"rock",
+"synth",
+"Oslo"
+],
+"fecha": "26 Jun 2026 00:00:00 GMT",
+"pistas": 16,
+"portada": "https://f4.bcbits.com/img/a3805413107_10.jpg",
+"sello": "Mortiis (Official)",
+"titulo": "Ghosts of Europa (Deluxe Edition)",
+"url": "https://mortiis.bandcamp.com/album/ghosts-of-europa-deluxe-edition"
+},
 "https://mrplowsplace.bandcamp.com/album/at-one-with-nature": {
 "artista": "Mr Plow",
 "etiquetas": [
@@ -1624,6 +2063,21 @@
 "titulo": "Manifest Good Things",
 "url": "https://mygirltheriver.bandcamp.com/album/manifest-good-things"
 },
+"https://nestorsweden.bandcamp.com/album/live-at-gothenburg-film-studios": {
+"artista": "Nestor",
+"etiquetas": [
+"Rock",
+"aor",
+"hard rock",
+"Sweden"
+],
+"fecha": "14 Aug 2026 00:00:00 GMT",
+"pistas": 16,
+"portada": "https://f4.bcbits.com/img/a3182925895_10.jpg",
+"sello": "Nestor",
+"titulo": "Live at Gothenburg Film Studios",
+"url": "https://nestorsweden.bandcamp.com/album/live-at-gothenburg-film-studios"
+},
 "https://nickelbackofficial.bandcamp.com/|Everything Under the Sun": {},
 "https://nickgranata.bandcamp.com/album/my-heart-is-running-backwards-a-martial-artist-with-a-closed-fist-woof": {
 "artista": "Nick Granata",
@@ -1644,6 +2098,40 @@
 "sello": "Nick Granata",
 "titulo": "My Heart is Running Backwards! A Martial Artist! With a Closed Fist! Woof!",
 "url": "https://nickgranata.bandcamp.com/album/my-heart-is-running-backwards-a-martial-artist-with-a-closed-fist-woof"
+},
+"https://nicoleatkins.bandcamp.com/album/drama": {
+"artista": "Nicole Atkins",
+"etiquetas": [
+"Alternative",
+"chamber pop",
+"diva",
+"indie pop",
+"torch singer",
+"wall of sound",
+"Nashville"
+],
+"fecha": "18 Sep 2026 00:00:00 GMT",
+"pistas": 10,
+"portada": "https://f4.bcbits.com/img/a0013190906_10.jpg",
+"sello": "Nicole Atkins",
+"titulo": "Drama",
+"url": "https://nicoleatkins.bandcamp.com/album/drama"
+},
+"https://nightwish.bandcamp.com/|The Greatest 30 Years on Earth": {
+"artista": "Nightwish",
+"etiquetas": [
+"Metal",
+"metal",
+"nightwish",
+"synphonic metal",
+"Finland"
+],
+"fecha": "11 Dec 2026 00:00:00 GMT",
+"pistas": 27,
+"portada": "https://f4.bcbits.com/img/a0998858994_10.jpg",
+"sello": "Nightwish",
+"titulo": "The Greatest 30 Years On Earth",
+"url": "https://nightwish.bandcamp.com/album/the-greatest-30-years-on-earth"
 },
 "https://oisinmod.bandcamp.com/album/canary": {
 "artista": "Oisin Mod",
@@ -1675,6 +2163,23 @@
 "url": "https://orenambarchi.bandcamp.com/album/cooked"
 },
 "https://orvillepeck.bandcamp.com/|Mule": {},
+"https://pattern-seekinganimals.bandcamp.com/|Grimalkin": {
+"artista": "Pattern-Seeking Animals",
+"etiquetas": [
+"Progressive Rock",
+"Rock",
+"aor rock",
+"prog rock",
+"progressive rock",
+"Los Angeles"
+],
+"fecha": "21 Aug 2026 00:00:00 GMT",
+"pistas": 8,
+"portada": "https://f4.bcbits.com/img/a3532329923_10.jpg",
+"sello": "Pattern-Seeking Animals",
+"titulo": "Grimalkin",
+"url": "https://pattern-seekinganimals.bandcamp.com/album/grimalkin"
+},
 "https://penelopeisles.bandcamp.com/album/3": {
 "artista": "Penelope Isles",
 "etiquetas": [
@@ -1738,6 +2243,29 @@
 "sello": "Radie Peat",
 "titulo": "No Human Tongue Can Tell",
 "url": "https://radiepeat.bandcamp.com/album/no-human-tongue-can-tell"
+},
+"https://rainburn.bandcamp.com/album/thirty-seven": {
+"artista": "Rainburn",
+"etiquetas": [
+"Experimental",
+"Hard Rock",
+"Melodic Rock",
+"Prog Rock",
+"Progressive Metal.",
+"Rock",
+"art rock",
+"prog",
+"prog rock",
+"progressive",
+"progressive metal",
+"Bengaluru"
+],
+"fecha": "04 Nov 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a0161467550_10.jpg",
+"sello": "Rainburn",
+"titulo": "thirty-seven",
+"url": "https://rainburn.bandcamp.com/album/thirty-seven"
 },
 "https://raylandbaxtertn.bandcamp.com/album/true-violet": {
 "artista": "Rayland Baxter",
@@ -1864,7 +2392,37 @@
 "titulo": "Beneath the Spreading Tree",
 "url": "https://sairie.bandcamp.com/album/beneath-the-spreading-tree"
 },
+"https://samanthafish.bandcamp.com/album/paper-doll-live-at-the-bijou": {
+"artista": "Samantha Fish",
+"etiquetas": [
+"Rock",
+"Kansas City"
+],
+"fecha": "12 Jun 2026 00:00:00 GMT",
+"pistas": 16,
+"portada": "https://f4.bcbits.com/img/a2304344250_10.jpg",
+"sello": "Samantha Fish",
+"titulo": "Paper Doll (Live at the Bijou)",
+"url": "https://samanthafish.bandcamp.com/album/paper-doll-live-at-the-bijou"
+},
 "https://sammorrow.bandcamp.com/|Southern Boogie": {},
+"https://scarchamber.bandcamp.com/album/ugly-on-the-inside": {
+"artista": "Scar Chamber",
+"etiquetas": [
+"Hard rock",
+"Rock",
+"hair metal",
+"heavy metal",
+"rock",
+"Oakland"
+],
+"fecha": "12 Aug 2026 00:00:00 GMT",
+"pistas": 11,
+"portada": "https://f4.bcbits.com/img/a4102283649_10.jpg",
+"sello": "Scar Chamber",
+"titulo": "Ugly On The Inside",
+"url": "https://scarchamber.bandcamp.com/album/ugly-on-the-inside"
+},
 "https://schaeferllana.bandcamp.com/album/full-circle": {
 "artista": "Schaefer Llana",
 "etiquetas": [
@@ -1956,6 +2514,20 @@
 "titulo": "Everything in Readiness",
 "url": "https://shoveldancecollective.bandcamp.com/album/everything-in-readiness"
 },
+"https://siamese.bandcamp.com/|dissolution": {
+"artista": "Siamese",
+"etiquetas": [
+"Metal",
+"Metalcore",
+"Copenhagen"
+],
+"fecha": "26 Jun 2026 00:00:00 GMT",
+"pistas": 10,
+"portada": "https://f4.bcbits.com/img/a3266522216_10.jpg",
+"sello": "Siamese",
+"titulo": "dissolution",
+"url": "https://siamese.bandcamp.com/album/dissolution"
+},
 "https://sirrichardbishop.bandcamp.com/album/hillbilly-erotica": {
 "artista": "Sir Richard Bishop",
 "etiquetas": [
@@ -1973,6 +2545,19 @@
 "sello": "Sir Richard Bishop",
 "titulo": "Hillbilly Erotica",
 "url": "https://sirrichardbishop.bandcamp.com/album/hillbilly-erotica"
+},
+"https://sludgeworth.bandcamp.com/album/second-time-around": {
+"artista": "Sludgeworth",
+"etiquetas": [
+"Punk",
+"Chicago"
+],
+"fecha": "19 Jun 2026 00:00:00 GMT",
+"pistas": 12,
+"portada": "https://f4.bcbits.com/img/a3140118818_10.jpg",
+"sello": "Sludgeworth",
+"titulo": "Second Time Around",
+"url": "https://sludgeworth.bandcamp.com/album/second-time-around"
 },
 "https://sorrelnationmusic.bandcamp.com/|Creeping Thyme": {},
 "https://sourdure.bandcamp.com/album/outredore-2": {
@@ -1995,6 +2580,27 @@
 "sello": "sourdure",
 "titulo": "Outredore",
 "url": "https://sourdure.bandcamp.com/album/outredore-2"
+},
+"https://speedstroke.bandcamp.com/album/damage-control": {
+"artista": "Speed Stroke",
+"etiquetas": [
+"Glam-Metal",
+"Hard Rock",
+"Rock",
+"Sleaze Metal",
+"hard n heavy",
+"heavy metal",
+"rock and roll",
+"sleaze",
+"sleaze rock",
+"Imola"
+],
+"fecha": "21 Aug 2026 00:00:00 GMT",
+"pistas": 0,
+"portada": "https://f4.bcbits.com/img/a0916248354_10.jpg",
+"sello": "Speed Stroke",
+"titulo": "Damage Control",
+"url": "https://speedstroke.bandcamp.com/album/damage-control"
 },
 "https://startercar.bandcamp.com/album/afterlight": {
 "artista": "Starter Car",
@@ -2121,6 +2727,43 @@
 "titulo": "Do Not Dare To Dream",
 "url": "https://teenage-fanclub.bandcamp.com/album/do-not-dare-to-dream"
 },
+"https://tfatd.bandcamp.com/|Regional Theatre": {},
+"https://thebobbylees.bandcamp.com/album/new-self": {
+"artista": "The Bobby Lees",
+"etiquetas": [
+"Punk",
+"blues",
+"garage",
+"rock",
+"Woodstock"
+],
+"fecha": "12 Jun 2026 00:00:00 GMT",
+"pistas": 8,
+"portada": "https://f4.bcbits.com/img/a0479286097_10.jpg",
+"sello": "The Bobby Lees",
+"titulo": "New Self",
+"url": "https://thebobbylees.bandcamp.com/album/new-self"
+},
+"https://thedevilwearsnadaband.bandcamp.com/|In Lust We Thrust": {
+"artista": "The Devil Wears Nada",
+"etiquetas": [
+"AOR Rock",
+"Melodic Rock",
+"Metal",
+"Nestor",
+"Rock",
+"Rock & Roll",
+"horror",
+"swedish rock",
+"Falköping"
+],
+"fecha": "10 Jul 2026 00:00:00 GMT",
+"pistas": 10,
+"portada": "https://f4.bcbits.com/img/a1602207798_10.jpg",
+"sello": "The Devil Wears Nada",
+"titulo": "In Lust We Thrust",
+"url": "https://thedevilwearsnadaband.bandcamp.com/album/in-lust-we-thrust"
+},
 "https://thehangingstars.bandcamp.com/|Just A Day": {
 "artista": "The Hanging Stars",
 "etiquetas": [
@@ -2188,6 +2831,28 @@
 "url": "https://theowlservice.bandcamp.com/album/tied-to-the-land"
 },
 "https://theporamblinboys.bandcamp.com/|Welcome To The Club": {},
+"https://thewesternfrontaor.bandcamp.com/|Eureka": {
+"artista": "The Western Front",
+"etiquetas": [
+"80s rock",
+"Boston",
+"Rock",
+"Thin Lizzy",
+"aor",
+"hard rock",
+"journey",
+"supertramp",
+"toto",
+"yacht rock",
+"United States"
+],
+"fecha": "10 Jul 2026 00:00:00 GMT",
+"pistas": 12,
+"portada": "https://f4.bcbits.com/img/a1585063753_10.jpg",
+"sello": "The Western Front",
+"titulo": "Eureka",
+"url": "https://thewesternfrontaor.bandcamp.com/album/eureka"
+},
 "https://thisislorelei.bandcamp.com/album/the-singer-in-my-band": {
 "artista": "This is Lorelei",
 "etiquetas": [
@@ -2254,6 +2919,27 @@
 "url": "https://trawfawdeen.bandcamp.com/album/cloch-s-cla"
 },
 "https://treverkeith.bandcamp.com/|We Drank From A Poisoned Well": {},
+"https://troytheband.bandcamp.com/album/des": {
+"artista": "Troy The Band",
+"etiquetas": [
+"Metal",
+"desert rock",
+"doom metal",
+"doomgaze",
+"noise rock",
+"psychedelic",
+"psychedelic rock",
+"stoner metal",
+"stoner rock & metal",
+"London"
+],
+"fecha": "03 Jul 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a1042747112_10.jpg",
+"sello": "Troy The Band",
+"titulo": "(des)",
+"url": "https://troytheband.bandcamp.com/album/des"
+},
 "https://tworunner.bandcamp.com/|Porchlight": {
 "artista": "Two Runner",
 "etiquetas": [
@@ -2290,5 +2976,20 @@
 "sello": "Upstate",
 "titulo": "Abalone",
 "url": "https://upstatelovesyou.bandcamp.com/album/abalone"
+},
+"https://voodoohighwayhardrock.bandcamp.com/|The Satan Inqviesta": {
+"artista": "Voodoo Highway",
+"etiquetas": [
+"Hard rock",
+"Rock",
+"Rock Classic",
+"Ferrara"
+],
+"fecha": "18 Sep 2026 00:00:00 GMT",
+"pistas": 0,
+"portada": "https://f4.bcbits.com/img/a3358429524_10.jpg",
+"sello": "Voodoo Highway",
+"titulo": "The Satan Inqviesta",
+"url": "https://voodoohighwayhardrock.bandcamp.com/album/the-satan-inqviesta"
 }
 }

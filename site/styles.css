@@ -244,3 +244,12 @@ dialog#ficha::backdrop { background: rgb(0 0 0 / .55); }
 
 .nota-info { position: sticky; top: 52px; z-index: 2; background: var(--fondo); border: 1px solid var(--linea);
   border-radius: 8px; padding: 8px 10px; margin: 0 0 8px; }
+
+.puesto { position: absolute; top: 6px; left: 6px; z-index: 1; background: var(--tinta); color: var(--fondo);
+  font-weight: 800; font-size: 13px; border-radius: 6px; padding: 1px 7px; }
+.tarjeta .puesto + .vacia ~ .dest-badge, .tarjeta .puesto ~ .dest-badge { left: auto; right: 34px; }
+.ranking { padding-left: 1.6em; margin: 0; }
+.ranking li { padding: 8px 0; border-bottom: 1px solid var(--linea); }
+.ranking li .aviso { display: block; }
+.ranking .busqueda { font-size: 12px; border: 1px dashed var(--linea); border-radius: 999px; padding: 2px 8px; text-decoration: none; color: var(--tinta-suave); }
+.barra { flex-wrap: wrap; }
