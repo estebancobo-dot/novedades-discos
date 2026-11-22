@@ -2410,6 +2410,29 @@
 "nombre": "The Flower Kings",
 "pais": "SE"
 },
+"art:0a5acb21-351c-4702-8214-d31df752aa74": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/452528579",
+"bandcamp": "https://ladymaisery.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/1392870",
+"discogs": "https://www.discogs.com/artist/3304332",
+"ladymaisery.com": "http://www.ladymaisery.com/",
+"mainlynorfolk.info": "https://mainlynorfolk.info/folk/records/ladymaisery.html",
+"qobuz": "https://www.qobuz.com/us-en/interpreter/lady-maisery/2856598",
+"spotify": "https://open.spotify.com/artist/51acqTphIRISfi3F1ly3jn",
+"twitter.com": "https://twitter.com/LadyMaisery",
+"wikidata": "https://www.wikidata.org/wiki/Q16959655",
+"youtube": "https://www.youtube.com/channel/UC4Ulzdpoxs8Fbk8i0nxHabg"
+},
+"etiquetas": [
+"folk"
+],
+"generos": [
+"folk"
+],
+"nombre": "Lady Maisery",
+"pais": "GB"
+},
 "art:0a9f8491-5f30-4678-8b11-066f32e9cf11": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0000603226",
@@ -2936,6 +2959,42 @@
 "generos": [],
 "nombre": "Speed Stroke",
 "pais": "IT"
+},
+"art:0df9d3ef-3f24-4cb7-84b2-4f3880e9f9a6": {
+"enlaces": {
+"bandcamp": "https://suss.bandcamp.com/",
+"discogs": "https://www.discogs.com/artist/6702513",
+"facebook": "https://www.facebook.com/sussband",
+"instagram": "https://www.instagram.com/suss_band/",
+"sussband.com": "https://www.sussband.com/",
+"twitter.com": "https://twitter.com/SUSS09057378"
+},
+"etiquetas": [
+"ambient americana",
+"atmospheric. calm",
+"cosmic american",
+"dark ambient",
+"drone",
+"drone folk",
+"ethereal",
+"hypnotic",
+"instrumental",
+"new age",
+"new york",
+"relaxing",
+"rural psychedelia",
+"soothing",
+"tranquil"
+],
+"generos": [
+"ambient americana",
+"dark ambient",
+"drone",
+"instrumental",
+"new age"
+],
+"nombre": "SUSS",
+"pais": "US"
 },
 "art:0e001925-3bcb-4e2b-82ea-17693019a0d2": {
 "enlaces": {
@@ -10137,6 +10196,16 @@
 "generos": [],
 "nombre": "Tungsten",
 "pais": "SE"
+},
+"art:2cd302f3-d66a-421e-b6b8-2a8c2ca511c4": {
+"enlaces": {
+"apple": "https://music.apple.com/us/artist/1571801234",
+"spotify": "https://open.spotify.com/artist/7lVBH2nQlHcpcU4RiY7izm"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Emma Ogier",
+"pais": null
 },
 "art:2d2e5519-6f03-48ce-9006-6b182deab678": {
 "enlaces": {
@@ -23051,6 +23120,13 @@
 "nombre": "Alicia Witt",
 "pais": "US"
 },
+"art:61f8f517-c0b0-430a-a415-9686f5a74186": {
+"enlaces": {},
+"etiquetas": [],
+"generos": [],
+"nombre": "Amarante-Cerisier",
+"pais": null
+},
 "art:620f97c4-f1d1-439c-a4e2-a4f5f89e92d1": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0004340444",
@@ -25086,6 +25162,26 @@
 ],
 "nombre": "Brown Horse",
 "pais": "GB"
+},
+"art:6ae9e9cc-e60f-48d3-9d0e-e0391952fa12": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000648798",
+"deezer": "https://www.deezer.com/artist/424881",
+"discogs": "https://www.discogs.com/artist/557460",
+"gurfmorlix.com": "http://www.gurfmorlix.com/",
+"imdb.com": "https://www.imdb.com/name/nm0605948/",
+"songkick.com": "https://www.songkick.com/artists/453422",
+"spotify": "https://open.spotify.com/artist/6ojLnwwSb9VwXV4b1iAw5X",
+"viaf.org": "http://viaf.org/viaf/230826717",
+"wikidata": "https://www.wikidata.org/wiki/Q731007",
+"worldcat.org": "https://www.worldcat.org/identities/containsVIAFID/230826717"
+},
+"etiquetas": [
+"roots"
+],
+"generos": [],
+"nombre": "Gurf Morlix",
+"pais": "US"
 },
 "art:6aeb65c5-a301-4b5b-9b72-ecf3beb7faa7": {
 "enlaces": {
@@ -31006,6 +31102,15 @@
 "nombre": "Sofie Royer",
 "pais": "AT"
 },
+"art:823b5a4c-ddba-4b90-b9ba-3df4af4cdad5": {
+"enlaces": {
+"instagram": "https://www.instagram.com/themerkababrotherhood/"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "The MerkaBa Brotherhood",
+"pais": "US"
+},
 "art:82601df5-9b5a-4fd0-bdbd-399f7cf9c754": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0001068294",
@@ -32009,6 +32114,27 @@
 "nombre": "Swim Deep",
 "pais": "GB"
 },
+"art:85f86c83-6916-4642-86d1-680a9be14e0a": {
+"enlaces": {
+"apple": "https://music.apple.com/us/artist/1068188738",
+"deezer": "https://www.deezer.com/artist/9520848",
+"facebook": "https://www.facebook.com/pages/Jimmy-Aldridge-and-Sid-Goldsmith/197545723669641",
+"jimmyandsidduo.com": "http://jimmyandsidduo.com/",
+"qobuz": "https://www.qobuz.com/us-en/interpreter/jimmy-aldridge-sid-goldsmith/2508264",
+"soundcloud": "https://soundcloud.com/jimmy-and-sid",
+"spotify": "https://open.spotify.com/artist/12aXMpJvEOnUbvRww7QXiz",
+"twitter.com": "https://twitter.com/JimmyASidG",
+"youtube": "https://www.youtube.com/channel/UCF1UjyKR7I0NAFLCgZDkcXA"
+},
+"etiquetas": [
+"contemporary folk"
+],
+"generos": [
+"contemporary folk"
+],
+"nombre": "Jimmy Aldridge & Sid Goldsmith",
+"pais": "GB"
+},
 "art:8601a656-4830-457c-a3f1-f25b105d1629": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0003084308",
@@ -32728,6 +32854,40 @@
 "generos": [],
 "nombre": "Defcee",
 "pais": null
+},
+"art:88ad4c96-34e9-4fab-9e36-62739ad42048": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000891138",
+"apple": "https://music.apple.com/nz/artist/75523844",
+"bandcamp": "https://marisaanderson.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/1227212",
+"discogs": "https://www.discogs.com/artist/1374316",
+"instagram": "https://www.instagram.com/marisaandersonmusic/",
+"last.fm": "https://www.last.fm/music/Marisa+Anderson",
+"marisaandersonmusic.com": "http://marisaandersonmusic.com/",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/marisa-anderson/",
+"myspace.com": "https://myspace.com/marisaandersonmusic",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/marisa_anderson",
+"songkick.com": "https://www.songkick.com/artists/2085862",
+"spotify": "https://open.spotify.com/artist/5j2d5CS0sh2LTpFsrKAFcW",
+"wikidata": "https://www.wikidata.org/wiki/Q114240373"
+},
+"etiquetas": [
+"americana lofi modern",
+"cinematic",
+"experimental",
+"experimental guitar",
+"instrumental guitar",
+"lap steel",
+"pedal steel",
+"western"
+],
+"generos": [
+"experimental",
+"western"
+],
+"nombre": "Marisa Anderson",
+"pais": "US"
 },
 "art:88d1360a-bc2d-47df-90d1-d2de285560aa": {
 "enlaces": {
@@ -34520,6 +34680,18 @@
 ],
 "nombre": "Asia",
 "pais": "GB"
+},
+"art:8f8a1ff8-ccec-488d-a243-2ee9123ee10e": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1520679750",
+"deezer": "https://www.deezer.com/artist/99209792",
+"discogs": "https://www.discogs.com/artist/7426389",
+"spotify": "https://open.spotify.com/artist/4mjf1OqblznOnpn0H9Knsf"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Magic Tuber Stringband",
+"pais": null
 },
 "art:8fa5d80d-37e8-4133-9d5c-6bad446c63f0": {
 "enlaces": {
@@ -39435,6 +39607,40 @@
 "folk"
 ],
 "nombre": "Sir Richard Bishop",
+"pais": "US"
+},
+"art:a45bbcf5-f009-49cb-962e-4591083573d1": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000394449",
+"bandcamp": "https://michaelhurley.bandcamp.com/",
+"bbc.co.uk": "https://www.bbc.co.uk/music/artists/a45bbcf5-f009-49cb-962e-4591083573d1",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb140426689",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:Michael_Hurley_2006.jpg",
+"d-nb.info": "https://d-nb.info/gnd/134915542",
+"discogs": "https://www.discogs.com/artist/67451",
+"id.loc.gov": "http://id.loc.gov/authorities/names/n93056289",
+"imdb.com": "https://www.imdb.com/name/nm4097355/",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/michael-hurley",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/2192",
+"songkick.com": "https://www.songkick.com/artists/70288",
+"tidal": "https://tidal.com/artist/64580",
+"viaf.org": "http://viaf.org/viaf/48439116",
+"wikidata": "https://www.wikidata.org/wiki/Q5817598",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-n93056289/"
+},
+"etiquetas": [
+"folk",
+"contemporary folk",
+"country",
+"singer-songwriter"
+],
+"generos": [
+"folk",
+"contemporary folk",
+"country",
+"singer-songwriter"
+],
+"nombre": "Michael Hurley",
 "pais": "US"
 },
 "art:a46c2fea-ec1d-44c1-88f1-dbc6c62a8acc": {
@@ -51934,6 +52140,36 @@
 "nombre": "The Womack Sisters",
 "pais": "US"
 },
+"art:d7a2fd5e-783a-4d5c-893d-4d3fbf249812": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000165248",
+"apple": "https://music.apple.com/gb/artist/13489028",
+"benvaughn.com": "http://www.benvaughn.com/",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb142359293",
+"deezer": "https://www.deezer.com/artist/64457",
+"discogs": "https://www.discogs.com/artist/224993",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no98016114",
+"imdb.com": "https://www.imdb.com/name/nm0891142/",
+"last.fm": "https://www.last.fm/music/Ben%20Vaughn",
+"myspace.com": "https://myspace.com/benvaughndesertclassic",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/ben_vaughn",
+"songkick.com": "https://www.songkick.com/artists/100963",
+"spotify": "https://open.spotify.com/artist/2p6a7KwjiFgaXcG3u8Vfvb",
+"tidal": "https://tidal.com/artist/5452294",
+"viaf.org": "http://viaf.org/viaf/17434660",
+"wikidata": "https://www.wikidata.org/wiki/Q678922",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no98016114"
+},
+"etiquetas": [
+"rock",
+"american folk"
+],
+"generos": [
+"rock"
+],
+"nombre": "Ben Vaughn",
+"pais": "US"
+},
 "art:d7c69035-c53d-4236-9b9a-f490ba5e61ef": {
 "enlaces": {
 "apple": "https://music.apple.com/gb/artist/1549213274",
@@ -62390,6 +62626,30 @@
 "rg:amanda shaw|rhythm of my roots": {
 "no_encontrado": "2026-11-22"
 },
+"rg:amarante cerisier|amarante cerisier": {
+"artista": "Amarante-Cerisier",
+"artistas_id": [
+"61f8f517-c0b0-430a-a415-9686f5a74186"
+],
+"enlaces": {
+"bandcamp": "https://okrainarecords.bandcamp.com/album/amarante-cerisier"
+},
+"fecha_release": "2026-03-06",
+"idioma": null,
+"pais": null,
+"pistas": 8,
+"portada": "https://coverartarchive.org/release-group/d74833d4-beec-45d5-aa9c-6407c1707844/front-250",
+"primera_fecha": "2026-03-06",
+"puntuacion": 1.0,
+"release": "7a42f254-799a-4404-8ed4-2fb30b93f1f6",
+"rg": "d74833d4-beec-45d5-aa9c-6407c1707844",
+"sellos": [
+"Okraina Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Amarante-Cerisier"
+},
 "rg:amaseffer|when the lions leave their den exodus part ii": {
 "artista": "Amaseffer",
 "artistas_id": [
@@ -64808,6 +65068,28 @@
 "rg:ben vaughn and deer tick|magnetic east the deer tick sessions": {
 "no_encontrado": "2026-11-22"
 },
+"rg:ben vaughn|magnetic east the deer tick sessions": {
+"artista": "Ben Vaughn",
+"artistas_id": [
+"d7a2fd5e-783a-4d5c-893d-4d3fbf249812"
+],
+"enlaces": {
+"bandcamp": "https://benvaughnmusic.bandcamp.com/album/magnetic-east-the-deer-tick-sessions"
+},
+"fecha_release": "2026-10-30",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/13d5d656-6cb3-4465-b756-b8cf93c66f7a/front-250",
+"primera_fecha": "2026-10-30",
+"puntuacion": 1.0,
+"release": "f25bcd36-3851-4a40-9f1c-03b9bf36bccf",
+"rg": "13d5d656-6cb3-4465-b756-b8cf93c66f7a",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Magnetic East: The Deer Tick Sessions"
+},
 "rg:bends|if you insist": {
 "artista": "The Bends",
 "artistas_id": [
@@ -66851,6 +67133,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Coral Beats"
+},
+"rg:brian lisik|presents the slovak club": {
+"no_encontrado": "2026-11-22"
 },
 "rg:bride|vipers and shadows": {
 "artista": "Bride",
@@ -72553,6 +72838,9 @@
 "tipos_secundarios": [],
 "titulo": "Bloom"
 },
+"rg:dismantlists|evidence": {
+"no_encontrado": "2026-11-22"
+},
 "rg:disterbenz|icky guy": {
 "no_encontrado": "2026-11-22"
 },
@@ -73361,6 +73649,9 @@
 "no_encontrado": "2026-11-22"
 },
 "rg:dude cervantes and the panchos|dude cervantes and the panchos": {
+"no_encontrado": "2026-11-22"
+},
+"rg:dudley taft|fire horse": {
 "no_encontrado": "2026-11-22"
 },
 "rg:duffy x uhlmann|hot creek": {
@@ -74536,6 +74827,30 @@
 },
 "rg:emma grace glover|live your dream": {
 "no_encontrado": "2026-11-22"
+},
+"rg:emma ogier|fly 1111": {
+"artista": "Emma Ogier",
+"artistas_id": [
+"2cd302f3-d66a-421e-b6b8-2a8c2ca511c4"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/6812477568"
+},
+"fecha_release": "2026-11-11",
+"idioma": "eng",
+"pais": "US",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/767aa52b-7a63-44c4-8bd2-df4c6f9224cd/front-250",
+"primera_fecha": "2026-11-11",
+"puntuacion": 1.0,
+"release": "47f43013-8196-4f3d-97aa-f1c637bd40c9",
+"rg": "767aa52b-7a63-44c4-8bd2-df4c6f9224cd",
+"sellos": [
+"Lost Highway Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Fly 1111"
 },
 "rg:emma ruth rundle|these killing times": {
 "artista": "Emma Ruth Rundle",
@@ -76931,6 +77246,9 @@
 "tipos_secundarios": [],
 "titulo": "What Planet Are You From?"
 },
+"rg:galvezton|ocean cabaret": {
+"no_encontrado": "2026-11-22"
+},
 "rg:gammacide|toxic mercenaries": {
 "artista": "Gammacide",
 "artistas_id": [
@@ -78872,6 +79190,29 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Fear On My Own Time"
+},
+"rg:gurf morlix|aint no perfect world": {
+"artista": "Gurf Morlix",
+"artistas_id": [
+"6ae9e9cc-e60f-48d3-9d0e-e0391952fa12"
+],
+"enlaces": {
+"bandcamp": "https://gurfmorlix.bandcamp.com/album/aint-no-perfect-world",
+"gurfmorlix.com": "https://www.gurfmorlix.com/albums-a-record-name/aint-no-perfect-world/"
+},
+"fecha_release": "2026-10-06",
+"idioma": null,
+"pais": "US",
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/74217b87-7aa6-4913-9016-b1f295113696/front-250",
+"primera_fecha": "2026-10-06",
+"puntuacion": 1.0,
+"release": "62674600-3638-49c3-b8d6-dcbdf1aaf510",
+"rg": "74217b87-7aa6-4913-9016-b1f295113696",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Ain't No Perfect World"
 },
 "rg:gus dapperton|4 dear life": {
 "artista": "Gus Dapperton",
@@ -81531,6 +81872,9 @@
 "titulo": "Calling Antonín"
 },
 "rg:james bruner|cant keep wanting you": {},
+"rg:james curley|mortal": {
+"no_encontrado": "2026-11-22"
+},
 "rg:james ellis ford|lost in another world": {
 "artista": "James Ellis Ford",
 "artistas_id": [
@@ -81557,6 +81901,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Lost In Another World"
+},
+"rg:james felice|homeward blue": {
+"no_encontrado": "2026-11-22"
 },
 "rg:james felice|homeworld blue": {
 "artista": "James Felice",
@@ -81644,7 +81991,13 @@
 ],
 "titulo": "La Magnifica"
 },
+"rg:jamiah rogers and dirty chxrch|chicago cowboy south side stories": {
+"no_encontrado": "2026-11-22"
+},
 "rg:jamie holka|git in where you fit in": {
+"no_encontrado": "2026-11-22"
+},
+"rg:jamie kindleyside|would you live with me on mars": {
 "no_encontrado": "2026-11-22"
 },
 "rg:jamie oneal|gypsum": {
@@ -81668,6 +82021,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Gypsum"
+},
+"rg:jamie richards|blue rock sessions": {
+"no_encontrado": "2026-11-22"
 },
 "rg:jamie t|ghosts 100 days of morning": {
 "artista": "Jamie T",
@@ -86079,6 +86435,36 @@
 "tipos_secundarios": [],
 "titulo": "Arriba la L"
 },
+"rg:lady maisery and jimmy aldridge and sid goldsmith|wakefire a summer album": {
+"artista": "Lady Maisery and Jimmy Aldridge & Sid Goldsmith",
+"artistas_id": [
+"0a5acb21-351c-4702-8214-d31df752aa74",
+"85f86c83-6916-4642-86d1-680a9be14e0a"
+],
+"enlaces": {
+"amazon": "https://music.amazon.com/albums/B0GT4YJ8GV",
+"apple": "https://music.apple.com/us/album/1887861757",
+"bandcamp": "https://ladymaisery.bandcamp.com/album/wakefire-a-summer-album-double-length",
+"deezer": "https://www.deezer.com/album/943159551",
+"qobuz": "https://www.qobuz.com/us-en/album/wakefire-a-summer-album-lady-maisery-and-jimmy-aldridge-sid-goldsmith/ls7id0xrnlpv8",
+"tidal": "https://tidal.com/album/508362959",
+"uk.7digital.com": "https://uk.7digital.com/artist/lady-maisery-jimmy-aldridge-and-sid-goldsmith-1/release/wakefire-a-summer-album-68212473",
+"youtube": "https://music.youtube.com/playlist?list=OLAK5uy_mJ8MqQtAAwI8t0PLaZhlxxXdL5I15mwDU"
+},
+"fecha_release": "2026-05-01",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 27,
+"portada": "https://coverartarchive.org/release-group/ba3afcad-ea9c-4878-a981-a69aa93231df/front-250",
+"primera_fecha": "2026-05-01",
+"puntuacion": 1.0,
+"release": "9da2e8e2-bef8-4864-ac91-d4b50ca7d1cd",
+"rg": "ba3afcad-ea9c-4878-a981-a69aa93231df",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Wakefire: A Summer Album"
+},
 "rg:lady nade|identity": {
 "no_encontrado": "2026-11-22"
 },
@@ -88470,6 +88856,32 @@
 "tipos_secundarios": [],
 "titulo": "Half Moon"
 },
+"rg:magic tuber stringband|heavy water": {
+"artista": "Magic Tuber Stringband",
+"artistas_id": [
+"8f8a1ff8-ccec-488d-a243-2ee9123ee10e"
+],
+"enlaces": {
+"bandcamp": "https://magictuberstringband.bandcamp.com/album/heavy-water",
+"discogs": "https://www.discogs.com/release/37396752",
+"thrilljockey.com": "https://www.thrilljockey.com/products/heavy-water"
+},
+"fecha_release": "2026-05-22",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 11,
+"portada": "https://coverartarchive.org/release-group/c22eb247-a489-47e9-a25b-df31b00243dc/front-250",
+"primera_fecha": "2026-05-22",
+"puntuacion": 1.0,
+"release": "87d2ebd9-4c7f-4962-9bae-6ca7347d996a",
+"rg": "c22eb247-a489-47e9-a25b-df31b00243dc",
+"sellos": [
+"Thrill Jockey"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Heavy Water"
+},
 "rg:magoo|what a life": {
 "artista": "Magoo",
 "artistas_id": [
@@ -88948,6 +89360,36 @@
 },
 "rg:marilyn manson|one assassination under god chapter 2": {
 "no_encontrado": "2026-11-22"
+},
+"rg:marisa anderson|anthology of unamerican folk music": {
+"artista": "Marisa Anderson",
+"artistas_id": [
+"88ad4c96-34e9-4fab-9e36-62739ad42048"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/1874414797",
+"bandcamp": "https://marisaanderson.bandcamp.com/album/the-anthology-of-unamerican-folk-music",
+"creativecommons.org": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+"deezer": "https://www.deezer.com/album/910517511",
+"discogs": "https://www.discogs.com/release/37494306",
+"spotify": "https://open.spotify.com/album/5SiIMHmcHcu4yjTnvOSeHm",
+"tidal": "https://tidal.com/album/495405690"
+},
+"fecha_release": "2026-05-22",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/812a34d0-322d-4c81-89c4-719638bdef86/front-250",
+"primera_fecha": "2026-05-22",
+"puntuacion": 0.951,
+"release": "522a26be-5546-4a08-8390-c1040d4bd155",
+"rg": "812a34d0-322d-4c81-89c4-719638bdef86",
+"sellos": [
+"Thrill Jockey"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "The Anthology of UnAmerican Folk Music Vol. 1"
 },
 "rg:mark isham|at the carousel club": {
 "no_encontrado": "2026-11-22"
@@ -89847,6 +90289,30 @@
 "tipos_secundarios": [],
 "titulo": "Everything I Ever Saw"
 },
+"rg:merkaba brotherhood|merkaba brotherhood": {
+"artista": "The MerkaBa Brotherhood",
+"artistas_id": [
+"823b5a4c-ddba-4b90-b9ba-3df4af4cdad5"
+],
+"enlaces": {
+"bandcamp": "https://mississippirecords.bandcamp.com/album/the-merkaba-brotherhood"
+},
+"fecha_release": "2026-05-15",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 7,
+"portada": "https://coverartarchive.org/release-group/8f65effe-6c4e-4fce-b2a1-3070d3c5b34e/front-250",
+"primera_fecha": "2026-05-15",
+"puntuacion": 1.0,
+"release": "7b9047b8-f77e-4bab-a025-5c91c66c30f0",
+"rg": "8f65effe-6c4e-4fce-b2a1-3070d3c5b34e",
+"sellos": [
+"Mississippi Records"
+],
+"tipo": "EP",
+"tipos_secundarios": [],
+"titulo": "The MerKaBa Brotherhood"
+},
 "rg:meshell ndegeocello|synonym": {
 "artista": "Meshell Ndegeocello",
 "artistas_id": [
@@ -90354,6 +90820,9 @@
 "tipos_secundarios": [],
 "titulo": "Thank You"
 },
+"rg:mike finazzo|dear phoebe": {
+"no_encontrado": "2026-11-22"
+},
 "rg:mike guiney|grace of eloquence": {
 "artista": "Mike Guiney",
 "artistas_id": [
@@ -90381,6 +90850,33 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "The Grace of Eloquence"
+},
+"rg:mike hurley|first songs": {
+"artista": "Mike Hurley",
+"artistas_id": [
+"a45bbcf5-f009-49cb-962e-4591083573d1"
+],
+"enlaces": {
+"amazon": "https://www.amazon.com/gp/product/B000066C18",
+"bandcamp": "https://michaelhurley.bandcamp.com/album/first-songs",
+"discogs": "https://www.discogs.com/release/1732597",
+"folkways.si.edu": "http://www.folkways.si.edu/michael-hurley/first-songs/american-folk/music/album/smithsonian"
+},
+"fecha_release": "1964",
+"idioma": "eng",
+"pais": "US",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/441e36c6-4d9e-4d10-b711-901eb067aa91/front-250",
+"primera_fecha": "1964",
+"puntuacion": 1.0,
+"release": "ad4555c9-61fd-436b-a623-f4b7dc7fb969",
+"rg": "441e36c6-4d9e-4d10-b711-901eb067aa91",
+"sellos": [
+"Folkways Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "First Songs"
 },
 "rg:mike jacoby electric trio|welcome to the family": {
 "no_encontrado": "2026-11-22"
@@ -94206,6 +94702,9 @@
 "tipos_secundarios": [],
 "titulo": "Wild Love"
 },
+"rg:pat green|live from the center of the known universe luckenbach texas": {
+"no_encontrado": "2026-11-22"
+},
 "rg:pattern seeking animals|grimalkin": {
 "artista": "Pattern-Seeking Animals",
 "artistas_id": [
@@ -94634,6 +95133,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "o\\i"
+},
+"rg:peter gallway|sepia": {
+"no_encontrado": "2026-11-22"
 },
 "rg:peter hammill|tears in time": {
 "artista": "Peter Hammill",
@@ -95115,6 +95617,9 @@
 "tipos_secundarios": [],
 "titulo": "BE NOT AFRAID"
 },
+"rg:ponder the albatross|over hill and hollow": {
+"no_encontrado": "2026-11-22"
+},
 "rg:pond|terrestrials": {
 "artista": "Pond",
 "artistas_id": [
@@ -95429,6 +95934,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Dreamworld"
+},
+"rg:project blues|drivin home to carries cafe": {
+"no_encontrado": "2026-11-22"
 },
 "rg:project eleven|memory lane": {
 "no_encontrado": "2026-11-22"
@@ -102872,6 +103380,30 @@
 "tipos_secundarios": [],
 "titulo": "Revelations of Divine Love"
 },
+"rg:suss|counting sunsets": {
+"artista": "SUSS",
+"artistas_id": [
+"0df9d3ef-3f24-4cb7-84b2-4f3880e9f9a6"
+],
+"enlaces": {
+"bandcamp": "https://suss.bandcamp.com/album/counting-sunsets"
+},
+"fecha_release": "2026-05-15",
+"idioma": "eng",
+"pais": "US",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/b3ab4e16-ed27-4eb7-a213-052552eee281/front-250",
+"primera_fecha": "2026-05-15",
+"puntuacion": 1.0,
+"release": "733f0fbd-3e3f-4c92-a024-b0d34cf9edae",
+"rg": "b3ab4e16-ed27-4eb7-a213-052552eee281",
+"sellos": [
+"Northern Spy"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Counting Sunsets"
+},
 "rg:susto stringband|susto stringband volume 2": {
 "no_encontrado": "2026-11-22"
 },
@@ -104258,6 +104790,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "fIREHORSE"
+},
+"rg:tim foley group|street dog": {
+"no_encontrado": "2026-11-22"
 },
 "rg:tim montana|entire state of tim montana": {
 "artista": "Tim Montana",
