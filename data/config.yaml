@@ -26,6 +26,8 @@ peticiones:
     api.discogs.com: 2.5          # sin clave: máximo 25 peticiones/minuto
     wikidata.org: 1.0
     ws.audioscrobbler.com: 1.0
+    api.deezer.com: 1.0           # límite publicado: 50 peticiones cada 5 s
+    itunes.apple.com: 3.1         # límite publicado: unas 20 peticiones por minuto
     coverartarchive.org: 1.0
   timeout: 30
   respetar_robots_txt: true
@@ -37,6 +39,8 @@ peticiones:
     - https://www.wikidata.org/w/api.php
     - https://api.discogs.com/          # https://www.discogs.com/developers
     - https://ws.audioscrobbler.com/2.0/  # https://www.last.fm/api
+    - https://api.deezer.com/           # https://developers.deezer.com/api
+    - https://itunes.apple.com/search   # API de búsqueda de iTunes (Apple)
   cache_horas: 20                # no repetir la misma petición en este tiempo
   reintentos_503: 5              # MusicBrainz responde 503 cuando está saturado
 
@@ -92,6 +96,8 @@ enriquecimiento:
     wikidata: {activo: true}
     discogs: {activo: true, variable_token: DISCOGS_TOKEN}   # el token es opcional
     lastfm: {activo: true, variable_clave: LASTFM_KEY}       # sin clave, se omite
+    deezer: {activo: true}     # a todos los discos: enlace, tipo (álbum/EP), reproductor, portada
+    itunes: {activo: true}     # solo a los que siguen sin subgénero: género de Apple y enlace
 
 rutas:
   fuentes: data/fuentes.yaml

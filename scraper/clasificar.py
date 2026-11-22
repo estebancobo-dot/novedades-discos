@@ -20,7 +20,7 @@ from .config import cargar_config, cargar_yaml, ruta
 from .util import normalizar
 
 PESOS = {"fuente": 3, "bandcamp": 2, "musicbrainz_top": 2, "musicbrainz": 1, "descripcion": 2, "categoria": 1,
-         "discogs": 3, "wikidata": 2, "lastfm": 2}
+         "discogs": 3, "wikidata": 2, "lastfm": 2, "itunes": 1}
 CAMPOS_CSV = ["etiqueta", "subgenero", "origen", "fecha", "veces", "ejemplo", "nota"]
 
 
@@ -149,7 +149,10 @@ def main():
         if not familias and not d.get("requiere_subgenero"):
             familias = set(r["familias_genericas"])
         motivo = None
-        if d.get("requiere_subgenero"):
+        tipo_dz = (d.get("deezer") or {}).get("tipo")
+        if tipo_dz in ("ep", "single") and not d.get("tipo_verificado"):
+            motivo = f"clasificación: {tipo_dz.upper()} según Deezer"
+        elif d.get("requiere_subgenero"):
             if not subs:
                 motivo = "clasificación: fuente mixta y ningún subgénero de la taxonomía"
             elif all(tax.sub[s]["frontera"] for s in subs):

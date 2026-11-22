@@ -113,6 +113,52 @@ class Extras:
             self.cache[k] = list(dict.fromkeys((d.get("styles") or []) + (d.get("genres") or [])))
         return self.cache[k]
 
+    # ---------------------------------------------------------------- Deezer
+    def deezer(self, artista: str, titulo: str) -> dict:
+        """Disco en Deezer (API pública, sin clave): enlace, tipo (album/ep/single),
+        fecha, pistas y portada. Sirve también para el reproductor de 30 s."""
+        k = f"dz:{normalizar(artista)}|{normalizar(titulo)}"
+        if k in self.cache:
+            return self.cache[k]
+        q = urllib.parse.quote(f'artist:"{artista}" album:"{titulo}"')
+        d = self._json("deezer", f"https://api.deezer.com/search/album?limit=10&q={q}")
+        if d is None:
+            return {}
+        mejor, puntos = None, 0.0
+        for a in d.get("data", []):
+            st, sa = similitud(a.get("title"), titulo), similitud((a.get("artist") or {}).get("name"), artista)
+            if st >= 0.86 and sa >= 0.86 and st + sa > puntos:
+                mejor, puntos = a, st + sa
+        res = {}
+        if mejor:
+            res = {"id": mejor["id"], "url": mejor.get("link"), "tipo": mejor.get("record_type"),
+                   "pistas": mejor.get("nb_tracks"), "portada": mejor.get("cover_medium"),
+                   "portada_grande": mejor.get("cover_xl") or mejor.get("cover_big")}
+        self.cache[k] = res
+        return res
+
+    # ---------------------------------------------------------------- iTunes
+    def itunes(self, artista: str, titulo: str) -> dict:
+        """Disco en Apple (API de búsqueda de iTunes, sin clave): enlace, género, pistas."""
+        k = f"it:{normalizar(artista)}|{normalizar(titulo)}"
+        if k in self.cache:
+            return self.cache[k]
+        q = urllib.parse.quote(f"{artista} {titulo}")
+        d = self._json("itunes", f"https://itunes.apple.com/search?entity=album&limit=10&term={q}")
+        if d is None:
+            return {}
+        mejor, puntos = None, 0.0
+        for a in d.get("results", []):
+            st, sa = similitud(a.get("collectionName"), titulo), similitud(a.get("artistName"), artista)
+            if st >= 0.86 and sa >= 0.86 and st + sa > puntos:
+                mejor, puntos = a, st + sa
+        res = {}
+        if mejor:
+            res = {"url": mejor.get("collectionViewUrl"), "genero": mejor.get("primaryGenreName"),
+                   "pistas": mejor.get("trackCount"), "fecha": (mejor.get("releaseDate") or "")[:10]}
+        self.cache[k] = res
+        return res
+
     # --------------------------------------------------------------- Last.fm
     def lastfm(self, artista: str, titulo: str) -> list[str]:
         clave = os.environ.get(self.cfg.get("lastfm", {}).get("variable_clave", "LASTFM_KEY"), "")
@@ -146,7 +192,18 @@ def main():
         candidatos = json.load(f)
     artistas_de = {v["rg"]: v.get("artistas_id", []) for k, v in mb.items() if k.startswith("rg:") and v.get("rg")}
     pendientes, resueltos = 0, 0
+    usar_deezer = cfg.get("deezer", {}).get("activo")
+    usar_itunes = cfg.get("itunes", {}).get("activo")
     for n, d in enumerate(candidatos, 1):
+        if usar_deezer:                          # a todos: enlace, tipo, reproductor y portada
+            dz = ex.deezer(d["artista"], d["titulo"])
+            if dz:
+                d["deezer"] = dz
+                d.setdefault("enlaces", {}).setdefault("deezer", dz.get("url"))
+                if not d.get("portada") and dz.get("portada"):
+                    d["portada"] = dz["portada"]
+                if not d.get("pistas") and dz.get("pistas"):
+                    d["pistas"] = dz["pistas"]
         r = clasificar_disco(d, tax, mapeo, Counter(), {})
         utiles = [s for s in r["subgeneros"] if not tax.sub[s]["frontera"]]
         if utiles and not cfg.get("todos"):
@@ -163,6 +220,12 @@ def main():
                       for e in ex.discogs(d.get("enlaces", {}).get("discogs"), enl_art.get("discogs"), d["titulo"])]
         if cfg.get("lastfm", {}).get("activo"):
             extra += [{"etiqueta": e, "origen": "lastfm"} for e in ex.lastfm(d["artista"], d["titulo"])]
+        if usar_itunes:                          # solo a los que siguen sin subgénero (va a 20/min)
+            it = ex.itunes(d["artista"], d["titulo"])
+            if it:
+                d.setdefault("enlaces", {}).setdefault("apple", it.get("url"))
+                if it.get("genero"):
+                    extra.append({"etiqueta": it["genero"], "origen": "itunes"})
         d["etiquetas_extra"] = extra
         if extra and clasificar_disco(d, tax, mapeo, Counter(), {})["subgeneros"]:
             resueltos += 1
