@@ -68,6 +68,10 @@ reglas:
   titulo_homonimo: '(?i)^(self[- ]?titled|s/t)$'
   # Número de canciones mencionado en una descripción ("13-song record", "five-song EP").
   pistas_en_texto: '(?i)\b(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)[- ](?:song|track)s?\b'
+  # Discos que solo vienen de fuentes generalistas ("mixtas"): si la descripción
+  # de la fuente o las etiquetas del artista en MusicBrainz indican claramente
+  # otro género, se descartan sin más consultas (ahorra peticiones).
+  descripcion_ajena: '(?i)\b(metalcore|deathcore|death[- ]metal|black[- ]metal|thrash|grindcore|doom metal|sludge|djent|nu[- ]metal|hip[- ]hop|rapper|\brap\b|trap|drill|jazz|bebop|big band|electronic|techno|house music|edm|dubstep|synth-?pop|ambient|classical|orchestra|symphony|opera|r&b|neo-soul|reggae|afrobeat|k-pop|j-pop|latin|reggaeton|salsa|emo|post-hardcore|hardcore punk|screamo|shoegaze|dream pop|indie pop|bedroom pop|hyperpop|gospel choir|soundtrack|score)\b'
   # Días de margen antes del inicio de la ventana (fechas de fuentes aproximadas).
   margen_dias: 14
 

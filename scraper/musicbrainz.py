@@ -58,7 +58,9 @@ class MusicBrainz:
             return None
 
     # ------------------------------------------------------------ búsqueda
-    def buscar(self, artista: str, titulo: str, intercambiable: bool = False) -> dict | None:
+    def buscar(self, artista: str, titulo: str, intercambiable: bool = False, completar: bool = True) -> dict | None:
+        """Busca el disco. Con completar=False no pide aún los detalles (sellos,
+        pistas, idioma, enlaces): se piden luego con completar() si hacen falta."""
         k = f"rg:{normalizar(artista)}|{normalizar(titulo)}"
         res = self.cache.get(k)
         if res is not None and "no_encontrado" in res:
@@ -73,8 +75,18 @@ class MusicBrainz:
         if "no_encontrado" in res:
             res = {}
         if not res and intercambiable:
-            return self.buscar(titulo, artista, False)
+            return self.buscar(titulo, artista, False, completar)
+        if res and completar:
+            self.completar(res)
         return res or None
+
+    def completar(self, res: dict) -> dict:
+        """Añade sellos, pistas, idioma, enlaces y portada (una consulta más)."""
+        if res.get("rg") and "release" not in res:
+            extra = self._releases(res["rg"])
+            if extra is not None:
+                res.update(extra)
+        return res
 
     def _buscar(self, artista: str, titulo: str) -> dict | None:
         q = f'releasegroup:"{_esc(titulo)}" AND artist:"{_esc(artista)}"'
@@ -103,11 +115,12 @@ class MusicBrainz:
             "primera_fecha": mejor.get("first-release-date"),
             "puntuacion": round(puntos, 3),
         }
-        res.update(self._releases(mejor["id"]))
         return res
 
-    def _releases(self, rg: str) -> dict:
-        d = self._json(f"release?release-group={rg}&inc=labels+media+url-rels&fmt=json&limit=50") or {}
+    def _releases(self, rg: str) -> dict | None:
+        d = self._json(f"release?release-group={rg}&inc=labels+media+url-rels&fmt=json&limit=50")
+        if d is None:
+            return None
         rels = d.get("releases", [])
         idiomas = Counter(r.get("text-representation", {}).get("language") for r in rels
                           if r.get("text-representation", {}).get("language"))

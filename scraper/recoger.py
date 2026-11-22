@@ -16,7 +16,8 @@ import sys
 from collections import defaultdict
 
 from .bandcamp import Bandcamp
-from .config import RAIZ, cargar_config, cargar_fuentes, ruta
+from .clasificar import Taxonomia
+from .config import RAIZ, cargar_config, cargar_fuentes, cargar_yaml, ruta
 from .http import Navegador
 from .lectores import Item, leer_fuente
 from .musicbrainz import MusicBrainz
@@ -160,11 +161,38 @@ def main():
     bc_cfg = config["enriquecimiento"].get("bandcamp") or {}
     bc = Bandcamp(nav, ruta(config["rutas"]["cache_bandcamp"]), int(bc_cfg.get("max_paginas_por_ejecucion", 500)), umbral) \
         if bc_cfg.get("activo") and "--sin-bandcamp" not in args else None
+    tax = Taxonomia(cargar_yaml(config["rutas"]["taxonomia"]))
+    rx_ajena = re.compile(reglas["descripcion_ajena"]) if reglas.get("descripcion_ajena") else None
+
+    def de_nuestras_familias(textos: list[str]) -> bool:
+        for t in textos:
+            n = normalizar(t)
+            if n in tax.alias or n in tax.genericas:
+                return True
+            palabras = set(n.split())
+            if palabras & {a for a in tax.alias if " " not in a} or palabras & {g for g in tax.genericas if " " not in g}:
+                return True
+            if tax.rx_texto and tax.rx_texto.search(n):
+                return True
+        return False
+
     for n, d in enumerate(discos, 1):
         it0 = d["items"][0]
         inter = any(por_id[i.fuente].get("intercambiable") for i in d["items"])
-        d["mb"] = mb.buscar(it0.artista, it0.titulo, inter) if mb else None
+        solo_mixta = all(por_id[i.fuente].get("mixta") for i in d["items"])
+        if solo_mixta and rx_ajena:
+            textos = [x for i in d["items"] for x in (i.extra, i.genero) if x]
+            if any(rx_ajena.search(t) for t in textos) and not de_nuestras_familias(textos):
+                d["ajeno"] = "según la descripción de la fuente"
+                continue
+        d["mb"] = mb.buscar(it0.artista, it0.titulo, inter, completar=not solo_mixta) if mb else None
         d["mb_artistas"] = [mb.artista(a) for a in (d["mb"] or {}).get("artistas_id", [])[:2]] if mb and d["mb"] else []
+        if solo_mixta and d["mb"]:
+            etiquetas = [e for a in d["mb_artistas"] for e in (a.get("generos") or []) + (a.get("etiquetas") or [])]
+            if etiquetas and not de_nuestras_familias(etiquetas):
+                d["ajeno"] = "según MusicBrainz: " + ", ".join(etiquetas[:3])
+                continue
+            mb.completar(d["mb"])
         if n % 50 == 0:
             log(f"  MusicBrainz {n}/{len(discos)} · consultas {mb.consultas if mb else 0}")
             if mb:
@@ -180,6 +208,9 @@ def main():
     salida = []
     for d in discos:
         grupo, m = d["items"], d.get("mb") or {}
+        if d.get("ajeno"):
+            descartados.append(_descartado(grupo, f"otro género ({d['ajeno']})", por_id))
+            continue
         motivo = None
         fecha, exacta, origen = None, False, None
         fmb, exacta_mb = _fecha_mb(m.get("primera_fecha"))
