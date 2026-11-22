@@ -398,6 +398,29 @@ fuentes:
   patrones:
     - '^(?P<artista>[^|\n*]+?)\s*\|\s*“(?P<titulo>[^”\n]+)”\s*(?:\((?P<extra>[^\n]*)\))?\s*\|\s*(?P<sello>[^|\n]+)$'
 
+- id: wikipedia
+  nombre: Wikipedia – List of albums
+  web: https://en.wikipedia.org/wiki/List_of_2026_albums
+  familia: todas
+  rol: listado
+  mixta: true
+  lector: texto
+  fecha_es: lanzamiento
+  anio_desde_url: 'List_of_(\d{4})_albums'
+  urls:
+    - "https://en.wikipedia.org/wiki/List_of_2026_albums_(July%E2%80%93December)"
+    - "https://en.wikipedia.org/wiki/List_of_2026_albums_(January%E2%80%93June)"
+    - "https://en.wikipedia.org/wiki/List_of_2027_albums_(January%E2%80%93June)"
+  texto:
+    selector: .mw-parser-output
+    marcas: {"i": "«»"}
+    quitar: "sup.reference, .reflist, .navbox, .mw-editsection"
+    colapsar_espacios: true
+  # Las fechas van en una celda que abarca varias filas: fija la fecha de las siguientes.
+  cabecera_fecha: '^\s*(?P<fecha>{{MES}}\s+\d{1,2})\s*\|'
+  patrones:
+    - '^(?:\s*{{MES}}\s+\d{1,2}\s*\|)?\s*(?P<artista>[^|«\n]+?)\s*\|\s*«(?P<titulo>[^»]+)»\s*\|\s*(?P<genero>[^|\n]*?)\s*\|\s*(?P<sello>[^|\n]*?)\s*(?:\||$)'
+
 - id: bandcampdaily
   nombre: Bandcamp Daily – Essential Releases
   web: https://daily.bandcamp.com

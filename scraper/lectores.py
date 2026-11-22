@@ -225,6 +225,10 @@ def leer_texto(nav, cfg, hoy, desde=None) -> ResultadoFuente:
         completo = html_a_texto(r.texto, r.url, **tcfg)
         t = recortar(completo, desde_txt, hasta_txt)
         ref = (fecha_de_pagina(r.texto) if cfg.get("anio_desde_publicacion") else None) or hoy
+        if cfg.get("anio_desde_url"):
+            ma = re.search(cfg["anio_desde_url"], url)
+            if ma:   # fechas sin año: el año que dice la dirección (p. ej. "List_of_2026_albums")
+                ref = dt.date(int(ma.group(1)), 7, 1)
         fdef = None
         if rx_fpag:
             mf = rx_fpag.search(completo)

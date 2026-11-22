@@ -18,7 +18,9 @@ BLOQUES = ["p", "div", "li", "ul", "ol", "tr", "table", "tbody", "thead", "h1", 
 
 def html_a_texto(html: str, base_url: str = "", selector: str | None = None, marcas: dict | None = None,
                  enlaces: bool = False, imagenes: bool = False, desde: str | None = None,
-                 hasta: str | None = None, quitar: str | None = None) -> str:
+                 hasta: str | None = None, quitar: str | None = None, colapsar_espacios: bool = False) -> str:
+    """colapsar_espacios: ignora los saltos de línea del código HTML (útil en tablas como las
+    de Wikipedia, donde cada celda va en su propia línea del código)."""
     soup = BeautifulSoup(html, "lxml")
     for t in soup(["script", "style", "noscript", "svg", "template"]):
         t.decompose()
@@ -32,6 +34,10 @@ def html_a_texto(html: str, base_url: str = "", selector: str | None = None, mar
     if quitar:
         for el in raiz.select(quitar):
             el.decompose()
+    if colapsar_espacios:
+        for nodo in raiz.find_all(string=True):
+            if "\n" in nodo and nodo.parent.name not in ("pre", "textarea"):
+                nodo.replace_with(NavigableString(re.sub(r"\s+", " ", str(nodo))))
     for sel, par in (marcas or {}).items():
         a, b = (par[0], par[1]) if len(par) == 2 else (par, par)
         for el in raiz.select(sel):
