@@ -2,11 +2,17 @@
 #
 # Campos:
 #   id, nombre, web       identificación
-#   familia               country | hardrock   (las familias están en taxonomia.yaml)
-#   rol                   listado (anuncia lanzamientos) | resena | noticia | sello
-#   lector                texto | rss | sonda
+#   familia               id de una familia de taxonomia.yaml (country, hardrock, rockmetal,
+#                         punkgarage, indiepop, blues, synthdark, cantautores) | todas | ninguna
+#   rol                   listado (anuncia lanzamientos) | resena | noticia | sello |
+#                         lista_anual (lista de fin de año, para "Lo mejor del año")
+#   lector                texto | rss | sonda | radar_musicbrainz | radar_deezer
+#   activa                false para dejarla apagada (con un comentario del porqué)
 #   urls                  páginas a leer
 #   paginacion            {plantilla: "...{n}...", desde: 2, hasta: 5}
+#                         {fechas: {plantilla: "...{fecha}...", formato, dia_semana, semanas}}
+#                         {anios: {plantilla: "...{anio}...", desde: 2025,
+#                                  hasta: actual | anterior | 2025, paginas, plantilla_pagina}}
 #   fecha_es              lanzamiento | publicacion | alta   (qué significa la fecha)
 #   mixta                 true si la fuente mezcla otros géneros (metal, pop…):
 #                         sus discos solo entran si se les reconoce un subgénero
@@ -17,6 +23,9 @@
 #                         artista, titulo, fecha, sello, genero, tipo, nota, url, portada, extra
 #   filtro / excluir      regex que el texto debe cumplir / no cumplir
 #   nota                  regex para la nota de una reseña (en el contenido)
+#   campos_contenido      (RSS) {campo: regex} sobre el cuerpo de la entrada:
+#                         genero, sello, fecha (= fecha de salida), pistas…
+#   lista_por_item        (listas anuales) cada lista enlazada cuenta por separado
 #   detalle               abrir la página de cada item: {texto, campos, contar, patrones, max, solo_si}
 #
 # Marcas que añade el conversor:  «…» (lo que digan las marcas, p. ej. cursivas),

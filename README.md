@@ -1,7 +1,11 @@
-# Novedades discográficas: country / americana / folk y hard rock / AOR
+# Novedades discográficas: country / americana / folk, hard rock / AOR y rock, pop y afines
 
-Web estática con los álbumes nuevos en inglés de dos familias de géneros. Se actualiza
-cada semana con una GitHub Action y se publica en GitHub Pages.
+Web estática con los álbumes nuevos en inglés de las dos familias principales (country ·
+americana · folk y hard rock · AOR) y de las familias "en foco" de rock, pop y afines (rock y
+metal, punk y garage, indie y pop-rock, blues, synthwave y dark wave, cantautores). Recoge todo
+2026 y lo anunciado para los próximos meses, y tiene una vista "Lo mejor del año" a partir de
+las reseñas y de las listas de fin de año. Se actualiza cada semana con una GitHub Action y se
+publica en GitHub Pages.
 
 - **Web:** `site/`, una cuadrícula de portadas por semana, con ficha y filtros. Pensada para móvil.
 - **Informe:** [`docs/informe.md`](docs/informe.md), con cifras, comparación con el mercado y etiquetas pendientes.
@@ -22,7 +26,8 @@ Para probar una fuente nueva sin guardar nada: `python -m scraper.probar ID --te
 
 ```
 python -m scraper.recoger [--incremental]   # lee las fuentes, MusicBrainz y Bandcamp → data/candidatos.json
-python -m scraper.enriquecer                # Wikidata, Discogs y Last.fm, solo para discos sin subgénero
+python -m scraper.recoger --solo=ID1,ID2 --fusionar   # relee solo esas fuentes y las suma a lo ya recogido
+python -m scraper.enriquecer                # Deezer (todos), Wikidata, Discogs, iTunes y Last.fm (sin subgénero)
 python -m scraper.clasificar                # taxonomía + mapeo de etiquetas → data/discos.json
 python -m scraper.informe                   # → docs/informe.md
 python -m scraper.web                       # → site/data/discos.json
