@@ -457,6 +457,20 @@ fuentes:
     patrones:
       - '^(?P<artista>[^\n⟦]+)\n⟦(?P<url>https://[^⟧]+/album/[^⟧]+)⟧(?P<titulo>[^\n]+)$'
 
+# ============================================================ RADAR DE ARTISTAS
+# Idea de Thrasher2020/home-assistant-upcoming-music-releases: todos los álbumes de
+# MusicBrainz con fecha en la ventana, cruzados con los artistas de nuestras familias.
+- id: radar_musicbrainz
+  nombre: Radar de artistas (MusicBrainz)
+  web: https://musicbrainz.org
+  familia: todas
+  rol: listado
+  mixta: true
+  lector: radar_musicbrainz
+  fecha_es: lanzamiento
+  dias_adelante: 180
+  tipos: "primarytype:album"
+
 # ============================================================ SELLOS
 - id: newwest
   nombre: New West Records – Recent Releases

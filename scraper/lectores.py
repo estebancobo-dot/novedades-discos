@@ -366,7 +366,12 @@ LECTORES = {"texto": leer_texto, "rss": leer_rss, "sonda": leer_sonda}
 
 def leer_fuente(nav: Navegador, cfg: dict, hoy: dt.date, desde: dt.date | None = None) -> ResultadoFuente:
     try:
-        res = LECTORES[cfg["lector"]](nav, cfg, hoy, desde)
+        if cfg["lector"] == "radar_musicbrainz":
+            from .config import cargar_config
+            from .radar import leer_radar
+            res = leer_radar(nav, cfg, hoy, desde, cargar_config())
+        else:
+            res = LECTORES[cfg["lector"]](nav, cfg, hoy, desde)
         if not res.items and cfg["lector"] != "sonda":
             res.estado = "vacia"
     except Bloqueado as e:

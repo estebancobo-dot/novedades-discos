@@ -135,6 +135,19 @@ sus condiciones: identificarse y 1 petición/s. Está declarada como excepción 
 | Radares de Spotify (spotify-new-albums-radar, Better-Release-Radar, spotify-albums, musicreleases) | Discos nuevos de artistas que sigues, con la API de Spotify | ⏸ La idea, un **radar de artistas**, es la mejor forma de encontrar más discos y antes. Necesita una app gratuita de Spotify (client id y secret). El 81 % de nuestros artistas tiene su Spotify enlazado en MusicBrainz, así que la identidad sería exacta. |
 | estebancobo-dot/agenda-conciertos | Wikipedia, Wikidata, Discogs, MusicBrainz, Last.fm, ReccoBeats | ✅ Se reutiliza el enfoque: Wikidata, Discogs y Last.fm en `scraper/enriquecer.py`, APIs documentadas exentas de `robots.txt` e identidad por enlaces, no por nombre. ❌ **ReccoBeats** no sirve aquí: su catálogo se queda en 2024; Ian Noe, Willi Carlisle o Kaitlin Butts no tienen nada posterior. |
 
+### Repositorios de GitHub sobre novedades (búsqueda del 22-nov)
+
+| Repositorio | Qué hace | Qué se aprovecha |
+|---|---|---|
+| **Thrasher2020/home-assistant-upcoming-music-releases** | Calendario de lanzamientos de tus artistas con MusicBrainz y Apple Music | ✅ **Su técnica**: pedir a MusicBrainz *todos* los álbumes de un rango de fechas (troceado por meses y días, con exclusión de las fechas de solo año y el tope de 500) y cruzarlos con los artistas de interés. Base del **Radar de artistas** (`scraper/radar.py`). |
+| canmils/catala-music-radar | Novedades y próximos de una lista de artistas con MusicBrainz, sin clave | ✅ Confirma el enfoque: lista de artistas, MusicBrainz, 1 petición/s |
+| InstaZDLL/waveflow-plugin-release-radar | Radar de novedades de tu biblioteca con MusicBrainz y Cover Art Archive | ✅ Escaneo incremental que se para limpiamente ante un 503/429; lo hace igual nuestro navegador |
+| benderham/riff-radar | Agente que busca discos de metal nuevos, los verifica con MusicBrainz y los ordena según tus gustos | 💡 Idea para más adelante: ordenar según "Mi lista" |
+| danworkman1/album-tracker-cli | Próximos discos desde Wikipedia | ✅ Ya usamos Wikipedia |
+| PaulMcInnis/Better-Release-Radar, robbyrussell/spotify-new-albums-radar, jessmartin/spotify-new-releases, MusicReleases/musicreleases.github.io, emlopezr/trackwatch, elenaecheva/album-drop-calendar | Radares con la API de Spotify | ❌ Necesitan una app de Spotify, que exige cuenta Premium |
+| GurnB/Upcoming_Album_Release_Schedule, vir-malhotra/metacritic-scraper, joelzehring/new-music-scraper | Leen Metacritic o AllMusic | ❌ Esas webs bloquean a los robots (Cloudflare) |
+| hmlON/mun, ChrisSmith/AlbumTracker | Avisos de discos nuevos de tus artistas | 💡 Idea para "Mi lista": avisar cuando un artista guardado anuncie disco |
+
 ## 7. Resumen
 
 - **En uso: 30 fuentes activas en `data/fuentes.yaml`.** Son 13 de prensa y listados de country, 8 de hard rock, 2 generalistas (Pause & Play y Bandcamp Daily), 6 de sellos y la comprobación de Bandcamp. Hay otras 3 desactivadas: Americana Highways, pendiente de tu OK, y Sleaze Roxx y Rock & Blues Muse, por su `robots.txt`. A eso se suma el enriquecimiento con MusicBrainz, Cover Art Archive y Bandcamp. Las que fallen o se bloqueen en una ejecución quedan anotadas en `data/estado_fuentes.json` y en el informe.
