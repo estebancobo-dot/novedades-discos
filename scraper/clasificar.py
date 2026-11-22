@@ -29,16 +29,16 @@ class Taxonomia:
         self.sub: dict[str, dict] = {}
         self.alias: dict[str, set[str]] = defaultdict(set)
         self.genericas: dict[str, str] = {}
-        self.ignorar = {normalizar(x) for x in datos.get("ignorar", [])}
+        self.ignorar = {normalizar(str(x)) for x in datos.get("ignorar", [])}
         for fam, fd in datos["familias"].items():
             for g in fd.get("genericas", []):
-                self.genericas[normalizar(g)] = fam
+                self.genericas[normalizar(str(g))] = fam
             for grupo, subs in fd["grupos"].items():
                 for sid, sd in subs.items():
                     self.sub[sid] = {"id": sid, "nombre": sd.get("nombre", sid), "familia": fam, "grupo": grupo,
                                      "frontera": bool(sd.get("frontera"))}
                     for a in [sid.replace("-", " ")] + list(sd.get("alias", [])):
-                        self.alias[normalizar(a)].add(sid)
+                        self.alias[normalizar(str(a))].add(sid)
         minp = int(self.reglas.get("alias_en_texto_min_palabras", 2))
         largos = [a for a in self.alias if len(a.split()) >= minp or "-" in a]
         largos.sort(key=len, reverse=True)
