@@ -234,9 +234,9 @@ def main():
         pistas = m.get("pistas") or next((i.pistas for i in grupo if i.pistas), None)
         if not fecha:
             motivo = "sin fecha conocida"
-        elif fmb_fin and fmb_fin < desde - margen:
+        elif fmb_fin and fmb_fin < desde:
             motivo = f"no es nuevo: MusicBrainz lo fecha el {m.get('primera_fecha')}"
-        elif fecha < desde - margen:
+        elif fecha < desde:
             motivo = f"fuera de la ventana ({fecha})"
         elif fecha > hasta:
             motivo = f"demasiado lejos en el futuro ({fecha})"
@@ -279,7 +279,7 @@ def main():
     log(f"Menciones emparejadas: {len(menciones) - sin_pareja}/{len(menciones)}")
 
     if incremental:
-        salida = _fusionar(salida, previos, desde - margen)
+        salida = _fusionar(salida, previos, desde)
     salida.sort(key=lambda s: (s["fecha"], s["artista"].lower()), reverse=True)
     estado["musicbrainz"] = {"consultas": mb.consultas if mb else 0, "bloqueado": mb.bloqueado if mb else None}
     estado["bandcamp"] = {"paginas": bc.abiertas if bc else 0, "bloqueado": bc.bloqueado if bc else None}

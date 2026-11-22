@@ -129,9 +129,17 @@ def main():
     with open(ruta(rutas["descartados"]), encoding="utf-8") as f:
         descartados = [x for x in json.load(f) if not x["motivo"].startswith("clasificación:")]
 
+    # Corte exacto de la ventana (por si la recogida se hizo con otra configuración).
+    estado_p = ruta(rutas["estado_fuentes"])
+    ventana = (json.load(open(estado_p, encoding="utf-8")).get("ventana") if os.path.exists(estado_p) else None) or ["", "9999"]
     desconocidas, ejemplo = Counter(), {}
     quedan = []
     for d in discos:
+        if not (ventana[0] <= d["fecha"] <= ventana[1]):
+            descartados.append({"artista": d["artista"], "titulo": d["titulo"], "fuentes": [x["id"] for x in d["fuentes"]],
+                                "motivo": f"clasificación: fuera de la ventana {ventana[0]} – {ventana[1]} ({d['fecha']})",
+                                "fecha": d["fecha"]})
+            continue
         r = clasificar_disco(d, tax, mapeo, desconocidas, ejemplo)
         subs = r["subgeneros"]
         fam_subs = {tax.sub[s]["familia"] for s in subs if not tax.sub[s]["frontera"]} or {tax.sub[s]["familia"] for s in subs}
