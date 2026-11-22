@@ -95,6 +95,44 @@
 "nombre": "Bad Company",
 "pais": "GB"
 },
+"art:0068ae6c-7156-40f9-a81f-39294af6a549": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0003813592",
+"apple": "https://music.apple.com/ar/artist/1378887586",
+"cafe.daum.net": "http://cafe.daum.net/cube-g-i-dle",
+"channels.vlive.tv": "http://channels.vlive.tv/CE2621/video",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:(G)I-DLE_at_'Latata'_Showcase_Photo_Time_on_May_2,_2018_(5).png",
+"cubeent.co.kr": "http://www.cubeent.co.kr/gidle",
+"deezer": "https://www.deezer.com/artist/108468762",
+"discogs": "https://www.discogs.com/artist/6605933",
+"facebook": "https://www.facebook.com/G.I.DLE.CUBE",
+"generasia.com": "https://www.generasia.com/wiki/(G)I-DLE",
+"genie.co.kr": "https://www.genie.co.kr/detail/artistInfo?xxnm=80632010",
+"genius.com": "https://genius.com/artists/G-i-dle",
+"imvdb.com": "https://imvdb.com/n/gi-dle",
+"instagram": "https://www.instagram.com/official_g_i_dle/",
+"last.fm": "https://www.last.fm/music/%EC%95%84%EC%9D%B4%EB%93%A4",
+"melon.com": "https://www.melon.com/artist/detail.htm?artistId=2137482",
+"music-flo.com": "https://www.music-flo.com/detail/artist/20056456/album",
+"music.bugs.co.kr": "https://music.bugs.co.kr/artist/20056456",
+"ototoy.jp": "https://ototoy.jp/_/default/a/1710700",
+"spotify": "https://open.spotify.com/artist/2AfmfGFbe0A0WsTYm0SDTx",
+"tidal": "https://tidal.com/artist/10589753",
+"twitter.com": "https://twitter.com/G_I_DLE",
+"vibe.naver.com": "https://vibe.naver.com/artist/2388740",
+"wikidata": "https://www.wikidata.org/wiki/Q51885404",
+"youtube": "https://www.youtube.com/channel/UCritGVo7pLJLUS8wEu32vow"
+},
+"etiquetas": [
+"k-pop",
+"girl group"
+],
+"generos": [
+"k-pop"
+],
+"nombre": "i‐dle",
+"pais": "KR"
+},
 "art:00a9f935-ba93-4fc8-a33a-993abe9c936b": {
 "enlaces": {
 "7digital.com": "https://www.7digital.com/artist/nightwish",
@@ -415,6 +453,20 @@
 "nombre": "Josh Rouse",
 "pais": "US"
 },
+"art:025f381e-e537-4ee5-a43f-d6c6b77b46be": {
+"enlaces": {
+"apple": "https://music.apple.com/us/artist/372802017",
+"bandcamp": "https://hurry.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/2825191",
+"qobuz": "https://open.qobuz.com/artist/2510250",
+"tidal": "https://tidal.com/artist/4647059",
+"wikidata": "https://www.wikidata.org/wiki/Q22080384"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Hurry",
+"pais": "US"
+},
 "art:02904b83-d813-48cf-9d01-8a08641ea6dc": {
 "enlaces": {
 "apple": "https://itunes.apple.com/gb/artist/id73220826",
@@ -559,6 +611,54 @@
 "underground hip hop"
 ],
 "nombre": "The Alchemist",
+"pais": "US"
+},
+"art:045494aa-e913-4e62-bf4e-dcc276e0075a": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0002946658",
+"apple": "https://itunes.apple.com/us/artist/id549186342",
+"bandcamp": "https://kelela.bandcamp.com/",
+"bandsintown.com": "https://www.bandsintown.com/a/5651775",
+"beatport.com": "https://www.beatport.com/artist/kelela/281454",
+"bleep.com": "https://bleep.com/artist/33640",
+"boomkat.com": "https://boomkat.com/artists/kelela",
+"deezer": "https://www.deezer.com/artist/4648381",
+"discogs": "https://www.discogs.com/artist/2200067",
+"facebook": "https://www.facebook.com/kelelamusic",
+"genius.com": "https://genius.com/artists/Kelela",
+"imvdb.com": "https://imvdb.com/n/kelela",
+"instagram": "https://www.instagram.com/kelela/",
+"junodownload.com": "http://www.junodownload.com/artists/Kelela",
+"kelela.co": "https://www.kelela.co/",
+"kelelamusic.tumblr.com": "https://kelelamusic.tumblr.com/",
+"last.fm": "https://www.last.fm/music/Kelela",
+"play.google.com": "https://play.google.com/store/music/artist?id=A5o4jpei7gyb4dvtcmjujxrwgzq",
+"qobuz": "https://open.qobuz.com/artist/1598491",
+"ra.co": "https://ra.co/dj/kelela",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/kelela",
+"songkick.com": "https://www.songkick.com/artists/6039679",
+"soundcloud": "https://soundcloud.com/kelelam",
+"spotify": "https://open.spotify.com/artist/1U0sIzpRtDkvu1hXXzxh60",
+"tidal": "https://tidal.com/artist/5175422",
+"tiktok.com": "https://www.tiktok.com/@k_e_l_e_l_a",
+"twitter.com": "https://twitter.com/kelelam",
+"us.7digital.com": "https://us.7digital.com/artist/kelela",
+"viaf.org": "http://viaf.org/viaf/9149485539893420774",
+"whosampled.com": "https://www.whosampled.com/Kelela/",
+"wikidata": "https://www.wikidata.org/wiki/Q17306137",
+"youtube": "https://www.youtube.com/channel/UCI2aWCbAUZDzZZ5a5GDtRew"
+},
+"etiquetas": [
+"pbr&b",
+"alternative r&b",
+"grime",
+"r & b"
+],
+"generos": [
+"alternative r&b",
+"grime"
+],
+"nombre": "Kelela",
 "pais": "US"
 },
 "art:04cd8d60-5b63-4cd7-99c3-c6f125502388": {
@@ -5517,6 +5617,33 @@
 "nombre": "Becky Hill",
 "pais": "GB"
 },
+"art:27d9dfca-2b81-47c6-a06d-56c26229fcd7": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0002825280",
+"apple": "https://music.apple.com/gb/artist/415534011",
+"deezer": "https://www.deezer.com/artist/5214014",
+"discogs": "https://www.discogs.com/artist/3477767",
+"facebook": "https://www.facebook.com/lowcutconnie",
+"imvdb.com": "https://imvdb.com/n/low-cut-connie",
+"instagram": "https://www.instagram.com/lowcutconnie/",
+"lowcutconnie.com": "http://lowcutconnie.com/",
+"qobuz": "https://open.qobuz.com/artist/2775854",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/low_cut_connie",
+"spotify": "https://open.spotify.com/artist/4taNHtYxfIWIHu07FBw7ih",
+"tidal": "https://tidal.com/artist/5446393",
+"twitter.com": "https://twitter.com/lowcutconnie",
+"wikidata": "https://www.wikidata.org/wiki/Q18154798",
+"youtube": "https://www.youtube.com/channel/UCVehw1eEvzq-YTMHKbm5OkQ"
+},
+"etiquetas": [
+"rock and roll"
+],
+"generos": [
+"rock and roll"
+],
+"nombre": "Low Cut Connie",
+"pais": "US"
+},
 "art:27de2d8d-8fe3-4e4f-96a4-fa8214183796": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0002842845",
@@ -8673,6 +8800,64 @@
 "nombre": "Toro y Moi",
 "pais": "US"
 },
+"art:3ae2fb37-8a23-429d-9920-bac811c4fc22": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000128873",
+"apple": "https://music.apple.com/us/artist/826980",
+"bandcamp": "https://officialjackwhite.bandcamp.com/",
+"bbc.co.uk": "https://www.bbc.co.uk/music/artists/3ae2fb37-8a23-429d-9920-bac811c4fc22",
+"bsky.app": "https://bsky.app/profile/officialjackwhite.bsky.social",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb14145585h",
+"d-nb.info": "https://d-nb.info/gnd/135408083",
+"deezer": "https://www.deezer.com/artist/1945",
+"discogs": "https://www.discogs.com/artist/278763",
+"facebook": "https://www.facebook.com/jackwhite",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2004009008",
+"imdb.com": "https://www.imdb.com/name/nm1226421/",
+"imvdb.com": "https://imvdb.com/n/jack-white",
+"instagram": "https://www.instagram.com/officialjackwhite/",
+"jackwhiteiii.com": "https://jackwhiteiii.com/",
+"last.fm": "https://www.last.fm/music/Jack+White",
+"mora.jp": "https://mora.jp/artist/138778/",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/jack-white-2/",
+"ototoy.jp": "https://ototoy.jp/_/default/a/13864",
+"qobuz": "https://open.qobuz.com/artist/40569",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/jack-white",
+"roh.org.uk": "http://www.roh.org.uk/people/jack-white-iii",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/9118",
+"setlist.fm": "https://www.setlist.fm/setlists/jack-white-33d69845.html",
+"snaccooperative.org": "http://snaccooperative.org/ark:/99166/w6z61f8x",
+"songkick.com": "https://www.songkick.com/artists/757422",
+"soundcloud": "https://soundcloud.com/jackwhiteiii",
+"spotify": "https://open.spotify.com/artist/4FZ3j1oH43e7cukCALsCwf",
+"tidal": "https://tidal.com/artist/3523905",
+"twitter.com": "https://twitter.com/thirdmanrecords",
+"viaf.org": "http://viaf.org/viaf/100321554",
+"wikidata": "https://www.wikidata.org/wiki/Q272031",
+"worldcat.org": "http://www.worldcat.org/identities/lccn-no2004009008/",
+"youtube": "https://www.youtube.com/channel/UCaHBeIm2u-nD3LhGsCmSqBQ"
+},
+"etiquetas": [
+"alternative rock",
+"blues rock",
+"rock",
+"experimental rock",
+"garage rock revival",
+"singer-songwriter",
+"art rock"
+],
+"generos": [
+"alternative rock",
+"blues rock",
+"rock",
+"experimental rock",
+"garage rock revival",
+"singer-songwriter",
+"art rock"
+],
+"nombre": "Jack White",
+"pais": "US"
+},
 "art:3b5d02e0-269d-4862-bfc5-effa5f6c1dc5": {
 "enlaces": {
 "bandcamp": "https://phantombandgdl.bandcamp.com/",
@@ -9078,6 +9263,67 @@
 "r&b"
 ],
 "nombre": "Lalah Hathaway",
+"pais": "US"
+},
+"art:3f1ed758-50e4-401f-8dc6-e0066e546e7c": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0004397934",
+"apple": "https://music.apple.com/us/artist/1505504789",
+"bandcamp": "https://frostchildren.bandcamp.com/",
+"beatport.com": "https://www.beatport.com/artist/frost-children/1151163",
+"dazeddigital.com": "https://www.dazeddigital.com/music/article/57535/1/frost-children-dazed-winter-postinternet-era",
+"deezer": "https://www.deezer.com/artist/89837932",
+"discogs": "https://www.discogs.com/artist/12137920",
+"genius.com": "https://genius.com/artists/Frost-children",
+"instagram": "https://www.instagram.com/thefrostchildren/",
+"last.fm": "https://www.last.fm/music/Frost+Children",
+"qobuz": "https://www.qobuz.com/us-en/interpreter/frost-children/8077272",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/frost-children",
+"soundcloud": "https://soundcloud.com/frostchildren",
+"spotify": "https://open.spotify.com/artist/2armP2pVQFy1awZ8HLbCib",
+"tidal": "https://tidal.com/artist/18889867",
+"twitter.com": "https://twitter.com/FrostChildren",
+"wikidata": "https://www.wikidata.org/wiki/Q117018188",
+"youtube": "https://www.youtube.com/channel/UCIfMtvBbD-D34HEtC2ezeJw"
+},
+"etiquetas": [
+"hyperpop",
+"pop",
+"electropop",
+"trans",
+"alternative dance",
+"alternative/indie rock",
+"bass house",
+"dance",
+"digicore",
+"digital hardcore",
+"edm",
+"electro house",
+"electronic",
+"electronica",
+"hip hop"
+],
+"generos": [
+"hyperpop",
+"pop",
+"electropop",
+"alternative dance",
+"bass house",
+"dance",
+"digicore",
+"digital hardcore",
+"edm",
+"electro house",
+"electronic",
+"electronica",
+"hip hop",
+"house",
+"indie pop",
+"indie rock",
+"rave",
+"rock"
+],
+"nombre": "Frost Children",
 "pais": "US"
 },
 "art:3f7574d9-94f3-46dc-8228-9d7358019d9f": {
@@ -15012,6 +15258,30 @@
 "nombre": "Billy Strings",
 "pais": "US"
 },
+"art:64367341-4bc2-493c-8e5d-ce17841c8a7a": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0004535695",
+"apple": "https://music.apple.com/gb/artist/1706946585",
+"bandcamp": "https://maryinthejunkyard.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/148939382",
+"discogs": "https://www.discogs.com/artist/14619303",
+"genius.com": "https://genius.com/artists/Mary-in-the-junkyard",
+"instagram": "https://www.instagram.com/maryinthejunkyrd/",
+"last.fm": "https://www.last.fm/music/mary+in+the+junkyard",
+"maryinthejunkyard.tmstor.es": "https://maryinthejunkyard.tmstor.es/",
+"qobuz": "https://open.qobuz.com/artist/14649545",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/mary-in-the-junkyard",
+"soundcloud": "https://soundcloud.com/maryinthejunkyard",
+"spotify": "https://open.spotify.com/artist/48Kc3HRodbvm5ropMf9B6M",
+"tidal": "https://tidal.com/artist/28928664",
+"wikidata": "https://www.wikidata.org/wiki/Q134740099",
+"youtube": "https://www.youtube.com/channel/UCRv0TQIC-pMHDkMchvBQCIA"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "mary in the junkyard",
+"pais": "GB"
+},
 "art:64598fd8-5d7c-441d-a936-e1fc13d5a4f6": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0003808952",
@@ -15340,6 +15610,62 @@
 "generos": [],
 "nombre": "Danny Golden",
 "pais": null
+},
+"art:66a4b9d2-d5a6-40b8-93d5-0bdd1dbb4b43": {
+"enlaces": {
+"7digital.com": "https://www.7digital.com/artist/the-dream",
+"allmusic": "https://www.allmusic.com/artist/mn0001028077",
+"amazon": "https://www.amazon.com/-/e/B00197I712",
+"apple": "https://itunes.apple.com/us/artist/id259369321",
+"bandsintown.com": "https://www.bandsintown.com/a/201629",
+"beatport.com": "https://www.beatport.com/artist/the-dream/308378",
+"deezer": "https://www.deezer.com/artist/75530",
+"discogs": "https://www.discogs.com/artist/1008036",
+"facebook": "https://www.facebook.com/thedreammusic",
+"genius.com": "https://genius.com/artists/The-dream",
+"imdb.com": "https://www.imdb.com/name/nm3388710/",
+"imvdb.com": "https://imvdb.com/n/the-dream",
+"instagram": "https://www.instagram.com/thekingdream/",
+"junodownload.com": "https://www.junodownload.com/artists/The-dream/releases/",
+"livefans.jp": "https://www.livefans.jp/artists/12779",
+"maniadb.com": "http://www.maniadb.com/artist/144014",
+"melon.com": "https://www.melon.com/artist/detail.htm?artistId=232268",
+"mora.jp": "https://mora.jp/artist/221818/",
+"music.bugs.co.kr": "https://music.bugs.co.kr/artist/80029028",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/the-dream-5/",
+"musixmatch.com": "https://www.musixmatch.com/artist/The-Dream",
+"muziekweb.nl": "https://www.muziekweb.nl/Link/M00000309818/POPULAR/",
+"myspace.com": "https://myspace.com/thedreamteam",
+"ototoy.jp": "https://ototoy.jp/_/default/a/256893",
+"play.google.com": "https://play.google.com/store/music/artist?id=A5464ujordhmwjixymg54gbpb2e",
+"qobuz": "https://open.qobuz.com/artist/67148",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/the-dream-2",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/28069",
+"songkick.com": "https://www.songkick.com/artists/939260",
+"soundcloud": "https://soundcloud.com/the-dream",
+"spotify": "https://open.spotify.com/artist/1W3FSF1BLpY3hlVIgvenLz",
+"the-dreammusic.com": "http://www.the-dreammusic.com/",
+"themoviedb.org": "https://www.themoviedb.org/person/224234",
+"tidal": "https://tidal.com/artist/3502522",
+"twitter.com": "https://twitter.com/MrTeriusNash",
+"us.napster.com": "https://us.napster.com/artist/the-dream",
+"viaf.org": "http://viaf.org/viaf/58145970239232251871",
+"whosampled.com": "https://www.whosampled.com/The-Dream/",
+"wikidata": "https://www.wikidata.org/wiki/Q351055",
+"youtube": "https://www.youtube.com/channel/UCaLYXxQhRhh6pm636YSGSVw"
+},
+"etiquetas": [
+"contemporary r&b",
+"hip hop rnb and dance hall",
+"r&b",
+"songwriter"
+],
+"generos": [
+"contemporary r&b",
+"r&b"
+],
+"nombre": "The‐Dream",
+"pais": "US"
 },
 "art:671a64bf-9324-4830-ae13-7d2501cd626f": {
 "enlaces": {
@@ -26261,6 +26587,91 @@
 "nombre": "Alex Amen",
 "pais": "US"
 },
+"art:b29020d6-5dbf-4c99-b16f-c009f8a712ff": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0003420473",
+"amazon": "https://music.amazon.co.uk/artists/B001DTF174",
+"apple": "https://music.apple.com/us/artist/1210275020",
+"bandsintown.com": "https://www.bandsintown.com/a/346812",
+"beatport.com": "https://www.beatport.com/artist/steve-lacy/490946",
+"boomplay.com": "https://www.boomplay.com/artists/758299",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:Steve_Lacy_at_Icebox_in_2019.jpg",
+"deezer": "https://www.deezer.com/artist/65574",
+"discogs": "https://www.discogs.com/artist/4740695",
+"genius.com": "https://genius.com/artists/Steve-lacy",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2019068862",
+"id.oclc.org": "https://id.oclc.org/worldcat/entity/E39PBJymFb9RyDTfWQGv4jpQMP",
+"imdb.com": "https://www.imdb.com/name/nm10838411/",
+"imvdb.com": "https://imvdb.com/n/steve-lacy",
+"instagram": "https://www.instagram.com/steve.lacy/",
+"jaxsta.com": "https://jaxsta.com/profile/0804eb79-2bff-4c2e-a1b3-5ec63a4df3e5",
+"last.fm": "https://www.last.fm/music/Steve+Lacy",
+"livefans.jp": "https://www.livefans.jp/artists/136877",
+"livenation.co.uk": "https://www.livenation.co.uk/artist-1277852",
+"melon.com": "https://www.melon.com/artist/detail.htm?artistId=966668",
+"mora.jp": "https://mora.jp/artist/628458/",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/605158/",
+"musixmatch.com": "https://www.musixmatch.com/artist/Steve-Lacy-1",
+"muziekweb.nl": "https://www.muziekweb.nl/Link/M00000548633/POPULAR/",
+"ototoy.jp": "https://ototoy.jp/_/default/a/386946",
+"play.anghami.com": "https://play.anghami.com/artist/2581803",
+"qobuz": "https://www.qobuz.com/us-en/interpreter/-/3290258",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/steve-lacy",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/203546",
+"setlist.fm": "https://www.setlist.fm/setlists/wd-7bce2a3c.html",
+"songkick.com": "https://www.songkick.com/artists/8538309",
+"soundcloud": "https://soundcloud.com/steevlacy",
+"spotify": "https://open.spotify.com/artist/57vWImR43h4CaDao012Ofp",
+"stevelacys.com": "http://stevelacys.com/",
+"stevelacys.tumblr.com": "https://stevelacys.tumblr.com/",
+"themoviedb.org": "https://www.themoviedb.org/person/3772875",
+"tidal": "https://tidal.com/artist/42968120",
+"tiktok.com": "https://www.tiktok.com/@steve.lacy",
+"traxsource.com": "https://www.traxsource.com/artist/554455",
+"twitter.com": "https://twitter.com/stevelacys",
+"viaf.org": "http://viaf.org/viaf/8996155769104627880004",
+"whosampled.com": "https://www.whosampled.com/Steve-Lacy/",
+"wikidata": "https://www.wikidata.org/wiki/Q56733980",
+"youtube": "https://www.youtube.com/channel/UChCMVp55cauuO3-yF9OMl0A"
+},
+"etiquetas": [
+"alternative r&b",
+"contemporary r&b",
+"r&b",
+"alternative singer/songwriter",
+"alternative/indie rock",
+"avant-garde",
+"bedroom pop",
+"dance",
+"disco",
+"future bass",
+"hard bop",
+"house",
+"indie dance",
+"neo soul",
+"nuno"
+],
+"generos": [
+"alternative r&b",
+"contemporary r&b",
+"r&b",
+"avant-garde",
+"bedroom pop",
+"dance",
+"disco",
+"future bass",
+"hard bop",
+"house",
+"neo soul",
+"pop",
+"psychedelic soul",
+"rock",
+"tech house",
+"trap"
+],
+"nombre": "Steve Lacy",
+"pais": "US"
+},
 "art:b2c081c8-4fa8-46d1-8b8e-34c0c0d4ab71": {
 "enlaces": {
 "amazon": "https://www.amazon.com/-/e/B083JJ2XXB",
@@ -29489,6 +29900,26 @@
 "nombre": "Pokey LaFarge",
 "pais": "US"
 },
+"art:c77a063b-94b1-43f4-9bdc-1d57e6715c4b": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/650599979",
+"bandcamp": "https://chuckstrangers.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/5291551",
+"discogs": "https://www.discogs.com/artist/3057481",
+"spotify": "https://open.spotify.com/artist/1o1szEyRkKUmDfqHOsU9b5",
+"tidal": "https://tidal.com/artist/6320888",
+"twitter.com": "https://twitter.com/Chuck_Strangers",
+"wikidata": "https://www.wikidata.org/wiki/Q127425276"
+},
+"etiquetas": [
+"hip hop"
+],
+"generos": [
+"hip hop"
+],
+"nombre": "Chuck Strangers",
+"pais": "US"
+},
 "art:c77e18dd-d9ec-4840-b0ec-fe6b4098e6c9": {
 "enlaces": {},
 "etiquetas": [],
@@ -32446,6 +32877,41 @@
 "nombre": "Cloven Hoof",
 "pais": "GB"
 },
+"art:dff72d7d-751c-4b59-8aaa-7c61136191a3": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0003854861",
+"apple": "https://itunes.apple.com/us/artist/id1467756611",
+"babyrosemusicofficial.com": "https://www.babyrosemusicofficial.com/",
+"bandsintown.com": "https://www.bandsintown.com/a/8839366",
+"deezer": "https://www.deezer.com/artist/4165077",
+"discogs": "https://www.discogs.com/artist/7448778",
+"facebook": "https://www.facebook.com/babyrosemusic",
+"genius.com": "https://genius.com/artists/Baby-rose",
+"instagram": "https://www.instagram.com/babyrosemusic/",
+"last.fm": "https://www.last.fm/music/Baby+Rose",
+"qobuz": "https://open.qobuz.com/artist/2041291",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/baby-rose",
+"setlist.fm": "https://www.setlist.fm/setlists/baby-rose-1bf7e568.html",
+"songkick.com": "https://www.songkick.com/artists/9472679",
+"soundcloud": "https://soundcloud.com/babyrosemusic",
+"spotify": "https://open.spotify.com/artist/6Z4JcgqrqgysyHIPRtDIHo",
+"tidal": "https://tidal.com/artist/16046035",
+"twitter.com": "https://twitter.com/babyrosemusic",
+"viaf.org": "http://viaf.org/viaf/8495158430399906260004",
+"wikidata": "https://www.wikidata.org/wiki/Q75197918",
+"youtube": "https://www.youtube.com/@BabyRoseMusic"
+},
+"etiquetas": [
+"r&b",
+"soul"
+],
+"generos": [
+"r&b",
+"soul"
+],
+"nombre": "Baby Rose",
+"pais": "US"
+},
 "art:e07e1915-2fe7-4ffb-acd8-8ae47ce58207": {
 "enlaces": {
 "apple": "https://music.apple.com/ca/artist/1793284156",
@@ -33863,6 +34329,67 @@
 ],
 "nombre": "The Pineapple Thief",
 "pais": "GB"
+},
+"art:e942594a-91cc-427a-8beb-6815c28e9254": {
+"enlaces": {
+"adamlambert.net": "https://adamlambert.net/",
+"adamlambertuk.com": "http://www.adamlambertuk.com/",
+"adamofficial.com": "http://www.adamofficial.com/",
+"allmusic": "https://www.allmusic.com/artist/mn0001532591",
+"apple": "https://itunes.apple.com/us/artist/id305371030",
+"bandsintown.com": "https://www.bandsintown.com/a/274879",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb16241204b",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:Adam_Lambert_Kiev_2013_0910_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg",
+"d-nb.info": "https://d-nb.info/gnd/139881581",
+"deezer": "https://www.deezer.com/artist/247379",
+"discogs": "https://www.discogs.com/artist/646266",
+"facebook": "https://www.facebook.com/AdamLambert",
+"genius.com": "https://genius.com/artists/Adam-lambert",
+"ibdb.com": "https://ibdb.com/person.php?id=500351",
+"id.loc.gov": "http://id.loc.gov/authorities/names/n2009037034",
+"imdb.com": "https://www.imdb.com/name/nm2189338/",
+"imvdb.com": "https://imvdb.com/n/adam-lambert",
+"instagram": "https://www.instagram.com/adamlambert/",
+"last.fm": "https://www.last.fm/music/Adam+Lambert",
+"muzikum.eu": "http://muzikum.eu/en/122-7129/adam-lambert/lyrics.html",
+"myspace.com": "https://myspace.com/adamlambert",
+"qobuz": "https://open.qobuz.com/artist/167740",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/adam_lambert",
+"setlist.fm": "https://www.setlist.fm/setlists/adam-lambert-73d43605.html",
+"songkick.com": "https://www.songkick.com/artists/2436746",
+"soundcloud": "https://soundcloud.com/adamofficial",
+"spotify": "https://open.spotify.com/artist/6prmLEyn4LfHlD9NnXWlf7",
+"thelambrits.co.uk": "http://www.thelambrits.co.uk/forums/portal.php",
+"tidal": "https://tidal.com/artist/3620693",
+"twitter.com": "https://twitter.com/adamlambert",
+"ukglamberts.forumotion.co.uk": "http://ukglamberts.forumotion.co.uk/",
+"viaf.org": "http://viaf.org/viaf/12920686",
+"vk.ru": "https://vk.ru/adamlambert",
+"wikidata": "https://www.wikidata.org/wiki/Q190231",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-n2009037034",
+"youtube": "https://www.youtube.com/channel/UC9SGC_32CZahPYkEY92xflA"
+},
+"etiquetas": [
+"pop",
+"dance-pop",
+"electronic rock",
+"operatic pop",
+"pop soul",
+"queer",
+"rock and roll",
+"2010s",
+"lgbtqi"
+],
+"generos": [
+"pop",
+"dance-pop",
+"electronic rock",
+"operatic pop",
+"pop soul",
+"rock and roll"
+],
+"nombre": "Adam Lambert",
+"pais": "US"
 },
 "art:e9452446-7702-4853-96ce-5dfe6748d3fb": {
 "enlaces": {
@@ -37410,6 +37937,34 @@
 "rg:adam gaffney and the balladeers|product of another sad song": {
 "no_encontrado": "2026-11-22"
 },
+"rg:adam lambert|adam": {
+"artista": "Adam Lambert",
+"artistas_id": [
+"e942594a-91cc-427a-8beb-6815c28e9254"
+],
+"enlaces": {
+"adamlambertstore.com": "https://adamlambertstore.com/products/adam-digital-glaad-edition",
+"apple": "https://music.apple.com/fr/album/1893149385",
+"deezer": "https://www.deezer.com/album/960714581",
+"discogs": "https://www.discogs.com/release/37859673",
+"qobuz": "https://www.qobuz.com/fr-fr/album/adam-adam-lambert/nobyivgj56glz",
+"spotify": "https://open.spotify.com/album/7trR3fOUnxqBvVlAb5L370",
+"tidal": "https://tidal.com/album/515617504"
+},
+"fecha_release": "2026-07-10",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 13,
+"portada": "https://coverartarchive.org/release-group/5b6c349f-5320-4ae7-9461-5f8859f50062/front-250",
+"primera_fecha": "2026-07-10",
+"puntuacion": 1.0,
+"release": "2dd2d42b-d527-4178-8000-e0672b46ed84",
+"rg": "5b6c349f-5320-4ae7-9461-5f8859f50062",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "ADAM"
+},
 "rg:adam rubenstein|firebreak": {
 "artista": "Adam Rubenstein",
 "artistas_id": [
@@ -39043,6 +39598,18 @@
 },
 "rg:baby dee|child of joy": {
 "no_encontrado": "2026-11-22"
+},
+"rg:baby rose|yearnalism": {
+"artista": "Baby Rose",
+"artistas_id": [
+"dff72d7d-751c-4b59-8aaa-7c61136191a3"
+],
+"primera_fecha": "2026-07-10",
+"puntuacion": 1.0,
+"rg": "07feb5f6-833a-49bc-a3c4-34ae74dac42c",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "YEARNALISM"
 },
 "rg:bad company|live in london": {
 "artista": "Bad Company",
@@ -42430,6 +42997,18 @@
 "tipos_secundarios": [],
 "titulo": "Texture Songs"
 },
+"rg:chuck strangers|glory of the kings hand": {
+"artista": "Chuck Strangers",
+"artistas_id": [
+"c77a063b-94b1-43f4-9bdc-1d57e6715c4b"
+],
+"primera_fecha": "2026-07-10",
+"puntuacion": 1.0,
+"rg": "d74ae0b5-04be-4bf0-ad1b-76e6a85b07c5",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Glory of the King’s Hand"
+},
 "rg:cimarron 615|same sky": {
 "no_encontrado": "2026-11-22"
 },
@@ -45046,6 +45625,33 @@
 "tipos_secundarios": [],
 "titulo": "Hymns for the Denial of God"
 },
+"rg:dream|love hate ii": {
+"artista": "The‐Dream",
+"artistas_id": [
+"66a4b9d2-d5a6-40b8-93d5-0bdd1dbb4b43"
+],
+"enlaces": {
+"apple": "https://music.apple.com/fr/album/6778238107",
+"qobuz": "https://www.qobuz.com/us-en/album/love-hate-ii-the-dream/sr2ug42o7dptd",
+"spotify": "https://open.spotify.com/album/0UEsbk4JvLrat2XrluDWUp",
+"tidal": "https://tidal.com/album/540959424"
+},
+"fecha_release": "2026-07-10",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 17,
+"portada": "https://coverartarchive.org/release-group/c9d38d4d-ea9d-4060-9399-9914e56dc48f/front-250",
+"primera_fecha": "2026-07-10",
+"puntuacion": 1.0,
+"release": "04a123c9-c3e4-4662-b0e3-de1ec5704c81",
+"rg": "c9d38d4d-ea9d-4060-9399-9914e56dc48f",
+"sellos": [
+"[no label]"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Love/Hate II"
+},
 "rg:drew ryder smith|deep end": {
 "no_encontrado": "2026-11-22"
 },
@@ -47423,6 +48029,34 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Rebirth"
+},
+"rg:frost children|tweaker poem": {
+"artista": "Frost Children",
+"artistas_id": [
+"3f1ed758-50e4-401f-8dc6-e0066e546e7c"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/6778593156",
+"deezer": "https://www.deezer.com/album/1022495221",
+"qobuz": "https://www.qobuz.com/gb-en/album/tweaker-poem-frost-children/qvc2oqv4fbhld",
+"spotify": "https://open.spotify.com/album/2fzKiP2hfzKll1QlXNzojx",
+"tidal": "https://tidal.com/album/540650737"
+},
+"fecha_release": "2026-07-10",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 6,
+"portada": "https://coverartarchive.org/release-group/a0d908da-8668-4e44-b1e1-dc407db1599a/front-250",
+"primera_fecha": "2026-07-10",
+"puntuacion": 1.0,
+"release": "cfa79705-a2ae-4eb9-8938-733c2b482857",
+"rg": "a0d908da-8668-4e44-b1e1-dc407db1599a",
+"sellos": [
+"RCA"
+],
+"tipo": "EP",
+"tipos_secundarios": [],
+"titulo": "Tweaker Poem"
 },
 "rg:frozen crown|legend of the six kings": {
 "artista": "Frozen Crown",
@@ -49896,6 +50530,30 @@
 "rg:huntress and the holder of hands|babylon": {
 "no_encontrado": "2026-11-22"
 },
+"rg:hurry|zoned out": {
+"artista": "Hurry",
+"artistas_id": [
+"025f381e-e537-4ee5-a43f-d6c6b77b46be"
+],
+"enlaces": {
+"bandcamp": "https://hurry.bandcamp.com/album/zoned-out"
+},
+"fecha_release": "2026-07-10",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/cbfc7879-dd23-4114-9230-4d695bd715f1/front-250",
+"primera_fecha": "2026-07-10",
+"puntuacion": 1.0,
+"release": "3407b573-0209-45b7-bfef-2987e160a684",
+"rg": "cbfc7879-dd23-4114-9230-4d695bd715f1",
+"sellos": [
+"Lame-O Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Zoned Out"
+},
 "rg:hu|hun": {
 "artista": "The Hu",
 "artistas_id": [
@@ -49961,6 +50619,18 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Trame noire"
+},
+"rg:i dle|we made": {
+"artista": "i‐dle",
+"artistas_id": [
+"0068ae6c-7156-40f9-a81f-39294af6a549"
+],
+"primera_fecha": "2026-07-06",
+"puntuacion": 1.0,
+"rg": "f2bb7374-1953-48b0-94d8-87a5f64a6b51",
+"tipo": "EP",
+"tipos_secundarios": [],
+"titulo": "We made"
 },
 "rg:ian munsick|mountain goat": {
 "artista": "Ian Munsick",
@@ -50630,6 +51300,37 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Painted Skies"
+},
+"rg:jack white|frozen charlotte": {
+"artista": "Jack White",
+"artistas_id": [
+"3ae2fb37-8a23-429d-9920-bac811c4fc22"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/6766302423",
+"bandcamp": "https://officialjackwhite.bandcamp.com/album/frozen-charlotte",
+"deezer": "https://www.deezer.com/album/975563351",
+"discogs": "https://www.discogs.com/release/37832088",
+"qobuz": "https://www.qobuz.com/gb-en/album/frozen-charlotte-jack-white/h83ak1ouymgjv",
+"spotify": "https://open.spotify.com/album/0VV4lddlDaShTgEzohQ7Jj",
+"thirdmanrecords.com": "https://thirdmanrecords.com/products/frozen-charlotte-third-man-exclusive-vinyl",
+"tidal": "https://tidal.com/album/521508233"
+},
+"fecha_release": "2026-07-10",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 13,
+"portada": "https://coverartarchive.org/release-group/0375c2ba-edd4-40e4-b856-72e951150c76/front-250",
+"primera_fecha": "2026-07-10",
+"puntuacion": 1.0,
+"release": "22b547c8-1118-41f1-94bc-15fdbfe51da3",
+"rg": "0375c2ba-edd4-40e4-b856-72e951150c76",
+"sellos": [
+"Third Man Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Frozen Charlotte"
 },
 "rg:jackson dean|magnolia sage in full bloom": {},
 "rg:jacob hackworth|what took you so long": {
@@ -52697,6 +53398,18 @@
 "tipos_secundarios": [],
 "titulo": "Devotion"
 },
+"rg:kelela|new avatar": {
+"artista": "Kelela",
+"artistas_id": [
+"045494aa-e913-4e62-bf4e-dcc276e0075a"
+],
+"primera_fecha": "2026-07-10",
+"puntuacion": 1.0,
+"rg": "001c0c77-95ee-4b9a-8292-63f237ae383a",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "new avatar"
+},
 "rg:kelley smith|flowers": {
 "artista": "Kelley Smith",
 "artistas_id": [
@@ -53025,6 +53738,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "O My Beloved"
+},
+"rg:kira roessler|enigma": {
+"no_encontrado": "2026-11-22"
 },
 "rg:kirk franklin|i am what i am": {
 "artista": "Kirk Franklin",
@@ -54610,6 +55326,30 @@
 "rg:love in chains|good lovin": {
 "no_encontrado": "2026-11-22"
 },
+"rg:low cut connie|livin in the usa": {
+"artista": "Low Cut Connie",
+"artistas_id": [
+"27d9dfca-2b81-47c6-a06d-56c26229fcd7"
+],
+"enlaces": {
+"tidal": "https://tidal.com/album/434020768"
+},
+"fecha_release": "2025-05-27",
+"idioma": null,
+"pais": null,
+"pistas": 1,
+"portada": "https://coverartarchive.org/release-group/c581843c-2836-4dd5-b80a-c47580a875f8/front-250",
+"primera_fecha": "2025-05-27",
+"puntuacion": 1.0,
+"release": "f60046bb-8dcf-4d7f-9dba-b8d144655943",
+"rg": "c581843c-2836-4dd5-b80a-c47580a875f8",
+"sellos": [
+"Contender Records"
+],
+"tipo": "Single",
+"tipos_secundarios": [],
+"titulo": "Livin in the USA"
+},
 "rg:lowly|softy": {
 "artista": "Lowly",
 "artistas_id": [
@@ -55312,6 +56052,42 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Reckoning"
+},
+"rg:mary in the junkyard|role model hermit": {
+"artista": "mary in the junkyard",
+"artistas_id": [
+"64367341-4bc2-493c-8e5d-ce17841c8a7a"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/1880080253",
+"audiomack.com": "https://audiomack.com/mary-in-the-junkyard/album/role-model-hermit-3690394",
+"bandcamp": "https://maryinthejunkyard.bandcamp.com/album/role-model-hermit",
+"deezer": "https://www.deezer.com/album/927180181",
+"discogs": "https://www.discogs.com/release/37798158",
+"hdtracks.com": "https://www.hdtracks.com/#/album/69c610be84aa0e60bb003532",
+"maryinthejunkyard.tmstor.es": "https://maryinthejunkyard.tmstor.es/product/role-model-hermit-cd",
+"qobuz": "https://www.qobuz.com/us-en/album/role-model-hermit-mary-in-the-junkyard/kgbhiejrsswgz",
+"rateyourmusic.com": "https://rateyourmusic.com/release/album/mary-in-the-junkyard/role-model-hermit/",
+"roughtrade.com": "https://www.roughtrade.com/product/mary-in-the-junkyard/role-model-hermit?algolia_query_id=1b4dcb1e01244adc3b6fcc541c317a2a&algolia_object_id=56833944322379&algolia_index=shopify_prod_products&algolia_position=1#56833944322379",
+"spotify": "https://open.spotify.com/album/0r5nmjIvD8FmcgWsILF1Eh",
+"tidal": "https://tidal.com/album/502218696",
+"uk.7digital.com": "https://uk.7digital.com/artist/mary-in-the-junkyard/release/role-model-hermit-explicit-66998001"
+},
+"fecha_release": "2026-07-03",
+"idioma": "eng",
+"pais": null,
+"pistas": 11,
+"portada": "https://coverartarchive.org/release-group/bce3f3e6-d02a-4d50-b15a-b2ee8360a258/front-250",
+"primera_fecha": "2026-07-03",
+"puntuacion": 1.0,
+"release": "04383151-e1c7-4436-ad18-43a2aa7177de",
+"rg": "bce3f3e6-d02a-4d50-b15a-b2ee8360a258",
+"sellos": [
+"AMF Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Role Model Hermit"
 },
 "rg:maryann cotton|chester rose": {
 "artista": "Maryann Cotton",
@@ -63425,6 +64201,37 @@
 },
 "rg:steve hackett and steve rothery|roaring waves": {
 "no_encontrado": "2026-11-22"
+},
+"rg:steve lacy|oh yeah": {
+"artista": "Steve Lacy",
+"artistas_id": [
+"b29020d6-5dbf-4c99-b16f-c009f8a712ff"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/6773775032",
+"deezer": "https://www.deezer.com/album/1028123642",
+"discogs": "https://www.discogs.com/release/37840989",
+"hdtracks.com": "https://www.hdtracks.com/#/album/6a564e01b8c4fdcc2817ea32",
+"qobuz": "https://www.qobuz.com/us-en/album/oh-yeah-steve-lacy/ui9kqu3p9n94w",
+"spotify": "https://open.spotify.com/album/289GZwycrFReuNB706obBx",
+"tidal": "https://tidal.com/album/542734707"
+},
+"fecha_release": "2026-07-17",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/40a8bbb9-667a-4878-beb7-05b4fdffa92d/front-250",
+"primera_fecha": "2026-07-17",
+"puntuacion": 1.0,
+"release": "eb30b1a0-3a0a-47cb-b2b1-0856f0cb6aa8",
+"rg": "40a8bbb9-667a-4878-beb7-05b4fdffa92d",
+"sellos": [
+"L‐M Records",
+"RCA"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Oh yeah?"
 },
 "rg:steven estes|bon secour": {
 "no_encontrado": "2026-11-22"
