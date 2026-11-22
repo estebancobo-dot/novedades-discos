@@ -5,6 +5,7 @@
 ventana:
   meses_atras: 5          # discos publicados desde hace N meses...
   meses_adelante: 6       # ...y anunciados hasta dentro de N meses ("próximamente")
+  anios_completos: [2026] # años enteros que se recogen además de los últimos N meses
 
 recogida:
   # En la ejecución semanal (--incremental) solo se releen las páginas de los
