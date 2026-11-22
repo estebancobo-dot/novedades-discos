@@ -2370,6 +2370,18 @@
 "nombre": "Witchsorrow",
 "pais": "GB"
 },
+"art:0619efc1-691d-4924-a040-a6f77856886a": {
+"enlaces": {
+"bandcamp": "https://subverge.bandcamp.com/",
+"discogs": "https://www.discogs.com/artist/5096738",
+"facebook": "https://www.facebook.com/Subverge",
+"soundcloud": "https://soundcloud.com/subverge"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Subverge",
+"pais": "US"
+},
 "art:065c9478-c8c3-4d00-828c-02847e3bb149": {
 "enlaces": {
 "agweinberger.com": "http://www.agweinberger.com/en/biografie/index.html",
@@ -4340,6 +4352,19 @@
 "etiquetas": [],
 "generos": [],
 "nombre": "Lucy Dreams",
+"pais": null
+},
+"art:0a80bd9a-1e68-49bd-81b6-b5a5e4cae81f": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1714104728",
+"deezer": "https://www.deezer.com/artist/240060911",
+"qobuz": "https://open.qobuz.com/artist/20518976",
+"spotify": "https://open.spotify.com/artist/5X562G87PkdMdzWRLjKnHe",
+"tidal": "https://tidal.com/artist/43336173"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Une vraie gothique",
 "pais": null
 },
 "art:0a9f8491-5f30-4678-8b11-066f32e9cf11": {
@@ -6729,6 +6754,20 @@
 "nombre": "Lukas Graham",
 "pais": "DK"
 },
+"art:125caa80-accd-492a-b2e9-14b6e51ff567": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/111544462",
+"deezer": "https://www.deezer.com/artist/4129890",
+"discogs": "https://www.discogs.com/artist/1204",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/rogue_unit",
+"spotify": "https://open.spotify.com/artist/41zlVTrHJvmRenFHJoHW0P",
+"tidal": "https://tidal.com/artist/4429956"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Rogue Unit",
+"pais": "GB"
+},
 "art:125dbfb8-2938-44c5-a507-6a8d457413ae": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0004724810",
@@ -7551,6 +7590,27 @@
 ],
 "nombre": "EELS",
 "pais": "US"
+},
+"art:144dc7a2-0d0e-41a2-9edd-6d89989af069": {
+"enlaces": {
+"apoptose.net": "http://www.apoptose.net/",
+"apple": "https://music.apple.com/gb/artist/281189069",
+"bandcamp": "https://apoptose-official.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/1247241",
+"discogs": "https://www.discogs.com/artist/39338",
+"facebook": "https://www.facebook.com/apoptose.nordland",
+"instagram": "https://www.instagram.com/a.pop.tose/",
+"myspace.com": "https://myspace.com/apoptose",
+"soundcloud": "https://soundcloud.com/apoptose-official",
+"spotify": "https://open.spotify.com/artist/4dgmjsZWOaG7Q5T1088Ro4",
+"tidal": "https://tidal.com/artist/3941973",
+"wikidata": "https://www.wikidata.org/wiki/Q2858515",
+"youtube": "https://www.youtube.com/channel/UC5obJmymFCeg13Wt5V5TT6Q"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Apoptose",
+"pais": "DE"
 },
 "art:146dbf7a-fffe-4a69-bcad-03b84c88c6fa": {
 "enlaces": {
@@ -10345,6 +10405,30 @@
 "nombre": "Arborist",
 "pais": "IE"
 },
+"art:1a2983b8-1d9a-42ea-b701-15792ca56edd": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/128501210",
+"culturekultur.com": "https://www.culturekultur.com/",
+"deezer": "https://www.deezer.com/artist/9345",
+"discogs": "https://www.discogs.com/artist/89780",
+"facebook": "https://www.facebook.com/culturekultur",
+"spotify": "https://open.spotify.com/artist/1wTjVvGxIxcZrHCansPELR",
+"tidal": "https://tidal.com/artist/4127338",
+"wikidata": "https://www.wikidata.org/wiki/Q1143559"
+},
+"etiquetas": [
+"electronic",
+"industrial",
+"synth-pop"
+],
+"generos": [
+"electronic",
+"industrial",
+"synth-pop"
+],
+"nombre": "Culture Kultür",
+"pais": "ES"
+},
 "art:1a36e03f-3128-4b1d-a151-369651054605": {
 "enlaces": {
 "discogs": "https://www.discogs.com/artist/5737852",
@@ -11620,6 +11704,34 @@
 "generos": [],
 "nombre": "Steelover",
 "pais": "BE"
+},
+"art:1e713689-1e8d-445c-8ecb-7756812cb9ec": {
+"enlaces": {
+"bandcamp": "https://laho.bandcamp.com/",
+"beam.to": "http://beam.to/laho",
+"discogs": "https://www.discogs.com/artist/1289063",
+"facebook": "https://www.facebook.com/lahomusic",
+"last.fm": "https://www.last.fm/music/LAHO",
+"myspace.com": "https://myspace.com/lahomusic",
+"spotify": "https://open.spotify.com/artist/5FbbrvanY7u6CRFc1dOM0u",
+"tidal": "https://tidal.com/artist/10957871"
+},
+"etiquetas": [
+"electronic",
+"industrial",
+"industrial metal",
+"industrial rock",
+"synthwave"
+],
+"generos": [
+"electronic",
+"industrial",
+"industrial metal",
+"industrial rock",
+"synthwave"
+],
+"nombre": "LAHO",
+"pais": "FI"
 },
 "art:1e816beb-dccc-445b-891f-f61d7d0e70d3": {
 "enlaces": {
@@ -17012,6 +17124,38 @@
 "nombre": "Suzanne Ciani",
 "pais": "US"
 },
+"art:2d25118d-d49a-4b21-8431-00f6771d768f": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/78547187",
+"deezer": "https://www.deezer.com/artist/354627",
+"discogs": "https://www.discogs.com/artist/928523",
+"facebook": "https://www.facebook.com/nachtmahr.band",
+"ilike.com": "http://www.ilike.com/artist/Nachtmahr",
+"myspace.com": "https://myspace.com/nachtmahrprojekt",
+"nachtmahr.at": "http://www.nachtmahr.at/",
+"qobuz": "https://open.qobuz.com/artist/809854",
+"reverbnation.com": "https://www.reverbnation.com/nachtmahr",
+"spotify": "https://open.spotify.com/artist/1wGcs6i2IJbgXxE3bDIm9k",
+"tidal": "https://tidal.com/artist/3566967",
+"twitter.com": "https://twitter.com/nachtmahr_funk",
+"vampirefreaks.com": "http://vampirefreaks.com/nachtmahrprojekt",
+"wikidata": "https://www.wikidata.org/wiki/Q688952"
+},
+"etiquetas": [
+"ebm",
+"electronic",
+"aggrotech",
+"industrial"
+],
+"generos": [
+"ebm",
+"electronic",
+"aggrotech",
+"industrial"
+],
+"nombre": "Nachtmahr",
+"pais": "AT"
+},
 "art:2d2e5519-6f03-48ce-9006-6b182deab678": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0003531401",
@@ -19865,6 +20009,20 @@
 "nombre": "Crying Laughing",
 "pais": "US"
 },
+"art:33a4a8b8-38db-4bda-8b54-11c062d51e3a": {
+"enlaces": {
+"bandcamp": "https://vexagon.bandcamp.com/",
+"discogs": "https://www.discogs.com/artist/8997109"
+},
+"etiquetas": [
+"experimental"
+],
+"generos": [
+"experimental"
+],
+"nombre": "Vexagon",
+"pais": "US"
+},
 "art:33bcc02a-12d5-47d1-83f2-665375a32c0b": {
 "enlaces": {
 "apple": "https://music.apple.com/gb/artist/1534429176",
@@ -22220,6 +22378,33 @@
 "generos": [],
 "nombre": "The Sky Chiefs",
 "pais": "US"
+},
+"art:394a1dac-2fe1-4e24-83ee-76b14664706d": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/894126971",
+"bandcamp": "https://sjellos.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/6030116",
+"discogs": "https://www.discogs.com/artist/3039466",
+"facebook": "https://www.facebook.com/Sjellos",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/sjellos",
+"sjellos.tumblr.com": "http://sjellos.tumblr.com/",
+"soundcloud": "https://soundcloud.com/Sjellos",
+"spotify": "https://open.spotify.com/artist/204EQ77ZmGABN9gjYWsd2J",
+"tidal": "https://tidal.com/artist/5795695",
+"twitter.com": "https://twitter.com/Sjellos",
+"wikidata": "https://www.wikidata.org/wiki/Q57655359"
+},
+"etiquetas": [
+"_edit",
+"dark ambient",
+"vgm",
+"video game music"
+],
+"generos": [
+"dark ambient"
+],
+"nombre": "Sjellos",
+"pais": "DE"
 },
 "art:395050f8-a66e-49eb-a915-0fd68253eb6f": {
 "enlaces": {
@@ -31958,6 +32143,19 @@
 "nombre": "Clara Mann",
 "pais": "GB"
 },
+"art:5175a882-92d0-4d64-ab57-c44873296309": {
+"enlaces": {
+"discogs": "https://www.discogs.com/artist/9482257"
+},
+"etiquetas": [
+"electronic"
+],
+"generos": [
+"electronic"
+],
+"nombre": "Fractal",
+"pais": "PL"
+},
 "art:5182c1d9-c7d2-4dad-afa0-ccfeada921a8": {
 "enlaces": {
 "45cat.com": "https://www.45cat.com/artist/black-sabbath",
@@ -32649,6 +32847,37 @@
 "nombre": "Queen of Jeans",
 "pais": "US"
 },
+"art:5339ec63-b5b6-48fd-97df-a22a19f6f051": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000291014",
+"bandcamp": "https://samrosenthal.bandcamp.com/",
+"bandsintown.com": "https://www.bandsintown.com/a/558304",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:Sam_Rosenthal,_2009.jpg",
+"d-nb.info": "https://d-nb.info/gnd/13937969X",
+"deezer": "https://www.deezer.com/artist/1421004",
+"discogs": "https://www.discogs.com/artist/145834",
+"facebook": "https://www.facebook.com/SamProjekt",
+"last.fm": "https://www.last.fm/music/Sam+Rosenthal",
+"qobuz": "https://open.qobuz.com/artist/1916731",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/sam_rosenthal",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/38870",
+"snaccooperative.org": "http://snaccooperative.org/ark:/99166/w6138ht5",
+"soundscapemagazine.com": "https://www.soundscapemagazine.com/an-interview-with-sam-rosenthal-projekt-records-40th-anniversary/",
+"spotify": "https://open.spotify.com/artist/0D76GidXzJyteIsEvApOXv",
+"tidal": "https://tidal.com/artist/4571662",
+"twitter.com": "https://twitter.com/Blacktapesam",
+"viaf.org": "http://viaf.org/viaf/101126619",
+"wikidata": "https://www.wikidata.org/wiki/Q7408091"
+},
+"etiquetas": [
+"ambient"
+],
+"generos": [
+"ambient"
+],
+"nombre": "Sam Rosenthal",
+"pais": "US"
+},
 "art:534c8b64-c47d-49ee-b276-0ee8690b1a4e": {
 "enlaces": {},
 "etiquetas": [],
@@ -32824,6 +33053,18 @@
 ],
 "nombre": "Hermano",
 "pais": "US"
+},
+"art:540e415b-7d14-4538-b389-6afd44c495be": {
+"enlaces": {
+"discogs": "https://www.discogs.com/artist/91400",
+"oltreilsuono.com": "http://www.oltreilsuono.com/nimh.html",
+"progarchives.com": "https://www.progarchives.com/artist.asp?id=2928",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/nimh"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Nimh",
+"pais": "IT"
 },
 "art:54181e52-cf65-4e1c-a948-d2880173328d": {
 "enlaces": {
@@ -34332,6 +34573,32 @@
 "nombre": "KÁRYYN",
 "pais": "US"
 },
+"art:57914d22-875c-481f-b2ec-c9ee9f72ae21": {
+"enlaces": {
+"antyscena.pl": "http://www.antyscena.pl/artists/wieloryb",
+"apple": "https://music.apple.com/gb/artist/468154756",
+"bandcamp": "https://wieloryb.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/1432761",
+"discogs": "https://www.discogs.com/artist/165008",
+"facebook": "https://www.facebook.com/NOISE.WIELORYB",
+"instagram": "https://www.instagram.com/wieloryb_official/",
+"myspace.com": "https://myspace.com/wieloryb2009",
+"soundcloud": "https://soundcloud.com/wieloryb-1",
+"spotify": "https://open.spotify.com/artist/5JL0BYBqP9HpdI7Qi1Wuki",
+"tidal": "https://tidal.com/artist/4546444",
+"youtube": "https://www.youtube.com/@wieloryb101"
+},
+"etiquetas": [
+"ebm",
+"post-industrial"
+],
+"generos": [
+"ebm",
+"post-industrial"
+],
+"nombre": "Wieloryb",
+"pais": "PL"
+},
 "art:57b3c7cc-a5ba-484a-a245-6f61b3a003bd": {
 "enlaces": {
 "bandcamp": "https://falsefigure.bandcamp.com/",
@@ -35189,6 +35456,47 @@
 ],
 "nombre": "Winterfylleth",
 "pais": "GB"
+},
+"art:5a0d2bf7-62a7-44b0-9812-44eb7bb87d4f": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1773733237",
+"bandcamp": "https://starsignger.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/189751",
+"discogs": "https://www.discogs.com/artist/641486",
+"spotify": "https://open.spotify.com/artist/1EWWeubgGVMmg2qluFOfg7",
+"tidal": "https://tidal.com/artist/3532693"
+},
+"etiquetas": [
+"synthpop"
+],
+"generos": [],
+"nombre": "Starsign",
+"pais": "DE"
+},
+"art:5a189716-da5c-4fb6-b208-cb1a8a78fb08": {
+"enlaces": {
+"bandcamp": "https://alphaxone.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/6670064",
+"discogs": "https://www.discogs.com/artist/1713729",
+"facebook": "https://www.facebook.com/pages/Alphaxone/420065731489613",
+"last.fm": "https://www.last.fm/music/Alphaxone",
+"myspace.com": "https://myspace.com/alphaxone.page",
+"qobuz": "https://open.qobuz.com/artist/3374232",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/alphaxone",
+"reverbnation.com": "https://www.reverbnation.com/alphaxone",
+"songkick.com": "https://www.songkick.com/artists/6463889",
+"soundcloud": "https://soundcloud.com/alphaxone",
+"spotify": "https://open.spotify.com/artist/0xQT2z6WHQccGmAwXLRmKY",
+"wikidata": "https://www.wikidata.org/wiki/Q57461761"
+},
+"etiquetas": [
+"dark ambient"
+],
+"generos": [
+"dark ambient"
+],
+"nombre": "Alphaxone",
+"pais": "IR"
 },
 "art:5a28849b-7e11-4618-a921-ff37eb4a0001": {
 "enlaces": {
@@ -39213,6 +39521,51 @@
 "nombre": "Protest the Hero",
 "pais": "CA"
 },
+"art:631e3bc5-428a-432b-87f7-5d357a007fc0": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0002988911",
+"apple": "https://itunes.apple.com/us/artist/id515935989",
+"bandcamp": "https://pussyriot.bandcamp.com/",
+"beatport.com": "https://www.beatport.com/artist/pussy-riot/890402",
+"d-nb.info": "https://d-nb.info/gnd/1028593074",
+"deezer": "https://www.deezer.com/artist/4398019",
+"discogs": "https://www.discogs.com/artist/2823210",
+"facebook": "https://www.facebook.com/wearepussyriot",
+"genius.com": "https://genius.com/artists/Pussy-riot",
+"imdb.com": "https://www.imdb.com/name/nm5706829/",
+"instagram": "https://www.instagram.com/pussyriot/",
+"musixmatch.com": "https://www.musixmatch.com/artist/Pussy-Riot",
+"muzikum.eu": "http://muzikum.eu/en/122-12074/pussy-riot/lyrics.html",
+"pussyriot.love": "https://pussyriot.love/",
+"qobuz": "https://www.qobuz.com/us-en/interpreter/pussy-riot/1019288",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/pussy_riot_f1",
+"riotdays.com": "https://riotdays.com/",
+"soundcloud": "https://soundcloud.com/pussy-riot",
+"spotify": "https://open.spotify.com/artist/2hThsqaVEAWhWPBXnaOfB9",
+"tidal": "https://tidal.com/artist/6099057",
+"twitter.com": "https://twitter.com/pussyrrriot",
+"viaf.org": "http://viaf.org/viaf/281721396",
+"wikidata": "https://www.wikidata.org/wiki/Q7551",
+"youtube": "https://www.youtube.com/channel/UCQYcCfKYfYMcuCsem8z5CyQ"
+},
+"etiquetas": [
+"punk",
+"riot grrrl",
+"female vocals",
+"russian",
+"feminist",
+"hyperpop",
+"queercore"
+],
+"generos": [
+"punk",
+"riot grrrl",
+"hyperpop",
+"queercore"
+],
+"nombre": "Pussy Riot",
+"pais": "RU"
+},
 "art:632258cb-4ab5-4f2d-be29-bcc641a275eb": {
 "enlaces": {
 "abc.net.au": "https://www.abc.net.au/triplejunearthed/artist/genesis-owusu",
@@ -39859,6 +40212,27 @@
 ],
 "nombre": "Great Lake Swimmers",
 "pais": "CA"
+},
+"art:64f19580-b3c6-4392-b6e9-16a2980b6aa1": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1518013130",
+"deezer": "https://www.deezer.com/artist/97844932",
+"facebook": "https://www.facebook.com/williambleakband?__n=K",
+"instagram": "https://www.instagram.com/william_bleak/",
+"qobuz": "https://open.qobuz.com/artist/7617168",
+"spotify": "https://open.spotify.com/artist/6BClTpfV8cDCoUeRj9IHSF",
+"tidal": "https://tidal.com/artist/19971805"
+},
+"etiquetas": [
+"coldwave",
+"post-punk"
+],
+"generos": [
+"coldwave",
+"post-punk"
+],
+"nombre": "William Bleak",
+"pais": "DE"
 },
 "art:64f8c7a9-1074-4ab7-bb2c-8397884cd38a": {
 "enlaces": {
@@ -40527,6 +40901,31 @@
 ],
 "nombre": "Laura Cortese",
 "pais": "US"
+},
+"art:66798adc-584b-4a37-8c50-92b403c3368d": {
+"enlaces": {
+"bandcamp": "https://curtain0.bandcamp.com/",
+"bandsintown.com": "https://www.bandsintown.com/a/722240",
+"deezer": "https://www.deezer.com/artist/152761382",
+"facebook": "https://www.facebook.com/CURTAIN.the.band",
+"instagram": "https://www.instagram.com/curtain_band/",
+"myspace.com": "https://myspace.com/curtainfr",
+"songkick.com": "https://www.songkick.com/artists/377327",
+"spotify": "https://open.spotify.com/artist/7nQ4yWa2Cp0fiD0rETGlTu"
+},
+"etiquetas": [
+"coldwave",
+"goth",
+"gothic",
+"post-punk"
+],
+"generos": [
+"coldwave",
+"gothic",
+"post-punk"
+],
+"nombre": "Curtain",
+"pais": "FR"
 },
 "art:668fd73c-bf54-4310-a139-305517f05311": {
 "enlaces": {
@@ -47365,6 +47764,23 @@
 "nombre": "Towa Bird",
 "pais": "US"
 },
+"art:77655d87-3211-462b-9622-dee287b904b5": {
+"enlaces": {
+"bandcamp": "https://semioticsdepartmentofheteronyms.bandcamp.com/",
+"beatport.com": "https://www.beatport.com/artist/sdh-semiotics-department-of-heteronyms/1053359",
+"deezer": "https://www.deezer.com/artist/148453152",
+"discogs": "https://www.discogs.com/artist/5310067",
+"facebook": "https://www.facebook.com/semioticsdepartmentofheteronyms",
+"instagram": "https://www.instagram.com/sdh_______/",
+"semioticsdepartment.wordpress.com": "https://semioticsdepartment.wordpress.com/",
+"twitter.com": "https://twitter.com/sdh_______",
+"wikidata": "https://www.wikidata.org/wiki/Q134548922"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "SDH",
+"pais": "ES"
+},
 "art:776c0a47-11a6-42f1-8313-185f2d81ea03": {
 "enlaces": {
 "apple": "https://music.apple.com/gb/artist/1472633673",
@@ -51225,6 +51641,15 @@
 "nombre": "Sheryl Crow",
 "pais": "US"
 },
+"art:80f9a2bf-f2a8-464a-9906-d4c497de3619": {
+"enlaces": {
+"discogs": "https://www.discogs.com/artist/473313"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Rodrigo Passannanti",
+"pais": null
+},
 "art:80fe34d0-6b4f-4ccd-81c3-281ab37f0451": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0000040879",
@@ -53478,6 +53903,18 @@
 "generos": [],
 "nombre": "Grey DeLisle",
 "pais": "US"
+},
+"art:8679f883-000f-4a21-b0bd-72377c7e5a6a": {
+"enlaces": {
+"apple": "https://music.apple.com/us/artist/1834544615",
+"deezer": "https://www.deezer.com/artist/4570993",
+"discogs": "https://www.discogs.com/artist/18325698",
+"spotify": "https://open.spotify.com/artist/0IVc3apSbnNkQ2jvmk7zC7"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "VORN",
+"pais": "XE"
 },
 "art:8682866a-4f7a-43f5-83b2-06eabd0f2d4c": {
 "enlaces": {
@@ -56874,6 +57311,30 @@
 ],
 "nombre": "Darren Cross",
 "pais": "AU"
+},
+"art:8e1cd8e9-b5e8-4e0e-8449-3da8e6c4625d": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1877729888",
+"bandcamp": "https://blokkontroll.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/373824121",
+"qobuz": "https://open.qobuz.com/artist/31355592",
+"soundcloud": "https://soundcloud.com/blokkontroll",
+"spotify": "https://open.spotify.com/artist/6aksEPODinbQlGvGHXFxqj",
+"tidal": "https://tidal.com/artist/75032925"
+},
+"etiquetas": [
+"coldwave",
+"darkwave",
+"electronic",
+"industrial"
+],
+"generos": [
+"coldwave",
+"electronic",
+"industrial"
+],
+"nombre": "Blokkontroll",
+"pais": "UA"
 },
 "art:8e3426c4-7f1f-43f5-9234-96a32d3b60a1": {
 "enlaces": {
@@ -64334,6 +64795,28 @@
 "nombre": "Dirk Powell",
 "pais": "US"
 },
+"art:a1581ae5-6347-452a-bc4c-97979f50ddfc": {
+"enlaces": {
+"amazon": "https://music.amazon.it/artists/B08J75KLXZ",
+"apple": "https://music.apple.com/it/artist/1574551416",
+"bandcamp": "https://leslongsadieux.bandcamp.com/",
+"discogs": "https://www.discogs.com/artist/9374647",
+"facebook": "https://www.facebook.com/LesLongsAdieux",
+"last.fm": "https://www.last.fm/music/Les+Longs+Adieux",
+"spotify": "https://open.spotify.com/artist/5Fxxnqm60QQvVTmTBPp7ga",
+"youtube": "https://www.youtube.com/@leslongsadieux"
+},
+"etiquetas": [
+"dark wave",
+"new wave"
+],
+"generos": [
+"dark wave",
+"new wave"
+],
+"nombre": "Les Longs Adieux",
+"pais": "IT"
+},
 "art:a1730469-0bdc-46a0-b8df-8030d0f73ff7": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0004349656",
@@ -66787,6 +67270,15 @@
 ],
 "nombre": "Willow Avalon",
 "pais": "US"
+},
+"art:a7c9cb86-5079-4a30-86ea-141d3e03eed1": {
+"enlaces": {
+"discogs": "https://www.discogs.com/artist/7447961"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Prometheus Flame",
+"pais": null
 },
 "art:a7fcae92-a9d9-4769-bb9f-5fd37b49c9d3": {
 "enlaces": {
@@ -76674,6 +77166,41 @@
 "nombre": "Eddie 9V",
 "pais": "US"
 },
+"art:bf629fc0-2d07-4fa3-90dd-1e77629be935": {
+"enlaces": {
+"apple": "https://itunes.apple.com/us/artist/id1414679340",
+"bandcamp": "https://twintribes.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/49043261",
+"discogs": "https://www.discogs.com/artist/6341345",
+"facebook": "https://www.facebook.com/TwinTribes",
+"instagram": "https://www.instagram.com/twin_tribes/",
+"last.fm": "https://www.last.fm/music/Twin+Tribes",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/twin-tribes",
+"songkick.com": "https://www.songkick.com/artists/9428494",
+"spotify": "https://open.spotify.com/artist/7wxXs62y8Gjf6c6pxrnWIl",
+"tidal": "https://tidal.com/artist/10112049",
+"twin-tribes.com": "https://www.twin-tribes.com/",
+"twitter.com": "https://twitter.com/twin_tribes",
+"wikidata": "https://www.wikidata.org/wiki/Q123907194",
+"youtube": "https://www.youtube.com/channel/UC0-_sfuRknjcGNsEnMfbIWA"
+},
+"etiquetas": [
+"dark wave",
+"gothic rock",
+"coldwave",
+"new wave",
+"post-punk"
+],
+"generos": [
+"dark wave",
+"gothic rock",
+"coldwave",
+"new wave",
+"post-punk"
+],
+"nombre": "Twin Tribes",
+"pais": "US"
+},
 "art:bf793edc-b7ba-49b6-9af6-b909b4fcf278": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0001007883",
@@ -77697,6 +78224,17 @@
 "generos": [],
 "nombre": "Shelby Stone",
 "pais": null
+},
+"art:c1c211fb-fdc5-46ce-b240-43e670e136f5": {
+"enlaces": {
+"discogs": "https://www.discogs.com/artist/1009500",
+"facebook": "https://www.facebook.com/Poeme-Electronique-224166757626386",
+"poeme-electronique.com": "http://www.poeme-electronique.com/"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Poeme Electronique",
+"pais": "GB"
 },
 "art:c1ccc784-9f18-4369-96b1-38106419b5ad": {
 "enlaces": {
@@ -80411,6 +80949,30 @@
 "nombre": "Prince Daddy & The Hyena",
 "pais": "US"
 },
+"art:c840e99f-bb29-487b-8d58-d52ad9a837e0": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/210740419",
+"deezer": "https://www.deezer.com/artist/312654",
+"dekad.online.fr": "http://www.dekad.online.fr/",
+"discogs": "https://www.discogs.com/artist/172268",
+"myspace.com": "https://myspace.com/dekadmusic",
+"qobuz": "https://open.qobuz.com/artist/545755",
+"spotify": "https://open.spotify.com/artist/29IK3xMFyz4R6EgE9uRyAm",
+"tidal": "https://tidal.com/artist/3524167"
+},
+"etiquetas": [
+"cold wave",
+"darkwave",
+"french",
+"industrial",
+"synthpop"
+],
+"generos": [
+"industrial"
+],
+"nombre": "Dekad",
+"pais": "FR"
+},
 "art:c848fdff-2e34-4a92-bead-b8b8756dc502": {
 "enlaces": {
 "discogs": "https://www.discogs.com/artist/10761778",
@@ -81171,6 +81733,15 @@
 "generos": [],
 "nombre": "Storey Littleton",
 "pais": null
+},
+"art:cad1a353-30d2-4f2a-bf04-0113b88cfae2": {
+"enlaces": {
+"bandcamp": "https://glassedenmusic.bandcamp.com/"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Glass Eden",
+"pais": "DE"
 },
 "art:cae0fc89-a6ad-4b14-8d71-4ce5395a74a4": {
 "enlaces": {
@@ -84266,6 +84837,24 @@
 ],
 "nombre": "Nasty",
 "pais": "BE"
+},
+"art:d24dfa2b-4a01-43c8-a3fb-a7b1334bf1f7": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1498042926",
+"deezer": "https://www.deezer.com/artist/85283382",
+"facebook": "https://www.facebook.com/diskonnektElectronicsDrumandbass",
+"qobuz": "https://open.qobuz.com/artist/9039607",
+"spotify": "https://open.spotify.com/artist/7CdmNVcftfisS7rTXDtict",
+"tidal": "https://tidal.com/artist/18263105"
+},
+"etiquetas": [
+"electronic"
+],
+"generos": [
+"electronic"
+],
+"nombre": "Diskonnekt",
+"pais": "IT"
 },
 "art:d25f6294-686a-4569-b1b9-fe64bfef2519": {
 "enlaces": {
@@ -88136,6 +88725,26 @@
 "nombre": "The Steel Wheels",
 "pais": "US"
 },
+"art:ded493f8-d1d9-4e39-b9b2-a89a8419fe0d": {
+"enlaces": {
+"deezer": "https://www.deezer.com/artist/62307",
+"discogs": "https://www.discogs.com/artist/96194",
+"qobuz": "https://open.qobuz.com/artist/826747",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/david_thrussell",
+"spotify": "https://open.spotify.com/artist/645wrvMPgzb3ihXWQaiiZc",
+"tidal": "https://tidal.com/artist/5716531",
+"wikidata": "https://www.wikidata.org/wiki/Q17013947",
+"worldwentdown.com": "http://www.worldwentdown.com/imcc/"
+},
+"etiquetas": [
+"electronic"
+],
+"generos": [
+"electronic"
+],
+"nombre": "David Thrussell",
+"pais": "AU"
+},
 "art:defc7b30-587a-4d8d-b405-f8ae5bc70789": {
 "enlaces": {
 "apple": "https://music.apple.com/de/artist/1670327654",
@@ -89939,6 +90548,23 @@
 ],
 "nombre": "The Paranoid Style",
 "pais": "US"
+},
+"art:e39c011d-64bb-4e4f-92b5-a6802ca3828b": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1716444260",
+"deezer": "https://www.deezer.com/artist/243185641",
+"discogs": "https://www.discogs.com/artist/15139621",
+"facebook": "https://www.facebook.com/Darkvolt.music",
+"instagram": "https://www.instagram.com/darkvolt.music/",
+"qobuz": "https://open.qobuz.com/artist/20586178",
+"spotify": "https://open.spotify.com/artist/5pZLi6Fe8pt3OX0kZ0Ga6D",
+"tidal": "https://tidal.com/artist/43795617",
+"youtube": "https://www.youtube.com/channel/UCfbZPYqEymeE3OXQ6g9w9Pg"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Darkvolt",
+"pais": "BE"
 },
 "art:e3bda984-f349-4924-b4b8-f72478bbb3f3": {
 "enlaces": {
@@ -93364,6 +93990,13 @@
 "nombre": "Arun Sood",
 "pais": "GB"
 },
+"art:ec903145-a1e8-4e71-8704-143056f6725a": {
+"enlaces": {},
+"etiquetas": [],
+"generos": [],
+"nombre": "Midnight Poetry",
+"pais": null
+},
 "art:ecaa324b-792a-4c9a-8b5e-1d4cf76bc45e": {
 "enlaces": {
 "bandcamp": "https://venincarmin.bandcamp.com/",
@@ -93793,6 +94426,43 @@
 "nombre": "PISS",
 "pais": "CA"
 },
+"art:edede47f-2ecb-4be3-a7d1-f579c6098ae4": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0003691711",
+"apple": "https://music.apple.com/de/artist/1502532330",
+"bandcamp": "https://hackedepicciotto.bandcamp.com/",
+"bandsintown.com": "https://www.bandsintown.com/a/15523982",
+"d-nb.info": "https://d-nb.info/gnd/1167561201",
+"de.7digital.com": "https://de.7digital.com/artist/hackedepicciotto",
+"deezer": "https://www.deezer.com/artist/88821182",
+"discogs": "https://www.discogs.com/artist/6201052",
+"facebook": "https://www.facebook.com/hackepicciotto",
+"genius.com": "https://genius.com/artists/Hackedepicciotto",
+"hackedepicciotto.de": "https://www.hackedepicciotto.de/",
+"id.loc.gov": "http://id.loc.gov/authorities/names/n2018033032",
+"id.oclc.org": "https://id.oclc.org/worldcat/entity/E39QH7JmptpM9FYb8K3yY7VfFg",
+"instagram": "https://www.instagram.com/hackedepicciotto/",
+"melon.com": "https://www.melon.com/artist/detail.htm?artistId=2957364",
+"mora.jp": "https://mora.jp/artist/1432528/",
+"music.bugs.co.kr": "https://music.bugs.co.kr/artist/20140884",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/525567/",
+"qobuz": "https://www.qobuz.com/de-de/interpreter/hackedepicciotto/6919308",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/hackedepicciotto",
+"setlist.fm": "https://www.setlist.fm/setlists/hackedepicciotto-1bca9198.html",
+"songkick.com": "https://www.songkick.com/artists/9322429",
+"soundcloud": "https://soundcloud.com/hackedepicciotto",
+"spotify": "https://open.spotify.com/artist/1cPVrDY88XGHjD55pKOQ3s",
+"tidal": "https://tidal.com/artist/18748068",
+"twitter.com": "https://twitter.com/hackedpicciotto",
+"viaf.org": "http://viaf.org/viaf/1611153775043261550002",
+"wikidata": "https://www.wikidata.org/wiki/Q126392460",
+"youtube": "https://www.youtube.com/channel/UCh-x7J8Dk1U3seoA1qKGd7A"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "hackedepicciotto",
+"pais": "DE"
+},
 "art:edfe284c-3d75-45aa-9eca-25e6cef83637": {
 "enlaces": {
 "apple": "https://music.apple.com/gb/artist/1252865921",
@@ -93887,6 +94557,44 @@
 "death metal"
 ],
 "nombre": "Reeking Aura",
+"pais": "US"
+},
+"art:ee1ef4e6-3a73-4d50-ac3e-45b11cf31d68": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1460217439",
+"bandcamp": "https://thejoythieves.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/63868682",
+"discogs": "https://www.discogs.com/artist/7255351",
+"facebook": "https://www.facebook.com/TheJoyThieves",
+"instagram": "https://www.instagram.com/thejoythieves/",
+"qobuz": "https://open.qobuz.com/artist/4405354",
+"reverbnation.com": "https://www.reverbnation.com/thejoythieves",
+"soundcloud": "https://soundcloud.com/thejoythieves",
+"spotify": "https://open.spotify.com/artist/7tbT5ynPGW8O2LwUtd68Vt",
+"thejoythieves.com": "https://www.thejoythieves.com/",
+"tidal": "https://tidal.com/artist/15557645",
+"twitter.com": "https://twitter.com/thejoythieves",
+"wikidata": "https://www.wikidata.org/wiki/Q85852072"
+},
+"etiquetas": [
+"alternative rock",
+"hard rock",
+"industrial",
+"industrial rock",
+"post-industrial",
+"post-punk",
+"rock"
+],
+"generos": [
+"alternative rock",
+"hard rock",
+"industrial",
+"industrial rock",
+"post-industrial",
+"post-punk",
+"rock"
+],
+"nombre": "The Joy Thieves",
 "pais": "US"
 },
 "art:ee251aa3-f2ed-4568-b1b0-e4a2edad3f81": {
@@ -95080,6 +95788,13 @@
 "generos": [],
 "nombre": "The Jet Black Berries",
 "pais": "US"
+},
+"art:f13ff09e-808b-4920-ad33-74d72d2489ad": {
+"enlaces": {},
+"etiquetas": [],
+"generos": [],
+"nombre": "Cold Cause",
+"pais": "FR"
 },
 "art:f16b6af9-86fb-4f9a-bd7f-a05b8eb25155": {
 "enlaces": {
@@ -97122,6 +97837,26 @@
 ],
 "nombre": "The Eternal",
 "pais": "AU"
+},
+"art:f5ec26eb-cb3d-43ca-a8bd-2ad86ed5bb9d": {
+"enlaces": {
+"bandcamp": "https://thaneco.bandcamp.com/",
+"discogs": "https://www.discogs.com/artist/2131241"
+},
+"etiquetas": [
+"ambient",
+"berlin school",
+"composer",
+"electronica",
+"progressive instrumental"
+],
+"generos": [
+"ambient",
+"berlin school",
+"electronica"
+],
+"nombre": "Thaneco",
+"pais": "GR"
 },
 "art:f60ea80d-7075-44a7-a4ad-cd8f1e2743d1": {
 "enlaces": {
@@ -99808,6 +100543,23 @@
 "nombre": "David Byron",
 "pais": "GB"
 },
+"art:fbf33598-7fd2-4466-beea-f8decc646454": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1720281984",
+"bandcamp": "https://tazeistherule.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/250560772",
+"facebook": "https://www.facebook.com/tazeistherule",
+"instagram": "https://www.instagram.com/TAZEISTHERULE/",
+"qobuz": "https://open.qobuz.com/artist/2163251",
+"spotify": "https://open.spotify.com/artist/244kiarXi1icm28tkqniso",
+"tidal": "https://tidal.com/artist/35891723",
+"youtube": "https://www.youtube.com/@tazeistherule"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Tazer",
+"pais": "NO"
+},
 "art:fc4988dd-0d88-4c34-beb2-05132d268a89": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0002079754",
@@ -102083,6 +102835,9 @@
 "rg:ad ozium|body without organs": {
 "no_encontrado": "2026-11-22"
 },
+"rg:ad ozium|in the style of dead sparrows": {
+"no_encontrado": "2026-11-22"
+},
 "rg:ada lea|end is a wave": {
 "artista": "Ada Lea",
 "artistas_id": [
@@ -103856,6 +104611,18 @@
 "tipos_secundarios": [],
 "titulo": "EUPHORIA"
 },
+"rg:alphaxone|subsynthetic pulseforms": {
+"artista": "Alphaxone",
+"artistas_id": [
+"5a189716-da5c-4fb6-b208-cb1a8a78fb08"
+],
+"primera_fecha": "2026-04-21",
+"puntuacion": 1.0,
+"rg": "d092fbfd-6793-4444-a1de-e9a9e50798ce",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Subsynthetic Pulseforms"
+},
 "rg:alt blk era|our world": {
 "artista": "ALT BLK ERA",
 "artistas_id": [
@@ -105530,6 +106297,31 @@
 },
 "rg:aoki hina|letters": {
 "no_encontrado": "2026-11-22"
+},
+"rg:apoptose|die zeit und die dunkelheit": {
+"artista": "Apoptose",
+"artistas_id": [
+"144dc7a2-0d0e-41a2-9edd-6d89989af069"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/1826952700",
+"deezer": "https://www.deezer.com/album/790940591",
+"spotify": "https://open.spotify.com/album/0kiSQGTaAe01Y0ejEJUXz8",
+"tidal": "https://tidal.com/album/449031287"
+},
+"fecha_release": "2025-09-05",
+"idioma": "deu",
+"pais": "XW",
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/63a20810-f6de-4de4-ad66-534c7a837b56/front-250",
+"primera_fecha": "2025-09-05",
+"puntuacion": 1.0,
+"release": "24f28242-421b-49c7-a7af-8e6a779d0f95",
+"rg": "63a20810-f6de-4de4-ad66-534c7a837b56",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Die Zeit und die Dunkelheit"
 },
 "rg:apoptygma berzerk|exit popularity contest": {
 "artista": "Apoptygma Berzerk",
@@ -110988,6 +111780,34 @@
 "tipos_secundarios": [],
 "titulo": "Anatomy of a Brief Romance"
 },
+"rg:blokkontroll|odin na odin": {
+"artista": "Blokkontroll",
+"artistas_id": [
+"8e1cd8e9-b5e8-4e0e-8449-3da8e6c4625d"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/6772278673",
+"deezer": "https://www.deezer.com/album/989167061",
+"qobuz": "https://www.qobuz.com/gb-en/album/odin-na-odin-blokkontroll/tf60odw9pp8i1",
+"spotify": "https://open.spotify.com/album/7fzuWwOxFCmHmNnrf7FI7W",
+"tidal": "https://tidal.com/album/530515427"
+},
+"fecha_release": "2026-06-12",
+"idioma": null,
+"pais": "XW",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/02ed1673-b462-4e56-b245-e2af7e2e6ccf/front-250",
+"primera_fecha": "2026-06-12",
+"puntuacion": 1.0,
+"release": "bc445063-628e-4c43-968f-a5eb6d171891",
+"rg": "02ed1673-b462-4e56-b245-e2af7e2e6ccf",
+"sellos": [
+"Ratflak"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Odin Na Odin"
+},
 "rg:blondshell|violins": {
 "artista": "Blondshell",
 "artistas_id": [
@@ -114068,6 +114888,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "INDI"
+},
+"rg:calva y nada|el calor de zwickau": {
+"no_encontrado": "2026-11-22"
 },
 "rg:cameron winter|live at carnegie hall": {
 "artista": "Cameron Winter",
@@ -117401,6 +118224,31 @@
 "tipos_secundarios": [],
 "titulo": "One for the Losers"
 },
+"rg:cold cause|cold cause": {
+"artista": "Cold Cause",
+"artistas_id": [
+"f13ff09e-808b-4920-ad33-74d72d2489ad"
+],
+"enlaces": {
+"bandcamp": "https://manicdepressionrecords.bandcamp.com/album/md173-cold-cause-cold-cause",
+"discogs": "https://www.discogs.com/release/36842926"
+},
+"fecha_release": "2026-03-21",
+"idioma": null,
+"pais": "XW",
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/aa3051b5-5bea-4a48-a1a6-0e8e1e7fc9d8/front-250",
+"primera_fecha": "2026-03-21",
+"puntuacion": 1.0,
+"release": "719d81c8-25ec-45cd-8297-b78f5354fba2",
+"rg": "aa3051b5-5bea-4a48-a1a6-0e8e1e7fc9d8",
+"sellos": [
+"Manic Depression Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Cold Cause"
+},
 "rg:cold paradise|cold paradise": {
 "artista": "A Cold Paradise",
 "artistas_id": [
@@ -119491,6 +120339,30 @@
 "tipos_secundarios": [],
 "titulo": "In the Shadow of Your Shadow"
 },
+"rg:culture kultur|atomic": {
+"artista": "Culture Kultür",
+"artistas_id": [
+"1a2983b8-1d9a-42ea-b701-15792ca56edd"
+],
+"enlaces": {
+"bandcamp": "https://causticrecords.bandcamp.com/album/culture-kult-r-atomic-2"
+},
+"fecha_release": "2026-06-06",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/6d90355b-db3d-41c2-a9e4-0598b02f08b4/front-250",
+"primera_fecha": "2026-06-06",
+"puntuacion": 1.0,
+"release": "9fe3b90e-572a-461d-a5c3-14a82018d315",
+"rg": "6d90355b-db3d-41c2-a9e4-0598b02f08b4",
+"sellos": [
+"Caustic Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Atomic"
+},
 "rg:cure for youth|synthetic world": {
 "no_encontrado": "2026-11-22"
 },
@@ -119548,6 +120420,30 @@
 },
 "rg:current|top of the world": {
 "no_encontrado": "2026-11-22"
+},
+"rg:curtain|spiral": {
+"artista": "Curtain",
+"artistas_id": [
+"66798adc-584b-4a37-8c50-92b403c3368d"
+],
+"enlaces": {
+"bandcamp": "https://manicdepressionrecords.bandcamp.com/album/md177-curtain-spiral"
+},
+"fecha_release": "2026-05-06",
+"idioma": null,
+"pais": "XW",
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/a8e3f033-0bb4-441e-beeb-e79c8b290d0b/front-250",
+"primera_fecha": "2026-05-06",
+"puntuacion": 1.0,
+"release": "3d0ca7de-9fa9-42f1-a267-f4c6b3619752",
+"rg": "a8e3f033-0bb4-441e-beeb-e79c8b290d0b",
+"sellos": [
+"Manic Depression Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Spiral"
 },
 "rg:curtisy and owin|get a life": {
 "artista": "Curtisy & owin",
@@ -120937,6 +121833,20 @@
 "rg:david sylvian|distance between the killer and the killing": {
 "no_encontrado": "2026-11-22"
 },
+"rg:david thrussell|reign of dead matter": {
+"artista": "David Thrussell",
+"artistas_id": [
+"ded493f8-d1d9-4e39-b9b2-a89a8419fe0d"
+],
+"primera_fecha": "2026-06-11",
+"puntuacion": 1.0,
+"rg": "d667e3b2-293f-43bc-952e-c23bfc0fb93b",
+"tipo": "Album",
+"tipos_secundarios": [
+"Live"
+],
+"titulo": "The Reign of Dead Matter"
+},
 "rg:david torn|now i imagine a place not the same": {
 "artista": "David Torn",
 "artistas_id": [
@@ -121013,6 +121923,18 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Love’s Arp"
+},
+"rg:days of sorrow|raptures": {
+"artista": "Days of Sorrow",
+"artistas_id": [
+"f4d62094-22d4-4c6a-a387-275a007d00a8"
+],
+"primera_fecha": "2026-02-26",
+"puntuacion": 1.0,
+"rg": "16851513-c29b-46c2-8748-d11c30dc9f52",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Raptures"
 },
 "rg:daytona|sign language": {
 "no_encontrado": "2026-11-22"
@@ -121875,6 +122797,33 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Curtain Calls"
+},
+"rg:dekad|distorted view": {
+"artista": "Dekad",
+"artistas_id": [
+"c840e99f-bb29-487b-8d58-d52ad9a837e0"
+],
+"enlaces": {
+"bandcamp": "https://boredomproduct.bandcamp.com/album/a-distorted-view",
+"deezer": "https://www.deezer.com/album/951777541",
+"spotify": "https://open.spotify.com/album/465jxzwoW4n4QRQRBWEi80",
+"tidal": "https://tidal.com/album/511873881"
+},
+"fecha_release": "2026-04-16",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/4f970687-42ff-4030-be7e-aa5298e3e52e/front-250",
+"primera_fecha": "2026-04-16",
+"puntuacion": 1.0,
+"release": "50380774-afe1-4a35-9133-75fd85a80eb8",
+"rg": "4f970687-42ff-4030-be7e-aa5298e3e52e",
+"sellos": [
+"BOREDOMproduct"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "A Distorted View"
 },
 "rg:delain|frozen silhouettes 2006 2009": {
 "no_encontrado": "2026-11-22"
@@ -123235,6 +124184,18 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Skin & Blisters"
+},
+"rg:diskonnekt|la morte del sole": {
+"artista": "Diskonnekt",
+"artistas_id": [
+"d24dfa2b-4a01-43c8-a3fb-a7b1334bf1f7"
+],
+"primera_fecha": "2026-04-10",
+"puntuacion": 1.0,
+"rg": "d2980710-915c-4d95-bef1-6faae1c8cf49",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "La morte del sole"
 },
 "rg:dismantled|endless": {
 "artista": "Dismantled",
@@ -128495,6 +129456,9 @@
 "tipos_secundarios": [],
 "titulo": "Every House We Built"
 },
+"rg:expo|interconnection": {
+"no_encontrado": "2026-11-22"
+},
 "rg:extol|aura of decay": {
 "artista": "Extol",
 "artistas_id": [
@@ -133080,6 +134044,28 @@
 "tipos_secundarios": [],
 "titulo": "God Save the Three"
 },
+"rg:glass eden|born from a wish": {
+"artista": "Glass Eden",
+"artistas_id": [
+"cad1a353-30d2-4f2a-bf04-0113b88cfae2"
+],
+"enlaces": {
+"bandcamp": "https://glassedenmusic.bandcamp.com/album/born-from-a-wish"
+},
+"fecha_release": "2026-06-17",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 8,
+"portada": "https://coverartarchive.org/release-group/054e5490-53e7-4b25-8e7e-46add498654e/front-250",
+"primera_fecha": "2026-06-17",
+"puntuacion": 1.0,
+"release": "67f26cea-9c15-48db-b167-6b16d08be350",
+"rg": "054e5490-53e7-4b25-8e7e-46add498654e",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Born From a Wish"
+},
 "rg:glass hammer|arise": {
 "artista": "Glass Hammer",
 "artistas_id": [
@@ -135417,6 +136403,32 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Níu kom ek heima fyr Niflhel neðan"
+},
+"rg:hackedepicciotto|lichtung": {
+"artista": "Hackedepicciotto",
+"artistas_id": [
+"edede47f-2ecb-4be3-a7d1-f579c6098ae4"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/1882729032",
+"deezer": "https://www.deezer.com/album/933321861",
+"tidal": "https://tidal.com/album/502356697"
+},
+"fecha_release": "2026-07-10",
+"idioma": "deu",
+"pais": null,
+"pistas": 8,
+"portada": "https://coverartarchive.org/release-group/bca132ef-373e-4286-a4c8-bd294accadbf/front-250",
+"primera_fecha": "2026-07-10",
+"puntuacion": 1.0,
+"release": "213feb2c-bdd9-45e7-b3d2-522428f44b80",
+"rg": "bca132ef-373e-4286-a4c8-bd294accadbf",
+"sellos": [
+"Mute"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "LICHTUNG"
 },
 "rg:hackett and rothery|roaring waves": {
 "artista": "Hackett & Rothery",
@@ -138148,6 +139160,9 @@
 "titulo": "Hun"
 },
 "rg:hybryds|7even deadly sins": {
+"no_encontrado": "2026-11-22"
+},
+"rg:hybryds|desert of white salt": {
 "no_encontrado": "2026-11-22"
 },
 "rg:hydra|dehydration": {
@@ -143468,6 +144483,30 @@
 "tipos_secundarios": [],
 "titulo": "Hope Is A Heavy Thing"
 },
+"rg:joy thieves|apocalypse pending": {
+"artista": "The Joy Thieves",
+"artistas_id": [
+"ee1ef4e6-3a73-4d50-ac3e-45b11cf31d68"
+],
+"enlaces": {
+"bandcamp": "https://thejoythieves.bandcamp.com/album/apocalypse-pending"
+},
+"fecha_release": "2026-06-05",
+"idioma": "eng",
+"pais": "XE",
+"pistas": 13,
+"portada": "https://coverartarchive.org/release-group/2c3ac798-90f8-4001-a6ee-a9685d61c7a4/front-250",
+"primera_fecha": "2026-06-05",
+"puntuacion": 1.0,
+"release": "c72c5a58-16d6-41db-a584-f96efa273bda",
+"rg": "2c3ac798-90f8-4001-a6ee-a9685d61c7a4",
+"sellos": [
+"Armalyte Industries"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Apocalypse Pending"
+},
 "rg:joyann parker|life lines": {
 "artista": "Joyann Parker",
 "artistas_id": [
@@ -146592,6 +147631,9 @@
 "tipos_secundarios": [],
 "titulo": "Sic Semper Tyrannis"
 },
+"rg:komunitat|dust curse": {
+"no_encontrado": "2026-11-22"
+},
 "rg:konradsen|hunt gather": {
 "artista": "Konradsen",
 "artistas_id": [
@@ -147191,6 +148233,9 @@
 "rg:kye alfred hillig|all night costume company": {
 "no_encontrado": "2026-11-22"
 },
+"rg:kyivite|broadcast": {
+"no_encontrado": "2026-11-22"
+},
 "rg:kyle clark|better on a boat": {
 "artista": "Kyle Clark",
 "artistas_id": [
@@ -147556,6 +148601,28 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "As Killers Do"
+},
+"rg:laho|death machines": {
+"artista": "LAHO",
+"artistas_id": [
+"1e713689-1e8d-445c-8ecb-7756812cb9ec"
+],
+"enlaces": {
+"bandcamp": "https://laho.bandcamp.com/album/death-machines"
+},
+"fecha_release": "2026-06-26",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 7,
+"portada": "https://coverartarchive.org/release-group/9ac97702-24db-4e3b-9268-246a44afa342/front-250",
+"primera_fecha": "2026-06-26",
+"puntuacion": 1.0,
+"release": "5c21905c-d615-4c0d-8146-705f35349389",
+"rg": "9ac97702-24db-4e3b-9268-246a44afa342",
+"sellos": [],
+"tipo": "EP",
+"tipos_secundarios": [],
+"titulo": "Death Machines"
 },
 "rg:laibach|musick": {
 "artista": "Laibach",
@@ -148816,6 +149883,34 @@
 },
 "rg:leoni jane kennedy|synthetic": {
 "no_encontrado": "2026-11-22"
+},
+"rg:les longs adieux|arousal": {
+"artista": "Les Longs Adieux",
+"artistas_id": [
+"a1581ae5-6347-452a-bc4c-97979f50ddfc"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/1886211097",
+"deezer": "https://www.deezer.com/album/942721081",
+"qobuz": "https://www.qobuz.com/gb-en/album/arousal-les-longs-adieux/lzop954jau92f",
+"spotify": "https://open.spotify.com/album/7JGkV8o6nxTFiGaAvzCDiR",
+"tidal": "https://tidal.com/album/508192016"
+},
+"fecha_release": "2026-04-09",
+"idioma": "mul",
+"pais": "XW",
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/25798c7e-aad8-4747-8726-218f350d1ec1/front-250",
+"primera_fecha": "2026-04-09",
+"puntuacion": 1.0,
+"release": "2fd9daf5-1b80-46b9-96ac-26b56bb7b473",
+"rg": "25798c7e-aad8-4747-8726-218f350d1ec1",
+"sellos": [
+"[no label]"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Arousal"
 },
 "rg:les thomas|i remember everything": {
 "artista": "Les Thomas",
@@ -153866,6 +154961,9 @@
 "rg:memorials verity susman and matthew simms|all clouds bring not rain": {
 "no_encontrado": "2026-11-22"
 },
+"rg:memory of snow|inside": {
+"no_encontrado": "2026-11-22"
+},
 "rg:memphis kee|dark skies": {
 "no_encontrado": "2026-11-22"
 },
@@ -154733,6 +155831,31 @@
 },
 "rg:midnight phantom|good time rock n roll": {
 "no_encontrado": "2026-11-22"
+},
+"rg:midnight poetry|dive into the darkness": {
+"artista": "Midnight Poetry",
+"artistas_id": [
+"ec903145-a1e8-4e71-8704-143056f6725a"
+],
+"enlaces": {
+"bandcamp": "https://manicdepressionrecords.bandcamp.com/album/md172-midnight-poetry-dive-into-the-darkness",
+"spotify": "https://open.spotify.com/album/0J5IdoKBKXBgy7UzettmxH"
+},
+"fecha_release": "2026-04-17",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 8,
+"portada": "https://coverartarchive.org/release-group/e5e713c5-6bc5-4aae-9297-49dc20cff292/front-250",
+"primera_fecha": "2026-04-17",
+"puntuacion": 1.0,
+"release": "4e91fdd2-35cb-454c-a097-e54269116574",
+"rg": "e5e713c5-6bc5-4aae-9297-49dc20cff292",
+"sellos": [
+"Manic Depression Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Dive into the Darkness"
 },
 "rg:midnight rider|limited infinity": {
 "artista": "Midnight Rider",
@@ -157362,6 +158485,9 @@
 "tipos_secundarios": [],
 "titulo": "Embers of a Dying World"
 },
+"rg:mystic echo|distant shores": {
+"no_encontrado": "2026-11-22"
+},
 "rg:mystic prophecy|in metal": {
 "artista": "Mystic Prophecy",
 "artistas_id": [
@@ -157441,6 +158567,34 @@
 },
 "rg:nachtfalter|still leben": {
 "no_encontrado": "2026-11-22"
+},
+"rg:nachtmahr|imperivm": {
+"artista": "Nachtmahr",
+"artistas_id": [
+"2d25118d-d49a-4b21-8431-00f6771d768f"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/1873023930",
+"deezer": "https://www.deezer.com/album/907841982",
+"qobuz": "https://www.qobuz.com/gb-en/album/imperivm-nachtmahr/h4w8c9rbvaytp",
+"spotify": "https://open.spotify.com/album/5NkzOL5KMOSvCN6Oi2L0QF",
+"tidal": "https://tidal.com/album/494299024"
+},
+"fecha_release": "2026-06-26",
+"idioma": "deu",
+"pais": null,
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/5a21a321-e101-4940-a47a-ca914c55a672/front-250",
+"primera_fecha": "2026-06-26",
+"puntuacion": 1.0,
+"release": "c2a6b2b9-fa19-4590-ae86-2f85b947e9c3",
+"rg": "5a21a321-e101-4940-a47a-ca914c55a672",
+"sellos": [
+"Trisol"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Imperivm"
 },
 "rg:naika|eclesia": {
 "artista": "Naïka",
@@ -158350,6 +159504,9 @@
 "titulo": "B!NARY"
 },
 "rg:nenjah nycist and cut beetlez|i challenged the master and won": {
+"no_encontrado": "2026-11-22"
+},
+"rg:neo dimes|alone": {
 "no_encontrado": "2026-11-22"
 },
 "rg:neon moons|day late and a dollar short": {
@@ -159352,6 +160509,30 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "ROOTS"
+},
+"rg:nimh|nine years of decadence": {
+"artista": "Nimh",
+"artistas_id": [
+"540e415b-7d14-4538-b389-6afd44c495be"
+],
+"enlaces": {
+"bandcamp": "https://flutteringdragon.bandcamp.com/album/nimh-nine-years-of-decadence"
+},
+"fecha_release": "2026-02-05",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 14,
+"portada": "https://coverartarchive.org/release-group/6d998d25-99f8-4e10-90bd-86ce41da4726/front-250",
+"primera_fecha": "2026-02-05",
+"puntuacion": 1.0,
+"release": "3b66b61f-2b93-4c40-a619-bdca58d41113",
+"rg": "6d998d25-99f8-4e10-90bd-86ce41da4726",
+"sellos": [
+"Fluttering Dragon"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Nine Years of Decadence"
 },
 "rg:nina antonia and the lunar moths|dropping like butterflies": {
 "no_encontrado": "2026-11-22"
@@ -163744,6 +164925,30 @@
 "rg:podge lane|ebb and flow and the great unknown": {
 "no_encontrado": "2026-11-22"
 },
+"rg:poeme electronique|echoes fade": {
+"artista": "Poeme Electronique",
+"artistas_id": [
+"c1c211fb-fdc5-46ce-b240-43e670e136f5"
+],
+"enlaces": {
+"discogs": "https://www.discogs.com/release/2213607"
+},
+"fecha_release": "2010-04",
+"idioma": "eng",
+"pais": "DE",
+"pistas": 14,
+"portada": "https://coverartarchive.org/release-group/48b81492-dabb-4373-9f51-aaa2adf9480a/front-250",
+"primera_fecha": "2010-04",
+"puntuacion": 1.0,
+"release": "a64c4fdf-6284-45aa-8f8d-2d1bd4022572",
+"rg": "48b81492-dabb-4373-9f51-aaa2adf9480a",
+"sellos": [
+"Anna Logue Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "The Echoes Fade"
+},
 "rg:poison ruin|hymns from the hills": {
 "artista": "Poison Ruïn",
 "artistas_id": [
@@ -164570,9 +165775,21 @@
 "artistas_id": [
 "a7c9cb86-5079-4a30-86ea-141d3e03eed1"
 ],
+"enlaces": {
+"bandcamp": "https://prometheusflame.bandcamp.com/album/children-of-a-lesser-god"
+},
+"fecha_release": "2026-05-29",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 11,
+"portada": "https://coverartarchive.org/release-group/49ee91d2-a686-4699-8110-0c9839f26fdc/front-250",
 "primera_fecha": "2026-05-29",
 "puntuacion": 1.0,
+"release": "2d8602c2-daab-415a-bf34-4d64744baa86",
 "rg": "49ee91d2-a686-4699-8110-0c9839f26fdc",
+"sellos": [
+"Digital World Audio"
+],
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Children Of A Lesser God"
@@ -165233,6 +166450,37 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Plowing Ahead"
+},
+"rg:pussy riot|cyka": {
+"artista": "Pussy Riot",
+"artistas_id": [
+"631e3bc5-428a-432b-87f7-5d357a007fc0"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/6769523764",
+"audiomack.com": "https://audiomack.com/pussy-riot/album/cyka",
+"bandcamp": "https://officialpussyriot.bandcamp.com/album/cyka",
+"deezer": "https://www.deezer.com/album/983022281",
+"discogs": "https://www.discogs.com/release/37559268",
+"qobuz": "https://www.qobuz.com/gb-en/album/cyka-pussy-riot/wywhgk3yyraij",
+"spotify": "https://open.spotify.com/album/1euIZzjPzukDjGM63Oal9Q",
+"tidal": "https://tidal.com/album/524733461",
+"uk.7digital.com": "https://uk.7digital.com/artist/pussy-riot/release/cyka-explicit-71381699",
+"youtube": "https://music.youtube.com/playlist?list=OLAK5uy_nkEYO7xP3fbM1PFUHEAHyMR04QWrfPtFk"
+},
+"fecha_release": "2026",
+"idioma": "eng",
+"pais": null,
+"pistas": 14,
+"portada": "https://coverartarchive.org/release-group/fa3be597-35ba-472b-b81e-8a84f372c2fe/front-250",
+"primera_fecha": "2026-06-12",
+"puntuacion": 1.0,
+"release": "9281ee55-7cab-4165-87ff-567d2094af30",
+"rg": "fa3be597-35ba-472b-b81e-8a84f372c2fe",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "CYKA"
 },
 "rg:pva|no more like this": {
 "artista": "PVA",
@@ -166763,6 +168011,18 @@
 "tipos_secundarios": [],
 "titulo": "Retaliate"
 },
+"rg:replicant|critical point": {
+"artista": "Replicant",
+"artistas_id": [
+"5175a882-92d0-4d64-ab57-c44873296309"
+],
+"primera_fecha": "2026-04-16",
+"puntuacion": 1.0,
+"rg": "657bec75-0513-4e15-958d-7a16c8437c63",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Critical Point"
+},
 "rg:resa saffa park|kendra": {
 "artista": "Resa Saffa Park",
 "artistas_id": [
@@ -168102,6 +169362,30 @@
 "tipos_secundarios": [],
 "titulo": "Then Again"
 },
+"rg:rodrigo passannanti|timeless conceptions": {
+"artista": "Rodrigo Passannanti",
+"artistas_id": [
+"80f9a2bf-f2a8-464a-9906-d4c497de3619"
+],
+"enlaces": {
+"bandcamp": "https://cyclicaldreams.bandcamp.com/album/timeless-conceptions-cyd-0159"
+},
+"fecha_release": "2026-06-05",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/e6979d1f-bbe3-4c07-acb8-904661a214f5/front-250",
+"primera_fecha": "2026-06-05",
+"puntuacion": 1.0,
+"release": "d88f48d8-15fd-4071-b1f2-4555d2e4ecb4",
+"rg": "e6979d1f-bbe3-4c07-acb8-904661a214f5",
+"sellos": [
+"Cyclical Dreams"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Timeless Conceptions"
+},
 "rg:rodrigo y gabriela|ourhome": {
 "artista": "Rodrigo y Gabriela",
 "artistas_id": [
@@ -168189,6 +169473,29 @@
 },
 "rg:rogue johnsen project|next the same": {
 "no_encontrado": "2026-11-22"
+},
+"rg:rogue unit vs darkvolt|state of calamity": {
+"artista": "Rogue Unit vs. Darkvolt",
+"artistas_id": [
+"125caa80-accd-492a-b2e9-14b6e51ff567",
+"e39c011d-64bb-4e4f-92b5-a6802ca3828b"
+],
+"enlaces": {
+"bandcamp": "https://dresscodeblack.bandcamp.com/album/state-of-calamity-2"
+},
+"fecha_release": "2026-04-20",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 10,
+"portada": null,
+"primera_fecha": "2026-04-20",
+"puntuacion": 1.0,
+"release": "b430c0b7-d646-4346-86a1-c73cc0d89b7f",
+"rg": "6a31a3e0-4dc6-4d66-bdfd-e24fe1f2ecfa",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "State Of Calamity"
 },
 "rg:rois signs to domino|mo lean to be given a global release": {
 "no_encontrado": "2026-11-22"
@@ -169482,6 +170789,18 @@
 "tipos_secundarios": [],
 "titulo": "Jawbreaker"
 },
+"rg:sam rosenthal|width of shadows": {
+"artista": "Sam Rosenthal",
+"artistas_id": [
+"5339ec63-b5b6-48fd-97df-a22a19f6f051"
+],
+"primera_fecha": "2026-06-26",
+"puntuacion": 1.0,
+"rg": "2fc0bef8-4f7e-4913-bd7d-a2841da61110",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "The Width of Shadows"
+},
 "rg:sam smith|hazel eyes": {
 "artista": "Sam Smith",
 "artistas_id": [
@@ -170713,6 +172032,30 @@
 "Mixtape/Street"
 ],
 "titulo": "Strictly 4 the Scythe"
+},
+"rg:sdh|rider": {
+"artista": "SDH",
+"artistas_id": [
+"77655d87-3211-462b-9622-dee287b904b5"
+],
+"enlaces": {
+"bandcamp": "https://semioticsdepartmentofheteronyms.bandcamp.com/album/rider"
+},
+"fecha_release": "2026-04-17",
+"idioma": "eng",
+"pais": "ES",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/9804ccd8-8cda-4521-9899-5bf155883c88/front-250",
+"primera_fecha": "2026-04-17",
+"puntuacion": 1.0,
+"release": "666352d5-8200-439a-99b9-992c88a359c5",
+"rg": "9804ccd8-8cda-4521-9899-5bf155883c88",
+"sellos": [
+"Artoffact Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Rider"
 },
 "rg:sea of sin|shape of a lonely soul": {
 "artista": "Sea of Sin",
@@ -173237,6 +174580,20 @@
 "rg:six gun sally|aint goin down": {
 "no_encontrado": "2026-11-22"
 },
+"rg:sjellos|dyer expedition ost": {
+"artista": "Sjellos",
+"artistas_id": [
+"394a1dac-2fe1-4e24-83ee-76b14664706d"
+],
+"primera_fecha": "2026-03-24",
+"puntuacion": 1.0,
+"rg": "ee83bfb9-e00b-487c-9a2e-376a120d735f",
+"tipo": "Album",
+"tipos_secundarios": [
+"Soundtrack"
+],
+"titulo": "Dyer Expedition OST"
+},
 "rg:skald|rlog": {
 "artista": "SKÁLD",
 "artistas_id": [
@@ -173482,6 +174839,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Wasted Potential"
+},
+"rg:skyracer|skyracer v1 0": {
+"no_encontrado": "2026-11-22"
 },
 "rg:skytigers|injustice for all": {
 "no_encontrado": "2026-11-22"
@@ -175907,6 +177267,31 @@
 "rg:starset|revelations": {
 "no_encontrado": "2026-11-22"
 },
+"rg:starsign|silver linings": {
+"artista": "Starsign",
+"artistas_id": [
+"5a0d2bf7-62a7-44b0-9812-44eb7bb87d4f"
+],
+"enlaces": {
+"bandcamp": "https://infactedrecordings.bandcamp.com/album/silver-linings",
+"discogs": "https://www.discogs.com/release/37522806"
+},
+"fecha_release": "2026-02-27",
+"idioma": "eng",
+"pais": "DE",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/1ff5a9d8-446b-48e7-8ad3-8c8a5ae5ee7b/front-250",
+"primera_fecha": "2026-02-27",
+"puntuacion": 1.0,
+"release": "40de288a-f04f-4593-8a28-26a53a06404c",
+"rg": "1ff5a9d8-446b-48e7-8ad3-8c8a5ae5ee7b",
+"sellos": [
+"Infacted Recordings"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Silver Linings"
+},
 "rg:start a band|premiere from bleu": {
 "no_encontrado": "2026-11-22"
 },
@@ -177060,6 +178445,36 @@
 "tipo": "Single",
 "tipos_secundarios": [],
 "titulo": "Until The Sun Explodes"
+},
+"rg:subverge|select": {
+"artista": "Subverge",
+"artistas_id": [
+"0619efc1-691d-4924-a040-a6f77856886a"
+],
+"enlaces": {
+"bandcamp": "https://aliensproduction.bandcamp.com/album/select",
+"discogs": "https://www.discogs.com/release/35981671"
+},
+"fecha_release": "2026-01-08",
+"idioma": "eng",
+"pais": null,
+"pistas": 12,
+"portada": null,
+"primera_fecha": "2026-01-08",
+"puntuacion": 1.0,
+"release": "b755b859-cdd8-4338-aac7-74f8026e807a",
+"rg": "91c0e735-7b30-4540-b96e-3c0cd68cae73",
+"sellos": [
+"Aliens Production"
+],
+"tipo": "Album",
+"tipos_secundarios": [
+"Compilation"
+],
+"titulo": "Select"
+},
+"rg:subverge|sequenced suffering": {
+"no_encontrado": "2026-11-22"
 },
 "rg:sufjan stevens|worst christmas ever": {
 "artista": "Sufjan Stevens",
@@ -178523,6 +179938,34 @@
 "tipos_secundarios": [],
 "titulo": "Folk N' Roll"
 },
+"rg:tazer|taze is the rule": {
+"artista": "Tazer",
+"artistas_id": [
+"fbf33598-7fd2-4466-beea-f8decc646454"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/1879414548",
+"deezer": "https://www.deezer.com/album/923839971",
+"qobuz": "https://www.qobuz.com/gb-en/album/taze-is-the-rule-tazer/gjo08bf4esvgv",
+"spotify": "https://open.spotify.com/album/3X36fu5vlYbI3WipATeDoV",
+"tidal": "https://tidal.com/album/500822164"
+},
+"fecha_release": "2026-03-09",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 1,
+"portada": "https://coverartarchive.org/release-group/ead47866-6483-4a43-ae7c-0ded9791e3d1/front-250",
+"primera_fecha": "2026-03-09",
+"puntuacion": 1.0,
+"release": "5e134027-4f96-4d27-bb87-402d6e48ce13",
+"rg": "ead47866-6483-4a43-ae7c-0ded9791e3d1",
+"sellos": [
+"Hellektrokution Records"
+],
+"tipo": "Single",
+"tipos_secundarios": [],
+"titulo": "Taze Is the Rule"
+},
 "rg:team dresch|furthermore": {
 "artista": "Team Dresch",
 "artistas_id": [
@@ -179322,6 +180765,30 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Dé(s)figurations"
+},
+"rg:thaneco|tau zero": {
+"artista": "Thaneco",
+"artistas_id": [
+"f5ec26eb-cb3d-43ca-a8bd-2ad86ed5bb9d"
+],
+"enlaces": {
+"bandcamp": "https://cyclicaldreams.bandcamp.com/album/tau-zero-cyd-0160"
+},
+"fecha_release": "2026-06-19",
+"idioma": null,
+"pais": "XW",
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/96dad2a4-f000-44e8-a579-04994f039f88/front-250",
+"primera_fecha": "2026-06-19",
+"puntuacion": 1.0,
+"release": "110e466e-a8c5-4935-8ff7-87425786b2f6",
+"rg": "96dad2a4-f000-44e8-a579-04994f039f88",
+"sellos": [
+"Cyclical Dreams"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Tau Zero"
 },
 "rg:thao|show me": {
 "artista": "Thao",
@@ -181435,6 +182902,9 @@
 "tipos_secundarios": [],
 "titulo": "Tarmac"
 },
+"rg:trilogy|froced perspective": {
+"no_encontrado": "2026-11-22"
+},
 "rg:triosphere|oceans above stars below": {
 "artista": "Triosphere",
 "artistas_id": [
@@ -182269,6 +183739,35 @@
 "tipos_secundarios": [],
 "titulo": "Doomed Lovers"
 },
+"rg:twin tribes|shadows": {
+"artista": "Twin Tribes",
+"artistas_id": [
+"bf629fc0-2d07-4fa3-90dd-1e77629be935"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/1414681081",
+"bandcamp": "https://twintribes.bandcamp.com/album/part-time-punks-session",
+"deezer": "https://www.deezer.com/album/68794241",
+"discogs": "https://www.discogs.com/release/13419356",
+"spotify": "https://open.spotify.com/album/3Y1BV0s32ZRfaMF4tikTgV",
+"tidal": "https://tidal.com/album/92301358"
+},
+"fecha_release": "2018-01",
+"idioma": "eng",
+"pais": "US",
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/50a3bdbd-2126-4bc2-be4d-9a13fbef5353/front-250",
+"primera_fecha": "2018-01-31",
+"puntuacion": 1.0,
+"release": "afbc9f0f-1a44-4c9d-871f-d1d3cd797a04",
+"rg": "50a3bdbd-2126-4bc2-be4d-9a13fbef5353",
+"sellos": [
+"[no label]"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Shadows"
+},
 "rg:twisted sister|totally twisted the studio albums 1982 1987": {
 "no_encontrado": "2026-11-22"
 },
@@ -182850,6 +184349,34 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "O Come Forth Annihilation"
+},
+"rg:une vraie gothique|r d v au cimetiere": {
+"artista": "Une vraie gothique",
+"artistas_id": [
+"0a80bd9a-1e68-49bd-81b6-b5a5e4cae81f"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/1886860838",
+"deezer": "https://www.deezer.com/album/944173331",
+"qobuz": "https://www.qobuz.com/gb-en/album/rdv-au-cimetiere-une-vraie-gothique/t21ka5pua77ir",
+"spotify": "https://open.spotify.com/album/5f2vzhcYodirU1NXQXIyBS",
+"tidal": "https://tidal.com/album/508852701"
+},
+"fecha_release": "2026-03-26",
+"idioma": null,
+"pais": "XW",
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/9b3e2f90-6fb7-45de-8c19-fc10c5a8af1c/front-250",
+"primera_fecha": "2026-03-26",
+"puntuacion": 1.0,
+"release": "2ed232de-47c7-457b-959d-b38aa2c6f6ea",
+"rg": "9b3e2f90-6fb7-45de-8c19-fc10c5a8af1c",
+"sellos": [
+"Manic Depression Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "R.D.V. au cimetière"
 },
 "rg:uni boys|uni boys": {
 "artista": "Uni Boys",
@@ -184022,6 +185549,30 @@
 "rg:very old morris|boogedy boogedy boogedy shoop": {
 "no_encontrado": "2026-11-22"
 },
+"rg:vexagon|i for an i": {
+"artista": "Vexagon",
+"artistas_id": [
+"33a4a8b8-38db-4bda-8b54-11c062d51e3a"
+],
+"enlaces": {
+"bandcamp": "https://vexagon.bandcamp.com/album/i-for-an-i"
+},
+"fecha_release": "2026-05-01",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/d534cf14-b5dc-4612-9ccd-4009186b194e/front-250",
+"primera_fecha": "2026-05-01",
+"puntuacion": 1.0,
+"release": "4b8c4f0d-a214-4f09-be8b-c4c264ad381c",
+"rg": "d534cf14-b5dc-4612-9ccd-4009186b194e",
+"sellos": [
+"Cold Transmission Music"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "I FOR AN I"
+},
 "rg:vial|hellhound": {
 "artista": "VIAL",
 "artistas_id": [
@@ -184267,9 +185818,21 @@
 "artistas_id": [
 "bea12aad-b61f-4da5-a24c-aeb1cfc09c43"
 ],
+"enlaces": {
+"bandcamp": "https://violentyouth.bandcamp.com/album/tsvety"
+},
+"fecha_release": "2026-03-20",
+"idioma": null,
+"pais": "XW",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/5042f653-e897-410e-b0a7-b0d42f949ac8/front-250",
 "primera_fecha": "2026-03-20",
 "puntuacion": 1.0,
+"release": "cfc10c3b-9de4-48dc-81cc-def3be72a093",
 "rg": "5042f653-e897-410e-b0a7-b0d42f949ac8",
+"sellos": [
+"Artoffact Records"
+],
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "tsvety"
@@ -184597,6 +186160,30 @@
 },
 "rg:voodoo ramble|live made in the uk": {
 "no_encontrado": "2026-11-22"
+},
+"rg:vorn|beyond the sentinel": {
+"artista": "VORN",
+"artistas_id": [
+"8679f883-000f-4a21-b0bd-72377c7e5a6a"
+],
+"enlaces": {
+"bandcamp": "https://scanner-dd.bandcamp.com/album/beyond-the-sentinel"
+},
+"fecha_release": "2026-06-26",
+"idioma": "mul",
+"pais": "XW",
+"pistas": 14,
+"portada": "https://coverartarchive.org/release-group/4ba3b9e6-8ad6-40cd-9314-ffa8791fac6b/front-250",
+"primera_fecha": "2026-06-26",
+"puntuacion": 1.0,
+"release": "b9a9f824-b29c-4172-91e5-c7176f2f2b69",
+"rg": "4ba3b9e6-8ad6-40cd-9314-ffa8791fac6b",
+"sellos": [
+"Scanner"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Beyond the Sentinel"
 },
 "rg:voxtrot|dreamers in exile": {
 "artista": "Voxtrot",
@@ -186039,6 +187626,54 @@
 "tipos_secundarios": [],
 "titulo": "Roses"
 },
+"rg:wieloryb|gods final breath": {
+"artista": "Wieloryb",
+"artistas_id": [
+"57914d22-875c-481f-b2ec-c9ee9f72ae21"
+],
+"enlaces": {
+"discogs": "https://www.discogs.com/release/33545424"
+},
+"fecha_release": "2025-03-27",
+"idioma": null,
+"pais": "XW",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/df7f53c1-6377-42e0-a0ec-617386fcbadd/front-250",
+"primera_fecha": "2025-03-27",
+"puntuacion": 1.0,
+"release": "c9b578af-fdf1-478c-8001-5c982a8f506e",
+"rg": "df7f53c1-6377-42e0-a0ec-617386fcbadd",
+"sellos": [
+"Antyscena"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "God's Final Breath"
+},
+"rg:wieloryb|ritual": {
+"artista": "Wieloryb",
+"artistas_id": [
+"57914d22-875c-481f-b2ec-c9ee9f72ae21"
+],
+"enlaces": {
+"discogs": "https://www.discogs.com/release/37697559"
+},
+"fecha_release": "2021-01-02",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/4207556b-0580-4a1e-9b92-91e33650f5d8/front-250",
+"primera_fecha": "2021-01-02",
+"puntuacion": 1.0,
+"release": "408183b0-ceec-4178-8413-2e469bf7ade4",
+"rg": "4207556b-0580-4a1e-9b92-91e33650f5d8",
+"sellos": [
+"Antyscena"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Ritual"
+},
 "rg:wiklund thobias|gates of heaven": {
 "no_encontrado": "2026-11-22"
 },
@@ -186272,6 +187907,34 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Passing the Cup of Sorrows"
+},
+"rg:william bleak|neon goth": {
+"artista": "William Bleak",
+"artistas_id": [
+"64f19580-b3c6-4392-b6e9-16a2980b6aa1"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/6779418256",
+"deezer": "https://www.deezer.com/album/1003667161",
+"qobuz": "https://www.qobuz.com/gb-en/album/neon-goth-william-bleak/r4bhn74bpwuzp",
+"spotify": "https://open.spotify.com/album/5EHze2EAC6CDUxqGgX3cib",
+"tidal": "https://tidal.com/album/532825891"
+},
+"fecha_release": "2026-06-19",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/58f8a19f-6ba3-4182-9313-3cf315e26bda/front-250",
+"primera_fecha": "2026-06-19",
+"puntuacion": 1.0,
+"release": "258c23e1-2166-43a7-936b-8f7866de7cb2",
+"rg": "58f8a19f-6ba3-4182-9313-3cf315e26bda",
+"sellos": [
+"Breathing Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Neon Goth"
 },
 "rg:william clark green|watterson hall": {
 "artista": "William Clark Green",
