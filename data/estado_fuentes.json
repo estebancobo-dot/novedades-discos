@@ -1,10 +1,90 @@
 {
- "fecha": "2026-11-21",
+ "fecha": "2026-11-22",
  "ventana": [
-  "2026-06-21",
-  "2027-05-21"
+  "2026-06-22",
+  "2027-05-22"
  ],
  "fuentes": {
+  "scm_radar": {
+   "nombre": "Saving Country Music – Release Radar",
+   "web": "https://savingcountrymusic.com",
+   "familia": "country",
+   "rol": "listado",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 2,
+   "items": 471
+  },
+  "scm_resenas": {
+   "nombre": "Saving Country Music – reseñas",
+   "web": "https://savingcountrymusic.com",
+   "familia": "country",
+   "rol": "resena",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 9,
+   "items": 12
+  },
+  "scm_noticias": {
+   "nombre": "Saving Country Music – noticias",
+   "web": "https://savingcountrymusic.com",
+   "familia": "country",
+   "rol": "noticia",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 9,
+   "items": 10
+  },
+  "holler": {
+   "nombre": "Holler – First Listen",
+   "web": "https://holler.country",
+   "familia": "country",
+   "rol": "resena",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 2,
+   "items": 12
+  },
+  "whiskeyriff": {
+   "nombre": "Whiskey Riff",
+   "web": "https://www.whiskeyriff.com",
+   "familia": "country",
+   "rol": "noticia",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 40,
+   "items": 2
+  },
+  "americanauk": {
+   "nombre": "Americana UK",
+   "web": "https://americana-uk.com",
+   "familia": "country",
+   "rol": "resena",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 28,
+   "items": 269
+  },
+  "twangville": {
+   "nombre": "Twangville",
+   "web": "https://twangville.com",
+   "familia": "country",
+   "rol": "resena",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 18,
+   "items": 76
+  },
+  "countryuniverse": {
+   "nombre": "Country Universe",
+   "web": "https://www.countryuniverse.net",
+   "familia": "country",
+   "rol": "resena",
+   "estado": "vacia",
+   "detalle": "",
+   "paginas": 9,
+   "items": 0
+  },
   "cst": {
    "nombre": "Country Standard Time – CD releases",
    "web": "https://www.countrystandardtime.com",
@@ -14,6 +94,56 @@
    "detalle": "",
    "paginas": 1,
    "items": 34
+  },
+  "nodepression": {
+   "nombre": "No Depression",
+   "web": "https://nodepression.org",
+   "familia": "country",
+   "rol": "resena",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 1,
+   "items": 6
+  },
+  "bluegrasstoday": {
+   "nombre": "Bluegrass Today",
+   "web": "https://bluegrasstoday.com",
+   "familia": "country",
+   "rol": "noticia",
+   "estado": "vacia",
+   "detalle": "",
+   "paginas": 40,
+   "items": 0
+  },
+  "klof": {
+   "nombre": "KLOF Mag (antes Folk Radio UK)",
+   "web": "https://klofmag.com",
+   "familia": "country",
+   "rol": "resena",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 28,
+   "items": 120
+  },
+  "glide": {
+   "nombre": "Glide Magazine",
+   "web": "https://glidemagazine.com",
+   "familia": "country",
+   "rol": "resena",
+   "estado": "vacia",
+   "detalle": "",
+   "paginas": 1,
+   "items": 0
+  },
+  "heavyharmonies": {
+   "nombre": "Heavy Harmonies – New Additions",
+   "web": "https://heavyharmonies.com",
+   "familia": "hardrock",
+   "rol": "listado",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 1,
+   "items": 300
   },
   "melodicrock": {
    "nombre": "MelodicRock.com",
@@ -34,20 +164,170 @@
    "detalle": "",
    "paginas": 1,
    "items": 9
+  },
+  "angelicwarlord": {
+   "nombre": "Angelic Warlord – Release Dates",
+   "web": "https://www.angelicwarlord.com",
+   "familia": "hardrock",
+   "rol": "listado",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 1,
+   "items": 181
+  },
+  "getreadytorock": {
+   "nombre": "Get Ready to ROCK!",
+   "web": "https://www.getreadytorock.me.uk",
+   "familia": "hardrock",
+   "rol": "resena",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 46,
+   "items": 147
+  },
+  "loudwire": {
+   "nombre": "Loudwire – 2026 Hard Rock + Metal Release Calendar",
+   "web": "https://loudwire.com",
+   "familia": "hardrock",
+   "rol": "listado",
+   "estado": "ok",
+   "detalle": "https://loudwire.com/2027-hard-rock-metal-album-release-calendar/ → HTTP 404;",
+   "paginas": 2,
+   "items": 1015
+  },
+  "metalplanet": {
+   "nombre": "Metal Planet Music",
+   "web": "https://metalplanetmusic.com",
+   "familia": "hardrock",
+   "rol": "resena",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 60,
+   "items": 51
+  },
+  "louder": {
+   "nombre": "Louder (Classic Rock / Prog) – reseñas",
+   "web": "https://www.loudersound.com",
+   "familia": "hardrock",
+   "rol": "resena",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 12,
+   "items": 120
+  },
+  "pauseandplay": {
+   "nombre": "Pause & Play – On the CD Front",
+   "web": "https://www.pauseandplay.com",
+   "familia": "todas",
+   "rol": "listado",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 25,
+   "items": 579
+  },
+  "wikipedia": {
+   "nombre": "Wikipedia – List of albums",
+   "web": "https://en.wikipedia.org/wiki/List_of_2026_albums",
+   "familia": "todas",
+   "rol": "listado",
+   "estado": "ok",
+   "detalle": "https://en.wikipedia.org/wiki/List_of_2027_albums_(January%E2%80%93June) → HTTP 404;",
+   "paginas": 3,
+   "items": 1732
+  },
+  "bandcampdaily": {
+   "nombre": "Bandcamp Daily – Essential Releases",
+   "web": "https://daily.bandcamp.com",
+   "familia": "todas",
+   "rol": "resena",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 1,
+   "items": 179
+  },
+  "newwest": {
+   "nombre": "New West Records – Recent Releases",
+   "web": "https://newwestrecords.com",
+   "familia": "country",
+   "rol": "sello",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 2,
+   "items": 64
+  },
+  "ohboy": {
+   "nombre": "Oh Boy Records – New Releases",
+   "web": "https://ohboy.com",
+   "familia": "country",
+   "rol": "sello",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 1,
+   "items": 30
+  },
+  "frontiers": {
+   "nombre": "Frontiers – New Releases",
+   "web": "https://frontiers-us.shop",
+   "familia": "hardrock",
+   "rol": "sello",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 2,
+   "items": 49
+  },
+  "roar": {
+   "nombre": "ROAR / Reigning Phoenix Music – Releases",
+   "web": "https://www.reigningphoenixmusic.com",
+   "familia": "hardrock",
+   "rol": "sello",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 1,
+   "items": 64
+  },
+  "silverlining": {
+   "nombre": "Silver Lining Music – noticias",
+   "web": "https://silverliningmusic.co.uk",
+   "familia": "hardrock",
+   "rol": "sello",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 1,
+   "items": 7
+  },
+  "escape": {
+   "nombre": "Escape Music – News",
+   "web": "https://www.escape-music.com",
+   "familia": "hardrock",
+   "rol": "sello",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 1,
+   "items": 1
+  },
+  "bandcamp": {
+   "nombre": "Bandcamp (comprobar si sigue bloqueado)",
+   "web": "https://bandcamp.com",
+   "familia": "ninguna",
+   "rol": "sonda",
+   "estado": "ok",
+   "detalle": "responde HTTP 200",
+   "paginas": 1,
+   "items": 0
   }
  },
  "musicbrainz": {
-  "consultas": 97,
+  "consultas": 1562,
   "bloqueado": null
  },
  "bandcamp": {
-  "paginas": 4,
+  "paginas": 600,
   "bloqueado": null
  },
- "peticiones": 166,
+ "peticiones": 2664,
  "hosts_bloqueados": {},
  "menciones": {
-  "total": 0,
-  "sin_pareja": 0
+  "total": 123,
+  "sin_pareja": 106
  }
 }
