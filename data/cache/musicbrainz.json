@@ -1444,6 +1444,15 @@
 "nombre": "Austen Starr",
 "pais": null
 },
+"art:05d06528-b3e2-47f0-93e6-8dcaa794b5b4": {
+"enlaces": {
+"metal-archives.com": "https://www.metal-archives.com/bands/Shine/3540576896"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Shine",
+"pais": "PL"
+},
 "art:05e718da-17b9-4994-98a4-df149491c65d": {
 "enlaces": {
 "colebrookroad.com": "https://colebrookroad.com/",
@@ -34299,6 +34308,19 @@
 "nombre": "Alela Diane",
 "pais": "US"
 },
+"art:86ac9ff9-4e97-48c9-82e8-22bcb6c31daa": {
+"enlaces": {
+"deezer": "https://www.deezer.com/artist/5226738",
+"lilymeola.com": "http://lilymeola.com/",
+"qobuz": "https://open.qobuz.com/artist/1363557",
+"spotify": "https://open.spotify.com/artist/5WC6EbIrTO76x30w5LtzS6",
+"tidal": "https://tidal.com/artist/6283459"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Lily Meola",
+"pais": "US"
+},
 "art:86c80cc3-13b0-4ca7-ae5a-d16f00c11a59": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0003211103",
@@ -63091,6 +63113,70 @@
 "nombre": "Madeon",
 "pais": "FR"
 },
+"art:fa31e7d4-a03a-4110-98fc-f8826e95ec25": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000123363",
+"amazon": "https://music.amazon.com/artists/B001QQSR0M",
+"apple": "https://music.apple.com/us/artist/15405383",
+"bandcamp": "https://convergecult.bandcamp.com/",
+"bandsintown.com": "https://www.bandsintown.com/a/3016",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:Converge_f4304335.jpg",
+"convergecult.com": "https://www.convergecult.com/",
+"deezer": "https://www.deezer.com/artist/2986",
+"discogs": "https://www.discogs.com/artist/292633",
+"facebook": "https://www.facebook.com/converge",
+"genius.com": "https://genius.com/artists/Converge",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2004118203",
+"imvdb.com": "https://imvdb.com/n/converge",
+"instagram": "https://www.instagram.com/converge/",
+"last.fm": "https://www.last.fm/music/Converge",
+"metalmusicarchives.com": "https://www.metalmusicarchives.com/artist/converge",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/converge/",
+"myspace.com": "https://myspace.com/converge",
+"pirate-punk.net": "https://www.pirate-punk.net/groupe-musique-punk/?band=Converge",
+"punk-lyrics.net": "https://www.punk-lyrics.net/band/converge",
+"qobuz": "https://open.qobuz.com/artist/462192",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/converge",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/11626",
+"setlist.fm": "https://www.setlist.fm/setlists/converge-bd6ed5e.html",
+"songkick.com": "https://www.songkick.com/artists/174118",
+"soundcloud": "https://soundcloud.com/converge-official",
+"spirit-of-metal.com": "https://www.spirit-of-metal.com/en/band/Converge",
+"spotify": "https://open.spotify.com/artist/7kHzfxMLtVHHb523s43rY1",
+"tidal": "https://tidal.com/artist/3517838",
+"twitter.com": "https://twitter.com/Convergecult",
+"us.napster.com": "https://us.napster.com/artist/converge",
+"viaf.org": "http://viaf.org/viaf/137561702",
+"web.archive.org": "https://web.archive.org/web/19970615123002/http://www.wpi.edu/~hallee/converge.html",
+"whosampled.com": "https://www.whosampled.com/Converge",
+"wikidata": "https://www.wikidata.org/wiki/Q281894",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no2004118203",
+"youtube": "https://www.youtube.com/channel/UCQH3-LheW109oRm0f4JatDg"
+},
+"etiquetas": [
+"mathcore",
+"metalcore",
+"hardcore punk",
+"hardcore",
+"post-hardcore",
+"math",
+"atmospheric sludge metal",
+"chaotic hardcore",
+"experimental",
+"noisecore"
+],
+"generos": [
+"mathcore",
+"metalcore",
+"hardcore punk",
+"post-hardcore",
+"atmospheric sludge metal",
+"experimental",
+"noisecore"
+],
+"nombre": "Converge",
+"pais": "US"
+},
 "art:fa3b34dd-086e-4afa-a6f9-0519b6a1be4a": {
 "enlaces": {
 "metal-archives.com": "https://www.metal-archives.com/bands/Lugubrious_Garment/3540570102"
@@ -74670,6 +74756,31 @@
 "rg:contrarian|escaping depravity": {
 "no_encontrado": "2026-11-22"
 },
+"rg:converge|love is not enough": {
+"artista": "Converge",
+"artistas_id": [
+"fa31e7d4-a03a-4110-98fc-f8826e95ec25"
+],
+"enlaces": {
+"rateyourmusic.com": "https://rateyourmusic.com/release/single/converge/love-is-not-enough.p/",
+"spotify": "https://open.spotify.com/album/4Xk05QlbDNsLavcAVfOZBV"
+},
+"fecha_release": "2025-11-19",
+"idioma": null,
+"pais": "XW",
+"pistas": 1,
+"portada": "https://coverartarchive.org/release-group/33de147d-7d75-47a5-8400-6c02ab8252e7/front-250",
+"primera_fecha": "2025-11-19",
+"puntuacion": 1.0,
+"release": "0fec265d-d5b1-4428-b2da-e3d47d212522",
+"rg": "33de147d-7d75-47a5-8400-6c02ab8252e7",
+"sellos": [
+"Epitaph"
+],
+"tipo": "Single",
+"tipos_secundarios": [],
+"titulo": "Love Is Not Enough"
+},
 "rg:conway savage|too dark to see": {
 "no_encontrado": "2026-11-22"
 },
@@ -85469,6 +85580,9 @@
 "tipos_secundarios": [],
 "titulo": "Scrap Metal"
 },
+"rg:hellacopters|cream of the crap collected non album works volume 3": {
+"no_encontrado": "2026-11-22"
+},
 "rg:henry merchant|tomorrow": {
 "no_encontrado": "2026-11-22"
 },
@@ -85694,6 +85808,18 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "FANGS"
+},
+"rg:hoaxed|death knocks": {
+"artista": "Hoaxed",
+"artistas_id": [
+"d433884f-7d01-4fb1-843b-5fec8ea3ca1a"
+],
+"primera_fecha": "2026-02-13",
+"puntuacion": 1.0,
+"rg": "9cd2e0dc-a9bc-4cf4-a2c8-d14980f6d23a",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Death Knocks"
 },
 "rg:hokka|via miseria iv": {
 "artista": "HOKKA",
@@ -93524,6 +93650,35 @@
 },
 "rg:lil andy|in the heart of the machine": {
 "no_encontrado": "2026-11-22"
+},
+"rg:lily meola|lucky to be": {
+"artista": "Lily Meola",
+"artistas_id": [
+"86ac9ff9-4e97-48c9-82e8-22bcb6c31daa"
+],
+"enlaces": {
+"apple": "https://music.apple.com/de/album/1890302182",
+"bandcamp": "https://lilymeola.bandcamp.com/album/lucky-to-be",
+"deezer": "https://www.deezer.com/album/953408541",
+"qobuz": "https://www.qobuz.com/de-de/album/lucky-to-be-lily-meola/j5213axlmku3w",
+"spotify": "https://open.spotify.com/album/50TURqK9AFsbLTS5lguddv",
+"tidal": "https://tidal.com/album/512680799"
+},
+"fecha_release": "2026-07-17",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/123d9014-7a59-40e3-92b5-d1a539a9099b/front-250",
+"primera_fecha": "2026-07-17",
+"puntuacion": 1.0,
+"release": "293a728e-7935-4361-973d-b8288e894856",
+"rg": "123d9014-7a59-40e3-92b5-d1a539a9099b",
+"sellos": [
+"Nettwerk Music Group"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Lucky to Be"
 },
 "rg:lily seabird|lightspheres": {
 "no_encontrado": "2026-11-22"
@@ -107383,6 +107538,31 @@
 "Compilation"
 ],
 "titulo": "The Y Section"
+},
+"rg:shine|wrathcult": {
+"artista": "Shine",
+"artistas_id": [
+"05d06528-b3e2-47f0-93e6-8dcaa794b5b4"
+],
+"enlaces": {
+"bandcamp": "https://darkdescentrecords.bandcamp.com/album/wrathcult",
+"metal-archives.com": "https://www.metal-archives.com/albums/Shine/Wrathcult/1405249"
+},
+"fecha_release": "2026-01-30",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/1e92885f-7cf2-4bb1-b64e-6ab1779ab82d/front-250",
+"primera_fecha": "2026-01-30",
+"puntuacion": 1.0,
+"release": "ddd7e5b3-2ea9-4e84-b62d-d8da3d68c96d",
+"rg": "1e92885f-7cf2-4bb1-b64e-6ab1779ab82d",
+"sellos": [
+"Dark Descent"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Wrathcult"
 },
 "rg:shinglers|hit the head": {
 "artista": "Shinglers",
