@@ -117,3 +117,43 @@ def leer_radar(nav, cfg, hoy, desde=None, config=None) -> ResultadoFuente:
                                   url=f"https://musicbrainz.org/release-group/{rg['id']}"))
     res.detalle = f"{len(ids)} artistas por id y {len(nombres)} por nombre"
     return res
+
+
+# ---------------------------------------------------------------- radar Deezer
+def leer_radar_deezer(nav, cfg, hoy, desde=None, config=None) -> ResultadoFuente:
+    """Discografía al día de cada artista de interés en Deezer (API pública, sin clave).
+    Idea de ydniM/Music-Releases-Feed. El artista se identifica por nombre exacto
+    (normalizado) y solo se aceptan lanzamientos de tipo álbum."""
+    res = ResultadoFuente(cfg["id"])
+    _ids, nombres_norm = artistas_de_interes(config)
+    p = ruta(config["rutas"]["cache_musicbrainz"])
+    cache = json.load(open(p, encoding="utf-8")) if os.path.exists(p) else {}
+    nombres = sorted({v.get("nombre") for k, v in cache.items() if k.startswith("art:") and v.get("nombre")
+                      and normalizar(v.get("nombre")) in nombres_norm})
+    lo = desde or hoy - dt.timedelta(days=45)
+    hi = hoy + dt.timedelta(days=int(cfg.get("dias_adelante", 180)))
+    maximo = int(cfg.get("max_artistas", 1000))
+    for nombre in nombres[:maximo]:
+        q = urllib.parse.quote(nombre)
+        r = nav.get(f"https://api.deezer.com/search/artist?limit=5&q={q}", acepta="application/json")
+        res.paginas += 1
+        if r.estado != 200:
+            continue
+        cands = [a for a in json.loads(r.texto).get("data", []) if normalizar(a.get("name")) == normalizar(nombre)]
+        if len(cands) != 1:          # homónimos: no se adivina
+            continue
+        r = nav.get(f"https://api.deezer.com/artist/{cands[0]['id']}/albums?limit=50", acepta="application/json")
+        if r.estado != 200:
+            continue
+        for a in json.loads(r.texto).get("data", []):
+            if a.get("record_type") != "album" or not a.get("release_date"):
+                continue
+            try:
+                f = dt.date.fromisoformat(a["release_date"])
+            except ValueError:
+                continue
+            if lo <= f <= hi:
+                res.items.append(Item(fuente=cfg["id"], artista=nombre, titulo=a.get("title") or "", fecha=f,
+                                      fecha_tipo="lanzamiento", url=a.get("link"), portada=a.get("cover_medium")))
+    res.detalle = f"{len(nombres)} artistas consultados"
+    return res

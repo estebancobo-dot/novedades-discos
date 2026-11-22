@@ -165,6 +165,18 @@ sus condiciones: identificarse y 1 petición/s. Está declarada como excepción 
 | hitsculture.com | Novedades de R&B y hip-hop | ❌ Fuera de nuestras familias |
 | Pitchfork: *New Music Releases and Upcoming Albums 2026–2027* | Lista de próximos discos | 💡 Candidata a fuente de "próximamente" (por verificar) |
 
+### Decisiones del 22-nov (modo autónomo)
+
+| Fuente | Decisión | Por qué |
+|---|---|---|
+| Americana Highways | ✅ Activada | Verificada; publica reseñas `REVIEW: Artista "Título"` |
+| Country Universe | ⏸ Desactivada | 0 discos en 5 meses: ahora publica sobre todo series retrospectivas |
+| Bluegrass Today | ⏸ Desactivada | 0 discos en 5 meses: sus titulares son de fichajes y conciertos |
+| Glide | ✅ Se mantiene | Solo 1 petición por semana; a veces publica reseñas de discos |
+| **Pitchfork: guía de próximos discos** | ✅ Nueva | Se lee bien: `Artista: «Título» [Sello]` por fecha; unos 60 próximos discos |
+| **The Line of Best Fit: Album release schedule** | ✅ Nueva | Agenda de lanzamientos por fecha, con los EP marcados; unos 180 discos |
+| **Radar de artistas (Deezer)** | ✅ Nuevo | Discografía al día de nuestros artistas (idea de ydniM/Music-Releases-Feed). Solo artistas con nombre único en Deezer y solo lanzamientos de tipo álbum |
+
 ## 7. Resumen
 
 - **En uso: 30 fuentes activas en `data/fuentes.yaml`.** Son 13 de prensa y listados de country, 8 de hard rock, 2 generalistas (Pause & Play y Bandcamp Daily), 6 de sellos y la comprobación de Bandcamp. Hay otras 3 desactivadas: Americana Highways, pendiente de tu OK, y Sleaze Roxx y Rock & Blues Muse, por su `robots.txt`. A eso se suma el enriquecimiento con MusicBrainz, Cover Art Archive y Bandcamp. Las que fallen o se bloqueen en una ejecución quedan anotadas en `data/estado_fuentes.json` y en el informe.

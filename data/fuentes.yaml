@@ -148,6 +148,7 @@ fuentes:
     - '^(?:Readers[’'']\s*Pick:\s*)?(?P<artista>[^–:\n]+?)\s+–\s+(?P<titulo>[^–\n]+)$'
 
 - id: countryuniverse
+  activa: false                 # 0 discos en 5 meses (22-nov): no titula sobre discos
   nombre: Country Universe
   web: https://www.countryuniverse.net
   familia: country
@@ -186,6 +187,7 @@ fuentes:
     - '^ALBUM REVIEW:\s*(?P<mencion>.+)$'
 
 - id: bluegrasstoday
+  activa: false                 # 0 discos en 5 meses (22-nov): no titula sobre discos
   nombre: Bluegrass Today
   web: https://bluegrasstoday.com
   familia: country
@@ -223,7 +225,7 @@ fuentes:
 - id: americanahighways
   nombre: Americana Highways
   web: https://americanahighways.org
-  activa: false                 # verificada el 21-nov; pendiente de tu OK para activarla
+  activa: true                  # verificada el 21-nov; activada el 22-nov
   familia: country
   rol: resena
   lector: rss
@@ -421,6 +423,36 @@ fuentes:
   patrones:
     - '^(?:\s*{{MES}}\s+\d{1,2}\s*\|)?\s*(?P<artista>[^|«\n]+?)\s*\|\s*«(?P<titulo>[^»]+)»\s*\|\s*(?P<genero>[^|\n]*?)\s*\|\s*(?P<sello>[^|\n]*?)\s*(?:\||$)'
 
+- id: pitchfork_proximos
+  nombre: Pitchfork – guía de próximos discos
+  web: https://pitchfork.com/news/new-album-releases/
+  familia: todas
+  rol: listado
+  mixta: true
+  lector: texto
+  fecha_es: lanzamiento        # sin año: se toma el más cercano a hoy (la guía mira hacia delante)
+  urls: [https://pitchfork.com/news/new-album-releases/]
+  texto:
+    marcas: {"em, i": "«»", "h2, h3, h4": ["##", ""]}
+  cabecera_fecha: '^##\s*(?P<fecha>{{MES}}\s+\d{1,2}(?:,\s*\d{4})?)\s*$'
+  patrones:
+    - '^(?P<artista>[^:«\n#]+?):\s*«(?P<titulo>[^»]+)»\s*(?:\[(?P<sello>[^\]\n]+)\])?'
+
+- id: lineofbestfit
+  nombre: The Line of Best Fit – Album release schedule
+  web: https://www.thelineofbestfit.com/album-release-schedule
+  familia: todas
+  rol: listado
+  mixta: true
+  lector: texto
+  fecha_es: lanzamiento
+  urls: [https://www.thelineofbestfit.com/album-release-schedule]
+  texto:
+    marcas: {"em, i": "«»", "h2, h3, h4": ["##", ""]}
+  cabecera_fecha: '^##\s*(?P<fecha>\d{1,2}\s+{{MES}}\s+\d{4})\s*$'
+  patrones:
+    - '^(?P<artista>[^–«\n#]+?)\s*–\s*«\s*(?P<titulo>[^»]+?)\s*»\s*(?P<tipo>EP)?\s*$'
+
 - id: anydecentmusic
   nombre: Any Decent Music – agregador de crítica
   web: http://www.anydecentmusic.com
@@ -470,6 +502,17 @@ fuentes:
   fecha_es: lanzamiento
   dias_adelante: 180
   tipos: "primarytype:album"
+
+- id: radar_deezer
+  nombre: Radar de artistas (Deezer)
+  web: https://www.deezer.com
+  familia: todas
+  rol: listado
+  mixta: true
+  lector: radar_deezer
+  fecha_es: lanzamiento
+  dias_adelante: 180
+  max_artistas: 1000
 
 # ============================================================ SELLOS
 - id: newwest

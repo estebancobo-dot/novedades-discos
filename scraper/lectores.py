@@ -366,10 +366,11 @@ LECTORES = {"texto": leer_texto, "rss": leer_rss, "sonda": leer_sonda}
 
 def leer_fuente(nav: Navegador, cfg: dict, hoy: dt.date, desde: dt.date | None = None) -> ResultadoFuente:
     try:
-        if cfg["lector"] == "radar_musicbrainz":
+        if cfg["lector"] in ("radar_musicbrainz", "radar_deezer"):
             from .config import cargar_config
-            from .radar import leer_radar
-            res = leer_radar(nav, cfg, hoy, desde, cargar_config())
+            from .radar import leer_radar, leer_radar_deezer
+            fn = leer_radar if cfg["lector"] == "radar_musicbrainz" else leer_radar_deezer
+            res = fn(nav, cfg, hoy, desde, cargar_config())
         else:
             res = LECTORES[cfg["lector"]](nav, cfg, hoy, desde)
         if not res.items and cfg["lector"] != "sonda":

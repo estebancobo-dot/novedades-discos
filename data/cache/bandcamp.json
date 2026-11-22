@@ -16,6 +16,22 @@
 "titulo": "Cover To Cover",
 "url": "https://ajleebluesummit.bandcamp.com/album/cover-to-cover"
 },
+"https://alexamen.bandcamp.com/album/sun-of-amen": {
+"artista": "Alex Amen",
+"etiquetas": [
+"Americana",
+"Country",
+"Folk",
+"Laurel Canyon",
+"Los Angeles"
+],
+"fecha": "12 Jun 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a4162959968_10.jpg",
+"sello": "Alex Amen",
+"titulo": "Sun of Amen",
+"url": "https://alexamen.bandcamp.com/album/sun-of-amen"
+},
 "https://alexdupree.bandcamp.com/album/talking-to-the-dog": {
 "artista": "Alex Dupree",
 "etiquetas": [
@@ -33,6 +49,20 @@
 "sello": "Alex Dupree",
 "titulo": "Talking to the Dog",
 "url": "https://alexdupree.bandcamp.com/album/talking-to-the-dog"
+},
+"https://allisonrussell.bandcamp.com/|In the Hour of Chaos": {
+"artista": "Allison Russell",
+"etiquetas": [
+"Pop",
+"Singer Songwriter",
+"Nashville"
+],
+"fecha": "10 Jul 2026 00:00:00 GMT",
+"pistas": 11,
+"portada": "https://f4.bcbits.com/img/a0180851720_10.jpg",
+"sello": "Allison Russell",
+"titulo": "In the Hour of Chaos",
+"url": "https://allisonrussell.bandcamp.com/album/in-the-hour-of-chaos"
 },
 "https://americanaquarium.bandcamp.com/|New Ways to Lose": {
 "artista": "American Aquarium",
@@ -157,6 +187,57 @@
 "url": "https://biitahoudei.bandcamp.com/album/this-bed-was-made-for-me"
 },
 "https://billystrings.bandcamp.com/|So Much for Goodbyes": {},
+"https://birdvox.bandcamp.com/album/shamming-the-drama": {
+"artista": "Birdvox",
+"etiquetas": [
+"Folk",
+"disco",
+"electronica",
+"pop",
+"traditional",
+"United Kingdom"
+],
+"fecha": "18 Sep 2026 00:00:00 GMT",
+"pistas": 12,
+"portada": "https://f4.bcbits.com/img/a1930422632_10.jpg",
+"sello": "Birdvox",
+"titulo": "Shamming The Drama",
+"url": "https://birdvox.bandcamp.com/album/shamming-the-drama"
+},
+"https://blackduck.bandcamp.com/album/black-duck-with-elena-seti-n": {
+"artista": "Black Duck with Elena Setién",
+"etiquetas": [
+"Alternative",
+"chicago",
+"improvised rock",
+"instrumental",
+"Chicago"
+],
+"fecha": "28 Aug 2026 00:00:00 GMT",
+"pistas": 10,
+"portada": "https://f4.bcbits.com/img/a1373860018_10.jpg",
+"sello": "Black Duck",
+"titulo": "Black Duck with Elena Setién",
+"url": "https://blackduck.bandcamp.com/album/black-duck-with-elena-seti-n"
+},
+"https://blindyeo.bandcamp.com/album/the-lemoine-point": {
+"artista": "Blind Yeo",
+"etiquetas": [
+"Experimental",
+"folk",
+"jam band",
+"krautrock",
+"psychedelic",
+"psychedelic rock",
+"Falmouth"
+],
+"fecha": "28 Aug 2026 00:00:00 GMT",
+"pistas": 8,
+"portada": "https://f4.bcbits.com/img/a3315759574_10.jpg",
+"sello": "Blind Yeo",
+"titulo": "The Lemoine Point",
+"url": "https://blindyeo.bandcamp.com/album/the-lemoine-point"
+},
 "https://breakfield.bandcamp.com/album/breakfield": {
 "artista": "Breakfield",
 "etiquetas": [
@@ -174,6 +255,27 @@
 "url": "https://breakfield.bandcamp.com/album/breakfield"
 },
 "https://brucecockburn.bandcamp.com/|The Blood of Others": {},
+"https://cful.bandcamp.com/album/nick-jonah-davis-rose-delta-rising": {
+"artista": "Nick Jonah Davis",
+"etiquetas": [
+"Eiderdown Records",
+"Experimental",
+"Folk",
+"acid folk",
+"cardinal fuzz",
+"garage",
+"kosmiche",
+"krautrock",
+"psychedelic",
+"Leeds"
+],
+"fecha": "04 Sep 2026 00:00:00 GMT",
+"pistas": 8,
+"portada": "https://f4.bcbits.com/img/a1799068867_10.jpg",
+"sello": "Cardinal Fuzz Shop",
+"titulo": "Nick Jonah Davis - Rose Delta Rising",
+"url": "https://cful.bandcamp.com/album/nick-jonah-davis-rose-delta-rising"
+},
 "https://charlieparrmusic.bandcamp.com/album/rooming-house": {
 "artista": "Charlie Parr",
 "etiquetas": [
@@ -187,6 +289,41 @@
 "titulo": "Rooming House",
 "url": "https://charlieparrmusic.bandcamp.com/album/rooming-house"
 },
+"https://chuckroth.bandcamp.com/|Texture Songs": {
+"artista": "Chuck Roth",
+"etiquetas": [
+"Folk",
+"New York"
+],
+"fecha": "30 Oct 2026 00:00:00 GMT",
+"pistas": 7,
+"portada": "https://f4.bcbits.com/img/a4246658989_10.jpg",
+"sello": "Chuck Roth",
+"titulo": "Texture Songs",
+"url": "https://chuckroth.bandcamp.com/album/texture-songs"
+},
+"https://clairerousay.bandcamp.com/album/on-holding": {
+"artista": "claire rousay",
+"etiquetas": [
+"Ambient",
+"Experimental",
+"Field Recording",
+"Musique Concrète",
+"Soft Pedal",
+"ambient",
+"musique concrete",
+"sound art",
+"sound-collage",
+"Los Angeles"
+],
+"fecha": "09 Oct 2026 00:00:00 GMT",
+"pistas": 5,
+"portada": "https://f4.bcbits.com/img/a2370484081_10.jpg",
+"sello": "claire rousay",
+"titulo": "on holding",
+"url": "https://clairerousay.bandcamp.com/album/on-holding"
+},
+"https://claraa.bandcamp.com/|Wishbone": {},
 "https://claytonryan.bandcamp.com/|Gas Station Social Club": {
 "artista": "Clayton Ryan",
 "etiquetas": [
@@ -223,6 +360,22 @@
 "titulo": "One For The Losers",
 "url": "https://colbythelms.bandcamp.com/album/one-for-the-losers"
 },
+"https://colinstetson.bandcamp.com/album/all-the-light-in-the-world": {
+"artista": "Colin Stetson, Brìghde Chaimbeul",
+"etiquetas": [
+"Experimental",
+"Indie",
+"Jazz",
+"instrumental",
+"Montréal"
+],
+"fecha": "11 Sep 2026 00:00:00 GMT",
+"pistas": 8,
+"portada": "https://f4.bcbits.com/img/a0536136244_10.jpg",
+"sello": "Colin Stetson",
+"titulo": "All the light in the world",
+"url": "https://colinstetson.bandcamp.com/album/all-the-light-in-the-world"
+},
 "https://crandthewhitelights.bandcamp.com/|My Old Self": {
 "artista": "CR & The White Lights",
 "etiquetas": [
@@ -240,6 +393,72 @@
 "sello": "CR & The White Lights",
 "titulo": "My Old Self",
 "url": "https://crandthewhitelights.bandcamp.com/album/my-old-self"
+},
+"https://creekbedcarter.bandcamp.com/album/peasants-revolt": {
+"artista": "Creekbed Carter Hogan",
+"etiquetas": [
+"Folk",
+"Minneapolis",
+"americana",
+"americana roots rock",
+"country",
+"country folk",
+"folkpunk",
+"trans",
+"y'allternative",
+"Saint Paul"
+],
+"fecha": "24 Jul 2026 00:00:00 GMT",
+"pistas": 10,
+"portada": "https://f4.bcbits.com/img/a0332414181_10.jpg",
+"sello": "Creekbed Carter Hogan",
+"titulo": "Peasants Revolt",
+"url": "https://creekbedcarter.bandcamp.com/album/peasants-revolt"
+},
+"https://danninicholls.bandcamp.com/album/making-moves": {
+"artista": "Danni Nicholls",
+"etiquetas": [
+"Alternative",
+"Americana",
+"alt-country",
+"country-soul",
+"folk-pop",
+"roots",
+"United Kingdom"
+],
+"fecha": "26 Jun 2026 00:00:00 GMT",
+"pistas": 11,
+"portada": "https://f4.bcbits.com/img/a3601040650_10.jpg",
+"sello": "Danni Nicholls",
+"titulo": "Making Moves",
+"url": "https://danninicholls.bandcamp.com/album/making-moves"
+},
+"https://darrenhayman.bandcamp.com/|I'm Your Team": {
+"artista": "Darren Hayman",
+"etiquetas": [
+"Alternative",
+"Electronic",
+"Electronic Pop",
+"Indie",
+"Synthpop",
+"TR707",
+"downbeat",
+"downtempo",
+"dx7",
+"folk",
+"indie rock",
+"indiepop",
+"minimal",
+"singer-songwriter",
+"syntheziser",
+"United Kingdom"
+],
+"fecha": "16 Oct 2026 00:00:00 GMT",
+"pistas": 10,
+"portada": "https://f4.bcbits.com/img/a0700230143_10.jpg",
+"sello": "Darren Hayman",
+"titulo": "I'm Your Team",
+"url": "https://darrenhayman.bandcamp.com/album/im-your-team"
 },
 "https://dogwoodtales.bandcamp.com/|Every Star in Rockingham County": {
 "artista": "Dogwood Tales",
@@ -259,6 +478,25 @@
 "sello": "Dogwood Tales",
 "titulo": "Every Star in Rockingham County",
 "url": "https://dogwoodtales.bandcamp.com/album/every-star-in-rockingham-county"
+},
+"https://edaskew.bandcamp.com/album/the-final-painting": {
+"artista": "Ed Askew",
+"etiquetas": [
+"Alternative",
+"Folk",
+"art-pop",
+"experimental",
+"indie folk acoustic",
+"indie pop. psych-folk",
+"singer-songwriter",
+"New York"
+],
+"fecha": "31 Jul 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a4042559368_10.jpg",
+"sello": "Ed Askew",
+"titulo": "The Final Painting",
+"url": "https://edaskew.bandcamp.com/album/the-final-painting"
 },
 "https://elanormoss.bandcamp.com/album/the-knife-the-needle": {
 "artista": "Elanor Moss",
@@ -363,6 +601,23 @@
 "titulo": "Something More",
 "url": "https://fruition.bandcamp.com/album/something-more"
 },
+"https://goodhabitsband.bandcamp.com/album/better-for-now": {
+"artista": "Good Habits",
+"etiquetas": [
+"Folk",
+"alternative",
+"folk-pop",
+"indie",
+"indie-folk",
+"Manchester"
+],
+"fecha": "09 Oct 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a0014119694_10.jpg",
+"sello": "Good Habits",
+"titulo": "Better for Now",
+"url": "https://goodhabitsband.bandcamp.com/album/better-for-now"
+},
 "https://graysoncapps.bandcamp.com/album/the-weight-of-the-world-2": {
 "artista": "Grayson Capps",
 "etiquetas": [
@@ -436,6 +691,60 @@
 "titulo": "The Recent Past",
 "url": "https://hayden4.bandcamp.com/album/the-recent-past"
 },
+"https://hollowhand.bandcamp.com/album/wish-road-south": {
+"artista": "Hollow Hand",
+"etiquetas": [
+"Alternative",
+"Brighton",
+"Cosmic Ocean",
+"alternative",
+"alternative rock",
+"folk pop",
+"folk rock",
+"psychedelic folk",
+"Brighton"
+],
+"fecha": "04 Sep 2026 00:00:00 GMT",
+"pistas": 10,
+"portada": "https://f4.bcbits.com/img/a1901196841_10.jpg",
+"sello": "Hollow Hand",
+"titulo": "Wish Road South",
+"url": "https://hollowhand.bandcamp.com/album/wish-road-south"
+},
+"https://hovvdy.bandcamp.com/album/big-world": {
+"artista": "Hovvdy",
+"etiquetas": [
+"Pop",
+"austin",
+"indie",
+"pillowcore",
+"texas",
+"Austin"
+],
+"fecha": "14 Aug 2026 00:00:00 GMT",
+"pistas": 12,
+"portada": "https://f4.bcbits.com/img/a4176954163_10.jpg",
+"sello": "Hovvdy",
+"titulo": "Big World",
+"url": "https://hovvdy.bandcamp.com/album/big-world"
+},
+"https://ismay.bandcamp.com/|Half Truth": {
+"artista": "ISMAY",
+"etiquetas": [
+"Cowboy Psychedelica",
+"Folk",
+"alternative folk",
+"indie folk",
+"nufolk",
+"California"
+],
+"fecha": "12 Jun 2026 00:00:00 GMT",
+"pistas": 11,
+"portada": "https://f4.bcbits.com/img/a1576516082_10.jpg",
+"sello": "ISMAY",
+"titulo": "Half Truth",
+"url": "https://ismay.bandcamp.com/album/half-truth"
+},
 "https://jackbrowning.bandcamp.com/album/painted-skies": {
 "artista": "Jack Browning",
 "etiquetas": [
@@ -476,6 +785,57 @@
 "sello": "Jake Blount",
 "titulo": "Single-Footing Horse",
 "url": "https://jakeblountmusic.bandcamp.com/album/single-footing-horse"
+},
+"https://jakexerxesfussell.bandcamp.com/album/the-old-beloved-path": {
+"artista": "Jake Xerxes Fussell",
+"etiquetas": [
+"Americana",
+"Folk",
+"acoustic",
+"blues",
+"old time",
+"traditional",
+"Durham"
+],
+"fecha": "18 Sep 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a3706101990_10.jpg",
+"sello": "Jake Xerxes Fussell",
+"titulo": "The Old Beloved Path",
+"url": "https://jakexerxesfussell.bandcamp.com/album/the-old-beloved-path"
+},
+"https://jamesfelice1.bandcamp.com/album/homeworld-blue": {
+"artista": "James Felice",
+"etiquetas": [
+"Alternative",
+"Folk",
+"Singer Songwriter",
+"indie",
+"singer-songwriter",
+"Kingston"
+],
+"fecha": "13 Nov 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a3296742934_10.jpg",
+"sello": "James Felice",
+"titulo": "Homeworld Blue",
+"url": "https://jamesfelice1.bandcamp.com/album/homeworld-blue"
+},
+"https://jeffreysilverstein.bandcamp.com/album/doggone": {
+"artista": "Jeffrey Silverstein",
+"etiquetas": [
+"Folk",
+"cosmic country",
+"pedal steel",
+"psych",
+"Portland"
+],
+"fecha": "23 Oct 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a2681705438_10.jpg",
+"sello": "Jeffrey Silverstein",
+"titulo": "Doggone",
+"url": "https://jeffreysilverstein.bandcamp.com/album/doggone"
 },
 "https://jesskerber.bandcamp.com/album/the-world-is-dark-but-i-want-it-to-be-funny": {
 "artista": "Jess Kerber",
@@ -710,6 +1070,20 @@
 "titulo": "Punching the Clown",
 "url": "https://lambchop.bandcamp.com/album/punching-the-clown"
 },
+"https://lauraveirs.bandcamp.com/|Temple Songs": {
+"artista": "Laura Veirs",
+"etiquetas": [
+"Alternative",
+"Indie Folk",
+"Portland"
+],
+"fecha": "14 Aug 2026 00:00:00 GMT",
+"pistas": 11,
+"portada": "https://f4.bcbits.com/img/a3106201116_10.jpg",
+"sello": "Laura Veirs",
+"titulo": "Temple Songs",
+"url": "https://lauraveirs.bandcamp.com/album/temple-songs"
+},
 "https://leoniii.bandcamp.com/album/candy-cigarettes": {
 "artista": "Leon III",
 "etiquetas": [
@@ -725,6 +1099,41 @@
 "sello": "Leon III",
 "titulo": "Candy Cigarettes",
 "url": "https://leoniii.bandcamp.com/album/candy-cigarettes"
+},
+"https://lerenmusic.bandcamp.com/album/dont-be-funny-without-me-2": {
+"artista": "Le Ren",
+"etiquetas": [
+"Americana",
+"Folk",
+"indie folk",
+"singer-songwriter",
+"Montreal"
+],
+"fecha": "28 Aug 2026 00:00:00 GMT",
+"pistas": 10,
+"portada": "https://f4.bcbits.com/img/a1095322684_10.jpg",
+"sello": "Le Ren",
+"titulo": "Don't Be Funny Without Me",
+"url": "https://lerenmusic.bandcamp.com/album/dont-be-funny-without-me-2"
+},
+"https://lesthomasmusic.bandcamp.com/album/i-remember-everything": {
+"artista": "Les Thomas",
+"etiquetas": [
+"Americana",
+"Country",
+"Country-Alt",
+"Folk",
+"rock",
+"roots",
+"singer-songwriter",
+"Melbourne"
+],
+"fecha": "07 Sep 2026 00:00:00 GMT",
+"pistas": 10,
+"portada": "https://f4.bcbits.com/img/a0315104029_10.jpg",
+"sello": "Les Thomas",
+"titulo": "I Remember Everything",
+"url": "https://lesthomasmusic.bandcamp.com/album/i-remember-everything"
 },
 "https://louisebichan.bandcamp.com/album/binnorie": {
 "artista": "Louise Bichan",
@@ -743,7 +1152,44 @@
 "titulo": "Binnorie",
 "url": "https://louisebichan.bandcamp.com/album/binnorie"
 },
+"https://mali-obomsawin.bandcamp.com/album/automatic": {
+"artista": "Mali Obomsawin",
+"etiquetas": [
+"Experimental",
+"Folk",
+"Jazz",
+"Native American",
+"avant-garde",
+"experimental",
+"freak folk",
+"free jazz",
+"indie",
+"modern jazz",
+"psychedelic",
+"rock",
+"Odanak"
+],
+"fecha": "16 Oct 2026 00:00:00 GMT",
+"pistas": 8,
+"portada": "https://f4.bcbits.com/img/a0326142369_10.jpg",
+"sello": "Mali Obomsawin",
+"titulo": "Automatic",
+"url": "https://mali-obomsawin.bandcamp.com/album/automatic"
+},
 "https://mamasbroke.bandcamp.com/|Reunion": {},
+"https://margoprice.bandcamp.com/|Days of Unrest": {
+"artista": "Margo Price",
+"etiquetas": [
+"Country",
+"Nashville"
+],
+"fecha": "03 Jul 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a0179062810_10.jpg",
+"sello": "Margo Price",
+"titulo": "Days Of Unrest",
+"url": "https://margoprice.bandcamp.com/album/days-of-unrest"
+},
 "https://marygauthier.bandcamp.com/album/reckoning-2": {
 "artista": "Mary Gauthier",
 "etiquetas": [
@@ -776,6 +1222,23 @@
 "sello": "Mason Jennings",
 "titulo": "Dark Wings",
 "url": "https://masonjenningsmusic.bandcamp.com/album/dark-wings"
+},
+"https://maxsubar.bandcamp.com/|Anything Could Be": {
+"artista": "Max Subar",
+"etiquetas": [
+"Alternative",
+"Folk",
+"Indie Folk",
+"alt-folk",
+"singer-songwriter",
+"Chicago"
+],
+"fecha": "17 Jul 2026 00:00:00 GMT",
+"pistas": 11,
+"portada": "https://f4.bcbits.com/img/a2666285773_10.jpg",
+"sello": "Max Subar",
+"titulo": "Anything Could Be",
+"url": "https://maxsubar.bandcamp.com/album/anything-could-be"
 },
 "https://mediumbuild.bandcamp.com/|King of Having Fun": {},
 "https://mikeandthemoonpies.bandcamp.com/|Living Proof": {},
@@ -814,6 +1277,31 @@
 "titulo": "At One With Nature",
 "url": "https://mrplowsplace.bandcamp.com/album/at-one-with-nature"
 },
+"https://mssailingstones.bandcamp.com/|Slow Magic": {
+"artista": "SAILING STONES",
+"etiquetas": [
+"Folk",
+"colours",
+"folk",
+"folk pop",
+"folk rock",
+"folk singer songwriter",
+"motherhood",
+"pop folk",
+"psychedelic pop",
+"psychedlic folk",
+"singer songwriter",
+"tape delay",
+"woodwinds",
+"Bristol"
+],
+"fecha": "03 Jul 2026 00:00:00 GMT",
+"pistas": 13,
+"portada": "https://f4.bcbits.com/img/a1624084946_10.jpg",
+"sello": "SAILING STONES",
+"titulo": "Slow Magic",
+"url": "https://mssailingstones.bandcamp.com/album/slow-magic"
+},
 "https://mygirltheriver.bandcamp.com/album/manifest-good-things": {
 "artista": "My Girl The River",
 "etiquetas": [
@@ -845,6 +1333,22 @@
 "titulo": "Canary",
 "url": "https://oisinmod.bandcamp.com/album/canary"
 },
+"https://orenambarchi.bandcamp.com/album/cooked": {
+"artista": "Oren Ambarchi",
+"etiquetas": [
+"Alternative",
+"Experimental",
+"electronics",
+"guitar",
+"Australia"
+],
+"fecha": "25 Sep 2026 00:00:00 GMT",
+"pistas": 2,
+"portada": "https://f4.bcbits.com/img/a1416117140_10.jpg",
+"sello": "Oren Ambarchi",
+"titulo": "Cooked",
+"url": "https://orenambarchi.bandcamp.com/album/cooked"
+},
 "https://orvillepeck.bandcamp.com/|Mule": {},
 "https://penelopeisles.bandcamp.com/album/3": {
 "artista": "Penelope Isles",
@@ -862,6 +1366,35 @@
 "sello": "Penelope Isles",
 "titulo": "3",
 "url": "https://penelopeisles.bandcamp.com/album/3"
+},
+"https://personaltrainer.bandcamp.com/album/human-assholes": {
+"artista": "Personal Trainer",
+"etiquetas": [
+"Alternative",
+"indie rock",
+"pop rock",
+"Amsterdam"
+],
+"fecha": "04 Sep 2026 00:00:00 GMT",
+"pistas": 15,
+"portada": "https://f4.bcbits.com/img/a0838110759_10.jpg",
+"sello": "Personal Trainer",
+"titulo": "Human Assholes",
+"url": "https://personaltrainer.bandcamp.com/album/human-assholes"
+},
+"https://radiepeat.bandcamp.com/album/no-human-tongue-can-tell": {
+"artista": "Radie Peat",
+"etiquetas": [
+"Alternative",
+"Folk",
+"Dublin"
+],
+"fecha": "13 Nov 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a1331629048_10.jpg",
+"sello": "Radie Peat",
+"titulo": "No Human Tongue Can Tell",
+"url": "https://radiepeat.bandcamp.com/album/no-human-tongue-can-tell"
 },
 "https://raylandbaxtertn.bandcamp.com/album/true-violet": {
 "artista": "Rayland Baxter",
@@ -927,6 +1460,26 @@
 "titulo": "The Underworld",
 "url": "https://sadurn.bandcamp.com/album/the-underworld"
 },
+"https://sairie.bandcamp.com/album/beneath-the-spreading-tree": {
+"artista": "Sairie",
+"etiquetas": [
+"Alternative",
+"Experimental",
+"Folk",
+"alternative",
+"experimental folk",
+"ghost folkk",
+"psych folk",
+"psychedelic",
+"Brighton"
+],
+"fecha": "12 Sep 2026 00:00:00 GMT",
+"pistas": 9,
+"portada": "https://f4.bcbits.com/img/a3100353089_10.jpg",
+"sello": "Sairie",
+"titulo": "Beneath the Spreading Tree",
+"url": "https://sairie.bandcamp.com/album/beneath-the-spreading-tree"
+},
 "https://sammorrow.bandcamp.com/|Southern Boogie": {},
 "https://schaeferllana.bandcamp.com/album/full-circle": {
 "artista": "Schaefer Llana",
@@ -944,6 +1497,29 @@
 "sello": "Schaefer Llana",
 "titulo": "Full Circle",
 "url": "https://schaeferllana.bandcamp.com/album/full-circle"
+},
+"https://scottcook.bandcamp.com/album/troubadourly-yours-2": {
+"artista": "Scott Cook",
+"etiquetas": [
+"Americana",
+"Contemporary Folk",
+"Folk",
+"Woody Guthrie",
+"acoustic",
+"contemporary folk",
+"fingerstyle",
+"indie",
+"roots",
+"songwriter",
+"storytelling",
+"Edmonton"
+],
+"fecha": "21 Aug 2026 00:00:00 GMT",
+"pistas": 10,
+"portada": "https://f4.bcbits.com/img/a2742029395_10.jpg",
+"sello": "Scott Cook",
+"titulo": "Troubadourly Yours",
+"url": "https://scottcook.bandcamp.com/album/troubadourly-yours-2"
 },
 "https://shaboozey.bandcamp.com/|The Outlaw Cherie Lee & Other Western Tales": {
 "artista": "Shaboozey",
@@ -976,7 +1552,48 @@
 "titulo": "Take the Case of a Rose",
 "url": "https://shainahayes.bandcamp.com/album/take-the-case-of-a-rose"
 },
+"https://shoveldancecollective.bandcamp.com/album/everything-in-readiness": {
+"artista": "Shovel Dance Collective",
+"etiquetas": [
+"Experimental",
+"Folk",
+"drone",
+"drone folk",
+"experimental folk",
+"free improvisation",
+"trad",
+"traditional",
+"London"
+],
+"fecha": "23 Oct 2026 00:00:00 GMT",
+"pistas": 11,
+"portada": "https://f4.bcbits.com/img/a2239101519_10.jpg",
+"sello": "Shovel Dance Collective",
+"titulo": "Everything in Readiness",
+"url": "https://shoveldancecollective.bandcamp.com/album/everything-in-readiness"
+},
 "https://sorrelnationmusic.bandcamp.com/|Creeping Thyme": {},
+"https://sourdure.bandcamp.com/album/outredore-2": {
+"artista": "sourdure",
+"etiquetas": [
+"Experimental Folklore",
+"Folk",
+"carnivalesque",
+"experimental folklore",
+"musique concrete",
+"occitan",
+"poetry",
+"psychedelic",
+"traditionnel",
+"Thiers"
+],
+"fecha": "25 Sep 2026 00:00:00 GMT",
+"pistas": 10,
+"portada": "https://f4.bcbits.com/img/a1342485171_10.jpg",
+"sello": "sourdure",
+"titulo": "Outredore",
+"url": "https://sourdure.bandcamp.com/album/outredore-2"
+},
 "https://startercar.bandcamp.com/album/afterlight": {
 "artista": "Starter Car",
 "etiquetas": [
@@ -1018,6 +1635,7 @@
 "titulo": "Mother Moon",
 "url": "https://strangemono.bandcamp.com/album/mother-moon"
 },
+"https://swampdogg.bandcamp.com/|Swamp Dogg Contemplates the Afterlife": {},
 "https://sylvie-music.bandcamp.com/album/new-season": {
 "artista": "Sylvie",
 "etiquetas": [
@@ -1068,6 +1686,23 @@
 "titulo": "Do Not Dare To Dream",
 "url": "https://teenage-fanclub.bandcamp.com/album/do-not-dare-to-dream"
 },
+"https://thehangingstars.bandcamp.com/|Just A Day": {
+"artista": "The Hanging Stars",
+"etiquetas": [
+"Cosmic American Music",
+"Country",
+"Folk",
+"jangle pop",
+"psychedelic rock",
+"London"
+],
+"fecha": "19 Jun 2026 00:00:00 GMT",
+"pistas": 12,
+"portada": "https://f4.bcbits.com/img/a2461540339_10.jpg",
+"sello": "The Hanging Stars",
+"titulo": "Just A Day",
+"url": "https://thehangingstars.bandcamp.com/album/just-a-day"
+},
 "https://thejayhawks.bandcamp.com/|Sanctuary Park": {
 "artista": "The Jayhawks",
 "etiquetas": [
@@ -1099,6 +1734,24 @@
 "titulo": "Even Cowgirls Get Sad",
 "url": "https://thenorthernbelle.bandcamp.com/album/even-cowgirls-get-sad"
 },
+"https://theowlservice.bandcamp.com/album/tied-to-the-land": {
+"artista": "The Owl Service",
+"etiquetas": [
+"Acid Folk",
+"English Folk",
+"Folk",
+"Folk Rock",
+"Garage Folk",
+"Psych Folk",
+"Leigh On Sea"
+],
+"fecha": "16 Oct 2026 00:00:00 GMT",
+"pistas": 12,
+"portada": "https://f4.bcbits.com/img/a0624963805_10.jpg",
+"sello": "The Owl Service",
+"titulo": "Tied to the Land",
+"url": "https://theowlservice.bandcamp.com/album/tied-to-the-land"
+},
 "https://theporamblinboys.bandcamp.com/|Welcome To The Club": {},
 "https://thisislorelei.bandcamp.com/album/the-singer-in-my-band": {
 "artista": "This is Lorelei",
@@ -1129,6 +1782,41 @@
 "sello": "Todd Snider",
 "titulo": "My Second Rodeo",
 "url": "https://toddsnider.bandcamp.com/album/my-second-rodeo"
+},
+"https://toriawooff.bandcamp.com/album/aleister-releases-12th-january": {
+"artista": "Toria Wooff",
+"etiquetas": [
+"Americana",
+"Folk",
+"folk",
+"folk rock",
+"gothic",
+"Bolton"
+],
+"fecha": "15 Jan 2027 00:00:00 GMT",
+"pistas": 11,
+"portada": "https://f4.bcbits.com/img/a1921460927_10.jpg",
+"sello": "Toria Wooff",
+"titulo": "Aleister",
+"url": "https://toriawooff.bandcamp.com/album/aleister"
+},
+"https://trawfawdeen.bandcamp.com/album/cloch-s-cla": {
+"artista": "Trá Pháidín",
+"etiquetas": [
+"Devotional",
+"Folk",
+"Gaelic song",
+"drone",
+"krautrock",
+"traditional",
+"Galway"
+],
+"fecha": "25 Sep 2026 00:00:00 GMT",
+"pistas": 10,
+"portada": "https://f4.bcbits.com/img/a3885529484_10.jpg",
+"sello": "Trá Pháidín",
+"titulo": "Cloch 's Claí",
+"url": "https://trawfawdeen.bandcamp.com/album/cloch-s-cla"
 },
 "https://treverkeith.bandcamp.com/|We Drank From A Poisoned Well": {},
 "https://tworunner.bandcamp.com/|Porchlight": {
