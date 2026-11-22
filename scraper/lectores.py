@@ -155,6 +155,9 @@ def _detalle(nav: Navegador, it: Item, cfg: dict, hoy: dt.date) -> list[Item]:
         for h in hijos:
             h.fecha_tipo = it.fecha_tipo
             h.fecha_publicacion = it.fecha_publicacion or fpag
+            h.anio = h.anio or it.anio                       # p. ej. el año de una lista de fin de año
+            if cfg.get("heredar_nombre") and not h.extra:    # nombre de la lista (medio: título)
+                h.extra = f"{it.artista}: {it.titulo}".strip(": ")
             h.url = h.url or it.url
         return hijos
     for campo, rx in (cfg.get("campos") or {}).items():
@@ -193,6 +196,8 @@ def _urls(cfg: dict, hoy: dt.date | None = None, desde: dt.date | None = None) -
         hasta_a = hoy_.year if str(an.get("hasta", "actual")) == "actual" else int(an["hasta"])
         for a in range(int(an.get("desde", hasta_a)), hasta_a + 1):
             urls.append(an["plantilla"].format(anio=a))
+            for n in range(2, int(an.get("paginas", 1)) + 1):     # páginas dentro de cada año
+                urls.append(an["plantilla_pagina"].format(anio=a, n=n))
     fx = pag.get("fechas")
     if fx:
         hoy = hoy or dt.date.today()
@@ -251,7 +256,7 @@ def leer_texto(nav, cfg, hoy, desde=None) -> ResultadoFuente:
         if cfg.get("rol") == "lista_anual" and cfg.get("anio_desde_url"):
             ma = re.search(cfg["anio_desde_url"], url)
             for it in nuevos:
-                it.anio = int(ma.group(1)) if ma else None
+                it.anio = it.anio or (int(ma.group(1)) if ma else None)
         for it in nuevos:
             it.fecha_tipo = cfg.get("fecha_es", "lanzamiento")
             if it.fecha_tipo == "publicacion":

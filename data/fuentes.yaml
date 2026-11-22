@@ -809,6 +809,29 @@ fuentes:
   patrones:
     - '^#+\s*(?:\d+\.\s*)?(?P<artista>[^–«#\n]+?)\s*–\s*«(?P<titulo>[^»]+)»'
 
+- id: yearendlists
+  nombre: Year End Lists – listas de discos del año (Mojo, Uncut, Decibel, AllMusic, Clash…)
+  web: https://www.yearendlists.com
+  familia: todas
+  rol: lista_anual
+  lista_por_item: true          # cada lista cuenta por separado (medio: título)
+  lector: texto
+  anio_desde_url: '/(\d{4})/'
+  urls: []
+  paginacion:
+    anios: {plantilla: "https://www.yearendlists.com/category/{anio}-albums", plantilla_pagina: "https://www.yearendlists.com/category/{anio}-albums/page/{n}", paginas: 8, desde: 2025, hasta: actual}
+  texto:
+    enlaces: true
+    marcas: {"strong, b": ["**", "**"], "h2, h3, h4": ["##", ""]}
+  patrones:
+    - '⟦(?P<url>https://www\.yearendlists\.com/(?P<anio>20\d\d)/[^⟧]+)⟧\n##\n\*\*(?P<artista>[^*\n]+)\*\*\n(?P<titulo>[^\n⟦]+)'
+  detalle:
+    max: 400
+    heredar_nombre: true
+    texto: {enlaces: true}
+    patrones:
+      - '⟦[^⟧]*/artists/[^⟧]*⟧(?P<artista>[^\n⟦]+)\n⟦[^⟧]*/albums/[^⟧]*⟧(?P<titulo>[^\n⟦]+)'
+
 # ============================================================ SONDAS
 - id: bandcamp
   nombre: Bandcamp (comprobar si sigue bloqueado)

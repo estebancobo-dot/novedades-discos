@@ -205,6 +205,7 @@ sus condiciones: identificarse y 1 petición/s. Está declarada como excepción 
 | Get Ready to ROCK!: Reviewer selections | Hard rock / rock | 2025 (dirección con número) | ✅ |
 | Paste: The 50 best albums | Todas (indie sobre todo) | 2025 (plantilla) | ✅ |
 | Beats Per Minute: Top 50 | Todas (indie sobre todo) | 2025 (plantilla) | ✅ |
+| **Year End Lists** (yearendlists.com): todas las listas de discos del año (Mojo, Uncut, Decibel, AllMusic, Clash, Rough Trade, críticos…) | Todas | 2025 (≈135 listas) y 2026 (las que se van publicando) | ✅ Sugerida por el usuario. `robots.txt` solo prohíbe `/search`. Incluye las de **AllMusic**, que no se puede leer directamente |
 | Treble: 50 best | — | — | ❌ Verificación de Cloudflare |
 | Whiskey Riff: 40 best, Loudwire: best rock & metal | — | — | ❌ La lista no está en la página (se carga aparte) |
 

@@ -122,8 +122,9 @@ def main():
             if it.anio:
                 e = listas[str(it.anio)].setdefault(clave(it.artista, it.titulo),
                                                     {"artista": it.artista, "titulo": it.titulo, "listas": [], "familias": []})
-                if f["nombre"] not in e["listas"]:
-                    e["listas"].append(f["nombre"])
+                nombre_lista = (it.extra if f.get("lista_por_item") and it.extra else f["nombre"])
+                if nombre_lista not in e["listas"]:
+                    e["listas"].append(nombre_lista)
                 if f.get("familia") and f["familia"] not in e["familias"]:
                     e["familias"].append(f["familia"])
             continue
