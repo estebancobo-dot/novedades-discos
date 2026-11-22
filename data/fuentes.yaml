@@ -490,6 +490,70 @@ fuentes:
     patrones:
       - '^(?P<artista>[^\n⟦]+)\n⟦(?P<url>https://[^⟧]+/album/[^⟧]+)⟧(?P<titulo>[^\n]+)$'
 
+# ============================================================ FAMILIAS "EN FOCO" (rock, indie, punk, blues…)
+- id: stereogum_aotw
+  nombre: Stereogum – Album of the Week
+  web: https://www.stereogum.com
+  familia: todas
+  rol: resena
+  mixta: true
+  lector: rss
+  urls: [https://www.stereogum.com/category/reviews/album-of-the-week/feed/]
+  filtro: '^Album Of The Week'
+  patrones:
+    - '^Album Of The Week:\s*(?P<mencion>.+)$'
+
+- id: bluesblast
+  nombre: Blues Blast Magazine – reseñas
+  web: https://www.bluesblastmagazine.com
+  familia: todas
+  rol: resena
+  mixta: true
+  lector: rss
+  urls: [https://www.bluesblastmagazine.com/feed/]
+  paginacion: {plantilla: "https://www.bluesblastmagazine.com/feed/?paged={n}", desde: 2, hasta: 40}
+  filtro: '\|\s*Album Review'
+  patrones:
+    - '^(?P<artista>.+?)\s+[–-]\s+(?P<titulo>.+?)\s*\|\s*Album Review\s*$'
+
+- id: bluesrockreview
+  nombre: Blues Rock Review
+  web: https://bluesrockreview.com
+  familia: todas
+  rol: resena
+  mixta: true
+  lector: rss
+  urls: [https://bluesrockreview.com/feed]
+  paginacion: {plantilla: "https://bluesrockreview.com/feed?paged={n}", desde: 2, hasta: 30}
+  patrones:
+    - '^(?P<artista>[^:\n]{2,60}):\s*(?P<titulo>.+?)\s+Review$'
+    - '^(?P<mencion>.+)\s+Review$'
+    - '(?i)^{{ART}}\s+{{VERBO}}\b[^“"‘\n]*?\b(?:album|LP|record)\b'
+
+- id: dyingscene
+  nombre: Dying Scene (punk)
+  web: https://dyingscene.com
+  familia: todas
+  rol: resena
+  mixta: true
+  lector: rss
+  urls: [https://dyingscene.com/feed/]
+  paginacion: {plantilla: "https://dyingscene.com/feed/?paged={n}", desde: 2, hasta: 30}
+  patrones:
+    - '^Dying Scene Album Review:\s*(?P<artista>.+?)\s+[–-]\s+{{T}}'
+
+- id: quietus
+  nombre: The Quietus
+  web: https://thequietus.com
+  familia: todas
+  rol: noticia
+  mixta: true
+  lector: rss
+  urls: [https://thequietus.com/feed/]
+  paginacion: {plantilla: "https://thequietus.com/feed/?paged={n}", desde: 2, hasta: 30}
+  excluir: '(?i)reissue|anniversary|interview|festival|live album'
+  patrones: *noticias
+
 # ============================================================ RADAR DE ARTISTAS
 # Idea de Thrasher2020/home-assistant-upcoming-music-releases: todos los álbumes de
 # MusicBrainz con fecha en la ventana, cruzados con los artistas de nuestras familias.

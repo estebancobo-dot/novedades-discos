@@ -177,6 +177,20 @@ sus condiciones: identificarse y 1 petición/s. Está declarada como excepción 
 | **The Line of Best Fit: Album release schedule** | ✅ Nueva | Agenda de lanzamientos por fecha, con los EP marcados; unos 180 discos |
 | **Radar de artistas (Deezer)** | ✅ Nuevo | Discografía al día de nuestros artistas (idea de ydniM/Music-Releases-Feed). Solo artistas con nombre único en Deezer y solo lanzamientos de tipo álbum |
 
+### Fuentes para las familias "en foco" (tarea 17, 22-nov)
+
+| Fuente | Estado | Uso |
+|---|---|---|
+| Stereogum: Album of the Week | ✅ | Reseña semanal (indie, a veces country): "reseñado en" |
+| Blues Blast Magazine | ✅ | Reseñas de blues `Artista – Título \| Album Review` |
+| Blues Rock Review | ✅ | Reseñas `Artista: Título Review` y anuncios |
+| Dying Scene | ✅ | Reseñas de punk `Dying Scene Album Review: Artista – "Título"` |
+| The Quietus | ✅ | Noticias de discos (patrones de noticias) |
+| American Blues Scene | ⚠️ No se usa | Solo artículos e historia, sin discos nuevos |
+| Metal Injection: The Weekly Injection | ❌ | El RSS solo trae un resumen y los artículos piden la verificación de Cloudflare |
+| BrooklynVegan | ❌ | Su `robots.txt` no permite el feed de novedades |
+| Punknews | ❌ | El RSS de reseñas no existe (404) |
+
 ## 7. Resumen
 
 - **En uso: 30 fuentes activas en `data/fuentes.yaml`.** Son 13 de prensa y listados de country, 8 de hard rock, 2 generalistas (Pause & Play y Bandcamp Daily), 6 de sellos y la comprobación de Bandcamp. Hay otras 3 desactivadas: Americana Highways, pendiente de tu OK, y Sleaze Roxx y Rock & Blues Muse, por su `robots.txt`. A eso se suma el enriquecimiento con MusicBrainz, Cover Art Archive y Bandcamp. Las que fallen o se bloqueen en una ejecución quedan anotadas en `data/estado_fuentes.json` y en el informe.
