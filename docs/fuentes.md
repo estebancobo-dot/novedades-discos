@@ -148,6 +148,23 @@ sus condiciones: identificarse y 1 petición/s. Está declarada como excepción 
 | GurnB/Upcoming_Album_Release_Schedule, vir-malhotra/metacritic-scraper, joelzehring/new-music-scraper | Leen Metacritic o AllMusic | ❌ Esas webs bloquean a los robots (Cloudflare) |
 | hmlON/mun, ChrisSmith/AlbumTracker | Avisos de discos nuevos de tus artistas | 💡 Idea para "Mi lista": avisar cuando un artista guardado anuncie disco |
 
+### Repositorios de la búsqueda del usuario (capturas, 22-nov)
+
+| Repositorio / web | Qué hace | Qué se aprovecha |
+|---|---|---|
+| **JamieAfterlife/new-music-releases (DropSignal)** | Lista de artistas vigilada con MusicBrainz → RSS, página web y resumen diario | ✅ **Revisar cada vez los últimos 45 días** (MusicBrainz recibe datos tarde) · ✅ **RSS** por disco · ✅ enlaces exactos desde MusicBrainz y, si no hay, **enlace de búsqueda** en cada servicio |
+| **jamj1m88/music-release-scout** | Tres "carriles" (tus artistas, artistas parecidos, prensa) y resumen semanal | ✅ **API de búsqueda de iTunes** (sin clave): enlace a Apple Music, nº de pistas y **género** · 💡 puntuar más los discos que salen por varios carriles |
+| **roberto-cabal/new-albums** | Página que junta listas curadas (Needle Drop, Pitchfork BNA, Stereogum, The Quietus) | ✅ Filtro **"en 2+ listas"** para "lo mejor" · ✅ **API pública de Deezer** y de iTunes para escuchar · ✅ enlaces directos sólidos frente a búsquedas punteadas · ✅ enlace de **búsqueda en AOTY** para que la persona vea la nota (sin leer AOTY) |
+| **ydniM/Music-Releases-Feed** | Novedades de una lista de artistas con **Deezer** | ✅ **Deezer como radar sin clave**: discografía al día con fecha y tipo (álbum/EP/single). Comprobado: Kaitlin Butts → *Hello, Honky Tonk* (30-oct-2026). A diferencia de ReccoBeats, está actualizado |
+| tomasdrobnik/new-albums | Lista semanal de una web checa → página y playlist de Spotify | 💡 Secciones plegables por género y aviso por correo con secretos SMTP. Confirma que Spotify exige Premium desde febrero de 2026 |
+| dkozynko/music-album-releases | Wiki anual de r/postrock y Sputnikmusic | ❌ Otro género; Reddit no se puede leer |
+| purarue/albums | Listas de discos aclamados (1001 discos, Rolling Stone 500…) | 💡 Para "lo mejor de cada año" (histórico) |
+| MoonWalker440/Music-Megathread | Lista enorme de recursos | 💡 Nada nuevo para nuestros géneros salvo Metal Tracker (descargas) |
+| Federico0284364/latest-album-releases, savannah-hayes/music-releases, jessicaraepetersen/happyfridays, Better-Release-Radar, musicreleases.github.io | Radares con Spotify | ❌ Spotify exige Premium |
+| newalbumreleases.net, downtify, SoulSync | Descargas de música | ❌ No se usan webs ni herramientas de descarga |
+| hitsculture.com | Novedades de R&B y hip-hop | ❌ Fuera de nuestras familias |
+| Pitchfork: *New Music Releases and Upcoming Albums 2026–2027* | Lista de próximos discos | 💡 Candidata a fuente de "próximamente" (por verificar) |
+
 ## 7. Resumen
 
 - **En uso: 30 fuentes activas en `data/fuentes.yaml`.** Son 13 de prensa y listados de country, 8 de hard rock, 2 generalistas (Pause & Play y Bandcamp Daily), 6 de sellos y la comprobación de Bandcamp. Hay otras 3 desactivadas: Americana Highways, pendiente de tu OK, y Sleaze Roxx y Rock & Blues Muse, por su `robots.txt`. A eso se suma el enriquecimiento con MusicBrainz, Cover Art Archive y Bandcamp. Las que fallen o se bloqueen en una ejecución quedan anotadas en `data/estado_fuentes.json` y en el informe.

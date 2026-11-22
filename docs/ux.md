@@ -94,6 +94,8 @@ Tiene cosas que esta web todavía no tiene: **"Mis conciertos" guardados en el m
 8. **Instalable como app** y con caché sin conexión (*service worker*), como tu agenda.
 9. **Saltar a un mes** con un índice de meses.
 10. **Destacados** (al estilo "Editor's Choice") y **descripción de cada subgénero** al tocar su chip.
+12. **Escuchar sin cuentas:** reproductor de **Deezer** incrustado (fragmentos de 30 s, gratis) y enlaces a Apple Music y Deezer. Los enlaces directos van en botón sólido y las búsquedas (Spotify, YouTube Music, Bandcamp) en botón punteado, como en roberto-cabal/new-albums.
+13. **"Ver nota en AOTY / Metacritic / RYM":** enlaces de búsqueda que abre la persona en su navegador. Esta web no lee esas páginas.
 11. **Extracto de la reseña** junto a la nota, cuando el feed lo dé.
 
 **Más adelante:**
