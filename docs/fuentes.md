@@ -191,6 +191,23 @@ sus condiciones: identificarse y 1 petición/s. Está declarada como excepción 
 | BrooklynVegan | ❌ | Su `robots.txt` no permite el feed de novedades |
 | Punknews | ❌ | El RSS de reseñas no existe (404) |
 
+### Listas de fin de año (para "Lo mejor de cada año")
+
+| Lista | Familia | Años | Estado |
+|---|---|---|---|
+| Heavy Harmonies: Best CDs | Hard rock / AOR | 2019–2025 (2016–2018 tienen otro formato) | ✅ |
+| Saving Country Music: Essential Albums | Country / Americana | 2020–2025 | ✅ |
+| Saving Country Music: AOTY nominees | Country / Americana | 2025 | ✅ |
+| Holler: Best Country Music Albums | Country | 2025 (plantilla por año) | ✅ |
+| Country Universe: The Forty Best | Country | 2025 (dirección con fecha: se añade cada año) | ✅ |
+| Rush On Rock: Best melodic rock albums | Hard rock / AOR | 2025 (dirección con fecha) | ✅ |
+| Classic Rock (Louder): 50 best rock albums | Hard rock / rock | 2025 (plantilla) | ✅ |
+| Get Ready to ROCK!: Reviewer selections | Hard rock / rock | 2025 (dirección con número) | ✅ |
+| Paste: The 50 best albums | Todas (indie sobre todo) | 2025 (plantilla) | ✅ |
+| Beats Per Minute: Top 50 | Todas (indie sobre todo) | 2025 (plantilla) | ✅ |
+| Treble: 50 best | — | — | ❌ Verificación de Cloudflare |
+| Whiskey Riff: 40 best, Loudwire: best rock & metal | — | — | ❌ La lista no está en la página (se carga aparte) |
+
 ## 7. Resumen
 
 - **En uso: 30 fuentes activas en `data/fuentes.yaml`.** Son 13 de prensa y listados de country, 8 de hard rock, 2 generalistas (Pause & Play y Bandcamp Daily), 6 de sellos y la comprobación de Bandcamp. Hay otras 3 desactivadas: Americana Highways, pendiente de tu OK, y Sleaze Roxx y Rock & Blues Muse, por su `robots.txt`. A eso se suma el enriquecimiento con MusicBrainz, Cover Art Archive y Bandcamp. Las que fallen o se bloqueen en una ejecución quedan anotadas en `data/estado_fuentes.json` y en el informe.

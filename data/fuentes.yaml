@@ -709,6 +709,106 @@ fuentes:
   patrones:
     - '^\**(?P<artista>[^–«\n*]{2,60}?)\s*–\s*«\s*(?P<titulo>[^»]+?)\s*»\s*\**\s*$'
 
+- id: holler_mejores
+  nombre: Holler – Best Country Music Albums
+  web: https://holler.country
+  familia: country
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: 'albums-(\d{4})'
+  urls: []
+  paginacion:
+    anios: {plantilla: "https://holler.country/lists/essentials/best-country-music-albums-{anio}/", desde: 2024, hasta: actual}
+  texto:
+    marcas: {"h2, h3, h4": ["##", ""]}
+  patrones:
+    - '^#+\s*(?:\d+\.\s*)?(?P<artista>[^#\n]{2,60}?)\s+[-–]\s+(?P<titulo>[^\n]{1,100})$'
+
+- id: countryuniverse_mejores
+  nombre: Country Universe – The Forty Best Country Albums
+  web: https://www.countryuniverse.net
+  familia: country
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: 'albums-of-(\d{4})'
+  urls: ["https://www.countryuniverse.net/2026/01/31/the-forty-best-country-albums-of-2025/"]
+  texto:
+    selector: article
+    marcas: {"em, i": "«»", "strong, b": ["**", "**"]}
+  patrones:
+    - '^\*\*(?P<artista>[^*\n]{2,60})\*\*\n«(?P<titulo>[^»\n]+)»'
+
+- id: rushonrock_mejores
+  nombre: Rush On Rock – The best melodic rock albums
+  web: https://rushonrock.com
+  familia: hardrock
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: 'albums-of-(\d{4})'
+  urls: ["https://rushonrock.com/2025/12/21/the-best-melodic-rock-albums-of-2025/"]
+  texto:
+    marcas: {"em, i": "«»", "h2, h3, h4": ["##", ""]}
+  patrones:
+    - '^##\s*\d+\.\s*(?P<artista>[^–«\n]+?)\s*–\s*«(?P<titulo>[^»]+)»'
+
+- id: louder_mejores
+  nombre: Classic Rock (Louder) – 50 best rock albums
+  web: https://www.loudersound.com
+  familia: hardrock
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: 'albums-(\d{4})'
+  urls: []
+  paginacion:
+    anios: {plantilla: "https://www.loudersound.com/bands-artists/classic-rock-50-best-albums-{anio}", desde: 2025, hasta: actual}
+  texto:
+    marcas: {"strong, b": ["**", "**"]}
+  patrones:
+    - '^\*\*(?P<artista>[^*\n]{2,60}?)\s+-\s+(?P<titulo>[^*\n(]{1,100}?)\s*(?:\((?P<sello>[^)\n]+)\))?\*\*\s*$'
+
+- id: grtr_mejores
+  nombre: Get Ready to ROCK! – Reviewer Selections
+  web: https://www.getreadytorock.me.uk
+  familia: hardrock
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: 'anio=(\d{4})'
+  urls: ["https://getreadytorock.me.uk/blog/?p=105829#anio=2025"]
+  texto:
+    marcas: {"strong, b": ["**", "**"]}
+  patrones:
+    - '^[A-Z][A-Za-z &/-]{2,40}:\s*\*\*(?P<artista>[A-Z0-9][A-Z0-9 .&''!/-]+?)\s+(?P<titulo>[A-Z0-9][a-z0-9][^*\n]*)\*\*'
+
+- id: paste_mejores
+  nombre: Paste – The 50 best albums
+  web: https://www.pastemagazine.com
+  familia: todas
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: 'albums-of-(\d{4})'
+  urls: []
+  paginacion:
+    anios: {plantilla: "https://www.pastemagazine.com/music/best-albums/the-50-best-albums-of-{anio}", desde: 2025, hasta: actual}
+  texto:
+    marcas: {"em, i": "«»", "h2, h3, h4": ["##", ""]}
+  patrones:
+    - '^##\s*\d+\.\s*(?P<artista>[^:«\n]+?):\s*«(?P<titulo>[^»]+)»'
+
+- id: bpm_mejores
+  nombre: Beats Per Minute – Top 50 albums
+  web: https://beatsperminute.com
+  familia: todas
+  rol: lista_anual
+  lector: texto
+  anio_desde_url: 'albums-of-(\d{4})'
+  urls: []
+  paginacion:
+    anios: {plantilla: "https://beatsperminute.com/bpms-top-50-albums-of-{anio}/", desde: 2025, hasta: actual}
+  texto:
+    marcas: {"em, i": "«»", "h2, h3, h4": ["##", ""]}
+  patrones:
+    - '^#+\s*(?:\d+\.\s*)?(?P<artista>[^–«#\n]+?)\s*–\s*«(?P<titulo>[^»]+)»'
+
 # ============================================================ SONDAS
 - id: bandcamp
   nombre: Bandcamp (comprobar si sigue bloqueado)
