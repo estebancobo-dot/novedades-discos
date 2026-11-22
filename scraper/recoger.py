@@ -301,7 +301,13 @@ def main():
     p_listas = ruta(config["rutas"].get("listas_anuales", "data/listas_anuales.json"))
     previas = json.load(open(p_listas, encoding="utf-8")) if os.path.exists(p_listas) else {}
     for anio, entradas in listas.items():
-        previas.setdefault(anio, {}).update(entradas)
+        del_anio = previas.setdefault(anio, {})
+        for k, e in entradas.items():          # se suman las listas, no se sustituyen
+            if k in del_anio:
+                for campo in ("listas", "familias"):
+                    del_anio[k][campo] = del_anio[k].get(campo, []) + [x for x in e.get(campo, []) if x not in del_anio[k].get(campo, [])]
+            else:
+                del_anio[k] = e
     if listas or previas:
         _escribir(p_listas, previas)
     for s_ in salida:
