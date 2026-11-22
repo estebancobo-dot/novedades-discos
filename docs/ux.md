@@ -1,9 +1,13 @@
 # UX: cómo es la web y cómo se compara
 
 Estudio del 22-nov-2026. Las capturas del nicho se hicieron en un iPhone 13 simulado.
-Album of the Year, Rate Your Music, Metacritic y AllMusic **no se pudieron abrir**, porque piden la
-verificación anti-bots de Cloudflare. Lo que se dice de ellas sale de su registro de cambios público
-y de búsquedas, y se indica así.
+
+**Cómo se analizaron Album of the Year, Rate Your Music, Metacritic y AllMusic:** no se pueden abrir
+de forma automática, porque piden la verificación anti-bots de Cloudflare, y las copias del Internet
+Archive se descartaron por la misma razón. Sus funciones salen de lo que publican sobre sí mismas:
+el registro de cambios de AOTY (citado en búsquedas), los artículos de Wikipedia sobre RYM,
+Metacritic y AllMusic, y reseñas o fichas en directorios. **Falta ver su interfaz real.** Para
+completarlo, lo mejor son capturas hechas desde un móvil por una persona (ver el final).
 
 ## 1. Cómo es nuestra web hoy
 
@@ -29,6 +33,12 @@ y de búsquedas, y se indica así.
 | **AllMusic New Releases** | Selección semanal editada con resumen de cada disco | 10-30 discos por semana; bloquea a robots |
 | **Bandcamp Discover** | Combinar varias etiquetas, filtrar por formato y lugar, modo oscuro, reproductor integrado | Solo lo que está en Bandcamp; sin fechas de salida ni reseñas externas |
 | **MusicButler / Muspy** | Avisos (correo o RSS) cuando sacan disco los artistas que sigues | Solo artistas que ya conoces; no descubre nada nuevo |
+
+**Qué copiar de cada una:**
+- **Metacritic:** junto a la nota, un **extracto de cada reseña** con enlace. Aquí se puede mostrar la primera frase que da el feed de cada reseña.
+- **Rate Your Music:** una **taxonomía explicada**: cada género tiene descripción y fuentes. Aquí, una frase por subgénero (qué es westcoast frente a AOR, por ejemplo) al tocar el chip.
+- **AllMusic:** el **"Editor's Choice"**. Aquí se marcarían como *Destacado* los discos que la prensa especializada pone entre sus favoritos (la selección principal del Release Radar, las notas de 8/10 o más).
+- **Album of the Year:** la **lista para escuchar** (*Spin List*), el filtro de **artistas seguidos** y la navegación por **mes y semana**. Equivalen aquí a "Mi lista", al radar de mis artistas y al índice de meses.
 
 ### b) El nicho (las webs que usamos como fuente)
 
@@ -83,8 +93,18 @@ Tiene cosas que esta web todavía no tiene: **"Mis conciertos" guardados en el m
 7. **RSS** por familia y subgénero, generado cada semana.
 8. **Instalable como app** y con caché sin conexión (*service worker*), como tu agenda.
 9. **Saltar a un mes** con un índice de meses.
+10. **Destacados** (al estilo "Editor's Choice") y **descripción de cada subgénero** al tocar su chip.
+11. **Extracto de la reseña** junto a la nota, cuando el feed lo dé.
 
 **Más adelante:**
 - Radar de **mis artistas**: avisar cuando un artista de "Mi lista" anuncie disco, con MusicBrainz.
 - Vista **"Lo mejor del año"** (punto 2 del plan).
 - Página por artista y por sello.
+
+## 5. Para completar el estudio (opcional)
+
+Capturas desde tu móvil, navegando con normalidad:
+1. **Album of the Year:** la página de novedades (*New Releases*), la de próximos (*Upcoming*) y la ficha de un disco.
+2. **Rate Your Music:** *New Music* y el panel de filtros de *Charts*.
+3. **Metacritic:** la lista de discos nuevos y la ficha de un disco.
+4. **AllMusic:** *New Releases*.
