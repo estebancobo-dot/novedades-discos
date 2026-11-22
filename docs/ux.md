@@ -98,10 +98,12 @@ Tiene cosas que esta web todavía no tiene: **"Mis conciertos" guardados en el m
 13. **"Ver nota en AOTY / Metacritic / RYM":** enlaces de búsqueda que abre la persona en su navegador. Esta web no lee esas páginas.
 11. **Extracto de la reseña** junto a la nota, cuando el feed lo dé.
 
-**Más adelante:**
-- Radar de **mis artistas**: avisar cuando un artista de "Mi lista" anuncie disco, con MusicBrainz.
-- Vista **"Lo mejor del año"** (punto 2 del plan).
-- Página por artista y por sello.
+**Más adelante (hechas el 22-nov):**
+- ✅ Radar de **mis artistas**: en "Mi lista" aparece "De tus artistas" con los otros discos de los artistas que has guardado (los nuevos anuncios llegan con la recogida semanal, que incluye el radar de MusicBrainz).
+- ✅ Vista **"Lo mejor del año"** (punto 2 del plan).
+- ✅ Por artista y por sello: en la ficha, el artista y el sello se pueden tocar y muestran todos sus discos; la ficha lista también "Del mismo artista".
+
+**Ajustes tras probar con datos reales (22-nov):** la cabecera se esconde al bajar y vuelve al subir en el móvil; la barra de orden cabe en una línea; la vista de lista ocupa todo el ancho (dos columnas en escritorio); si una portada no carga se prueba la de Deezer; los subgéneros sin discos se atenúan; nombres de subgéneros homogéneos.
 
 ## 5. Para completar el estudio (opcional)
 

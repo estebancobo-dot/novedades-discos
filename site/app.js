@@ -177,12 +177,20 @@ function pintar() {
   }
   let html = "";
   if (estado.orden === "mejor") { pintarMejores(lista, main); return; }
+  if (estado.milista) {      // discos de los artistas que has guardado y que aún no están en tu lista
+    const tuyos = new Set(Object.values(MI_LISTA).map(x => norm(x.a)));
+    const nuevos = DATOS.discos.filter(d => !MI_LISTA[d.id] && tuyos.has(norm(d.artista)))
+      .sort((a, b) => b.fecha.localeCompare(a.fecha)).slice(0, 24);
+    if (nuevos.length) html += `<section class="semana prox"><h2><span>De tus artistas</span><span>${nuevos.length}</span></h2>
+      <p class="aviso">Otros discos de artistas que tienes guardados.</p>
+      <div class="rejilla">${nuevos.map(tarjeta).join("")}</div></section>`;
+  }
   if (estado.orden !== "fecha") {
     const clave = estado.orden === "nota" ? (d => (d.nota ?? -1) * 100 + d.n_notas) : (d => d.resenas.length * 100 + (d.nota ?? 0));
     const orden = [...lista].sort((a, b) => clave(b) - clave(a) || b.fecha.localeCompare(a.fecha));
     const vis = orden.slice(0, estado.tandas * DISCOS_POR_TANDA);
     const titulo = estado.orden === "nota" ? "Mejor valorados" : "Más reseñados";
-    html = `<section class="semana"><h2><span>${titulo}</span><span>${orden.length}</span></h2>
+    html += `<section class="semana"><h2><span>${titulo}</span><span>${orden.length}</span></h2>
       <div class="rejilla">${vis.map(tarjeta).join("")}</div></section>`;
     if (orden.length > vis.length) html += `<button class="mas" id="mas">Ver más</button>`;
     main.innerHTML = html; pintarMeses([]);
@@ -323,12 +331,13 @@ function abrirFicha(id) {
     <a class="busqueda" href="https://www.metacritic.com/search/${enc(d.titulo)}/" target="_blank" rel="noopener">Metacritic 🔍</a>
     <a class="busqueda" href="https://rateyourmusic.com/search?searchterm=${q}&searchtype=l" target="_blank" rel="noopener">Rate Your Music 🔍</a>`;
   const proximo = d.fecha > HOY;
+  const mismos = DATOS.discos.filter(x => x.id !== d.id && norm(x.artista) === norm(d.artista)).sort((a, b) => b.fecha.localeCompare(a.fecha));
   const dlg = $("#ficha");
   dlg.innerHTML = `<div class="f-portada">${portadaHTML(d, true)}
       <button class="f-cerrar" aria-label="Cerrar">×</button></div>
     <div class="f-cuerpo">
       <h2 id="fichaTitulo">${esc(d.titulo)}</h2>
-      <p class="f-artista">${esc(d.artista)}</p>
+      <p class="f-artista"><button class="enlace-filtro" id="fichaArtista" title="Ver todos sus discos">${esc(d.artista)}</button></p>
       <div class="f-acciones">
         <button id="fGuardar" aria-pressed="${!!MI_LISTA[d.id]}">${MI_LISTA[d.id] ? "★ En mi lista" : "☆ Guardar"}</button>
         <button id="fCompartir">Compartir</button>
@@ -336,7 +345,7 @@ function abrirFicha(id) {
       </div>
       <dl class="f-datos">
         <dt>Fecha</dt><dd>${fechaLarga(d.fecha, d.fecha_exacta)}${proximo ? " · próximamente" : ""}</dd>
-        <dt>Sello</dt><dd>${esc(d.sello || "—")}</dd>
+        <dt>Sello</dt><dd>${d.sello ? `<button class="enlace-filtro" id="fichaSello" title="Ver todos los discos del sello">${esc(d.sello)}</button>` : "—"}</dd>
         ${d.pistas ? `<dt>Pistas</dt><dd>${d.pistas}</dd>` : ""}
         ${d.tipo && d.tipo !== "álbum" ? `<dt>Tipo</dt><dd>${esc(d.tipo)}</dd>` : ""}
         ${d.nota != null ? `<dt>Nota</dt><dd><span class="f-nota">${d.nota.toFixed(1)}</span>media de ${d.n_notas} ${d.n_notas === 1 ? "reseña" : "reseñas"}${d.destacado ? " · ✦ Destacado" : ""}</dd>` : ""}
@@ -347,6 +356,8 @@ function abrirFicha(id) {
       ${d.deezer_id ? `<div class="reproductor"><iframe title="Reproductor de Deezer" loading="lazy"
          src="https://widget.deezer.com/widget/auto/album/${d.deezer_id}?tracklist=true" allow="encrypted-media; clipboard-write"></iframe></div>` : ""}
       <div class="enlaces" style="margin-top:8px">${enlacesEscucha(d)}</div>
+      ${mismos.length ? `<h3>Del mismo artista</h3><ul class="f-lista">${mismos.map(x => `<li><button class="enlace-filtro" data-abrir="${esc(x.id)}">${esc(x.titulo)}</button>
+        <span class="aviso">${fechaLarga(x.fecha, x.fecha_exacta)}</span></li>`).join("")}</ul>` : ""}
       <h3>Reseñado en</h3>
       ${resenas ? `<ul class="f-lista">${resenas}</ul>` : '<p class="aviso">Sin reseñas encontradas todavía.</p>'}
       <h3>Ver la nota en</h3><div class="enlaces">${otras}</div>
@@ -360,6 +371,16 @@ function abrirFicha(id) {
   $("#fCompartir", dlg).onclick = () => compartir(`${d.artista} – ${d.titulo}`, `${d.artista} – ${d.titulo}`,
     location.origin + location.pathname + "#disco=" + enc(d.id));
   if (proximo) $("#fCal", dlg).onclick = () => icsDisco(d);
+  // artista y sello: cierran la ficha y filtran todos sus discos (sin límite de fechas)
+  const filtrarPor = (campo, valor) => {
+    Object.assign(estado, { familia: "todas", subs: new Set(), desde: "", hasta: "", q: "", sello: "", milista: false, destacados: false, orden: "fecha", tandas: 1 });
+    estado[campo] = valor; $("#q").value = estado.q;
+    dlg.close(); actualizar(); window.scrollTo({ top: 0 });
+    toast(campo === "q" ? `Discos de ${valor}` : `Discos del sello ${valor}`);
+  };
+  $("#fichaArtista", dlg).onclick = () => filtrarPor("q", d.artista);
+  if (d.sello) $("#fichaSello", dlg).onclick = () => filtrarPor("sello", d.sello);
+  dlg.querySelectorAll("[data-abrir]").forEach(b => { b.onclick = () => abrirFicha(b.dataset.abrir); });
   dlg.onclose = () => { if (location.hash) history.replaceState(null, "", location.pathname + location.search); pintar(); };
   dlg.onclick = e => { if (e.target === dlg) dlg.close(); };
   if (!dlg.open) dlg.showModal();
