@@ -176,3 +176,71 @@ dialog#ficha::backdrop { background: rgb(0 0 0 / .55); }
 
 .pie { color: var(--tinta-suave); font-size: 12px; text-align: center; padding: 24px var(--gutter) 40px; border-top: 1px solid var(--linea); }
 .mas { display: block; margin: 20px auto 0; border: 1px solid var(--linea); background: var(--superficie); border-radius: 999px; padding: 10px 20px; cursor: pointer; }
+
+/* ======================= mejoras (estudio de UX) ======================= */
+.btn-pill {
+  border: 1px solid var(--linea); background: var(--superficie); border-radius: 999px; padding: 6px 12px;
+  display: inline-flex; gap: 6px; align-items: center; cursor: pointer; min-height: 36px;
+}
+.btn-pill[aria-pressed="true"] { background: var(--acento); color: var(--acento-tinta); border-color: var(--acento); }
+.barra { display: flex; gap: 8px; align-items: center; padding: 6px 0 8px; }
+.orden select {
+  border: 1px solid var(--linea); background: var(--superficie); border-radius: 8px; padding: 6px 8px; min-height: 34px;
+}
+.chip-sm { min-height: 34px; padding: 4px 10px; }
+.vistas { margin-left: auto; display: flex; border: 1px solid var(--linea); border-radius: 8px; overflow: hidden; }
+.vistas button { border: 0; background: var(--superficie); width: 38px; height: 34px; cursor: pointer; font-size: 16px; }
+.vistas button[aria-pressed="true"] { background: var(--acento); color: var(--acento-tinta); }
+.meses { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin: 0 calc(-1 * var(--gutter)); padding: 0 var(--gutter) 8px; }
+.meses::-webkit-scrollbar { display: none; }
+.meses:empty { display: none; }
+.meses button {
+  border: 1px solid var(--linea); background: none; border-radius: 999px; padding: 3px 10px; font-size: 12px;
+  white-space: nowrap; cursor: pointer; color: var(--tinta-suave);
+}
+.nota-badge {
+  position: absolute; left: 6px; bottom: 6px; background: var(--acento); color: var(--acento-tinta);
+  font-weight: 700; font-size: 12px; border-radius: 6px; padding: 1px 6px;
+}
+.dest-badge, .lista-badge {
+  position: absolute; top: 6px; font-size: 12px; border-radius: 999px; padding: 1px 7px; font-weight: 700;
+  background: rgb(0 0 0 / .65); color: #fff;
+}
+.dest-badge { left: 6px; }
+.lista-badge { right: 6px; color: #ffd166; }
+.tarjeta .insignia { left: auto; right: 6px; }
+/* vista lista */
+.lista .rejilla { display: block; }
+.lista .tarjeta { display: grid; grid-template-columns: 56px 1fr auto; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--linea); }
+.lista .portada { width: 56px; border-radius: 6px; }
+.lista .portada .vacia { font-size: 9px; padding: 4px; }
+.lista .portada .nota-badge, .lista .portada .insignia, .lista .portada .dest-badge, .lista .portada .lista-badge { display: none; }
+.lista .t-artista { margin-top: 0; }
+.lista .t-lado { text-align: right; font-size: 12px; color: var(--tinta-suave); }
+.lista .t-lado b { display: block; font-size: 15px; color: var(--acento); }
+.t-lado { display: none; }
+.lista .t-lado { display: block; }
+/* ficha */
+.f-acciones { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 12px; }
+.f-acciones button, .f-acciones a {
+  border: 1px solid var(--linea); background: var(--fondo); border-radius: 999px; padding: 7px 12px; cursor: pointer;
+  font-size: 13px; text-decoration: none; color: var(--tinta); min-height: 36px; display: inline-flex; align-items: center;
+}
+.f-acciones [aria-pressed="true"] { background: var(--acento); color: var(--acento-tinta); border-color: var(--acento); }
+.f-nota { font-size: 28px; font-weight: 800; color: var(--acento); margin-right: 6px; }
+.dicen { margin: 0; padding: 0; list-style: none; }
+.dicen li { font-style: italic; color: var(--tinta-suave); border-left: 3px solid var(--acento); padding: 2px 0 2px 10px; margin: 6px 0; }
+.sub-desc { font-size: 13px; color: var(--tinta-suave); margin: 6px 0 0; }
+.sub-desc b { color: var(--tinta); font-weight: 600; }
+.enlaces a.busqueda { border-style: dashed; color: var(--tinta-suave); }
+.reproductor { margin-top: 8px; border-radius: 10px; overflow: hidden; background: var(--fondo); }
+.reproductor iframe { display: block; width: 100%; height: 250px; border: 0; }
+.info { border: 0; background: none; cursor: pointer; color: var(--tinta-suave); padding: 0 2px; font-size: 13px; }
+.chip-grupo { display: inline-flex; align-items: center; }
+.toast {
+  position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom)); transform: translateX(-50%); z-index: 50;
+  background: var(--tinta); color: var(--fondo); padding: 10px 16px; border-radius: 10px; font-size: 14px; box-shadow: var(--sombra);
+}
+
+.nota-info { position: sticky; top: 52px; z-index: 2; background: var(--fondo); border: 1px solid var(--linea);
+  border-radius: 8px; padding: 8px 10px; margin: 0 0 8px; }
