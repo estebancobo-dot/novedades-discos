@@ -1425,6 +1425,16 @@
 "nombre": "Witchsorrow",
 "pais": "GB"
 },
+"art:065c9478-c8c3-4d00-828c-02847e3bb149": {
+"enlaces": {
+"agweinberger.com": "http://www.agweinberger.com/en/biografie/index.html",
+"discogs": "https://www.discogs.com/artist/1239579"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "A.G. Weinberger",
+"pais": null
+},
 "art:06a45cea-25bd-42e1-89c3-4563c348f5d9": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0003546501",
@@ -16502,6 +16512,18 @@
 "nombre": "Tim Montana",
 "pais": "US"
 },
+"art:45b6ed15-b916-4bf3-9cbc-5fe10fc76449": {
+"enlaces": {
+"derrickanamerican.com": "http://www.derrickanamerican.com/",
+"facebook": "https://www.facebook.com/dprocell",
+"twitter.com": "https://twitter.com/durock",
+"youtube": "https://www.youtube.com/channel/UC9f4c7BIv0VrxvmXZEURAIQ"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Derrick Procell",
+"pais": "US"
+},
 "art:45c6b878-48c5-48cf-ad48-4a7cf5a10787": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0001069157",
@@ -19449,6 +19471,20 @@
 ],
 "nombre": "Zach Bryan",
 "pais": "US"
+},
+"art:521cb594-8b7f-49e4-8238-bf69097e546b": {
+"enlaces": {
+"facebook": "https://www.facebook.com/wrenandwilde",
+"instagram": "https://www.instagram.com/wrenandwildeband/",
+"patreon.com": "https://www.patreon.com/wrenandwildeband",
+"spotify": "https://open.spotify.com/artist/6bKZZQ0Pom1tuzMkpi24m1",
+"wrenandwildeband.com": "https://wrenandwildeband.com/",
+"youtube": "https://www.youtube.com/@WrenandWilde"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Wren & Wilde",
+"pais": null
 },
 "art:52773401-4908-4e03-9a1d-96a0f10cd7ce": {
 "enlaces": {
@@ -28965,6 +29001,15 @@
 "nombre": "The Empty Pockets",
 "pais": "US"
 },
+"art:78428cd0-09b7-4ef6-b11e-ee73db0cf3b3": {
+"enlaces": {
+"discogs": "https://www.discogs.com/artist/278318"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Dave Perkins",
+"pais": "US"
+},
 "art:78471616-3cb4-4139-a148-aeac3c7d0f79": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0001717667",
@@ -30651,6 +30696,15 @@
 ],
 "nombre": "Lacrimas Profundere",
 "pais": "DE"
+},
+"art:802bfdbe-8e79-427a-93cd-95a11dea0873": {
+"enlaces": {
+"randyleeriviere.com": "https://www.randyleeriviere.com/"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Randy Lee Riviere",
+"pais": "US"
 },
 "art:8032cf05-d916-4b2a-9c53-6e75d4a24bd8": {
 "enlaces": {
@@ -59434,6 +59488,56 @@
 "nombre": "Axty",
 "pais": "BR"
 },
+"art:f93dbc64-6f08-4033-bcc7-8a0bb4689849": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000614137",
+"amazon": "https://www.amazon.com/-/e/B002E1FHP6",
+"apple": "https://itunes.apple.com/us/artist/id161527",
+"bandsintown.com": "https://www.bandsintown.com/a/26706",
+"bbc.co.uk": "https://www.bbc.co.uk/music/artists/f93dbc64-6f08-4033-bcc7-8a0bb4689849",
+"d-nb.info": "https://d-nb.info/gnd/10151202-8",
+"deezer": "https://www.deezer.com/artist/2110",
+"discogs": "https://www.discogs.com/artist/269534",
+"facebook": "https://www.facebook.com/tompetty",
+"genius.com": "https://genius.com/artists/Tom-petty-and-the-heartbreakers",
+"imvdb.com": "https://imvdb.com/n/tom-petty-and-the-heartbreakers",
+"last.fm": "https://www.last.fm/music/Tom+Petty+and+The+Heartbreakers",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/tom-petty-the-heartbreakers/",
+"muziekweb.nl": "https://www.muziekweb.nl/Link/M00000130993/POPULAR/",
+"muzikum.eu": "https://muzikum.eu/en/tom-petty-the-heartbreakers/discography",
+"myspace.com": "https://myspace.com/tompetty",
+"play.google.com": "https://play.google.com/store/music/artist?id=Ag5n7etpdn72i5cr6ltlaljxm3u",
+"qobuz": "https://www.qobuz.com/us-en/interpreter/tom-petty-the-heartbreakers/151855",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/tom_petty_and_the_heartbreakers",
+"setlist.fm": "https://www.setlist.fm/setlists/tom-petty-and-the-heartbreakers-6bd6e20a.html",
+"songkick.com": "https://www.songkick.com/artists/226762",
+"spotify": "https://open.spotify.com/artist/4tX2TplrkIP4v05BNC903e",
+"tidal": "https://tidal.com/artist/13961",
+"tompetty.com": "http://www.tompetty.com/",
+"viaf.org": "http://viaf.org/viaf/152284346",
+"whosampled.com": "https://www.whosampled.com/Tom-Petty-and-the-Heartbreakers/",
+"wikidata": "https://www.wikidata.org/wiki/Q2117272",
+"youtube": "https://www.youtube.com/channel/UCbWv_ZrwMiH4XJQElOHHnig"
+},
+"etiquetas": [
+"rock",
+"heartland rock",
+"southern rock",
+"pop rock",
+"power pop",
+"classic rock"
+],
+"generos": [
+"rock",
+"heartland rock",
+"southern rock",
+"pop rock",
+"power pop",
+"classic rock"
+],
+"nombre": "Tom Petty and the Heartbreakers",
+"pais": "US"
+},
 "art:f95d0f4f-d344-4acd-bec8-cc512b40f629": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0003518619",
@@ -60724,6 +60828,15 @@
 "nombre": "Biita Houdei",
 "pais": "US"
 },
+"art:fed3858b-8194-43ce-b22d-f6439dbba316": {
+"enlaces": {
+"discogs": "https://www.discogs.com/artist/4929070"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Dida Pelled",
+"pais": null
+},
 "art:ff621094-2a76-401f-8398-b75b5fd2be24": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0000202899",
@@ -61869,6 +61982,31 @@
 "rg:afton wolfe and the snake hunters|live from the fallout shelter": {
 "no_encontrado": "2026-11-22"
 },
+"rg:ag weinberger|sharing": {
+"artista": "A.G. Weinberger",
+"artistas_id": [
+"065c9478-c8c3-4d00-828c-02847e3bb149"
+],
+"enlaces": {
+"discogs": "https://www.discogs.com/release/37268646"
+},
+"fecha_release": "2026",
+"idioma": "eng",
+"pais": "RO",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/cce80e75-82a4-47fb-a1c0-f1da3de3189d/front-250",
+"primera_fecha": "2026",
+"puntuacion": 0.984,
+"release": "7ac4b892-a79f-4ca6-b8f5-778889bbb309",
+"rg": "cce80e75-82a4-47fb-a1c0-f1da3de3189d",
+"sellos": [
+"BigFoot Records",
+"Universal Music Romania"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Sharing"
+},
 "rg:agnes obel|meaning of flowers": {
 "artista": "Agnes Obel",
 "artistas_id": [
@@ -62621,6 +62759,9 @@
 "titulo": "spilling my guts"
 },
 "rg:alyssa hankey|good country people": {
+"no_encontrado": "2026-11-22"
+},
+"rg:amanda cook|love through time": {
 "no_encontrado": "2026-11-22"
 },
 "rg:amanda shaw|rhythm of my roots": {
@@ -64609,6 +64750,12 @@
 "tipos_secundarios": [],
 "titulo": "PEACE + WAR"
 },
+"rg:baxter hall|work": {
+"no_encontrado": "2026-11-22"
+},
+"rg:bb and the bullets|wrong side of the river": {
+"no_encontrado": "2026-11-22"
+},
 "rg:bcmc|stash": {
 "artista": "BCMC",
 "artistas_id": [
@@ -64817,6 +64964,9 @@
 "tipos_secundarios": [],
 "titulo": "REBECCA"
 },
+"rg:becky shaw|cast off the lines": {
+"no_encontrado": "2026-11-22"
+},
 "rg:beck|ride lonesome": {
 "artista": "Beck",
 "artistas_id": [
@@ -64895,6 +65045,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "In Between Strides"
+},
+"rg:beet the system|decompositions": {
+"no_encontrado": "2026-11-22"
 },
 "rg:behemoth|i scvlptor": {
 "artista": "Behemoth",
@@ -65294,6 +65447,9 @@
 "tipo": "Single",
 "tipos_secundarios": [],
 "titulo": "The Ground Above"
+},
+"rg:bev|expectations": {
+"no_encontrado": "2026-11-22"
 },
 "rg:bibio and dorian concept|answers": {
 "artista": "Bibio & Dorian Concept",
@@ -66835,6 +66991,9 @@
 "titulo": "Fantasy & Reveries"
 },
 "rg:brad tursi|colorado": {
+"no_encontrado": "2026-11-22"
+},
+"rg:brad wolfe and the moon|loss": {
 "no_encontrado": "2026-11-22"
 },
 "rg:brakence|marrow": {
@@ -68773,6 +68932,9 @@
 "tipos_secundarios": [],
 "titulo": "When You Smiled and Turned Away"
 },
+"rg:cattsue|heartstrings and highways": {
+"no_encontrado": "2026-11-22"
+},
 "rg:cedric brooks|united africa": {
 "no_encontrado": "2026-11-22"
 },
@@ -69406,6 +69568,9 @@
 "no_encontrado": "2026-11-22"
 },
 "rg:christopher seymore|child of the south": {
+"no_encontrado": "2026-11-22"
+},
+"rg:christopher wyze and the tellers|naptown blues": {
 "no_encontrado": "2026-11-22"
 },
 "rg:chromette|chromette": {
@@ -71478,6 +71643,9 @@
 "rg:dave hill|dirty foot lane": {
 "no_encontrado": "2026-11-22"
 },
+"rg:dave martin|donegal tweed and cowboy chords": {
+"no_encontrado": "2026-11-22"
+},
 "rg:dave packham|wedding dance": {
 "artista": "Dave Packham",
 "artistas_id": [
@@ -71503,6 +71671,26 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "The Wedding Dance"
+},
+"rg:dave perkins|powderhead": {
+"artista": "Dave Perkins",
+"artistas_id": [
+"78428cd0-09b7-4ef6-b11e-ee73db0cf3b3"
+],
+"enlaces": {},
+"fecha_release": null,
+"idioma": null,
+"pais": null,
+"pistas": 11,
+"portada": "https://coverartarchive.org/release-group/8c0531e7-4c3c-4dae-873a-a1ce6187ff22/front-250",
+"primera_fecha": null,
+"puntuacion": 1.0,
+"release": "9f630111-932c-42fd-986b-a54ee3234caa",
+"rg": "8c0531e7-4c3c-4dae-873a-a1ce6187ff22",
+"sellos": [],
+"tipo": null,
+"tipos_secundarios": [],
+"titulo": "Powderhead"
 },
 "rg:dave stewart|way it was back then": {
 "artista": "Dave Stewart",
@@ -71789,6 +71977,9 @@
 "rg:daytona|sign language": {
 "no_encontrado": "2026-11-22"
 },
+"rg:dbs|cycles per second us tour 2024": {
+"no_encontrado": "2026-11-22"
+},
 "rg:de staat|de staat": {
 "artista": "De Staat",
 "artistas_id": [
@@ -71978,6 +72169,9 @@
 "tipo": "Single",
 "tipos_secundarios": [],
 "titulo": "Where Have All The Good Men Gone?"
+},
+"rg:deborah holland|unadorned": {
+"no_encontrado": "2026-11-22"
 },
 "rg:ded|resent": {
 "artista": "DED",
@@ -72278,6 +72472,28 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "The Weight of the Woods"
+},
+"rg:derrick procell|my incredible heart": {
+"artista": "Derrick Procell",
+"artistas_id": [
+"45b6ed15-b916-4bf3-9cbc-5fe10fc76449"
+],
+"enlaces": {},
+"fecha_release": "2026-10-16",
+"idioma": null,
+"pais": null,
+"pistas": 11,
+"portada": null,
+"primera_fecha": "2026-10-16",
+"puntuacion": 1.0,
+"release": "6229735f-78e9-49b5-926e-91842a3271a6",
+"rg": "2fb9abf5-c1ec-493b-a509-1819ec9982fb",
+"sellos": [
+"Catfood Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "My Incredible Heart"
 },
 "rg:des rocs|to hell and back": {
 "artista": "Des Rocs",
@@ -72612,6 +72828,28 @@
 },
 "rg:diana silvers|daughter of sorts": {
 "no_encontrado": "2026-11-22"
+},
+"rg:dida pelled|i wish i was a single girl again": {
+"artista": "Dida Pelled",
+"artistas_id": [
+"fed3858b-8194-43ce-b22d-f6439dbba316"
+],
+"enlaces": {},
+"fecha_release": "2026-10-23",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 9,
+"portada": null,
+"primera_fecha": "2026-10-23",
+"puntuacion": 1.0,
+"release": "46f5c193-fafa-4153-9dc8-eac8895d76a2",
+"rg": "e20df207-7e83-4d21-9aed-5c6e92109171",
+"sellos": [
+"La Reserve Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "I Wish I Was A Single Girl Again"
 },
 "rg:diiv|zirp": {
 "artista": "DIIV",
@@ -73057,6 +73295,9 @@
 "titulo": "ECHOLOCATION"
 },
 "rg:dom glynn and his sunday best|this fast life is killing me": {
+"no_encontrado": "2026-11-22"
+},
+"rg:domenic cicala|duet again": {
 "no_encontrado": "2026-11-22"
 },
 "rg:domi and jd beck|who asked": {
@@ -74655,6 +74896,9 @@
 "tipos_secundarios": [],
 "titulo": "I Know Too Much"
 },
+"rg:ellie rollins and the west|wind in the trees": {
+"no_encontrado": "2026-11-22"
+},
 "rg:elysion|guardian angel": {
 "artista": "Elysion",
 "artistas_id": [
@@ -75097,6 +75341,9 @@
 "tipos_secundarios": [],
 "titulo": "The Easy Underground"
 },
+"rg:eric jerardi|game": {
+"no_encontrado": "2026-11-22"
+},
 "rg:eric nam|confessions of a lonely heart": {
 "artista": "Eric Nam",
 "artistas_id": [
@@ -75359,6 +75606,9 @@
 "titulo": "Titanblood"
 },
 "rg:ethan setiawan and fine ground|little storms": {
+"no_encontrado": "2026-11-22"
+},
+"rg:ethan setiawan and the fine ground|little storms": {
 "no_encontrado": "2026-11-22"
 },
 "rg:eugene tyler band|ride the bike": {
@@ -76057,6 +76307,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "ELEMENTAL Part One: MOURNING EARTH"
+},
+"rg:feral foster|new world blues": {
+"no_encontrado": "2026-11-22"
 },
 "rg:ferris and sylvester|its a joy to be alive": {
 "artista": "Ferris & Sylvester",
@@ -81510,6 +81763,9 @@
 "rg:j m clifford|things that we cant change": {
 "no_encontrado": "2026-11-22"
 },
+"rg:jack barksdale finds his place on|battleground": {
+"no_encontrado": "2026-11-22"
+},
 "rg:jack biilmann|move the mountains": {
 "artista": "Jack Biilmann",
 "artistas_id": [
@@ -82974,6 +83230,9 @@
 "tipos_secundarios": [],
 "titulo": "Lord of the Strings"
 },
+"rg:joey stuckey|king of strings": {
+"no_encontrado": "2026-11-22"
+},
 "rg:johanna samuels|sorry kid": {
 "artista": "Johanna Samuels",
 "artistas_id": [
@@ -83027,6 +83286,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Jazz Dari Angkasapuri"
+},
+"rg:john batdorf|singles": {
+"no_encontrado": "2026-11-22"
 },
 "rg:john cafferty and the beaver brown band|eddie and the cruisers ii eddie lives original motion picture soundtrack": {
 "no_encontrado": "2026-11-22"
@@ -83823,6 +84085,9 @@
 "rg:josh mitcham|gonna be alright": {
 "no_encontrado": "2026-11-22"
 },
+"rg:josh orange|fire and the call": {
+"no_encontrado": "2026-11-22"
+},
 "rg:josh pyke|kingdom within": {
 "artista": "Josh Pyke",
 "artistas_id": [
@@ -84107,6 +84372,9 @@
 "titulo": "In Between"
 },
 "rg:jp harris dreadful wind and rain|shaving a dead man": {
+"no_encontrado": "2026-11-22"
+},
+"rg:jp harris|dreadful wind and rain shaving a dead man": {
 "no_encontrado": "2026-11-22"
 },
 "rg:jp harris|shaving a dead man": {
@@ -84494,6 +84762,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Jesus & Whiskey"
+},
+"rg:kaatwalk|build": {
+"no_encontrado": "2026-11-22"
 },
 "rg:kacey musgraves|middle of nowhere": {
 "artista": "Kacey Musgraves",
@@ -85288,6 +85559,9 @@
 "rg:kerry king|from hell i rise extended deluxe edition": {
 "no_encontrado": "2026-11-22"
 },
+"rg:kevin ball and the busters|busters tunes": {
+"no_encontrado": "2026-11-22"
+},
 "rg:kevin carducci|easy does it": {
 "artista": "Kevin Carducci",
 "artistas_id": [
@@ -85577,6 +85851,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Bittersweet"
+},
+"rg:kimon kirk|bikini jardine": {
+"no_encontrado": "2026-11-22"
 },
 "rg:kindred north|kindred north": {
 "artista": "Kindred North",
@@ -89562,6 +89839,9 @@
 "tipos_secundarios": [],
 "titulo": "Role Model Hermit"
 },
+"rg:mary kaye holt|midnight mustang": {
+"no_encontrado": "2026-11-22"
+},
 "rg:maryann cotton|chester rose": {
 "artista": "Maryann Cotton",
 "artistas_id": [
@@ -90616,6 +90896,9 @@
 "tipos_secundarios": [],
 "titulo": "Instrumental Intensity"
 },
+"rg:michael veitch|discovered": {
+"no_encontrado": "2026-11-22"
+},
 "rg:michael weston king|nothing can hurt me anymore": {
 "artista": "Michael Weston King",
 "artistas_id": [
@@ -90773,6 +91056,9 @@
 "titulo": "I’m Still Here"
 },
 "rg:mighty bosscats|normal": {
+"no_encontrado": "2026-11-22"
+},
+"rg:mike berman|in the woods": {
 "no_encontrado": "2026-11-22"
 },
 "rg:mike campbell and the dirty knobs|no regrets": {
@@ -92524,6 +92810,9 @@
 "tipos_secundarios": [],
 "titulo": "Naturally"
 },
+"rg:ned farr and the good red road|ruminations": {
+"no_encontrado": "2026-11-22"
+},
 "rg:ned hill|saw jesus in the park": {
 "no_encontrado": "2026-11-22"
 },
@@ -93256,6 +93545,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Killer Show"
+},
+"rg:noah c lekas|flowers of perennial dissent": {
+"no_encontrado": "2026-11-22"
 },
 "rg:noah kahan|great divide": {
 "artista": "Noah Kahan",
@@ -95383,6 +95675,9 @@
 "rg:pink rose|just what we needed": {
 "no_encontrado": "2026-11-22"
 },
+"rg:pinkerton raid|if you love somebody tell them": {
+"no_encontrado": "2026-11-22"
+},
 "rg:pirate queen|sailing around the world": {
 "artista": "Pirate Queen",
 "artistas_id": [
@@ -96436,6 +96731,9 @@
 "rg:racetraitor|nobody son of nobody": {
 "no_encontrado": "2026-11-22"
 },
+"rg:rachael sage and the sequins|under my canopy": {
+"no_encontrado": "2026-11-22"
+},
 "rg:rachel bolan|gargoyle of the garden state": {
 "artista": "Rachel Bolan",
 "artistas_id": [
@@ -96740,6 +97038,28 @@
 "tipos_secundarios": [],
 "titulo": "Against"
 },
+"rg:randy lee riviere|new blue mexico": {
+"artista": "Randy Lee Riviere",
+"artistas_id": [
+"802bfdbe-8e79-427a-93cd-95a11dea0873"
+],
+"enlaces": {},
+"fecha_release": "2026-10-23",
+"idioma": null,
+"pais": null,
+"pistas": 15,
+"portada": null,
+"primera_fecha": "2026-10-23",
+"puntuacion": 1.0,
+"release": "3f155326-b389-4122-833b-426d81d8429b",
+"rg": "df12546a-3136-4326-89a7-85e1a33f81b9",
+"sellos": [
+"Wilderness Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "New Blue Mexico"
+},
 "rg:randy rogers band|songbook": {
 "no_encontrado": "2026-11-22"
 },
@@ -96909,6 +97229,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "WHY EQUALS SELF"
+},
+"rg:re mattei|stories lived": {
+"no_encontrado": "2026-11-22"
 },
 "rg:real numbers|was it always this way": {
 "artista": "Real Numbers",
@@ -98844,6 +99167,35 @@
 "tipos_secundarios": [],
 "titulo": "Good Grief"
 },
+"rg:sara milonovich and daisycutter|last resort motor inn": {
+"artista": "Sara Milonovich & Daisycutter",
+"artistas_id": [
+"0e2125ce-74dd-46ec-870c-056b1c261de7",
+"4ff8ba7f-008f-4c94-bb36-694eaa54f569"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/6800382917",
+"deezer": "https://www.deezer.com/album/1051663242",
+"qobuz": "https://www.qobuz.com/gb-en/album/last-resort-motor-inn-sara-milonovich-daisycutter/pq8bih75v7jrm",
+"spotify": "https://open.spotify.com/album/6TseJuOEjkoiu9ZaI6z1DN",
+"tidal": "https://tidal.com/album/551446199"
+},
+"fecha_release": "2026-09-25",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 1,
+"portada": "https://coverartarchive.org/release-group/07cdd0f3-c383-43ac-9f1d-21fcaafdc4eb/front-250",
+"primera_fecha": "2026-09-25",
+"puntuacion": 1.0,
+"release": "5920e055-9c6e-472f-bde3-1cfd16c2c654",
+"rg": "07cdd0f3-c383-43ac-9f1d-21fcaafdc4eb",
+"sellos": [
+"Loonymusik"
+],
+"tipo": "Single",
+"tipos_secundarios": [],
+"titulo": "Last Resort Motor Inn"
+},
 "rg:sara milonovich|last resort motor inn": {
 "artista": "Sara Milonovich & Daisycutter",
 "artistas_id": [
@@ -99377,6 +99729,9 @@
 "tipos_secundarios": [],
 "titulo": "Troubadourly Yours"
 },
+"rg:scott tyring|love war and misadventures": {
+"no_encontrado": "2026-11-22"
+},
 "rg:scotty mccreery|15": {
 "artista": "Scotty McCreery",
 "artistas_id": [
@@ -99454,6 +99809,12 @@
 "no_encontrado": "2026-11-22"
 },
 "rg:sean burns|better off in time and other songs for the dance floor": {
+"no_encontrado": "2026-11-22"
+},
+"rg:sean coleman project|apropos of nothing": {
+"no_encontrado": "2026-11-22"
+},
+"rg:sean kiely|long live the low": {
 "no_encontrado": "2026-11-22"
 },
 "rg:seasick steve|last season of america": {
@@ -101875,6 +102236,9 @@
 "tipos_secundarios": [],
 "titulo": "Quantifying Cosmic Doom"
 },
+"rg:sound of country music ten years from now todd snider|my second rodeo": {
+"no_encontrado": "2026-11-22"
+},
 "rg:sounding arrow|skyman": {
 "no_encontrado": "2026-11-22"
 },
@@ -102651,6 +103015,9 @@
 "rg:steve hackett and steve rothery|roaring waves": {
 "no_encontrado": "2026-11-22"
 },
+"rg:steve howell dan sumner and jason weinheimer|i dont mind": {
+"no_encontrado": "2026-11-22"
+},
 "rg:steve lacy|oh yeah": {
 "artista": "Steve Lacy",
 "artistas_id": [
@@ -102891,6 +103258,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Beyonder"
+},
+"rg:straf vocal strings|tread softly": {
+"no_encontrado": "2026-11-22"
 },
 "rg:straw man army|true north": {
 "artista": "Straw Man Army",
@@ -105030,6 +105400,36 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Everyone Gets Everything They Want"
+},
+"rg:tom petty and the heartbreakers|origins 1971 1978": {
+"artista": "Tom Petty and the Heartbreakers",
+"artistas_id": [
+"f93dbc64-6f08-4033-bcc7-8a0bb4689849"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/6823307338",
+"discogs": "https://www.discogs.com/release/38944027",
+"spotify": "https://open.spotify.com/album/2yADEJKwZP4vta8iEKmG8z",
+"tidal": "https://tidal.com/album/574478199"
+},
+"fecha_release": "2026-11-06",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 51,
+"portada": "https://coverartarchive.org/release-group/cefab822-fe11-493e-aab1-c42cb750da30/front-250",
+"primera_fecha": "2026-11-06",
+"puntuacion": 1.0,
+"release": "12d6ec71-b30b-48e8-9677-2e7128339073",
+"rg": "cefab822-fe11-493e-aab1-c42cb750da30",
+"sellos": [
+"Tom Petty Estate",
+"UMe"
+],
+"tipo": "Album",
+"tipos_secundarios": [
+"Compilation"
+],
+"titulo": "Origins 1971–1978"
 },
 "rg:tommy g and the experts|road to somewhere": {
 "no_encontrado": "2026-11-22"
@@ -107542,6 +107942,9 @@
 "tipos_secundarios": [],
 "titulo": "No Brakes"
 },
+"rg:wasperjaws|in law country": {
+"no_encontrado": "2026-11-22"
+},
 "rg:waterparks|jinx": {
 "artista": "Waterparks",
 "artistas_id": [
@@ -108712,6 +109115,28 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Descent into Darkness"
+},
+"rg:wren and wilde|serial dreamers": {
+"artista": "Wren & Wilde",
+"artistas_id": [
+"521cb594-8b7f-49e4-8238-bf69097e546b"
+],
+"enlaces": {
+"wrenandwildeband.com": "https://wrenandwildeband.com/album/4140963/serial-dreamers"
+},
+"fecha_release": "2026-10-07",
+"idioma": null,
+"pais": null,
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/d0579b56-9df8-4dcc-8513-ff578ffa31f7/front-250",
+"primera_fecha": "2026-10-07",
+"puntuacion": 1.0,
+"release": "ffacb510-35cd-4d15-a318-41a7369ee16c",
+"rg": "d0579b56-9df8-4dcc-8513-ff578ffa31f7",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Serial Dreamers"
 },
 "rg:wrong man|heres that feeling": {
 "artista": "Wrong Man",
