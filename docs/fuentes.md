@@ -125,6 +125,16 @@ sus condiciones: identificarse y 1 petición/s. Está declarada como excepción 
 | Album of the Year | ❌ | Verificación de Cloudflare (ver arriba). |
 | Hello Weimar Republic (Substack) | — | Se lee, pero recomienda **canciones**, no discos. No se usa. |
 
+### Repositorios revisados (22-nov)
+
+| Repositorio | Qué ofrece | ¿Se usa? |
+|---|---|---|
+| jahsiaswhite/albumoftheyearapi | Librería para leer AOTY | ❌ Su propio código avisa de que AOTY la bloquea con Cloudflare. Su solución es reutilizar la cookie `cf_clearance` de un navegador e imitar a Chrome, es decir, saltarse la verificación. |
+| rheera/album-of-the-year-analysis | Datos de AOTY y árbol de géneros | ❌ Los datos llegan hasta 2024, el árbol de géneros no tiene subgéneros de country, folk, rock ni metal, e incluye un script para saltarse Cloudflare. |
+| Tema `allmusic` en GitHub | Lectores de AllMusic | ❌ AllMusic responde con la verificación de Cloudflare. |
+| Radares de Spotify (spotify-new-albums-radar, Better-Release-Radar, spotify-albums, musicreleases) | Discos nuevos de artistas que sigues, con la API de Spotify | ⏸ La idea, un **radar de artistas**, es la mejor forma de encontrar más discos y antes. Necesita una app gratuita de Spotify (client id y secret). El 81 % de nuestros artistas tiene su Spotify enlazado en MusicBrainz, así que la identidad sería exacta. |
+| estebancobo-dot/agenda-conciertos | Wikipedia, Wikidata, Discogs, MusicBrainz, Last.fm, ReccoBeats | ✅ Se reutiliza el enfoque: Wikidata, Discogs y Last.fm en `scraper/enriquecer.py`, APIs documentadas exentas de `robots.txt` e identidad por enlaces, no por nombre. ❌ **ReccoBeats** no sirve aquí: su catálogo se queda en 2024; Ian Noe, Willi Carlisle o Kaitlin Butts no tienen nada posterior. |
+
 ## 7. Resumen
 
 - **En uso: 30 fuentes activas en `data/fuentes.yaml`.** Son 13 de prensa y listados de country, 8 de hard rock, 2 generalistas (Pause & Play y Bandcamp Daily), 6 de sellos y la comprobación de Bandcamp. Hay otras 3 desactivadas: Americana Highways, pendiente de tu OK, y Sleaze Roxx y Rock & Blues Muse, por su `robots.txt`. A eso se suma el enriquecimiento con MusicBrainz, Cover Art Archive y Bandcamp. Las que fallen o se bloqueen en una ejecución quedan anotadas en `data/estado_fuentes.json` y en el informe.
