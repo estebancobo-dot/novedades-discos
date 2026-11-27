@@ -3,3 +3,4 @@ __pycache__/
 data/cache/http/
 .venv/
 data/cache/lecturas/
+node_modules/

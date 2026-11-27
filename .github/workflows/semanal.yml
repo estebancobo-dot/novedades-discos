@@ -1,9 +1,23 @@
-name: Actualización semanal
+name: Actualización de datos y web
+
+# Todo el proceso corre en GitHub, sin depender de ninguna sesión ni gastar tokens:
+#   - sábados: recogida semanal (incremental) y publicación;
+#   - cada día: si la última ejecución se cortó (límite de tiempo, error de red), se reanuda
+#     por la fase pendiente; si no hay nada a medias, no hace nada;
+#   - a mano (pestaña Actions → Run workflow): incremental o completa.
+# Tras cada fase se guardan los datos en el repositorio, así que nada de lo hecho se pierde.
 
 on:
   schedule:
-    - cron: "23 5 * * 6"        # sábados a las 05:23 UTC
-  workflow_dispatch:             # botón "Run workflow" en la pestaña Actions
+    - cron: "23 5 * * 6"        # sábados 05:23 UTC: recogida semanal
+    - cron: "47 4 * * *"        # cada día 04:47 UTC: reanudar si quedó algo a medias
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "incremental (últimas semanas) o completa (toda la ventana)"
+        type: choice
+        options: [incremental, completa]
+        default: incremental
   push:
     branches: [main]
     paths: ["site/**"]           # republicar la web si cambia su código
@@ -14,14 +28,14 @@ permissions:
   id-token: write
 
 concurrency:
-  group: semanal
+  group: datos
   cancel-in-progress: false
 
 jobs:
   datos:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 340          # el máximo de GitHub son 360; lo pendiente sigue al día siguiente
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -29,38 +43,60 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Recoger novedades (solo las últimas semanas; lo anterior se conserva)
-        run: python -m scraper.recoger --incremental
-      - name: Estado de las fuentes en el resumen de la ejecución
-        if: always()
-        run: |
-          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
-          import json
-          e = json.load(open("data/estado_fuentes.json"))
-          print("| Fuente | Estado | Items |\n|---|---|---:|")
-          for k, v in e.get("fuentes", {}).items():
-              print(f"| {v['nombre']} | {v['estado']} | {v['items']} |")
-          PY
-      - name: Etiquetas extra (Wikidata, Discogs, Last.fm) para los discos sin subgénero
-        run: python -m scraper.enriquecer
+      - name: Recuperar páginas y lecturas guardadas de la ejecución anterior
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            data/cache/http
+            data/cache/lecturas
+          key: lecturas-${{ github.run_id }}
+          restore-keys: lecturas-
+      - name: Fases (recoger → enriquecer → clasificar → mapear → informe → web)
         env:
           LASTFM_KEY: ${{ secrets.LASTFM_KEY }}
           DISCOGS_TOKEN: ${{ secrets.DISCOGS_TOKEN }}
-      - name: Clasificar con la taxonomía
-        run: python -m scraper.clasificar
-      - name: Informe
-        run: python -m scraper.informe
-      - name: Datos de la web (y RSS y calendarios)
-        run: python -m scraper.web
-        env:
           URL_WEB: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
-      - name: Guardar en el repositorio
+          EVENTO: ${{ github.event_name }}
+          CRON: ${{ github.event.schedule }}
+          MODO: ${{ inputs.modo }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data docs site/data
-          git diff --cached --quiet || git commit -m "Datos: actualización semanal $(date -u +%F)"
-          git push
+          if [ "$EVENTO" = "schedule" ] && [ "$CRON" = "47 4 * * *" ]; then
+            python -m scraper.pipeline --solo-reanudar --git
+          elif [ "$MODO" = "completa" ]; then
+            python -m scraper.pipeline --git
+          else
+            python -m scraper.pipeline --incremental --git
+          fi
+      - name: Guardar páginas y lecturas para la próxima ejecución
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            data/cache/http
+            data/cache/lecturas
+          key: lecturas-${{ github.run_id }}
+      - name: Resumen (fases y estado de cada fuente)
+        if: always()
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, os
+          if os.path.exists("data/estado_pipeline.json"):
+              p = json.load(open("data/estado_pipeline.json"))
+              print(f"### Ejecución {p.get('modo')} del {p.get('inicio')} — {'terminada' if p.get('terminada') else 'a medias'}\n")
+              print("| Fase | Estado | Segundos |\n|---|---|---:|")
+              for k, v in p.get("fases", {}).items():
+                  print(f"| {k} | {v.get('estado')} | {v.get('segundos', '')} |")
+          if os.path.exists("data/estado_fuentes.json"):
+              e = json.load(open("data/estado_fuentes.json"))
+              malas = {k: v for k, v in e.get("fuentes", {}).items() if v["estado"] != "ok"}
+              print(f"\n### Fuentes: {len(e.get('fuentes', {})) - len(malas)} bien, {len(malas)} con problemas\n")
+              if malas:
+                  print("| Fuente | Estado | Detalle |\n|---|---|---|")
+                  for k, v in malas.items():
+                      print(f"| {v['nombre']} | {v['estado']} | {v.get('detalle', '')[:120]} |")
+          PY
 
   publicar:
     needs: datos

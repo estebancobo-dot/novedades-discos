@@ -8,6 +8,7 @@ de red), al relanzar este mismo comando se sigue por la primera fase que no term
   --incremental  recogida semanal (solo relee las últimas semanas de cada fuente)
   --nueva        empieza de cero aunque haya una ejecución a medias
   --git          tras cada fase, guarda los cambios en git y los sube (para la Action)
+  --solo-reanudar  si no hay una ejecución a medias, no hace nada (para un aviso diario)
 
 El estado está en data/estado_pipeline.json."""
 from __future__ import annotations
@@ -90,6 +91,11 @@ def main(args: list[str] | None = None) -> int:
     config = cargar_config()
     p_estado = ruta(config["rutas"].get("estado_pipeline", "data/estado_pipeline.json"))
     estado = cargar_estado(p_estado)
+    if "--solo-reanudar" in args:
+        if not estado or estado.get("terminada") or not ejecucion_vigente(estado, estado.get("modo"), dt.datetime.now(dt.timezone.utc)):
+            print("No hay ninguna ejecución a medias: nada que reanudar.", flush=True)
+            return 0
+        modo = estado["modo"]
     if "--nueva" in args or not ejecucion_vigente(estado, modo, dt.datetime.now(dt.timezone.utc)):
         estado = nueva_ejecucion(modo)
     else:

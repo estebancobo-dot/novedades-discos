@@ -173,3 +173,13 @@ def test_mapear_ciclos_en_la_jerarquia_no_cuelgan():
                        {"Q1": _ent("Q1", "a", p31=["Q188451"], p279=["Q2"]),
                         "Q2": _ent("Q2", "b", p31=["Q188451"], p279=["Q1"])})
     assert resolver("a", wd, Taxonomia(TAXW))[0] == "ninguno"
+
+
+def test_pipeline_solo_reanudar_sin_nada_pendiente(tmp_path, monkeypatch):
+    p_estado = tmp_path / "estado.json"
+    monkeypatch.setattr(pipeline, "cargar_config", lambda: {"rutas": {"estado_pipeline": str(p_estado)}})
+    monkeypatch.setattr(pipeline, "ruta", lambda r: r)
+    monkeypatch.setattr(pipeline.subprocess, "run", lambda *a, **k: (_ for _ in ()).throw(AssertionError("no debía ejecutar")))
+    assert pipeline.main(["--solo-reanudar"]) == 0
+    p_estado.write_text(json.dumps({"modo": "completa", "inicio": "2020-01-01T00:00:00+00:00", "fases": {}}))
+    assert pipeline.main(["--solo-reanudar"]) == 0        # caducada: tampoco
