@@ -393,7 +393,7 @@ function cargarDetalle(d) {
 async function abrirFicha(id) {
   const d = POR_ID[id]; if (!d) return;
   if (!d._detalle) await cargarDetalle(d);
-  const subs = d.subgeneros.map(s => `<span class="chip" aria-pressed="false">${esc(SUB[s]?.nombre || s)}</span>`).join(" ");
+  const subs = d.subgeneros.map(s => `<span class="chip">${esc(SUB[s]?.nombre || s)}</span>`).join(" ");
   const descs = d.subgeneros.filter(s => SUB[s]?.descripcion).map(s => `<p class="sub-desc"><b>${esc(SUB[s].nombre)}:</b> ${esc(SUB[s].descripcion)}</p>`).join("");
   const resenas = d.resenas.map(r => `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.nombre)}</a>
       <span class="nota">${esc(r.nota || "")}</span></li>`).join("");

@@ -143,10 +143,14 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   await p.click('#cerrarFiltros');
 
   // enlace profundo a un disco
-  const id = await p.evaluate(async () => (await (await fetch('data/discos.json')).json()).discos[0].id);
+  // la ficha más completa (con subgéneros y reseñas): así la auditoría cubre todos sus bloques
+  const id = await p.evaluate(async () => { const ds = (await (await fetch('data/discos.json')).json()).discos;
+    return (ds.find(d => d.subgeneros.length && d.n_resenas) || ds[0]).id; });
   await p.goto(BASE + '#disco=' + encodeURIComponent(id), { waitUntil: 'networkidle' });
   await p.locator('dialog#ficha[open]').waitFor({ timeout: 10000 }).catch(() => {});
   comprobar(await p.locator('dialog#ficha[open]').count() === 1, 'abrir un disco desde su enlace');
+  await p.locator('dialog#ficha[open] h3').first().waitFor({ timeout: 10000 }).catch(() => {});
+  comprobar((await auditar(p, 'ficha completa')) === 0, 'accesibilidad de una ficha completa (subgéneros, reseñas, parecidos)');
 
   // accesibilidad: auditoría automática con axe (portada y ficha) además de las comprobaciones básicas
   await p.goto(BASE, { waitUntil: 'networkidle' });
