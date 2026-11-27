@@ -11,13 +11,16 @@ from __future__ import annotations
 import datetime as dt
 import json
 import os
+import shutil
 import re
 from email.utils import format_datetime
 from xml.sax.saxutils import escape
 
 from .config import cargar_config, cargar_yaml, ruta
 
-URL_WEB = os.environ.get("URL_WEB", "")     # p. ej. https://usuario.github.io/novedades-discos/
+URL_WEB = os.environ.get("URL_WEB", "")
+# Campos que solo usa la ficha: van en site/data/fichas/AAAA-MM.json, no en el índice.
+CAMPOS_FICHA = ("portada_grande", "pistas", "idioma", "deezer_id", "dicen", "resenas", "fuentes", "enlaces")     # p. ej. https://usuario.github.io/novedades-discos/
 
 
 def _portadas(url: str | None, deezer: dict | None) -> tuple[str | None, str | None]:
@@ -116,8 +119,22 @@ def main():
         elif listas.get(anio):
             entradas = sorted(listas[anio].values(), key=lambda e: (-len(e["listas"]), e["artista"].lower()))
             mejores[anio] = {"tipo": "listas", "lista": entradas[:150]}
+    # La web carga primero un índice ligero (lo que necesitan la cuadrícula, los filtros y el orden)
+    # y los detalles de la ficha (enlaces, fuentes, reseñas…) por meses, solo al abrir un disco.
+    indice, fichas = [], {}
+    for d in salida:
+        det = {k: d[k] for k in CAMPOS_FICHA if d.get(k) not in (None, [], {})}
+        fichas.setdefault(d["fecha"][:7], {})[d["id"]] = det
+        indice.append({**{k: v for k, v in d.items() if k not in CAMPOS_FICHA}, "n_resenas": len(d["resenas"])})
+    dir_fichas = os.path.join(base, "data/fichas")
+    if os.path.isdir(dir_fichas):
+        shutil.rmtree(dir_fichas)
+    os.makedirs(dir_fichas)
+    for mes, dets in fichas.items():
+        with open(os.path.join(dir_fichas, f"{mes}.json"), "w", encoding="utf-8") as f:
+            json.dump(dets, f, ensure_ascii=False, separators=(",", ":"))
     with open(os.path.join(base, "data/discos.json"), "w", encoding="utf-8") as f:
-        json.dump({"actualizado": actualizado, "familias": familias, "mejores": mejores, "discos": salida}, f,
+        json.dump({"actualizado": actualizado, "familias": familias, "mejores": mejores, "discos": indice}, f,
                   ensure_ascii=False, separators=(",", ":"))
     _rss(base, salida, familias, nombres_sub, actualizado)
     _ics(base, salida, familias, actualizado)

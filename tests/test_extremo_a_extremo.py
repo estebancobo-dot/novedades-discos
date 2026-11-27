@@ -95,6 +95,10 @@ def test_cadena_completa(tmp_path):
     # salidas de la web y del informe
     web = json.load(open(os.path.join(tmp, "site/data/discos.json"), encoding="utf-8"))
     assert [x["titulo"] for x in web["discos"]] == ["Long Gone Daddy"] and web["discos"][0]["nota"] == 8.0
+    assert "fuentes" not in web["discos"][0] and web["discos"][0]["n_resenas"] == 1     # índice ligero
+    mes = web["discos"][0]["fecha"][:7]
+    ficha = json.load(open(os.path.join(tmp, f"site/data/fichas/{mes}.json"), encoding="utf-8"))[web["discos"][0]["id"]]
+    assert {f["nombre"] for f in ficha["fuentes"]} == {"Lista de prueba", "Reseñas de prueba"}    # detalle aparte
     assert os.path.exists(os.path.join(tmp, "site/rss/todo.xml"))
     assert os.path.exists(os.path.join(tmp, "docs/informe.md"))
     # estado de las fuentes y lecturas guardadas para reanudar

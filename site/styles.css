@@ -277,3 +277,19 @@ dialog#ficha::backdrop { background: rgb(0 0 0 / .55); }
 .panel-caja section, .panel-caja .grupo, .panel-caja .chips, .panel-caja .enlaces { min-width: 0; max-width: 100%; }
 .panel-caja .chips { flex-wrap: wrap; }
 .panel-caja input, .panel-caja select { max-width: 100%; box-sizing: border-box; }
+/* calendario de salidas */
+.calendario h2 { align-items: center; }
+.cal-nav { border: 1px solid var(--linea); background: var(--superficie); border-radius: 8px; width: 36px; height: 32px; font-size: 18px; cursor: pointer; color: inherit; }
+.cal-nav:disabled { opacity: .35; cursor: default; }
+.cal-cab, .cal-rejilla { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; }
+.cal-cab span { text-align: center; font-size: 12px; color: var(--tinta-suave); padding: 4px 0; }
+.cal-dia { position: relative; aspect-ratio: 1; border-radius: 8px; border: 1px solid var(--linea); background: var(--superficie);
+  overflow: hidden; padding: 0; font: inherit; color: inherit; }
+.cal-dia.vacio { border: 0; background: none; }
+button.cal-dia { cursor: pointer; }
+.cal-dia img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .55; }
+.cal-dia .n { position: absolute; top: 3px; left: 5px; font-size: 12px; font-weight: 600; }
+.cal-dia b { position: absolute; right: 4px; bottom: 3px; background: var(--acento); color: var(--acento-tinta);
+  border-radius: 999px; font-size: 11px; padding: 1px 6px; }
+.cal-dia.hoy { outline: 2px solid var(--acento); outline-offset: -2px; }
+.cal-dia.activo { box-shadow: 0 0 0 3px var(--acento); }

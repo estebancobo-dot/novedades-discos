@@ -140,7 +140,7 @@ function tarjeta(d) {
   const subs = d.subgeneros.slice(0, 2).map(s => SUB[s]?.nombre || s).join(" · ");
   const fam = d.familias.length === 1 ? `fam-${d.familias[0]}` : "";
   const insignia = d.nota != null ? `<span class="nota-badge" title="Nota media de ${d.n_notas} reseña(s)">${d.nota.toFixed(1)}</span>`
-    : d.resenas.length ? `<span class="insignia">${d.resenas.length} ${d.resenas.length === 1 ? "reseña" : "reseñas"}</span>` : "";
+    : d.n_resenas ? `<span class="insignia">${d.n_resenas} ${d.n_resenas === 1 ? "reseña" : "reseñas"}</span>` : "";
   const lado = `<div class="t-lado">${d.nota != null ? `<b>${d.nota.toFixed(1)}</b>` : ""}${fechaLarga(d.fecha)}</div>`;
   return `<button class="tarjeta" data-id="${esc(d.id)}" aria-label="${esc(d.artista)} – ${esc(d.titulo)}">
     <div class="portada">${portadaHTML(d)}${insignia}
@@ -177,6 +177,7 @@ function pintar() {
   }
   let html = "";
   if (estado.orden === "mejor") { pintarMejores(lista, main); return; }
+  if (estado.orden === "calendario") { pintarCalendario(lista, main); return; }
   if (estado.milista) {      // discos de los artistas que has guardado y que aún no están en tu lista
     const tuyos = new Set(Object.values(MI_LISTA).map(x => norm(x.a)));
     const nuevos = DATOS.discos.filter(d => !MI_LISTA[d.id] && tuyos.has(norm(d.artista)))
@@ -186,7 +187,7 @@ function pintar() {
       <div class="rejilla">${nuevos.map(tarjeta).join("")}</div></section>`;
   }
   if (estado.orden !== "fecha") {
-    const clave = estado.orden === "nota" ? (d => (d.nota ?? -1) * 100 + d.n_notas) : (d => d.resenas.length * 100 + (d.nota ?? 0));
+    const clave = estado.orden === "nota" ? (d => (d.nota ?? -1) * 100 + d.n_notas) : (d => d.n_resenas * 100 + (d.nota ?? 0));
     const orden = [...lista].sort((a, b) => clave(b) - clave(a) || b.fecha.localeCompare(a.fecha));
     const vis = orden.slice(0, estado.tandas * DISCOS_POR_TANDA);
     const titulo = estado.orden === "nota" ? "Mejor valorados" : "Más reseñados";
@@ -204,7 +205,7 @@ function pintar() {
     if (prox.length) html += `<section class="semana prox"><h2><span>Próximamente</span><span>${prox.length}</span></h2>
       <div class="rejilla">${prox.slice(0, 60).map(tarjeta).join("")}</div></section>`;
     for (const k of visibles) {
-      const ds = semanas.get(k).sort((a, b) => (b.destacado - a.destacado) || b.resenas.length - a.resenas.length || a.artista.localeCompare(b.artista));
+      const ds = semanas.get(k).sort((a, b) => (b.destacado - a.destacado) || b.n_resenas - a.n_resenas || a.artista.localeCompare(b.artista));
       const mes = ds.reduce((m, d) => d.fecha.slice(0, 7) > m ? d.fecha.slice(0, 7) : m, "");
       html += `<section class="semana" data-mes="${mes}"><h2><span>Semana del ${fechaLarga(k)}</span><span>${ds.length}</span></h2>
         <div class="rejilla">${ds.map(tarjeta).join("")}</div></section>`;
@@ -214,6 +215,42 @@ function pintar() {
   }
   const mas = $("#mas");
   if (mas) mas.onclick = () => { estado.tandas++; pintar(); };
+}
+
+// Calendario de salidas: un mes por bloque (lunes a domingo); cada día con su número de discos y
+// una portada. Al tocar un día se muestran sus discos debajo. Por defecto, el mes en curso.
+function pintarCalendario(lista, main) {
+  const porDia = new Map();
+  for (const d of lista) { if (!porDia.has(d.fecha)) porDia.set(d.fecha, []); porDia.get(d.fecha).push(d); }
+  const meses = [...new Set(lista.map(d => d.fecha.slice(0, 7)))].sort();
+  if (!estado.mesCal || !meses.includes(estado.mesCal)) estado.mesCal = meses.includes(HOY.slice(0, 7)) ? HOY.slice(0, 7) : meses[meses.length - 1];
+  const mes = estado.mesCal, [y, m] = mes.split("-").map(Number);
+  const primero = new Date(Date.UTC(y, m - 1, 1)), dias = new Date(Date.UTC(y, m, 0)).getUTCDate();
+  const hueco = (primero.getUTCDay() + 6) % 7;                 // lunes = 0
+  const i = meses.indexOf(mes);
+  let celdas = "";
+  for (let k = 0; k < hueco; k++) celdas += `<div class="cal-dia vacio" aria-hidden="true"></div>`;
+  for (let dia = 1; dia <= dias; dia++) {
+    const f = `${mes}-${String(dia).padStart(2, "0")}`, ds = porDia.get(f) || [];
+    const portada = ds.find(d => d.portada)?.portada;
+    celdas += ds.length
+      ? `<button class="cal-dia${f === HOY ? " hoy" : ""}${f === estado.diaCal ? " activo" : ""}" data-dia="${f}" aria-label="${dia}: ${ds.length} discos">
+          ${portada ? `<img src="${esc(portada)}" alt="" loading="lazy" onerror="this.remove()">` : ""}<span class="n">${dia}</span><b>${ds.length}</b></button>`
+      : `<div class="cal-dia${f === HOY ? " hoy" : ""}"><span class="n">${dia}</span></div>`;
+  }
+  const delDia = estado.diaCal?.startsWith(mes) ? (porDia.get(estado.diaCal) || []) : [];
+  main.innerHTML = `<section class="semana calendario"><h2>
+      <button class="cal-nav" id="calAnt" ${i <= 0 ? "disabled" : ""} aria-label="Mes anterior">‹</button>
+      <span>${MESES_LARGO[m - 1]} ${y}</span>
+      <button class="cal-nav" id="calSig" ${i >= meses.length - 1 ? "disabled" : ""} aria-label="Mes siguiente">›</button></h2>
+      <div class="cal-cab">${["L", "M", "X", "J", "V", "S", "D"].map(x => `<span>${x}</span>`).join("")}</div>
+      <div class="cal-rejilla">${celdas}</div></section>
+    ${delDia.length ? `<section class="semana"><h2><span>${fechaLarga(estado.diaCal)}</span><span>${delDia.length}</span></h2>
+      <div class="rejilla">${delDia.map(tarjeta).join("")}</div></section>` : `<p class="aviso">Toca un día para ver sus discos.</p>`}`;
+  $("#calAnt").onclick = () => { estado.mesCal = meses[i - 1]; pintar(); };
+  $("#calSig").onclick = () => { estado.mesCal = meses[i + 1]; pintar(); };
+  main.querySelectorAll("[data-dia]").forEach(b => { b.onclick = () => { estado.diaCal = b.dataset.dia; pintar(); }; });
+  pintarMeses([]);
 }
 
 function pintarMejores(lista, main) {
@@ -292,6 +329,7 @@ function enlacesEscucha(d) {
     ["youtube", "YouTube Music", `https://music.youtube.com/search?q=${q}`],
     ["bandcamp", "Bandcamp", `https://bandcamp.com/search?q=${q}&item_type=a`],
     ["apple", "Apple Music", `https://music.apple.com/search?term=${q}`],
+    ["qobuz", "Qobuz", `https://www.qobuz.com/search?q=${q}`],
   ].filter(([k]) => !tiene.has(k));
   return directos.map(([k, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${SERVICIOS[k]}</a>`).join("") +
     busquedas.map(([, n, u]) => `<a class="busqueda" href="${u}" target="_blank" rel="noopener" title="Búsqueda">${n} 🔍</a>`).join("");
@@ -318,8 +356,21 @@ function alternarLista(d) {
   toast(MI_LISTA[d.id] ? "Guardado en tu lista" : "Quitado de tu lista");
 }
 
-function abrirFicha(id) {
+// Detalles de la ficha (enlaces, fuentes, reseñas…): un archivo por mes, que se pide al abrir un disco.
+const FICHAS = new Map();
+function cargarDetalle(d) {
+  const mes = d.fecha.slice(0, 7);
+  if (!FICHAS.has(mes)) FICHAS.set(mes, fetch(`data/fichas/${mes}.json`).then(r => r.ok ? r.json() : {}).catch(() => null));
+  return FICHAS.get(mes).then(dets => {
+    if (dets === null) FICHAS.delete(mes);            // sin red: se volverá a intentar
+    Object.assign(d, { resenas: [], fuentes: [], enlaces: {}, dicen: [] }, (dets || {})[d.id] || {}, { _detalle: !!dets });
+    return d;
+  });
+}
+
+async function abrirFicha(id) {
   const d = POR_ID[id]; if (!d) return;
+  if (!d._detalle) await cargarDetalle(d);
   const subs = d.subgeneros.map(s => `<span class="chip" aria-pressed="false">${esc(SUB[s]?.nombre || s)}</span>`).join(" ");
   const descs = d.subgeneros.filter(s => SUB[s]?.descripcion).map(s => `<p class="sub-desc"><b>${esc(SUB[s].nombre)}:</b> ${esc(SUB[s].descripcion)}</p>`).join("");
   const resenas = d.resenas.map(r => `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.nombre)}</a>

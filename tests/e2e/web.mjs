@@ -31,7 +31,7 @@ const comprobar = (ok, texto) => { console.log(`${ok ? '✓' : '✗'} ${texto}`)
 const navegador = await chromium.launch();
 for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['escritorio', { viewport: { width: 1280, height: 900 } }]]) {
   console.log(`— ${nombre}`);
-  const ctx = await navegador.newContext({ ...opciones, serviceWorkers: 'block' });
+  const ctx = await navegador.newContext({ ...opciones, serviceWorkers: 'block', reducedMotion: 'reduce' });
   await ctx.route(/^https?:\/\/(?!localhost)/, r => r.abort());      // sin red externa: portadas y Deezer fuera
   const p = await ctx.newPage();
   const errores = [];
@@ -61,6 +61,8 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   await p.waitForTimeout(300);
   comprobar(await p.locator('dialog#ficha[open]').count() === 1, 'abre la ficha');
   comprobar(p.url().includes('#disco='), 'la ficha tiene enlace propio');
+  comprobar(await p.locator('dialog#ficha a', { hasText: 'Qobuz' }).count() === 1, 'enlace a Qobuz en la ficha');
+  comprobar(await p.locator('dialog#ficha h3', { hasText: 'Aparece en' }).count() === 1, 'la ficha carga sus detalles (fuentes)');
   await p.click('#fGuardar');
   comprobar((await p.textContent('#numLista')).trim() === '1', 'guarda en Mi lista');
   await p.keyboard.press('Escape');
@@ -78,6 +80,19 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   await p.selectOption('#orden', 'mejor');
   await p.waitForTimeout(300);
   comprobar(await p.locator('#selAnio:not([hidden])').count() === 1, 'lo mejor del año muestra selector de año');
+
+  // calendario
+  await p.selectOption('#orden', 'calendario');
+  await p.waitForTimeout(300);
+  comprobar(await p.locator('.cal-rejilla').count() === 1, 'calendario de salidas');
+  const diaConDiscos = p.locator('button.cal-dia').first();
+  if (await diaConDiscos.count()) {
+    await diaConDiscos.click();
+    await p.waitForTimeout(200);
+    comprobar(await p.locator('#contenido .tarjeta').count() > 0, 'al tocar un día salen sus discos');
+  }
+  await p.selectOption('#orden', 'fecha');
+  await p.waitForTimeout(200);
 
   // filtros
   await p.click('#abrirFiltros');
