@@ -30,7 +30,7 @@ peticiones:
     api.discogs.com: 2.5          # sin clave: máximo 25 peticiones/minuto
     wikidata.org: 1.0
     ws.audioscrobbler.com: 1.0
-    api.deezer.com: 1.0           # límite publicado: 50 peticiones cada 5 s
+    api.deezer.com: 0.25          # límite publicado: 50 peticiones cada 5 s (aquí, 4 por segundo)
     itunes.apple.com: 3.1         # límite publicado: unas 20 peticiones por minuto
     coverartarchive.org: 1.0
   timeout: 30
@@ -50,6 +50,9 @@ peticiones:
   # MusicBrainz tarda ~3-4 s en responder. Con 4 consultas en paralelo se aprovecha esa
   # espera sin pasar nunca del intervalo de arriba (1 petición cada 1,1 s).
   hilos_musicbrainz: 4
+  # Fuentes y etiquetas extra en paralelo: son webs distintas; cada una conserva su ritmo.
+  hilos_fuentes: 6
+  hilos_enriquecer: 6
 
 # Señales de verificación anti-bots o bloqueo. Si aparecen, se deja la web
 # y se apunta en el informe. Nunca se intentan saltar.

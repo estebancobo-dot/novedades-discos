@@ -40,6 +40,9 @@ def _montar(tmp):
         {"id": "resenas", "nombre": "Reseñas de prueba", "familia": "todas", "mixta": True, "rol": "resena",
          "lector": "rss", "urls": ["https://e2e.example/feed"], "nota": r"(?P<nota>\d+/10)",
          "patrones": [r"^(?P<artista>.+?)\s+–\s+(?P<titulo>.+?) review$"]},
+        # fuente mal definida (patrón inválido): debe quedar en "error" sin parar la recogida
+        {"id": "rota", "nombre": "Fuente rota", "familia": "country", "rol": "listado", "lector": "texto",
+         "urls": ["https://e2e.example/lista"], "patrones": ["(?P<artista>"]},
     ]}
     with open(os.path.join(tmp, "data/fuentes.yaml"), "w", encoding="utf-8") as f:
         yaml.safe_dump(fuentes, f, allow_unicode=True)
@@ -104,6 +107,7 @@ def test_cadena_completa(tmp_path):
     # estado de las fuentes y lecturas guardadas para reanudar
     estado = json.load(open(os.path.join(tmp, "data/estado_fuentes.json"), encoding="utf-8"))
     assert estado["fuentes"]["lista"]["estado"] == "ok"
+    assert estado["fuentes"]["rota"]["estado"] == "error"        # una fuente rota no tumba la recogida
     assert os.path.exists(os.path.join(tmp, "data/cache/lecturas/lista.json"))
 
 

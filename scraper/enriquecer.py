@@ -10,6 +10,7 @@ El resultado se guarda en cada candidato (etiquetas_extra) y en una caché."""
 from __future__ import annotations
 
 import json
+from concurrent.futures import ThreadPoolExecutor
 import os
 import re
 import urllib.parse
@@ -29,7 +30,12 @@ class Extras:
         self.consultas = Counter()
 
     def guardar(self):
-        guardar_json(self.ruta, dict(self.cache), ensure_ascii=False, indent=0, sort_keys=True)
+        for _ in range(5):          # otro hilo puede estar añadiendo una entrada justo ahora
+            try:
+                guardar_json(self.ruta, dict(self.cache), ensure_ascii=False, indent=0, sort_keys=True)
+                return
+            except RuntimeError:
+                continue
 
     def _json(self, servicio: str, url: str, cab: dict | None = None):
         if servicio in self.bloqueos:
@@ -190,10 +196,11 @@ def main():
     with open(p, encoding="utf-8") as f:
         candidatos = json.load(f)
     artistas_de = {v["rg"]: v.get("artistas_id", []) for k, v in mb.items() if k.startswith("rg:") and v.get("rg")}
-    pendientes, resueltos = 0, 0
     usar_deezer = cfg.get("deezer", {}).get("activo")
     usar_itunes = cfg.get("itunes", {}).get("activo")
-    for n, d in enumerate(candidatos, 1):
+
+    def procesar(d) -> tuple[int, int]:
+        """→ (1 si estaba sin subgénero, 1 si las etiquetas extra se lo dieron)."""
         if usar_deezer:                          # a todos: enlace, tipo, reproductor y portada
             dz = ex.deezer(d["artista"], d["titulo"])
             if dz:
@@ -206,8 +213,7 @@ def main():
         r = clasificar_disco(d, tax, mapeo, Counter(), {})
         utiles = [s for s in r["subgeneros"] if not tax.sub[s]["frontera"]]
         if utiles and not cfg.get("todos"):
-            continue
-        pendientes += 1
+            return 0, 0
         ids = d.get("mbid_artistas") or artistas_de.get(d.get("mbid"), [])
         art = mb.get(f"art:{ids[0]}") if ids else None
         enl_art = (art or {}).get("enlaces", {}) if art else {}
@@ -226,11 +232,19 @@ def main():
                 if it.get("genero"):
                     extra.append({"etiqueta": it["genero"], "origen": "itunes"})
         d["etiquetas_extra"] = extra
-        if extra and clasificar_disco(d, tax, mapeo, Counter(), {})["subgeneros"]:
-            resueltos += 1
-        if n % 50 == 0:
-            ex.guardar()
-            print(f"  {n}/{len(candidatos)} · consultas {dict(ex.consultas)}", flush=True)
+        return 1, int(bool(extra and clasificar_disco(d, tax, mapeo, Counter(), {})["subgeneros"]))
+
+    # Discos en paralelo: Deezer, iTunes, Wikidata, Discogs y Last.fm son webs distintas y cada una
+    # conserva su ritmo (candado por web), así que mientras una espera avanzan las otras.
+    pendientes = resueltos = 0
+    hilos = max(1, int(config["peticiones"].get("hilos_enriquecer", 1)))
+    with ThreadPoolExecutor(max_workers=hilos) as pool:
+        for n, (p_, r_) in enumerate(pool.map(procesar, candidatos), 1):
+            pendientes += p_
+            resueltos += r_
+            if n % 100 == 0:
+                ex.guardar()
+                print(f"  {n}/{len(candidatos)} · consultas {dict(ex.consultas)}", flush=True)
     ex.guardar()
     with open(p, "w", encoding="utf-8") as f:
         json.dump(candidatos, f, ensure_ascii=False, indent=1)

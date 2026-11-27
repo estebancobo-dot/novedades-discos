@@ -155,15 +155,26 @@ def main():
     items: list[Item] = []
     carpeta_lecturas = ruta(config["rutas"].get("cache_lecturas", "data/cache/lecturas"))
     horas_lectura = 0 if "--refrescar" in args else float(rec.get("horas_validez_lecturas", 30))
-    for f in fuentes:
-        log(f"· {f['id']} …")
+    def leer_una(f):
         huella = _huella(f, lectura_desde)
         res = cargar_lectura(carpeta_lecturas, f["id"], huella, horas_lectura)
         if res is not None:
             res.detalle = (res.detalle + " (lectura guardada)").strip()
         else:
-            res = leer_fuente(nav, f, hoy, lectura_desde)
+            try:
+                res = leer_fuente(nav, f, hoy, lectura_desde)
+            except Exception as e:          # un fallo inesperado en una fuente no tumba la recogida
+                res = ResultadoFuente(f["id"], "error", f"{type(e).__name__}: {str(e)[:200]}")
             guardar_lectura(carpeta_lecturas, res, huella)
+        log(f"  leída {f['id']}: {res.estado} · {len(res.items)} items")
+        return f, res
+
+    # Varias fuentes a la vez: son webs distintas y cada web conserva su propio ritmo (candado por web).
+    hilos_fuentes = max(1, int(config["peticiones"].get("hilos_fuentes", 1)))
+    with ThreadPoolExecutor(max_workers=hilos_fuentes) as ex_fuentes:
+        lecturas = list(ex_fuentes.map(leer_una, fuentes))
+    for f, res in lecturas:
+        log(f"· {f['id']} …")
         estado["fuentes"][f["id"]] = {"nombre": f["nombre"], "web": f.get("web"), "familia": f.get("familia"),
                                      "rol": f.get("rol"), "estado": res.estado, "detalle": res.detalle.strip(),
                                      "paginas": res.paginas, "items": len(res.items)}

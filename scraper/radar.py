@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+from concurrent.futures import ThreadPoolExecutor
 import os
 import urllib.parse
 
@@ -96,9 +97,13 @@ def leer_radar(nav, cfg, hoy, desde=None, config=None) -> ResultadoFuente:
     hi = hoy + dt.timedelta(days=int(cfg.get("dias_adelante", 180)))
     tipos = cfg.get("tipos", "primarytype:album")
     vistos = set()
-    for a, b in _trozos_mensuales(lo, hi):
+    tramos = list(_trozos_mensuales(lo, hi))
+    # MusicBrainz tarda segundos en responder: varios tramos a la vez, sin pasar de su ritmo (candado por web)
+    with ThreadPoolExecutor(max_workers=max(1, int(cfg.get("hilos", 4)))) as ex:
+        resultados = list(ex.map(lambda t: _paginas(nav, t[0], t[1], tipos), tramos))
+    for filas in resultados:
         res.paginas += 1
-        for rg in _paginas(nav, a, b, tipos):
+        for rg in filas:
             if rg["id"] in vistos or rg.get("secondary-types"):
                 continue
             credito = rg.get("artist-credit", [])
