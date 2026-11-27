@@ -75,6 +75,31 @@ Actualizado el 27-nov-2026.
 | 39 | Rendimiento | índice ligero + fichas por mes, carga diferida | Medido: 115 KB comprimidos | 🟡 sin auditoría Lighthouse |
 | 40 | Secretos fuera del chat y del código | secretos del repositorio | Revisión | ✅ |
 
+## 6 bis. Revisión mensaje a mensaje (los 48 mensajes de la conversación, leídos del registro completo el 27-nov)
+
+Lo que faltaba en las tablas anteriores o no estaba documentado:
+
+| Mensaje | Petición | Dónde / qué se hizo | Estado |
+|---|---|---|---|
+| 1 | El informe debe dar: discos por familia y subgénero, % con subgénero, % en Bandcamp, discos que solo están en una fuente, comparación con la página de géneros de AOTY o decir que no se puede | `docs/informe.md` (secciones Resumen, Mercado, Por familia y subgénero) | ✅ con 5 meses · 🟡 falta con todo 2026 |
+| 1 | Subgéneros "frontera" (country-blues, southern-gospel, heartland-rock; melodic-metal, power-metal, soft-rock): se etiquetan pero no son el foco | `frontera: true` en la taxonomía; una fuente mixta no admite un disco solo con fronteras | ✅ |
+| 1 | Un disco puede tener varios subgéneros | hasta 4 (`max_subgeneros`) | ✅ |
+| 1 | Fuentes concretas de prensa, listados y sellos | `docs/fuentes.md`: cada una con su estado. Descartadas con motivo: Country Universe (0 discos), Rounder y Thirty Tigers (sin página de novedades), Yep Roc (parada), Free Dirt (error de conexión), HNE (no responde) | ✅ |
+| 2 | Preguntas y explicaciones no técnicas | Forma de comunicar | ✅ (a mejorar siempre) |
+| 3, 45 | Sin clave de API; solo plan Pro; no gastar dinero | API de pago desactivada; LLM con Claude Code y el plan Pro | ✅ |
+| 6 | Fuentes de r/Music: Pause & Play, Hello Weimar Republic, Bandcamp Daily, Metacritic, AllMusic, AOTY | Pause & Play y Bandcamp Daily ✅ en uso; Hello Weimar Republic: recomienda canciones, no discos; Metacritic, AllMusic y AOTY bloquean al robot (sus listas de fin de año entran por Year End Lists) | ✅ evaluadas |
+| 8 | Repos: albumoftheyearapi, album-of-the-year-analysis, topic "allmusic", radares de Spotify (robbyrussell, PaulMcInnis, dttncl, MusicReleases) | Revisados en `docs/fuentes.md` (los de Spotify necesitan Premium o cuenta) | ✅ · dttncl y el topic "allmusic" no estaban anotados: añadidos aquí (dttncl usa la API de Spotify; el topic agrupa scrapers de AllMusic, que hoy bloquea) |
+| 8 | Fuentes de agenda-conciertos: Wikipedia, Wikidata, Discogs, MusicBrainz, Last.fm, ReccoBeats, Wikimedia Commons | Todas salvo ReccoBeats (desactualizado) y Wikimedia Commons (fotos de artistas; la web usa portadas, no fotos) | ✅ |
+| 10 | Pruebas de concepto saltándose Cloudflare | No se hace: contradice la regla del mensaje 1 ("no intentes saltártelo") | ⛔ por regla del propio usuario |
+| 13, 14 | Ampliaciones 0, 1 y 2, con la 2 al final | Hechas en ese orden | 🟡 falta con todo 2026 |
+| 15–21, 26, 30, 48 | Estudio de AOTY, RYM, Metacritic y AllMusic (qué ofrecen) | Robot y lector alternativo: AOTY, RYM y AllMusic responden 403; Metacritic deja leer su lista de novedades (no la ficha). Se completa con fuentes descriptivas (Wikipedia, apps, el proyecto albumoftheyearapi) | ⏳ |
+| 22–23 | Repos de la búsqueda en GitHub (capturas) | `docs/fuentes.md` | ✅ |
+| 24 | ¿Tidal tiene API gratis? | Su API pública exige registro como desarrollador y está orientada a catálogo; no aporta novedades por género que no den MusicBrainz y Deezer. No se usa | ✅ respondida |
+| 27–28 | Secretos LASTFM_KEY y DISCOGS_TOKEN | Añadidos por el usuario; la Action los usa | ✅ (se verá en la primera ejecución en `main`) |
+| 29, 32 | Autonomía, sin cerrar tareas a la ligera, todas las fuentes posibles | Tareas solo cerradas con validación; búsqueda de fuentes continua | 🟡 continuo |
+| 42 | New Music Tracker | Evaluado: datos de MusicBrainz y su `robots.txt` prohíbe los filtros; ideas tomadas (calendario, Qobuz) | ✅ |
+| 43, 47, 48 | Estado del arte en cada capa y si se va a cambiar la app | Ver §7 y `docs/estado-del-arte.md` | ⏳ |
+
 ## 7. En qué se basa el diseño, capa por capa (y qué falta contrastar)
 
 | Capa | Decisión | Referencias en que se basa | Qué no está contrastado todavía |
