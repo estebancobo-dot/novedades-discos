@@ -17,7 +17,7 @@ from collections import Counter
 
 from .clasificar import Taxonomia, cargar_mapeo, clasificar_disco
 from .config import RAIZ, cargar_config, cargar_yaml, ruta
-from .http import Bloqueado, Navegador, Prohibido
+from .http import Bloqueado, Navegador, Prohibido, guardar_json
 from .util import normalizar, similitud
 
 
@@ -29,8 +29,7 @@ class Extras:
         self.consultas = Counter()
 
     def guardar(self):
-        with open(self.ruta, "w", encoding="utf-8") as f:
-            json.dump(self.cache, f, ensure_ascii=False, indent=0, sort_keys=True)
+        guardar_json(self.ruta, dict(self.cache), ensure_ascii=False, indent=0, sort_keys=True)
 
     def _json(self, servicio: str, url: str, cab: dict | None = None):
         if servicio in self.bloqueos:

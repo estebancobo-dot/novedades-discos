@@ -9,6 +9,7 @@ import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
 const { chromium, devices } = require('playwright');
+const AXE = require.resolve('axe-core/axe.min.js');      // auditoría de accesibilidad (WCAG 2.1 A/AA)
 
 const RAIZ = path.resolve(process.argv[2] || path.join(path.dirname(new URL(import.meta.url).pathname), '../../site'));
 const TIPOS = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json',
@@ -26,6 +27,14 @@ await new Promise(r => servidor.listen(0, r));
 const BASE = `http://localhost:${servidor.address().port}/`;
 
 let fallos = 0;
+// Devuelve el número de infracciones graves o críticas de WCAG 2.1 A/AA y las muestra.
+async function auditar(p, donde) {
+  await p.addScriptTag({ path: AXE });
+  const r = await p.evaluate(() => axe.run(document, { runOnly: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'] }));
+  const graves = r.violations.filter(v => v.impact === 'serious' || v.impact === 'critical');
+  for (const v of graves) console.log(`   ${donde}: ${v.id} (${v.nodes.length}) ${v.nodes[0].target.join(' ')}`);
+  return graves.length;
+}
 const comprobar = (ok, texto) => { console.log(`${ok ? '✓' : '✗'} ${texto}`); if (!ok) fallos++; };
 
 const navegador = await chromium.launch();
@@ -101,6 +110,25 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   await p.click('#abrirFiltros');
   comprobar(await p.locator('#panel:not([hidden])').count() === 1, 'abre el panel de filtros');
   comprobar(await p.locator('#subgeneros .chip').count() > 5, 'chips de subgéneros');
+  comprobar((await auditar(p, 'panel de filtros')) === 0, 'accesibilidad del panel de filtros (WCAG 2.1 AA)');
+  // fechas: una fecha futura lejana deja la lista vacía; "Limpiar" la recupera
+  await p.fill('#fDesde', '2099-01-01'); await p.dispatchEvent('#fDesde', 'change');
+  comprobar((await p.textContent('#numResultados')).trim() === '0', 'filtro de fechas');
+  await p.click('#limpiar');
+  comprobar(Number((await p.textContent('#numResultados')).trim()) > 0, 'limpiar filtros');
+  // sello: solo discos de ese sello
+  const sello = await p.evaluate(async () => {         // un sello con discos en la familia elegida y en fechas
+    const fam = new URLSearchParams(location.search).get('familia');
+    const desde = document.querySelector('#fDesde').value;
+    return (await (await fetch('data/discos.json')).json()).discos
+      .find(d => d.sello && (!fam || d.familias.includes(fam)) && d.fecha >= desde)?.sello;
+  });
+  if (sello) {
+    await p.fill('#fSello', sello); await p.dispatchEvent('#fSello', 'change');
+    const n = Number((await p.textContent('#numResultados')).trim());
+    comprobar(n > 0, `filtro de sello (${sello}: ${n})`);
+    await p.click('#limpiar');
+  }
   await p.click('#cerrarFiltros');
 
   // enlace profundo a un disco
@@ -109,6 +137,13 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   await p.locator('dialog#ficha[open]').waitFor({ timeout: 10000 }).catch(() => {});
   comprobar(await p.locator('dialog#ficha[open]').count() === 1, 'abrir un disco desde su enlace');
 
+  // accesibilidad: auditoría automática con axe (portada y ficha) además de las comprobaciones básicas
+  await p.goto(BASE, { waitUntil: 'networkidle' });
+  comprobar((await auditar(p, 'portada')) === 0, 'accesibilidad de la portada (WCAG 2.1 AA)');
+  await p.locator('.tarjeta').first().click();
+  await p.locator('dialog#ficha[open] h3').first().waitFor({ timeout: 10000 }).catch(() => {});
+  comprobar((await auditar(p, 'ficha')) === 0, 'accesibilidad de la ficha (WCAG 2.1 AA)');
+  await p.click('dialog#ficha .f-cerrar');
   // accesibilidad básica
   const sinNombre = await p.$$eval('button', bs => bs.filter(b => !(b.getAttribute('aria-label') || b.textContent.trim())).length);
   comprobar(sinNombre === 0, 'todos los botones tienen nombre accesible');

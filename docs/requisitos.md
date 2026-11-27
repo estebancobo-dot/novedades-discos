@@ -57,7 +57,7 @@ Actualizado el 27-nov-2026.
 |---|---|---|---|---|
 | 27 | Cuadrícula de portadas por semanas, lo más reciente arriba | `site/app.js` | Prueba de navegador | ✅ |
 | 28 | Ficha del disco | `site/app.js` | Prueba de navegador | ✅ |
-| 29 | Filtros: familia, subgénero múltiple, fechas (5 meses por defecto), sello, búsqueda | `site/app.js` | Prueba de navegador (familia, búsqueda, panel); fechas y sello revisados a mano | 🟡 fechas y sello sin prueba automática |
+| 29 | Filtros: familia, subgénero múltiple, fechas (5 meses por defecto), sello, búsqueda | `site/app.js` | Prueba de navegador: familia, búsqueda, fechas, sello, limpiar | ✅ |
 | 30 | Pensada para móvil | CSS móvil primero | Prueba en móvil emulado: sin desbordes, botones con nombre | ✅ |
 | 31 | Estática en GitHub Pages | `site/`, Action `publicar` | — | ⬜ falta pasar a `main` y activar Pages (usuario) |
 | 32 | Mejoras de UX del estudio (Mi lista, nota, orden, lista, compartir, calendario .ics, RSS, app instalable, meses, destacados, Deezer, Qobuz, calendario de salidas…) | `docs/ux.md` | Prueba de navegador | ✅ |
@@ -71,7 +71,7 @@ Actualizado el 27-nov-2026.
 | 35 | Action semanal | `.github/workflows/semanal.yml` | YAML validado | 🟡 no se ha ejecutado: solo corre en `main` |
 | 36 | Todo automático, sin sesión ni gasto | Action + Wikidata + Claude con plan Pro | — | 🟡 igual que 35 |
 | 37 | Persistencia, tolerancia a fallos, reanudar | `scraper/pipeline.py`, lecturas guardadas, escrituras atómicas | Pruebas de reanudación y de extremo a extremo | ✅ |
-| 38 | Escenarios nominales, de borde, esquina y error | `tests/` (94 de Python + 37 de navegador) | Se ejecutan en GitHub en cada envío | ✅ |
+| 38 | Escenarios nominales, de borde, esquina y error | `tests/` (110 de Python + 47 comprobaciones de navegador), cobertura 72 % con mínimo exigido del 70 % | Se ejecutan en GitHub en cada envío | ✅ |
 | 39 | Rendimiento | índice ligero + fichas por mes, carga diferida | Medido: 115 KB comprimidos | 🟡 sin auditoría Lighthouse |
 | 40 | Secretos fuera del chat y del código | secretos del repositorio | Revisión | ✅ |
 
@@ -85,13 +85,13 @@ Actualizado el 27-nov-2026.
 | Clasificación | Reglas + alias + base de conocimiento (Wikidata) + LLM con salida estructurada y validada | Enfoque híbrido habitual: determinista primero, LLM restringido a una lista cerrada | **No hay conjunto de referencia** revisado a mano para medir aciertos; solo el acuerdo con la prensa |
 | Datos | JSON versionado, esquema validado en las pruebas | JSON Schema | Cobertura por campo no medida en el informe |
 | Orquestación | Fases como procesos, estado persistente, reanudación diaria | Patrones de *checkpointing* de los ETL | Sin alertas propias además del correo de GitHub |
-| Web | JavaScript sin framework, PWA, carga diferida, URL como estado | Guías de Google (web.dev) de PWA y Core Web Vitals; patrones de AOTY/RYM vistos en el estudio | **Sin auditoría automática** de accesibilidad (axe) ni de rendimiento (Lighthouse) |
-| Pruebas | pytest + Playwright en CI | Pirámide de pruebas: unitarias, integración, extremo a extremo | Sin medida de cobertura de código |
-| Seguridad | Secretos de GitHub, sin claves en código, LLM solo escribe un archivo validado | Guía de seguridad de la Action de Claude Code | Dependencias sin versión fija ni avisos automáticos (Dependabot) |
+| Web | JavaScript sin framework, PWA, carga diferida, URL como estado | Guías de Google (web.dev) de PWA y Core Web Vitals; WCAG 2.1 AA; patrones de AOTY/RYM vistos en el estudio | Accesibilidad: auditoría axe (WCAG 2.1 A/AA) en cada envío, 0 infracciones tras corregir el contraste de colores. Rendimiento: medido el peso (115 KB), **sin Lighthouse** |
+| Pruebas | pytest + Playwright + axe en CI | Pirámide de pruebas: unitarias, integración, extremo a extremo | Cobertura 72 % (mínimo 70 % en CI); lo menos cubierto: radar de Deezer y etiquetas extra de Wikidata/Discogs/Last.fm |
+| Seguridad | Secretos de GitHub, sin claves en código, LLM solo escribe un archivo validado, versiones fijas, Dependabot | Guía de seguridad de la Action de Claude Code | Sin cabeceras de seguridad propias (GitHub Pages no las permite) |
 | IA | Claude con el plan Pro vía Claude Code; Wikidata como base gratuita | Documentación oficial de la Action de Claude Code | La Action con token no se ha ejecutado |
 
 **Conclusión honesta:** no está "validado al 100%". Están hechos y probados los requisitos marcados
 con ✅. Los 🟡 dependen de terminar la recogida de todo 2026 o de pasar a `main`. Los ⬜ necesitan
 una acción tuya. Y la última columna de §7 es lo que falta para poder decir con datos que cada capa
 está al nivel de lo mejor que existe: medir aciertos de clasificación y de unión de duplicados,
-auditar accesibilidad y rendimiento, medir cobertura de pruebas y fijar dependencias.
+y auditar el rendimiento con Lighthouse. Accesibilidad, cobertura de pruebas y dependencias ya están cubiertas (27-nov).

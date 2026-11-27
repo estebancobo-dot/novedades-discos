@@ -1,0 +1,12 @@
+[run]
+source = scraper
+# las pruebas de extremo a extremo ejecutan las fases como procesos aparte: también se miden
+patch = subprocess
+parallel = true
+# herramientas de uso manual, no forman parte del proceso automático
+omit =
+    scraper/importar_taxonomia.py
+    scraper/probar.py
+
+[report]
+skip_empty = true
