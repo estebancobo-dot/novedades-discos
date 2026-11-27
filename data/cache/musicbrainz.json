@@ -21634,6 +21634,36 @@
 "nombre": "Softcult",
 "pais": "CA"
 },
+"art:322a3e23-2a64-4b3b-ba97-3e6f50dca1d7": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0003337697",
+"apple": "https://music.apple.com/au/artist/625087252",
+"bandsintown.com": "https://www.bandsintown.com/a/5498522",
+"deezer": "https://www.deezer.com/artist/4562827",
+"discogs": "https://www.discogs.com/artist/4052023",
+"facebook": "https://www.facebook.com/MegMacMusic",
+"genius.com": "https://genius.com/artists/Meg-mac",
+"instagram": "https://www.instagram.com/megmac/",
+"jaxsta.com": "https://jaxsta.com/profile/e28b2cbf-8ca1-4e28-b03b-47edf0f0d083",
+"last.fm": "https://www.last.fm/music/Meg+Mac",
+"megmac.com.au": "https://www.megmac.com.au/",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/meg-mac/",
+"qobuz": "https://open.qobuz.com/artist/2145110",
+"songkick.com": "https://www.songkick.com/artists/7845984",
+"soundcloud": "https://soundcloud.com/megmac",
+"spotify": "https://open.spotify.com/artist/4faUajx9k93O56nlmpkOuz",
+"tidal": "https://tidal.com/artist/6534832",
+"tiktok.com": "https://www.tiktok.com/@megmac",
+"twitter.com": "https://twitter.com/megmac",
+"whosampled.com": "https://www.whosampled.com/Meg-Mac/",
+"wikidata": "https://www.wikidata.org/wiki/Q19875487",
+"youtube": "https://www.youtube.com/channel/UCpKKlM8XCIq5xAqj4RRXaPg"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Meg Mac",
+"pais": "AU"
+},
 "art:322ccdc3-7485-4a82-9a2e-3a6457863116": {
 "enlaces": {
 "discogs": "https://www.discogs.com/artist/7482525",
@@ -36044,6 +36074,19 @@
 "nombre": "Pelegrin",
 "pais": "FR"
 },
+"art:50bb4480-9b14-4a25-902f-3047352aeabb": {
+"enlaces": {
+"instagram": "https://www.instagram.com/mattproxy/",
+"soundcloud": "https://soundcloud.com/mattproxy",
+"spotify": "https://open.spotify.com/artist/3PBLEBKGVTKW845ylh5Dul",
+"wikidata": "https://www.wikidata.org/wiki/Q140310374",
+"youtube": "https://www.youtube.com/channel/UCzMM3Dtr1NKdd7rcPne5Glw"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "matt proxy",
+"pais": "US"
+},
 "art:50feafbf-6382-42c7-a817-de38eb29df3b": {
 "enlaces": {
 "apple": "https://music.apple.com/gb/artist/1704292600",
@@ -48340,6 +48383,42 @@
 "nombre": "WILLOW",
 "pais": "US"
 },
+"art:6bea8718-6cdc-4a6d-9623-2ef0bac8a902": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0003388465",
+"amazon": "https://music.amazon.com/artists/B000YWRUP2",
+"apple": "https://itunes.apple.com/us/artist/id169939373",
+"bandcamp": "https://broadsideva.bandcamp.com/",
+"bandsintown.com": "https://www.bandsintown.com/a/474483",
+"bbc.co.uk": "https://www.bbc.co.uk/music/artists/6bea8718-6cdc-4a6d-9623-2ef0bac8a902",
+"deezer": "https://www.deezer.com/artist/7623124",
+"discogs": "https://www.discogs.com/artist/4358601",
+"facebook": "https://www.facebook.com/broadsideva",
+"genius.com": "https://genius.com/artists/Broadside",
+"instagram": "https://www.instagram.com/broadsideofficial/",
+"last.fm": "https://www.last.fm/music/Broadside",
+"play.google.com": "https://play.google.com/store/music/artist?id=Auo32tjkszfvbpbfszwdgpzpcvu",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/broadside_f2",
+"setlist.fm": "https://www.setlist.fm/setlists/broadside-63c66acb.html",
+"songkick.com": "https://www.songkick.com/artists/355338",
+"spotify": "https://open.spotify.com/artist/7EGdqeEDe7WMqOVyDFUYyo",
+"tidal": "https://tidal.com/artist/6582281",
+"twitter.com": "https://twitter.com/broadside_",
+"victoryrecords.com": "http://www.victoryrecords.com/broadside",
+"wikidata": "https://www.wikidata.org/wiki/Q19874093",
+"youtube": "https://www.youtube.com/BroadsideVEVO"
+},
+"etiquetas": [
+"pop punk",
+"alternative rock"
+],
+"generos": [
+"pop punk",
+"alternative rock"
+],
+"nombre": "Broadside",
+"pais": "US"
+},
 "art:6bf3264c-6cd9-4124-8ed1-be7c32144a89": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0003883622",
@@ -49619,6 +49698,98 @@
 "nombre": "Isaac Stalling",
 "pais": "US"
 },
+"art:6ed40778-8d03-4a5c-ad35-93cf814627c9": {
+"enlaces": {
+"abcdrduson.com": "https://www.abcdrduson.com/interviews/jessie-ware-rap/",
+"allmusic": "https://www.allmusic.com/artist/mn0002577357",
+"amazon": "https://music.amazon.co.uk/artists/B005GYJJN4",
+"apple": "https://music.apple.com/gb/artist/471286553",
+"bandsintown.com": "https://www.bandsintown.com/a/1363991",
+"beatport.com": "https://www.beatport.com/artist/-/160081",
+"castalbums.org": "https://castalbums.org/people/-/118308",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb16690468m",
+"cdjapan.co.jp": "https://www.cdjapan.co.jp/person/700443352",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:Jessie_Ware_in_the_Islington_Assembly_Hall_in_September_2017_(7).jpg",
+"d-nb.info": "https://d-nb.info/gnd/102885059X",
+"deezer": "https://www.deezer.com/artist/1443471",
+"discogs": "https://www.discogs.com/artist/1885206",
+"facebook": "https://www.facebook.com/153128401409092",
+"genius.com": "https://genius.com/artists/Jessie-ware",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2013050433",
+"id.oclc.org": "https://id.oclc.org/worldcat/entity/E39PBJvd4Vc8dKH7qx8jrr3bBP",
+"idref.fr": "https://www.idref.fr/251497135",
+"imdb.com": "https://www.imdb.com/name/nm5334988/",
+"imvdb.com": "https://imvdb.com/n/jessie-ware",
+"instagram": "https://www.instagram.com/jessieware/",
+"jaxsta.io": "https://jaxsta.io/profile/e1d215d9-6c27-4935-ac9d-28a9085c26e5",
+"jessieware.com": "https://www.jessieware.com/",
+"last.fm": "https://www.last.fm/music/Jessie+Ware",
+"maniadb.com": "http://www.maniadb.com/artist/383162",
+"melon.com": "https://www.melon.com/artist/detail.htm?artistId=582954",
+"mora.jp": "https://mora.jp/artist/120027/",
+"music.yandex.com": "https://music.yandex.com/artist/602587",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/344277/",
+"musixmatch.com": "https://www.musixmatch.com/artist/Jessie-Ware",
+"muziekweb.nl": "https://www.muziekweb.nl/Link/M00000396437/POPULAR/",
+"muzikum.eu": "http://muzikum.eu/en/122-11790/jessie-ware/lyrics.html",
+"myspace.com": "https://myspace.com/jessiewaremusic",
+"ototoy.jp": "https://ototoy.jp/_/default/a/2086135",
+"qobuz": "https://www.qobuz.com/gb-en/interpreter/-/685434",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/jessie-ware",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/91893",
+"setlist.fm": "https://www.setlist.fm/setlists/wd-7bd04aa0.html",
+"songkick.com": "https://www.songkick.com/artists/4956458",
+"soundcloud": "https://soundcloud.com/jessieware",
+"spotify": "https://open.spotify.com/artist/5Mq7iqCWBzofK39FBqblNc",
+"themoviedb.org": "https://www.themoviedb.org/person/1372439",
+"ticketmaster.co.uk": "https://www.ticketmaster.co.uk/artist/1695927",
+"tidal": "https://tidal.com/artist/4205993",
+"tiktok.com": "https://www.tiktok.com/@jessieware",
+"twitter.com": "https://twitter.com/JessieWare",
+"uk.7digital.com": "https://uk.7digital.com/artist/jessie-ware-1125092",
+"us.napster.com": "https://us.napster.com/artist/jessie-ware",
+"viaf.org": "http://viaf.org/viaf/291078101",
+"web.napster.com": "https://web.napster.com/artist/art.55243458",
+"whosampled.com": "https://www.whosampled.com/Jessie-Ware/",
+"wikidata": "https://www.wikidata.org/wiki/Q218042",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no2013050433",
+"youtube": "https://www.youtube.com/channel/UCisgqJFEjW68P8GdxZNP5aA"
+},
+"etiquetas": [
+"electronic",
+"soul",
+"contemporary r&b",
+"dance",
+"dance-pop",
+"disco",
+"pop",
+"sophisti-pop",
+"adult alternative pop/rock",
+"adult contemporary r&b",
+"chillout",
+"electronica",
+"house",
+"indie dance",
+"neo-disco"
+],
+"generos": [
+"electronic",
+"soul",
+"contemporary r&b",
+"dance",
+"dance-pop",
+"disco",
+"pop",
+"sophisti-pop",
+"chillout",
+"electronica",
+"house",
+"quiet storm",
+"r&b"
+],
+"nombre": "Jessie Ware",
+"pais": "GB"
+},
 "art:6eee347e-7ccf-40f3-98f7-fcd1d3372128": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0001569312",
@@ -50762,6 +50933,40 @@
 ],
 "nombre": "Eternal Evil",
 "pais": "SE"
+},
+"art:718287f6-773f-4b43-a47d-15c8a6df89b9": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0002123736",
+"apple": "https://music.apple.com/us/artist/1488035324",
+"bandcamp": "https://friko.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/1694594",
+"discogs": "https://www.discogs.com/artist/12997128",
+"facebook": "https://www.facebook.com/frikochicago",
+"instagram": "https://www.instagram.com/frikomusic/",
+"last.fm": "https://www.last.fm/music/Friko",
+"qobuz": "https://www.qobuz.com/us-en/interpreter/friko-1/10220374",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/friko-2",
+"songkick.com": "https://www.songkick.com/artists/10178687",
+"spotify": "https://open.spotify.com/artist/5HViQsHNdOovxKa420CPGR",
+"tidal": "https://tidal.com/artist/22145",
+"whoisfriko.com": "https://www.whoisfriko.com/",
+"wikidata": "https://www.wikidata.org/wiki/Q125621083",
+"youtube": "https://www.youtube.com/channel/UCXsNEBErPvrlvAZMM9cqgFA"
+},
+"etiquetas": [
+"alternative rock",
+"art rock",
+"power pop",
+"rock"
+],
+"generos": [
+"alternative rock",
+"art rock",
+"power pop",
+"rock"
+],
+"nombre": "Friko",
+"pais": "US"
 },
 "art:719719b6-3ae8-4ec1-8007-560af954cf6e": {
 "enlaces": {
@@ -63935,6 +64140,65 @@
 ],
 "nombre": "Jazzy",
 "pais": "IE"
+},
+"art:8dc08b1f-e393-4f85-a5dd-300f7693a8b8": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0002435745",
+"apple": "https://itunes.apple.com/artist/id59504818",
+"bbc.co.uk": "https://www.bbc.co.uk/music/artists/8dc08b1f-e393-4f85-a5dd-300f7693a8b8",
+"beatport.com": "https://www.beatport.com/artist/james-blake/74336",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb165028147",
+"d-nb.info": "https://d-nb.info/gnd/1013079930",
+"deezer": "https://www.deezer.com/artist/255822882",
+"discogs": "https://www.discogs.com/artist/1500084",
+"facebook": "https://www.facebook.com/jamesblakemusic",
+"genius.com": "https://genius.com/artists/James-blake",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2011042897",
+"id.oclc.org": "https://id.oclc.org/worldcat/entity/E39PBJbM44cPyYGr6jvwcwwt8C",
+"imvdb.com": "https://imvdb.com/n/james-blake",
+"instagram": "https://www.instagram.com/jamesblake/",
+"jamesblakemusic.com": "http://www.jamesblakemusic.com/",
+"last.fm": "https://www.last.fm/music/James+Blake",
+"mora.jp": "https://mora.jp/artist/37521/",
+"muzikum.eu": "http://muzikum.eu/en/122-9545/james-blake/lyrics.html",
+"myspace.com": "https://myspace.com/jamesblakeproduction",
+"qobuz": "https://open.qobuz.com/artist/429216",
+"ra.co": "https://ra.co/dj/jamesblake",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/james-blake",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/47336",
+"songkick.com": "https://www.songkick.com/artists/591219",
+"soundcloud": "https://soundcloud.com/jamesblakeofficial",
+"spotify": "https://open.spotify.com/artist/53KwLdlmrlCelAZMaLVZqU",
+"tidal": "https://tidal.com/artist/3801573",
+"twitter.com": "https://twitter.com/jamesblake",
+"viaf.org": "http://viaf.org/viaf/169625994",
+"wikidata": "https://www.wikidata.org/wiki/Q350362",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no2011042897",
+"youtube": "https://www.youtube.com/channel/UCIZ4NEJamsWybup2TJUdoPA"
+},
+"etiquetas": [
+"electronic",
+"experimental",
+"minimal",
+"post-dubstep",
+"singer-songwriter",
+"soul",
+"downtempo",
+"dubstep",
+"future garage"
+],
+"generos": [
+"electronic",
+"experimental",
+"post-dubstep",
+"singer-songwriter",
+"soul",
+"downtempo",
+"dubstep",
+"future garage"
+],
+"nombre": "James Blake",
+"pais": "GB"
 },
 "art:8dd216da-6db2-4130-9a7c-ece756d1394d": {
 "enlaces": {
@@ -78656,6 +78920,41 @@
 "nombre": "Mohamed Bourouissa",
 "pais": "FR"
 },
+"art:ae363169-4422-49f9-9d92-be36456cfed7": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0003499186",
+"apple": "https://itunes.apple.com/mx/artist/id1097759040",
+"bandcamp": "https://carladalforno.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/10101526",
+"discogs": "https://www.discogs.com/artist/2614655",
+"facebook": "https://www.facebook.com/carladalfornoyes",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2020009945",
+"instagram": "https://www.instagram.com/cd___player/",
+"last.fm": "https://www.last.fm/music/Carla+dal+Forno",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/carla-dal-forno",
+"soundcloud": "https://soundcloud.com/carla-dal-forno",
+"spotify": "https://open.spotify.com/artist/6FVxEgfQsGrJ0BogIOYCd6",
+"tidal": "https://tidal.com/artist/7707422",
+"twitter.com": "https://twitter.com/carladalforno",
+"viaf.org": "http://viaf.org/viaf/35158066517308431545",
+"wikidata": "https://www.wikidata.org/wiki/Q84317601",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no2020009945/"
+},
+"etiquetas": [
+"ambient pop",
+"ethereal wave",
+"minimal wave",
+"post-punk"
+],
+"generos": [
+"ambient pop",
+"ethereal wave",
+"minimal wave",
+"post-punk"
+],
+"nombre": "Carla dal Forno",
+"pais": "DE"
+},
 "art:ae5af627-ccd6-4db5-974d-83da8e32e705": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0003455025",
@@ -91072,6 +91371,43 @@
 "nombre": "Brian Ennals",
 "pais": "US"
 },
+"art:c96a6114-9955-4954-a47f-bbfd08ca3adc": {
+"enlaces": {
+"abc.net.au": "https://www.abc.net.au/triplejunearthed/artist/bad-dreems",
+"allmusic": "https://www.allmusic.com/artist/mn0003279769",
+"apple": "https://music.apple.com/au/artist/561096607",
+"baddreems.com": "https://www.baddreems.com/",
+"bandcamp": "https://baddreems.bandcamp.com/",
+"bandsintown.com": "https://www.bandsintown.com/a/3123203",
+"deezer": "https://www.deezer.com/artist/4943582",
+"discogs": "https://www.discogs.com/artist/3412957",
+"facebook": "https://www.facebook.com/badbaddreems",
+"genius.com": "https://genius.com/artists/Bad-dreems",
+"instagram": "https://www.instagram.com/baddreems/",
+"last.fm": "https://www.last.fm/music/Bad%2F%2FDreems",
+"qobuz": "https://www.qobuz.com/us-en/interpreter/baddreems/5392391",
+"setlist.fm": "https://www.setlist.fm/setlists/baddreems-13db29a5.html",
+"songkick.com": "https://www.songkick.com/artists/7560954",
+"soundcloud": "https://soundcloud.com/baddreems",
+"spotify": "https://open.spotify.com/artist/54f24706ua34STMhWSzPV7",
+"tidal": "https://tidal.com/artist/4865704",
+"twitter.com": "https://twitter.com/baddreems",
+"wikidata": "https://www.wikidata.org/wiki/Q16822245",
+"youtube": "https://www.youtube.com/channel/UCWdHLQR0cNPhV9_dYqD8KoQ"
+},
+"etiquetas": [
+"alternative rock",
+"garage rock",
+"post-punk"
+],
+"generos": [
+"alternative rock",
+"garage rock",
+"post-punk"
+],
+"nombre": "Bad//Dreems",
+"pais": "AU"
+},
 "art:c973b48e-db54-4391-973e-9689be8f4f36": {
 "enlaces": {},
 "etiquetas": [],
@@ -100197,6 +100533,36 @@
 ],
 "nombre": "Sophia Stel",
 "pais": "CA"
+},
+"art:e148e786-f078-49e2-a9fb-fd044bd68905": {
+"enlaces": {
+"amazon": "https://music.amazon.com/artists/B0BV9MV1K7",
+"apple": "https://music.apple.com/gb/artist/1670795714",
+"deezer": "https://www.deezer.com/artist/201002147",
+"discogs": "https://www.discogs.com/artist/13358370",
+"genie.co.kr": "https://www.genie.co.kr/detail/artistInfo?xxnm=82068159",
+"genius.com": "https://genius.com/artists/Misamo",
+"last.fm": "https://www.last.fm/music/MISAMO",
+"melon.com": "https://www.melon.com/artist/detail.htm?artistId=3474097",
+"mora.jp": "https://mora.jp/artist/1714746/",
+"music.bugs.co.kr": "https://music.bugs.co.kr/artist/80383518",
+"soundcloud": "https://soundcloud.com/misamo-music",
+"spotify": "https://open.spotify.com/artist/0IwZVmMMGE7nNXS7vN9SIo",
+"tidal": "https://tidal.com/artist/37278328",
+"wikidata": "https://www.wikidata.org/wiki/Q116767949",
+"youtube": "https://music.youtube.com/channel/UCiycE6vc3kx5ZYffHzf0bMA"
+},
+"etiquetas": [
+"j-pop",
+"girl group",
+"pop"
+],
+"generos": [
+"j-pop",
+"pop"
+],
+"nombre": "MISAMO",
+"pais": "JP"
 },
 "art:e1658eb7-16ec-46e5-b18a-b053a6dffd55": {
 "enlaces": {
@@ -127420,6 +127786,29 @@
 "tipos_secundarios": [],
 "titulo": "Land of the Forgotten"
 },
+"rg:broadside|nowhere at last": {
+"artista": "Broadside",
+"artistas_id": [
+"6bea8718-6cdc-4a6d-9623-2ef0bac8a902"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/1858260063",
+"tidal": "https://tidal.com/album/478621072"
+},
+"fecha_release": "2026-04-10",
+"idioma": "eng",
+"pais": null,
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/855ba528-a9aa-4258-82e5-0dc7dd6310fd/front-250",
+"primera_fecha": "2026-04-10",
+"puntuacion": 1.0,
+"release": "9c03d085-c252-467f-8372-320650627d67",
+"rg": "855ba528-a9aa-4258-82e5-0dc7dd6310fd",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Nowhere, at Last"
+},
 "rg:brody price|leaf miners daughter": {
 "artista": "Brody Price",
 "artistas_id": [
@@ -129325,6 +129714,30 @@
 },
 "rg:carl sjostrom from scapa flow|getting closer": {
 "no_encontrado": "2026-11-22"
+},
+"rg:carla dal forno|confession": {
+"artista": "Carla dal Forno",
+"artistas_id": [
+"ae363169-4422-49f9-9d92-be36456cfed7"
+],
+"enlaces": {
+"bandcamp": "https://carladalforno.bandcamp.com/album/confession"
+},
+"fecha_release": "2026",
+"idioma": "eng",
+"pais": null,
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/b8edcb3d-7d8d-4593-8454-5e244969fb7d/front-250",
+"primera_fecha": "2026-04-24",
+"puntuacion": 1.0,
+"release": "1c9e5d06-29ba-41c1-b78f-a9cadd424988",
+"rg": "b8edcb3d-7d8d-4593-8454-5e244969fb7d",
+"sellos": [
+"Kallista Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Confession"
 },
 "rg:carla gover and friends|williams branch is hard to find": {
 "no_encontrado": "2026-11-22"
@@ -149084,6 +149497,35 @@
 "rg:friends of jesse malin|i would do it for you vol 1": {
 "no_encontrado": "2026-11-22"
 },
+"rg:friko|something worth waiting for": {
+"artista": "Friko",
+"artistas_id": [
+"718287f6-773f-4b43-a47d-15c8a6df89b9"
+],
+"enlaces": {
+"apple": "https://music.apple.com/se/album/1866435401",
+"bandcamp": "https://friko.bandcamp.com/album/something-worth-waiting-for",
+"deezer": "https://www.deezer.com/album/1057388372",
+"qobuz": "https://www.qobuz.com/us-en/album/something-worth-waiting-for-friko/q1ih995xxfj6p",
+"spotify": "https://open.spotify.com/album/45wk4c0HdndmN4W4VBZ83k",
+"tidal": "https://tidal.com/album/553429105"
+},
+"fecha_release": "2026-04-24",
+"idioma": "eng",
+"pais": null,
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/23d9015c-7e55-4720-bc04-c947268fcee5/front-250",
+"primera_fecha": "2026-04-24",
+"puntuacion": 1.0,
+"release": "8143060a-0221-4367-82c6-e55432961abb",
+"rg": "23d9015c-7e55-4720-bc04-c947268fcee5",
+"sellos": [
+"ATO Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Something Worth Waiting For"
+},
 "rg:frog|frog for sale": {
 "artista": "Frog",
 "artistas_id": [
@@ -160195,6 +160637,37 @@
 "tipos_secundarios": [],
 "titulo": "My World"
 },
+"rg:james blake|trying times": {
+"artista": "James Blake",
+"artistas_id": [
+"8dc08b1f-e393-4f85-a5dd-300f7693a8b8"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/1862353780",
+"deezer": "https://www.deezer.com/album/928994091",
+"discogs": "https://www.discogs.com/release/36836830",
+"hdtracks.com": "https://www.hdtracks.com/#/album/69b998914aad727a9321589e",
+"jamesblake.diggers.store": "https://jamesblake.diggers.store/project/332796",
+"qobuz": "https://www.qobuz.com/gb-en/album/trying-times-james-blake/xobazk7m93r4w",
+"spotify": "https://open.spotify.com/album/35GCADa3vYa6kCYhxODmQE",
+"tidal": "https://tidal.com/album/506614396"
+},
+"fecha_release": "2026-03-13",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 13,
+"portada": "https://coverartarchive.org/release-group/7e425ff2-c85a-4316-b015-d1546aadc186/front-250",
+"primera_fecha": "2026-03-13",
+"puntuacion": 1.0,
+"release": "0e4b1bb9-5ff9-4b04-99fa-e5f4a083d780",
+"rg": "7e425ff2-c85a-4316-b015-d1546aadc186",
+"sellos": [
+"Good Boy Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Trying Times"
+},
 "rg:james blunt|airplane mode": {
 "artista": "James Blunt",
 "artistas_id": [
@@ -161519,6 +161992,45 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "A LITTLE VENGEANCE"
+},
+"rg:jessie ware|superbloom": {
+"artista": "Jessie Ware",
+"artistas_id": [
+"6ed40778-8d03-4a5c-ad35-93cf814627c9"
+],
+"enlaces": {
+"amazon": "https://music.amazon.co.uk/albums/B0GH33HSLS",
+"apple": "https://music.apple.com/gb/album/1869414259",
+"audiomack.com": "https://audiomack.com/jessieware/album/superbloom-2934752",
+"beatport.com": "https://www.beatport.com/release/superbloom/6819120",
+"deezer": "https://www.deezer.com/album/958349621",
+"discogs": "https://www.discogs.com/release/37091649",
+"hdtracks.com": "https://www.hdtracks.com/#/album/69dcd974983d99100c7c8924",
+"mora.jp": "https://mora.jp/package/43000006/00199957255462/",
+"ototoy.jp": "https://ototoy.jp/_/default/p/3622141",
+"qobuz": "https://www.qobuz.com/gb-en/album/superbloom-jessie-ware/nszgr5lsc47yn",
+"soundcloud": "https://soundcloud.com/jessieware/sets/superbloom-180220372",
+"spotify": "https://open.spotify.com/album/56sKKg6lpmwyvbvLw3nVCN",
+"tidal": "https://tidal.com/album/514701705",
+"uk.7digital.com": "https://uk.7digital.com/artist/jessie-ware/release/superbloom-69491350",
+"youtube": "https://music.youtube.com/playlist?list=OLAK5uy_nBWW4qfHPJLRxJE_CLRwiTFeXu2Pkgn3o"
+},
+"fecha_release": "2026-04-17",
+"idioma": "eng",
+"pais": "GB",
+"pistas": 13,
+"portada": "https://coverartarchive.org/release-group/f14a7a20-c82a-4746-aa59-d6886461b459/front-250",
+"primera_fecha": "2026-04-17",
+"puntuacion": 1.0,
+"release": "0b2fbb2d-56c5-4c61-a113-b7f1e9cb6308",
+"rg": "f14a7a20-c82a-4746-aa59-d6886461b459",
+"sellos": [
+"EMI",
+"EMI"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Superbloom"
 },
 "rg:jesus on extasy|between despair and disbelief": {
 "artista": "Jesus on Extasy",
@@ -169564,6 +170076,9 @@
 "tipos_secundarios": [],
 "titulo": "Peeling an Orange in Just One Go"
 },
+"rg:lice|miami lice season four": {
+"no_encontrado": "2026-11-27"
+},
 "rg:lido pimienta|caribenya": {
 "artista": "Lido Pimienta",
 "artistas_id": [
@@ -174425,6 +174940,18 @@
 "rg:matt jones and the bobs|matt jones and the bobs": {
 "no_encontrado": "2026-11-22"
 },
+"rg:matt proxy|trojan horse": {
+"artista": "matt proxy",
+"artistas_id": [
+"50bb4480-9b14-4a25-902f-3047352aeabb"
+],
+"primera_fecha": "2026-06-19",
+"puntuacion": 1.0,
+"rg": "0f39bd7f-7afd-4bf5-89aa-668153076e6a",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "trojan horse"
+},
 "rg:matt swanton band|growing pains": {
 "no_encontrado": "2026-11-22"
 },
@@ -174858,6 +175385,30 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Business"
+},
+"rg:meg mac|its my party": {
+"artista": "Meg Mac",
+"artistas_id": [
+"322a3e23-2a64-4b3b-ba97-3e6f50dca1d7"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/1870195300",
+"deezer": "https://www.deezer.com/album/900280942",
+"spotify": "https://open.spotify.com/album/4HRq38YhAwEdlAAciLfvuo"
+},
+"fecha_release": "2026-02-20",
+"idioma": null,
+"pais": null,
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/4134b624-7b05-4fba-81a9-b094538f7036/front-250",
+"primera_fecha": "2026-02-20",
+"puntuacion": 1.0,
+"release": "cb993a7a-dbca-47a1-825e-702a7337a9bb",
+"rg": "4134b624-7b05-4fba-81a9-b094538f7036",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "It’s My Party"
 },
 "rg:mega colossus|watch out": {
 "artista": "Mega Colossus",
@@ -204336,6 +204887,9 @@
 "tipos_secundarios": [],
 "titulo": "Hush"
 },
+"rg:tarja turunen|frisson noir": {
+"no_encontrado": "2026-11-27"
+},
 "rg:tarja|frisson noir": {
 "artista": "Tarja",
 "artistas_id": [
@@ -209769,6 +210323,19 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Blood of the Bull"
+},
+"rg:upsammy and valentina magaletti|seismo": {
+"artista": "upsammy & Valentina Magaletti",
+"artistas_id": [
+"36124745-211c-446d-a51d-523742844d80",
+"a1290ce3-d716-4ab5-890f-50eb335b726e"
+],
+"primera_fecha": "2026-04-10",
+"puntuacion": 1.0,
+"rg": "fd0464ad-ba2e-48cd-a013-da8d0e4fa46e",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Seismo"
 },
 "rg:upstate|abalone": {
 "artista": "Upstate",
