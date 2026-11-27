@@ -3697,6 +3697,31 @@
 "nombre": "Charles Wesley Godwin",
 "pais": "US"
 },
+"art:08306f5a-c1de-42a2-8004-a9467fc30950": {
+"enlaces": {
+"apple": "https://itunes.apple.com/us/artist/id1210840772",
+"deezer": "https://www.deezer.com/artist/12047884",
+"discogs": "https://www.discogs.com/artist/6121461",
+"instagram": "https://www.instagram.com/tianamajor9/",
+"soundcloud": "https://soundcloud.com/tianamajor9",
+"spotify": "https://open.spotify.com/artist/1Naqgo0HMRoumRP0e2MXD9",
+"tianamajor9.com": "http://tianamajor9.com/",
+"tidal": "https://tidal.com/artist/8647481",
+"twitter.com": "https://twitter.com/TianaMajor9"
+},
+"etiquetas": [
+"alternative r&b",
+"neo soul",
+"r&b"
+],
+"generos": [
+"alternative r&b",
+"neo soul",
+"r&b"
+],
+"nombre": "Tiana Major9",
+"pais": null
+},
 "art:085185f7-38e4-4966-8cca-b794da614eca": {
 "enlaces": {
 "apple": "https://music.apple.com/gb/artist/1615585316",
@@ -38816,6 +38841,17 @@
 "nombre": "BABYMONSTER",
 "pais": "KR"
 },
+"art:583098da-203a-48fd-be90-6776aed847db": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0002318782",
+"discogs": "https://www.discogs.com/artist/1081112",
+"wikidata": "https://www.wikidata.org/wiki/Q7816067"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Tom Hamilton",
+"pais": "US"
+},
 "art:58448cfe-1b07-4516-883a-a664326110e7": {
 "enlaces": {
 "apple": "https://itunes.apple.com/us/artist/id981836697",
@@ -47521,6 +47557,61 @@
 ],
 "nombre": "Rafael Anton Irisarri",
 "pais": "US"
+},
+"art:6ac4d6ec-0d09-4146-9930-0a00f19f5119": {
+"enlaces": {
+"amazon": "https://www.amazon.com/gp/product/B0192VEQUW",
+"apple": "https://music.apple.com/ca/artist/1065672604",
+"bandcamp": "https://singwithmi.bandcamp.com/",
+"bandsintown.com": "https://www.bandsintown.com/a/14620793",
+"boomplay.com": "https://www.boomplay.com/artists/2794934",
+"bsky.app": "https://bsky.app/profile/dominiquefilsaime.bsky.social",
+"deezer": "https://www.deezer.com/artist/337675151",
+"discogs": "https://www.discogs.com/artist/6559777",
+"domiofficial.com": "https://www.domiofficial.com/",
+"facebook": "https://www.facebook.com/domiofficialpage",
+"genius.com": "https://genius.com/artists/Dominique-fils-aime",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2019082397",
+"imdb.com": "https://www.imdb.com/name/nm11172103/",
+"instagram": "https://www.instagram.com/sing.with.mi/",
+"last.fm": "https://www.last.fm/music/Dominique+Fils-Aim%C3%A9",
+"music.yandex.ru": "https://music.yandex.ru/artist/4075023",
+"parisjazzclub.net": "https://www.parisjazzclub.net/medias/concerts/66691-dominique-fils-aime-stay-tuned/images/dominique-fils-aime-stay-tuned-lg.jpg",
+"play.anghami.com": "https://play.anghami.com/artist/2149945",
+"qobuz": "https://open.qobuz.com/artist/2584448",
+"songkick.com": "https://www.songkick.com/artists/9444719",
+"soundcloud": "https://soundcloud.com/sing_with_mi",
+"spotify": "https://open.spotify.com/artist/10tvYvaoSO32hlvu3NrrPC",
+"tidal": "https://tidal.com/artist/9054764",
+"tiktok.com": "https://www.tiktok.com/@sing.with.mi",
+"twitter.com": "https://twitter.com/sing_with_mi",
+"viaf.org": "http://viaf.org/viaf/1152561476015440846",
+"web.napster.com": "https://web.napster.com/artist/art.8963191686355765385",
+"wikidata": "https://www.wikidata.org/wiki/Q46553540",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no2019082397/",
+"youtube": "https://www.youtube.com/channel/UC6hgyBiGm9riy5rvvNtSL9Q"
+},
+"etiquetas": [
+"r&b",
+"soul",
+"contemporary r&b",
+"singer-songwriter",
+"montreal",
+"urban",
+"canada",
+"jazz",
+"neo soul"
+],
+"generos": [
+"r&b",
+"soul",
+"contemporary r&b",
+"singer-songwriter",
+"jazz",
+"neo soul"
+],
+"nombre": "Dominique Fils-Aimé",
+"pais": "CA"
 },
 "art:6acb932e-840d-47ac-8e0d-725ad8a6e52c": {
 "enlaces": {
@@ -63415,6 +63506,21 @@
 ],
 "nombre": "Lord of the Lost",
 "pais": "DE"
+},
+"art:8d050884-da51-4755-9ad3-e4af4fd320d4": {
+"enlaces": {
+"anneharris.com": "https://anneharris.com/",
+"apple": "https://music.apple.com/us/artist/102001897",
+"deezer": "https://www.deezer.com/artist/4969287",
+"discogs": "https://www.discogs.com/artist/785108",
+"spotify": "https://open.spotify.com/artist/1GGd9iZTrs3TfZtUCNn2tM",
+"tidal": "https://tidal.com/artist/6677537",
+"wikidata": "https://www.wikidata.org/wiki/Q4768422"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Anne Harris",
+"pais": null
 },
 "art:8d0acf0e-c099-49ac-b4b3-d57ca9eb2561": {
 "enlaces": {
@@ -87313,6 +87419,38 @@
 "nombre": "Ceremony",
 "pais": "US"
 },
+"art:c1401838-551f-4176-8594-86f0ce28d3c2": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0004521249",
+"apple": "https://music.apple.com/us/artist/1607240507",
+"bandcamp": "https://searows.bandcamp.com/",
+"bandsintown.com": "https://www.bandsintown.com/a/15497205",
+"deezer": "https://www.deezer.com/artist/158683422",
+"discogs": "https://www.discogs.com/artist/12213025",
+"facebook": "https://www.facebook.com/searows",
+"instagram": "https://www.instagram.com/saerows/",
+"last.fm": "https://www.last.fm/music/Searows",
+"searows.com": "https://www.searows.com/",
+"searows.myshopify.com": "https://searows.myshopify.com/",
+"searows.terrible.group": "https://searows.terrible.group/",
+"soundcloud": "https://soundcloud.com/searows",
+"spotify": "https://open.spotify.com/artist/0nugNBwdWaptgIAsEtx1It",
+"tidal": "https://tidal.com/artist/30390066",
+"tiktok.com": "https://www.tiktok.com/@searows",
+"wikidata": "https://www.wikidata.org/wiki/Q121493600",
+"youtube": "https://www.youtube.com/channel/UCNObZkU2Jwp46PThgRcJPdg"
+},
+"etiquetas": [
+"folk",
+"indie folk"
+],
+"generos": [
+"folk",
+"indie folk"
+],
+"nombre": "Searows",
+"pais": "US"
+},
 "art:c14b8c6a-2525-4d04-b08d-79ecbc295f41": {
 "enlaces": {
 "facebook": "https://www.facebook.com/profile.php?id=61572293156207",
@@ -98441,6 +98579,18 @@
 "nombre": "Hällas",
 "pais": "SE"
 },
+"art:dd556023-544d-45c5-8941-c43c928661c0": {
+"enlaces": {
+"apple": "https://itunes.apple.com/us/artist/id262660871",
+"deezer": "https://www.deezer.com/artist/1700024",
+"discogs": "https://www.discogs.com/artist/646241",
+"spotify": "https://open.spotify.com/artist/36CFNLLjVZDOv1NLW7RFaV"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "John Paul Soars",
+"pais": "US"
+},
 "art:dd64bb91-cac7-4c7a-9cff-e20557e3c02d": {
 "enlaces": {
 "bandcamp": "https://desoration.bandcamp.com/"
@@ -99246,6 +99396,16 @@
 "etiquetas": [],
 "generos": [],
 "nombre": "Jonathan Something",
+"pais": "US"
+},
+"art:df8a7fe9-2699-4f8f-83ca-18992fb46aa8": {
+"enlaces": {
+"apple": "https://itunes.apple.com/us/artist/id881146328",
+"discogs": "https://www.discogs.com/artist/3943918"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "The Legal Matters",
 "pais": "US"
 },
 "art:dfa715ac-b536-44df-af43-570d3ea3edec": {
@@ -111529,6 +111689,34 @@
 ],
 "nombre": "Shania Twain",
 "pais": "CA"
+},
+"art:fabe6510-9bb1-4a83-af11-3af75adc1389": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000507928",
+"apple": "https://itunes.apple.com/us/artist/id167182895",
+"bandcamp": "https://thesoftpinktruth.bandcamp.com/",
+"brainwashed.com": "https://www.brainwashed.com/spt/",
+"deezer": "https://www.deezer.com/artist/8416",
+"discogs": "https://www.discogs.com/artist/26668",
+"imdb.com": "https://www.imdb.com/name/nm8962139/",
+"instagram": "https://www.instagram.com/xsoftpinktruthx/",
+"last.fm": "https://www.last.fm/music/The+Soft+Pink+Truth",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/the-soft-pink-truth",
+"songkick.com": "https://www.songkick.com/artists/397613",
+"spotify": "https://open.spotify.com/artist/1TzvxOvPV19Pr7UiCne5Ei",
+"thrilljockey.com": "https://thrilljockey.com/artists/the-soft-pink-truth",
+"twitter.com": "https://twitter.com/xSoftPinkTruthx",
+"viaf.org": "http://viaf.org/viaf/228563234",
+"wikidata": "https://www.wikidata.org/wiki/Q7765127"
+},
+"etiquetas": [
+"electronic"
+],
+"generos": [
+"electronic"
+],
+"nombre": "The Soft Pink Truth",
+"pais": "US"
 },
 "art:fac18145-203c-4ea2-bf52-8cf7f8d403ea": {
 "enlaces": {
@@ -135735,6 +135923,18 @@
 "tipos_secundarios": [],
 "titulo": "Another Golden Hour"
 },
+"rg:daniela lalita|tac tac": {
+"artista": "Daniela Lalita",
+"artistas_id": [
+"3c8f9ff8-f3f9-4cc1-8e7e-2d6c600fd979"
+],
+"primera_fecha": "2026-11-13",
+"puntuacion": 1.0,
+"rg": "5d4ebf39-ac5a-43e2-af59-3e6e22cd0a91",
+"tipo": "EP",
+"tipos_secundarios": [],
+"titulo": "Tac Tac"
+},
 "rg:danielle nicole|fireflies": {
 "artista": "Danielle Nicole",
 "artistas_id": [
@@ -140126,6 +140326,37 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Diana"
+},
+"rg:dominique fils aime|my world is the sun": {
+"artista": "Dominique Fils-Aimé",
+"artistas_id": [
+"6ac4d6ec-0d09-4146-9930-0a00f19f5119"
+],
+"enlaces": {
+"amazon": "https://music.amazon.ca/albums/B0G5QNQ5ZG",
+"apple": "https://music.apple.com/us/album/1859635028",
+"bandcamp": "https://singwithmi.bandcamp.com/album/my-world-is-the-sun",
+"deezer": "https://www.deezer.com/album/872891112",
+"discogs": "https://www.discogs.com/release/36560431",
+"qobuz": "https://www.qobuz.com/de-de/album/my-world-is-the-sun-dominique-fils-aime/usa7yp3trwuek",
+"spotify": "https://open.spotify.com/album/2h1iYX66Vxm2DLFZgrdMp4",
+"tidal": "https://tidal.com/album/483002826"
+},
+"fecha_release": "2025",
+"idioma": "mul",
+"pais": "CA",
+"pistas": 15,
+"portada": "https://coverartarchive.org/release-group/cc5de6bc-69af-4b80-8f44-a1aead60fda2/front-250",
+"primera_fecha": "2025",
+"puntuacion": 1.0,
+"release": "ba32da8c-5a41-4772-9302-782e1f4341af",
+"rg": "cc5de6bc-69af-4b80-8f44-a1aead60fda2",
+"sellos": [
+"Ensoul Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "My World Is The Sun"
 },
 "rg:domino drive|cosmic theater": {
 "artista": "Domino Drive",
@@ -163271,6 +163502,35 @@
 "tipos_secundarios": [],
 "titulo": "Okay Piano Guy"
 },
+"rg:jp soars and anne harris|gypsy blue revue": {
+"artista": "JP Soars & Anne Harris",
+"artistas_id": [
+"dd556023-544d-45c5-8941-c43c928661c0",
+"8d050884-da51-4755-9ad3-e4af4fd320d4"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/1871592426",
+"deezer": "https://www.deezer.com/album/903996842",
+"qobuz": "https://www.qobuz.com/gb-en/album/gypsy-blue-revue-jp-soars-anne-harris/fhobyaumgv2z3",
+"spotify": "https://open.spotify.com/album/7bLo1H10B2lE9ryICXQ5Mv",
+"tidal": "https://tidal.com/album/492417465"
+},
+"fecha_release": "2026-05-29",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 9,
+"portada": null,
+"primera_fecha": "2026-05-29",
+"puntuacion": 1.0,
+"release": "667d4c57-4123-44f4-aeb1-59bbad6acd17",
+"rg": "af0dcbda-6e0b-464f-8951-0494ae96a64c",
+"sellos": [
+"Forty Below Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Gypsy Blue Revue"
+},
 "rg:jpegmafia|experimental rap": {
 "artista": "JPEGMAFIA",
 "artistas_id": [
@@ -168702,9 +168962,22 @@
 "artistas_id": [
 "df8a7fe9-2699-4f8f-83ca-18992fb46aa8"
 ],
+"enlaces": {
+"bandcamp": "https://bigstirrecords.bandcamp.com/album/lost-at-sea",
+"discogs": "https://www.discogs.com/release/36428029"
+},
+"fecha_release": "2026-02-27",
+"idioma": "eng",
+"pais": "US",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/7b5feca9-9bdb-4ed5-b3a3-02b1e1f6903d/front-250",
 "primera_fecha": "2026-02-27",
 "puntuacion": 1.0,
+"release": "e5d46c78-9bc3-4e9a-a9fb-9e8f93c33a78",
 "rg": "7b5feca9-9bdb-4ed5-b3a3-02b1e1f6903d",
+"sellos": [
+"Big Stir Records"
+],
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Lost At Sea"
@@ -194861,6 +195134,34 @@
 "tipos_secundarios": [],
 "titulo": "Sun or Man or God"
 },
+"rg:searows|death in the business of whaling": {
+"artista": "Searows",
+"artistas_id": [
+"c1401838-551f-4176-8594-86f0ce28d3c2"
+],
+"enlaces": {
+"apple": "https://music.apple.com/fr/album/1839470844",
+"bandcamp": "https://searows.bandcamp.com/album/death-in-the-business-of-whaling",
+"deezer": "https://www.deezer.com/album/820505891",
+"spotify": "https://open.spotify.com/album/5bqWbWR0tokA3hQio9h5cl",
+"tidal": "https://tidal.com/album/460211369"
+},
+"fecha_release": "2026-01-23",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/ba90329c-d074-4ac6-9613-0a503409112e/front-250",
+"primera_fecha": "2026-01-23",
+"puntuacion": 1.0,
+"release": "1c129ea5-0c22-44a3-a6ce-8c22d4553484",
+"rg": "ba90329c-d074-4ac6-9613-0a503409112e",
+"sellos": [
+"Last Recordings on Earth"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Death in the Business of Whaling"
+},
 "rg:seasick steve|last season of america": {
 "artista": "Seasick Steve",
 "artistas_id": [
@@ -198907,6 +199208,18 @@
 },
 "rg:soft machine|slightly all the time the recordings 1970 1974": {
 "no_encontrado": "2026-11-22"
+},
+"rg:soft pink truth|can such delightful times go on forever": {
+"artista": "The Soft Pink Truth",
+"artistas_id": [
+"fabe6510-9bb1-4a83-af11-3af75adc1389"
+],
+"primera_fecha": "2026-01-30",
+"puntuacion": 1.0,
+"rg": "43aa4d5c-0412-4cd8-905c-e600c866ce16",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Can Such Delightful Times Go On Forever?"
 },
 "rg:soft vein|all weve known of heaven": {
 "artista": "Soft Vein",
@@ -205735,6 +206048,32 @@
 "tipos_secundarios": [],
 "titulo": "XIII: Sárga erdő"
 },
+"rg:tiana major9|november scorpio": {
+"artista": "Tiana Major9",
+"artistas_id": [
+"08306f5a-c1de-42a2-8004-a9467fc30950"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/1846170591",
+"deezer": "https://www.deezer.com/album/837970742",
+"spotify": "https://open.spotify.com/album/5gLta4atMJLFX4HJEFQ9JV"
+},
+"fecha_release": "2026-02-13",
+"idioma": null,
+"pais": "XW",
+"pistas": 11,
+"portada": "https://coverartarchive.org/release-group/c38a2a66-acf0-4ae6-af3b-acaa8249ad38/front-250",
+"primera_fecha": "2026-02-13",
+"puntuacion": 1.0,
+"release": "051c8026-e329-43b2-b730-9d6c996bc6be",
+"rg": "c38a2a66-acf0-4ae6-af3b-acaa8249ad38",
+"sellos": [
+"+1 Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "November Scorpio"
+},
 "rg:tift merritt|sugar": {
 "artista": "Tift Merritt",
 "artistas_id": [
@@ -206249,6 +206588,18 @@
 },
 "rg:tom ciurczak|antarctica": {
 "no_encontrado": "2026-11-22"
+},
+"rg:tom hamilton|im your vampire": {
+"artista": "Tom Hamilton",
+"artistas_id": [
+"583098da-203a-48fd-be90-6776aed847db"
+],
+"primera_fecha": "2026-01-23",
+"puntuacion": 1.0,
+"rg": "41134046-3d7f-4845-b645-192f69863687",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "I'm Your Vampire"
 },
 "rg:tom morello|everyone gets everything they want": {
 "artista": "Tom Morello",
