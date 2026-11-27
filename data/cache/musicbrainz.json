@@ -11224,6 +11224,16 @@
 "nombre": "Corde Oblique",
 "pais": "IT"
 },
+"art:19cbd131-cd3a-44e5-babc-5388b97cf685": {
+"enlaces": {
+"discogs": "https://www.discogs.com/artist/1836072",
+"wikidata": "https://www.wikidata.org/wiki/Q5989092"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Idle Cure",
+"pais": "US"
+},
 "art:19cecff5-bd24-4110-9b5a-52e02ac1d9c8": {
 "enlaces": {
 "metal-archives.com": "https://www.metal-archives.com/bands/Cryptorium/3540527310"
@@ -12617,6 +12627,30 @@
 "nombre": "Fen",
 "pais": "GB"
 },
+"art:1db4657c-251c-4d2e-bce1-ead8dc4a3333": {
+"enlaces": {
+"bandcamp": "https://kaleidobolt.bandcamp.com/",
+"discogs": "https://www.discogs.com/artist/4567698",
+"facebook": "https://www.facebook.com/kaleidobolt",
+"last.fm": "https://www.last.fm/music/Kaleidobolt",
+"songkick.com": "https://www.songkick.com/artists/8332223",
+"youtube": "https://www.youtube.com/channel/UC454uZXIz2-XAb91nGCdA3Q"
+},
+"etiquetas": [
+"krautrock",
+"progressive rock",
+"psychedelic rock",
+"stoner rock"
+],
+"generos": [
+"krautrock",
+"progressive rock",
+"psychedelic rock",
+"stoner rock"
+],
+"nombre": "Kaleidobolt",
+"pais": "FI"
+},
 "art:1db52a3c-7739-4c90-935c-3458e733955e": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0003662045",
@@ -13779,6 +13813,48 @@
 ],
 "nombre": "King Satan",
 "pais": "FI"
+},
+"art:2093207d-cb69-4789-866b-5ac772c9ebd3": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000592034",
+"apple": "https://music.apple.com/no/artist/31187844",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb139838748",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:Morten_Harket_Kongsberg_Jazzfestival_2018_(221359).jpg",
+"d-nb.info": "https://d-nb.info/gnd/134959620",
+"deezer": "https://www.deezer.com/artist/3496",
+"discogs": "https://www.discogs.com/artist/333419",
+"facebook": "https://www.facebook.com/mortenharket.official",
+"flickr.com": "https://www.flickr.com/groups/morten-harket/",
+"genius.com": "https://genius.com/artists/Morten-harket",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2007115492",
+"id.oclc.org": "https://id.oclc.org/worldcat/entity/E39PBJq6V4hRTq6my7VY83WCcP",
+"idref.fr": "https://www.idref.fr/251291928",
+"imdb.com": "https://www.imdb.com/name/nm0363122/",
+"instagram": "https://www.instagram.com/mortenharket/",
+"jaxsta.com": "https://jaxsta.com/profile/471eaa58-bd19-48c2-aaba-31a421118b5d",
+"last.fm": "https://www.last.fm/music/Morten+Harket",
+"morten_harket.livejournal.com": "http://morten_harket.livejournal.com/",
+"mortenharket.com": "http://mortenharket.com/",
+"muziekweb.nl": "https://www.muziekweb.nl/Link/M00000070888/POPULAR/",
+"myspace.com": "https://myspace.com/harketmorten",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/morten_harket",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/3122",
+"songkick.com": "https://www.songkick.com/artists/557106",
+"spotify": "https://open.spotify.com/artist/08t5VdmH6cpxHXUmb9bFeP",
+"themoviedb.org": "https://www.themoviedb.org/person/238512",
+"tidal": "https://tidal.com/artist/19035",
+"twitter.com": "https://twitter.com/mortenharket",
+"viaf.org": "http://viaf.org/viaf/61740573",
+"vk.ru": "https://vk.ru/morten.harket",
+"wikidata": "https://www.wikidata.org/wiki/Q319773",
+"youtube": "https://www.youtube.com/channel/UCE06PY5i3r95cXH7u89XOrA"
+},
+"etiquetas": [
+"norwegian"
+],
+"generos": [],
+"nombre": "Morten Harket",
+"pais": "NO"
 },
 "art:20d443ec-6092-487c-9ae3-09fc1ffd8df3": {
 "enlaces": {
@@ -17458,6 +17534,75 @@
 ],
 "nombre": "Howling Bells",
 "pais": "AU"
+},
+"art:298909e4-ebcb-47b8-95e9-cc53b087fc65": {
+"enlaces": {
+"7digital.com": "https://www.7digital.com/artist/lamb-of-god",
+"allmusic": "https://www.allmusic.com/artist/mn0000781350",
+"amazon": "https://www.amazon.com/-/e/B000APRTDQ",
+"apple": "https://itunes.apple.com/us/artist/id18758452",
+"bandcamp": "https://lamb-of-god.bandcamp.com/",
+"bandsintown.com": "https://www.bandsintown.com/a/275",
+"bbc.co.uk": "https://www.bbc.co.uk/music/artists/298909e4-ebcb-47b8-95e9-cc53b087fc65",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb155030175",
+"cdjapan.co.jp": "https://www.cdjapan.co.jp/person/700176807",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:Lamb_Of_God_-_Rock_am_Ring_2015-9946.jpg",
+"d-nb.info": "https://d-nb.info/gnd/10335773-7",
+"deezer": "https://www.deezer.com/artist/2216",
+"discogs": "https://www.discogs.com/artist/255505",
+"facebook": "https://www.facebook.com/lambofgod",
+"genius.com": "https://genius.com/artists/Lamb-of-god",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2004107869",
+"imdb.com": "https://www.imdb.com/name/nm2555975/",
+"imvdb.com": "https://imvdb.com/n/lamb-of-god",
+"instagram": "https://www.instagram.com/lambofgod/",
+"lamb-of-god.com": "https://www.lamb-of-god.com/",
+"last.fm": "https://www.last.fm/music/Lamb+of+God",
+"livefans.jp": "https://www.livefans.jp/artists/3611",
+"metal-archives.com": "https://www.metal-archives.com/bands/Lamb_of_God/59",
+"metalmusicarchives.com": "https://www.metalmusicarchives.com/artist/lamb-of-god",
+"musicmoz.org": "https://musicmoz.org/Bands_and_Artists/L/Lamb_Of_God/",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/lamb-of-god/",
+"musixmatch.com": "https://www.musixmatch.com/artist/Lamb-of-God",
+"muziekweb.nl": "https://www.muziekweb.nl/Link/M00000178804/POPULAR/",
+"muzikum.eu": "https://muzikum.eu/en/lamb-of-god/lyrics",
+"myspace.com": "https://myspace.com/lambofgod",
+"onkyomusic.com": "https://www.onkyomusic.com/GB/artist/lamb-of-god",
+"play.google.com": "https://play.google.com/store/music/artist?id=Ag6nvwsycfzdxt7wvivh325bxqa",
+"qobuz": "https://www.qobuz.com/gb-en/interpreter/lamb-of-god/download-streaming-albums",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/lamb_of_god",
+"reverbnation.com": "https://www.reverbnation.com/lambofgodofficial",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/117472",
+"setlist.fm": "https://www.setlist.fm/setlists/lamb-of-god-bd699de.html",
+"songkick.com": "https://www.songkick.com/artists/127504",
+"soundcloud": "https://soundcloud.com/lambofgod",
+"spirit-of-metal.com": "https://www.spirit-of-metal.com/en/band/Lamb_Of_God",
+"spotify": "https://open.spotify.com/artist/3JFsVIxOn7STeilPICkkB2",
+"threads.com": "https://www.threads.com/@lambofgod",
+"ticketmaster.com": "https://www.ticketmaster.com/artist/862390",
+"tidal": "https://tidal.com/artist/3139",
+"tiktok.com": "https://www.tiktok.com/@lambofgod",
+"twitter.com": "https://twitter.com/lambofgod",
+"us.napster.com": "https://us.napster.com/artist/lamb-of-god",
+"viaf.org": "http://viaf.org/viaf/124727392",
+"whosampled.com": "https://www.whosampled.com/Lamb-of-God/",
+"wikidata": "https://www.wikidata.org/wiki/Q207731",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no2004107869",
+"youtube": "https://www.youtube.com/channel/UC0Ri4yolakY_tb7RdcvzQ2g"
+},
+"etiquetas": [
+"metalcore",
+"groove metal",
+"metal",
+"american"
+],
+"generos": [
+"metalcore",
+"groove metal",
+"metal"
+],
+"nombre": "Lamb of God",
+"pais": "US"
 },
 "art:29bb04d6-5602-464c-8577-f55a27511b27": {
 "enlaces": {
@@ -25362,6 +25507,50 @@
 "nombre": "Choke Chain",
 "pais": "US"
 },
+"art:3a389027-814a-4f99-8f12-44e5276595cf": {
+"enlaces": {
+"45cat.com": "https://www.45cat.com/artist/marshall-crenshaw",
+"allmusic": "https://www.allmusic.com/artist/mn0000853492",
+"amazon": "https://music.amazon.com/artists/B001E6QJH2",
+"apple": "https://music.apple.com/us/artist/186450",
+"bandsintown.com": "https://www.bandsintown.com/a/76205",
+"deezer": "https://www.deezer.com/artist/64523",
+"discogs": "https://www.discogs.com/artist/312044",
+"facebook": "https://www.facebook.com/MarshallCrenshawOfficial",
+"genius.com": "https://genius.com/artists/Marshall-crenshaw",
+"imdb.com": "https://www.imdb.com/name/nm0187409/",
+"last.fm": "https://www.last.fm/music/Marshall%20Crenshaw",
+"marshallcrenshaw.com": "http://marshallcrenshaw.com/",
+"mora.jp": "https://mora.jp/artist/257784/all",
+"music.migu.cn": "https://music.migu.cn/v3/music/artist/22441",
+"musicmoz.org": "https://musicmoz.org/Bands_and_Artists/C/Crenshaw,_Marshall/",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/marshall-crenshaw/",
+"musixmatch.com": "https://www.musixmatch.com/artist/Marshall-Crenshaw",
+"muziekweb.nl": "https://www.muziekweb.nl/Link/M00000020326/POPULAR/",
+"muzikum.eu": "http://muzikum.eu/en/122-6436/marshall-crenshaw/lyrics.html",
+"myspace.com": "https://myspace.com/marshallcrenshaw",
+"qobuz": "https://www.qobuz.com/gb-en/interpreter/marshall-crenshaw/237280",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/marshall_crenshaw",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/10374",
+"songkick.com": "https://www.songkick.com/artists/528698",
+"spotify": "https://open.spotify.com/artist/73YLmyaazO66GncUVHP0KV",
+"tidal": "https://tidal.com/artist/13670",
+"twitter.com": "https://twitter.com/mcrenshaw",
+"viaf.org": "http://viaf.org/viaf/5133253",
+"wikidata": "https://www.wikidata.org/wiki/Q6773536",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-n83187911/",
+"youtube": "https://music.youtube.com/channel/UCS8jTDReHKuFdN78SzurESw"
+},
+"etiquetas": [
+"2008 universal fire victim",
+"rock"
+],
+"generos": [
+"rock"
+],
+"nombre": "Marshall Crenshaw",
+"pais": "US"
+},
 "art:3a4024dc-cc62-4d9b-8bed-c22426136a52": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0003829597",
@@ -25686,6 +25875,30 @@
 ],
 "nombre": "Horror Vacui",
 "pais": "IT"
+},
+"art:3a901353-fccd-4afd-ad01-9c03f451b490": {
+"enlaces": {
+"apple": "https://music.apple.com/fr/artist/826588800",
+"deezer": "https://www.deezer.com/artist/154606",
+"discogs": "https://www.discogs.com/artist/128343",
+"frontsiderocks.com": "http://www.frontsiderocks.com/",
+"metal-archives.com": "https://www.metal-archives.com/bands/Frontside/3540542452",
+"myspace.com": "https://myspace.com/frontside666",
+"qobuz": "https://open.qobuz.com/artist/97632",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/frontside",
+"spotify": "https://open.spotify.com/artist/5t0a0G7mTrJxW2kpEQCX63",
+"tidal": "https://tidal.com/artist/3594315",
+"wikidata": "https://www.wikidata.org/wiki/Q1470331"
+},
+"etiquetas": [
+"metalcore",
+"polish"
+],
+"generos": [
+"metalcore"
+],
+"nombre": "Frontside",
+"pais": "PL"
 },
 "art:3adb9d19-1bc1-430b-921b-59f64f44cc6b": {
 "enlaces": {
@@ -31283,6 +31496,20 @@
 ],
 "nombre": "Seraina Telli",
 "pais": "CH"
+},
+"art:465e2d1d-88f0-41df-ad8c-0e850f3acfb8": {
+"enlaces": {
+"apple": "https://music.apple.com/us/artist/516286760",
+"deezer": "https://www.deezer.com/artist/1700752",
+"discogs": "https://www.discogs.com/artist/4449810",
+"qobuz": "https://open.qobuz.com/artist/4548104",
+"spotify": "https://open.spotify.com/artist/1BuoXnIASpe10VYaXXsmkU",
+"tidal": "https://tidal.com/artist/4556074"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Deathbarrel",
+"pais": "NO"
 },
 "art:466097fa-c858-4006-8140-d7f419d47ea2": {
 "enlaces": {
@@ -38861,6 +39088,55 @@
 "nombre": "Trelldom",
 "pais": "NO"
 },
+"art:58e235fc-f6ea-4614-9ed4-9855a5665ae1": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0003234492",
+"amazon": "https://music.amazon.com/artists/B001E0SUAM",
+"apple": "https://music.apple.com/us/artist/824434533",
+"bandsintown.com": "https://www.bandsintown.com/a/9882704",
+"bleachersmusic.com": "http://www.bleachersmusic.com/",
+"d-nb.info": "https://d-nb.info/gnd/10321923-7",
+"deezer": "https://www.deezer.com/artist/282467671",
+"discogs": "https://www.discogs.com/artist/2030696",
+"facebook": "https://www.facebook.com/bleachersmusic",
+"genius.com": "https://genius.com/artists/Bleachers",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2014093152",
+"imdb.com": "https://www.imdb.com/name/nm6384652/",
+"imvdb.com": "https://imvdb.com/n/bleachers",
+"instagram": "https://www.instagram.com/bleachersmusic/",
+"last.fm": "https://www.last.fm/music/Bleachers",
+"maniadb.com": "http://www.maniadb.com/artist/421506",
+"mora.jp": "https://mora.jp/artist/421374/all",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/bleachers/",
+"musixmatch.com": "https://www.musixmatch.com/artist/Bleachers-1",
+"muziekweb.nl": "https://www.muziekweb.nl/Link/M00000446564/POPULAR/",
+"muzikum.eu": "https://muzikum.eu/en/bleachers/lyrics",
+"qobuz": "https://open.qobuz.com/artist/1632063",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/bleachers",
+"soundcloud": "https://soundcloud.com/bleachers",
+"spotify": "https://open.spotify.com/artist/2eam0iDomRHGBypaDQLwWI",
+"tidal": "https://tidal.com/artist/5441351",
+"tiktok.com": "https://www.tiktok.com/@bleachersmusic",
+"twitter.com": "https://twitter.com/bleachersmusic",
+"viaf.org": "http://viaf.org/viaf/132146973",
+"whosampled.com": "https://www.whosampled.com/Bleachers/",
+"wikidata": "https://www.wikidata.org/wiki/Q16247210",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no2014093152/",
+"youtube": "https://www.youtube.com/channel/UCg25o5IRuyTd5hmBvohBSeg"
+},
+"etiquetas": [
+"alternative rock",
+"indie rock",
+"rock"
+],
+"generos": [
+"alternative rock",
+"indie rock",
+"rock"
+],
+"nombre": "Bleachers",
+"pais": "US"
+},
 "art:58ec2de8-4970-4a86-ab51-45ace77f4f8e": {
 "enlaces": {
 "apple": "https://music.apple.com/us/artist/20139346",
@@ -45255,6 +45531,17 @@
 "nombre": "Generation Radio",
 "pais": null
 },
+"art:65c32293-6e1f-4851-90e8-31ba0abfc530": {
+"enlaces": {
+"bandcamp": "https://midryasiskult.bandcamp.com/",
+"instagram": "https://www.instagram.com/midryasiskult/",
+"metal-archives.com": "https://www.metal-archives.com/bands/Midryasi's_Kult/3540560350"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Midryasi's Kult",
+"pais": "IT"
+},
 "art:65e0e30d-ed23-4554-b545-6de77e86ce18": {
 "enlaces": {
 "apple": "https://music.apple.com/gb/artist/18098264",
@@ -47015,6 +47302,39 @@
 "generos": [],
 "nombre": "The Sound Veil Society",
 "pais": "NO"
+},
+"art:6a8615c1-e3b0-4934-a3a0-403a4d47c070": {
+"enlaces": {
+"analuacaiano.com": "https://www.analuacaiano.com/",
+"apple": "https://music.apple.com/pt/artist/1611612429",
+"bandcamp": "https://analuacaiano.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/161730912",
+"discogs": "https://www.discogs.com/artist/11821964",
+"genius.com": "https://genius.com/artists/Ana-lua-caiano",
+"imdb.com": "https://www.imdb.com/name/nm12262800/",
+"instagram": "https://www.instagram.com/analuacaiano/",
+"qobuz": "https://open.qobuz.com/artist/14140321",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/ana-lua-caiano",
+"soundcloud": "https://soundcloud.com/analuacaiano",
+"spotify": "https://open.spotify.com/artist/6TeD6DGSCfviinhl40SvYF",
+"tidal": "https://tidal.com/artist/30863503",
+"viaf.org": "http://viaf.org/viaf/14171707102406600647",
+"wikidata": "https://www.wikidata.org/wiki/Q119287009"
+},
+"etiquetas": [
+"art pop",
+"folktronica",
+"glitch pop",
+"pop"
+],
+"generos": [
+"art pop",
+"folktronica",
+"glitch pop",
+"pop"
+],
+"nombre": "Ana Lua Caiano",
+"pais": "PT"
 },
 "art:6a918e81-69be-400c-85bb-660a89068ca9": {
 "enlaces": {},
@@ -51101,6 +51421,18 @@
 "generos": [],
 "nombre": "Blue Bendy",
 "pais": "GB"
+},
+"art:735ad3b0-94b3-4356-a3ef-bbdca368885f": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0003749011",
+"bandcamp": "https://highfidelitybluegrass.bandcamp.com/",
+"facebook": "https://www.facebook.com/highfidelitybluegrass",
+"highfidelitybluegrass.com": "http://highfidelitybluegrass.com/"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "High Fidelity",
+"pais": "US"
 },
 "art:736bd961-11e7-4201-a4ee-6c438f608ee8": {
 "enlaces": {
@@ -56799,6 +57131,29 @@
 ],
 "nombre": "Soft Cell",
 "pais": "GB"
+},
+"art:7fcd488b-f3fc-40c8-a82c-c18317d72aae": {
+"enlaces": {
+"apple": "https://music.apple.com/us/artist/1485817061",
+"bandcamp": "https://gutvoid.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/77477582",
+"discogs": "https://www.discogs.com/artist/8139796",
+"facebook": "https://www.facebook.com/gutvoidofficial",
+"instagram": "https://www.instagram.com/gutvoid/",
+"metal-archives.com": "https://www.metal-archives.com/bands/Gutvoid/3540459681",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/gutvoid",
+"soundcloud": "https://soundcloud.com/gutvoid",
+"spotify": "https://open.spotify.com/artist/5enSUzaSNiZEn8cSDP61vm",
+"tidal": "https://tidal.com/artist/17254341"
+},
+"etiquetas": [
+"death metal"
+],
+"generos": [
+"death metal"
+],
+"nombre": "Gutvoid",
+"pais": "CA"
 },
 "art:7fd230e4-ef04-4bc8-b5ff-ff6d380ccc1a": {
 "enlaces": {
@@ -65198,6 +65553,16 @@
 "nombre": "Empress Of",
 "pais": "US"
 },
+"art:91d4a77b-7084-4831-97d0-2f05a896510a": {
+"enlaces": {
+"discogs": "https://www.discogs.com/artist/2825891",
+"wesleystace.com": "http://wesleystace.com/"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Wesley Stace",
+"pais": "GB"
+},
 "art:91dc382c-1309-4035-bf74-b63fb34d5acf": {
 "enlaces": {
 "amazon": "https://music.amazon.co.jp/artists/B0CZSQ5Y5C",
@@ -69295,6 +69660,44 @@
 "nombre": "Midnight",
 "pais": "US"
 },
+"art:9b7130d0-558a-4599-b721-04b68c43aaad": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000808391",
+"bandcamp": "https://jarboe1.bandcamp.com/",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb15026910h",
+"d-nb.info": "https://d-nb.info/gnd/135146771",
+"deezer": "https://www.deezer.com/artist/1580",
+"discogs": "https://www.discogs.com/artist/65694",
+"facebook": "https://www.facebook.com/TheLivingJarboe",
+"genius.com": "https://genius.com/artists/Jarboe",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2005075762",
+"id.oclc.org": "https://id.oclc.org/worldcat/entity/E39PBJpdRT33GpD4pVMW7gQpfq",
+"last.fm": "https://www.last.fm/music/Jarboe",
+"metal-archives.com": "https://www.metal-archives.com/artists/Jarboe/3528",
+"myspace.com": "https://myspace.com/jarboeliving",
+"punk-lyrics.net": "https://www.punk-lyrics.net/band/jarboe",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/jarboe",
+"songkick.com": "https://www.songkick.com/artists/322251",
+"soundcloud": "https://soundcloud.com/jarboe-living",
+"spotify": "https://open.spotify.com/artist/5cCzokwZSw5IRKcm7LpRbH",
+"thelivingjarboe.com": "https://thelivingjarboe.com/",
+"twitter.com": "https://twitter.com/jarboe_living",
+"viaf.org": "http://viaf.org/viaf/34736158",
+"vine.co": "https://vine.co/u/933663688659980288",
+"wikidata": "https://www.wikidata.org/wiki/Q448842"
+},
+"etiquetas": [
+"darkwave",
+"experimental",
+"experimental rock"
+],
+"generos": [
+"experimental",
+"experimental rock"
+],
+"nombre": "Jarboe",
+"pais": "US"
+},
 "art:9ba6f315-d486-49a1-baff-895005f1a23e": {
 "enlaces": {
 "discogs": "https://www.discogs.com/artist/4671318",
@@ -69356,6 +69759,51 @@
 ],
 "nombre": "The Big Moon",
 "pais": "GB"
+},
+"art:9bbbca84-c6a4-44ac-87b6-d7e8e7930bb1": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000008591",
+"apple": "https://music.apple.com/us/artist/3447183",
+"bandcamp": "https://sparta.bandcamp.com/",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb14260999p",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:Sparta@Paredes_de_Coura.jpg",
+"d-nb.info": "https://d-nb.info/gnd/10332239-5",
+"deezer": "https://www.deezer.com/artist/7330",
+"discogs": "https://www.discogs.com/artist/253712",
+"facebook": "https://www.facebook.com/spartatheband",
+"imdb.com": "https://www.imdb.com/name/nm3162672/",
+"instagram": "https://www.instagram.com/spartaband/",
+"last.fm": "https://www.last.fm/music/Sparta",
+"musik-sammler.de": "http://www.musik-sammler.de/artist/17645",
+"myspace.com": "https://myspace.com/sparta",
+"purevolume.com": "http://www.purevolume.com/sparta",
+"qobuz": "https://open.qobuz.com/artist/129626",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/sparta",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/24885",
+"songkick.com": "https://www.songkick.com/artists/367366",
+"sparta.band": "https://www.sparta.band/",
+"spotify": "https://open.spotify.com/artist/3DWWL4kwLZMBLsmVsbZYHR",
+"tidal": "https://tidal.com/artist/30345",
+"twitter.com": "https://twitter.com/spartatheband",
+"viaf.org": "http://viaf.org/viaf/197365247",
+"wikidata": "https://www.wikidata.org/wiki/Q1760137"
+},
+"etiquetas": [
+"post-hardcore",
+"rock",
+"alternative",
+"alternative rock",
+"el paso",
+"emo"
+],
+"generos": [
+"post-hardcore",
+"rock",
+"alternative rock",
+"emo"
+],
+"nombre": "Sparta",
+"pais": "US"
 },
 "art:9be5414e-b906-4659-9c59-012ba7f7a154": {
 "enlaces": {
@@ -75052,6 +75500,70 @@
 "nombre": "Basement",
 "pais": "GB"
 },
+"art:a8e935c6-3fcc-414c-900c-77e8170e7e7c": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000093565",
+"amazon": "https://www.amazon.com/-/e/B000APND7W",
+"apple": "https://itunes.apple.com/us/artist/id2778807",
+"bandcamp": "https://blacklabelsocietyband.bandcamp.com/",
+"bandsintown.com": "https://www.bandsintown.com/a/990",
+"deezer": "https://www.deezer.com/artist/822",
+"discogs": "https://www.discogs.com/artist/299863",
+"facebook": "https://www.facebook.com/blacklabelsociety",
+"genius.com": "https://genius.com/artists/Black-label-society",
+"imdb.com": "https://www.imdb.com/name/nm3128633/",
+"imvdb.com": "https://imvdb.com/n/black-label-society",
+"junodownload.com": "https://www.junodownload.com/artists/Black+Label+Society/releases/",
+"last.fm": "https://www.last.fm/music/Black+Label+Society",
+"metal-archives.com": "https://www.metal-archives.com/bands/Black_Label_Society/245",
+"metalmusicarchives.com": "https://www.metalmusicarchives.com/artist/black-label-society",
+"musicmoz.org": "http://musicmoz.org/Bands_and_Artists/B/Black_Label_Society/",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/black-label-society/",
+"musixmatch.com": "https://www.musixmatch.com/artist/Black-Label-Society",
+"muzikum.eu": "http://muzikum.eu/en/122-10859/black-label-society/lyrics.html",
+"play.google.com": "https://play.google.com/store/music/artist?id=A6ast2q5hapg7jtsarubcre5wj4",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/black_label_society",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/12054",
+"setlist.fm": "https://www.setlist.fm/setlists/black-label-society-73d682a9.html",
+"songkick.com": "https://www.songkick.com/artists/512923",
+"soundcloud": "https://soundcloud.com/black-label-society",
+"spirit-of-metal.com": "https://www.spirit-of-metal.com/en/band/Black_Label_Society",
+"spotify": "https://open.spotify.com/artist/0zfT626RwO6zN3RDYeRit5",
+"ticketmaster.com": "https://www.ticketmaster.com/artist/857623",
+"tidal": "https://tidal.com/artist/37300",
+"twitter.com": "https://twitter.com/oficial_bls",
+"uk.7digital.com": "https://uk.7digital.com/artist/black-label-society",
+"us.napster.com": "https://us.napster.com/artist/black-label-society",
+"viaf.org": "http://viaf.org/viaf/148801641",
+"whosampled.com": "https://www.whosampled.com/Black-Label-Society/",
+"wikidata": "https://www.wikidata.org/wiki/Q727736",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no2002087604",
+"youtube": "https://www.youtube.com/channel/UCWCYMrQfLTsnixbmD15JNnw",
+"zakkwylde.com": "http://zakkwylde.com/"
+},
+"etiquetas": [
+"heavy metal",
+"groove metal",
+"hard rock",
+"southern rock",
+"southern metal",
+"acoustic rock",
+"metal",
+"rock"
+],
+"generos": [
+"heavy metal",
+"groove metal",
+"hard rock",
+"southern rock",
+"southern metal",
+"acoustic rock",
+"metal",
+"rock"
+],
+"nombre": "Black Label Society",
+"pais": "US"
+},
 "art:a8ed28e3-5c08-4448-b889-867483e251f5": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0000400110",
@@ -78845,6 +79357,34 @@
 "nombre": "PNAU",
 "pais": "AU"
 },
+"art:b052b7ad-2eb4-49f0-8030-b19f321c2c92": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0002448857",
+"d-nb.info": "https://d-nb.info/gnd/1093584041",
+"discogs": "https://www.discogs.com/artist/1734346",
+"facebook": "https://www.facebook.com/MatthewStevensGroup",
+"instagram": "https://www.instagram.com/matthewthomaswyatt/",
+"last.fm": "https://www.last.fm/music/Matthew+Stevens",
+"mattstevensmusic.com": "http://mattstevensmusic.com/",
+"spotify": "https://open.spotify.com/artist/1EwDQABkIxgdtTn7N6hIyX",
+"tidal": "https://tidal.com/artist/6791341",
+"twitter.com": "https://twitter.com/mtwstevens",
+"viaf.org": "http://viaf.org/viaf/337145911077127061607",
+"wikidata": "https://www.wikidata.org/wiki/Q21066118"
+},
+"etiquetas": [
+"contemporary jazz",
+"jazz",
+"jazz fusion"
+],
+"generos": [
+"contemporary jazz",
+"jazz",
+"jazz fusion"
+],
+"nombre": "Matthew Stevens",
+"pais": null
+},
 "art:b053efc9-e8ea-474a-981f-a3c6fffcc694": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0002534755",
@@ -81764,6 +82304,22 @@
 "generos": [],
 "nombre": "Virologist",
 "pais": "US"
+},
+"art:b690ef92-16e6-476f-9589-88db0f255228": {
+"enlaces": {
+"allisondegroot.com": "https://www.allisondegroot.com/",
+"discogs": "https://www.discogs.com/artist/3065091",
+"facebook": "https://www.facebook.com/allisondegrootmusic",
+"instagram": "https://www.instagram.com/allison_de_groot/",
+"qobuz": "https://open.qobuz.com/artist/6453486",
+"spotify": "https://open.spotify.com/artist/6EblsLZRlxASdMUwVtJ9g1",
+"tidal": "https://tidal.com/artist/11168178",
+"twitter.com": "https://twitter.com/allisonAdegroot"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Allison de Groot",
+"pais": "CA"
 },
 "art:b69a553a-250c-4b1a-b4f9-8b0a802e6605": {
 "enlaces": {
@@ -85931,6 +86487,68 @@
 "nombre": "Ellende",
 "pais": "AT"
 },
+"art:bfaf9b70-d1fd-4d3e-b730-3e67e6f8f9bb": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000956973",
+"amazon": "https://music.amazon.com/artists/B001QBH21M",
+"apple": "https://itunes.apple.com/us/artist/id3296003",
+"bandsintown.com": "https://www.bandsintown.com/a/272",
+"bbc.co.uk": "https://www.bbc.co.uk/music/artists/bfaf9b70-d1fd-4d3e-b730-3e67e6f8f9bb",
+"beatport.com": "https://www.beatport.com/artist/hilary-duff/162116",
+"cdjapan.co.jp": "https://www.cdjapan.co.jp/person/700278482",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:Hilary_Duff_(2009).jpg",
+"deezer": "https://www.deezer.com/artist/353825742",
+"discogs": "https://www.discogs.com/artist/284317",
+"facebook": "https://www.facebook.com/HilaryDuff",
+"genius.com": "https://genius.com/artists/Hilary-duff",
+"hilaryduff.com": "https://www.hilaryduff.com/home",
+"imdb.com": "https://www.imdb.com/name/nm0240381/",
+"imvdb.com": "https://imvdb.com/n/hilary-duff",
+"instagram": "https://www.instagram.com/hilaryduff/",
+"junodownload.com": "https://www.junodownload.com/artists/Hilary+Duff/",
+"last.fm": "https://www.last.fm/music/Hilary+Duff",
+"livefans.jp": "https://www.livefans.jp/artists/88018",
+"melon.com": "https://www.melon.com/artist/detail.htm?artistId=39088",
+"mora.jp": "https://mora.jp/artist/373913/",
+"music.bugs.co.kr": "https://music.bugs.co.kr/artist/48380",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/hilary-duff/",
+"musixmatch.com": "https://www.musixmatch.com/artist/Hilary-Duff",
+"muziekweb.nl": "https://www.muziekweb.nl/Link/M00000180337/POPULAR/",
+"muzikum.eu": "http://muzikum.eu/en/122-4957/hilary-duff/lyrics.html",
+"myspace.com": "https://myspace.com/hilaryduff",
+"qobuz": "https://open.qobuz.com/artist/397820",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/hilary-duff",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/16856",
+"setlist.fm": "https://www.setlist.fm/setlists/hilary-duff-23d6bceb.html",
+"songkick.com": "https://www.songkick.com/artists/413262",
+"soundcloud": "https://soundcloud.com/hilary-duff-official",
+"spotify": "https://open.spotify.com/artist/2S9W9aSAd7e5mp8WqWxN2h",
+"themoviedb.org": "https://www.themoviedb.org/person/5958",
+"threads.com": "https://www.threads.com/@hilaryduff",
+"ticketmaster.com": "https://www.ticketmaster.com/artist/882305",
+"tidal": "https://tidal.com/artist/8958",
+"tiktok.com": "https://www.tiktok.com/@hilaryduff",
+"twitter.com": "https://twitter.com/hilaryduff",
+"uk.7digital.com": "https://uk.7digital.com/artist/hilary-duff",
+"us.napster.com": "https://us.napster.com/artist/hilary-duff",
+"viaf.org": "http://viaf.org/viaf/45407916",
+"whosampled.com": "https://www.whosampled.com/Hilary-Duff/",
+"wikidata": "https://www.wikidata.org/wiki/Q122020",
+"youtube": "https://www.youtube.com/channel/UCMzwvBbnor2C7oetD14r6YA"
+},
+"etiquetas": [
+"pop",
+"female vocals",
+"teen pop",
+"y2k"
+],
+"generos": [
+"pop",
+"teen pop"
+],
+"nombre": "Hilary Duff",
+"pais": "US"
+},
 "art:bfb406a9-c646-4aa7-af3a-9b7e662ce4f4": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0003982323",
@@ -86969,6 +87587,37 @@
 "nombre": "Tina Arena",
 "pais": "AU"
 },
+"art:c1d14ed4-9a04-43e1-bc7b-f16471768f42": {
+"enlaces": {
+"amazon": "https://music.amazon.com/artists/B00J6V32AY",
+"apple": "https://music.apple.com/us/artist/1209936147",
+"bandcamp": "https://ajamonet.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/5632256",
+"discogs": "https://www.discogs.com/artist/4327533",
+"soundcloud": "https://soundcloud.com/ajamonet-music",
+"spotify": "https://open.spotify.com/artist/6dclGxWbiv1ScMQwT5INQF",
+"tidal": "https://tidal.com/artist/6161748",
+"wikipedia": "https://en.wikipedia.org/wiki/Aja_Monet",
+"youtube": "https://music.youtube.com/channel/UCJg4vr8nG-ofQwsKNKd2prQ"
+},
+"etiquetas": [
+"jazz",
+"blues",
+"folk",
+"poetry",
+"post hip hop",
+"soul"
+],
+"generos": [
+"jazz",
+"blues",
+"folk",
+"poetry",
+"soul"
+],
+"nombre": "aja monet",
+"pais": "US"
+},
 "art:c1d4f2ba-cf39-460c-9528-6b827d3417a1": {
 "enlaces": {
 "45cat.com": "https://www.45cat.com/artist/yes",
@@ -87560,6 +88209,55 @@
 ],
 "nombre": "The Plot in You",
 "pais": "US"
+},
+"art:c2f6c57f-27ba-4c0d-b2fd-3348961e79a1": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0003741917",
+"apple": "https://itunes.apple.com/us/artist/id1264549322",
+"beatport.com": "https://www.beatport.com/artist/maisie-peters/999678",
+"boomplay.com": "https://www.boomplay.com/artists/2211121",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb179691936",
+"d-nb.info": "https://d-nb.info/gnd/1228263299",
+"deezer": "https://www.deezer.com/artist/13022633",
+"discogs": "https://www.discogs.com/artist/6654560",
+"facebook": "https://www.facebook.com/maisiepetersmusic",
+"famousbirthdays.com": "https://www.famousbirthdays.com/people/maisie-peters.html",
+"fanart.tv": "https://fanart.tv/artist/c2f6c57f-27ba-4c0d-b2fd-3348961e79a1/",
+"genius.com": "https://genius.com/artists/Maisie-peters",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no2020033397",
+"imdb.com": "https://www.imdb.com/name/nm10929798/",
+"imvdb.com": "https://imvdb.com/n/maisie-peters",
+"instagram": "https://www.instagram.com/maisiehpeters/",
+"last.fm": "https://www.last.fm/music/Maisie+Peters",
+"maisiepeters.co.uk": "https://www.maisiepeters.co.uk/",
+"qobuz": "https://open.qobuz.com/artist/3229765",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/171383",
+"songkick.com": "https://www.songkick.com/artists/9211534",
+"soundcloud": "https://soundcloud.com/maisie-peters",
+"spotify": "https://open.spotify.com/artist/2RVvqRBon9NgaGXKfywDSs",
+"tidal": "https://tidal.com/artist/8979008",
+"twitter.com": "https://twitter.com/maisiehpeters",
+"viaf.org": "http://viaf.org/viaf/2392158369761401460003",
+"web.archive.org": "https://web.archive.org/web/0/https://i.scdn.co/image/ab6761610000e5eb165be07847d7744f9ee9a3bc",
+"wikidata": "https://www.wikidata.org/wiki/Q63248118",
+"wikipedia": "https://en.wikipedia.org/wiki/Maisie_Peters",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no2020033397/",
+"youtube": "https://www.youtube.com/channel/UCJvnOmwPOgeLczo7zLzb5Xg"
+},
+"etiquetas": [
+"pop",
+"indie pop",
+"singer-songwriter",
+"2020s",
+"gen z"
+],
+"generos": [
+"pop",
+"indie pop",
+"singer-songwriter"
+],
+"nombre": "Maisie Peters",
+"pais": "GB"
 },
 "art:c306218f-6818-40ce-97ce-7cadd3d5213f": {
 "enlaces": {
@@ -95272,6 +95970,22 @@
 ],
 "nombre": "Ductape",
 "pais": "TR"
+},
+"art:d5f589bd-c0f8-4890-a7b8-56ccf0fe3335": {
+"enlaces": {
+"apple": "https://music.apple.com/us/artist/420804431",
+"bandcamp": "https://richruth.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/11961263",
+"discogs": "https://www.discogs.com/artist/11476670",
+"qobuz": "https://open.qobuz.com/artist/4292221",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/rich-ruth",
+"spotify": "https://open.spotify.com/artist/3fzSa1ee522CjcS8Fdo7dl",
+"tidal": "https://tidal.com/artist/8523512"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Rich Ruth",
+"pais": "US"
 },
 "art:d6255ce8-190b-486f-88a3-2c081d180a8e": {
 "enlaces": {
@@ -106031,6 +106745,32 @@
 "nombre": "One Leg One Eye",
 "pais": null
 },
+"art:f10c2fe9-e89e-4178-bc49-b7dc598503d7": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0002556364",
+"bandcamp": "https://skagos.bandcamp.com/",
+"discogs": "https://www.discogs.com/artist/1424225",
+"last.fm": "https://www.last.fm/music/Skagos",
+"metal-archives.com": "https://www.metal-archives.com/bands/Skagos/3540257233",
+"myspace.com": "https://myspace.com/skagos",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/skagos",
+"reverbnation.com": "https://www.reverbnation.com/skagos"
+},
+"etiquetas": [
+"atmospheric black metal",
+"ambient",
+"black metal",
+"post-metal"
+],
+"generos": [
+"atmospheric black metal",
+"ambient",
+"black metal",
+"post-metal"
+],
+"nombre": "Skagos",
+"pais": "CA"
+},
 "art:f112969b-9e2d-4fa0-b84a-c7ab6739a323": {
 "enlaces": {
 "apple": "https://music.apple.com/gb/artist/205741043",
@@ -115093,6 +115833,31 @@
 "tipos_secundarios": [],
 "titulo": "Atomic Justice"
 },
+"rg:aja monet|color of rain": {
+"artista": "aja monet",
+"artistas_id": [
+"c1d14ed4-9a04-43e1-bc7b-f16471768f42"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/1869767992",
+"bandcamp": "https://ajamonet.bandcamp.com/album/the-color-of-rain"
+},
+"fecha_release": "2026-05-22",
+"idioma": "eng",
+"pais": "US",
+"pistas": 15,
+"portada": "https://coverartarchive.org/release-group/517ebdbd-2e94-4464-ba97-fa64bcb0704e/front-250",
+"primera_fecha": "2026-05-22",
+"puntuacion": 1.0,
+"release": "823cf4f7-114b-4832-8326-5a062f1bb751",
+"rg": "517ebdbd-2e94-4464-ba97-fa64bcb0704e",
+"sellos": [
+"drink sum wtr"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "the color of rain"
+},
 "rg:aja monet|color of the rain": {
 "no_encontrado": "2026-11-22"
 },
@@ -115947,6 +116712,33 @@
 "tipos_secundarios": [],
 "titulo": "Before Our Eyes"
 },
+"rg:allison de groot and rich ruth|allison de groot and rich ruth": {
+"artista": "Allison de Groot & Rich Ruth",
+"artistas_id": [
+"b690ef92-16e6-476f-9589-88db0f255228",
+"d5f589bd-c0f8-4890-a7b8-56ccf0fe3335"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/6793646740",
+"bandcamp": "https://richruth.bandcamp.com/album/allison-de-groot-rich-ruth",
+"qobuz": "https://www.qobuz.com/us-en/album/allison-de-groot-rich-ruth-allison-de-groot-rich-ruth/j8s7x8vngrc4t"
+},
+"fecha_release": "2026-10-02",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 8,
+"portada": "https://coverartarchive.org/release-group/b7f83429-66a6-42a1-98d3-804345d18254/front-250",
+"primera_fecha": "2026-10-02",
+"puntuacion": 1.0,
+"release": "ab520565-b53d-4b2d-a5cb-e6433a702eb9",
+"rg": "b7f83429-66a6-42a1-98d3-804345d18254",
+"sellos": [
+"Western Vinyl"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Allison de Groot & Rich Ruth"
+},
 "rg:allison de groot and rich ruth|rich ruth and allison de groot": {
 "no_encontrado": "2026-11-22"
 },
@@ -116648,6 +117440,9 @@
 "rg:amphetamean|death by design": {
 "no_encontrado": "2026-11-22"
 },
+"rg:ams|play trouble live": {
+"no_encontrado": "2026-11-27"
+},
 "rg:amy goddard|dawn": {
 "no_encontrado": "2026-11-22"
 },
@@ -116732,6 +117527,35 @@
 },
 "rg:amyl and the sniffers|truth or consequence": {
 "no_encontrado": "2026-11-22"
+},
+"rg:ana lua caiano|devagar que a vida e curta": {
+"artista": "Ana Lua Caiano",
+"artistas_id": [
+"6a8615c1-e3b0-4934-a3a0-403a4d47c070"
+],
+"enlaces": {
+"apple": "https://music.apple.com/pt/album/6788797099",
+"bandcamp": "https://analuacaiano.bandcamp.com/album/devagar-que-a-vida-curta",
+"deezer": "https://www.deezer.com/album/1024232211",
+"qobuz": "https://www.qobuz.com/pt-pt/album/devagar-que-a-vida-e-curta-ana-lua-caiano/z1mtznkc3bxtr",
+"spotify": "https://open.spotify.com/album/6WctvU1Itl3ipep21NKQTu",
+"tidal": "https://tidal.com/album/541336171"
+},
+"fecha_release": "2026-11-06",
+"idioma": "por",
+"pais": "XW",
+"pistas": 15,
+"portada": "https://coverartarchive.org/release-group/4b1fc1f3-184f-4dd8-a32d-09b4b30d0a90/front-250",
+"primera_fecha": "2026-11-06",
+"puntuacion": 1.0,
+"release": "21e5707c-13c5-466a-a873-94842fd3ed98",
+"rg": "4b1fc1f3-184f-4dd8-a32d-09b4b30d0a90",
+"sellos": [
+"Glitterbeat"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Devagar que a vida é curta"
 },
 "rg:ana popovic|dance to the rhythm": {
 "artista": "Ana Popovic",
@@ -119754,6 +120578,9 @@
 "rg:august 7th silverada|living proof": {
 "no_encontrado": "2026-11-22"
 },
+"rg:august benjamin|august benjamin": {
+"no_encontrado": "2026-11-27"
+},
 "rg:august burns red|season of surrender": {
 "artista": "August Burns Red",
 "artistas_id": [
@@ -121145,6 +121972,9 @@
 "tipos_secundarios": [],
 "titulo": "Poor Advice"
 },
+"rg:basset|human nature": {
+"no_encontrado": "2026-11-27"
+},
 "rg:bassvictim|peace and war": {
 "artista": "bassvictim",
 "artistas_id": [
@@ -121311,6 +122141,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "How drie a Cinder"
+},
+"rg:beans on toast|great unravelling": {
+"no_encontrado": "2026-11-27"
 },
 "rg:bear mccreary|singularity ekleipsis": {
 "artista": "Bear McCreary",
@@ -123399,6 +124232,9 @@
 "tipos_secundarios": [],
 "titulo": "A Pound of Feathers"
 },
+"rg:black death|breaking the chains of death": {
+"no_encontrado": "2026-11-27"
+},
 "rg:black doldrums|repetition compulsion": {
 "artista": "Black Doldrums",
 "artistas_id": [
@@ -123482,6 +124318,36 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Peaches!"
+},
+"rg:black label society|engines of demolition": {
+"artista": "Black Label Society",
+"artistas_id": [
+"a8e935c6-3fcc-414c-900c-77e8170e7e7c"
+],
+"enlaces": {
+"apple": "https://music.apple.com/at/album/1887841818",
+"bandcamp": "https://blacklabelsocietyband.bandcamp.com/album/engines-of-demolition",
+"deezer": "https://www.deezer.com/album/883785102",
+"discogs": "https://www.discogs.com/release/36887074",
+"qobuz": "https://www.qobuz.com/us-en/album/engines-of-demolition-black-label-society/dm9trck8d7qta",
+"spotify": "https://open.spotify.com/album/08ixiGSCVcUOBdpCZXQwqW",
+"tidal": "https://tidal.com/album/480132775"
+},
+"fecha_release": "2026-03-27",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 15,
+"portada": "https://coverartarchive.org/release-group/d2ca8c0f-64f2-41be-9b81-5b9383867fe3/front-250",
+"primera_fecha": "2026-03-27",
+"puntuacion": 1.0,
+"release": "3619c10a-d962-4d2e-a96f-59e40c109fbb",
+"rg": "d2ca8c0f-64f2-41be-9b81-5b9383867fe3",
+"sellos": [
+"Spinefarm Music Group"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Engines of Demolition"
 },
 "rg:black lung|forever beyond": {
 "artista": "Black Lung",
@@ -124098,6 +124964,34 @@
 "tipo": "Single",
 "tipos_secundarios": [],
 "titulo": "Gi Mi Keys Back / Auto Fake"
+},
+"rg:bleachers|everyone for ten minutes": {
+"artista": "Bleachers",
+"artistas_id": [
+"58e235fc-f6ea-4614-9ed4-9855a5665ae1"
+],
+"enlaces": {
+"apple": "https://music.apple.com/se/album/1872842313",
+"deezer": "https://www.deezer.com/album/907320762",
+"discogs": "https://www.discogs.com/release/37413021",
+"spotify": "https://open.spotify.com/album/7fVpvNHItOKonMGgbhHL5o",
+"tidal": "https://tidal.com/album/522321007"
+},
+"fecha_release": "2026-05-22",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 11,
+"portada": "https://coverartarchive.org/release-group/37a9aa38-0809-42e6-bd41-5437ee38866d/front-250",
+"primera_fecha": "2026-05-22",
+"puntuacion": 1.0,
+"release": "2cd36e64-17de-41ca-89d9-b2446dea3f51",
+"rg": "37a9aa38-0809-42e6-bd41-5437ee38866d",
+"sellos": [
+"Dirty Hit"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "everyone for ten minutes"
 },
 "rg:bleeding|godless communion": {
 "artista": "The Bleeding",
@@ -128655,6 +129549,9 @@
 "rg:cashville trash pandas|cashville trash pandas": {
 "no_encontrado": "2026-11-22"
 },
+"rg:casket sealed shut|strength of death": {
+"no_encontrado": "2026-11-27"
+},
 "rg:casket|in the long run we are all dead": {
 "artista": "Casket",
 "artistas_id": [
@@ -130550,6 +131447,9 @@
 "tipos_secundarios": [],
 "titulo": "All the Shadows"
 },
+"rg:citizend|doomsville": {
+"no_encontrado": "2026-11-27"
+},
 "rg:citizen|halcyon blues": {
 "artista": "Citizen",
 "artistas_id": [
@@ -131008,6 +131908,9 @@
 },
 "rg:cliff and ivy|angels eyes": {
 "no_encontrado": "2026-11-22"
+},
+"rg:cliff richard|only number ones": {
+"no_encontrado": "2026-11-27"
 },
 "rg:clinic|wild in the streets": {
 "artista": "Clinic",
@@ -134934,6 +135837,9 @@
 "tipos_secundarios": [],
 "titulo": "Cerulean"
 },
+"rg:danny malone|flowers pt 1": {
+"no_encontrado": "2026-11-27"
+},
 "rg:danny sinoff|very sinoff christmas": {
 "no_encontrado": "2026-11-22"
 },
@@ -136557,6 +137463,42 @@
 "tipos_secundarios": [],
 "titulo": "Welcome to Earth"
 },
+"rg:deathbarrel|life resignation notice": {
+"artista": "Deathbarrel",
+"artistas_id": [
+"465e2d1d-88f0-41df-ad8c-0e850f3acfb8"
+],
+"enlaces": {
+"amazon": "https://music.amazon.com/albums/B0HFY79JX8",
+"apple": "https://music.apple.com/us/album/6803591717",
+"audiomack.com": "https://audiomack.com/deathbarrel/album/life-resignation-notice-8240858",
+"bandcamp": "https://soulsellerrecords.bandcamp.com/album/life-resignation-notice",
+"beatport.com": "https://www.beatport.com/release/life-resignation-notice/7371215",
+"deezer": "https://www.deezer.com/album/1059030672",
+"hdtracks.com": "https://www.hdtracks.com/#/album/6a87ead7c9601794904b15c4",
+"qobuz": "https://www.qobuz.com/us-en/album/life-resignation-notice-deathbarrel/yybttg8kirb1t",
+"soundcloud": "https://soundcloud.com/deathbarrel/sets/life-resignation-notice",
+"spotify": "https://open.spotify.com/album/6H8jFvxn5hFnxm54PZlFwm",
+"tidal": "https://tidal.com/album/554156735",
+"uk.7digital.com": "https://uk.7digital.com/artist/deathbarrel/release/life-resignation-notice-76318598",
+"youtube": "https://music.youtube.com/playlist?list=OLAK5uy_lbz8IgZAlKOJsI-sETBKhOO_bleGcz0R8"
+},
+"fecha_release": "2026-11-06",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 11,
+"portada": "https://coverartarchive.org/release-group/e5a23417-7c16-41cb-a3b8-981d7d31a4f7/front-250",
+"primera_fecha": "2026-11-06",
+"puntuacion": 1.0,
+"release": "e30d195f-3f10-4032-8aae-8be76b772adf",
+"rg": "e5a23417-7c16-41cb-a3b8-981d7d31a4f7",
+"sellos": [
+"Soulseller Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Life Resignation Notice"
+},
 "rg:deathcrash|somersaults": {
 "artista": "deathcrash",
 "artistas_id": [
@@ -137900,6 +138842,9 @@
 },
 "rg:devyn brinsfield|dreamers and losers": {
 "no_encontrado": "2026-11-22"
+},
+"rg:dewey kincade|we us": {
+"no_encontrado": "2026-11-27"
 },
 "rg:dexter and the moonrocks|friends that i dont like": {
 "artista": "Dexter and The Moonrocks",
@@ -147804,6 +148749,9 @@
 "tipos_secundarios": [],
 "titulo": "Frog for Sale"
 },
+"rg:frog|kind of blah kinda bloated": {
+"no_encontrado": "2026-11-27"
+},
 "rg:from ashes to new|reflections": {
 "artista": "From Ashes to New",
 "artistas_id": [
@@ -147881,6 +148829,34 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Rebirth"
+},
+"rg:frontside|nemesis": {
+"artista": "Frontside",
+"artistas_id": [
+"3a901353-fccd-4afd-ad01-9c03f451b490"
+],
+"enlaces": {
+"apple": "https://music.apple.com/fr/album/1882303252",
+"deezer": "https://www.deezer.com/album/932385191",
+"qobuz": "https://www.qobuz.com/fr-fr/album/nemesis-frontside/h4ja7mhe0ljsk",
+"spotify": "https://open.spotify.com/album/7K8Zb2WrBoXbBhXLCttbLS",
+"tidal": "https://tidal.com/album/504197451"
+},
+"fecha_release": "2026-03-20",
+"idioma": "pol",
+"pais": "XW",
+"pistas": 13,
+"portada": "https://coverartarchive.org/release-group/4d9250fc-bc75-4363-ba55-d7ccdf9afc9f/front-250",
+"primera_fecha": "2026-03-20",
+"puntuacion": 1.0,
+"release": "f002834b-2374-4e12-bc37-59c238a2dabd",
+"rg": "4d9250fc-bc75-4363-ba55-d7ccdf9afc9f",
+"sellos": [
+"Massacre Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Nemesis"
 },
 "rg:frost children|tweaker poem": {
 "artista": "Frost Children",
@@ -148764,6 +149740,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "It Runs Deep"
+},
+"rg:garrett josephs ver sacrum|all things made new": {
+"no_encontrado": "2026-11-27"
 },
 "rg:garron frith|rub": {
 "no_encontrado": "2026-11-22"
@@ -150397,6 +151376,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Same Drug New High"
+},
+"rg:gluttony|eulogy to blashphemy": {
+"no_encontrado": "2026-11-27"
 },
 "rg:glu|pony boy": {
 "no_encontrado": "2026-11-22"
@@ -153004,6 +153986,33 @@
 "tipos_secundarios": [],
 "titulo": "Escape From the Real World"
 },
+"rg:gutvoid|liminal shrines": {
+"artista": "Gutvoid",
+"artistas_id": [
+"7fcd488b-f3fc-40c8-a82c-c18317d72aae"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/1867598104",
+"bandcamp": "https://gutvoid.bandcamp.com/album/liminal-shrines",
+"discogs": "https://www.discogs.com/release/37162668",
+"metal-archives.com": "https://www.metal-archives.com/albums/Gutvoid/Liminal_Shrines/1406437"
+},
+"fecha_release": "2026-03-20",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 6,
+"portada": "https://coverartarchive.org/release-group/9e15c449-0dfd-4ae7-8647-3b65921b36b7/front-250",
+"primera_fecha": "2026-03-20",
+"puntuacion": 1.0,
+"release": "ff430c59-2570-46f7-a1bf-973960ae863f",
+"rg": "9e15c449-0dfd-4ae7-8647-3b65921b36b7",
+"sellos": [
+"Profound Lore Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Liminal Shrines"
+},
 "rg:guy renardeau|four shades of blue": {
 "no_encontrado": "2026-11-22"
 },
@@ -154116,6 +155125,9 @@
 "rg:hayde|hayde": {
 "no_encontrado": "2026-11-22"
 },
+"rg:hayes carll|live from the old quarter": {
+"no_encontrado": "2026-11-27"
+},
 "rg:haylie davis|wandering star": {
 "artista": "Haylie Davis",
 "artistas_id": [
@@ -154800,6 +155812,30 @@
 "tipos_secundarios": [],
 "titulo": "High Speed"
 },
+"rg:high fidelity|never say goodbye": {
+"artista": "High Fidelity",
+"artistas_id": [
+"735ad3b0-94b3-4356-a3ef-bbdca368885f"
+],
+"enlaces": {
+"highfidelitybluegrass.com": "https://highfidelitybluegrass.com/product/never-say-goodbye-cd/"
+},
+"fecha_release": "2026",
+"idioma": "eng",
+"pais": "US",
+"pistas": 13,
+"portada": null,
+"primera_fecha": "2026",
+"puntuacion": 1.0,
+"release": "edb4e430-fda8-4eec-aa2a-815c8dfdd91e",
+"rg": "2c53439c-e363-4091-a46d-07ecfcda38b8",
+"sellos": [
+"Rebel Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Never Say Goodbye"
+},
 "rg:highwomen|live at the gorge": {
 "artista": "The Highwomen",
 "artistas_id": [
@@ -154826,6 +155862,18 @@
 "Live"
 ],
 "titulo": "Live at the Gorge 2023"
+},
+"rg:hilary duff|luck or something": {
+"artista": "Hilary Duff",
+"artistas_id": [
+"bfaf9b70-d1fd-4d3e-b730-3e67e6f8f9bb"
+],
+"primera_fecha": "2026-02-20",
+"puntuacion": 1.0,
+"rg": "11e98a72-192f-4409-aab8-76c44b080039",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "luck… or something"
 },
 "rg:hildur gu nadottir|this will be us": {
 "artista": "Hildur Guðnadóttir; Deutsches Symphonie-Orchester Berlin, Robert Ames",
@@ -156611,6 +157659,31 @@
 },
 "rg:idk|e t d s": {
 "no_encontrado": "2026-11-22"
+},
+"rg:idle cure|idle cure": {
+"artista": "Idle Cure",
+"artistas_id": [
+"19cbd131-cd3a-44e5-babc-5388b97cf685"
+],
+"enlaces": {
+"amazon": "https://www.amazon.com/gp/product/B0002BPCLO",
+"discogs": "https://www.discogs.com/release/5033864"
+},
+"fecha_release": "1986",
+"idioma": "eng",
+"pais": "US",
+"pistas": 8,
+"portada": "https://coverartarchive.org/release-group/f67f5811-e40c-3cb2-a9bf-ce8c4ac4726c/front-250",
+"primera_fecha": "1986",
+"puntuacion": 1.0,
+"release": "9997bba3-ff1a-48c3-8457-fcad779f71fb",
+"rg": "f67f5811-e40c-3cb2-a9bf-ce8c4ac4726c",
+"sellos": [
+"Frontline Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Idle Cure"
 },
 "rg:idle threat|youll forget the sun": {
 "artista": "Idle Threat",
@@ -159128,6 +160201,28 @@
 ],
 "titulo": "Truth In The Room - The Clearmountain Sessions"
 },
+"rg:jarboe|sightings": {
+"artista": "Jarboe",
+"artistas_id": [
+"9b7130d0-558a-4599-b721-04b68c43aaad"
+],
+"enlaces": {},
+"fecha_release": "2026-03-31",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 7,
+"portada": null,
+"primera_fecha": "2026-03-31",
+"puntuacion": 1.0,
+"release": "5bb40301-80d3-4386-857c-3c517a45bc70",
+"rg": "29678740-2ebf-4a27-b8d0-3ff9d71ee375",
+"sellos": [
+"The Living Jarboe"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Sightings"
+},
 "rg:jared james nichols|louder than fate": {
 "artista": "Jared James Nichols",
 "artistas_id": [
@@ -160536,6 +161631,9 @@
 "rg:joe ray mcdonald|harvester": {
 "no_encontrado": "2026-11-22"
 },
+"rg:joe rian and the a m drinkers|think yer in luv": {
+"no_encontrado": "2026-11-27"
+},
 "rg:joe rian|think yer in luv": {
 "no_encontrado": "2026-11-22"
 },
@@ -160920,6 +162018,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Together Again"
+},
+"rg:john mccutcheon|winding stream the carter family at 100": {
+"no_encontrado": "2026-11-27"
 },
 "rg:john mcdonald and mark maxwell|blues and beyond": {
 "no_encontrado": "2026-11-22"
@@ -162917,6 +164018,31 @@
 },
 "rg:kal el|astral voyager vol 2": {
 "no_encontrado": "2026-11-22"
+},
+"rg:kaleidobolt|karakuchi": {
+"artista": "Kaleidobolt",
+"artistas_id": [
+"1db4657c-251c-4d2e-bce1-ead8dc4a3333"
+],
+"enlaces": {
+"bandcamp": "https://kaleidobolt.bandcamp.com/album/karakuchi",
+"svartrecords.com": "https://www.svartrecords.com/en/product/kaleidobolt-karakuchi/14014"
+},
+"fecha_release": "2026-03-06",
+"idioma": "eng",
+"pais": "FI",
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/1f1296ef-b5eb-48e1-bd34-11b5764f5375/front-250",
+"primera_fecha": "2026-03-06",
+"puntuacion": 1.0,
+"release": "02c3ebfb-9ba1-4912-81bf-18ef60cff833",
+"rg": "1f1296ef-b5eb-48e1-bd34-11b5764f5375",
+"sellos": [
+"Svart Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Karakuchi"
 },
 "rg:kali malone|burning song": {
 "artista": "Kali Malone",
@@ -166566,6 +167692,32 @@
 "tipos_secundarios": [],
 "titulo": "Oniric Metal"
 },
+"rg:lamb of god|into oblivion": {
+"artista": "Lamb of God",
+"artistas_id": [
+"298909e4-ebcb-47b8-95e9-cc53b087fc65"
+],
+"enlaces": {
+"deezer": "https://www.deezer.com/album/894524812",
+"spotify": "https://open.spotify.com/album/5SVfHoZLhj58lAJzl2iD9g",
+"tidal": "https://tidal.com/album/489768744"
+},
+"fecha_release": "2026-01-15",
+"idioma": "ita",
+"pais": "XW",
+"pistas": 3,
+"portada": "https://coverartarchive.org/release-group/bdfde210-4b13-43e8-aecd-7b68074e8f9c/front-250",
+"primera_fecha": "2026-01-15",
+"puntuacion": 1.0,
+"release": "1f469821-abcd-42cb-8fb4-0038da3072ec",
+"rg": "bdfde210-4b13-43e8-aecd-7b68074e8f9c",
+"sellos": [
+"Epic"
+],
+"tipo": "Single",
+"tipos_secundarios": [],
+"titulo": "Into Oblivion"
+},
 "rg:lambchop|demoed": {
 "artista": "Lambchop",
 "artistas_id": [
@@ -167545,6 +168697,18 @@
 "tipos_secundarios": [],
 "titulo": "The Penrose Triangle"
 },
+"rg:legal matters|lost at sea": {
+"artista": "The Legal Matters",
+"artistas_id": [
+"df8a7fe9-2699-4f8f-83ca-18992fb46aa8"
+],
+"primera_fecha": "2026-02-27",
+"puntuacion": 1.0,
+"rg": "7b5feca9-9bdb-4ed5-b3a3-02b1e1f6903d",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Lost At Sea"
+},
 "rg:legendary trainhoppers|conspiracy of ravens": {
 "artista": "The Legendary Trainhoppers",
 "artistas_id": [
@@ -168469,6 +169633,9 @@
 "rg:linda sikhakhane|linda": {
 "no_encontrado": "2026-11-22"
 },
+"rg:lindsay everly|fools gold": {
+"no_encontrado": "2026-11-27"
+},
 "rg:lindsay lou|bluegrass women": {
 "artista": "Lindsay Lou",
 "artistas_id": [
@@ -168667,6 +169834,9 @@
 },
 "rg:lisa bouchelle|vandals thieves and lovers": {
 "no_encontrado": "2026-11-22"
+},
+"rg:lisa hilton|naturally": {
+"no_encontrado": "2026-11-27"
 },
 "rg:lisfrank|he sees you": {
 "no_encontrado": "2026-11-22"
@@ -170094,6 +171264,9 @@
 "tipos_secundarios": [],
 "titulo": "fata morgana"
 },
+"rg:lucas mason|lucas mason": {
+"no_encontrado": "2026-11-27"
+},
 "rg:lucia and the best boys|picking petals": {
 "artista": "Lucia & The Best Boys",
 "artistas_id": [
@@ -171235,6 +172408,38 @@
 "tipos_secundarios": [],
 "titulo": "Into the Waves"
 },
+"rg:maisie peters|florescence": {
+"artista": "Maisie Peters",
+"artistas_id": [
+"c2f6c57f-27ba-4c0d-b2fd-3348961e79a1"
+],
+"enlaces": {
+"apple": "https://music.apple.com/au/album/1871502372",
+"deezer": "https://www.deezer.com/album/911235991",
+"shop.maisiepeters.co.uk": "https://shop.maisiepeters.co.uk/gb/signed-florescence-daffodil-edition-ecorecord-and-cd-wallet-bundle/5026854566757.html",
+"spotify": "https://open.spotify.com/album/0MOWqwwatV0LXDxhBZg5qO",
+"store.warnermusic.com.au": "https://store.warnermusic.com.au/products/florescence-golden-wattle-edition",
+"tidal": "https://tidal.com/album/520858208"
+},
+"fecha_release": "2026-05-22",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 15,
+"portada": "https://coverartarchive.org/release-group/97b16c4d-f3b2-493e-b91a-33835621cf48/front-250",
+"primera_fecha": "2026-05-22",
+"puntuacion": 1.0,
+"release": "00b51fe7-7289-4e26-a84d-1ee27e5bea02",
+"rg": "97b16c4d-f3b2-493e-b91a-33835621cf48",
+"sellos": [
+"Asylum Records",
+"Felion Limited",
+"Gingerbread Man Records",
+"Warner Music UK"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Florescence"
+},
 "rg:maisy owen|dark on a sunny day": {
 "artista": "Maisy Owen",
 "artistas_id": [
@@ -172226,6 +173431,37 @@
 ],
 "titulo": "Lucro sucio; Unfinished Business"
 },
+"rg:marshall crenshaw|bootleg sounds of marshall crenshaw 1984 87": {
+"artista": "Marshall Crenshaw",
+"artistas_id": [
+"3a389027-814a-4f99-8f12-44e5276595cf"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/6800474268",
+"bandcamp": "https://marshallcrenshaw.bandcamp.com/album/the-bootleg-sounds-of-marshall-crenshaw",
+"deezer": "https://www.deezer.com/album/1051936982",
+"qobuz": "https://www.qobuz.com/gb-en/album/the-bootleg-sounds-of-marshall-crenshaw-marshall-crenshaw/ds8w2fhvnqo3i",
+"recordstoreday.co.uk": "https://www.recordstoreday.co.uk/record/receUMadjzxwxp9RE",
+"recordstoreday.com": "https://recordstoreday.com/SpecialRelease/19876",
+"spotify": "https://open.spotify.com/album/2Sl6STgky5BTIbBtZuaaWx",
+"tidal": "https://tidal.com/album/551545218"
+},
+"fecha_release": "2026-04-18",
+"idioma": "eng",
+"pais": "GB",
+"pistas": 14,
+"portada": "https://coverartarchive.org/release-group/58ac831e-f83a-4d16-a213-912c2bdc5e32/front-250",
+"primera_fecha": "2026-04-18",
+"puntuacion": 1.0,
+"release": "329e85fd-3eaf-481a-993d-cb272044a12b",
+"rg": "58ac831e-f83a-4d16-a213-912c2bdc5e32",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [
+"Compilation"
+],
+"titulo": "The Bootleg Sounds of Marshall Crenshaw: 1984-87"
+},
 "rg:mars|scorpion": {
 "no_encontrado": "2026-11-22"
 },
@@ -172856,6 +174092,18 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Better Times"
+},
+"rg:matthew stevens|matthew stevens": {
+"artista": "Matthew Stevens",
+"artistas_id": [
+"b052b7ad-2eb4-49f0-8030-b19f321c2c92"
+],
+"primera_fecha": "2026-05-08",
+"puntuacion": 1.0,
+"rg": "9c34b069-ef4f-481c-88a6-7ac33ffe76fa",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Matthew Stevens"
 },
 "rg:maudits|in situ": {
 "artista": "Maudits",
@@ -174161,6 +175409,9 @@
 "rg:michael hurleys 1964|first songs": {
 "no_encontrado": "2026-11-22"
 },
+"rg:michael hurley|first songs": {
+"no_encontrado": "2026-11-27"
+},
 "rg:michael idehall|vessel": {
 "no_encontrado": "2026-11-22"
 },
@@ -174657,6 +175908,31 @@
 "Live"
 ],
 "titulo": "Satanic Attack Live!"
+},
+"rg:midryasis kult|italian dark sound": {
+"artista": "Midryasi's Kult",
+"artistas_id": [
+"65c32293-6e1f-4851-90e8-31ba0abfc530"
+],
+"enlaces": {
+"bandcamp": "https://dyingvictimsproductions.bandcamp.com/album/italian-dark-sound",
+"metal-archives.com": "https://www.metal-archives.com/albums/Midryasi's_Kult/Italian_Dark_Sound/1398530"
+},
+"fecha_release": "2026-03-27",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 8,
+"portada": "https://coverartarchive.org/release-group/ccc1d51a-2ef5-414b-83ea-d788516095b0/front-250",
+"primera_fecha": "2026-03-27",
+"puntuacion": 1.0,
+"release": "e356d35d-e00c-4599-bf42-d19fb23450fd",
+"rg": "ccc1d51a-2ef5-414b-83ea-d788516095b0",
+"sellos": [
+"Dying Victims Productions"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Italian Dark Sound"
 },
 "rg:midwestern mrs|im still here": {
 "artista": "Midwestern Mrs",
@@ -176619,6 +177895,18 @@
 "rg:morten harket a ha frontman|human grace": {
 "no_encontrado": "2026-11-22"
 },
+"rg:morten harket|human grace": {
+"artista": "Morten Harket",
+"artistas_id": [
+"2093207d-cb69-4789-866b-5ac772c9ebd3"
+],
+"primera_fecha": "2026-11-27",
+"puntuacion": 1.0,
+"rg": "57be0f08-809d-47e4-bdb3-b7386b728e8d",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Human Grace"
+},
 "rg:mortes|hunt": {
 "artista": "Mortes",
 "artistas_id": [
@@ -177898,6 +179186,9 @@
 "rg:name droppers|lets live together": {
 "no_encontrado": "2026-11-22"
 },
+"rg:nanowar of steel|where barbagiannis dare live at summer breeze 2026": {
+"no_encontrado": "2026-11-27"
+},
 "rg:naomi jane|kinda sorta country": {
 "no_encontrado": "2026-11-22"
 },
@@ -178036,9 +179327,31 @@
 "artistas_id": [
 "a8f5f713-b2cd-45b6-aeca-42bbad35b960"
 ],
+"enlaces": {
+"amazon": "https://www.amazon.com/gp/product/B0GGSCGS36",
+"apple": "https://music.apple.com/de/album/1869060502",
+"bullmoose.com": "https://bullmoose.com/p/38571009",
+"deezer": "https://www.deezer.com/album/917433501",
+"discogs": "https://www.discogs.com/release/37288233",
+"nuclearblast.com": "https://www.nuclearblast.com/products/the-narrator-phosphor-transparent-neon-orange-colored-vinyl",
+"qobuz": "https://www.qobuz.com/album/phosphor-the-narrator/bim1b936cglw0",
+"shop.thenarrator.de": "https://shop.thenarrator.de/products/phosphor-lp?variant=56662559883639",
+"spotify": "https://open.spotify.com/album/2rDhdvStRfHmNHjl0tx1dg",
+"tidal": "https://tidal.com/album/518704361",
+"youtube": "https://music.youtube.com/playlist?list=OLAK5uy_ls3JHTcarsJsBabFrL2M7O_qVzdq9jxAw"
+},
+"fecha_release": "2026",
+"idioma": "eng",
+"pais": null,
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/fd9e5984-e4cf-4d14-a816-699017f60a72/front-250",
 "primera_fecha": "2026-05-07",
 "puntuacion": 1.0,
+"release": "723d175e-ece0-4359-81ed-232ca798a01e",
 "rg": "fd9e5984-e4cf-4d14-a816-699017f60a72",
+"sellos": [
+"Nuclear Blast Records"
+],
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Phosphor"
@@ -188734,6 +190047,9 @@
 "tipos_secundarios": [],
 "titulo": "The Fiddle and the Drum"
 },
+"rg:renee fleming with bela fleck|fiddle and the drum": {
+"no_encontrado": "2026-11-27"
+},
 "rg:repentance|retaliate": {
 "artista": "Repentance",
 "artistas_id": [
@@ -188903,6 +190219,9 @@
 },
 "rg:reverend raven and westside andy and the chain smokin altar boys|way back home": {
 "no_encontrado": "2026-11-22"
+},
+"rg:reverend shawn amos|dance party": {
+"no_encontrado": "2026-11-27"
 },
 "rg:revivalists|get it honest": {
 "artista": "The Revivalists",
@@ -190352,6 +191671,9 @@
 "titulo": "Chuck Timely & The Hourglass"
 },
 "rg:rolling stones|foreign tongues": {},
+"rg:rolling stones|foreign tongues loose lips": {
+"no_encontrado": "2026-11-27"
+},
 "rg:roman candle|unadulterated": {
 "artista": "Roman Candle",
 "artistas_id": [
@@ -190363,6 +191685,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "UNADULTERATED"
+},
+"rg:roman norfleet and be present art group|remembering": {
+"no_encontrado": "2026-11-27"
 },
 "rg:romanie|its not that funny": {
 "artista": "Romanie",
@@ -195001,6 +196326,9 @@
 "tipos_secundarios": [],
 "titulo": "Journal"
 },
+"rg:sharon lazibyrd|tides keep turning": {
+"no_encontrado": "2026-11-27"
+},
 "rg:shaun murphy|brand new blues": {
 "no_encontrado": "2026-11-22"
 },
@@ -196374,6 +197702,31 @@
 "Soundtrack"
 ],
 "titulo": "Dyer Expedition OST"
+},
+"rg:skagos|stricken": {
+"artista": "Skagos",
+"artistas_id": [
+"f10c2fe9-e89e-4178-bc49-b7dc598503d7"
+],
+"enlaces": {
+"bandcamp": "https://skagos.bandcamp.com/album/stricken",
+"creativecommons.org": "https://creativecommons.org/licenses/by/4.0/"
+},
+"fecha_release": "2026-12-21",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 7,
+"portada": "https://coverartarchive.org/release-group/a9528150-474f-4b7f-b715-d169063465db/front-250",
+"primera_fecha": "2026-12-21",
+"puntuacion": 1.0,
+"release": "5b563297-7418-4c9e-a64e-f2819dfc652d",
+"rg": "a9528150-474f-4b7f-b715-d169063465db",
+"sellos": [
+"Bindrune Recordings"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Stricken"
 },
 "rg:skald|rlog": {
 "artista": "SKÁLD",
@@ -198616,6 +199969,35 @@
 },
 "rg:sparks|sparks live on the moon": {
 "no_encontrado": "2026-11-22"
+},
+"rg:sparta|cut a silhouette": {
+"artista": "Sparta",
+"artistas_id": [
+"9bbbca84-c6a4-44ac-87b6-d7e8e7930bb1"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/1883176795",
+"bandcamp": "https://sparta.bandcamp.com/album/cut-a-silhouette",
+"discogs": "https://www.discogs.com/release/37480293",
+"qobuz": "https://www.qobuz.com/gb-en/album/cut-a-silhouette-sparta/wqtps5qwdxsxl",
+"spotify": "https://open.spotify.com/album/11Jl65X2ceWX7T0Uac9h1S",
+"tidal": "https://tidal.com/album/504945132"
+},
+"fecha_release": "2026-05",
+"idioma": "eng",
+"pais": "US",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/8f806117-32b6-4d04-ae4d-24fe7d221371/front-250",
+"primera_fecha": "2026-05-29",
+"puntuacion": 1.0,
+"release": "f236149d-25b3-4baf-ae4b-1da392eea4f7",
+"rg": "8f806117-32b6-4d04-ae4d-24fe7d221371",
+"sellos": [
+"Equal Vision Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Cut a Silhouette"
 },
 "rg:speaker music|synoptic audio": {
 "artista": "Speaker Music",
@@ -201453,6 +202835,9 @@
 },
 "rg:susto|susto stringband volume 2": {
 "no_encontrado": "2026-11-22"
+},
+"rg:susto|susto stringband volume two": {
+"no_encontrado": "2026-11-27"
 },
 "rg:sutekh hexen and hissing|sh hs": {
 "artista": "Sutekh Hexen & Hissing",
@@ -204428,6 +205813,9 @@
 },
 "rg:tigertailz|fist full of dollarz 1992 2011": {
 "no_encontrado": "2026-11-22"
+},
+"rg:tigertailz|fistful of dollarz the archives vol2 1993 2011": {
+"no_encontrado": "2026-11-27"
 },
 "rg:tigirlily gold|country and midwestern": {
 "artista": "Tigirlily Gold",
@@ -209505,6 +210893,9 @@
 "tipos_secundarios": [],
 "titulo": "Melancolia"
 },
+"rg:violent testimony|annihilate": {
+"no_encontrado": "2026-11-27"
+},
 "rg:violent youth|tsvety": {
 "artista": "The Violent Youth",
 "artistas_id": [
@@ -211107,6 +212498,28 @@
 "rg:wendy newcomer|murmurations": {
 "no_encontrado": "2026-11-22"
 },
+"rg:wesley stace|one last heist": {
+"artista": "Wesley Stace",
+"artistas_id": [
+"91d4a77b-7084-4831-97d0-2f05a896510a"
+],
+"enlaces": {
+"bandcamp": "https://wesleystace.bandcamp.com/album/one-last-heist"
+},
+"fecha_release": "2026-09-02",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 11,
+"portada": null,
+"primera_fecha": "2026-09-02",
+"puntuacion": 1.0,
+"release": "89bc956a-754a-4a18-9994-416193e74f38",
+"rg": "1cd8ccdd-62e3-4aa9-8ab0-a4bab767ba02",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "One Last Heist"
+},
 "rg:wesley state|one last heist": {
 "no_encontrado": "2026-11-22"
 },
@@ -211115,9 +212528,21 @@
 "artistas_id": [
 "911ca6c8-6238-4aab-9ad3-60d964ffb453"
 ],
+"enlaces": {
+"bandcamp": "https://westernaddiction.bandcamp.com/album/psychedelic-munitions"
+},
+"fecha_release": "2026-05-22",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/9d6145fe-f7b0-4c30-84b7-99e61d30449a/front-250",
 "primera_fecha": "2026-05-22",
 "puntuacion": 1.0,
+"release": "674c13eb-099b-46cb-8b64-e30a9dd115d3",
 "rg": "9d6145fe-f7b0-4c30-84b7-99e61d30449a",
+"sellos": [
+"Fat Wreck Chords"
+],
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Psychedelic Munitions"
@@ -211510,6 +212935,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "THING"
+},
+"rg:who|live at eden project": {
+"no_encontrado": "2026-11-27"
 },
 "rg:why|oh golly yes lord": {
 "artista": "WHY?",
