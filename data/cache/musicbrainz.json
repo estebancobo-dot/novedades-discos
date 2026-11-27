@@ -11303,6 +11303,34 @@
 "nombre": "Signum Regis",
 "pais": "SK"
 },
+"art:1a02453e-5f86-4220-abd6-1d889d2fa517": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000635425",
+"apple": "https://itunes.apple.com/us/artist/id265807703",
+"bandcamp": "https://atlas-sound.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/17213",
+"discogs": "https://www.discogs.com/artist/958743",
+"imvdb.com": "https://imvdb.com/n/atlas-sound",
+"last.fm": "https://www.last.fm/music/Atlas%20Sound",
+"myspace.com": "https://myspace.com/atlassound",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/atlas_sound",
+"spotify": "https://open.spotify.com/artist/3kGhAL9j1WyNjNkWTRQd8T",
+"tidal": "https://tidal.com/artist/3566428",
+"wikidata": "https://www.wikidata.org/wiki/Q2552873"
+},
+"etiquetas": [
+"indie rock",
+"psychedelic rock",
+"shoegaze"
+],
+"generos": [
+"indie rock",
+"psychedelic rock",
+"shoegaze"
+],
+"nombre": "Atlas Sound",
+"pais": "US"
+},
 "art:1a10b34d-293a-42f6-856c-fb44d19210f6": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0001049389",
@@ -24761,6 +24789,27 @@
 "nombre": "Eerie Enterprise",
 "pais": "NL"
 },
+"art:38acc2fa-ccb9-46e9-b1b6-7c133ce4d3ff": {
+"enlaces": {
+"apple": "https://music.apple.com/us/artist/687944207",
+"deezer": "https://www.deezer.com/artist/5130629",
+"discogs": "https://www.discogs.com/artist/2490566",
+"facebook": "https://www.facebook.com/togetherpangea",
+"genius.com": "https://genius.com/artists/Together-pangea",
+"instagram": "https://www.instagram.com/togetherpangea/",
+"play.google.com": "https://play.google.com/store/music/artist?id=Ahmhsf6oz4ecobdyimitt74vo74",
+"soundcloud": "https://soundcloud.com/togetherpangea",
+"spotify": "https://open.spotify.com/artist/29q1axQPERERxUzqufXMqB",
+"togetherpangea.com": "http://togetherpangea.com/",
+"twitter.com": "https://twitter.com/togetherpangea",
+"wikidata": "https://www.wikidata.org/wiki/Q17090204",
+"youtube": "https://www.youtube.com/channel/UCOa160TMShGFq0C0eNNHTmQ"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "together PANGEA",
+"pais": "US"
+},
 "art:38ad6626-54e7-4301-8637-02952462f90e": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0003588713",
@@ -26668,6 +26717,22 @@
 ],
 "nombre": "The Cruel Intentions",
 "pais": null
+},
+"art:3c8f9ff8-f3f9-4cc1-8e7e-2d6c600fd979": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1564798843",
+"deezer": "https://www.deezer.com/artist/227413015",
+"discogs": "https://www.discogs.com/artist/7495112",
+"ototoy.jp": "https://ototoy.jp/_/default/a/1366555",
+"qobuz": "https://open.qobuz.com/artist/9476763",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/daniela-lalita",
+"spotify": "https://open.spotify.com/artist/2eblCDvXEKYYapO1uchGds",
+"tidal": "https://tidal.com/artist/24761898"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Daniela Lalita",
+"pais": "PE"
 },
 "art:3c9f8bef-a658-4204-9ee8-7e95d2535b32": {
 "enlaces": {
@@ -73013,6 +73078,27 @@
 "nombre": "Dawn of Ashes",
 "pais": "US"
 },
+"art:a2bff7aa-390e-4412-9a0b-c18526fc233a": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000364878",
+"discogs": "https://www.discogs.com/artist/1196820",
+"imdb.com": "https://www.imdb.com/name/nm2983296/",
+"last.fm": "https://www.last.fm/music/Marvin+Sapp",
+"marvinsappmusic.com": "http://www.marvinsappmusic.com/",
+"spotify": "https://open.spotify.com/artist/5r0KYGxdIZEHZ6z6XbkVbo",
+"viaf.org": "http://viaf.org/viaf/9224807",
+"wikidata": "https://www.wikidata.org/wiki/Q6778477",
+"wikipedia": "https://en.wikipedia.org/wiki/Marvin_Sapp"
+},
+"etiquetas": [
+"gospel"
+],
+"generos": [
+"gospel"
+],
+"nombre": "Marvin Sapp",
+"pais": "US"
+},
 "art:a2d140d8-ae17-4d72-b680-b89c77f1ed52": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0004620962",
@@ -118184,6 +118270,9 @@
 "tipos_secundarios": [],
 "titulo": "COLD 2 THE TOUCH"
 },
+"rg:angel dust|cold 2 the touch": {
+"no_encontrado": "2026-11-27"
+},
 "rg:angela autumn|believer": {
 "artista": "Angela Autumn",
 "artistas_id": [
@@ -120566,6 +120655,30 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Necropolis"
+},
+"rg:atlas sound|thanatos": {
+"artista": "Atlas Sound",
+"artistas_id": [
+"1a02453e-5f86-4220-abd6-1d889d2fa517"
+],
+"enlaces": {
+"qobuz": "https://www.qobuz.com/album/thanatos-atlas-sound/kc6sjfhk1l0j5"
+},
+"fecha_release": "2026-11-20",
+"idioma": null,
+"pais": "XW",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/9a0deac2-de8d-42cf-a220-ca24d7d4aa19/front-250",
+"primera_fecha": "2026-11-20",
+"puntuacion": 1.0,
+"release": "0bba119f-7093-4f88-8259-0f1222eff100",
+"rg": "9a0deac2-de8d-42cf-a220-ca24d7d4aa19",
+"sellos": [
+"4AD"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Thanatos"
 },
 "rg:atomic aggressor|occult forces": {
 "artista": "Atomic Aggressor",
@@ -135928,9 +136041,25 @@
 "artistas_id": [
 "3c8f9ff8-f3f9-4cc1-8e7e-2d6c600fd979"
 ],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/6824991356",
+"deezer": "https://www.deezer.com/album/1126343441",
+"qobuz": "https://www.qobuz.com/gb-en/album/tac-tac-daniela-lalita/w1q535y3p5owx",
+"spotify": "https://open.spotify.com/album/43CyHJHOhoHtsPJsVXE684",
+"tidal": "https://tidal.com/album/571577258"
+},
+"fecha_release": "2026-11-13",
+"idioma": "spa",
+"pais": "XW",
+"pistas": 5,
+"portada": "https://coverartarchive.org/release-group/5d4ebf39-ac5a-43e2-af59-3e6e22cd0a91/front-250",
 "primera_fecha": "2026-11-13",
 "puntuacion": 1.0,
+"release": "99bec112-6d77-4c0d-8094-586661ca2152",
 "rg": "5d4ebf39-ac5a-43e2-af59-3e6e22cd0a91",
+"sellos": [
+"The Orchard"
+],
 "tipo": "EP",
 "tipos_secundarios": [],
 "titulo": "Tac Tac"
@@ -168762,6 +168891,9 @@
 "tipos_secundarios": [],
 "titulo": "Reconstruction: Second Story"
 },
+"rg:ledbyher|midwinter": {
+"no_encontrado": "2026-11-27"
+},
 "rg:ledmotiv|ghost of carrion": {
 "artista": "Ledmotiv",
 "artistas_id": [
@@ -173778,6 +173910,18 @@
 "tipos_secundarios": [],
 "titulo": "Music for Existing"
 },
+"rg:marvin sapp|restoration": {
+"artista": "Marvin Sapp",
+"artistas_id": [
+"a2bff7aa-390e-4412-9a0b-c18526fc233a"
+],
+"primera_fecha": "2026-11-20",
+"puntuacion": 1.0,
+"rg": "b014d303-4719-47cf-8b3a-5814512c196b",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Restoration"
+},
 "rg:marvin tate|controlled burn": {
 "no_encontrado": "2026-11-22"
 },
@@ -176830,6 +176974,18 @@
 },
 "rg:mirror of my soul|october is rising": {
 "no_encontrado": "2026-11-22"
+},
+"rg:misamo|play": {
+"artista": "MISAMO",
+"artistas_id": [
+"e148e786-f078-49e2-a9fb-fd044bd68905"
+],
+"primera_fecha": "2026-02-04",
+"puntuacion": 1.0,
+"rg": "e3e35fbf-6396-46fe-b591-bd1e34b39637",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "PLAY"
 },
 "rg:miscreance|reminiscence": {
 "artista": "Miscreance",
@@ -181584,6 +181740,9 @@
 },
 "rg:nina antonia and the lunar moths|dropping like butterflies": {
 "no_encontrado": "2026-11-22"
+},
+"rg:nina badric|moji ljudi": {
+"no_encontrado": "2026-11-27"
 },
 "rg:nina winder lind|wild love": {
 "artista": "Nina Winder‐Lind",
@@ -202298,6 +202457,18 @@
 ],
 "titulo": "SKZ‐REPLAY 2026 Pt.1"
 },
+"rg:stray kids|suiatsu": {
+"artista": "Stray Kids",
+"artistas_id": [
+"142b343d-bf5a-428c-a64f-6d1a7566bbe9"
+],
+"primera_fecha": "2026-11-25",
+"puntuacion": 1.0,
+"rg": "3323ec2c-da89-40f8-9b19-3208cb56cf5b",
+"tipo": "EP",
+"tipos_secundarios": [],
+"titulo": "SUIATSU"
+},
 "rg:streamer|into the void": {
 "artista": "Streamer",
 "artistas_id": [
@@ -206522,6 +206693,28 @@
 "tipos_secundarios": [],
 "titulo": "Graveyards of Joy"
 },
+"rg:together pangea|eat myself": {
+"artista": "together PANGEA",
+"artistas_id": [
+"38acc2fa-ccb9-46e9-b1b6-7c133ce4d3ff"
+],
+"enlaces": {
+"bandcamp": "https://togetherpangea.bandcamp.com/album/eat-myself"
+},
+"fecha_release": "2026-01-16",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 13,
+"portada": "https://coverartarchive.org/release-group/fa80d032-af5c-46a2-ba65-d29098a2fad0/front-250",
+"primera_fecha": "2026-01-16",
+"puntuacion": 1.0,
+"release": "fdf2e8d2-a097-42bb-a3a7-56c6bf9f09ab",
+"rg": "fa80d032-af5c-46a2-ba65-d29098a2fad0",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Eat Myself"
+},
 "rg:tokio hotel|encore": {
 "artista": "Tokio Hotel",
 "artistas_id": [
@@ -206594,9 +206787,21 @@
 "artistas_id": [
 "583098da-203a-48fd-be90-6776aed847db"
 ],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/1844612689"
+},
+"fecha_release": "2026-01-23",
+"idioma": "eng",
+"pais": "US",
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/41134046-3d7f-4845-b645-192f69863687/front-250",
 "primera_fecha": "2026-01-23",
 "puntuacion": 1.0,
+"release": "1b981332-6cb1-4140-9764-e1d2ffef8c65",
 "rg": "41134046-3d7f-4845-b645-192f69863687",
+"sellos": [
+"Shoots and Boots"
+],
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "I'm Your Vampire"
@@ -210398,6 +210603,9 @@
 },
 "rg:various artists|just look inside the cover songs of pete ham": {
 "no_encontrado": "2026-11-22"
+},
+"rg:various artists|keep me in your heart the songs of warren zevon": {
+"no_encontrado": "2026-11-27"
 },
 "rg:various artists|lets go dancing stopped a freight train with a grain of sand": {
 "no_encontrado": "2026-11-22"
