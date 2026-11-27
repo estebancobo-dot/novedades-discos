@@ -11,6 +11,7 @@ import os
 from collections import Counter, defaultdict
 
 from .clasificar import Taxonomia
+from .util import normalizar, similitud
 from .config import cargar_config, cargar_yaml, ruta
 from .util import normalizar
 
@@ -141,6 +142,72 @@ def main():
         w("")
 
     # ------------------------------------------------ por familia y subgénero
+    # ------------------------------------------------ calidad de los datos
+    w("## Calidad de los datos\n")
+    w("### Cobertura de cada campo\n")
+    campos = [("Portada", lambda d: d.get("portada") or (d.get("deezer") or {}).get("portada")),
+              ("Sello", lambda d: d.get("sello")), ("Número de pistas", lambda d: d.get("pistas")),
+              ("Fecha exacta (día)", lambda d: d.get("fecha_exacta")), ("Idioma verificado", lambda d: d.get("idioma")),
+              ("Identificado en MusicBrainz", lambda d: d.get("mbid")),
+              ("Enlace para escuchar (Deezer, Bandcamp, Apple…)", lambda d: (d.get("deezer") or {}).get("url") or d.get("en_bandcamp")
+               or any(k in (d.get("enlaces") or {}) for k in ("bandcamp", "spotify", "apple", "deezer", "tidal", "qobuz", "youtube"))),
+              ("Subgénero", lambda d: d.get("subgeneros")), ("Al menos una reseña", lambda d: d.get("resenas"))]
+    w("| Campo | Discos | % |\n|---|---:|---:|")
+    for nombre, f in campos:
+        k = sum(1 for d in discos if f(d))
+        w(f"| {nombre} | {k} | {pct(k, n)} |")
+    w("")
+    # coherencia: un disco de una fuente especializada (no mixta) debería tener algún subgénero de esa familia
+    w("### Coherencia de la clasificación con fuentes especializadas\n")
+    coh, tot_coh, malos = 0, 0, []
+    for d in discos:
+        fams_fuente = {fuentes[x["id"]].get("familia") for x in d["fuentes"] if x["id"] in fuentes
+                       and not fuentes[x["id"]].get("mixta")} - {None, "todas", "ninguna"}
+        if not fams_fuente or not d["subgeneros"]:
+            continue
+        fams_subs = {f for s_ in d["subgeneros"] if s_ in tax.sub for f in tax.sub[s_]["familias"]}
+        tot_coh += 1
+        if fams_fuente & fams_subs:
+            coh += 1
+        else:
+            malos.append((d, fams_fuente))
+    w(f"De los **{tot_coh}** discos con subgénero que vienen de una fuente especializada en una familia, "
+      f"**{pct(coh, tot_coh)}** tienen al menos un subgénero de esa familia. Los demás pueden ser discos "
+      f"fuera de su género habitual o errores de clasificación:\n")
+    for d, ff in malos[:12]:
+        w(f"- {d['artista']} – *{d['titulo']}*: fuente de {', '.join(sorted(ff))}, subgéneros {', '.join(d['subgeneros'])}")
+    w("")
+    # posibles duplicados no unidos
+    w("### Posibles duplicados para revisar\n")
+    por_artista = defaultdict(list)
+    for d in discos:
+        por_artista[normalizar(d["artista"])].append(d)
+    dudosos = []
+    for lista in por_artista.values():
+        for i, a in enumerate(lista):
+            for b in lista[i + 1:]:
+                sim = similitud(a["titulo"], b["titulo"])
+                if 0.75 <= sim < 1.0 or normalizar(a["titulo"]) in normalizar(b["titulo"]) or normalizar(b["titulo"]) in normalizar(a["titulo"]):
+                    dudosos.append((sim, a, b))
+    dudosos.sort(key=lambda x: -x[0])
+    w(f"Parejas del mismo artista con títulos muy parecidos que **no** se han unido: **{len(dudosos)}** "
+      f"(sobre {n} discos). Pueden ser el mismo disco escrito de dos formas o discos distintos (p. ej. un "
+      f"directo y el de estudio):\n")
+    for sim, a, b in dudosos[:15]:
+        w(f"- {a['artista']}: *{a['titulo']}* ({a['fecha']}) · *{b['titulo']}* ({b['fecha']}) — similitud {sim:.2f}")
+    w("")
+    # revisión de una muestra (si existe data/revision_clasificacion.csv)
+    p_rev = ruta("data/revision_clasificacion.csv")
+    if os.path.exists(p_rev):
+        with open(p_rev, encoding="utf-8", newline="") as f:
+            rev = list(csv.DictReader(f))
+        ok = sum(1 for r in rev if r.get("resultado") == "correcto")
+        parcial = sum(1 for r in rev if r.get("resultado") == "parcial")
+        w("### Aciertos medidos en una muestra revisada\n")
+        w(f"Muestra de **{len(rev)}** discos revisados uno a uno (`data/revision_clasificacion.csv`): "
+          f"correctos **{pct(ok, len(rev))}**, parcialmente correctos {pct(parcial, len(rev))}, "
+          f"incorrectos {pct(len(rev) - ok - parcial, len(rev))}.\n")
+
     w("## Discos por familia y subgénero\n")
     datos_tax = cargar_yaml(R["taxonomia"])
     cuenta = Counter(s for d in discos for s in d["subgeneros"])

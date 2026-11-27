@@ -93,6 +93,14 @@ reglas:
   # Días de margen antes del inicio de la ventana (fechas de fuentes aproximadas).
   margen_dias: 14
 
+# Consolidación antes de clasificar (scraper/consolidar.py): unir duplicados y apartar lo que no
+# es un disco nuevo de un artista. Salen de las medidas de calidad del informe.
+consolidacion:
+  similitud_titulo: 0.95        # mismo artista y título casi igual (erratas, espacios)
+  dias_maximos: 45              # ...y fechas a menos de N días
+  artista_recopilatorio: '(?i)^\s*(various artists|various|va|v\.a\.|tributes?|multiple artists|varios artistas)\s*$'
+  titulo_no_nuevo: '(?i)(original (motion picture )?soundtrack|\bOST\b|music from the (motion picture|series|film)|\bthe best of (19|20)\d\d\b|\(so far\)|\bgreatest hits\b|\bthe very best of\b|\b(19|20)\d\d\s*[-–]\s*(19|20)?\d\d\b|(?<=\w)\s+(deluxe|redux|expanded)( edition| version)?\s*$|[(\[-]\s*(deluxe|redux|expanded|anniversary)\b)'
+
 enriquecimiento:
   musicbrainz: true
   bandcamp:

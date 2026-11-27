@@ -49,7 +49,7 @@ Actualizado el 27-nov-2026.
 
 | # | Requisito | Dónde | Cómo se ha comprobado | Estado |
 |---|---|---|---|---|
-| 26 | Artista, título, fecha, sello, subgéneros, etiquetas originales, portada, nº de pistas, tipo, fuentes, reseñas (web + nota), enlaces | `data/discos.json`, esquema validado | Prueba de formato de los datos | ✅ campos · 🟡 la **cobertura** de cada campo (cuántos discos tienen sello, pistas, portada) aún no se mide en el informe |
+| 26 | Artista, título, fecha, sello, subgéneros, etiquetas originales, portada, nº de pistas, tipo, fuentes, reseñas (web + nota), enlaces | `data/discos.json`, esquema validado | Prueba de formato + **cobertura medida en el informe** (§ Calidad de los datos): portada 83 %, pistas 83 %, sello 63 %, idioma verificado 52 % (datos de 5 meses) | ✅ campos · 🟡 sello e idioma con cobertura baja |
 
 ## 5. Web
 
@@ -106,7 +106,7 @@ Lo que faltaba en las tablas anteriores o no estaba documentado:
 |---|---|---|---|
 | Arquitectura | *git scraping* + web estática + GitHub Actions | Patrón de Simon Willison (*git scraping*), JAMstack; proyectos revisados que hacen lo mismo (radar de novedades de Thrasher2020, new-albums de roberto-cabal) | Alternativa con base de datos (SQLite) solo justificada por volumen; no medida |
 | Lectura de webs | RSS/HTML con patrones en configuración; APIs oficiales | `robots.txt` (RFC 9309), límites publicados de MusicBrainz, Deezer, iTunes, Discogs, Wikidata | No se usan navegadores automatizados para leer webs con JavaScript (decisión: no saltar protecciones) |
-| Identificación de discos | Normalización + similitud + ids de MusicBrainz | Recomendaciones de MusicBrainz (release groups) | **No se ha medido la precisión** de la unión de duplicados (cuántos se unen mal o no se unen) |
+| Identificación de discos | Normalización + similitud + ids de MusicBrainz + consolidación (`scraper/consolidar.py`) | Recomendaciones de MusicBrainz (release groups) | Medido: había 15 duplicados sin unir y 47 lanzamientos que no eran discos nuevos (recopilatorios, bandas sonoras, deluxe); corregidos y revisados uno a uno. El informe lista cada semana las parejas dudosas |
 | Clasificación | Reglas + alias + base de conocimiento (Wikidata) + LLM con salida estructurada y validada | Enfoque híbrido habitual: determinista primero, LLM restringido a una lista cerrada | **No hay conjunto de referencia** revisado a mano para medir aciertos; solo el acuerdo con la prensa |
 | Datos | JSON versionado, esquema validado en las pruebas | JSON Schema | Cobertura por campo no medida en el informe |
 | Orquestación | Fases como procesos, estado persistente, reanudación diaria | Patrones de *checkpointing* de los ETL | Sin alertas propias además del correo de GitHub |

@@ -10,7 +10,8 @@ público de la web.
            fuentes (prensa, sellos, listados, Wikipedia, radares MusicBrainz/Deezer, listas anuales)
                                          │  lectura educada: robots.txt, ritmo por web, caché
                                          ▼
- recoger ──► enriquecer ──► clasificar ──► mapear ──► clasificar ──► informe ──► web
+ recoger ──► enriquecer ──► clasificar* ──► mapear ──► clasificar* ──► informe ──► web
+                            (*consolidar: unir duplicados, apartar lo que no es disco nuevo)
  (unir,       (Deezer,       (taxonomía +   (etiquetas   (con lo      (docs/      (site/data,
   MusicBrainz, iTunes,        mapeo)         nuevas vía   mapeado)     informe.md)  RSS, .ics)
   Bandcamp,    Wikidata,                     Wikidata)
