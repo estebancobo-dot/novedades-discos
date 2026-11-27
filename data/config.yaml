@@ -13,6 +13,9 @@ recogida:
   dias_relectura_incremental: 21
   # MusicBrainz: si un disco no aparece, se vuelve a buscar pasados N días.
   dias_reintento_musicbrainz: 10
+  # Lo leído de cada fuente se guarda al momento; si la recogida se corta y se relanza
+  # antes de N horas, esas fuentes no se vuelven a leer (0 = no reutilizar nunca).
+  horas_validez_lecturas: 30
 
 identificacion:
   # Cómo se presenta el robot a las webs. Sin datos personales.
@@ -112,7 +115,9 @@ rutas:
   descartados: data/descartados.json
   estado_fuentes: data/estado_fuentes.json
   cache_http: data/cache/http
+  cache_lecturas: data/cache/lecturas  # lo leído de cada fuente (para reanudar)
   cache_musicbrainz: data/cache/musicbrainz.json
   cache_bandcamp: data/cache/bandcamp.json
   cache_etiquetas_extra: data/cache/etiquetas_extra.json
   listas_anuales: data/listas_anuales.json   # listas de fin de año (lo mejor de cada año)
+  estado_pipeline: data/estado_pipeline.json # fases hechas de la última ejecución (para reanudar)

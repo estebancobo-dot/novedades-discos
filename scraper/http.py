@@ -50,6 +50,7 @@ class Navegador:
         self.apis = list(p.get("apis_documentadas") or [])
         self.cache_seg = float(p.get("cache_horas", 20)) * 3600
         self.reintentos_503 = int(p.get("reintentos_503", 5))
+        self.reintentos_429 = int(p.get("reintentos_429", 2))
         b = config["bloqueo"]
         self.bloq_estados = set(b.get("estados", []))
         self.bloq_textos = [t.lower() for t in b.get("textos", [])]
@@ -85,6 +86,13 @@ class Navegador:
             if falta > 0:
                 time.sleep(falta)
             self.ultimo[host] = time.time()
+
+    @staticmethod
+    def _segundos_retry_after(valor: str | None) -> float:
+        try:
+            return max(0.0, float(valor)) if valor else 0.0
+        except ValueError:
+            return 0.0          # fecha HTTP u otro formato: se usa la espera por defecto
 
     def _ruta_cache(self, url: str) -> str:
         return os.path.join(self.dir_cache, hashlib.sha1(url.encode()).hexdigest() + ".json")
@@ -156,6 +164,12 @@ class Navegador:
             if r.status_code == 503 and "musicbrainz.org" in host and intento < self.reintentos_503:
                 intento += 1
                 time.sleep(3 * intento)
+                continue
+            # 429 = "vas demasiado rápido": se espera lo que pida la web y se reintenta (dos veces).
+            # Si sigue, se trata como bloqueo y se deja la web.
+            if r.status_code == 429 and intento < self.reintentos_429:
+                intento += 1
+                time.sleep(min(self._segundos_retry_after(r.headers.get("Retry-After")), 120) or 20 * intento)
                 continue
             break
         r.encoding = r.encoding if r.encoding and r.encoding.lower() != "iso-8859-1" else (r.apparent_encoding or "utf-8")

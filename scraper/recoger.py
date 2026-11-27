@@ -1,4 +1,7 @@
-"""Recogida completa:  python -m scraper.recoger [--sin-bandcamp] [--sin-mb] [--solo ID,ID]
+"""Recogida completa:  python -m scraper.recoger [--incremental] [--fusionar] [--refrescar]
+                                                [--sin-bandcamp] [--sin-mb] [--solo=ID,ID]
+
+--refrescar: no reutiliza las lecturas guardadas de las fuentes (data/cache/lecturas/).
 
 1. Lee todas las fuentes activas de data/fuentes.yaml.
 2. Junta los discos repetidos (artista + título normalizados).
@@ -8,7 +11,9 @@
 La clasificación por subgénero se hace después (scraper.clasificar)."""
 from __future__ import annotations
 
+import dataclasses
 import datetime as dt
+import hashlib
 import json
 import os
 import re
@@ -19,8 +24,8 @@ from collections import defaultdict
 from .bandcamp import Bandcamp
 from .clasificar import Taxonomia
 from .config import RAIZ, cargar_config, cargar_fuentes, cargar_yaml, ruta
-from .http import Navegador
-from .lectores import Item, leer_fuente
+from .http import Navegador, guardar_json
+from .lectores import Item, ResultadoFuente, leer_fuente
 from .musicbrainz import MusicBrainz
 from .util import clave, limpiar, normalizar, parse_fecha, restar_meses
 
@@ -67,6 +72,48 @@ def _fin_periodo(s: str | None) -> dt.date | None:
         return None
 
 
+# ------------------------------------------------------------ lecturas guardadas
+# Cada fuente leída se guarda al momento en data/cache/lecturas/<id>.json. Si la recogida se
+# corta (reinicio de la máquina, límite de tiempo de la Action…), al relanzarla se reutilizan
+# las lecturas recientes y solo se leen las fuentes que faltaban.
+_CAMPOS_FECHA = ("fecha", "fecha_publicacion")
+
+
+def _huella(cfg: dict, lectura_desde: dt.date) -> str:
+    """Cambia si cambia la definición de la fuente o el tramo de fechas a leer."""
+    return hashlib.sha1(json.dumps([cfg, lectura_desde.isoformat()], sort_keys=True, default=str).encode()).hexdigest()
+
+
+def guardar_lectura(carpeta: str, res: ResultadoFuente, huella: str) -> None:
+    os.makedirs(carpeta, exist_ok=True)
+    items = [{k: _iso(v) for k, v in dataclasses.asdict(it).items()} for it in res.items]
+    guardar_json(os.path.join(carpeta, f"{res.id}.json"),
+                 {"leida": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"), "huella": huella,
+                  "estado": res.estado, "detalle": res.detalle, "paginas": res.paginas, "items": items},
+                 ensure_ascii=False)
+
+
+def cargar_lectura(carpeta: str, id_: str, huella: str, horas: float) -> ResultadoFuente | None:
+    """La lectura guardada, si es de la misma definición, reciente y sin error; si no, None."""
+    p = os.path.join(carpeta, f"{id_}.json")
+    if horas <= 0 or not os.path.exists(p):
+        return None
+    try:
+        with open(p, encoding="utf-8") as f:
+            d = json.load(f)
+        edad = dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(d["leida"])
+        if d.get("huella") != huella or edad > dt.timedelta(hours=horas) or d["estado"] in ("error", "bloqueada"):
+            return None
+        items = []
+        for x in d["items"]:
+            for k in _CAMPOS_FECHA:
+                x[k] = dt.date.fromisoformat(x[k]) if x.get(k) else None
+            items.append(Item(**x))
+        return ResultadoFuente(id_, d["estado"], d.get("detalle", ""), d.get("paginas", 0), items)
+    except (ValueError, KeyError, TypeError, OSError):
+        return None          # lectura guardada dañada o de otra versión: se vuelve a leer
+
+
 def _mayusculas(s: str) -> bool:
     letras = [c for c in s if c.isalpha()]
     return len(letras) > 3 and sum(c.isupper() for c in letras) / len(letras) > 0.8
@@ -106,9 +153,17 @@ def main():
     # ------------------------------------------------------------ 1. leer
     estado = {"fecha": hoy.isoformat(), "ventana": [desde.isoformat(), hasta.isoformat()], "fuentes": {}}
     items: list[Item] = []
+    carpeta_lecturas = ruta(config["rutas"].get("cache_lecturas", "data/cache/lecturas"))
+    horas_lectura = 0 if "--refrescar" in args else float(rec.get("horas_validez_lecturas", 30))
     for f in fuentes:
         log(f"· {f['id']} …")
-        res = leer_fuente(nav, f, hoy, lectura_desde)
+        huella = _huella(f, lectura_desde)
+        res = cargar_lectura(carpeta_lecturas, f["id"], huella, horas_lectura)
+        if res is not None:
+            res.detalle = (res.detalle + " (lectura guardada)").strip()
+        else:
+            res = leer_fuente(nav, f, hoy, lectura_desde)
+            guardar_lectura(carpeta_lecturas, res, huella)
         estado["fuentes"][f["id"]] = {"nombre": f["nombre"], "web": f.get("web"), "familia": f.get("familia"),
                                      "rol": f.get("rol"), "estado": res.estado, "detalle": res.detalle.strip(),
                                      "paginas": res.paginas, "items": len(res.items)}
