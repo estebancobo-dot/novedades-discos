@@ -1,6 +1,7 @@
-"""Mapeo automático de etiquetas, sin LLM:  python -m scraper.mapear [--max=N]
+"""Mapeo automático de etiquetas:  python -m scraper.mapear [--max=N] [--sin-llm]
 
-Para cada etiqueta "pendiente" de data/mapeo_etiquetas.csv:
+Primero, si hay clave de la API de Anthropic, un LLM (scraper.llm) resuelve las pendientes.
+Después, para cada etiqueta que siga "pendiente" en data/mapeo_etiquetas.csv (o todas, sin clave):
   1. busca en Wikidata un elemento que sea un género musical con ese nombre;
   2. sube por "subclase de" (P279) hasta 3 niveles;
   3. el primer antepasado cuyo nombre o alias sea un alias de data/taxonomia.yaml da el
@@ -19,6 +20,7 @@ import urllib.parse
 from .clasificar import Taxonomia, cargar_mapeo, guardar_mapeo
 from .config import RAIZ, cargar_config, cargar_yaml, ruta
 from .http import Bloqueado, Navegador
+from .llm import MapeadorLLM
 from .util import normalizar
 
 API = "https://www.wikidata.org/w/api.php?format=json&"
@@ -142,8 +144,24 @@ def main(args: list[str] | None = None) -> int:
     mapeo = cargar_mapeo(p)
     pend = sorted((k for k, v in mapeo.items() if v["subgenero"] == "pendiente"),
                   key=lambda k: -int(mapeo[k].get("veces") or 0))[:maximo]
-    wd = Wikidata(Navegador(config, RAIZ))
     hoy = dt.date.today().isoformat()
+    # 1) LLM (Claude), solo si hay clave: entiende jerga y variantes que Wikidata no tiene
+    cfg_llm = (config.get("enriquecimiento") or {}).get("llm") or {}
+    if MapeadorLLM.disponible(cfg_llm) and "--sin-llm" not in args:
+        llm = MapeadorLLM(cfg_llm, tax, cargar_yaml(config["rutas"]["taxonomia"]))
+        maximo_llm = int(cfg_llm.get("max_etiquetas_por_ejecucion", 600))
+        por_etiqueta = {mapeo[k]["etiqueta"]: k for k in pend[:maximo_llm]}
+        respuestas = llm.mapear(list(por_etiqueta))
+        for et, (sub, nota) in respuestas.items():
+            mapeo[por_etiqueta[et]].update({"subgenero": sub, "origen": "llm", "fecha": hoy,
+                                            "nota": (nota + " · " if nota else "") + f"automático ({llm.modelo})"})
+        guardar_mapeo(p, mapeo)
+        print(f"LLM ({llm.modelo}): {len(respuestas)} etiquetas · {llm.uso}" + (f" · error: {llm.error}" if llm.error else ""))
+        pend = [k for k in pend if mapeo[k]["subgenero"] == "pendiente"]
+    else:
+        print("LLM: sin clave configurada; se usa solo Wikidata")
+    # 2) Wikidata para lo que quede
+    wd = Wikidata(Navegador(config, RAIZ))
     hechas = sin_respuesta = con_sub = 0
     for k in pend:
         r = resolver(mapeo[k]["etiqueta"], wd, tax)

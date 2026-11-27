@@ -58,12 +58,13 @@ En **Settings → Secrets and variables → Actions → New repository secret**:
 |---|---|---|
 | `LASTFM_KEY` | Etiquetas de los oyentes de Last.fm para clasificar mejor | Se omite Last.fm |
 | `DISCOGS_TOKEN` | Buscar en Discogs discos sin enlace directo | Solo se consultan los discos con enlace en MusicBrainz |
+| `ANTHROPIC_API_KEY` | Mapear etiquetas nuevas con Claude (de la consola de Anthropic; se paga por uso, no va incluida en el plan Pro) | Se mapean solo con Wikidata (gratis) |
 
 ## Publicación (una sola vez)
 
 1. Fusiona la rama de trabajo en `main`. Las Actions programadas solo se ejecutan en la rama principal.
 2. En GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. En **Actions → Actualización semanal → Run workflow**, lánzala la primera vez a mano.
+3. En **Actions → Actualización de datos y web → Run workflow**, lánzala la primera vez a mano.
    Después se ejecuta sola cada sábado.
 
 ## Pruebas
