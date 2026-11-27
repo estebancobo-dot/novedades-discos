@@ -56,16 +56,19 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   await p.fill('#q', '');
   await p.waitForTimeout(400);
 
-  // ficha
+  // ficha (se abre de forma asíncrona: espera a que esté abierta y con sus detalles)
   await p.locator('.tarjeta').first().click();
-  await p.waitForTimeout(300);
+  await p.locator('dialog#ficha[open] h3').first().waitFor({ timeout: 10000 }).catch(() => {});
   comprobar(await p.locator('dialog#ficha[open]').count() === 1, 'abre la ficha');
   comprobar(p.url().includes('#disco='), 'la ficha tiene enlace propio');
   comprobar(await p.locator('dialog#ficha a', { hasText: 'Qobuz' }).count() === 1, 'enlace a Qobuz en la ficha');
   comprobar(await p.locator('dialog#ficha h3', { hasText: 'Aparece en' }).count() === 1, 'la ficha carga sus detalles (fuentes)');
   await p.click('#fGuardar');
   comprobar((await p.textContent('#numLista')).trim() === '1', 'guarda en Mi lista');
-  await p.keyboard.press('Escape');
+  await p.click('dialog#ficha .f-cerrar');
+  await p.locator('dialog#ficha[open]').waitFor({ state: 'detached', timeout: 5000 }).catch(() => {});
+  await p.waitForFunction(() => !location.hash.includes('disco='), null, { timeout: 5000 }).catch(() => {});
+  comprobar(await p.locator('dialog#ficha[open]').count() === 0 && !p.url().includes('#disco='), 'cierra la ficha y limpia su enlace');
 
   // mi lista sobrevive a recargar
   await p.reload({ waitUntil: 'networkidle' });
@@ -103,6 +106,7 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   // enlace profundo a un disco
   const id = await p.evaluate(async () => (await (await fetch('data/discos.json')).json()).discos[0].id);
   await p.goto(BASE + '#disco=' + encodeURIComponent(id), { waitUntil: 'networkidle' });
+  await p.locator('dialog#ficha[open]').waitFor({ timeout: 10000 }).catch(() => {});
   comprobar(await p.locator('dialog#ficha[open]').count() === 1, 'abrir un disco desde su enlace');
 
   // accesibilidad básica
