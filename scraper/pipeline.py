@@ -9,6 +9,7 @@ de red), al relanzar este mismo comando se sigue por la primera fase que no term
   --nueva        empieza de cero aunque haya una ejecución a medias
   --git          tras cada fase, guarda los cambios en git y los sube (para la Action)
   --solo-reanudar  si no hay una ejecución a medias, no hace nada (para un aviso diario)
+  --desde=FASE   empieza una ejecución nueva por esa fase (las anteriores se dan por hechas)
 
 El estado está en data/estado_pipeline.json."""
 from __future__ import annotations
@@ -96,7 +97,16 @@ def main(args: list[str] | None = None) -> int:
             print("No hay ninguna ejecución a medias: nada que reanudar.", flush=True)
             return 0
         modo = estado["modo"]
-    if "--nueva" in args or not ejecucion_vigente(estado, modo, dt.datetime.now(dt.timezone.utc)):
+    desde = next((a.split("=", 1)[1] for a in args if a.startswith("--desde=")), None)
+    if desde:
+        nombres = [f[0] for f in FASES]
+        if desde not in nombres:
+            print(f"Fase desconocida: {desde}. Fases: {', '.join(nombres)}", flush=True)
+            return 2
+        estado = nueva_ejecucion(modo)
+        for n in nombres[:nombres.index(desde)]:
+            estado["fases"][n] = {"estado": "hecha", "nota": "dada por hecha (--desde)", "fin": ahora()}
+    elif "--nueva" in args or not ejecucion_vigente(estado, modo, dt.datetime.now(dt.timezone.utc)):
         estado = nueva_ejecucion(modo)
     else:
         hechas = [n for n, v in estado["fases"].items() if v.get("estado") == "hecha"]

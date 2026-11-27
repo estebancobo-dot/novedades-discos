@@ -10,6 +10,7 @@ publica en GitHub Pages.
 - **Web:** `site/`, una cuadrícula de portadas por semana, con ficha y filtros. Pensada para móvil.
 - **Informe:** [`docs/informe.md`](docs/informe.md), con cifras, comparación con el mercado y etiquetas pendientes.
 - **Fuentes:** [`docs/fuentes.md`](docs/fuentes.md), con qué webs se leen, cómo y cuáles se descartaron.
+- **Arquitectura:** [`docs/arquitectura.md`](docs/arquitectura.md): persistencia, tolerancia a fallos, pruebas y qué está validado.
 
 ## Todo se configura sin tocar código
 
@@ -25,10 +26,17 @@ Para probar una fuente nueva sin guardar nada: `python -m scraper.probar ID --te
 ## Cómo funciona
 
 ```
+python -m scraper.pipeline [--incremental] [--desde=FASE]   # todas las fases, reanudable si se corta
+```
+
+Fase a fase:
+
+```
 python -m scraper.recoger [--incremental]   # lee las fuentes, MusicBrainz y Bandcamp → data/candidatos.json
 python -m scraper.recoger --solo=ID1,ID2 --fusionar   # relee solo esas fuentes y las suma a lo ya recogido
 python -m scraper.enriquecer                # Deezer (todos), Wikidata, Discogs, iTunes y Last.fm (sin subgénero)
 python -m scraper.clasificar                # taxonomía + mapeo de etiquetas → data/discos.json
+python -m scraper.mapear                    # etiquetas nuevas → subgénero con Wikidata (sin LLM)
 python -m scraper.informe                   # → docs/informe.md
 python -m scraper.web                       # → site/data/discos.json
 ```
@@ -37,9 +45,9 @@ python -m scraper.web                       # → site/data/discos.json
   hace como máximo 1 petición cada 2 s por web (Bandcamp, 1 cada 4 s; MusicBrainz, 1/s) y guarda
   una copia local de lo ya descargado. Si una web muestra una verificación anti-bots, se deja y
   se anota en el informe; nunca se intenta saltar.
-- **Etiquetas nuevas:** las que no encajan en la taxonomía se consultan **una sola vez** a un LLM
-  y la respuesta queda en `data/mapeo_etiquetas.csv`. La Action semanal no tiene clave de API, así
-  que las nuevas quedan como `pendiente` y se resuelven en una sesión de Claude Code.
+- **Etiquetas nuevas:** las que no encajan en la taxonomía se resuelven **una sola vez** y quedan en
+  `data/mapeo_etiquetas.csv`: automáticamente con la jerarquía de géneros de Wikidata (sin LLM ni
+  coste) y, en una sesión de Claude Code, con el LLM para lo que quede.
 - **Nunca se crean subgéneros nuevos automáticamente:** se proponen en el informe.
 
 ## Claves opcionales (secretos del repositorio)
@@ -57,3 +65,13 @@ En **Settings → Secrets and variables → Actions → New repository secret**:
 2. En GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 3. En **Actions → Actualización semanal → Run workflow**, lánzala la primera vez a mano.
    Después se ejecuta sola cada sábado.
+
+## Pruebas
+
+```
+pip install -r requirements.txt -r requirements-dev.txt
+python -m pytest              # 85 pruebas: escenarios normales, de borde, de error y de extremo a extremo
+node tests/e2e/web.mjs site   # la web en un navegador real (móvil y escritorio); requiere Playwright
+```
+
+Se ejecutan solas en GitHub en cada envío (`.github/workflows/pruebas.yml`).

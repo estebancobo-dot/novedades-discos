@@ -183,3 +183,19 @@ def test_pipeline_solo_reanudar_sin_nada_pendiente(tmp_path, monkeypatch):
     assert pipeline.main(["--solo-reanudar"]) == 0
     p_estado.write_text(json.dumps({"modo": "completa", "inicio": "2020-01-01T00:00:00+00:00", "fases": {}}))
     assert pipeline.main(["--solo-reanudar"]) == 0        # caducada: tampoco
+
+
+def test_pipeline_desde_una_fase(tmp_path, monkeypatch):
+    p_estado = tmp_path / "estado.json"
+    monkeypatch.setattr(pipeline, "cargar_config", lambda: {"rutas": {"estado_pipeline": str(p_estado)}})
+    monkeypatch.setattr(pipeline, "ruta", lambda r: r)
+    monkeypatch.setattr(pipeline.os.path, "exists", lambda p: True if p.endswith(".py") else os.path.isfile(p))
+    llamadas = []
+
+    class R:
+        returncode = 0
+
+    monkeypatch.setattr(pipeline.subprocess, "run", lambda argv, **k: llamadas.append(argv[3]) or R())
+    assert pipeline.main(["--desde=enriquecer"]) == 0
+    assert llamadas[0] == "scraper.enriquecer" and "scraper.recoger" not in llamadas
+    assert pipeline.main(["--desde=no-existe"]) == 2
