@@ -45,7 +45,9 @@ def etiquetas_visibles(d: dict, tax_obj, mapeo: dict, maximo: int = 10) -> list[
 
 
 def _portadas(url: str | None, deezer: dict | None) -> tuple[str | None, str | None]:
-    if not url and deezer and deezer.get("portada"):
+    # Deezer primero si la tiene: su CDN la sirve en un paso; Cover Art Archive encadena redirecciones
+    # (coverartarchive → archive.org → servidor), lo que retrasa la primera imagen (medido con Lighthouse).
+    if deezer and deezer.get("portada"):
         return deezer["portada"], deezer.get("portada_grande") or deezer["portada"]
     if not url:
         return None, None
@@ -117,7 +119,7 @@ def main():
             "sello": d.get("sello"), "familias": d.get("familias", []), "subgeneros": d.get("subgeneros", []),
             "portada": peq, "portada_grande": gra,
             # si la portada principal no carga (p. ej. Cover Art Archive sin imagen), la de Deezer
-            "portada_alt": dz_port if (dz_port := (d.get("deezer") or {}).get("portada")) and dz_port != peq else None,
+            "portada_alt": next((u for u in (d.get("portada"), (d.get("deezer") or {}).get("portada")) if u and u != peq), None),
             "pistas": d.get("pistas"), "tipo": d.get("tipo"),
             "idioma": d.get("idioma"), "nota": media, "n_notas": len(notas), "destacado": destacado,
             "puntos": puntos, "listas": en_listas,
@@ -160,12 +162,51 @@ def main():
     with open(os.path.join(base, "data/discos.json"), "w", encoding="utf-8") as f:
         json.dump({"actualizado": actualizado, "familias": familias, "mejores": mejores, "discos": indice}, f,
                   ensure_ascii=False, separators=(",", ":"))
+    _precargar_portadas(base, salida, actualizado)
     _rss(base, salida, familias, nombres_sub, actualizado)
     _ics(base, salida, familias, actualizado)
     print(f"site/data/discos.json: {len(salida)} discos · RSS y calendarios generados")
 
 
 # ------------------------------------------------------------------ RSS
+def version_2x(url: str | None) -> str | None:
+    """La misma portada al doble de tamaño. Debe coincidir con version2x() de site/app.js."""
+    if not url:
+        return None
+    if "coverartarchive.org" in url and url.endswith("front-250"):
+        return url.replace("front-250", "front-500")
+    if "dzcdn.net" in url and "/250x250-" in url:
+        return url.replace("/250x250-", "/500x500-")
+    m = re.search(r"(bcbits\.com/img/.*)_2\.(jpg|png)$", url)
+    return url[: m.start()] + m.group(1) + f"_16.{m.group(2)}" if m else None
+
+
+def _precargar_portadas(base: str, discos: list[dict], hoy: str, n: int = 2) -> None:
+    """Escribe en index.html la precarga de las primeras portadas que verá quien abra la web (las
+    primeras de "Próximamente" o, si no hay, de la semana más reciente), para que se descarguen a la
+    vez que el código y los datos y no después (Lighthouse: mejor LCP)."""
+    p = os.path.join(base, "index.html")
+    if not os.path.exists(p):
+        return
+    # mismo orden que la web (app.js): próximos por fecha ascendente, orden estable
+    prox = sorted((d for d in discos if d["fecha"] > hoy), key=lambda d: d["fecha"])
+    publ = sorted((d for d in discos if d["fecha"] <= hoy), key=lambda d: d["fecha"], reverse=True)
+    primeras = [d["portada"] for d in (prox or publ) if d.get("portada")][:n]
+
+    def enlace(u: str) -> str:
+        doble = version_2x(u)
+        srcset = f' imagesrcset="{escape(u)} 1x, {escape(doble)} 2x"' if doble else ""
+        return f'<link rel="preload" as="image" href="{escape(u)}"{srcset} fetchpriority="high">'
+    enlaces = "".join(enlace(u) for u in primeras)
+    with open(p, encoding="utf-8") as f:
+        html = f.read()
+    nuevo = re.sub(r"<!-- precarga:inicio -->.*?<!-- precarga:fin -->",
+                   lambda m: f"<!-- precarga:inicio -->{enlaces}<!-- precarga:fin -->", html, flags=re.S)
+    if nuevo != html:
+        with open(p, "w", encoding="utf-8") as f:
+            f.write(nuevo)
+
+
 def _rss(base, discos, familias, nombres_sub, actualizado):
     os.makedirs(os.path.join(base, "rss"), exist_ok=True)
     grupos = {"todo": ("Todas las novedades", discos)}

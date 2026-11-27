@@ -3,7 +3,9 @@
 // Todo lo que depende de géneros sale de los datos (taxonomía incluida).
 
 const $ = (s, el = document) => el.querySelector(s);
-const SEMANAS_POR_TANDA = 8, DISCOS_POR_TANDA = 60;
+// Lo que se pinta de una vez (Lighthouse: menos elementos = el móvil responde antes). El resto, con "ver más".
+const SEMANAS_POR_TANDA = 3, DISCOS_POR_TANDA = 30, PROXIMOS_VISIBLES = 12;
+let PRIORITARIAS = 0;     // las primeras portadas de la pantalla se piden ya, sin esperar (mejor LCP)
 const MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
 const MESES_LARGO = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
 const SERVICIOS = { deezer: "Deezer", spotify: "Spotify", apple: "Apple Music", bandcamp: "Bandcamp", tidal: "Tidal",
@@ -51,7 +53,8 @@ function portadaHTML(d, grande = false) {
   const alt = d.portada_alt ? ` data-alt="${esc(d.portada_alt)}"` : "";
   const doble = grande ? null : version2x(url);
   const srcset = doble ? ` srcset="${esc(url)} 1x, ${esc(doble)} 2x"` : "";
-  return url ? `${vacia}<img src="${esc(url)}"${srcset}${alt} alt="" loading="lazy" decoding="async" onerror="portadaFallida(this)">` : vacia;
+  const carga = !grande && PRIORITARIAS > 0 ? (PRIORITARIAS--, ' loading="eager" fetchpriority="high"') : ' loading="lazy"';
+  return url ? `${vacia}<img src="${esc(url)}"${srcset}${alt} alt=""${carga} decoding="async" onerror="portadaFallida(this)">` : vacia;
 }
 // La misma portada al doble de tamaño (pantallas de alta densidad), según el servicio que la sirve.
 function version2x(url) {
@@ -156,7 +159,7 @@ function tarjeta(d) {
   const insignia = d.nota != null ? `<span class="nota-badge" title="Nota media de ${d.n_notas} reseña(s)">${d.nota.toFixed(1)}</span>`
     : d.n_resenas ? `<span class="insignia">${d.n_resenas} ${d.n_resenas === 1 ? "reseña" : "reseñas"}</span>` : "";
   const lado = `<div class="t-lado">${d.nota != null ? `<b>${d.nota.toFixed(1)}</b>` : ""}${fechaLarga(d.fecha)}</div>`;
-  return `<button class="tarjeta" data-id="${esc(d.id)}" aria-label="${esc(d.artista)} – ${esc(d.titulo)}">
+  return `<button class="tarjeta" data-id="${esc(d.id)}">
     <div class="portada">${portadaHTML(d)}${insignia}
       ${d.destacado ? '<span class="dest-badge" title="Destacado">✦</span>' : ""}
       ${MI_LISTA[d.id] ? '<span class="lista-badge" title="En mi lista">★</span>' : ""}</div>
@@ -181,6 +184,7 @@ function pintarMeses(publ) {
 }
 
 function pintar() {
+  PRIORITARIAS = 4;
   const lista = DATOS.discos.filter(d => pasa(d));
   const main = $("#contenido");
   main.classList.toggle("lista", VISTA === "lista");
@@ -216,8 +220,10 @@ function pintar() {
     for (const d of publ) { const k = lunes(d.fecha); if (!semanas.has(k)) semanas.set(k, []); semanas.get(k).push(d); }
     const claves = [...semanas.keys()].sort().reverse();
     const visibles = claves.slice(0, estado.tandas * SEMANAS_POR_TANDA);
+    const nProx = estado.verProximos ? prox.length : PROXIMOS_VISIBLES;
     if (prox.length) html += `<section class="semana prox"><h2><span>Próximamente</span><span>${prox.length}</span></h2>
-      <div class="rejilla">${prox.slice(0, 60).map(tarjeta).join("")}</div></section>`;
+      <div class="rejilla">${prox.slice(0, nProx).map(tarjeta).join("")}</div>
+      ${prox.length > nProx ? `<button class="mas" id="masProx">Ver los ${prox.length} próximos</button>` : ""}</section>`;
     for (const k of visibles) {
       const ds = semanas.get(k).sort((a, b) => (b.destacado - a.destacado) || b.n_resenas - a.n_resenas || a.artista.localeCompare(b.artista));
       const mes = ds.reduce((m, d) => d.fecha.slice(0, 7) > m ? d.fecha.slice(0, 7) : m, "");
@@ -229,6 +235,8 @@ function pintar() {
   }
   const mas = $("#mas");
   if (mas) mas.onclick = () => { estado.tandas++; pintar(); };
+  const masProx = $("#masProx");
+  if (masProx) masProx.onclick = () => { estado.verProximos = true; pintar(); };
 }
 
 // Calendario de salidas: un mes por bloque (lunes a domingo); cada día con su número de discos y

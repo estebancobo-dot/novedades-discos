@@ -44,7 +44,7 @@ A1 recoger ─► A2 etiquetas extra ─► A3 consolidar+clasificar ─► A4 m
 |---|---|---|---|---|---|---|
 | B1 | Revisar una muestra de 60 discos (subgéneros correctos, parciales o no) | A3 | `data/revision_clasificacion.csv` + aciertos en el informe | Objetivo: ≥ 85 % correctos o parciales; cada error explicado y, si es de reglas, corregido | yo (plan Pro, en sesión) | ⬜ |
 | B2 | Revisar descartes por regla (muestra de cada motivo) | A3 | notas en el informe | Ningún disco nuevo descartado por error en la muestra | yo | ⬜ |
-| B3 | Rendimiento de la web (Lighthouse, móvil) | web actual | cifras en `docs/requisitos.md` | Rendimiento ≥ 90 y accesibilidad ≥ 95 en móvil | yo | ⬜ (en paralelo) |
+| B3 | Rendimiento de la web (Lighthouse, móvil) | web actual | cifras en `docs/requisitos.md` | Rendimiento ≥ 90 y accesibilidad ≥ 95 en móvil | yo | 🟡 hecho: 83–87 (antes 56) y accesibilidad 100; repetir con la web publicada |
 | B4 | Cobertura por campo, coherencia, duplicados | A3 | informe § Calidad | Se publica cada semana | máquina | ✅ (con 5 meses) |
 
 ### Bloque C · Publicación

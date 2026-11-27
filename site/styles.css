@@ -297,3 +297,9 @@ button.cal-dia { cursor: pointer; }
 /* etiquetas de estilo de las fuentes (descriptores) en la ficha */
 .etiquetas { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 8px; }
 .etiquetas span { font-size: 12px; border: 1px solid var(--linea); border-radius: 999px; padding: 2px 9px; color: var(--tinta-suave); }
+/* Reservar el sitio de las pestañas y del índice de meses antes de que lleguen los datos:
+   si no, el contenido salta hacia abajo al cargar (CLS medido con Lighthouse: 0,87). */
+.familias:empty { min-height: 43px; }
+.meses:empty { display: flex; visibility: hidden; min-height: 33px; }
+/* mientras cargan los datos, el contenido ocupa la pantalla: el pie no aparece arriba para luego saltar */
+main#contenido { min-height: 100vh; }

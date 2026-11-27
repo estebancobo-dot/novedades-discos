@@ -72,7 +72,7 @@ Actualizado el 27-nov-2026.
 | 36 | Todo automático, sin sesión ni gasto | Action + Wikidata + Claude con plan Pro | — | 🟡 igual que 35 |
 | 37 | Persistencia, tolerancia a fallos, reanudar | `scraper/pipeline.py`, lecturas guardadas, escrituras atómicas | Pruebas de reanudación y de extremo a extremo | ✅ |
 | 38 | Escenarios nominales, de borde, esquina y error | `tests/` (110 de Python + 47 comprobaciones de navegador), cobertura 72 % con mínimo exigido del 70 % | Se ejecutan en GitHub en cada envío | ✅ |
-| 39 | Rendimiento | índice ligero + fichas por mes, carga diferida | Medido: 115 KB comprimidos | 🟡 sin auditoría Lighthouse |
+| 39 | Rendimiento | índice ligero + fichas por mes; menos elementos al abrir; portadas con prioridad y precarga; sitio reservado (sin saltos) | Lighthouse móvil (4G lenta simulada, servidor con compresión como GitHub Pages): **rendimiento 83–87** (antes 56), accesibilidad 100, buenas prácticas 96, SEO 100; bloqueo 60–150 ms (antes 900), desplazamiento 0,006 (antes 0,87) | 🟡 objetivo 90 no alcanzado aquí: la primera portada tarda ~4,5 s, sobre todo por los servidores de portadas (Cover Art Archive encadena redirecciones) a través del proxy de esta sesión |
 | 40 | Secretos fuera del chat y del código | secretos del repositorio | Revisión | ✅ |
 
 ## 6 bis. Revisión mensaje a mensaje (los 48 mensajes de la conversación, leídos del registro completo el 27-nov)
@@ -110,7 +110,7 @@ Lo que faltaba en las tablas anteriores o no estaba documentado:
 | Clasificación | Reglas + alias + base de conocimiento (Wikidata) + LLM con salida estructurada y validada | Enfoque híbrido habitual: determinista primero, LLM restringido a una lista cerrada | **No hay conjunto de referencia** revisado a mano para medir aciertos; solo el acuerdo con la prensa |
 | Datos | JSON versionado, esquema validado en las pruebas | JSON Schema | Cobertura por campo no medida en el informe |
 | Orquestación | Fases como procesos, estado persistente, reanudación diaria | Patrones de *checkpointing* de los ETL | Sin alertas propias además del correo de GitHub |
-| Web | JavaScript sin framework, PWA, carga diferida, URL como estado | Guías de Google (web.dev) de PWA y Core Web Vitals; WCAG 2.1 AA; patrones de AOTY/RYM vistos en el estudio | Accesibilidad: auditoría axe (WCAG 2.1 A/AA) en cada envío, 0 infracciones tras corregir el contraste de colores. Rendimiento: medido el peso (115 KB), **sin Lighthouse** |
+| Web | JavaScript sin framework, PWA, carga diferida, URL como estado | Guías de Google (web.dev) de PWA y Core Web Vitals; WCAG 2.1 AA; patrones de AOTY/RYM vistos en el estudio | Accesibilidad: axe (WCAG 2.1 A/AA) en cada envío, 0 infracciones; Lighthouse accesibilidad 100. Rendimiento: Lighthouse móvil 83–87 (objetivo 90) |
 | Pruebas | pytest + Playwright + axe en CI | Pirámide de pruebas: unitarias, integración, extremo a extremo | Cobertura 72 % (mínimo 70 % en CI); lo menos cubierto: radar de Deezer y etiquetas extra de Wikidata/Discogs/Last.fm |
 | Seguridad | Secretos de GitHub, sin claves en código, LLM solo escribe un archivo validado, versiones fijas, Dependabot | Guía de seguridad de la Action de Claude Code | Sin cabeceras de seguridad propias (GitHub Pages no las permite) |
 | IA | Claude con el plan Pro vía Claude Code; Wikidata como base gratuita | Documentación oficial de la Action de Claude Code | La Action con token no se ha ejecutado |

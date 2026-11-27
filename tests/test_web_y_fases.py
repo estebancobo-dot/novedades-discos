@@ -10,7 +10,7 @@ from scraper.clasificar import Taxonomia
 from scraper.lectores import Item, ResultadoFuente
 from scraper.mapear import resolver
 from scraper.recoger import _fecha_mb, _fin_periodo, _huella, cargar_lectura, guardar_lectura
-from scraper.web import _portadas, nota_10
+from scraper.web import _portadas, nota_10, version_2x
 
 
 # ------------------------------------------------------------------ notas y portadas
@@ -25,6 +25,7 @@ def test_nota_10(texto, esperado):
 def test_portadas_tamanos_y_respaldo():
     assert _portadas("https://coverartarchive.org/release-group/x/front-250", None)[1].endswith("front-500")
     assert _portadas(None, {"portada": "dz250", "portada_grande": "dz1000"}) == ("dz250", "dz1000")
+    assert _portadas("https://coverartarchive.org/release-group/x/front-250", {"portada": "dz250"})[0] == "dz250"   # Deezer primero
     assert _portadas(None, None) == (None, None)
     peq, gra = _portadas("https://f4.bcbits.com/img/a123_10.jpg", None)
     assert peq.endswith("_2.jpg") and gra.endswith("_16.jpg")
@@ -199,3 +200,10 @@ def test_pipeline_desde_una_fase(tmp_path, monkeypatch):
     assert pipeline.main(["--desde=enriquecer"]) == 0
     assert llamadas[0] == "scraper.enriquecer" and "scraper.recoger" not in llamadas
     assert pipeline.main(["--desde=no-existe"]) == 2
+
+
+def test_version_2x_coincide_con_la_web():
+    assert version_2x("https://coverartarchive.org/release-group/x/front-250").endswith("front-500")
+    assert version_2x("https://cdn-images.dzcdn.net/images/cover/a/250x250-000000-80-0-0.jpg").endswith("/500x500-000000-80-0-0.jpg")
+    assert version_2x("https://f4.bcbits.com/img/a123_2.jpg") == "https://f4.bcbits.com/img/a123_16.jpg"
+    assert version_2x("https://otra.web/x.jpg") is None and version_2x(None) is None
