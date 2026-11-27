@@ -11,6 +11,7 @@ publica en GitHub Pages.
 - **Informe:** [`docs/informe.md`](docs/informe.md), con cifras, comparación con el mercado y etiquetas pendientes.
 - **Fuentes:** [`docs/fuentes.md`](docs/fuentes.md), con qué webs se leen, cómo y cuáles se descartaron.
 - **Arquitectura:** [`docs/arquitectura.md`](docs/arquitectura.md): persistencia, tolerancia a fallos, pruebas y qué está validado.
+- **Plan:** [`docs/plan.md`](docs/plan.md) (tareas con entradas, salida, validación y estado) · [`docs/requisitos.md`](docs/requisitos.md) (cada petición y su estado) · [`docs/estado-del-arte.md`](docs/estado-del-arte.md) (alternativas y decisiones por capa).
 
 ## Todo se configura sin tocar código
 
