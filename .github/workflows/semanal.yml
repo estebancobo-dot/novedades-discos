@@ -55,7 +55,6 @@ jobs:
         env:
           LASTFM_KEY: ${{ secrets.LASTFM_KEY }}
           DISCOGS_TOKEN: ${{ secrets.DISCOGS_TOKEN }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # opcional: mapeo de etiquetas con Claude
           URL_WEB: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
           EVENTO: ${{ github.event_name }}
           CRON: ${{ github.event.schedule }}
@@ -70,6 +69,49 @@ jobs:
           else
             python -m scraper.pipeline --incremental --git
           fi
+      # ---- Etiquetas que Wikidata no resolvió: Claude Code con el plan Pro (sin API de pago) ----
+      # Solo si existe el secreto CLAUDE_CODE_OAUTH_TOKEN (se genera con `claude setup-token`) y
+      # quedan etiquetas pendientes. Claude solo lee la lista y escribe un JSON de respuestas; el
+      # código las valida contra la taxonomía antes de aplicarlas.
+      - name: ¿Hay etiquetas pendientes para Claude?
+        id: pendientes
+        if: github.event.schedule != '47 4 * * *'     # solo en la semanal o a mano, no en la reanudación diaria
+        env:
+          TOKEN_CLAUDE: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$TOKEN_CLAUDE" ]; then
+            echo "Sin CLAUDE_CODE_OAUTH_TOKEN: las etiquetas quedan con Wikidata." ; echo "n=0" >> "$GITHUB_OUTPUT" ; exit 0
+          fi
+          python -m scraper.etiquetas_llm exportar --max=300
+          n=$(python -c "import json;print(len(json.load(open('data/etiquetas_pendientes.json'))))")
+          echo "n=$n" >> "$GITHUB_OUTPUT"
+      - name: Claude (plan Pro) clasifica las etiquetas pendientes
+        if: steps.pendientes.outputs.n != '' && steps.pendientes.outputs.n != '0'
+        continue-on-error: true            # si falla o se agota el límite del plan, se deja para otra semana
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: |
+            --max-turns 8
+            --allowedTools "Read,Write"
+          prompt: |
+            Read data/taxonomia.yaml (the subgenre ids are the keys under familias → grupos) and
+            data/etiquetas_pendientes.json (music tags with how often they appear and an example disc).
+            For every tag, decide which subgenre ids of the taxonomy it names (0 to 3, most specific first).
+            Use "ninguno" for anything that is not a style in the taxonomy: places, people, bands, labels,
+            moods, themes, instruments, decades, formats, or genres the taxonomy does not have.
+            If a tag is a real rock/pop/folk/country/blues genre missing from the taxonomy, answer
+            "ninguno" with the note "propuesta: <genre name>". Never invent ids.
+            Write only the file data/respuestas_llm.json with this exact shape and nothing else:
+            {"<tag exactly as given>": ["id-one|id-two" or "ninguno", "optional short note"], ...}
+            Do not modify any other file.
+      - name: Aplicar respuestas y volver a clasificar, informe y web
+        if: steps.pendientes.outputs.n != '' && steps.pendientes.outputs.n != '0'
+        env:
+          URL_WEB: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: |
+          python -m scraper.etiquetas_llm aplicar
+          python -m scraper.pipeline --desde=clasificar_2 --git
       - name: Guardar páginas y lecturas para la próxima ejecución
         if: always()
         uses: actions/cache/save@v4

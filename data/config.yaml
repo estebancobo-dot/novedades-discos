@@ -105,11 +105,11 @@ enriquecimiento:
     lastfm: {activo: true, variable_clave: LASTFM_KEY}       # sin clave, se omite
     deezer: {activo: true}     # a todos los discos: enlace, tipo (álbum/EP), reproductor, portada
     itunes: {activo: true}     # solo a los que siguen sin subgénero: género de Apple y enlace
-  # Mapeo de etiquetas nuevas con un LLM (Claude). Solo funciona si existe la clave como secreto
-  # del repositorio (ANTHROPIC_API_KEY, de la consola de Anthropic: se paga aparte del plan Pro).
-  # Sin clave se usa solo Wikidata, sin coste. Cada etiqueta se pregunta una sola vez.
+  # Mapeo de etiquetas con la API de pago de Anthropic: DESACTIVADO (decisión del usuario: sin gasto).
+  # El LLM se usa con el plan Pro a través de Claude Code (Action con CLAUDE_CODE_OAUTH_TOKEN, ver
+  # .github/workflows/semanal.yml, o en una sesión) mediante scraper.etiquetas_llm. Wikidata, siempre.
   llm:
-    activo: true
+    activo: false
     variable_clave: ANTHROPIC_API_KEY
     modelo: claude-opus-5-5          # claude-haiku-5-5 sería ~40 veces más barato
     esfuerzo: low                    # clasificar etiquetas no necesita razonar mucho

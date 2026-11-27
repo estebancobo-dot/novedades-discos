@@ -58,7 +58,7 @@ En **Settings → Secrets and variables → Actions → New repository secret**:
 |---|---|---|
 | `LASTFM_KEY` | Etiquetas de los oyentes de Last.fm para clasificar mejor | Se omite Last.fm |
 | `DISCOGS_TOKEN` | Buscar en Discogs discos sin enlace directo | Solo se consultan los discos con enlace en MusicBrainz |
-| `ANTHROPIC_API_KEY` | Mapear etiquetas nuevas con Claude (de la consola de Anthropic; se paga por uso, no va incluida en el plan Pro) | Se mapean solo con Wikidata (gratis) |
+| `CLAUDE_CODE_OAUTH_TOKEN` | Que Claude, **con tu plan Pro (sin coste extra)**, clasifique cada semana las etiquetas que Wikidata no resuelva. Se genera una vez en tu ordenador con Claude Code: `claude setup-token` | Las etiquetas se resuelven solo con Wikidata |
 
 ## Publicación (una sola vez)
 

@@ -95,22 +95,21 @@ iTunes 1 cada 3,1 s, Discogs 1 cada 2,5 s, el resto 1 cada 2 s o lo que diga su 
 ## 5. Clasificación y uso de IA
 
 1. **Reglas y alias** (`taxonomia.yaml`): la mayor parte. Deterministas, explicables.
-2. **Mapeo de etiquetas** (`mapeo_etiquetas.csv`): cada etiqueta desconocida se resuelve **una sola vez**
-   en la fase `mapear`, sin intervención:
-   - **LLM (Claude, API de Anthropic)** si existe el secreto `ANTHROPIC_API_KEY` (`scraper/llm.py`):
-     lotes de 50 etiquetas; la respuesta va con **esquema JSON** y se valida contra la taxonomía (un id
-     inventado se descarta y la etiqueta sigue pendiente); la taxonomía va en un bloque cacheado; si el
-     modelo declina, responde otro (fallback del servidor). Modelo y esfuerzo en `config.yaml`
-     (`enriquecimiento.llm`). Coste estimado con `claude-opus-5-5` y esfuerzo bajo: unos 2 $ la primera
-     vez (≈1.500 etiquetas) y céntimos por semana; con `claude-haiku-5-5`, unas 40 veces menos;
-   - **Wikidata** para lo que quede, o para todo si no hay clave (`scraper/mapear.py`): gratis; se busca el
-     género y se sube por "subclase de" hasta un subgénero (p. ej. *blackgaze* → atmospheric black metal);
-   - el LLM de una sesión de Claude Code, si se está trabajando en el proyecto.
-3. **Nunca se crean subgéneros automáticamente**: lo que el LLM o Wikidata identifican como género sin sitio
-   en la taxonomía queda como "propuesta" en el informe.
-
-La clave de la API **no viene con el plan Pro de Claude**: se crea en la consola de Anthropic y se paga
-por uso. Sin ella todo sigue funcionando con Wikidata.
+2. **Mapeo de etiquetas** (`mapeo_etiquetas.csv`): cada etiqueta desconocida se resuelve **una sola vez**,
+   sin intervención y **sin gasto**:
+   - **Wikidata** (`scraper/mapear.py`), siempre y gratis: se busca el género y se sube por "subclase de"
+     hasta un subgénero (p. ej. *blackgaze* → atmospheric black metal, *yacht rock* → westcoast);
+   - **Claude con el plan Pro**, para lo que Wikidata no resuelva: en la Action semanal, mediante la
+     Action oficial de Claude Code autenticada con el secreto `CLAUDE_CODE_OAUTH_TOKEN` (generado con
+     `claude setup-token`; usa la suscripción, no la API de pago). Claude solo lee
+     `data/etiquetas_pendientes.json` y escribe `data/respuestas_llm.json`; `scraper/etiquetas_llm.py`
+     valida cada respuesta contra la taxonomía (un id inventado se rechaza y la etiqueta sigue pendiente)
+     y la aplica. Si el plan llega a su límite o algo falla, se deja para la semana siguiente. También se
+     puede hacer en una sesión de Claude Code con los mismos dos comandos (`exportar` / `aplicar`);
+   - la vía de la **API de pago** (`scraper/llm.py`) existe pero está **desactivada** por decisión del
+     usuario (`enriquecimiento.llm.activo: false`).
+3. **Nunca se crean subgéneros automáticamente**: lo que se identifica como género sin sitio en la
+   taxonomía queda como "propuesta" en el informe.
 
 ## 6. Rendimiento
 
