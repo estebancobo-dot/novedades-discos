@@ -16,11 +16,32 @@ import re
 from email.utils import format_datetime
 from xml.sax.saxutils import escape
 
+from .clasificar import Taxonomia, cargar_mapeo
+from .util import normalizar
 from .config import cargar_config, cargar_yaml, ruta
 
 URL_WEB = os.environ.get("URL_WEB", "")
 # Campos que solo usa la ficha: van en site/data/fichas/AAAA-MM.json, no en el índice.
-CAMPOS_FICHA = ("portada_grande", "pistas", "idioma", "deezer_id", "dicen", "resenas", "fuentes", "enlaces")     # p. ej. https://usuario.github.io/novedades-discos/
+CAMPOS_FICHA = ("portada_grande", "pistas", "idioma", "deezer_id", "dicen", "resenas", "fuentes", "enlaces", "etiquetas")
+
+
+def etiquetas_visibles(d: dict, tax_obj, mapeo: dict, maximo: int = 10) -> list[str]:
+    """Etiquetas de estilo que las fuentes dan al disco (como los descriptores de RYM o los estilos
+    de AllMusic). Solo las que se sabe que son estilos musicales: alias de la taxonomía, genéricas
+    o etiquetas ya mapeadas a un subgénero. Fuera lugares, personas, sellos y ruido de los feeds."""
+    vistas, out = set(), []
+    for e in d.get("etiquetas_originales", []) + d.get("etiquetas_musicbrainz_bandcamp", [])[:8]:
+        n = normalizar(e)
+        if not n or n in vistas or len(n) > 30:
+            continue
+        m = mapeo.get(n) or {}
+        if not (n in tax_obj.alias or n in tax_obj.genericas or m.get("subgenero") not in (None, "", "ninguno", "pendiente")):
+            continue
+        vistas.add(n)
+        out.append(e.strip().lower() if e.isupper() else e.strip())
+        if len(out) >= maximo:
+            break
+    return out     # p. ej. https://usuario.github.io/novedades-discos/
 
 
 def _portadas(url: str | None, deezer: dict | None) -> tuple[str | None, str | None]:
@@ -58,6 +79,8 @@ def main():
     if os.path.exists(estado_p):
         with open(estado_p, encoding="utf-8") as f:
             actualizado = json.load(f).get("fecha", actualizado)
+    tax_obj = Taxonomia(tax)
+    mapeo = cargar_mapeo(ruta(config["rutas"]["mapeo_etiquetas"]))
     familias, nombres_sub, prestados = {}, {}, {}
     for fk, fd in tax["familias"].items():
         familias[fk] = {"nombre": fd["nombre"], "corto": fd.get("nombre_corto", fd["nombre"]), "grupos": [
@@ -105,6 +128,7 @@ def main():
             "fuentes": [{"nombre": x["nombre"], "url": x.get("url"), "fecha": x.get("fecha"), "rol": x.get("rol")}
                         for x in d.get("fuentes", [])],
             "enlaces": {k: v for k, v in (d.get("enlaces") or {}).items() if v},
+            "etiquetas": etiquetas_visibles(d, tax_obj, mapeo),
         })
     base = ruta("site")
     os.makedirs(os.path.join(base, "data"), exist_ok=True)

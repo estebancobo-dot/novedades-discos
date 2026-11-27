@@ -58,6 +58,14 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   await p.waitForTimeout(200);
   comprobar(p.url().includes('familia='), 'la familia queda en la URL (se puede compartir)');
 
+  // búsqueda por palabras en cualquier orden
+  const ejemplo = await p.evaluate(async () => (await (await fetch('data/discos.json')).json()).discos.find(d => d.artista.split(' ').length >= 2));
+  if (ejemplo) {
+    const alReves = ejemplo.artista.split(' ').reverse().join(' ');
+    await p.fill('#q', alReves);
+    await p.waitForTimeout(400);
+    comprobar(await p.locator('.tarjeta').count() > 0, `búsqueda en otro orden ("${alReves}")`);
+  }
   // búsqueda sin resultados → estado vacío
   await p.fill('#q', 'zzzz-no-existe-zzzz');
   await p.waitForTimeout(400);
@@ -72,6 +80,9 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   comprobar(p.url().includes('#disco='), 'la ficha tiene enlace propio');
   comprobar(await p.locator('dialog#ficha a', { hasText: 'Qobuz' }).count() === 1, 'enlace a Qobuz en la ficha');
   comprobar(await p.locator('dialog#ficha h3', { hasText: 'Aparece en' }).count() === 1, 'la ficha carga sus detalles (fuentes)');
+  const conSubs = await p.evaluate(() => document.querySelectorAll('dialog#ficha .chips .chip').length);
+  if (conSubs) comprobar(await p.locator('dialog#ficha h3', { hasText: 'Parecidos' }).count() === 1, 'la ficha propone discos parecidos');
+  comprobar(await p.locator('.tarjeta img[srcset]').count() > 0 || await p.locator('.tarjeta img').count() === 0, 'portadas con versión para pantallas de alta densidad');
   await p.click('#fGuardar');
   comprobar((await p.textContent('#numLista')).trim() === '1', 'guarda en Mi lista');
   await p.click('dialog#ficha .f-cerrar');

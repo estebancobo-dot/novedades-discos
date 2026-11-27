@@ -49,12 +49,23 @@ function portadaHTML(d, grande = false) {
   const vacia = `<div class="vacia" style="background:${color(d.artista + d.titulo)}">${esc(d.artista)}</div>`;
   const url = grande ? (d.portada_grande || d.portada) : d.portada;
   const alt = d.portada_alt ? ` data-alt="${esc(d.portada_alt)}"` : "";
-  return url ? `${vacia}<img src="${esc(url)}"${alt} alt="" loading="lazy" decoding="async" onerror="portadaFallida(this)">` : vacia;
+  const doble = grande ? null : version2x(url);
+  const srcset = doble ? ` srcset="${esc(url)} 1x, ${esc(doble)} 2x"` : "";
+  return url ? `${vacia}<img src="${esc(url)}"${srcset}${alt} alt="" loading="lazy" decoding="async" onerror="portadaFallida(this)">` : vacia;
 }
+// La misma portada al doble de tamaño (pantallas de alta densidad), según el servicio que la sirve.
+function version2x(url) {
+  if (!url) return null;
+  if (url.includes("coverartarchive.org") && url.endsWith("front-250")) return url.replace("front-250", "front-500");
+  if (url.includes("dzcdn.net") && url.includes("/250x250-")) return url.replace("/250x250-", "/500x500-");
+  if (/bcbits\.com\/img\/.*_2\.(jpg|png)$/.test(url)) return url.replace(/_2\.(jpg|png)$/, "_16.$1");
+  return null;
+}
+
 // portada que no carga: se prueba la alternativa (Deezer) y, si tampoco, queda el fondo con el nombre
 function portadaFallida(img) {
   const alt = img.dataset.alt;
-  if (alt && img.src !== alt) { img.removeAttribute("data-alt"); img.src = alt; } else img.remove();
+  if (alt && img.src !== alt) { img.removeAttribute("data-alt"); img.removeAttribute("srcset"); img.src = alt; } else img.remove();
 }
 window.portadaFallida = portadaFallida;
 function toast(texto) {
@@ -118,7 +129,10 @@ function pasaSinFechas(d, ignorar = "", conFechas = false) {
     if (estado.hasta && d.fecha > estado.hasta) return false;
   }
   if (estado.sello && norm(d.sello) !== norm(estado.sello)) return false;
-  if (estado.q && !norm(`${d.artista} ${d.titulo} ${d.sello || ""}`).includes(norm(estado.q))) return false;
+  if (estado.q) {               // todas las palabras, en cualquier orden ("price margo" → Margo Price)
+    const texto = norm(`${d.artista} ${d.titulo} ${d.sello || ""}`);
+    if (!norm(estado.q).split(/\s+/).filter(Boolean).every(p => texto.includes(p))) return false;
+  }
   return true;
 }
 
@@ -383,6 +397,12 @@ async function abrirFicha(id) {
     <a class="busqueda" href="https://rateyourmusic.com/search?searchterm=${q}&searchtype=l" target="_blank" rel="noopener">Rate Your Music 🔍</a>`;
   const proximo = d.fecha > HOY;
   const mismos = DATOS.discos.filter(x => x.id !== d.id && norm(x.artista) === norm(d.artista)).sort((a, b) => b.fecha.localeCompare(a.fecha));
+  // parecidos: comparten algún subgénero, de otro artista, ordenados por subgéneros en común y cercanía de fecha
+  const subsD = new Set(d.subgeneros), tD = Date.parse(d.fecha);
+  const parecidos = subsD.size ? DATOS.discos
+    .filter(x => x.id !== d.id && norm(x.artista) !== norm(d.artista) && x.subgeneros.some(s => subsD.has(s)))
+    .map(x => [x, x.subgeneros.filter(s => subsD.has(s)).length, Math.abs(Date.parse(x.fecha) - tD)])
+    .sort((a, b) => b[1] - a[1] || a[2] - b[2]).slice(0, 6).map(([x]) => x) : [];
   const dlg = $("#ficha");
   dlg.innerHTML = `<div class="f-portada">${portadaHTML(d, true)}
       <button class="f-cerrar" aria-label="Cerrar">×</button></div>
@@ -407,6 +427,9 @@ async function abrirFicha(id) {
       ${d.deezer_id ? `<div class="reproductor"><iframe title="Reproductor de Deezer" loading="lazy"
          src="https://widget.deezer.com/widget/auto/album/${d.deezer_id}?tracklist=true" allow="encrypted-media; clipboard-write"></iframe></div>` : ""}
       <div class="enlaces" style="margin-top:8px">${enlacesEscucha(d)}</div>
+      ${d.etiquetas?.length ? `<h3>Etiquetas de estilo</h3><p class="etiquetas">${d.etiquetas.map(t => `<span>${esc(t)}</span>`).join("")}</p>` : ""}
+      ${parecidos.length ? `<h3>Parecidos</h3><ul class="f-lista">${parecidos.map(x => `<li><button class="enlace-filtro" data-abrir="${esc(x.id)}">${esc(x.artista)} – ${esc(x.titulo)}</button>
+        <span class="aviso">${fechaLarga(x.fecha, x.fecha_exacta)}</span></li>`).join("")}</ul>` : ""}
       ${mismos.length ? `<h3>Del mismo artista</h3><ul class="f-lista">${mismos.map(x => `<li><button class="enlace-filtro" data-abrir="${esc(x.id)}">${esc(x.titulo)}</button>
         <span class="aviso">${fechaLarga(x.fecha, x.fecha_exacta)}</span></li>`).join("")}</ul>` : ""}
       <h3>Reseñado en</h3>
@@ -502,6 +525,11 @@ fetch("data/discos.json", { cache: "no-cache" })
     eventos(); actualizar();
     const m = location.hash.match(/disco=([^&]+)/);
     if (m) abrirFicha(decodeURIComponent(m[1]));
+    // un enlace a otro disco abierto con la web ya cargada (misma pestaña) también abre su ficha
+    addEventListener("hashchange", () => {
+      const h = location.hash.match(/disco=([^&]+)/);
+      if (h && !$("#ficha").open) abrirFicha(decodeURIComponent(h[1]));
+    });
   })
   .catch(err => { $("#estado").textContent = "No se pudieron cargar los datos (" + err.message + ")."; });
 

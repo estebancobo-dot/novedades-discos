@@ -294,3 +294,6 @@ button.cal-dia { cursor: pointer; }
   border-radius: 999px; font-size: 11px; padding: 1px 6px; }
 .cal-dia.hoy { outline: 2px solid var(--acento); outline-offset: -2px; }
 .cal-dia.activo { box-shadow: 0 0 0 3px var(--acento); }
+/* etiquetas de estilo de las fuentes (descriptores) en la ficha */
+.etiquetas { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 8px; }
+.etiquetas span { font-size: 12px; border: 1px solid var(--linea); border-radius: 999px; padding: 2px 9px; color: var(--tinta-suave); }

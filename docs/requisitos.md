@@ -94,7 +94,7 @@ Lo que faltaba en las tablas anteriores o no estaba documentado:
 | 13, 14 | Ampliaciones 0, 1 y 2, con la 2 al final | Hechas en ese orden | 🟡 falta con todo 2026 |
 | 15–21, 26, 30, 48 | Estudio de AOTY, RYM, Metacritic y AllMusic (qué ofrecen) | Robot y lector alternativo: AOTY, RYM y AllMusic responden 403; Metacritic deja leer su lista de novedades (no la ficha). Se completa con fuentes descriptivas (Wikipedia, apps, el proyecto albumoftheyearapi) | ⏳ |
 | 22–23 | Repos de la búsqueda en GitHub (capturas) | `docs/fuentes.md` | ✅ |
-| 24 | ¿Tidal tiene API gratis? | Su API pública exige registro como desarrollador y está orientada a catálogo; no aporta novedades por género que no den MusicBrainz y Deezer. No se usa | ✅ respondida |
+| 24 | ¿Tidal tiene API gratis? | No se ha podido confirmar si el acceso de desarrollador es gratuito: las fuentes encontradas son de terceros (catálogos de APIs y proyectos que usan su API privada, contra sus condiciones). Tampoco aportaría novedades por género que no den MusicBrainz y Deezer. No se usa | 🟡 sin confirmar las condiciones de acceso |
 | 27–28 | Secretos LASTFM_KEY y DISCOGS_TOKEN | Añadidos por el usuario; la Action los usa | ✅ (se verá en la primera ejecución en `main`) |
 | 29, 32 | Autonomía, sin cerrar tareas a la ligera, todas las fuentes posibles | Tareas solo cerradas con validación; búsqueda de fuentes continua | 🟡 continuo |
 | 42 | New Music Tracker | Evaluado: datos de MusicBrainz y su `robots.txt` prohíbe los filtros; ideas tomadas (calendario, Qobuz) | ✅ |
