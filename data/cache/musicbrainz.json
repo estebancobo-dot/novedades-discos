@@ -11617,6 +11617,38 @@
 "nombre": "Epimetheus",
 "pais": "GB"
 },
+"art:1a74972b-82b9-49ba-9dcf-ca7cdaee4fa5": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000935894",
+"bbc.co.uk": "https://www.bbc.co.uk/music/artists/1a74972b-82b9-49ba-9dcf-ca7cdaee4fa5",
+"discogs": "https://www.discogs.com/artist/567492",
+"fionnregan.com": "http://www.fionnregan.com/",
+"imdb.com": "https://www.imdb.com/name/nm1925903/",
+"last.fm": "https://www.last.fm/music/Fionn+Regan",
+"myspace.com": "https://myspace.com/fionnregan",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/fionn_regan",
+"spotify": "https://open.spotify.com/artist/0WJc0VDtzsLIk33XRB20Dy",
+"tidal": "https://tidal.com/artist/3519308",
+"viaf.org": "http://viaf.org/viaf/19984938",
+"wikidata": "https://www.wikidata.org/wiki/Q24828"
+},
+"etiquetas": [
+"folk rock",
+"indie folk",
+"contemporary folk",
+"folk",
+"singer-songwriter"
+],
+"generos": [
+"folk rock",
+"indie folk",
+"contemporary folk",
+"folk",
+"singer-songwriter"
+],
+"nombre": "Fionn Regan",
+"pais": "IE"
+},
 "art:1a90d42f-a474-4904-835b-b2414f89d36c": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0000937457",
@@ -23513,6 +23545,24 @@
 "nombre": "Ashe",
 "pais": "US"
 },
+"art:36124745-211c-446d-a51d-523742844d80": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1317513187",
+"bandcamp": "https://upsammy.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/13741041",
+"discogs": "https://www.discogs.com/artist/5998650",
+"facebook": "https://www.facebook.com/upsammie",
+"instagram": "https://www.instagram.com/thessa.upsammy/",
+"soundcloud": "https://soundcloud.com/upsammy",
+"spotify": "https://open.spotify.com/artist/2orXY2oMFNUtiNrNMDyreV",
+"upsammy.com": "https://www.upsammy.com/",
+"youtube": "https://music.youtube.com/channel/UCUPsJTCYCmKO6Syu1rGvQZA"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "upsammy",
+"pais": "NL"
+},
 "art:36274201-f583-4859-83b8-5b8778dcb9f7": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0003825109",
@@ -30436,6 +30486,24 @@
 "nombre": "Robin Carolan",
 "pais": "GB"
 },
+"art:4432befd-755c-4de0-bd16-acc8287e52ff": {
+"enlaces": {
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb178860327",
+"deezer": "https://www.deezer.com/artist/114178152",
+"discogs": "https://www.discogs.com/artist/8630931",
+"facebook": "https://www.facebook.com/GhaliaVolt",
+"ghaliavolt.com": "https://www.ghaliavolt.com/",
+"instagram": "https://www.instagram.com/ghaliavolt/",
+"spotify": "https://open.spotify.com/artist/5H41XLSIsy1UT4pmiO6UK9",
+"viaf.org": "http://viaf.org/viaf/2160725655810181905",
+"wikidata": "https://www.wikidata.org/wiki/Q87897322",
+"youtube": "https://www.youtube.com/@GHALIAVOLTmusic"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Ghalia Volt",
+"pais": "BE"
+},
 "art:44377af5-5fdc-4dbd-b007-b00f647f801d": {
 "enlaces": {
 "facebook": "https://www.facebook.com/XenithBand",
@@ -34389,6 +34457,92 @@
 "etiquetas": [],
 "generos": [],
 "nombre": "Scar Chamber",
+"pais": "US"
+},
+"art:4d2956d1-a3f7-44bb-9a41-67563e1a0c94": {
+"enlaces": {
+"45cat.com": "https://www.45cat.com/artist/blondie",
+"allmusic": "https://www.allmusic.com/artist/mn0000044764",
+"amazon": "https://www.amazon.com/-/e/B000APTH72",
+"apple": "https://music.apple.com/us/artist/1012882",
+"audiomack.com": "https://audiomack.com/blondie",
+"bandsintown.com": "https://www.bandsintown.com/a/810",
+"bbc.co.uk": "https://www.bbc.co.uk/music/artists/4d2956d1-a3f7-44bb-9a41-67563e1a0c94",
+"beatport.com": "https://www.beatport.com/artist/blondie/176812",
+"blondie.net": "https://www.blondie.net/",
+"bsky.app": "https://bsky.app/profile/blondieband.bsky.social",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb13902017b",
+"cdjapan.co.jp": "https://www.cdjapan.co.jp/person/700277141",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:Blondie1977.jpg",
+"d-nb.info": "https://d-nb.info/gnd/5179414-7",
+"deezer": "https://www.deezer.com/artist/12484470",
+"discogs": "https://www.discogs.com/artist/16655",
+"facebook": "https://www.facebook.com/Blondie",
+"genius.com": "https://genius.com/artists/Blondie",
+"id.loc.gov": "http://id.loc.gov/authorities/names/n80052575",
+"id.oclc.org": "https://id.oclc.org/worldcat/entity/E39QQPVp7QcGtQHxPWr8kwWd6g",
+"imdb.com": "https://www.imdb.com/name/nm1341522/",
+"imvdb.com": "https://imvdb.com/n/blondie",
+"instagram": "https://www.instagram.com/blondieofficial/",
+"junodownload.com": "https://www.junodownload.com/artists/Blondie/releases/",
+"last.fm": "https://www.last.fm/music/Blondie",
+"melon.com": "https://www.melon.com/artist/detail.htm?artistId=103594",
+"mora.jp": "https://mora.jp/artist/191323/",
+"musicmoz.org": "https://musicmoz.org/Bands_and_Artists/B/Blondie/",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/blondie/",
+"musixmatch.com": "https://www.musixmatch.com/artist/Blondie",
+"muziekweb.nl": "https://www.muziekweb.nl/Link/M00000004155/POPULAR/",
+"muzikum.eu": "https://muzikum.eu/en/blondie/lyrics",
+"myspace.com": "https://myspace.com/blondie",
+"ototoy.jp": "https://ototoy.jp/_/default/a/256417",
+"play.google.com": "https://play.google.com/store/music/artist?id=Advmnhf5naroqr7d3lqntyak36e",
+"plus.google.com": "https://plus.google.com/115980581788084933395",
+"punk-lyrics.net": "https://www.punk-lyrics.net/band/blondie",
+"purevolume.com": "http://www.purevolume.com/blondie",
+"qobuz": "https://open.qobuz.com/artist/38308",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/blondie",
+"rip-her-to-shreds.com": "http://www.rip-her-to-shreds.com/",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/49",
+"setlist.fm": "https://www.setlist.fm/setlists/blondie-4bd68b26.html",
+"songkick.com": "https://www.songkick.com/artists/232609",
+"soundcloud": "https://soundcloud.com/blondie",
+"spirit-of-rock.com": "https://www.spirit-of-rock.com/en/band/Blondie",
+"spotify": "https://open.spotify.com/artist/4tpUmLEVLCGFr93o8hFFIB",
+"tidal": "https://tidal.com/artist/28425950",
+"tiktok.com": "https://www.tiktok.com/@blondieofficial",
+"twitter.com": "https://twitter.com/blondieofficial",
+"us.7digital.com": "https://us.7digital.com/artist/blondie",
+"us.napster.com": "https://us.napster.com/artist/blondie",
+"viaf.org": "http://viaf.org/viaf/248276224",
+"whosampled.com": "https://www.whosampled.com/Blondie/",
+"wikidata": "https://www.wikidata.org/wiki/Q202741",
+"youtube": "https://www.youtube.com/channel/UCZ61C4Ymbb8xShMKrjNtvWg"
+},
+"etiquetas": [
+"new wave",
+"rock",
+"disco",
+"pop",
+"punk",
+"power pop",
+"new york punk",
+"pop rock",
+"punk rock",
+"female vocals",
+"post-punk"
+],
+"generos": [
+"new wave",
+"rock",
+"disco",
+"pop",
+"punk",
+"power pop",
+"pop rock",
+"punk rock",
+"post-punk"
+],
+"nombre": "Blondie",
 "pais": "US"
 },
 "art:4d3fa26c-7dc8-4523-a662-75b1e68358f0": {
@@ -54393,6 +54547,23 @@
 "nombre": "First Light",
 "pais": "GB"
 },
+"art:787e7ec8-6cbb-4a31-8ad3-be14c7f4662e": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1462171655",
+"deezer": "https://www.deezer.com/artist/50247792",
+"discogs": "https://www.discogs.com/artist/3221561",
+"facebook": "https://www.facebook.com/FriedbergMusic",
+"friedbergmusic.com": "https://www.friedbergmusic.com/",
+"instagram": "https://www.instagram.com/friedbergmusic/",
+"spotify": "https://open.spotify.com/artist/0lqPfG8vAR30UX3cWDbCEn",
+"twitter.com": "https://twitter.com/friedbergmusic",
+"youtube": "https://www.youtube.com/channel/UCthgFijgL4dHN1MEVWmlLwg"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Friedberg",
+"pais": "GB"
+},
 "art:789127ca-6c1b-4a37-9ea3-b1392884d230": {
 "enlaces": {
 "apple": "https://music.apple.com/us/artist/6804812203",
@@ -72689,6 +72860,43 @@
 "nombre": "Huddy",
 "pais": "US"
 },
+"art:a1290ce3-d716-4ab5-890f-50eb335b726e": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1086715097",
+"bandcamp": "https://valentinamagaletti.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/9902504",
+"discogs": "https://www.discogs.com/artist/1334952",
+"dreamcymbals.com": "https://dreamcymbals.com/artists/magaletti-valentina",
+"echoesanddust.com": "http://echoesanddust.com/2016/06/interview-valentina-magaletti-from-the-oscillation-tomaga/",
+"facebook": "https://www.facebook.com/vamadrum",
+"musicculturevision.blogspot.com": "https://musicculturevision.blogspot.com/2014/10/valentina-magaletti-drummer.html",
+"qobuz": "https://open.qobuz.com/artist/2564770",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/valentina-magaletti",
+"soarvalleymusic.co.uk": "http://www.soarvalleymusic.co.uk/artists/dream-artists/valentina-magaletti-bat-for-lashes-tomaga-orlando-the-oscillation-vanishing-twin",
+"spotify": "https://open.spotify.com/artist/0jPLDwuZUzb6qZdfi5XPHz",
+"tidal": "https://tidal.com/artist/9805385",
+"wikidata": "https://www.wikidata.org/wiki/Q75732944",
+"youtube": "https://www.youtube.com/channel/UC3Oq4WPajXFq8kezFrpivlg"
+},
+"etiquetas": [
+"contemporary",
+"drone",
+"electronic",
+"experimental",
+"free jazz",
+"production music",
+"weirdpercussion"
+],
+"generos": [
+"drone",
+"electronic",
+"experimental",
+"free jazz",
+"production music"
+],
+"nombre": "Valentina Magaletti",
+"pais": "GB"
+},
 "art:a1568424-250c-4766-8b87-7d4bb66c8e5e": {
 "enlaces": {
 "apple": "https://music.apple.com/gb/artist/2469457",
@@ -75503,6 +75711,16 @@
 "nombre": "Catherine Britt",
 "pais": "AU"
 },
+"art:a7971d7e-5d25-4924-b910-1c43c160f134": {
+"enlaces": {
+"bandcamp": "https://balaclavanyc.bandcamp.com/",
+"instagram": "https://www.instagram.com/balaclava_is_a_band/"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Balaclava",
+"pais": "US"
+},
 "art:a79739db-1652-40a8-afb2-b0abf18463e7": {
 "enlaces": {
 "apple": "https://music.apple.com/gb/artist/1610776837",
@@ -77207,6 +77425,47 @@
 ],
 "nombre": "Dermot Kennedy",
 "pais": "IE"
+},
+"art:aaae09b3-70d9-4a65-bb3f-57e85dfe9b83": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000396266",
+"apple": "https://music.apple.com/gb/artist/27760704",
+"bandcamp": "https://oddiseemmg.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/537702",
+"discogs": "https://www.discogs.com/artist/133460",
+"facebook": "https://www.facebook.com/oddiseemusic",
+"instagram": "https://www.instagram.com/oddisee/",
+"last.fm": "https://www.last.fm/music/Oddisee",
+"muzikum.eu": "http://muzikum.eu/en/122-11829/oddisee/lyrics.html",
+"myspace.com": "https://myspace.com/oddisee720",
+"oddiseemusic.net": "http://www.oddiseemusic.net/",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/oddisee",
+"songkick.com": "https://www.songkick.com/artists/491621",
+"soundcloud": "https://soundcloud.com/oddiseemusic",
+"spotify": "https://open.spotify.com/artist/72tRiBHei5G9M8it4h4sfC",
+"tidal": "https://tidal.com/artist/3643378",
+"twitter.com": "https://twitter.com/oddisee",
+"wikidata": "https://www.wikidata.org/wiki/Q7077499"
+},
+"etiquetas": [
+"hip hop",
+"conscious rap",
+"alternative hip hop",
+"beats",
+"conscious hip hop",
+"dmv",
+"independent",
+"instrumental hip hop",
+"producer"
+],
+"generos": [
+"hip hop",
+"alternative hip hop",
+"conscious hip hop",
+"instrumental hip hop"
+],
+"nombre": "Oddisee",
+"pais": "US"
 },
 "art:aab35942-f176-4f77-bbf9-1d6aa98ccf3f": {
 "enlaces": {
@@ -87655,6 +87914,34 @@
 "jazz"
 ],
 "nombre": "Renée Fleming",
+"pais": "US"
+},
+"art:c0eb2846-e875-4f81-b09c-fd53279bd52d": {
+"enlaces": {
+"apple": "https://itunes.apple.com/us/artist/id1352075132",
+"bandcamp": "https://mynameisheno.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/14188193",
+"instagram": "https://www.instagram.com/mynameisheno/",
+"last.fm": "https://www.last.fm/music/Heno.",
+"mynameisheno.com": "https://www.mynameisheno.com/",
+"qobuz": "https://open.qobuz.com/artist/9577177",
+"soundcloud": "https://soundcloud.com/mynameisheno",
+"spotify": "https://open.spotify.com/artist/3mr6jeVpPIXBp8IMMb60aD",
+"tidal": "https://tidal.com/artist/9582021",
+"twitter.com": "https://twitter.com/mynameisheno",
+"youtube": "https://www.youtube.com/channel/UC3cM8JX39gmiNi7vSQX9KXQ"
+},
+"etiquetas": [
+"hip hop",
+"r&b",
+"soul"
+],
+"generos": [
+"hip hop",
+"r&b",
+"soul"
+],
+"nombre": "Heno.",
 "pais": "US"
 },
 "art:c1151fbd-6cbc-4c8b-b286-235a1869e56a": {
@@ -122279,6 +122566,30 @@
 "rg:baile entero|baile entero": {
 "no_encontrado": "2026-11-22"
 },
+"rg:balaclava|money glitch": {
+"artista": "BALACLAVA",
+"artistas_id": [
+"a7971d7e-5d25-4924-b910-1c43c160f134"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/6805929270"
+},
+"fecha_release": "2027-01-22",
+"idioma": null,
+"pais": "US",
+"pistas": 11,
+"portada": "https://coverartarchive.org/release-group/8aba53cf-ac87-4efd-831b-ac25609e42e3/front-250",
+"primera_fecha": "2027-01-22",
+"puntuacion": 1.0,
+"release": "13a51a2f-0c2d-4d14-86d2-2058d5e7c4d0",
+"rg": "8aba53cf-ac87-4efd-831b-ac25609e42e3",
+"sellos": [
+"Mothland Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "MONEY GLITCH"
+},
 "rg:balming tiger|gongbu": {
 "artista": "Balming Tiger",
 "artistas_id": [
@@ -123731,6 +124042,18 @@
 },
 "rg:bev|expectations": {
 "no_encontrado": "2026-11-22"
+},
+"rg:beyond 1969|back to the blues": {
+"artista": "Beyond 1969",
+"artistas_id": [
+"82d66059-325a-4fe1-99d3-4918850da149"
+],
+"primera_fecha": "2026-06-12",
+"puntuacion": 1.0,
+"rg": "6e4e8ebf-2e78-4637-8385-b30380e026a1",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Back To The Blues"
 },
 "rg:beyond border|aftermath": {
 "artista": "Beyond Border",
@@ -125889,6 +126212,33 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Odin Na Odin"
+},
+"rg:blondie|high noon": {
+"artista": "Blondie",
+"artistas_id": [
+"4d2956d1-a3f7-44bb-9a41-67563e1a0c94"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/6810256113",
+"deezer": "https://www.deezer.com/album/1120289912",
+"qobuz": "https://www.qobuz.com/us-en/album/high-noon-blondie/wwag7znzzel07",
+"spotify": "https://open.spotify.com/album/0i1oRaV8TclThtEcQLpluN"
+},
+"fecha_release": "2027-02-26",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 13,
+"portada": "https://coverartarchive.org/release-group/7227fb41-aeb9-409b-9b1d-3bc57b90511c/front-250",
+"primera_fecha": "2027-02-26",
+"puntuacion": 1.0,
+"release": "9219c00c-376c-44e7-8153-39a050ced1e9",
+"rg": "7227fb41-aeb9-409b-9b1d-3bc57b90511c",
+"sellos": [
+"BMG"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "High Noon"
 },
 "rg:blondshell|violins": {
 "artista": "Blondshell",
@@ -147841,6 +148191,33 @@
 "tipos_secundarios": [],
 "titulo": "Still"
 },
+"rg:fiona boyes and the fortune tellers|live at bluesfest 2004": {
+"no_encontrado": "2026-11-27"
+},
+"rg:fionn regan|berlin berlin": {
+"artista": "Fionn Regan",
+"artistas_id": [
+"1a74972b-82b9-49ba-9dcf-ca7cdaee4fa5"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/6812442257"
+},
+"fecha_release": "2027-01-22",
+"idioma": "eng",
+"pais": null,
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/6ce70ba8-3606-4af9-a06a-36cf9dd854c5/front-250",
+"primera_fecha": "2027-01-22",
+"puntuacion": 1.0,
+"release": "e2f6fb0a-f78c-46e1-9a15-8c60351a8d3f",
+"rg": "6ce70ba8-3606-4af9-a06a-36cf9dd854c5",
+"sellos": [
+"Secretly Distribution"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Berlin, Berlin"
+},
 "rg:fire toolz|lavender networks": {
 "artista": "Fire‐Toolz",
 "artistas_id": [
@@ -149468,6 +149845,32 @@
 "tipo": "EP",
 "tipos_secundarios": [],
 "titulo": "stardust"
+},
+"rg:friedberg|goodwife": {
+"artista": "Friedberg",
+"artistas_id": [
+"787e7ec8-6cbb-4a31-8ad3-be14c7f4662e"
+],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/6813704583",
+"deezer": "https://www.deezer.com/album/1133304071",
+"tidal": "https://tidal.com/album/562342646"
+},
+"fecha_release": "2027-04-09",
+"idioma": "eng",
+"pais": null,
+"pistas": 13,
+"portada": "https://coverartarchive.org/release-group/992cd728-73cb-4204-91b1-89210001cc8b/front-250",
+"primera_fecha": "2027-04-09",
+"puntuacion": 1.0,
+"release": "7ac4156e-afc7-4cf5-94d7-a13703aea274",
+"rg": "992cd728-73cb-4204-91b1-89210001cc8b",
+"sellos": [
+"Clouds Hill"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Goodwife"
 },
 "rg:friendly fires|dig deeper": {
 "artista": "Friendly Fires",
@@ -151293,6 +151696,34 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Follow the White Rabbit"
+},
+"rg:ghalia volt|burn the house down": {
+"artista": "Ghalia Volt",
+"artistas_id": [
+"4432befd-755c-4de0-bd16-acc8287e52ff"
+],
+"enlaces": {
+"amazon": "https://www.amazon.com/gp/product/B0GKQNKVPF",
+"apple": "https://music.apple.com/us/album/1883648658",
+"discogs": "https://www.discogs.com/release/37197696",
+"ghaliavolt.com": "https://ghaliavolt.com/music/",
+"spotify": "https://open.spotify.com/album/4ThmpjBPqbIsyE3fX95v7r"
+},
+"fecha_release": "2026-05-15",
+"idioma": null,
+"pais": "XE",
+"pistas": 11,
+"portada": null,
+"primera_fecha": "2026-05-15",
+"puntuacion": 1.0,
+"release": "530075a2-b355-47a6-8003-aa4c0e9ce3a4",
+"rg": "9298c36f-67bc-4e96-99cf-ae7a51833273",
+"sellos": [
+"Ruf"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Burn The House Down"
 },
 "rg:ghost hounds|justified": {
 "artista": "Ghost Hounds",
@@ -166728,6 +167159,9 @@
 "tipos_secundarios": [],
 "titulo": "Entropy"
 },
+"rg:king leo and son|presenting king leo and son": {
+"no_encontrado": "2026-11-27"
+},
 "rg:king satan|black magick abraxas": {
 "artista": "King Satan",
 "artistas_id": [
@@ -174945,9 +175379,26 @@
 "artistas_id": [
 "50bb4480-9b14-4a25-902f-3047352aeabb"
 ],
+"enlaces": {
+"apple": "https://music.apple.com/gb/album/6775601380",
+"bandcamp": "https://mattproxy.bandcamp.com/album/trojan-horse",
+"deezer": "https://www.deezer.com/album/996141621",
+"qobuz": "https://www.qobuz.com/gb-en/album/trojan-horse-matt-proxy/k76dztmz5lraz",
+"spotify": "https://open.spotify.com/album/0eOPNw5U3ltlDVOJvy1sN5",
+"tidal": "https://tidal.com/album/529874919"
+},
+"fecha_release": "2026-06-19",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 13,
+"portada": "https://coverartarchive.org/release-group/0f39bd7f-7afd-4bf5-89aa-668153076e6a/front-250",
 "primera_fecha": "2026-06-19",
 "puntuacion": 1.0,
+"release": "e18a3862-f00d-48fb-afa8-f9c140defc12",
 "rg": "0f39bd7f-7afd-4bf5-89aa-668153076e6a",
+"sellos": [
+"[no label]"
+],
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "trojan horse"
@@ -179451,6 +179902,9 @@
 "tipos_secundarios": [],
 "titulo": "When I Get This Way"
 },
+"rg:mulebone|cure for the miseries": {
+"no_encontrado": "2026-11-27"
+},
 "rg:mumford and sons|prizefighter": {
 "artista": "Mumford & Sons",
 "artistas_id": [
@@ -183581,6 +184035,31 @@
 },
 "rg:odd marshall|seconds": {
 "no_encontrado": "2026-11-22"
+},
+"rg:oddisee and heno|from takoma with love": {
+"artista": "Oddisee & Heno.",
+"artistas_id": [
+"aaae09b3-70d9-4a65-bb3f-57e85dfe9b83",
+"c0eb2846-e875-4f81-b09c-fd53279bd52d"
+],
+"enlaces": {
+"bandcamp": "https://oddisee.bandcamp.com/album/from-takoma-with-love"
+},
+"fecha_release": "2026-04-30",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/1fa27535-d3a5-402f-b914-2ae146cc1a19/front-250",
+"primera_fecha": "2026-04-30",
+"puntuacion": 1.0,
+"release": "86f69e87-d0dd-4146-92a0-a522c8ffc036",
+"rg": "1fa27535-d3a5-402f-b914-2ae146cc1a19",
+"sellos": [
+"Outer Note Label"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "From Takoma With Love"
 },
 "rg:oddland|unilluminate to illuminate": {
 "artista": "Oddland",
@@ -205825,6 +206304,9 @@
 "tipos_secundarios": [],
 "titulo": "Howlin' Waters"
 },
+"rg:teskey|live at the rhythm room": {
+"no_encontrado": "2026-11-27"
+},
 "rg:tesla|homage": {
 "artista": "Tesla",
 "artistas_id": [
@@ -208793,6 +209275,18 @@
 "tipos_secundarios": [],
 "titulo": "Masterflow"
 },
+"rg:trudy lynn|turning the same ole corners": {
+"artista": "Trudy Lynn",
+"artistas_id": [
+"867f79ea-ab7c-4e5a-bc14-ff727d28fd9d"
+],
+"primera_fecha": "2026-02-13",
+"puntuacion": 1.0,
+"rg": "7628b028-1e45-415b-b341-45757115627e",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Turning the Same Ole Corners"
+},
 "rg:true union|sleepwalk": {
 "artista": "The True Union",
 "artistas_id": [
@@ -210330,9 +210824,21 @@
 "36124745-211c-446d-a51d-523742844d80",
 "a1290ce3-d716-4ab5-890f-50eb335b726e"
 ],
+"enlaces": {
+"bandcamp": "https://valentinamagaletti.bandcamp.com/album/seismo"
+},
+"fecha_release": "2026-04-10",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 8,
+"portada": "https://coverartarchive.org/release-group/fd0464ad-ba2e-48cd-a013-da8d0e4fa46e/front-250",
 "primera_fecha": "2026-04-10",
 "puntuacion": 1.0,
+"release": "26a15fd2-5a15-4460-81c1-d73c5623340b",
 "rg": "fd0464ad-ba2e-48cd-a013-da8d0e4fa46e",
+"sellos": [
+"PAN"
+],
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Seismo"
