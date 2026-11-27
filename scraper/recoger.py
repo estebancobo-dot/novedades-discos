@@ -173,6 +173,21 @@ def main():
     hilos_fuentes = max(1, int(config["peticiones"].get("hilos_fuentes", 1)))
     with ThreadPoolExecutor(max_workers=hilos_fuentes) as ex_fuentes:
         lecturas = list(ex_fuentes.map(leer_una, fuentes))
+    # Una fuente que vuelve vacía o con error cuando en la recogida anterior sí tenía discos suele ser
+    # un fallo pasajero (una página que no respondió): se reintenta una vez, sin caché.
+    p_estado_prev = ruta(config["rutas"]["estado_fuentes"])
+    previo = (json.load(open(p_estado_prev, encoding="utf-8")).get("fuentes", {}) if os.path.exists(p_estado_prev) else {})
+    for i, (f, res) in enumerate(lecturas):
+        if res.estado in ("vacia", "error") and (previo.get(f["id"]) or {}).get("items", 0) > 0:
+            log(f"  reintento de {f['id']} ({res.estado}; antes tenía {previo[f['id']]['items']} items)")
+            try:
+                nuevo = leer_fuente(nav, f, hoy, lectura_desde)
+            except Exception as e:
+                nuevo = ResultadoFuente(f["id"], "error", f"{type(e).__name__}: {str(e)[:200]}")
+            if nuevo.items:
+                nuevo.detalle = (nuevo.detalle + " (al reintentar)").strip()
+                guardar_lectura(carpeta_lecturas, nuevo, _huella(f, lectura_desde))
+                lecturas[i] = (f, nuevo)
     for f, res in lecturas:
         log(f"· {f['id']} …")
         estado["fuentes"][f["id"]] = {"nombre": f["nombre"], "web": f.get("web"), "familia": f.get("familia"),

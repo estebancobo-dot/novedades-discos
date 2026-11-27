@@ -111,3 +111,14 @@ def test_guardar_json_es_atomico(tmp_path):
         guardar_json(str(p), {"no serializable": object()})
     assert json.loads(p.read_text()) == {"a": 1}            # el archivo bueno sigue intacto
     assert not [f for f in os.listdir(tmp_path) if f.endswith(".tmp")]    # sin restos
+
+
+def test_pagina_de_verificacion_en_cache_no_se_reutiliza(nav):
+    import hashlib, json as _j
+    url = "https://web.example/lista"
+    ruta = nav._ruta_cache(url)
+    os.makedirs(os.path.dirname(ruta), exist_ok=True)
+    with open(ruta, "w") as f:
+        _j.dump({"url": url, "estado": 200, "texto": "<p>Please wait while your request is being verified...</p>"}, f)
+    nav.sesion = SesionFalsa([RespuestaFalsa(200, "contenido bueno")])
+    assert nav.get(url).texto == "contenido bueno" and nav.sesion.llamadas == 1

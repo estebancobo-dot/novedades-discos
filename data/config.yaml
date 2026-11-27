@@ -65,6 +65,7 @@ bloqueo:
     - "<title>Attention Required! | Cloudflare"
     - "<title>429 Too Many Requests"
     - "cf-mitigated"
+    - "Please wait while your request is being verified"   # verificación de WordPress/Sucuri (Rush On Rock, 27-nov)
   cabeceras:
     cf-mitigated: challenge
 

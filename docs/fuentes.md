@@ -232,6 +232,7 @@ sus condiciones: identificarse y 1 petición/s. Está declarada como excepción 
 | **Year End Lists** (yearendlists.com): todas las listas de discos del año (Mojo, Uncut, Decibel, AllMusic, Clash, Rough Trade, críticos…) | Todas | 2025 (≈135 listas) y 2026 (las que se van publicando) | ✅ Sugerida por el usuario. `robots.txt` solo prohíbe `/search`. Incluye las de **AllMusic**, que no se puede leer directamente |
 | **Roots Music Report**: gráficas anuales de álbumes (Country, Folk, Bluegrass, Blues, Blues Rock; 50 primeros) | Country / Blues | 2025 y siguientes, solo años cerrados (plantilla por año) | ✅ Basadas en las radios de raíces: popularidad, no crítica |
 | Rush On Rock: Best blues albums | Blues | 2025 (dirección con fecha) | ✅ |
+| Rush On Rock: Best melodic rock albums | Hard rock / AOR | 2025 | ⛔ **Desde el 27-nov muestra una verificación anti-bots** ("Please wait while your request is being verified") en esa página. No se intenta saltar: queda como "bloqueada" en el informe. La de blues del mismo sitio sigue leyéndose |
 | Synthpop Fanatic: The 25 best synthpop albums | Synthwave y dark wave | 2025 (plantilla por año) | ✅ |
 | Post-Punk.com: The best of the year | Synthwave y dark wave / post-punk | 2025 (plantilla por año) | ✅ |
 | Punk, metal y emo | — | — | Ya entran por Year End Lists: Alternative Press, Kerrang!, Louder Than War (top 100), Decibel, Loudwire, Ian Cohen (emo), A.A. Dowd (metal) |

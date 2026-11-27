@@ -146,9 +146,15 @@ class Navegador:
             raise Bloqueado(self.hosts_bloqueados[host])
         ruta = self._ruta_cache(url)
         if usar_cache and os.path.exists(ruta) and time.time() - os.path.getmtime(ruta) < self.cache_seg:
-            with open(ruta, encoding="utf-8") as f:
-                d = json.load(f)
-            return Respuesta(d["url"], d["estado"], d["texto"], True)
+            try:
+                with open(ruta, encoding="utf-8") as f:
+                    d = json.load(f)
+            except (ValueError, OSError):
+                d = None                       # copia dañada: se vuelve a pedir
+            # una página de verificación guardada antes de conocer la señal nunca se reutiliza
+            if d is not None and not self.es_bloqueo(d["estado"], d["texto"], {}):
+                return Respuesta(d["url"], d["estado"], d["texto"], True)
+            os.remove(ruta)
         if not self._permitido(url):
             raise Prohibido(f"robots.txt de {host} no permite {url}")
         cab = {"User-Agent": self._ua(url), "Accept-Language": "en-US,en;q=0.8"}
