@@ -17,9 +17,14 @@ import requests
 def guardar_json(ruta: str, datos, **kw) -> None:
     """Escritura atómica: si el proceso se corta a medias, el archivo anterior queda intacto."""
     tmp = f"{ruta}.{os.getpid()}.{threading.get_ident()}.tmp"
-    with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(datos, f, **kw)
-    os.replace(tmp, ruta)
+    try:
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(datos, f, **kw)
+        os.replace(tmp, ruta)
+    except BaseException:
+        if os.path.exists(tmp):
+            os.remove(tmp)
+        raise
 
 
 class Bloqueado(Exception):

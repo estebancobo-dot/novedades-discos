@@ -5,7 +5,9 @@ import os
 
 import yaml
 
-RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Raíz del proyecto. NOVEDADES_RAIZ permite ejecutar todo sobre otra carpeta (p. ej. las pruebas
+# de extremo a extremo, que montan una copia mínima con datos de ejemplo).
+RAIZ = os.environ.get("NOVEDADES_RAIZ") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def ruta(rel: str) -> str:
