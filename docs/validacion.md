@@ -9,11 +9,11 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | Capa | 🟢 | 🟡 | 🔴 | ⚪ | ⚫ |
 |---|---:|---:|---:|---:|---:|
 | alcance | 1 | 0 | 0 | 0 | 0 |
-| clasificacion | 5 | 1 | 1 | 0 | 0 |
+| clasificacion | 6 | 0 | 1 | 0 | 0 |
 | datos | 1 | 0 | 4 | 0 | 3 |
 | descubrimiento | 2 | 0 | 0 | 0 | 0 |
 | estudio | 2 | 0 | 0 | 0 | 0 |
-| fuentes | 12 | 1 | 0 | 0 | 4 |
+| fuentes | 8 | 1 | 4 | 0 | 4 |
 | informe | 1 | 0 | 0 | 0 | 0 |
 | procesos | 11 | 1 | 1 | 0 | 2 |
 | publicacion | 1 | 0 | 0 | 0 | 0 |
@@ -21,7 +21,7 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | validacion | 2 | 0 | 1 | 1 | 1 |
 | web | 21 | 0 | 21 | 0 | 36 |
 
-**Total: 140 requisitos** · cumplen 62 · aviso 3 · no cumplen 28 · sin datos 1 · sin comprobación 46
+**Total: 140 requisitos** · cumplen 59 · aviso 2 · no cumplen 32 · sin datos 1 · sin comprobación 46
 
 ## Comprobaciones que fallan o avisan
 
@@ -29,31 +29,34 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
     - Onasander & RNGMNN – Illumination Phases: ha desaparecido de la web
     - Astral Spectre – Cosmic Mirage: sobra classic-rock
     - Kreator – Krushers of the World: sobra hard-rock|death-metal
-    - The Notwist – News from Planet Zombie: sobra post-hardcore|post-rock
+    - The Notwist – News from Planet Zombie: sobra post-rock|post-hardcore
     - The Green Apple Sea – Dark Kid: sobra punk
+- 🔴 **fuentes_estado**: 60 de 67 fuentes leídas bien — 89.6
+    - Heavy Harmonies – New Additions: prohibida robots.txt de heavyharmonies.com no permite https://heavyharmonies.com/cgi-bin/n
+    - Metal Planet Music: vacia 
+    - Blues Rock Review: vacia 
+    - Heavy Harmonies – Best CDs of the year: prohibida robots.txt de heavyharmonies.com no permite https://heavyharmonies.com/cgi-bin/2
+    - Rush On Rock – The best melodic rock albums: vacia 
 - 🔴 **anios_por_plantilla**: direcciones con el año escrito a mano — 12
     - scm_radar: https://savingcountrymusic.com/release-radar-most-anticipated-new-country-albums-for-2026/
     - scm_radar: https://savingcountrymusic.com/release-radar-most-anticipated-new-albums-for-2nd-half-of-2026/
     - scm_radar: https://savingcountrymusic.com/release-radar-most-anticipated-new-albums-for-final-portion-of-2026/
     - loudwire: https://loudwire.com/2026-hard-rock-metal-album-release-calendar/
     - loudwire: https://loudwire.com/2027-hard-rock-metal-album-release-calendar/
-- 🔴 **cobertura_campos**: 3787 discos ya publicados — portada 80.0, fecha_exacta 83.2, sello 73.3, pistas 82.2, subgenero 80.6, enlace_escucha 78.4
+- 🔴 **cobertura_campos**: 3798 discos ya publicados — portada 80.0, fecha_exacta 83.2, sello 73.1, pistas 82.3, subgenero 79.9, enlace_escucha 78.0
     - portada: 80.0 % (mínimo 95 %)
     - fecha_exacta: 83.2 % (mínimo 85 %)
-    - enlace_escucha: 78.4 % (mínimo 80 %)
+    - enlace_escucha: 78.0 % (mínimo 80 %)
 - 🔴 **cobertura_portadas**: mínimo 95 % — 80.0
-- 🔴 **reseñas_con_frase**: 0 de 2382 reseñas con frase — 0.0
-- 🔴 **canciones**: 0 de 3896 fichas con lista de canciones — 0.0
-- 🟡 **mapeo_sin_pendientes**: etiquetas pendientes que dejan discos sin subgénero; ids que no existen — pendientes 353, en_discos_sin_subgenero 2, ids_invalidos 0
-    - Franklin
-    - slide
+- 🔴 **reseñas_con_frase**: 0 de 2373 reseñas con frase — 0.0
+- 🔴 **canciones**: 0 de 3906 fichas con lista de canciones — 0.0
 - 🟡 **fuentes_por_familia**: fuentes especializadas por familia (mínimo 5; además cuentan las generales y los radares) — country 21, hardrock 16, rockmetal 4, blues 5, synthdark 4
     - rockmetal: 4
     - punkgarage: 0
     - indiepop: 0
     - synthdark: 4
     - cantautores: 0
-- 🟡 **pruebas_por_fuente**: cada disco con fuente y fecha; falta la confianza por fuente (P7) — 59.7
+- 🟡 **pruebas_por_fuente**: cada disco con fuente y fecha; falta la confianza por fuente (P7) — 59.3
 
 ## Todos los requisitos
 
@@ -68,13 +71,13 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | R7 | "Lo mejor de cada año" | web | 🟢 cumple |
 | R8 | Taxonomía cerrada del usuario con alias | clasificacion | 🟢 cumple |
 | R9 | Familias "en foco" de agenda-conciertos (rock y metal, punk y garage, indie y pop-rock, bl | clasificacion | 🟢 cumple |
-| R10 | Etiqueta nueva → LLM una sola vez → mapeo_etiquetas.csv | clasificacion | 🟡 aviso |
+| R10 | Etiqueta nueva → LLM una sola vez → mapeo_etiquetas.csv | clasificacion | 🟢 cumple |
 | R11 | Nunca crear subgéneros; proponerlos en el informe | clasificacion | 🟢 cumple |
 | R12 | LLM solo con el plan Pro, sin pagar API | procesos | 🟢 cumple |
 | R13 | Clasificación correcta | clasificacion | 🔴 no cumple |
-| R14 | Verificar cada fuente propuesta | fuentes | 🟢 cumple |
+| R14 | Verificar cada fuente propuesta | fuentes | 🔴 no cumple |
 | R15 | 5 fuentes extra por familia | fuentes | 🟡 aviso |
-| R16 | Usar todas las fuentes posibles | fuentes | 🟢 cumple |
+| R16 | Usar todas las fuentes posibles | fuentes | 🔴 no cumple |
 | R17 | Bandcamp ≤ 1 petición / 4 s; MusicBrainz ≤ 1 / s | fuentes | 🟢 cumple |
 | R18 | Captcha o bloqueo: no saltarlo, avisar | fuentes | 🟢 cumple |
 | R19 | Respetar robots.txt | fuentes | 🟢 cumple |
@@ -102,9 +105,9 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | M1 | El informe debe dar: discos por familia y subgénero, % con subgénero, % en Bandcamp, disco | informe | 🟢 cumple |
 | M2 | Subgéneros "frontera" (country-blues, southern-gospel, heartland-rock; melodic-metal, powe | clasificacion | 🟢 cumple |
 | M3 | Un disco puede tener varios subgéneros | clasificacion | 🟢 cumple |
-| M4 | Fuentes concretas de prensa, listados y sellos | fuentes | 🟢 cumple |
+| M4 | Fuentes concretas de prensa, listados y sellos | fuentes | 🔴 no cumple |
 | M5 | Preguntas y explicaciones no técnicas | procesos | ⚫ sin comprobación automática |
-| M6 | Fuentes de r/Music: Pause & Play, Hello Weimar Republic, Bandcamp Daily, Metacritic, AllMu | fuentes | 🟢 cumple |
+| M6 | Fuentes de r/Music: Pause & Play, Hello Weimar Republic, Bandcamp Daily, Metacritic, AllMu | fuentes | 🔴 no cumple |
 | M7 | Repos: albumoftheyearapi, album-of-the-year-analysis, topic "allmusic", radares de Spotify | fuentes | ⚫ sin comprobación automática |
 | M8 | Fuentes de agenda-conciertos: Wikipedia, Wikidata, Discogs, MusicBrainz, Last.fm, ReccoBea | fuentes | ⚫ sin comprobación automática |
 | M9 | Pruebas de concepto saltándose Cloudflare | fuentes | 🟢 cumple |

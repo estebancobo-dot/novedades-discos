@@ -614,13 +614,16 @@ def historial(salida: dict, c: Contexto) -> list[str]:
     p = ruta("data/historial_validacion.json")
     hist = json.load(open(p, encoding="utf-8")) if os.path.exists(p) else []
     motivo = lambda m: re.sub(r"\(.*|«.*|\d{4}-\d\d(-\d\d)?|:.*", "", m).strip()[:50]
-    foto = {"fecha": salida["fecha"][:10], "discos": len(c.discos), "descartados": len(c.descartados),
+    modo = (_leer(c.rutas.get("estado_pipeline", "data/estado_pipeline.json"), {}) or {}).get("modo") or "completa"
+    foto = {"fecha": salida["fecha"][:10], "modo": modo, "discos": len(c.discos), "descartados": len(c.descartados),
             "por_familia": dict(Counter(f for d in c.discos for f in d.get("familias", []))),
             "por_fuente": {k: v.get("items", 0) for k, v in (c.estado_fuentes.get("fuentes") or {}).items()},
             "por_motivo": dict(Counter(motivo(x["motivo"]) for x in c.descartados))}
     avisos = []
-    if hist:
-        ant, tope = hist[-1], float(c.umb.get("salto_max_pct", 30)) / 100
+    # se compara con la última ejecución del mismo tipo: una incremental lee solo las últimas semanas
+    ant = next((h for h in reversed(hist) if h.get("modo", "completa") == modo and h["fecha"] != foto["fecha"]), None)
+    if ant:
+        tope = float(c.umb.get("salto_max_pct", 30)) / 100
         for clave in ("por_familia", "por_fuente", "por_motivo"):
             for k, v in foto[clave].items():
                 a = ant.get(clave, {}).get(k)
@@ -629,10 +632,10 @@ def historial(salida: dict, c: Contexto) -> list[str]:
         for k in ant.get("por_fuente", {}):
             if ant["por_fuente"][k] and not foto["por_fuente"].get(k):
                 avisos.append(f"fuente «{k}» ha dejado de dar discos ({ant['por_fuente'][k]} → 0)")
-    if not hist or hist[-1]["fecha"] != foto["fecha"]:
-        hist.append(foto)
-    else:
+    if hist and hist[-1]["fecha"] == foto["fecha"] and hist[-1].get("modo", "completa") == modo:
         hist[-1] = foto
+    else:
+        hist.append(foto)
     guardar_json(p, hist[-104:], ensure_ascii=False, indent=0)
     return avisos
 

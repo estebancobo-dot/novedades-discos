@@ -1,12 +1,11 @@
 {
- "fecha": "2026-11-28T08:17:53+00:00",
+ "fecha": "2026-11-28T08:22:36+00:00",
  "capas": {
   "alcance": {
    "ok": 1
   },
   "clasificacion": {
-   "ok": 5,
-   "aviso": 1,
+   "ok": 6,
    "fallo": 1
   },
   "datos": {
@@ -21,8 +20,9 @@
    "ok": 2
   },
   "fuentes": {
-   "ok": 12,
+   "fallo": 4,
    "aviso": 1,
+   "ok": 8,
    "sin_comprobar": 4
   },
   "informe": {
@@ -127,7 +127,7 @@
    ]
   },
   "R10": {
-   "estado": "aviso",
+   "estado": "ok",
    "capa": "clasificacion",
    "texto": "Etiqueta nueva → LLM una sola vez → mapeo_etiquetas.csv",
    "comprobaciones": [
@@ -161,7 +161,7 @@
    ]
   },
   "R14": {
-   "estado": "ok",
+   "estado": "fallo",
    "capa": "fuentes",
    "texto": "Verificar cada fuente propuesta",
    "comprobaciones": [
@@ -177,7 +177,7 @@
    ]
   },
   "R16": {
-   "estado": "ok",
+   "estado": "fallo",
    "capa": "fuentes",
    "texto": "Usar todas las fuentes posibles",
    "comprobaciones": [
@@ -399,7 +399,7 @@
    ]
   },
   "M4": {
-   "estado": "ok",
+   "estado": "fallo",
    "capa": "fuentes",
    "texto": "Fuentes concretas de prensa, listados y sellos",
    "comprobaciones": [
@@ -413,7 +413,7 @@
    "comprobaciones": []
   },
   "M6": {
-   "estado": "ok",
+   "estado": "fallo",
    "capa": "fuentes",
    "texto": "Fuentes de r/Music: Pause & Play, Hello Weimar Republic, Bandcamp Daily, Metacritic, AllMusic, AOTY",
    "comprobaciones": [
@@ -1165,14 +1165,14 @@
   "familias_presentes": {
    "estado": "ok",
    "valor": {
-    "indiepop": 674,
-    "rockmetal": 1893,
-    "hardrock": 729,
-    "synthdark": 215,
-    "punkgarage": 549,
-    "cantautores": 252,
-    "country": 1419,
-    "blues": 307
+    "punkgarage": 556,
+    "indiepop": 683,
+    "rockmetal": 1900,
+    "hardrock": 712,
+    "synthdark": 226,
+    "cantautores": 238,
+    "country": 1408,
+    "blues": 314
    },
    "detalle": "mínimo 20 por familia",
    "ejemplos": []
@@ -1180,7 +1180,7 @@
   "solo_ingles": {
    "estado": "ok",
    "valor": 0,
-   "detalle": "1402 discos sin idioma verificado",
+   "detalle": "1390 discos sin idioma verificado",
    "ejemplos": []
   },
   "sin_ep": {
@@ -1198,22 +1198,22 @@
   "ventana_y_meses": {
    "estado": "ok",
    "valor": {
-    "2026-01": 233,
-    "2026-02": 250,
+    "2026-01": 237,
+    "2026-02": 252,
     "2026-03": 280,
-    "2026-04": 292,
-    "2026-05": 392,
-    "2026-06": 362,
-    "2026-07": 302,
-    "2026-08": 378,
-    "2026-09": 431,
-    "2026-10": 543,
-    "2026-11": 324,
-    "2026-12": 59,
-    "2027-01": 25,
-    "2027-02": 18,
+    "2026-04": 294,
+    "2026-05": 395,
+    "2026-06": 364,
+    "2026-07": 298,
+    "2026-08": 380,
+    "2026-09": 427,
+    "2026-10": 542,
+    "2026-11": 329,
+    "2026-12": 58,
+    "2027-01": 26,
+    "2027-02": 16,
     "2027-03": 6,
-    "2027-04": 1
+    "2027-04": 2
    },
    "detalle": "ventana ['2026-01-01', '2027-05-28']; mínimo 30 por mes",
    "ejemplos": []
@@ -1226,27 +1226,24 @@
   },
   "varios_subgeneros": {
    "estado": "ok",
-   "valor": 2229,
+   "valor": 2252,
    "detalle": "discos con dos o más subgéneros",
    "ejemplos": []
   },
   "mapeo_sin_pendientes": {
-   "estado": "aviso",
+   "estado": "ok",
    "valor": {
-    "pendientes": 353,
-    "en_discos_sin_subgenero": 2,
+    "pendientes": 6,
+    "en_discos_sin_subgenero": 0,
     "ids_invalidos": 0
    },
    "detalle": "etiquetas pendientes que dejan discos sin subgénero; ids que no existen",
-   "ejemplos": [
-    "Franklin",
-    "slide"
-   ]
+   "ejemplos": []
   },
   "coherencia_fuentes": {
    "estado": "ok",
-   "valor": 93.0,
-   "detalle": "1268 de 1364; mínimo 90.0 %",
+   "valor": 93.2,
+   "detalle": "1238 de 1329; mínimo 90.0 %",
    "ejemplos": [
     "Jaren Johnston – The Guest Room: fuente de country, subgéneros ['southern-rock']",
     "Eddie 9V – Down Here: fuente de country, subgéneros ['blues-rock', 'modern-electric-blues']",
@@ -1255,9 +1252,9 @@
     "Grey DeLisle – Don't Turn Around: fuente de hardrock, subgéneros ['singer-songwriter', 'outlaw-country', 'americana', 'contemporary-folk']",
     "Galactic Cowboys – What Planet Are You From?: fuente de hardrock, subgéneros ['progressive-metal']",
     "Eivør – Tungl: fuente de rockmetal, subgéneros ['contemporary-folk', 'traditional-folk', 'singer-songwriter']",
-    "claire rousay – on holding: fuente de country, subgéneros ['experimental']",
     "April Art – RED: fuente de hardrock, subgéneros ['alternative-rock', 'heavy-metal']",
-    "Eternal – Conspiracy of Warheads: fuente de hardrock, subgéneros ['thrash', 'post-punk']"
+    "Eternal – Conspiracy of Warheads: fuente de hardrock, subgéneros ['thrash', 'post-punk']",
+    "Penelope Isles – 3: fuente de country, subgéneros ['lo-fi']"
    ]
   },
   "muestra_de_referencia": {
@@ -1268,7 +1265,7 @@
     "Onasander & RNGMNN – Illumination Phases: ha desaparecido de la web",
     "Astral Spectre – Cosmic Mirage: sobra classic-rock",
     "Kreator – Krushers of the World: sobra hard-rock|death-metal",
-    "The Notwist – News from Planet Zombie: sobra post-hardcore|post-rock",
+    "The Notwist – News from Planet Zombie: sobra post-rock|post-hardcore",
     "The Green Apple Sea – Dark Kid: sobra punk",
     "Art d’Ecco – Scheele's Green: le falta glam",
     "Linda Perry – Let It Die Here: sobra classic-rock",
@@ -1288,11 +1285,17 @@
    ]
   },
   "fuentes_estado": {
-   "estado": "ok",
-   "valor": 98.5,
-   "detalle": "66 de 67 fuentes leídas bien",
+   "estado": "fallo",
+   "valor": 89.6,
+   "detalle": "60 de 67 fuentes leídas bien",
    "ejemplos": [
-    "Rush On Rock – The best melodic rock albums: vacia "
+    "Heavy Harmonies – New Additions: prohibida robots.txt de heavyharmonies.com no permite https://heavyharmonies.com/cgi-bin/n",
+    "Metal Planet Music: vacia ",
+    "Blues Rock Review: vacia ",
+    "Heavy Harmonies – Best CDs of the year: prohibida robots.txt de heavyharmonies.com no permite https://heavyharmonies.com/cgi-bin/2",
+    "Rush On Rock – The best melodic rock albums: vacia ",
+    "Paste – The 50 best albums: bloqueada pastemagazine.com: cabecera cf-mitigated: challenge",
+    "Rush On Rock – The best blues albums: vacia "
    ]
   },
   "fuentes_por_familia": {
@@ -1330,9 +1333,13 @@
   },
   "bloqueos_respetados": {
    "estado": "ok",
-   "valor": 0,
+   "valor": 3,
    "detalle": "detección de bloqueos activa; fuentes bloqueadas que se dejan de leer",
-   "ejemplos": []
+   "ejemplos": [
+    "Heavy Harmonies – New Additions: robots.txt de heavyharmonies.com no permite https://heavyharmonies.com/cgi-bin/n",
+    "Heavy Harmonies – Best CDs of the year: robots.txt de heavyharmonies.com no permite https://heavyharmonies.com/cgi-bin/2",
+    "Paste – The 50 best albums: pastemagazine.com: cabecera cf-mitigated: challenge"
+   ]
   },
   "configuracion_valida": {
    "estado": "ok",
@@ -1342,8 +1349,8 @@
   },
   "fuente_wikipedia": {
    "estado": "ok",
-   "valor": 1736,
-   "detalle": "https://en.wikipedia.org/wiki/List_of_2027_albums_(January%E2%80%93June) → HTTP 404; (lectura guardada)",
+   "valor": 1740,
+   "detalle": "https://en.wikipedia.org/wiki/List_of_2027_albums_(January%E2%80%93June) → HTTP 404;",
    "ejemplos": []
   },
   "radares_activos": {
@@ -1392,16 +1399,16 @@
    "valor": {
     "portada": 80.0,
     "fecha_exacta": 83.2,
-    "sello": 73.3,
-    "pistas": 82.2,
-    "subgenero": 80.6,
-    "enlace_escucha": 78.4
+    "sello": 73.1,
+    "pistas": 82.3,
+    "subgenero": 79.9,
+    "enlace_escucha": 78.0
    },
-   "detalle": "3787 discos ya publicados",
+   "detalle": "3798 discos ya publicados",
    "ejemplos": [
     "portada: 80.0 % (mínimo 95 %)",
     "fecha_exacta: 83.2 % (mínimo 85 %)",
-    "enlace_escucha: 78.4 % (mínimo 80 %)"
+    "enlace_escucha: 78.0 % (mínimo 80 %)"
    ]
   },
   "cobertura_portadas": {
@@ -1418,7 +1425,7 @@
   },
   "pruebas_por_fuente": {
    "estado": "aviso",
-   "valor": 59.7,
+   "valor": 59.3,
    "detalle": "cada disco con fuente y fecha; falta la confianza por fuente (P7)",
    "ejemplos": []
   },
@@ -1431,13 +1438,13 @@
   "reseñas_con_frase": {
    "estado": "fallo",
    "valor": 0.0,
-   "detalle": "0 de 2382 reseñas con frase",
+   "detalle": "0 de 2373 reseñas con frase",
    "ejemplos": []
   },
   "canciones": {
    "estado": "fallo",
    "valor": 0.0,
-   "detalle": "0 de 3896 fichas con lista de canciones",
+   "detalle": "0 de 3906 fichas con lista de canciones",
    "ejemplos": []
   },
   "mejores_del_anio": {
@@ -1454,8 +1461,8 @@
   },
   "web_publicada": {
    "estado": "ok",
-   "valor": 3896,
-   "detalle": "la web tiene 3896 discos y los datos 3896",
+   "valor": 3906,
+   "detalle": "la web tiene 3906 discos y los datos 3906",
    "ejemplos": []
   },
   "rss_y_calendarios": {
@@ -1546,9 +1553,9 @@
   }
  },
  "totales": {
-  "ok": 62,
-  "aviso": 3,
-  "fallo": 28,
+  "ok": 59,
+  "fallo": 32,
+  "aviso": 2,
   "sin_comprobar": 46,
   "sin_datos": 1
  },

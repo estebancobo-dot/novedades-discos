@@ -27,6 +27,15 @@ Si la sesión se corta, la siguiente empieza por aquí. Cada línea de "Hecho" e
 | 13 | W2 página del disco | ⬜ |
 | 14 | W3–W7 | ⬜ |
 
+## Avisos abiertos (los detectó la validación automática)
+
+- **Heavy Harmonies** (principal fuente de AOR) sirve a las máquinas de GitHub unas reglas (robots.txt) que no
+  permiten leerla; desde otras redes sí. Se respeta (regla del usuario). Tarea: **buscar fuentes de AOR que la
+  sustituyan** (E1).
+- Metal Planet y Blues Rock Review salieron vacías en la primera ejecución en GitHub (vigilar la próxima).
+- Punk, indie y cantautores no tienen fuentes especializadas propias (E1).
+- 6 discos perdidos frente a Metacritic: Editors, The Mary Wallopers, Formal Sppeedwear, Faust, Los Bitchos, Dis Fig.
+
 ## Último paso hecho
 
 Pasos 3, 4 y parte del 7 (28-nov-2026). Hallazgos reales: 12 direcciones con el año escrito a mano (impide cargar 2025 cambiando un número); portadas 80 %; punk, indie y cantautores sin fuentes especializadas propias.
