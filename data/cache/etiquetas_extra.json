@@ -25977,6 +25977,10 @@
 "it:zelooperz and black noi e|pin breakers": {},
 "wd:Q104857477": [],
 "wd:Q104865154": [],
+"wd:Q106427550": [
+"hip-hop",
+"contemporary R&B"
+],
 "wd:Q106462586": [
 "African popular music",
 "Nigerian hip hop",
@@ -26006,6 +26010,11 @@
 "wd:Q1142360": [
 "power metal"
 ],
+"wd:Q114458165": [
+"techno",
+"electronic music",
+"post-punk"
+],
 "wd:Q114842628": [
 "symphonic metal"
 ],
@@ -26022,6 +26031,7 @@
 "electronic dance music"
 ],
 "wd:Q117066641": [],
+"wd:Q117492474": [],
 "wd:Q118389288": [],
 "wd:Q122043788": [],
 "wd:Q122840128": [
@@ -26053,6 +26063,8 @@
 "wd:Q137766691": [],
 "wd:Q1395624": [],
 "wd:Q140050330": [],
+"wd:Q140310374": [],
+"wd:Q140611226": [],
 "wd:Q1412342": [
 "alternative rock",
 "ska punk"
@@ -26071,6 +26083,9 @@
 "pop music",
 "rhythm and blues"
 ],
+"wd:Q1514026": [
+"country music"
+],
 "wd:Q1534828": [
 "dark rock"
 ],
@@ -26086,6 +26101,11 @@
 ],
 "wd:Q160778": [
 "heavy metal music"
+],
+"wd:Q16235863": [
+"West Coast hip-hop",
+"alternative hip-hop",
+"gangsta rap"
 ],
 "wd:Q16297": [],
 "wd:Q16730378": [
@@ -26151,6 +26171,10 @@
 "wd:Q21042697": [
 "rock music"
 ],
+"wd:Q21964464": [],
+"wd:Q22080384": [
+"alternative rock"
+],
 "wd:Q22080866": [],
 "wd:Q221289": [
 "easy listening"
@@ -26192,6 +26216,17 @@
 "wd:Q2982657": [
 "jazz"
 ],
+"wd:Q2997024": [
+"bluegrass music",
+"country music",
+"Western music",
+"independent music",
+"folk music"
+],
+"wd:Q30314131": [],
+"wd:Q30603462": [
+"country music"
+],
 "wd:Q3111214": [
 "Afrobeat"
 ],
@@ -26207,6 +26242,7 @@
 "wd:Q3293065": [
 "electronic music"
 ],
+"wd:Q33026662": [],
 "wd:Q361927": [
 "jazz",
 "post-bop"
@@ -26241,6 +26277,13 @@
 "alternative rock",
 "hip-hop"
 ],
+"wd:Q4671711": [
+"electronic dance music",
+"EDM trap music",
+"hip-hop",
+"grime",
+"UK bass"
+],
 "wd:Q4677751": [
 "electronic music"
 ],
@@ -26250,6 +26293,9 @@
 "wd:Q49296479": [],
 "wd:Q5048449": [],
 "wd:Q5107761": [],
+"wd:Q5246027": [
+"country music"
+],
 "wd:Q5317118": [
 "country music"
 ],
@@ -26285,6 +26331,7 @@
 "wd:Q57418818": [
 "country music"
 ],
+"wd:Q57552249": [],
 "wd:Q59161718": [
 "hyperpop",
 "digicore",
@@ -26308,10 +26355,17 @@
 "electronic music",
 "rock music"
 ],
+"wd:Q6349276": [
+"hip-hop"
+],
 "wd:Q65586823": [
 "pop music"
 ],
 "wd:Q65600348": [],
+"wd:Q67085047": [],
+"wd:Q67399825": [
+"country music"
+],
 "wd:Q67632634": [],
 "wd:Q70142786": [
 "hard rock",
@@ -26327,6 +26381,9 @@
 ],
 "wd:Q7101536": [
 "electronic music"
+],
+"wd:Q7539671": [
+"alternative hip-hop"
 ],
 "wd:Q79786367": [
 "drone music",
@@ -26350,11 +26407,13 @@
 "wdl:Q1166218": "dark rock",
 "wdl:Q1166726": "grime",
 "wdl:Q12362064": "emo rap",
+"wdl:Q1253172": "Southern hip-hop",
 "wdl:Q131272": "soul",
 "wdl:Q1317816": "indie folk",
 "wdl:Q1326777": "electroacoustic music",
 "wdl:Q1379958": "contemporary Christian music",
 "wdl:Q1640319": "experimental music",
+"wdl:Q170611": "techno",
 "wdl:Q1756101": "nu skool breaks",
 "wdl:Q183504": "indie rock",
 "wdl:Q186472": "folk rock",
@@ -26366,14 +26425,17 @@
 "wdl:Q205049": "world music",
 "wdl:Q205560": "trip hop",
 "wdl:Q211723": "speed metal",
+"wdl:Q213714": "bluegrass music",
 "wdl:Q217191": "soft rock",
 "wdl:Q217467": "art rock",
 "wdl:Q2281409": "dance-rock",
 "wdl:Q23301960": "dark pop",
+"wdl:Q2346991": "UK bass",
 "wdl:Q25094849": "art pop",
 "wdl:Q251192": "downtempo",
 "wdl:Q268253": "neo soul",
 "wdl:Q2706919": "country rap",
+"wdl:Q2719078": "Western music",
 "wdl:Q272167": "shoegaze",
 "wdl:Q2743": "musical play",
 "wdl:Q2835456": "Nigerian hip hop",
@@ -26382,12 +26444,17 @@
 "wdl:Q316930": "dance music",
 "wdl:Q325504": "electronic rock",
 "wdl:Q37073": "pop music",
+"wdl:Q377910": "post-hardcore",
 "wdl:Q388296": "Afrobeat",
 "wdl:Q38848": "heavy metal music",
+"wdl:Q42201": "independent music",
+"wdl:Q429264": "West Coast hip-hop",
 "wdl:Q43343": "folk music",
 "wdl:Q438503": "alternative hip-hop",
 "wdl:Q45981": "rhythm and blues",
 "wdl:Q460674": "ska punk",
+"wdl:Q47781397": "EDM trap music",
+"wdl:Q4816198": "Atlanta hip-hop",
 "wdl:Q484344": "progressive metal",
 "wdl:Q484641": "pop rock",
 "wdl:Q486415": "symphonic metal",
@@ -26404,6 +26471,7 @@
 "wdl:Q65089257": "punk rap",
 "wdl:Q7205507": "plunderphonics",
 "wdl:Q7410145": "sampledelia",
+"wdl:Q753679": "gangsta rap",
 "wdl:Q83270": "hard rock",
 "wdl:Q8341": "jazz",
 "wdl:Q83440": "country music",
