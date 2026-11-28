@@ -25,7 +25,7 @@ from .clasificar import Taxonomia, cargar_mapeo, etiquetas_de
 from .config import RAIZ, cargar_config, cargar_yaml, ruta
 from .consolidar import canon
 from .http import guardar_json
-from .util import normalizar
+from .util import clave_nombre, normalizar
 
 ORDEN = {"fallo": 0, "aviso": 1, "sin_datos": 2, "sin_comprobar": 3, "ok": 4}
 ICONO = {"ok": "🟢", "aviso": "🟡", "fallo": "🔴", "sin_datos": "⚪", "sin_comprobar": "⚫"}
@@ -410,13 +410,30 @@ def pruebas_por_fuente(c):
 def duplicados(c):
     vistos, dup = {}, []
     for d in c.discos:
-        k = (normalizar(d["artista"]), canon(d["titulo"]).replace(" ", ""))
+        k = (clave_nombre(d["artista"]), canon(d["titulo"]).replace(" ", ""))
         if k in vistos:
             dup.append(f"{d['artista']} – {d['titulo']} ({d['fecha']} y {vistos[k]})")
         vistos[k] = d["fecha"]
     mb = Counter(d.get("mbid") for d in c.discos if d.get("mbid"))
     dup += [f"MusicBrainz {k} repetido {n} veces" for k, n in mb.items() if n > 1]
     return R("fallo" if dup else "ok", len(dup), "mismo artista y título, o mismo disco de MusicBrainz", dup)
+
+
+@comprobacion
+def resenas_cobertura(c):
+    """Reseñas por disco: cuántos discos publicados tienen alguna, cuántos tres o más (destacables) y, de
+    los que salen en un agregador de crítica, si tienen ya todas sus reseñas integradas."""
+    pub = _publicados(c)
+    if not pub:
+        return R("sin_datos")
+    con = [d for d in pub if d.get("resenas")]
+    tres = sum(1 for d in pub if len(d.get("resenas", [])) >= 3)
+    agreg = [d for d in pub if any(r.get("via") for r in d.get("resenas", []))]
+    media = round(sum(len(d["resenas"]) for d in con) / len(con), 1) if con else 0
+    pct = round(100 * len(con) / len(pub), 1)
+    minimo = float(c.umb.get("resenas_min_pct", 50))
+    return R("ok" if pct >= minimo else "fallo", {"con_resena_pct": pct, "media_por_disco": media, "con_3_o_mas": tres,
+             "con_agregador_integrado": len(agreg)}, f"{len(con)} de {len(pub)} discos publicados con reseñas (mínimo {minimo} %)")
 
 
 @comprobacion

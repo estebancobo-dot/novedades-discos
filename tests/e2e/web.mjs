@@ -56,13 +56,22 @@ const navegador = await chromium.launch();
 for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['escritorio', { viewport: { width: 1280, height: 900 } }]]) {
   console.log(`— ${nombre}`);
   const ctx = await navegador.newContext({ ...opciones, serviceWorkers: 'block', reducedMotion: 'reduce' });
-  await ctx.route(/^https?:\/\/(?!localhost)/, r => r.abort());      // sin red externa: portadas y Deezer fuera
+  // Sin red externa; las portadas se sirven con una imagen local para poder comprobar que se VEN
+  // (que nada las tapa), no solo que existen.
+  const PNG = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkaPhfDwAEhQHNwUYG6wAAAABJRU5ErkJggg==', 'base64');
+  await ctx.route(/^https?:\/\/(?!localhost)/, r => r.request().resourceType() === 'image'
+    ? r.fulfill({ status: 200, contentType: 'image/png', body: PNG }) : r.abort());
   const p = await ctx.newPage();
   const errores = [];
   p.on('pageerror', e => errores.push(e.message));
   p.on('console', m => { if (m.type() === 'error' && !/net::ERR_FAILED|Failed to load resource/.test(m.text())) errores.push(m.text()); });
 
   await p.goto(BASE, { waitUntil: 'networkidle' });
+  // capturas de cada pantalla en cada ejecución (CAPTURAS=1): docs/capturas/, para verlas desde el móvil
+  const CAP = process.env.CAPTURAS ? path.resolve(path.dirname(new URL(import.meta.url).pathname), '../../docs/capturas') : null;
+  const capturar = async (nombreCap) => { if (!CAP) return; fs.mkdirSync(CAP, { recursive: true });
+    await p.screenshot({ path: path.join(CAP, `${nombreCap}-${nombre === 'móvil' ? 'movil' : 'escritorio'}.jpg`), type: 'jpeg', quality: 50 }); };
+  await capturar('portada');
   const n = await p.locator('.tarjeta').count();
   comprobar(n > 0, `carga y pinta tarjetas (${n})`);
   comprobar((await p.locator('#familias [role=tab]').count()) >= 3, 'pestañas de familias');
@@ -78,7 +87,8 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
     return {
       primera, secciones: [...document.querySelectorAll('[data-seccion]')].map(e => e.dataset.seccion),
       cuadrosColor: tarjetas.filter(t => !t.querySelector('img') && (t.querySelector('.portada')?.textContent || '').trim()).length,
-      conImg: tarjetas.filter(t => t.querySelector('.portada img')).length, n: tarjetas.length,
+      // con portada según los datos (en la prueba no hay red: las imágenes externas no cargan)
+      conImg: tarjetas.filter(t => t.querySelector('.portada img') || t.hasAttribute('data-portada')).length, n: tarjetas.length,
       titulo: !!t0?.querySelector('.t-titulo'), artista: !!t0?.querySelector('.t-artista'),
       artistaUnaVez: t0 ? (t0.innerText.split(t0.querySelector('.t-artista')?.textContent?.trim() || '§').length - 1) === 1 : false,
       meta: !!t0?.querySelector('.t-meta'),
@@ -97,6 +107,13 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   aceptacion(portada.semanaTexto, '"Semana del …" visible', 'A7');
   aceptacion(portada.secciones.includes('mejores-notas'), '"Mejores notas recientes" en la portada', 'A9');
   aceptacion(portada.n > 0 && portada.conImg >= Math.ceil(portada.n * 0.75), `portadas en las primeras tarjetas (${portada.conImg} de ${portada.n})`, 'B1');
+  // la portada cargada es lo que se ve: en el centro de cada imagen visible no hay nada encima
+  const tapadas = await p.evaluate(() => [...document.querySelectorAll('.tarjeta .portada img')].filter(img => {
+    const r = img.getBoundingClientRect(), cy = r.y + r.height / 2;
+    if (cy < 0 || cy > innerHeight || !img.complete || !img.naturalWidth) return false;     // solo las que tienen el centro a la vista
+    const e = document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2); if (e !== img) img.dataset.tapadaPor = e?.className || e?.tagName; return e !== img; }).length);
+  const tapadoPor = await p.evaluate(() => [...new Set([...document.querySelectorAll('img[data-tapada-por]')].map(i => i.dataset.tapadaPor))].join(', '));
+  comprobar(tapadas === 0, `las portadas cargadas se ven (tapadas: ${tapadas}${tapadas ? ' por ' + tapadoPor : ''})`, 'B1');
   aceptacion(portada.titulo && portada.artista && portada.artistaUnaVez, 'tarjeta: título y artista, sin repetir el nombre', 'B2');
   aceptacion(portada.meta, 'tarjeta: fecha · estilo en una línea', 'B3');
   aceptacion(portada.conNota > 0 && portada.cajasNota === portada.conNota, `nota en cuadro de color en las tarjetas con nota (${portada.cajasNota} de ${portada.conNota})`, 'B4');
@@ -133,6 +150,7 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   comprobar(p.url().includes('#disco='), 'la ficha tiene enlace propio');
   comprobar(await p.locator('dialog#ficha a', { hasText: 'Qobuz' }).count() === 1, 'enlace a Qobuz en la ficha');
   comprobar(await p.locator('dialog#ficha h3', { hasText: 'Aparece en' }).count() === 1, 'la ficha carga sus detalles (fuentes)');
+  await capturar('ficha');
   // ---- aceptación de la página del disco nueva (W2, estilo Metacritic / AnyDecentMusic)
   const ficha = await p.evaluate(() => {
     const f = document.querySelector('dialog#ficha'); const t = f?.innerText || '';
@@ -172,6 +190,7 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   await p.selectOption('#orden', 'mejor');
   await p.waitForTimeout(300);
   comprobar(await p.locator('#selAnio:not([hidden])').count() === 1, 'lo mejor del año muestra selector de año');
+  await capturar('lo-mejor');
   // ---- aceptación del ranking (W3, estilo AOTY): lista numerada con portada, nota y nº de reseñas
   const ranking = await p.evaluate(() => { const f = [...document.querySelectorAll('.ranking-disco')].slice(0, 10);
     return { n: f.length, completas: f.filter(x => x.querySelector('.puesto') && x.querySelector('.nota-caja') && /reseña/i.test(x.innerText)).length }; });

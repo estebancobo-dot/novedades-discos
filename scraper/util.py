@@ -115,3 +115,12 @@ def restar_meses(d: dt.date, meses: int) -> dt.date:
         y += 1
     dia = min(d.day, [31, 29 if y % 4 == 0 and (y % 100 or y % 400 == 0) else 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][m - 1])
     return dt.date(y, m, dia)
+
+
+def clave_nombre(texto: str | None) -> str:
+    """Clave para comparar nombres escritos de formas distintas: sin acentos, signos, "&", "and" ni "the".
+    "Neil Young & The Chrome Hearts" = "Neil Young and Chrome Hearts" = "neil-young-and-the-chrome-hearts";
+    "Echo & the Bunnymen" = "Echo and the Bunnymen" = "echo-the-bunnymen"."""
+    n = normalizar((texto or "").replace("&", " ").replace("-", " "))
+    sin = re.sub(r"[^a-z0-9]", "", re.sub(r"\b(and|the)\b", " ", n))
+    return sin or re.sub(r"[^a-z0-9]", "", n)          # "The The" no se queda vacío

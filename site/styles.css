@@ -308,3 +308,55 @@ button.cal-dia { cursor: pointer; }
 .meses:empty { display: flex; visibility: hidden; min-height: 33px; }
 /* mientras cargan los datos, el contenido ocupa la pantalla: el pie no aparece arriba para luego saltar */
 main#contenido { min-height: 100vh; }
+
+/* ===================== W1: portada y tarjeta (estilo New Music Tracker / Metacritic) ===================== */
+:root { --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif; }
+.ico { width: 18px; height: 18px; display: inline-block; vertical-align: -3px; }
+.btn-pill .ico { margin-right: 4px; }
+/* tarjeta: portada protagonista, título con remate, artista debajo, fecha · estilo */
+.t-img { position: relative; }
+.portada .vacia {             /* sin portada: un disco neutro, sin texto ni colores */
+  background: radial-gradient(circle at 50% 50%, var(--superficie) 0 9%, var(--linea) 9.5% 11%,
+              color-mix(in srgb, var(--tinta) 14%, var(--superficie)) 11.5% 47%, var(--superficie) 47.5%);
+  color: transparent; text-shadow: none; padding: 0;
+}
+.t-texto { padding-top: 8px; min-width: 0; }
+.t-titulo { font-family: var(--serif); font-size: 17px; line-height: 1.2; color: var(--tinta); font-weight: 600;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.t-artista { font-weight: 400; margin-top: 2px; color: var(--tinta); font-size: 14px; }
+.t-meta { font-size: 12.5px; color: var(--tinta-suave); margin-top: 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* nota en cuadro de color (verde ≥ 8, amarillo 6–7,9, rojo < 6) */
+.nota-caja { display: inline-grid; place-items: center; min-width: 34px; height: 30px; padding: 0 5px; border-radius: 6px;
+  font-weight: 800; font-size: 14px; font-variant-numeric: tabular-nums; }
+.nota-caja.verde { background: #1d6b34; color: #fff; }
+.nota-caja.amarillo { background: #f2c94c; color: #2b2200; }
+.nota-caja.rojo { background: #b3261e; color: #fff; }
+.t-img .nota-caja { position: absolute; left: 6px; bottom: 6px; box-shadow: 0 1px 3px rgb(0 0 0 / .35); }
+.t-img .lista-badge { position: absolute; right: 6px; top: 6px; width: 12px; height: 16px; background: var(--acento);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%); }
+/* secciones de la portada */
+.sub-semana { margin: -6px 0 12px; color: var(--tinta-suave); font-size: 14px; }
+.bloque { margin: 8px 0 28px; }
+.bloque h2 { display: flex; justify-content: space-between; align-items: baseline; font-size: 13px; text-transform: uppercase;
+  letter-spacing: .08em; color: var(--acento); margin: 18px 0 10px; }
+.lista-notas, .lista-compacta { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--linea); }
+.lista-notas li, .lista-compacta li { border-bottom: 1px solid var(--linea); }
+.fila { all: unset; box-sizing: border-box; cursor: pointer; display: flex; align-items: center; gap: 12px; width: 100%; padding: 10px 2px; }
+.fila:focus-visible { outline: 3px solid var(--acento); outline-offset: 2px; }
+.fila .f-fecha { flex: none; width: 52px; font-size: 13px; font-weight: 700; color: var(--acento); }
+.fila .f-texto { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fila .f-texto b { font-family: var(--serif); font-weight: 600; font-size: 16px; }
+.fila .f-texto span { color: var(--tinta-suave); }
+.fila .f-extra { flex: none; font-size: 12px; color: var(--tinta-suave); }
+/* vista de lista con la tarjeta nueva */
+.lista .tarjeta { display: grid; grid-template-columns: 56px 1fr; gap: 12px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--linea); }
+.lista .t-img .nota-caja { position: static; margin-top: 4px; min-width: 30px; height: 24px; font-size: 12px; }
+.lista .t-texto { padding-top: 0; }
+@media (min-width: 900px) { .rejilla { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); } }
+/* La portada siempre encima del marcador (antes el marcador, con position:absolute, tapaba la imagen
+   aunque hubiera cargado: "la web no tiene carátulas"). */
+.portada img, .f-portada img { position: relative; }   /* posicionada y después del marcador: queda encima de él, no de los botones */
+/* Marca: Cara A (logo de etiqueta de disco) */
+.marca { display: flex; align-items: center; gap: 10px; font-family: var(--serif); letter-spacing: -.01em; }
+.marca .logo { width: 30px; height: 30px; flex: none; }
+.marca .disco { display: none; }

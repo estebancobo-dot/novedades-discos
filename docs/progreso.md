@@ -20,12 +20,15 @@ Si la sesión se corta, la siguiente empieza por aquí. Cada línea de "Hecho" e
 | 6 | Acuerdo con el género de Wikipedia y de MusicBrainz/Discogs (V4a) | ✅ Wikipedia: 98,1 % (155/158) |
 | 7 | Historial semana a semana y saltos por fuente, familia y motivo de descarte (V3) | 🟡 historial y avisos hechos (`data/historial_validacion.json`); falta el aviso de "descartado con ≥ 2 reseñas especializadas" |
 | 8 | Descubrimiento frente a referencias externas: Metacritic, AnyDecentMusic (V1) | ✅ `scraper/referencias.py` (fase `referencias`): Metacritic "All New Music" 2026 → 97 en la web, **7 perdidos (6,7 %)**, 11 sin poder saber su género; lista de perdidos en `docs/validacion.md` |
-| 9 | Reseñas frente a AnyDecentMusic (V5) | ⬜ |
-| 10 | Web: pruebas de contenido + capturas automáticas de cada pantalla en cada publicación (V7) | 🟡 la prueba en navegador escribe `data/validacion_web.json` por requisito, con criterios de aceptación de W1/W2/W3 (hoy fallan: es lo correcto); faltan las capturas automáticas |
+| 9 | Reseñas frente a AnyDecentMusic (V5) | ✅ `scraper/resenas.py`: cada disco con página en AnyDecentMusic recibe **todas** sus reseñas (medio, nota, frase, enlace original): U2 pasa de 3 a 21. Comprobación `resenas_cobertura`: 52,5 % de los publicados con reseña. Falta: leer el archivo de ADM (solo hay páginas de los discos actuales: 15) |
+| 10 | Web: pruebas de contenido + capturas automáticas de cada pantalla en cada publicación (V7) | ✅ resultados por requisito + capturas en `docs/capturas/` (portada, ficha y lo mejor; móvil y escritorio) en cada ejecución |
 | 11 | Fase `validar` en el orquestador y semáforo en el resumen de la Action (V8) | ✅ fase `validar` en `scraper/pipeline.py`; en la Action: prueba en navegador → validar → guarda y pone el semáforo en el resumen |
-| 12 | W1 portada y tarjeta (con capturas al usuario) | ⬜ |
+| 12 | W1 portada y tarjeta (con capturas al usuario) | ✅ aprobada por el usuario; nombre **Cara A** (Side A) y logo; 🟡 hecha y con todas sus comprobaciones en verde; **encontrado y corregido el fallo de "sin carátulas"**: el marcador tapaba la portada aunque cargara (nueva comprobación automática: las portadas cargadas se ven). Falta: OK del usuario con capturas y publicar |
 | 13 | W2 página del disco | ⬜ |
 | 14 | W3–W7 | ⬜ |
+| 16 | Listas de fin de año del año en curso también descubren discos | ✅ código y configuración (`descubrir_en_listas_anuales`); comprobándose con una recogida real |
+| 17 | Fuentes que sustituyen a Heavy Harmonies | ✅ Ultimate Classic Rock y Burning Minds/Art of Melody (`docs/fuentes.md`) |
+| 15 | Por qué faltan los discos perdidos | ✅ 2 eran fallos de comparación y 1 un duplicado (corregidos: mismo nombre con "&", "and", "the"); quedan 5 reales con su causa |
 
 ## Avisos abiertos (los detectó la validación automática)
 
@@ -34,7 +37,16 @@ Si la sesión se corta, la siguiente empieza por aquí. Cada línea de "Hecho" e
   sustituyan** (E1).
 - Metal Planet y Blues Rock Review salieron vacías en la primera ejecución en GitHub (vigilar la próxima).
 - Punk, indie y cantautores no tienen fuentes especializadas propias (E1).
-- 6 discos perdidos frente a Metacritic: Editors, The Mary Wallopers, Formal Sppeedwear, Faust, Los Bitchos, Dis Fig.
+- "First Songs" de Michael Hurley (1964, Folkways) sale como novedad de esta semana: revisar por qué no se descartó como reedición.
+- 5 discos perdidos frente a Metacritic (28-nov): The Mary Wallopers (solo sale en listas de fin de año: usarlas
+  también para descubrir), Formal Sppeedwear, Faust, Dis Fig, "Miley" (ninguna fuente los tiene: buscar fuentes de
+  krautrock/experimental, indie e industrial). Editors, Los Bitchos, Echo & the Bunnymen y Neil Young sí estaban:
+  eran fallos de comparación ("&", "and", "the"), ya corregidos con `util.clave_nombre`.
+
+## Publicado en `main`
+
+- 28-nov-2026: petición #11 fusionada. Desde ahora **cada ejecución en GitHub valida todas las capas** (fases
+  `referencias` y `validar`, prueba en navegador y semáforo en el resumen de la Action).
 
 ## Último paso hecho
 
@@ -42,7 +54,9 @@ Pasos 3, 4 y parte del 7 (28-nov-2026). Hallazgos reales: 12 direcciones con el 
 
 ## Siguiente paso
 
-Paso 9: reseñas frente a AnyDecentMusic (sus páginas de disco listan todas las reseñas: comparar el número con las
-nuestras). Después: capturas automáticas de cada pantalla (resto del 10); arreglar los 7 discos perdidos (qué fuente
-los debía traer); subir la clasificación del 79 % al 85 % en la muestra de referencia (etiquetas débiles de
-MusicBrainz). Luego W1 con capturas al usuario.
+1. **Publicar W1 + Cara A** (aprobado por el usuario el 28-nov): petición a `main`, pruebas de GitHub en verde,
+   fusionar y lanzar la Action en modo incremental para regenerar los datos con todo lo nuevo (listas de fin de
+   año, fuentes de AOR, reseñas de AnyDecentMusic, Mike/Michael en MusicBrainz).
+2. **W2 + idiomas** (aprobado): página del disco estilo Metacritic y web en español e inglés (L1–L6).
+3. Después: clasificación al 85 % en la muestra de referencia; MelodicRock.com y Pride & Joy; archivo de
+   AnyDecentMusic; fuentes de krautrock/experimental, indie e industrial.

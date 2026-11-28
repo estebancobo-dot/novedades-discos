@@ -12,7 +12,7 @@ import datetime as dt
 import re
 from collections import defaultdict
 
-from .util import normalizar, similitud
+from .util import clave_nombre, normalizar, similitud
 
 LISTAS = ("fuentes", "resenas", "etiquetas_originales", "etiquetas_musicbrainz_bandcamp", "descripciones")
 
@@ -113,8 +113,8 @@ def unir_duplicados(discos: list[dict], umbral: float = 0.95, dias: int = 45,
     lista = list(por_mbid.values()) + sin_mbid
     # 2) mismo artista + título casi igual + fechas cercanas (y que no sean dos MBID distintos)
     por_artista = defaultdict(list)
-    for d in lista:
-        por_artista[normalizar(d.get("artista"))].append(d)
+    for d in lista:     # "Neil Young & The Chrome Hearts" y "Neil Young & Chrome Hearts" son el mismo artista
+        por_artista[clave_nombre(d.get("artista"))].append(d)
     salida = []
     for grupo in por_artista.values():
         quedan = []
@@ -143,7 +143,7 @@ def ampliaciones(discos: list[dict], dias_minimos: int = 30, equivalentes: dict 
     ni si es un directo o una maqueta (eso ya es otro disco). → {posición en la lista: motivo}."""
     por_artista = defaultdict(list)
     for i, d in enumerate(discos):
-        por_artista[normalizar(d.get("artista"))].append(i)
+        por_artista[clave_nombre(d.get("artista"))].append(i)
     out = {}
     for idx in por_artista.values():
         for i in idx:

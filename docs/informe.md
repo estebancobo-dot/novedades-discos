@@ -6,8 +6,8 @@ Ventana: del **2026-01-01** (5 meses atrás) al **2027-05-28** (anunciados). Gen
 
 | | |
 |---|---|
-| Discos en la web | **3906** (3798 publicados · 108 próximamente) |
-| Country / Americana / Folk | 1408 |
+| Discos en la web | **3902** (3794 publicados · 108 próximamente) |
+| Country / Americana / Folk | 1404 |
 | Hard rock / AOR | 712 |
 | Rock y metal | 1900 |
 | Punk y garage | 556 |
@@ -15,11 +15,11 @@ Ventana: del **2026-01-01** (5 meses atrás) al **2027-05-28** (anunciados). Gen
 | Blues | 314 |
 | Synthwave y dark wave | 226 |
 | Cantautores | 238 |
-| Con subgénero | 3107 (80 %) |
+| Con subgénero | 3106 (80 %) |
 | En Bandcamp | 1973 (51 %) |
-| Aparecen en una sola fuente | 1863 (48 %) |
-| Con al menos una reseña | 1999 (51 %) |
-| Descartados | 2424 (EP, reediciones, otro idioma, fuera de fecha, otros géneros…) |
+| Aparecen en una sola fuente | 1856 (48 %) |
+| Con al menos una reseña | 1998 (51 %) |
+| Descartados | 2423 (EP, reediciones, otro idioma, fuera de fecha, otros géneros…) |
 
 > «En Bandcamp» = MusicBrainz enlaza el disco o el artista a Bandcamp, o se ha encontrado la página del disco. La búsqueda de Bandcamp está prohibida a robots y no se usa.
 
@@ -37,11 +37,11 @@ Cuántos discos de la web aparecen en cada fuente, por mes de salida. «Web» es
 
 | Mes | Web | Saving Country Music | Americana UK | Radar de artistas (MusicBrainz) | Wikipedia | Mejor fuente sola |
 |---|---:|---:|---:|---:|---:|---:|
-| junio 2026 | **141** | 55 | 46 | 25 | 35 | 55 (39 %) |
+| junio 2026 | **140** | 55 | 46 | 25 | 35 | 55 (39 %) |
 | julio 2026 | **106** | 26 | 28 | 34 | 25 | 34 (32 %) |
-| agosto 2026 | **160** | 38 | 39 | 50 | 39 | 60 (38 %) |
-| septiembre 2026 | **167** | 58 | 50 | 37 | 37 | 58 (35 %) |
-| octubre 2026 | **221** | 63 | 51 | 69 | 42 | 69 (31 %) |
+| agosto 2026 | **159** | 38 | 39 | 50 | 39 | 60 (38 %) |
+| septiembre 2026 | **166** | 57 | 50 | 37 | 37 | 57 (34 %) |
+| octubre 2026 | **220** | 63 | 51 | 69 | 42 | 69 (31 %) |
 | noviembre 2026 | **124** | 27 | 27 | 10 | 13 | 42 (34 %) |
 
 **Hard rock / AOR**
@@ -50,8 +50,8 @@ Cuántos discos de la web aparecen en cada fuente, por mes de salida. «Web» es
 |---|---:|---:|---:|---:|---:|---:|
 | junio 2026 | **55** | 21 | 18 | 18 | 1 | 21 (38 %) |
 | julio 2026 | **49** | 26 | 18 | 15 | 10 | 26 (53 %) |
-| agosto 2026 | **91** | 13 | 13 | 14 | 48 | 48 (53 %) |
-| septiembre 2026 | **106** | 43 | 27 | 24 | 50 | 50 (47 %) |
+| agosto 2026 | **90** | 13 | 13 | 14 | 48 | 48 (53 %) |
+| septiembre 2026 | **107** | 43 | 27 | 24 | 50 | 50 (47 %) |
 | octubre 2026 | **97** | 29 | 17 | 18 | 39 | 39 (40 %) |
 | noviembre 2026 | **65** | 16 | 13 | 15 | 29 | 29 (45 %) |
 
@@ -116,21 +116,21 @@ Cuántos discos de la web aparecen en cada fuente, por mes de salida. «Web» es
 |---|---:|---:|---:|---:|---:|---:|
 | junio 2026 | **23** | 12 | 10 | 0 | 9 | 12 (52 %) |
 | julio 2026 | **18** | 7 | 11 | 2 | 3 | 11 (61 %) |
-| agosto 2026 | **31** | 12 | 15 | 14 | 9 | 15 (48 %) |
-| septiembre 2026 | **25** | 12 | 8 | 0 | 8 | 12 (48 %) |
+| agosto 2026 | **30** | 12 | 15 | 14 | 9 | 15 (50 %) |
+| septiembre 2026 | **26** | 12 | 8 | 0 | 8 | 12 (46 %) |
 | octubre 2026 | **38** | 17 | 22 | 23 | 23 | 23 (61 %) |
 | noviembre 2026 | **17** | 6 | 4 | 11 | 4 | 11 (65 %) |
 
 ### ¿Los encuentra antes?
 
 - **108 discos anunciados** que todavía no han salido ya están en la web; 5 de ellos tienen ya alguna reseña.
-- De los 1999 discos reseñados por la prensa, **1014 (51 %)** también estaban en listados, anuncios o sellos, es decir, se encuentran sin esperar a la reseña.
-- 1804 discos publicados (47 %) no tienen ninguna reseña en las fuentes leídas: son los que un lector de prensa no vería.
+- De los 1998 discos reseñados por la prensa, **1016 (51 %)** también estaban en listados, anuncios o sellos, es decir, se encuentran sin esperar a la reseña.
+- 1801 discos publicados (47 %) no tienen ninguna reseña en las fuentes leídas: son los que un lector de prensa no vería.
 - **Limitación honesta:** en esta primera carga no sé *cuándo* anunció cada web cada disco, solo que lo anunció. Cada disco guarda la fecha en que el robot lo vio por primera vez (`detectado`); a partir de las ejecuciones semanales el informe podrá medir los días de antelación reales.
 
 ### ¿Asigna bien el subgénero?
 
-No hay una referencia independiente fiable (AOTY no es legible). Como control, en los 1161 discos en los que la prensa da un género reconocible, el subgénero asignado lo incluye en **100 %** de los casos. Discos sin subgénero: **799** (20 %).
+No hay una referencia independiente fiable (AOTY no es legible). Como control, en los 1160 discos en los que la prensa da un género reconocible, el subgénero asignado lo incluye en **100 %** de los casos. Discos sin subgénero: **796** (20 %).
 
 Ejemplos de desacuerdo para revisar:
 
@@ -143,19 +143,19 @@ Ejemplos de desacuerdo para revisar:
 
 | Campo | Discos | % |
 |---|---:|---:|
-| Portada | 3105 | 79 % |
+| Portada | 3104 | 80 % |
 | Sello | 2856 | 73 % |
-| Número de pistas | 3194 | 82 % |
-| Fecha exacta (día) | 3268 | 84 % |
+| Número de pistas | 3193 | 82 % |
+| Fecha exacta (día) | 3267 | 84 % |
 | Idioma verificado | 2516 | 64 % |
 | Identificado en MusicBrainz | 2913 | 75 % |
-| Enlace para escuchar (Deezer, Bandcamp, Apple…) | 3079 | 79 % |
-| Subgénero | 3107 | 80 % |
-| Al menos una reseña | 1999 | 51 % |
+| Enlace para escuchar (Deezer, Bandcamp, Apple…) | 3078 | 79 % |
+| Subgénero | 3106 | 80 % |
+| Al menos una reseña | 1998 | 51 % |
 
 ### Coherencia de la clasificación con fuentes especializadas
 
-De los **1308** discos con subgénero que vienen de una fuente especializada en una familia, **94 %** tienen al menos un subgénero de esa familia. Los demás pueden ser discos fuera de su género habitual o errores de clasificación:
+De los **1307** discos con subgénero que vienen de una fuente especializada en una familia, **94 %** tienen al menos un subgénero de esa familia. Los demás pueden ser discos fuera de su género habitual o errores de clasificación:
 
 - Jaren Johnston – *The Guest Room*: fuente de country, subgéneros southern-rock
 - Eddie 9V – *Down Here*: fuente de country, subgéneros blues-rock, modern-electric-blues
@@ -172,7 +172,7 @@ De los **1308** discos con subgénero que vienen de una fuente especializada en 
 
 ### Posibles duplicados para revisar
 
-Parejas del mismo artista con títulos muy parecidos que **no** se han unido: **16** (sobre 3906 discos). Pueden ser el mismo disco escrito de dos formas o discos distintos (p. ej. un directo y el de estudio):
+Parejas del mismo artista con títulos muy parecidos que **no** se han unido: **16** (sobre 3902 discos). Pueden ser el mismo disco escrito de dos formas o discos distintos (p. ej. un directo y el de estudio):
 
 - The Plot In You: *The Volumes Series* (2026-07-10) · *The Volume Series* (2026-07-10) — similitud 0.96
 - Gnod: *Chronicles of Gnowt (Vol 2)* (2026-10-09) · *Chronicles of Gnowt (Vol 1)* (2026-04-10) — similitud 0.96
@@ -214,7 +214,7 @@ Errores y su causa:
 
 ## Discos por familia y subgénero
 
-### Country / Americana / Folk · 1408 discos
+### Country / Americana / Folk · 1404 discos
 
 | Grupo | Subgénero | Discos |
 |---|---|---:|
@@ -228,7 +228,7 @@ Errores y su causa:
 | Country | Country rock | 51 |
 | Country | Cosmic country | 9 |
 | Country | Western | 7 |
-| Americana | Americana | 328 |
+| Americana | Americana | 327 |
 | Americana | Alt-country | 104 |
 | Americana | Roots rock | 20 |
 | Americana | Southern gothic | 4 |
@@ -247,7 +247,7 @@ Errores y su causa:
 | Fronteras | Country blues *(frontera)* | 11 |
 | Fronteras | Southern gospel *(frontera)* | 2 |
 | Fronteras | Heartland rock *(frontera)* | 4 |
-| — | *sin subgénero* | 459 |
+| — | *sin subgénero* | 456 |
 
 ### Hard rock / AOR · 712 discos
 
@@ -422,23 +422,23 @@ Errores y su causa:
 
 | Fuente | Estado | Discos en la web | Solo en esta fuente |
 |---|---|---:|---:|
-| Saving Country Music – Release Radar | ✅ funciona | 477 | 225 |
+| Saving Country Music – Release Radar | ✅ funciona | 476 | 222 |
 | Saving Country Music – reseñas | ✅ funciona | 21 | 9 |
 | Saving Country Music – noticias | ✅ funciona | 20 | 4 |
 | Holler – First Listen | ✅ funciona | 0 | 0 |
 | Whiskey Riff | ✅ funciona | 2 | 0 |
-| Americana UK | ✅ funciona | 353 | 162 |
+| Americana UK | ✅ funciona | 353 | 161 |
 | Twangville | ✅ funciona | 70 | 18 |
 | Country Standard Time – CD releases | ✅ funciona | 19 | 4 |
 | No Depression | ✅ funciona | 4 | 1 |
-| KLOF Mag (antes Folk Radio UK) | ✅ funciona | 108 | 43 |
+| KLOF Mag (antes Folk Radio UK) | ✅ funciona | 108 | 42 |
 | Glide Magazine | ✅ funciona | 0 | 0 |
-| Americana Highways | ✅ funciona | 219 | 116 |
+| Americana Highways | ✅ funciona | 219 | 115 |
 | Heavy Harmonies – New Additions | ❌ robots.txt no lo permite | 186 | 113 |
 | MelodicRock.com | ✅ funciona | 7 | 1 |
 | Fireworks Magazine – reseñas del número actual | ✅ funciona | 8 | 1 |
 | Angelic Warlord – Release Dates | ✅ funciona | 8 | 2 |
-| Get Ready to ROCK! | ✅ funciona | 140 | 51 |
+| Get Ready to ROCK! | ✅ funciona | 140 | 50 |
 | Loudwire – 2026 Hard Rock + Metal Release Calendar | ✅ funciona | 770 | 173 |
 | Metal Planet Music | ⚠️ sin discos | 38 | 0 |
 | Louder (Classic Rock / Prog) – reseñas | ✅ funciona | 19 | 0 |
@@ -500,7 +500,7 @@ Webs que respondieron con bloqueo o verificación anti-bots en esta ejecución:
 
 | Motivo | Discos |
 |---|---:|
-| clasificación | 1400 |
+| clasificación | 1399 |
 | otro género | 326 |
 | reedición o formato especial | 206 |
 | EP | 118 |

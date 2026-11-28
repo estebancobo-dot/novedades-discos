@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-28T08:17:52+00:00",
+ "fecha": "2026-11-28T08:33:55+00:00",
  "referencias": {
   "metacritic": {
    "nombre": "Metacritic – All New Music by Release Date",
@@ -60,7 +60,7 @@
      "artista": "queens of the stone age",
      "titulo": "perfecth",
      "clave": [
-      "queensofthestoneage",
+      "queensofstoneage",
       "perfecth"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
@@ -101,7 +101,7 @@
      "titulo": "hippies thugs and heroes",
      "clave": [
       "richardthompson",
-      "hippiesthugsandheroes"
+      "hippiesthugsheroes"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "en_web"
@@ -111,7 +111,7 @@
      "titulo": "shes the best",
      "clave": [
       "troyesivan",
-      "shesthebest"
+      "shesbest"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "en_web"
@@ -206,7 +206,7 @@
      "titulo": "saints in the wethouse",
      "clave": [
       "blackhaine",
-      "saintsinthewethouse"
+      "saintsinwethouse"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "en_web"
@@ -226,7 +226,7 @@
      "titulo": "live at the barbican",
      "clave": [
       "kimdeal",
-      "liveatthebarbican"
+      "liveatbarbican"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "descartado",
@@ -319,7 +319,7 @@
      "titulo": "the rolling thunder revue the 1976 live recordings box set",
      "clave": [
       "bobdylan",
-      "rollingthunderrevuethe1976liverecordingsboxset"
+      "rollingthunderrevue1976liverecordingsboxset"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "no_es_nuevo"
@@ -391,7 +391,7 @@
      "titulo": "i thought we were the same",
      "clave": [
       "anebrun",
-      "ithoughtwewerethesame"
+      "ithoughtweweresame"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "en_web"
@@ -431,7 +431,7 @@
      "titulo": "the fork and knife",
      "clave": [
       "skepta",
-      "forkandknife"
+      "forkknife"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "descartado",
@@ -441,7 +441,7 @@
      "artista": "sampa the great",
      "titulo": "nu zamrock",
      "clave": [
-      "sampathegreat",
+      "sampagreat",
       "nuzamrock"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
@@ -538,7 +538,7 @@
      "titulo": "wild in the streets",
      "clave": [
       "clinic",
-      "wildinthestreets"
+      "wildinstreets"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "en_web"
@@ -559,7 +559,7 @@
      "titulo": "everything under the sun",
      "clave": [
       "nickelback",
-      "everythingunderthesun"
+      "everythingundersun"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "en_web"
@@ -610,7 +610,7 @@
      "titulo": "from the dark",
      "clave": [
       "tonyiommi",
-      "fromthedark"
+      "fromdark"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "en_web"
@@ -645,7 +645,7 @@
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "descartado",
-     "motivo": "otro género (según la descripción de la fuente)"
+     "motivo": "clasificación: solo subgéneros frontera y fuente mixta"
     },
     {
      "artista": "manic street preachers",
@@ -706,7 +706,7 @@
      "titulo": "gentling the horse at the walt whitman mall",
      "clave": [
       "carolinerose",
-      "gentlingthehorseatthewaltwhitmanmall"
+      "gentlinghorseatwaltwhitmanmall"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "en_web"
@@ -716,7 +716,7 @@
      "titulo": "follow the light",
      "clave": [
       "junemcdoom",
-      "followthelight"
+      "followlight"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "en_web"
@@ -726,7 +726,7 @@
      "titulo": "do you love the color of the sky",
      "clave": [
       "dummy",
-      "doyoulovethecolorofthesky"
+      "doyoulovecolorofsky"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "en_web"
@@ -777,11 +777,10 @@
      "titulo": "a man from the future",
      "clave": [
       "petshopboys",
-      "manfromthefuture"
+      "manfromfuture"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
-     "resultado": "descartado",
-     "motivo": "otro género (según la descripción de la fuente)"
+     "resultado": "en_web"
     },
     {
      "artista": "jess williamson",
@@ -798,7 +797,7 @@
      "titulo": "valley and structure",
      "clave": [
       "moreeaze",
-      "valleyandstructure"
+      "valleystructure"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "generos": [
@@ -877,7 +876,7 @@
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "descartado",
-     "motivo": "otro género (según la descripción de la fuente)"
+     "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía"
     },
     {
      "artista": "remi wolf",
@@ -923,8 +922,8 @@
      "artista": "drink the sea",
      "titulo": "drink the sea iii",
      "clave": [
-      "drinkthesea",
-      "drinktheseaiii"
+      "drinksea",
+      "drinkseaiii"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "descartado",
@@ -961,7 +960,7 @@
      "titulo": "all set the bone",
      "clave": [
       "gregfreeman",
-      "allsetthebone"
+      "allsetbone"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "en_web"
@@ -984,8 +983,7 @@
       "ruinitsnotjustmusic"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
-     "resultado": "descartado",
-     "motivo": "otro género (según la descripción de la fuente)"
+     "resultado": "en_web"
     },
     {
      "artista": "johnny marr",
@@ -1146,7 +1144,7 @@
      "titulo": "everybody talks about the weather",
      "clave": [
       "yummyfur",
-      "everybodytalksabouttheweather"
+      "everybodytalksaboutweather"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
      "resultado": "en_web"
@@ -1234,7 +1232,8 @@
       "cooked"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "resultado": "en_web"
+     "resultado": "descartado",
+     "motivo": "clasificación: solo subgéneros frontera y fuente mixta"
     },
     {
      "artista": "tom morello",
@@ -1282,7 +1281,7 @@
      "titulo": "the life of a showgirl the encore",
      "clave": [
       "taylorswift",
-      "lifeofashowgirltheencore"
+      "lifeofashowgirlencore"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
      "resultado": "no_es_nuevo"
@@ -1332,7 +1331,7 @@
      "titulo": "day and night",
      "clave": [
       "carlyraejepsen",
-      "dayandnight"
+      "daynight"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
      "resultado": "en_web"
@@ -1341,12 +1340,11 @@
      "artista": "echo the bunnymen",
      "titulo": "apples for isaac",
      "clave": [
-      "echothebunnymen",
+      "echobunnymen",
       "applesforisaac"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "generos": [],
-     "resultado": "sin_genero"
+     "resultado": "en_web"
     },
     {
      "artista": "son lux",
@@ -1392,21 +1390,11 @@
      "artista": "neil young and the chrome hearts",
      "titulo": "second song",
      "clave": [
-      "neilyoungandthechromehearts",
+      "neilyoungchromehearts",
       "secondsong"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "generos": [
-      "rock",
-      "folk rock",
-      "country rock",
-      "folk",
-      "classic rock",
-      "hard rock",
-      "contemporary folk",
-      "country"
-     ],
-     "resultado": "perdido"
+     "resultado": "en_web"
     },
     {
      "artista": "kristin hersh",
@@ -1643,12 +1631,12 @@
     }
    ],
    "resumen": {
-    "sin_genero": 8,
-    "en_web": 100,
-    "descartado": 24,
+    "sin_genero": 7,
+    "en_web": 103,
+    "descartado": 23,
     "fuera_de_genero": 8,
     "no_es_nuevo": 5,
-    "perdido": 6
+    "perdido": 5
    }
   }
  }

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Novedades · Country & Hard Rock</title>
-<meta name="description" content="Álbumes nuevos de country, americana y folk, y de hard rock y AOR. Actualizado cada semana.">
+<title>Cara A · Discos nuevos con notas de la crítica</title>
+<meta name="description" content="Cara A: discos nuevos de country, americana, folk, rock, metal, punk, indie y blues, con las notas y reseñas de la crítica. Actualizado cada semana.">
 <meta name="theme-color" content="#14110f">
 <!-- las portadas vienen de estos servicios: abrir la conexión antes acelera la primera imagen -->
 <link rel="preconnect" href="https://coverartarchive.org">
@@ -20,8 +20,8 @@
 <body>
 <header class="cab">
   <div class="cab-fila">
-    <h1 class="marca"><span class="disco" aria-hidden="true"></span>Novedades</h1>
-    <button class="btn-pill" id="btnLista" aria-pressed="false" title="Mi lista">★ <span id="numLista">0</span></button>
+    <h1 class="marca"><svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#1d1a17"/><circle cx="16" cy="16" r="11.5" fill="none" stroke="#3a3530" stroke-width=".8"/><circle cx="16" cy="16" r="9" fill="none" stroke="#3a3530" stroke-width=".8"/><circle cx="16" cy="16" r="6.5" fill="#a5561f"/><text x="16" y="19.6" text-anchor="middle" font-family="Georgia, serif" font-size="9.5" font-weight="700" fill="#fff">A</text></svg>Cara A</h1>
+    <button class="btn-pill" id="btnLista" aria-pressed="false" title="Mi lista"><span class="sr">Mi lista</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span id="numLista">0</span></button>
     <button class="btn-pill" id="abrirFiltros" aria-controls="panel" aria-expanded="false">
       Filtros <span class="contador" id="numFiltros" hidden></span>
     </button>
@@ -39,18 +39,17 @@
         <option value="fecha">Más recientes</option>
         <option value="nota">Mejor valorados</option>
         <option value="resenas">Más reseñados</option>
-        <option value="mejor">🏆 Lo mejor del año</option>
-        <option value="calendario">📅 Calendario</option>
+        <option value="mejor">Lo mejor del año</option>
+        <option value="calendario">Calendario</option>
       </select>
     </label>
     <label class="orden" id="selAnio" hidden><span class="sr">Año</span><select id="anio"></select></label>
-    <button class="chip chip-sm" id="btnDest" aria-pressed="false">✦ Destacados</button>
+    <button class="chip chip-sm" id="btnDest" aria-pressed="false">Destacados</button>
     <div class="vistas" role="group" aria-label="Vista">
-      <button id="vRejilla" aria-pressed="true" title="Cuadrícula" aria-label="Cuadrícula">▦</button>
-      <button id="vLista" aria-pressed="false" title="Lista" aria-label="Lista">☰</button>
+      <button id="vRejilla" aria-pressed="true" title="Cuadrícula" aria-label="Cuadrícula"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" fill="currentColor"/></svg></button>
+      <button id="vLista" aria-pressed="false" title="Lista" aria-label="Lista"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
     </div>
   </div>
-  <nav class="meses" id="meses" aria-label="Ir a un mes"></nav>
 </header>
 
 <main id="contenido" aria-live="polite">
@@ -64,6 +63,10 @@
       <button class="cerrar" id="cerrarFiltros" aria-label="Cerrar filtros">×</button>
     </div>
     <div class="panel-cuerpo">
+    <section>
+      <h3>Ir a un mes</h3>
+      <nav class="meses" id="meses" aria-label="Ir a un mes"></nav>
+    </section>
     <section>
       <h3>Fechas</h3>
       <div class="fechas">

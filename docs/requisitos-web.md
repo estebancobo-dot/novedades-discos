@@ -156,6 +156,17 @@ nota se ve sin abrir nada y no hay ruido**.
 | K4 | Accesibilidad WCAG 2.1 AA | ✅ |
 | K5 | Rendimiento móvil ≥ 90 | 🟡 83–87 |
 
+## 10 bis. Idiomas (pedido el 28-nov-2026)
+
+| ID | Requisito | Referencia | Estado | Prio |
+|---|---|---|---|---|
+| L1 | Web en español e inglés, con selector ES / EN en la cabecera | usuario | ❌ | P1 |
+| L2 | Idioma inicial el del móvil; se recuerda la elección; enlace con `?lang=en` | NMT, buenas prácticas | ❌ | P1 |
+| L3 | Textos en archivos por idioma (`site/i18n/es.json`, `en.json`); añadir otro idioma = un archivo más | buenas prácticas | ❌ | P1 |
+| L4 | Familias y grupos de la taxonomía con nombre en los dos idiomas; fechas y números según el idioma | — | ❌ | P1 |
+| L5 | Comprobación automática: todos los textos existen en los dos idiomas y no queda texto sin traducir | — | ❌ | P1 |
+| L6 | Nombre propio: **Cara A** (en inglés **Side A**) y logo de etiqueta de disco | usuario | ❌ | P1 |
+
 ## 11. Procesos (lo que no se ve pero decide si la web es fiable)
 
 | ID | Requisito | Cómo está hoy | Estado | Prio |
@@ -176,7 +187,7 @@ Cada fase: se construye → **capturas al usuario** → OK → se publica (al su
 |---|---|---|---|
 | **P-a** (a la vez que W1) | Auditoría "¿perdemos discos?" y validación automática con la muestra de referencia | P3, P4 | Sección nueva del informe con los que faltan y por qué; aviso en la Action |
 | **W1** | Portada y tarjeta nuevas; identidad propia; tipografía | A1–A11, B1–B5, I1–I4 | Capturas móvil/escritorio; pruebas K2 |
-| **W2** | Página del disco nueva, al estilo Metacritic: nota grande con palabra, barra positivas/mixtas/negativas, reseñas como tarjetas con frase | C1–C7, C13, C15–C19, J2 | Capturas de 3 discos (con nota, sin nota, sin portada) |
+| **W2** | Página del disco nueva, al estilo Metacritic: nota grande con palabra, barra positivas/mixtas/negativas, reseñas como tarjetas con frase; **web en español e inglés** | C1–C7, C13, C15–C19, J2, L1–L5 | Capturas de 3 discos (con nota, sin nota, sin portada) en los dos idiomas |
 | **W3** | Lo mejor del año en lista numerada; lo mejor del mes y la semana | F1, F3 | Captura del top 2026 |
 | **W4** | Portadas al 95 % (automático en la recogida semanal) | J1 | Cifra en el informe |
 | **W5** | Página de artista; seguir artistas; escuchados y favoritos | D1, D4, G2–G4 | Capturas |

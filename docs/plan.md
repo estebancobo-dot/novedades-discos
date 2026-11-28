@@ -39,7 +39,8 @@ Action lo marca en rojo y no publica en silencio.
 | ID | Qué | Requisitos | Estado |
 |---|---|---|---|
 | W1 | Portada y tarjeta (estilo New Music Tracker); identidad propia | A1–A11, B1–B5, I1–I4 | ❌ |
-| W2 | Página del disco (estilo Metacritic / AnyDecentMusic) | C1–C7, C13, C15–C19, J2 | ❌ |
+| W1 | (añadido) Nombre propio "Cara A" / "Side A" y logo | L6 | ⏳ |
+| W2 | Página del disco (estilo Metacritic / AnyDecentMusic) **y web en español e inglés** | C1–C7, C13, C15–C19, J2, L1–L5 | ❌ |
 | W3 | Rankings numerados, imprescindibles del mes, mejor de la semana | F1, F3, F7 | ❌ |
 | W4 | Portadas al 95 %; años por plantilla (cargar 2025 = cambiar un número) | J1, P1 | ❌ |
 | W5 | Artista, seguir, escuchados, favoritos | D1, D4, G2–G4 | ❌ |

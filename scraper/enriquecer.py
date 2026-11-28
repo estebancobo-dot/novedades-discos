@@ -18,6 +18,7 @@ from collections import Counter
 
 from .clasificar import Taxonomia, cargar_mapeo, clasificar_disco
 from .config import RAIZ, cargar_config, cargar_yaml, ruta
+from .resenas import fusionar_resenas, leer_agregador
 from .http import Bloqueado, Navegador, Prohibido, guardar_json
 from .util import normalizar, similitud
 
@@ -196,11 +197,19 @@ def main():
     with open(p, encoding="utf-8") as f:
         candidatos = json.load(f)
     artistas_de = {v["rg"]: v.get("artistas_id", []) for k, v in mb.items() if k.startswith("rg:") and v.get("rg")}
+    agregadores = [(a, re.compile(a["url"])) for a in config["enriquecimiento"].get("resenas_agregadores") or []]
     usar_deezer = cfg.get("deezer", {}).get("activo")
     usar_itunes = cfg.get("itunes", {}).get("activo")
 
     def procesar(d) -> tuple[int, int]:
         """→ (1 si estaba sin subgénero, 1 si las etiquetas extra se lo dieron)."""
+        for ag, rx in agregadores:               # a todos: reseñas completas del agregador de crítica
+            url = next((u for u in [r.get("url") for r in d.get("resenas", [])] + [f.get("url") for f in d.get("fuentes", [])]
+                        if u and rx.search(u)), None)
+            if url:
+                lista = leer_agregador(nav, url, ag)
+                if lista:
+                    fusionar_resenas(d, lista, ag["id"])
         if usar_deezer:                          # a todos: enlace, tipo, reproductor y portada
             dz = ex.deezer(d["artista"], d["titulo"])
             if dz:

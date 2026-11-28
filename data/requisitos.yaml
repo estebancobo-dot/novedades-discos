@@ -164,6 +164,7 @@ requisitos:
   capa: datos
   comprobaciones:
   - cobertura_campos
+  - resenas_cobertura
 - id: R27
   texto: Cuadrícula de portadas por semanas, lo más reciente arriba
   origen: docs/requisitos.md
@@ -846,3 +847,39 @@ requisitos:
   capa: procesos
   comprobaciones:
   - bloqueos_respetados
+- id: L1
+  texto: Web en español e inglés, con selector ES / EN en la cabecera
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:L1
+- id: L2
+  texto: Idioma inicial el del móvil; se recuerda la elección; enlace con ?lang=en
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:L2
+- id: L3
+  texto: Textos en archivos por idioma (site/i18n/es.json, en.json)
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:L3
+- id: L4
+  texto: Familias y grupos con nombre en los dos idiomas; fechas y números según el idioma
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:L4
+- id: L5
+  texto: Todos los textos existen en los dos idiomas y no queda texto sin traducir
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:L5
+- id: L6
+  texto: 'Nombre propio: Cara A (Side A) y logo de etiqueta de disco'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:L6
