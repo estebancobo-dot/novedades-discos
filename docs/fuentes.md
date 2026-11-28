@@ -255,3 +255,16 @@ sus condiciones: identificarse y 1 petición/s. Está declarada como excepción 
   - Por `robots.txt`: Sleaze Roxx y Rock & Blues Muse.
   - Por otros motivos: Rounder (sin página de novedades), Yep Roc (web parada desde 2024), Free Dirt (error de conexión segura), Thirty Tigers (sin página de novedades) y HNE (no responde).
 - **El mayor problema** para el objetivo sigue siendo que **Album of the Year no se puede leer**, así que no hay comparación directa con él.
+
+## Sustitutos de Heavy Harmonies (28-nov-2026)
+
+Heavy Harmonies sirve a las máquinas de GitHub unas reglas (robots.txt) que no permiten leerla. Se respeta y se
+añaden fuentes de AOR y rock clásico que sí lo permiten (comprobado su robots.txt y que no hay verificación anti-bots):
+
+| Fuente | Qué da | Estado |
+|---|---|---|
+| Ultimate Classic Rock – New Music Releases | Calendario de rock del mes en curso, por día (`ucr_lanzamientos`, mixta: solo entran los de nuestros géneros; libros, DVD y reediciones fuera) | ✅ |
+| Burning Minds / Art of Melody Music | Lanzamientos de AOR, melodic rock y westcoast con fecha (`burningminds_aor`; sencillos fuera) | ✅ |
+| Frontiers Music (sello principal de AOR) | Su web es una tienda dinámica: no hay lista legible sin JavaScript | ⛔ pendiente de otra vía |
+| MelodicRock.com, Pride & Joy | Permiten leer; falta escribir sus reglas | ⬜ |
+| Fireworks Magazine | Muestra verificación anti-bots | ❌ descartada (regla del usuario) |

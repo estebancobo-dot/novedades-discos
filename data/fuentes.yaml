@@ -1105,3 +1105,34 @@ fuentes:
   rol: sonda
   lector: sonda
   urls: [https://newwestrecords.bandcamp.com/music]
+
+# ---- Sustitutos de Heavy Harmonies para AOR y rock clásico (28-nov-2026: Heavy Harmonies no deja leer
+#      desde las máquinas de GitHub). Probadas con scraper.probar; robots.txt lo permite.
+- id: ucr_lanzamientos
+  nombre: Ultimate Classic Rock – New Music Releases (calendario anual)
+  web: https://ultimateclassicrock.com
+  familia: todas
+  rol: listado
+  mixta: true                    # rock clásico, pero también pop y libros: solo entran los de nuestros géneros
+  lector: texto
+  fecha_es: lanzamiento
+  urls: []
+  paginacion: {anios: {plantilla: "https://ultimateclassicrock.com/{anio}-new-music-releases/", desde: 2026, hasta: actual}}
+  anio_desde_url: '(\d{4})-new-music-releases'
+  texto: {desde: "Who's Releasing New Rock Records"}
+  cabecera_fecha: '^(?P<fecha>(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2})$'   # "Nov. 6", "Sept. 18"
+  excluir: '(?i)\((?:[^)]*\b(book|dvd|blu-ray|box|reissue|remaster|deluxe|anniversary|vinyl reissue)\b[^)]*)\)|\(book\)'
+  patrones:
+    - '^(?P<artista>[^,\n]{2,60}), (?P<titulo>[^(\n]+?)(?:\s*\((?P<extra>[^)\n]*)\))?$'
+- id: burningminds_aor
+  nombre: Burning Minds / Art of Melody Music – lanzamientos (AOR, melodic rock, westcoast)
+  web: https://www.burningmindsgroup.com
+  familia: hardrock
+  rol: listado
+  lector: texto
+  fecha_es: lanzamiento
+  dia_primero: true
+  urls: ["https://www.burningmindsgroup.com/art-of-melody-music/releases/"]
+  excluir: '(?i)\((single|ep)\)'
+  patrones:
+    - '^(?P<artista>[^\n]{2,60}?) - (?P<titulo>[^\n]+)\nRelease date: (?P<fecha>\d{2}-\d{2}-\d{4})'
