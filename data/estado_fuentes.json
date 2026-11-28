@@ -691,5 +691,16 @@
  "menciones": {
   "total": 164,
   "sin_pareja": 110
+ },
+ "etiquetas_extra": {
+  "discos_sin_subgenero": 2131,
+  "con_subgenero_tras_extra": 194,
+  "consultas": {
+   "deezer": 39,
+   "discogs": 20,
+   "wikidata": 198
+  },
+  "bloqueos": {},
+  "lastfm_sin_clave": true
  }
 }

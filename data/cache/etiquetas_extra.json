@@ -59,6 +59,10 @@
 "Experimental",
 "Rock"
 ],
+"dg:master:4160098": [
+"Indie Rock",
+"Rock"
+],
 "dg:master:4163773": [
 "Funk / Soul",
 "Pop"
@@ -666,6 +670,11 @@
 "Rock",
 "Blues"
 ],
+"dg:master:4325361": [
+"Alternative Rock",
+"Indie Rock",
+"Rock"
+],
 "dg:master:4326177": [
 "Afrobeat",
 "Contemporary R&B",
@@ -906,6 +915,11 @@
 "Electronic",
 "Jazz"
 ],
+"dg:master:4386483": [
+"Experimental",
+"Electronic",
+"Hip Hop"
+],
 "dg:master:4387332": [
 "Funk",
 "Psychedelic",
@@ -1131,6 +1145,11 @@
 "dg:release:36407095": [
 "Free Jazz",
 "Jazz"
+],
+"dg:release:36421039": [
+"Indie Pop",
+"Rock",
+"Pop"
 ],
 "dg:release:36425962": [
 "Ambient",
@@ -1374,6 +1393,9 @@
 "Contemporary R&B",
 "Funk / Soul"
 ],
+"dg:release:37248402": [
+"Hip Hop"
+],
 "dg:release:37254504": [
 "Country",
 "Rock",
@@ -1419,6 +1441,10 @@
 "Tech House",
 "Electronic"
 ],
+"dg:release:37399386": [
+"Country",
+"Folk, World, & Country"
+],
 "dg:release:37407630": [
 "Jazz",
 "Funk / Soul"
@@ -1452,6 +1478,13 @@
 "Hard Rock",
 "Blues Rock",
 "Rock"
+],
+"dg:release:37472124": [
+"Downtempo",
+"Ambient",
+"IDM",
+"Experimental",
+"Electronic"
 ],
 "dg:release:37476198": [
 "Contemporary R&B",
@@ -1790,6 +1823,10 @@
 "Electronic",
 "Rock"
 ],
+"dg:release:38217402": [
+"Alt-Pop",
+"Pop"
+],
 "dg:release:38240379": [
 "Folk, World, & Country"
 ],
@@ -2021,6 +2058,10 @@
 "Electronic",
 "Jazz",
 "Reggae"
+],
+"dg:release:38654934": [
+"Electro",
+"Electronic"
 ],
 "dg:release:38655723": [
 "Blues"
@@ -2873,6 +2914,11 @@
 "Rock",
 "Pop"
 ],
+"dga:1935123|its a style sport": [
+"Experimental",
+"Electronic",
+"Hip Hop"
+],
 "dga:1960626|four days in june": [
 "Alt-Pop",
 "Ambient",
@@ -2917,6 +2963,9 @@
 "Jazzy Hip-Hop",
 "Abstract",
 "Experimental",
+"Hip Hop"
+],
+"dga:225698|hendle": [
 "Hip Hop"
 ],
 "dga:2262477|endless cold endless darkness": [
@@ -3022,6 +3071,7 @@
 "dga:275401|imaginos iv rhyme of the starclock": [
 "Rock"
 ],
+"dga:275952|hurt feelings": [],
 "dga:277011|seasons": [],
 "dga:278318|powderhead": [
 "Rock"
@@ -3073,6 +3123,11 @@
 "Rock",
 "Folk, World, & Country"
 ],
+"dga:290084|lost in another world": [
+"Alternative Rock",
+"Indie Rock",
+"Rock"
+],
 "dga:290232|underworld": [
 "Speed Metal",
 "Power Metal",
@@ -3115,6 +3170,7 @@
 "Country",
 "Folk, World, & Country"
 ],
+"dga:3063217|heavy is the crown": [],
 "dga:3070925|most beautiful colours": [
 "Pop"
 ],
@@ -3421,6 +3477,7 @@
 "dga:467965|forager": [
 "Hip Hop"
 ],
+"dga:4693444|qwest": [],
 "dga:4693444|wrigglers": [
 "Ambient",
 "Experimental",
@@ -3634,6 +3691,10 @@
 "Country",
 "Folk, World, & Country"
 ],
+"dga:5987632|digitise": [
+"Electro",
+"Electronic"
+],
 "dga:5998650|seismo": [
 "Experimental",
 "Free Jazz",
@@ -3816,6 +3877,7 @@
 "dga:6729429|laced": [
 "Folk, World, & Country"
 ],
+"dga:6733372|survivor": [],
 "dga:67512|tough love": [
 "Folk Rock",
 "Acoustic",
@@ -3904,6 +3966,7 @@
 "Punk",
 "Rock"
 ],
+"dga:7250761|confirmation": [],
 "dga:7258177|longer than spring": [
 "Folk",
 "Folk Rock",
@@ -4025,6 +4088,10 @@
 ],
 "dga:7876422|labor of love": [
 "Funk / Soul"
+],
+"dga:7924236|lovesick sentimental": [
+"Indie Rock",
+"Rock"
 ],
 "dga:792636|vessel": [
 "Rock"
@@ -4191,6 +4258,10 @@
 "Soft Rock",
 "Rock",
 "Pop"
+],
+"dga:9590050|who you are": [
+"Country",
+"Folk, World, & Country"
 ],
 "dga:9606358|stories": [
 "Alt-Pop",
@@ -4880,6 +4951,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1055042352"
 },
+"dz:anderson paak and cordae|heavy is the crown": {},
 "dz:andrew farriss|andrew farriss": {},
 "dz:andrew farriss|prospector": {
 "id": 997431931,
@@ -5216,6 +5288,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/831305461"
 },
+"dz:artio|wakeup": {},
 "dz:artur menezes|microwaved dreams": {
 "id": 1131766651,
 "pistas": 9,
@@ -5577,6 +5650,7 @@
 "url": "https://www.deezer.com/album/994504101"
 },
 "dz:balthvs|manifest": {},
+"dz:balthvs|siente anthology": {},
 "dz:band camino|neveralways vol 2": {},
 "dz:band feel|what of now": {
 "id": 993502391,
@@ -6050,6 +6124,7 @@
 "url": "https://www.deezer.com/album/1039174872"
 },
 "dz:bitterness|hallowed be the game": {},
+"dz:bitumen|gedankenspirale": {},
 "dz:bitumen|reality red": {},
 "dz:bjork|bjork orkestral with the hamrahli choir": {},
 "dz:bjork|bjork orkestral with the hamrahli choir live at harpa hall reykjavik": {},
@@ -6349,6 +6424,14 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/cfa2e6cda77546c8a1143eec38b747c6/1000x1000-000000-80-0-0.jpg",
 "tipo": "album",
 "url": "https://www.deezer.com/album/967569591"
+},
+"dz:boards of canada|inferno": {
+"id": 992223821,
+"pistas": 18,
+"portada": "https://cdn-images.dzcdn.net/images/cover/5a7986a149f65856753186de43ae58c1/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/5a7986a149f65856753186de43ae58c1/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/992223821"
 },
 "dz:bob bradshaw|times got a mind of its own": {},
 "dz:bob catley|far away live in concert": {},
@@ -9792,6 +9875,22 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1023615961"
 },
+"dz:enhypen|sin bliss": {
+"id": 1057721362,
+"pistas": 6,
+"portada": "https://cdn-images.dzcdn.net/images/cover/0ac06aa38546c01bac1a4b9959bf8531/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/0ac06aa38546c01bac1a4b9959bf8531/1000x1000-000000-80-0-0.jpg",
+"tipo": "ep",
+"url": "https://www.deezer.com/album/1057721362"
+},
+"dz:enhypen|sin vanish": {
+"id": 897074672,
+"pistas": 11,
+"portada": "https://cdn-images.dzcdn.net/images/cover/aa65ff72d150f33010302e489f5a4f14/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/aa65ff72d150f33010302e489f5a4f14/1000x1000-000000-80-0-0.jpg",
+"tipo": "ep",
+"url": "https://www.deezer.com/album/897074672"
+},
 "dz:enneads|enneads": {},
 "dz:ennui|qroba": {},
 "dz:ensanguinate|death saturnalia": {},
@@ -10611,6 +10710,7 @@
 },
 "dz:fuath|iii": {},
 "dz:fucked up|grass can move stones part 2 year of the monkey": {},
+"dz:fucked up|grass can move stones part 3 year of the rooster": {},
 "dz:fucked up|year of the monkey": {},
 "dz:fucked up|year of the rooster": {
 "id": 1141234631,
@@ -10851,6 +10951,8 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/830412201"
 },
+"dz:geologist|geriatric rock the earth opuses 11 18": {},
+"dz:geologist|social scale": {},
 "dz:geordie gordon|river round": {},
 "dz:george mann and si kahn|mayday": {
 "id": 997118871,
@@ -10864,6 +10966,7 @@
 "dz:gerard starkie|before the calm acoustic": {},
 "dz:gerry beckley|merciful": {},
 "dz:gerry hundt trio|one more for me": {},
+"dz:gesaffelstein|enter the gamma": {},
 "dz:get arounds|going out tonight": {},
 "dz:get into trouble|premiere from travis mckeveny and the famous doctor scanlon band": {},
 "dz:getdown services|massive champion": {
@@ -10893,6 +10996,7 @@
 },
 "dz:ghost painted sky|failure blooms": {},
 "dz:ghost reflection|dark triad": {},
+"dz:ghostemane|am fm": {},
 "dz:ghostkid|follow the white rabbit": {
 "id": 1029798872,
 "pistas": 11,
@@ -11023,6 +11127,7 @@
 "dz:gjoll|on the forgetting of language": {},
 "dz:gladie|no need to be lonely": {},
 "dz:glaive and kurtains|god save the three": {},
+"dz:glaive|polesden lacey": {},
 "dz:glass eden|born from a wish": {},
 "dz:glass hammer|black light": {},
 "dz:glass hours|chapel glass": {
@@ -11548,6 +11653,7 @@
 "dz:gutvoid|liminal shrines": {},
 "dz:guy renardeau|four shades of blue": {},
 "dz:gwar and joe bob briggs|gwar and the last drive in stein": {},
+"dz:haai|digitise": {},
 "dz:hackett and rothery|roaring waves": {},
 "dz:hadnot creek|end of the road": {
 "id": 942157061,
@@ -12237,6 +12343,14 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/928265631"
 },
+"dz:icona pop|ritual": {
+"id": 1047271232,
+"pistas": 10,
+"portada": "https://cdn-images.dzcdn.net/images/cover/8b8997a74077e0504261f24a9990b7a0/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/8b8997a74077e0504261f24a9990b7a0/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1047271232"
+},
 "dz:iconic|ii": {
 "id": 956327311,
 "pistas": 11,
@@ -12364,6 +12478,7 @@
 "dz:induction|love kills": {},
 "dz:ineffectuals|serious one": {},
 "dz:infamous stringdusters|20 20": {},
+"dz:infamous stringdusters|dust the halls vol 2": {},
 "dz:inferi|heaven wept": {},
 "dz:inferno|anthropic sophisms": {},
 "dz:ingested|denigration": {},
@@ -12657,6 +12772,14 @@
 "url": "https://www.deezer.com/album/1007587671"
 },
 "dz:james curley|mortal": {},
+"dz:james ellis ford|lost in another world": {
+"id": 1004376461,
+"pistas": 12,
+"portada": "https://cdn-images.dzcdn.net/images/cover/1b25ca0e01fb03ca4bb87102ffbc5b9a/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/1b25ca0e01fb03ca4bb87102ffbc5b9a/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1004376461"
+},
 "dz:james felice|homeward blue": {},
 "dz:james felice|homeworld blue": {
 "id": 1064506961,
@@ -12679,6 +12802,14 @@
 "dz:jamie holka|git in where you fit in": {},
 "dz:jamie kindleyside|would you live with me on mars": {},
 "dz:jamie lenman|puke": {},
+"dz:jamie macdonald|jamie macdonald": {
+"id": 1117341532,
+"pistas": 30,
+"portada": "https://cdn-images.dzcdn.net/images/cover/3435e7060826df1efc7b95fd70974c0c/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/3435e7060826df1efc7b95fd70974c0c/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1117341532"
+},
 "dz:jamie oneal|gypsum": {},
 "dz:jamie richards|blue rock sessions": {},
 "dz:jamie t|ghosts 100 days of morning": {
@@ -13410,6 +13541,14 @@
 "url": "https://www.deezer.com/album/1001865261"
 },
 "dz:julia cumming|julia": {},
+"dz:julia holter|materia": {
+"id": 992238211,
+"pistas": 7,
+"portada": "https://cdn-images.dzcdn.net/images/cover/8c7c5b1ce3772defe8aa397dcb850dd2/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/8c7c5b1ce3772defe8aa397dcb850dd2/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/992238211"
+},
 "dz:julia jacklin|gem": {
 "id": 1069894191,
 "pistas": 10,
@@ -13483,6 +13622,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1128817361"
 },
+"dz:kaitlyn aurelia smith|ruin its not just music": {},
 "dz:kal el|astral voyager vol 2": {},
 "dz:kaleidobolt|karakuchi": {},
 "dz:kali malone|burning song": {
@@ -13996,6 +14136,7 @@
 "dz:klonns|g a m e s": {},
 "dz:kmfdm|enemy": {},
 "dz:kn ghts knight|supernatural lover": {},
+"dz:kneecap|fenian": {},
 "dz:knifeplay|what is truth": {},
 "dz:knights|supernatural lover": {},
 "dz:knox|my midwest best": {
@@ -14784,6 +14925,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1052425292"
 },
+"dz:logic1000|confirmation": {},
 "dz:lone bellow|what a time to be alive": {},
 "dz:lone wanderer|exequiae": {},
 "dz:lonely robot|ending": {},
@@ -15683,6 +15825,14 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1025639932"
 },
+"dz:mesh|fallen angel": {
+"id": 1101535202,
+"pistas": 2,
+"portada": "https://cdn-images.dzcdn.net/images/cover/310af5379b46b627d0d7e45029bae12b/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/310af5379b46b627d0d7e45029bae12b/1000x1000-000000-80-0-0.jpg",
+"tipo": "single",
+"url": "https://www.deezer.com/album/1101535202"
+},
 "dz:mesh|no fun at all": {
 "id": 997368061,
 "pistas": 11,
@@ -16060,6 +16210,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/921119621"
 },
+"dz:molotovs|welcome to urbia": {},
 "dz:monday morning brew special 174|celebrating down home music": {},
 "dz:mondtraume|mindgames": {},
 "dz:moni jitchell|aware": {},
@@ -16420,6 +16571,14 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/bad25c7e03ee1217d1056a380dd28def/1000x1000-000000-80-0-0.jpg",
 "tipo": "ep",
 "url": "https://www.deezer.com/album/918683861"
+},
+"dz:nate sib|reborn": {
+"id": 1053828772,
+"pistas": 10,
+"portada": "https://cdn-images.dzcdn.net/images/cover/922d1096af62f38a40f45c045c38e588/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/922d1096af62f38a40f45c045c38e588/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1053828772"
 },
 "dz:nathan evans fox|heirloom": {},
 "dz:nazareth|born under the wrong sign": {},
@@ -16796,6 +16955,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/966097281"
 },
+"dz:noah kahan|live from the great divide": {},
 "dz:noctambulant|revival": {},
 "dz:noctule|extinguish thy flame": {
 "id": 1023242771,
@@ -17528,6 +17688,14 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/915192541"
 },
+"dz:pet shop boys|man from the future": {
+"id": 1117358662,
+"pistas": 16,
+"portada": "https://cdn-images.dzcdn.net/images/cover/9c79889e218fa6b51d18954dc8fa1ada/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/9c79889e218fa6b51d18954dc8fa1ada/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1117358662"
+},
 "dz:pete fij|ups the new down": {},
 "dz:pete roth trio|group chat": {
 "id": 1025824302,
@@ -17661,6 +17829,7 @@
 "dz:pig|hurt people hurt": {},
 "dz:pillars of creation|be careful what you wish for": {},
 "dz:pillarstone|mono lit": {},
+"dz:pine tree junction|backyard tales": {},
 "dz:pineapple thief|far and wide": {
 "id": 1036267522,
 "pistas": 9,
@@ -17777,6 +17946,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1100706172"
 },
+"dz:polypores|qwest": {},
 "dz:polypores|wrigglers": {},
 "dz:pommer|clowned out": {},
 "dz:ponder the albatross|over hill and hollow": {},
@@ -18253,6 +18423,14 @@
 "dz:ravaged by the yeti|snowbound horror": {},
 "dz:rave in fire|square one": {},
 "dz:ravenspell|obsidian king": {},
+"dz:ravyn lenae|blue island": {
+"id": 996410461,
+"pistas": 14,
+"portada": "https://cdn-images.dzcdn.net/images/cover/aeb01d3852f8672dffa119327066ea5a/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/aeb01d3852f8672dffa119327066ea5a/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/996410461"
+},
 "dz:ray stevens|ray stevens favorites old and new": {},
 "dz:ray wylie hubbard|reel 2 reel 4 real": {
 "id": 978031651,
@@ -19337,6 +19515,14 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/938244291"
 },
+"dz:shabazz palaces|its a style sport": {
+"id": 1028308462,
+"pistas": 10,
+"portada": "https://cdn-images.dzcdn.net/images/cover/aeb837be59c49239077ffab0acdf4307/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/aeb837be59c49239077ffab0acdf4307/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1028308462"
+},
 "dz:shaboozey|outlaw cherie lee and other western tales": {
 "id": 1040732032,
 "pistas": 20,
@@ -20311,6 +20497,14 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/983853991"
 },
+"dz:stephen sanchez|love love love": {
+"id": 973423381,
+"pistas": 11,
+"portada": "https://cdn-images.dzcdn.net/images/cover/450deb4ca6879951ab0d184e29541ea6/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/450deb4ca6879951ab0d184e29541ea6/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/973423381"
+},
 "dz:stephen wilson jr|impressi n of a human children of the c rnerman": {},
 "dz:steppers|lights are always on": {
 "id": 969211411,
@@ -20376,6 +20570,7 @@
 },
 "dz:stoned statues|nothing is ever over": {},
 "dz:stone|autonomy": {},
+"dz:stone|happy birthday": {},
 "dz:storey littleton|at a diner": {},
 "dz:storm force|truth": {
 "id": 1125259832,
@@ -21412,6 +21607,7 @@
 },
 "dz:trevor b power band|two crows": {},
 "dz:trey hensley|cant outrun the blues": {},
+"dz:trials|hendle": {},
 "dz:tributes|buffalo rock city a live tribute to kiss": {},
 "dz:tributes|buffalo rock city dienasty": {},
 "dz:tributes|buffalo rock city ii western new yorks tribute to kiss": {},
@@ -21593,6 +21789,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1048622292"
 },
+"dz:twenty one pilots|supercycle live": {},
 "dz:twilight sad|its the long goodbye": {},
 "dz:twin atlantic|separation from the animals": {
 "id": 967954781,
@@ -22005,6 +22202,7 @@
 "dz:various artists|gamble flip": {},
 "dz:various artists|gnosis": {},
 "dz:various artists|good vibes vol 3": {},
+"dz:various artists|grand theft audio annual 2026": {},
 "dz:various artists|grand theft auto vi radio": {},
 "dz:various artists|gray house": {},
 "dz:various artists|gray house original soundtrack from the amazon series": {},
@@ -22020,6 +22218,7 @@
 "dz:various artists|homies 10th year anniversary compilation vol 2": {},
 "dz:various artists|homies 10th year anniversary compilation vol 3": {},
 "dz:various artists|hymns for a fading world": {},
+"dz:various artists|hype media japan hype selects vol 1": {},
 "dz:various artists|hypnotic community": {},
 "dz:various artists|ibiza 2026 collection": {},
 "dz:various artists|im here to make a sound 10 26": {},
@@ -22236,6 +22435,7 @@
 },
 "dz:vesseles|home": {},
 "dz:vetter|sort var bogen der bragte os hid": {},
+"dz:vexagon|children without a god": {},
 "dz:vexagon|i for an i": {},
 "dz:vexillary|digital suspiria": {},
 "dz:via doloris|guerre et paix": {},
@@ -23028,6 +23228,14 @@
 "dz:years of shame|primary": {},
 "dz:yebba|jean": {},
 "dz:yelawolf|45": {},
+"dz:yello|time lab": {
+"id": 1067382081,
+"pistas": 14,
+"portada": "https://cdn-images.dzcdn.net/images/cover/9da6554dda1ed0c941a6919e71a30144/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/9da6554dda1ed0c941a6919e71a30144/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1067382081"
+},
 "dz:yes|aurora": {},
 "dz:yes|live at roosevelt stadium jersey city 17 june 1976": {},
 "dz:yes|roosevelt stadium jersey city 17 june 1976": {
@@ -25977,11 +26185,18 @@
 "it:zelooperz and black noi e|pin breakers": {},
 "wd:Q104857477": [],
 "wd:Q104865154": [],
+"wd:Q106427550": [
+"hip-hop",
+"contemporary R&B"
+],
 "wd:Q106462586": [
 "African popular music",
 "Nigerian hip hop",
 "alté",
 "contemporary R&B"
+],
+"wd:Q106706": [
+"Western"
 ],
 "wd:Q1067983": [
 "drum and bass",
@@ -25992,6 +26207,11 @@
 ],
 "wd:Q106859592": [],
 "wd:Q107620857": [],
+"wd:Q1080476": [
+"heavy metal music",
+"hard rock"
+],
+"wd:Q110818562": [],
 "wd:Q110876429": [],
 "wd:Q112040093": [
 "indie rock"
@@ -25999,6 +26219,7 @@
 "wd:Q1123936": [
 "indie rock"
 ],
+"wd:Q113319226": [],
 "wd:Q113452679": [
 "country music"
 ],
@@ -26006,12 +26227,23 @@
 "wd:Q1142360": [
 "power metal"
 ],
+"wd:Q114458165": [
+"techno",
+"electronic music",
+"post-punk"
+],
+"wd:Q114656352": [],
+"wd:Q114797112": [],
 "wd:Q114842628": [
 "symphonic metal"
 ],
+"wd:Q115244429": [],
 "wd:Q115733300": [],
 "wd:Q115743893": [],
 "wd:Q115767888": [],
+"wd:Q1157870": [
+"country music"
+],
 "wd:Q116671823": [
 "alternative rock"
 ],
@@ -26022,12 +26254,21 @@
 "electronic dance music"
 ],
 "wd:Q117066641": [],
+"wd:Q117492474": [],
+"wd:Q118113083": [
+"power metal"
+],
 "wd:Q118389288": [],
+"wd:Q120846605": [],
 "wd:Q122043788": [],
 "wd:Q122840128": [
 "country music"
 ],
+"wd:Q123457005": [],
+"wd:Q123560330": [],
+"wd:Q123575827": [],
 "wd:Q124249556": [],
+"wd:Q124485055": [],
 "wd:Q124619320": [],
 "wd:Q124750337": [
 "hip-hop"
@@ -26035,24 +26276,53 @@
 "wd:Q1255122": [
 "power metal"
 ],
+"wd:Q127559972": [
+"country pop",
+"Southern rock"
+],
 "wd:Q128797556": [],
 "wd:Q1287983": [
 "country music"
 ],
+"wd:Q130223625": [],
+"wd:Q130279065": [],
+"wd:Q131154658": [],
 "wd:Q131317308": [
 "alternative pop",
 "dark pop",
 "art rock"
 ],
+"wd:Q131318965": [
+"hyperpop",
+"breakcore",
+"techno",
+"rave music",
+"electronic music",
+"jungle"
+],
+"wd:Q132718044": [
+"folk music"
+],
+"wd:Q133879146": [],
 "wd:Q133969137": [],
 "wd:Q134108869": [],
+"wd:Q134572973": [],
 "wd:Q134718184": [],
+"wd:Q135473062": [],
+"wd:Q136403295": [],
 "wd:Q136532653": [
 "heavy metal music"
 ],
 "wd:Q137766691": [],
+"wd:Q138005792": [],
+"wd:Q139243620": [],
 "wd:Q1395624": [],
 "wd:Q140050330": [],
+"wd:Q140310374": [],
+"wd:Q140611226": [],
+"wd:Q1409336": [
+"rock music"
+],
 "wd:Q1412342": [
 "alternative rock",
 "ska punk"
@@ -26064,6 +26334,13 @@
 "wd:Q14778157": [
 "speed metal"
 ],
+"wd:Q1482609": [
+"Christian metal",
+"progressive metal",
+"power metal",
+"heavy metal music",
+"neo-classical metal"
+],
 "wd:Q15059510": [],
 "wd:Q15123969": [
 "soul",
@@ -26071,8 +26348,18 @@
 "pop music",
 "rhythm and blues"
 ],
+"wd:Q1514026": [
+"country music"
+],
+"wd:Q15285290": [
+"electronic music",
+"neo soul"
+],
 "wd:Q1534828": [
 "dark rock"
+],
+"wd:Q15848009": [
+"alternative metal"
 ],
 "wd:Q15880": [
 "rock music",
@@ -26087,11 +26374,20 @@
 "wd:Q160778": [
 "heavy metal music"
 ],
+"wd:Q16235863": [
+"West Coast hip-hop",
+"alternative hip-hop",
+"gangsta rap"
+],
 "wd:Q16297": [],
+"wd:Q165864": [
+"country music"
+],
 "wd:Q16730378": [
 "Southern rock",
 "country music"
 ],
+"wd:Q16733818": [],
 "wd:Q1675588": [
 "alternative rock",
 "indie rock"
@@ -26103,6 +26399,10 @@
 "country rap",
 "rock music"
 ],
+"wd:Q16856459": [
+"power metal",
+"heavy metal music"
+],
 "wd:Q16929773": [
 "contemporary R&B",
 "rock music"
@@ -26111,8 +26411,13 @@
 "house music",
 "electro house"
 ],
+"wd:Q170328": [],
 "wd:Q17058495": [
 "rhythm and blues"
+],
+"wd:Q17306137": [
+"electronic music",
+"alternative R&B"
 ],
 "wd:Q17388812": [
 "alternative rock"
@@ -26122,11 +26427,34 @@
 "pop rock",
 "electronic rock"
 ],
+"wd:Q1787133": [
+"electronic music"
+],
+"wd:Q19004": [
+"electronic dance music",
+"pop music",
+"post-hardcore",
+"electro house",
+"dubstep",
+"brostep",
+"EDM trap music",
+"moombahton"
+],
 "wd:Q191660": [
 "power metal",
 "progressive metal"
 ],
+"wd:Q1933793": [
+"hip-hop",
+"rapping"
+],
 "wd:Q19384562": [],
+"wd:Q19666382": [
+"country music"
+],
+"wd:Q19745281": [
+"electronic music"
+],
 "wd:Q19787238": [
 "indie folk",
 "folk music",
@@ -26135,6 +26463,13 @@
 ],
 "wd:Q19872529": [
 "hip-hop"
+],
+"wd:Q19875487": [
+"alternative rock",
+"alternative R&B",
+"blue-eyed soul",
+"indie rock",
+"blues rock"
 ],
 "wd:Q19958219": [],
 "wd:Q2000851": [
@@ -26145,11 +26480,48 @@
 "disco",
 "plunderphonics"
 ],
+"wd:Q20657541": [
+"contemporary R&B",
+"pop music",
+"neo soul",
+"hip-hop"
+],
+"wd:Q20810369": [
+"contemporary R&B",
+"hip-hop",
+"pop music",
+"alternative hip-hop",
+"alternative R&B",
+"soul",
+"funk"
+],
 "wd:Q2096837": [
 "experimental music"
 ],
 "wd:Q21042697": [
 "rock music"
+],
+"wd:Q2127156": [
+"country music"
+],
+"wd:Q214227": [
+"Southern hip-hop",
+"trap music",
+"gangsta rap",
+"Atlanta hip-hop",
+"dirty south",
+"hardcore hip-hop"
+],
+"wd:Q218042": [
+"pop music",
+"rhythm and blues",
+"soul",
+"electronic music",
+"disco"
+],
+"wd:Q21964464": [],
+"wd:Q22080384": [
+"alternative rock"
 ],
 "wd:Q22080866": [],
 "wd:Q221289": [
@@ -26163,6 +26535,13 @@
 "soul",
 "neo soul"
 ],
+"wd:Q229445": [
+"pop music",
+"rhythm and blues",
+"electropop",
+"synth-pop",
+"contemporary R&B"
+],
 "wd:Q229498": [
 "pop music",
 "soul",
@@ -26173,6 +26552,24 @@
 "soft rock",
 "musical play"
 ],
+"wd:Q231259": [
+"country music",
+"country pop",
+"country rock",
+"country blues"
+],
+"wd:Q233750": [
+"pop music"
+],
+"wd:Q234144": [
+"pop music"
+],
+"wd:Q236125": [
+"rock music",
+"alternative rock"
+],
+"wd:Q23762478": [],
+"wd:Q23771323": [],
 "wd:Q24039414": [
 "post-punk"
 ],
@@ -26180,10 +26577,24 @@
 "wd:Q256783": [
 "folk music"
 ],
+"wd:Q26794276": [],
 "wd:Q2706308": [
 "hip-hop",
 "rap rock",
 "alternative hip-hop"
+],
+"wd:Q27662462": [
+"electronic dance music",
+"future bass"
+],
+"wd:Q27886640": [
+"alternative R&B",
+"contemporary R&B",
+"trap music",
+"cloud rap",
+"industrial music",
+"soul",
+"hip-hop soul"
 ],
 "wd:Q29452199": [
 "contemporary R&B",
@@ -26191,6 +26602,29 @@
 ],
 "wd:Q2982657": [
 "jazz"
+],
+"wd:Q29834614": [],
+"wd:Q2997024": [
+"bluegrass music",
+"country music",
+"Western music",
+"independent music",
+"folk music"
+],
+"wd:Q30122234": [],
+"wd:Q30314131": [],
+"wd:Q3050838": [
+"pop rock"
+],
+"wd:Q30587753": [],
+"wd:Q30603462": [
+"country music"
+],
+"wd:Q3076050": [
+"West Coast hip-hop",
+"gangsta rap",
+"dirty rap",
+"hardcore hip-hop"
 ],
 "wd:Q3111214": [
 "Afrobeat"
@@ -26201,18 +26635,35 @@
 "wd:Q318132": [
 "power metal"
 ],
+"wd:Q3183239": [
+"rock music"
+],
+"wd:Q320185": [],
 "wd:Q3263990": [
 "folk rock"
 ],
 "wd:Q3293065": [
 "electronic music"
 ],
+"wd:Q33026662": [],
+"wd:Q3481131": [],
 "wd:Q361927": [
 "jazz",
 "post-bop"
 ],
+"wd:Q3624971": [
+"pop music",
+"electropop",
+"pop rock",
+"indie rock",
+"alternative rock"
+],
+"wd:Q3649439": [],
 "wd:Q3693390": [
 "neoclassical dark wave"
+],
+"wd:Q377032": [
+"classical music"
 ],
 "wd:Q3893931": [
 "folk music"
@@ -26231,6 +26682,12 @@
 "wd:Q4383494": [
 "pop music"
 ],
+"wd:Q4499486": [
+"electroacoustic music",
+"pop art",
+"indie pop",
+"Baroque music"
+],
 "wd:Q453048": [
 "alternative hip-hop",
 "blues",
@@ -26241,15 +26698,44 @@
 "alternative rock",
 "hip-hop"
 ],
+"wd:Q4671711": [
+"electronic dance music",
+"EDM trap music",
+"hip-hop",
+"grime",
+"UK bass"
+],
 "wd:Q4677751": [
 "electronic music"
 ],
 "wd:Q4767345": [
 "classical music"
 ],
+"wd:Q4805524": [
+"country music"
+],
 "wd:Q49296479": [],
+"wd:Q4975485": [],
+"wd:Q50415953": [
+"experimental hip-hop",
+"alternative hip-hop",
+"industrial hip-hop",
+"psychedelic rap",
+"lo-fi music",
+"alternative R&B",
+"hardcore hip-hop"
+],
 "wd:Q5048449": [],
+"wd:Q5052561": [
+"country music"
+],
 "wd:Q5107761": [],
+"wd:Q5246027": [
+"country music"
+],
+"wd:Q528917": [
+"rock music"
+],
 "wd:Q5317118": [
 "country music"
 ],
@@ -26263,9 +26749,11 @@
 "folk music"
 ],
 "wd:Q5364515": [],
+"wd:Q536974": [],
 "wd:Q54141471": [
 "progressive rock"
 ],
+"wd:Q5459506": [],
 "wd:Q5466761": [
 "alternative rock",
 "contemporary Christian music"
@@ -26275,16 +26763,35 @@
 "trap music",
 "punk rap"
 ],
+"wd:Q55235816": [
+"ambient music",
+"drone music",
+"spoken word"
+],
 "wd:Q55583815": [],
+"wd:Q5564454": [
+"indie rock",
+"garage rock"
+],
+"wd:Q559609": [
+"rock music"
+],
 "wd:Q56191981": [],
+"wd:Q56290267": [],
 "wd:Q56513383": [
 "hip-hop",
 "trap music",
 "contemporary R&B"
 ],
+"wd:Q56825580": [
+"dark ambient",
+"drone music",
+"ritual ambient"
+],
 "wd:Q57418818": [
 "country music"
 ],
+"wd:Q57552249": [],
 "wd:Q59161718": [
 "hyperpop",
 "digicore",
@@ -26296,10 +26803,34 @@
 "emo rap",
 "trap music"
 ],
+"wd:Q59241691": [],
 "wd:Q599257": [
 "rock music"
 ],
+"wd:Q602602": [
+"rock music"
+],
+"wd:Q604940": [
+"electropop",
+"indie rock",
+"indie pop",
+"dance music",
+"house music"
+],
 "wd:Q60687448": [],
+"wd:Q6096": [
+"West Coast hip-hop",
+"G-funk",
+"gangsta rap",
+"reggae",
+"funk"
+],
+"wd:Q60964": [
+"pop music"
+],
+"wd:Q61014309": [
+"indie rock"
+],
 "wd:Q61732169": [
 "pop music"
 ],
@@ -26308,14 +26839,34 @@
 "electronic music",
 "rock music"
 ],
+"wd:Q6349276": [
+"hip-hop"
+],
 "wd:Q65586823": [
 "pop music"
 ],
 "wd:Q65600348": [],
+"wd:Q66342594": [
+"country music"
+],
+"wd:Q67085047": [],
+"wd:Q67399825": [
+"country music"
+],
 "wd:Q67632634": [],
+"wd:Q6838177": [],
+"wd:Q6967819": [
+"pop rock"
+],
+"wd:Q700116": [
+"symphonic metal"
+],
 "wd:Q70142786": [
 "hard rock",
 "classic rock"
+],
+"wd:Q7077499": [
+"hip-hop"
 ],
 "wd:Q707967": [
 "trip hop",
@@ -26328,6 +26879,46 @@
 "wd:Q7101536": [
 "electronic music"
 ],
+"wd:Q7108500": [
+"Southern rock",
+"jazz fusion"
+],
+"wd:Q714423": [
+"house music",
+"dance music"
+],
+"wd:Q722778": [
+"electronica",
+"intelligent dance music",
+"ambient techno",
+"ambient music",
+"folktronica",
+"downtempo"
+],
+"wd:Q7282023": [
+"minimalist music"
+],
+"wd:Q7355197": [
+"indie pop"
+],
+"wd:Q7422490": [],
+"wd:Q7539671": [
+"alternative hip-hop"
+],
+"wd:Q7559501": [],
+"wd:Q7596048": [
+"blues"
+],
+"wd:Q759716": [
+"a cappella",
+"folk music"
+],
+"wd:Q7816067": [
+"independent music"
+],
+"wd:Q7929372": [
+"blues"
+],
 "wd:Q79786367": [
 "drone music",
 "minimalist music",
@@ -26336,12 +26927,40 @@
 "wd:Q829939": [
 "hard rock"
 ],
+"wd:Q83182": [
+"minimalist music",
+"neoclassical new-age music",
+"20th-century classical music",
+"operatic pop"
+],
 "wd:Q84323645": [],
 "wd:Q85852040": [],
+"wd:Q87897322": [],
+"wd:Q95694810": [
+"Michigan rap",
+"Midwest hip-hop",
+"trap music",
+"gangsta rap"
+],
+"wd:Q966979": [
+"jazz"
+],
+"wd:Q99677483": [
+"soul"
+],
+"wd:Q99703516": [
+"Americana",
+"country music",
+"rock and roll",
+"electric blues"
+],
+"wdl:Q1045541": "G-funk",
 "wdl:Q104695865": "hyperpop",
+"wdl:Q105527": "jazz fusion",
 "wdl:Q107515261": "digicore",
 "wdl:Q1092837": "post-bop",
 "wdl:Q1100989": "glitch",
+"wdl:Q1102161": "jungle",
 "wdl:Q110592306": "alté",
 "wdl:Q1136331": "nu jazz",
 "wdl:Q11366": "alternative rock",
@@ -26349,31 +26968,61 @@
 "wdl:Q11401": "hip-hop",
 "wdl:Q1166218": "dark rock",
 "wdl:Q1166726": "grime",
+"wdl:Q121667432": "psychedelic rap",
 "wdl:Q12362064": "emo rap",
+"wdl:Q123907465": "Michigan rap",
+"wdl:Q1253172": "Southern hip-hop",
+"wdl:Q12671486": "ritual ambient",
+"wdl:Q1298934": "synth-pop",
 "wdl:Q131272": "soul",
 "wdl:Q1317816": "indie folk",
 "wdl:Q1326777": "electroacoustic music",
+"wdl:Q1338153": "20th-century classical music",
+"wdl:Q134147": "pop art",
 "wdl:Q1379958": "contemporary Christian music",
+"wdl:Q1428637": "spoken word",
+"wdl:Q1435509": "folktronica",
+"wdl:Q1507298": "lo-fi music",
 "wdl:Q1640319": "experimental music",
+"wdl:Q164444": "funk",
+"wdl:Q16829781": "cloud rap",
+"wdl:Q170611": "techno",
 "wdl:Q1756101": "nu skool breaks",
 "wdl:Q183504": "indie rock",
+"wdl:Q185298": "a cappella",
 "wdl:Q186472": "folk rock",
 "wdl:Q188450": "electropop",
 "wdl:Q188994": "drum and bass",
+"wdl:Q193207": "ambient music",
 "wdl:Q193355": "blues rock",
+"wdl:Q2004156": "industrial hip-hop",
+"wdl:Q20378": "alternative metal",
 "wdl:Q20474": "dubstep",
 "wdl:Q20502": "house music",
 "wdl:Q205049": "world music",
 "wdl:Q205560": "trip hop",
+"wdl:Q20903": "brostep",
+"wdl:Q21092": "moombahton",
+"wdl:Q211573": "garage rock",
 "wdl:Q211723": "speed metal",
+"wdl:Q213714": "bluegrass music",
+"wdl:Q21590660": "Western",
 "wdl:Q217191": "soft rock",
 "wdl:Q217467": "art rock",
+"wdl:Q2256407": "hip-hop soul",
+"wdl:Q2280497": "country pop",
 "wdl:Q2281409": "dance-rock",
+"wdl:Q22908553": "future bass",
 "wdl:Q23301960": "dark pop",
+"wdl:Q2336819": "operatic pop",
+"wdl:Q2346991": "UK bass",
+"wdl:Q2407862": "Americana",
 "wdl:Q25094849": "art pop",
 "wdl:Q251192": "downtempo",
+"wdl:Q2517263": "Midwest hip-hop",
 "wdl:Q268253": "neo soul",
 "wdl:Q2706919": "country rap",
+"wdl:Q2719078": "Western music",
 "wdl:Q272167": "shoegaze",
 "wdl:Q2743": "musical play",
 "wdl:Q2835456": "Nigerian hip hop",
@@ -26382,15 +27031,22 @@
 "wdl:Q316930": "dance music",
 "wdl:Q325504": "electronic rock",
 "wdl:Q37073": "pop music",
+"wdl:Q3709211": "dirty rap",
+"wdl:Q377910": "post-hardcore",
 "wdl:Q388296": "Afrobeat",
 "wdl:Q38848": "heavy metal music",
+"wdl:Q42201": "independent music",
+"wdl:Q429264": "West Coast hip-hop",
 "wdl:Q43343": "folk music",
 "wdl:Q438503": "alternative hip-hop",
 "wdl:Q45981": "rhythm and blues",
 "wdl:Q460674": "ska punk",
+"wdl:Q47781397": "EDM trap music",
+"wdl:Q4816198": "Atlanta hip-hop",
 "wdl:Q484344": "progressive metal",
 "wdl:Q484641": "pop rock",
 "wdl:Q486415": "symphonic metal",
+"wdl:Q487965": "industrial music",
 "wdl:Q49451": "progressive rock",
 "wdl:Q5421158": "experimental hip-hop",
 "wdl:Q56351111": "classic rock",
@@ -26399,23 +27055,44 @@
 "wdl:Q58339": "disco",
 "wdl:Q598929": "post-punk",
 "wdl:Q6010": "rapping",
+"wdl:Q613408": "country rock",
+"wdl:Q613874": "neoclassical new-age music",
 "wdl:Q627906": "electro house",
+"wdl:Q640097": "electric blues",
+"wdl:Q649823": "country blues",
 "wdl:Q650316": "drone music",
 "wdl:Q65089257": "punk rap",
+"wdl:Q660984": "intelligent dance music",
+"wdl:Q7118426": "alternative R&B",
 "wdl:Q7205507": "plunderphonics",
+"wdl:Q725011": "neo-classical metal",
 "wdl:Q7410145": "sampledelia",
+"wdl:Q753679": "gangsta rap",
+"wdl:Q756956": "dark ambient",
+"wdl:Q7749": "rock and roll",
+"wdl:Q817138": "electronica",
+"wdl:Q822914": "Christian metal",
 "wdl:Q83270": "hard rock",
 "wdl:Q8341": "jazz",
 "wdl:Q83440": "country music",
+"wdl:Q8361": "Baroque music",
+"wdl:Q842324": "indie pop",
 "wdl:Q848399": "easy listening",
 "wdl:Q850412": "contemporary R&B",
 "wdl:Q851213": "electronic dance music",
 "wdl:Q852767": "Southern rock",
+"wdl:Q8560269": "dirty south",
 "wdl:Q877693": "rap rock",
+"wdl:Q885561": "blue-eyed soul",
+"wdl:Q898709": "rave music",
 "wdl:Q899116": "neoclassical dark wave",
+"wdl:Q903735": "breakcore",
+"wdl:Q9149801": "ambient techno",
 "wdl:Q95469495": "alternative pop",
+"wdl:Q966564": "hardcore hip-hop",
 "wdl:Q972634": "African popular music",
 "wdl:Q9730": "classical music",
 "wdl:Q9759": "blues",
-"wdl:Q9778": "electronic music"
+"wdl:Q9778": "electronic music",
+"wdl:Q9794": "reggae"
 }
