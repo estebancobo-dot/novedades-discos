@@ -113,7 +113,7 @@ jobs:
           python -m scraper.etiquetas_llm aplicar
           python -m scraper.pipeline --desde=clasificar_2 --git
       # ---- Validación automática de todas las capas (scraper/validar.py + prueba en navegador) ----
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         if: always()
         with: {node-version: 22}
       - name: Validación automática (prueba en navegador + comprobaciones de cada capa)
