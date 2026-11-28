@@ -1,0 +1,16 @@
+{
+ "modo": "completa",
+ "inicio": "2026-11-28T07:10:39+00:00",
+ "terminada": false,
+ "fases": {
+  "recoger": {
+   "estado": "hecha",
+   "nota": "dada por hecha (--desde)",
+   "fin": "2026-11-28T07:10:39+00:00"
+  },
+  "enriquecer": {
+   "estado": "en_curso",
+   "inicio": "2026-11-28T07:10:39+00:00"
+  }
+ }
+}

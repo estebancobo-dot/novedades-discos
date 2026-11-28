@@ -1,0 +1,637 @@
+# Taxonomía cerrada. Un disco puede tener varios subgéneros.
+# - alias: variantes de escritura de las etiquetas de origen (MusicBrainz, Bandcamp,
+#   prensa…). Se comparan sin mayúsculas, acentos ni signos.
+# - frontera: true → se etiqueta, pero no es el foco: un disco que solo tenga
+#   subgéneros frontera y venga solo de fuentes "mixtas" no entra en la web.
+# - Los subgéneros nuevos NUNCA se crean solos: se proponen en docs/informe.md.
+#
+# Para añadir una familia o un subgénero basta con editar este archivo.
+
+reglas:
+  max_subgeneros: 4
+  # Un disco es "Destacado" con nota media >= este valor o con 3 reseñas o más.
+  destacado_nota: 8.0
+  # "Lo mejor del año": cuántas reseñas "imaginarias" con la nota media de todas se suman a cada
+  # disco al ordenar (media bayesiana). Con 2, una sola reseña de 10 cuenta como un 8,3.
+  peso_media_global: 2
+  # Etiquetas nuevas sin ninguna palabra de género (las de los alias + estas) se marcan "ninguno" sin
+  # LLM: son nombres de músicos, grupos, discos, sellos o lugares (scraper/mapear.py, paso 0).
+  ninguno_sin_palabra_de_genero: true
+  palabras_de_genero: [rock, metal, blues, folk, country, punk, pop, jazz, soul, funk, core, wave, grass, gaze, doom, death,
+    thrash, grind, sludge, stoner, psych, psychedelic, prog, progressive, indie, alternative, alt, emo, goth, gothic, industrial,
+    synth, electro, electronic, ambient, drone, noise, hardcore, americana, roots, gospel, bluegrass, rockabilly, swing, boogie,
+    rnb, "r&b", hip, hop, rap, trap, dub, reggae, ska, disco, house, techno, singer, songwriter, acoustic, orchestral, symphonic,
+    classical, avant, garde, experimental, shoegaze, grunge, garage, surf, lofi, lo-fi, outlaw, honky, tonk, western, cowboy,
+    appalachian, celtic, traditional, power, speed, heavy, melodic, djent, math, post, black, viking, pagan, crust, dark, ebm,
+    aor, glam, sleaze, southern, delta, piedmont, skiffle, zydeco, cajun, twang, old-time, fiddle, banjo, slide, harmonica,
+    nwobhm, osdm, outrun, krautrock, kosmische, neofolk]
+  # Etiquetas de MusicBrainz que se miran (están ordenadas por votos).
+  max_etiquetas_musicbrainz: 8
+  # En descripciones de texto libre solo se buscan alias de 2+ palabras o con guion,
+  # para evitar falsos positivos ("western Pennsylvania").
+  alias_en_texto_min_palabras: 2
+  # Etiquetas genéricas que, con peso fuerte (fuente, MusicBrainz principal, Discogs...), suman su
+  # familia aunque el disco ya tenga otras ("blues" en un disco de soul-blues de una web de americana).
+  genericas_suman_familia: [country, blues]
+
+familias:
+
+  country:
+    nombre: Country / Americana / Folk
+    nombre_corto: Country · Americana · Folk
+    # Indican la familia pero no un subgénero concreto.
+    genericas: [country, country music, country and western, country & western, c&w, nashville]
+    grupos:
+      Country:
+        traditional-country:
+          nombre: Traditional country
+          descripcion: "Country clásico de violín y steel guitar, y su revival neotradicional de los 80-90."
+          alias: [traditional country, classic country, neotraditional, neotraditional country, neo-traditional country, neo traditional country, old-school country, real country, traditional country music]
+        honky-tonk:
+          nombre: Honky-tonk
+          descripcion: "Country de bar y baile: ritmo marcado, steel guitar y letras de desamor y alcohol."
+          alias: [honky tonk, honky-tonk, honkytonk, honky tonk country]
+        outlaw-country:
+          nombre: Outlaw country
+          descripcion: "El country rebelde de los 70 (Waylon, Willie) y sus herederos: crudo y fuera de Nashville."
+          alias: [outlaw country, outlaw, outlaw music]
+        bakersfield:
+          nombre: Bakersfield
+          descripcion: "Country eléctrico y seco de California (Buck Owens, Merle Haggard): Telecaster y twang."
+          alias: [bakersfield, bakersfield sound]
+        western-swing:
+          nombre: Western swing
+          descripcion: "Country bailable con swing y jazz de Texas y Oklahoma (Bob Wills)."
+          alias: [western swing]
+        texas-red-dirt:
+          nombre: Texas / Red Dirt
+          descripcion: "Country de Texas y Oklahoma, entre el honky-tonk y el rock, con escena propia."
+          alias: [texas country, red dirt, red dirt country, texas red dirt, red dirt music, texas music]
+        country-pop:
+          nombre: Country pop
+          descripcion: "El country de las radios: producción pop y estribillos grandes."
+          alias: [country pop, country-pop, pop country, contemporary country, mainstream country, modern country, bro-country, bro country, nashville pop, new country]
+        country-rock:
+          nombre: Country rock
+          descripcion: "Country con batería y guitarras eléctricas del rock (Eagles, Poco)."
+          alias: [country rock, country-rock, southern country rock]
+        cosmic-country:
+          nombre: Cosmic country
+          descripcion: "Country con psicodelia y ambición progresiva (Gram Parsons, Sturgill Simpson)."
+          alias: [cosmic country, progressive country, cosmic american music, psychedelic country, psych country]
+        western:
+          nombre: Western
+          descripcion: "Canciones de vaqueros y del Oeste americano."
+          alias: [western, cowboy, cowboy songs, cowboy music, western music, cowboy western]
+      Americana:
+        americana:
+          nombre: Americana
+          descripcion: "Raíces estadounidenses mezcladas: country, folk, rock, blues y soul con sensibilidad de autor."
+          alias: [americana, roots, roots music, american roots, american roots music, roots americana]
+        alt-country:
+          nombre: Alt-country
+          descripcion: "Country alternativo nacido del punk y el indie (Uncle Tupelo, Whiskeytown)."
+          alias: [alt-country, alt country, alternative country, insurgent country, altcountry]
+        roots-rock:
+          nombre: Roots rock
+          descripcion: "Rock de raíces: directo, terrenal, cercano al country y al blues."
+          alias: [roots rock, roots-rock, american roots rock]
+        southern-gothic:
+          nombre: Southern gothic
+          descripcion: "Americana oscura de historias sureñas sombrías y atmósfera inquietante."
+          alias: [southern gothic, gothic americana, gothic country, dark americana, dark country]
+        country-soul:
+          nombre: Country soul
+          descripcion: "El encuentro del country y el soul sureño (Muscle Shoals, Memphis)."
+          alias: [country soul, country-soul]
+        cowpunk:
+          nombre: Cowpunk
+          descripcion: "Country tocado con la energía y la actitud del punk."
+          alias: [cowpunk, cow punk, country punk, punk country]
+      Bluegrass y old-time:
+        bluegrass:
+          nombre: Bluegrass
+          descripcion: "Banjo, mandolina y violín acústicos, armonías y virtuosismo (Bill Monroe)."
+          alias: [bluegrass, traditional bluegrass, bluegrass music]
+        newgrass:
+          nombre: Newgrass
+          descripcion: "Bluegrass progresivo que se abre al rock, el jazz y la improvisación."
+          alias: [newgrass, progressive bluegrass, jamgrass, new grass]
+        old-time:
+          nombre: Old-time
+          descripcion: "Música de cuerda tradicional de los Apalaches, anterior al bluegrass."
+          alias: [old-time, old time, oldtime, old-time music, string band, appalachian, appalachian music, clawhammer, old time music]
+      Folk:
+        singer-songwriter:
+          nombre: Singer-songwriter
+          tambien_en: [cantautores]
+          descripcion: "Canciones de autor centradas en la letra y la voz."
+          alias: [singer-songwriter, singer songwriter, singer/songwriter, songwriter]
+        contemporary-folk:
+          nombre: Contemporary folk
+          descripcion: "Folk actual de raíz acústica y canción de autor."
+          alias: [contemporary folk, folk, modern folk, folk music, acoustic folk, american folk]
+        indie-folk:
+          nombre: Indie folk
+          descripcion: "Folk con sensibilidad y producción indie."
+          alias: [indie folk, indie-folk, folk indie]
+        folk-rock:
+          nombre: Folk rock
+          descripcion: "Folk electrificado con banda de rock (Byrds, Fairport Convention)."
+          alias: [folk rock, folk-rock, electric folk]
+        traditional-folk:
+          nombre: Traditional folk
+          descripcion: "Canciones tradicionales británicas, irlandesas, celtas o apalaches."
+          alias: [traditional folk, trad folk, british folk, english folk, celtic folk, irish folk, scottish folk, appalachian folk, celtic, folk traditional]
+        psych-folk:
+          nombre: Psych folk
+          descripcion: "Folk con psicodelia, rarezas y atmósferas oníricas."
+          alias: [psych folk, psych-folk, psychedelic folk, freak folk, acid folk, freak-folk]
+        folk-pop:
+          nombre: Folk pop
+          descripcion: "Folk accesible con estribillos pop (stomp and holler)."
+          alias: [folk pop, folk-pop, indie folk pop]
+      Fronteras:
+        country-blues:
+          nombre: Country blues
+          tambien_en: [blues]
+          descripcion: "Blues acústico rural del Delta y del Piedmont."
+          frontera: true
+          alias: [country blues, acoustic blues, delta blues, piedmont blues]
+        southern-gospel:
+          nombre: Southern gospel
+          descripcion: "Gospel cristiano del sur blanco, con armonías vocales."
+          frontera: true
+          alias: [southern gospel, country gospel, bluegrass gospel]
+        heartland-rock:
+          nombre: Heartland rock
+          descripcion: "Rock del corazón de EE. UU., directo y narrativo (Springsteen, Mellencamp)."
+          frontera: true
+          alias: [heartland rock, heartland]
+
+  hardrock:
+    nombre: Hard rock / AOR
+    nombre_corto: Hard rock · AOR
+    genericas: [hard rock, hard-rock, hardrock, rock, classic rock, heavy rock]
+    grupos:
+      AOR y melodic:
+        aor:
+          nombre: AOR
+          tambien_en: [rockmetal]
+          descripcion: "Rock adulto melódico de los 70-80: teclados, coros y estribillos (Journey, Foreigner)."
+          alias: [aor, adult oriented rock, album oriented rock, melodic rock / aor, melodic rock aor]
+        melodic-rock:
+          nombre: Melodic rock
+          descripcion: "Rock con melodía y estribillo por delante, heredero del AOR."
+          alias: [melodic rock, melodic rock / aor, melodic rock aor]
+        westcoast:
+          nombre: Westcoast
+          descripcion: "AOR suave y sofisticado de la costa oeste, con jazz y soul (Toto, Airplay)."
+          alias: [westcoast, west coast, west coast aor, pop aor, pop aor / westcoast, yacht rock]
+        arena-rock:
+          nombre: Arena rock
+          tambien_en: [rockmetal]
+          descripcion: "Rock de grandes estadios: himnos para corear."
+          alias: [arena rock, stadium rock]
+        melodic-hard-rock:
+          nombre: Melodic hard rock
+          descripcion: "Hard rock con melodías AOR; muy fuerte en la escena escandinava."
+          alias: [melodic hard rock, scandinavian melodic rock, swedish melodic rock, scandinavian hard rock, swedish hard rock]
+      Hard rock:
+        classic-hard-rock:
+          nombre: Classic hard rock (70s)
+          descripcion: "Hard rock de los 70 o que suena a él (Deep Purple, Bad Company)."
+          alias: [classic hard rock, 70s hard rock, 1970s hard rock, 70s rock, proto-metal, proto metal]
+        80s-hard-rock:
+          nombre: 80s hard rock
+          descripcion: "Hard rock de los 80: guitarras afiladas y producción grande."
+          alias: [80s hard rock, 1980s hard rock, 80s rock, 80s hard rock / heavy metal]
+        glam-sleaze:
+          nombre: Glam / sleaze
+          descripcion: "Hair metal, glam y sleaze: actitud, laca y riffs (Mötley Crüe, Skid Row)."
+          alias: [glam metal, hair metal, sleaze rock, sleaze, sleaze glam, sleaze metal, pop metal, glam sleaze, hair rock]
+        blues-rock:
+          nombre: Blues rock
+          tambien_en: [blues]
+          descripcion: "Rock duro basado en el blues."
+          alias: [blues rock, blues-rock, hard blues, heavy blues, southern or blues rock, blues rock / hard rock]
+        southern-rock:
+          nombre: Southern rock
+          descripcion: "Rock del sur de EE. UU. con boogie, blues y country (Lynyrd Skynyrd)."
+          alias: [southern rock, southern or blues rock, southern hard rock]
+        modern-hard-rock:
+          nombre: Modern hard rock
+          descripcion: "Hard rock actual de radio: post-grunge y active rock."
+          alias: [modern hard rock, post-grunge, post grunge, active rock, modern rock, hard rock modern]
+        retro-rock:
+          nombre: Retro rock
+          descripcion: "Bandas nuevas que suenan a rock de los 70 (Greta Van Fleet, Rival Sons)."
+          alias: [retro rock, new wave of classic rock, nwocr, classic rock revival, 70s rock revival, rock revival]
+        stoner-rock:
+          nombre: Stoner rock
+          tambien_en: [rockmetal]
+          descripcion: "Riffs lentos y graves, fuzz y desierto (Kyuss, Fu Manchu)."
+          alias: [stoner rock, stoner, desert rock, fuzz rock, stoner metal]
+      Prog:
+        prog-rock:
+          nombre: Prog rock
+          tambien_en: [rockmetal]
+          descripcion: "Rock progresivo: estructuras largas, virtuosismo y ambición."
+          alias: [progressive rock, prog rock, prog, prog-rock, symphonic prog, symphonic rock, art rock]
+        prog-aor:
+          nombre: Prog AOR / neo-prog
+          descripcion: "Progresivo melódico y neo-prog, cerca del AOR (Marillion, IQ)."
+          alias: [melodic prog, neo-prog, neo prog, neo-progressive, neo-progressive rock, prog aor, progressive aor, crossover prog]
+      Fronteras:
+        melodic-metal:
+          nombre: Melodic metal
+          descripcion: "Heavy metal melódico, frontera con el hard rock."
+          frontera: true
+          alias: [melodic metal, melodic heavy metal]
+        power-metal:
+          nombre: Power metal
+          tambien_en: [rockmetal]
+          descripcion: "Metal rápido y épico de estribillos grandes."
+          frontera: true
+          alias: [power metal, melodic power metal, symphonic power metal]
+        soft-rock:
+          nombre: Soft rock
+          tambien_en: [indiepop]
+          descripcion: "Rock suave de radio adulta, frontera con el westcoast."
+          frontera: true
+          alias: [soft rock, soft-rock, adult contemporary rock]
+
+  # ---- Importado de agenda-conciertos (familias en foco) con scraper/importar_taxonomia.py ----
+  rockmetal:
+    nombre: Rock y metal
+    nombre_corto: Rock y metal
+    genericas: [metal, metal music, heavy, rock & metal, rock and metal]
+    grupos:
+      Rock y metal:
+        acid-rock:
+          nombre: "Acid rock"
+          alias: ["acid rock"]
+        alternative-rock:
+          nombre: "Alternative rock"
+          alias: ["alternative rock", "rock alternativo"]
+        atmospheric-black-metal:
+          nombre: "Atmospheric black metal"
+          alias: ["atmospheric black metal"]
+        avantgarde:
+          nombre: "Avantgarde"
+          alias: ["avantgarde"]
+          frontera: true        # "avant-garde" a secas también es clásica o jazz: solo no basta
+        black-metal:
+          nombre: "Black metal"
+          alias: ["black metal"]
+        classic-rock:
+          nombre: "Classic rock"
+          tambien_en: [hardrock]
+          alias: ["classic rock", "rock clasico"]
+        death-metal:
+          nombre: "Death metal"
+          alias: ["death metal"]
+        deathcore:
+          nombre: "Deathcore"
+          alias: ["deathcore"]
+        depressive-black-metal:
+          nombre: "Depressive black metal"
+          alias: ["depressive black metal"]
+        doo-wop:
+          nombre: "Doo-wop"
+          alias: ["doo wop"]
+        doom-metal:
+          nombre: "Doom metal"
+          alias: ["doom", "doom metal"]
+        emo:
+          nombre: "Emo"
+          alias: ["emo"]
+        ethereal:
+          nombre: "Ethereal"
+          alias: ["ethereal"]
+        experimental:
+          nombre: "Experimental"
+          alias: ["experimental"]
+          frontera: true        # "experimental" a secas también es electrónica, clásica o jazz
+        folk-metal:
+          nombre: "Folk metal"
+          alias: ["folk metal"]
+        funeral-doom-metal:
+          nombre: "Funeral doom metal"
+          alias: ["funeral doom metal"]
+        funk-metal:
+          nombre: "Funk metal"
+          alias: ["funk metal"]
+        glam:
+          nombre: "Glam"
+          alias: ["glam", "glam rock"]
+        goregrind:
+          nombre: "Goregrind"
+          alias: ["goregrind"]
+        goth-rock:
+          nombre: "Goth rock"
+          alias: ["goth rock", "gothic rock", "rock gotico"]
+        gothic-metal:
+          nombre: "Gothic metal"
+          alias: ["gothic metal"]
+        grindcore:
+          nombre: "Grindcore"
+          alias: ["grindcore"]
+        groove-metal:
+          nombre: "Groove metal"
+          alias: ["groove metal"]
+        grunge:
+          nombre: "Grunge"
+          alias: ["grunge"]
+        hard-rock:
+          nombre: "Hard rock"
+          tambien_en: [hardrock]
+          alias: ["hard rock", "rock duro"]
+        heavy-metal:
+          nombre: "Heavy metal"
+          alias: ["heavy metal", "new wave of british heavy metal", "nwobhm"]
+        industrial:
+          nombre: "Industrial"
+          alias: ["industrial"]
+        industrial-metal:
+          nombre: "Industrial metal"
+          alias: ["industrial metal"]
+        instrumental:
+          nombre: "Instrumental"
+          alias: ["instrumental"]
+        j-rock:
+          nombre: "J-Rock"
+          alias: ["j-rock"]
+        krautrock:
+          nombre: "Krautrock"
+          alias: ["krautrock"]
+        lounge:
+          nombre: "Lounge"
+          alias: ["lounge"]
+        math-rock:
+          nombre: "Math rock"
+          alias: ["math rock"]
+        melodic-death-metal:
+          nombre: "Melodic death metal"
+          alias: ["melodic death metal"]
+        metalcore:
+          nombre: "Metalcore"
+          alias: ["metalcore"]
+        noise:
+          nombre: "Noise"
+          alias: ["noise", "noise rock"]
+        noisecore:
+          nombre: "Noisecore"
+          alias: ["noisecore"]
+        nu-metal:
+          nombre: "Nu metal"
+          alias: ["metal alternativo", "nu metal"]
+        pornogrind:
+          nombre: "Pornogrind"
+          alias: ["pornogrind"]
+        post-rock:
+          nombre: "Post-rock"
+          alias: ["post rock", "post-rock"]
+        post-metal:
+          nombre: "Post-Metal"
+          alias: ["post-metal"]
+        power-violence:
+          nombre: "Powerviolence"
+          alias: ["power violence"]
+        progressive-metal:
+          nombre: "Progressive metal"
+          alias: ["metal progresivo", "progressive metal"]
+        psychedelic-rock:
+          nombre: "Psychedelic rock"
+          alias: ["psicodelia", "psych", "psychedelic", "psychedelic rock", "rock psicodelico"]
+        rock-opera:
+          nombre: "Rock opera"
+          alias: ["rock opera"]
+        skiffle:
+          nombre: "Skiffle"
+          alias: ["skiffle"]
+        sludge-metal:
+          nombre: "Sludge metal"
+          alias: ["sludge", "sludge metal"]
+        space-rock:
+          nombre: "Space rock"
+          alias: ["space rock"]
+        speed-metal:
+          nombre: "Speed metal"
+          alias: ["speed metal"]
+        swamp-pop:
+          nombre: "Swamp pop"
+          alias: ["swamp pop"]
+        technical-death-metal:
+          nombre: "Technical death metal"
+          alias: ["technical death metal"]
+        thrash:
+          nombre: "Thrash"
+          alias: ["thrash", "thrash metal"]
+        twist:
+          nombre: "Twist"
+          alias: ["twist"]
+        viking-metal:
+          nombre: "Viking metal"
+          alias: ["viking metal"]
+        ye-ye:
+          nombre: "Yé-Yé"
+          alias: ["yé-yé"]
+  punkgarage:
+    nombre: Punk y garage
+    nombre_corto: Punk y garage
+    genericas: [punks]
+    grupos:
+      Punk y garage:
+        beat:
+          nombre: "Beat"
+          alias: ["beat"]
+        crust:
+          nombre: "Crust"
+          alias: ["crust"]
+        deathrock:
+          nombre: "Deathrock"
+          alias: ["deathrock"]
+        garage-rock:
+          nombre: "Garage rock"
+          alias: ["garage", "garage punk", "garage rock"]
+        hardcore:
+          nombre: "Hardcore"
+          alias: ["hardcore", "hardcore punk"]
+        melodic-hardcore:
+          nombre: "Melodic hardcore"
+          alias: ["melodic hardcore"]
+        mod:
+          nombre: "Mod"
+          alias: ["mod"]
+        no-wave:
+          nombre: "No wave"
+          alias: ["no wave"]
+        oi:
+          nombre: "Oi!"
+          alias: ["oi"]
+        pop-punk:
+          nombre: "Pop punk"
+          alias: ["pop punk"]
+        post-hardcore:
+          nombre: "Post-Hardcore"
+          alias: ["post-hardcore"]
+        post-punk:
+          nombre: "Post-Punk"
+          alias: ["post punk", "post-punk"]
+        psychobilly:
+          nombre: "Psychobilly"
+          alias: ["psychobilly"]
+        pub-rock:
+          nombre: "Pub rock"
+          alias: ["pub rock"]
+        punk:
+          nombre: "Punk"
+          alias: ["punk", "punk rock"]
+        rock-and-roll:
+          nombre: "Rock & roll"
+          alias: ["rock & roll", "rock and roll", "rock n roll"]
+        rockabilly:
+          nombre: "Rockabilly"
+          alias: ["rockabilly"]
+        ska:
+          nombre: "Ska"
+          alias: ["ska", "ska punk"]
+        surf:
+          nombre: "Surf"
+          alias: ["surf", "surf rock"]
+  indiepop:
+    nombre: Indie y pop-rock
+    nombre_corto: Indie y pop-rock
+    genericas: [indie, alternative, alt, indie alternative, indie music]
+    grupos:
+      Indie y pop-rock:
+        brit-pop:
+          nombre: "Britpop"
+          alias: ["brit pop", "britpop"]
+        dream-pop:
+          nombre: "Dream pop"
+          alias: ["dream pop"]
+        indie-pop:
+          nombre: "Indie pop"
+          alias: ["indie pop"]
+        indie-rock:
+          nombre: "Indie rock"
+          alias: ["indie rock"]
+        jangle-pop:
+          nombre: "Jangle pop"
+          alias: ["jangle pop"]
+        lo-fi:
+          nombre: "Lo-fi"
+          alias: ["lo-fi"]
+        new-wave:
+          nombre: "New wave"
+          alias: ["new wave"]
+        pop-rock:
+          nombre: "Pop rock"
+          alias: ["pop / rock", "pop rock", "pop, rock", "pop-rock"]
+        power-pop:
+          nombre: "Power pop"
+          alias: ["power pop"]
+        shoegaze:
+          nombre: "Shoegaze"
+          alias: ["shoegaze"]
+  blues:
+    nombre: Blues
+    nombre_corto: Blues
+    genericas: [blues, blues music]
+    grupos:
+      Blues:
+        boogie-woogie:
+          nombre: "Boogie-woogie"
+          alias: ["boogie woogie", "boogie-woogie"]
+        chicago-blues:
+          nombre: "Chicago blues"
+          alias: ["chicago blues"]
+        east-coast-blues:
+          nombre: "East Coast blues"
+          alias: ["east coast blues"]
+        electric-blues:
+          nombre: "Electric blues"
+          alias: ["blues electrico", "electric blues"]
+        harmonica-blues:
+          nombre: "Harmonica blues"
+          alias: ["harmonica blues"]
+        hill-country-blues:
+          nombre: "Hill country blues"
+          alias: ["hill country blues"]
+        jump-blues:
+          nombre: "Jump blues"
+          alias: ["jump blues"]
+        louisiana-blues:
+          nombre: "Louisiana blues"
+          alias: ["louisiana blues"]
+        memphis-blues:
+          nombre: "Memphis blues"
+          alias: ["memphis blues"]
+        modern-electric-blues:
+          nombre: "Modern electric blues"
+          alias: ["modern electric blues"]
+        piano-blues:
+          nombre: "Piano blues"
+          alias: ["piano blues"]
+        rhythm-and-blues:
+          nombre: "Rhythm & blues"
+          alias: ["rhythm & blues", "rhythm and blues"]
+        texas-blues:
+          nombre: "Texas blues"
+          alias: ["texas blues"]
+  synthdark:
+    nombre: Synthwave y dark wave
+    nombre_corto: Synthwave y dark wave
+    genericas: [synth, synths, 80s synth]
+    grupos:
+      Synthwave y dark wave:
+        chillwave:
+          nombre: "Chillwave"
+          alias: ["chillwave"]
+        coldwave:
+          nombre: "Coldwave"
+          alias: ["cold wave", "coldwave", "minimal synth", "minimal wave", "minimal-wave"]
+        darkwave:
+          nombre: "Darkwave"
+          alias: ["dark wave", "dark-wave", "darkwave", "ethereal wave", "neue deutsche todeskunst"]
+        dungeon-synth:
+          nombre: "Dungeon synth"
+          alias: ["dungeon synth"]
+        ebm:
+          nombre: "EBM"
+          alias: ["aggrotech", "dark electro", "ebm", "electro industrial", "electro-industrial", "electronic body music", "future pop", "futurepop", "industrial dance"]
+        electroclash:
+          nombre: "Electroclash"
+          alias: ["electroclash"]
+        italo-disco:
+          nombre: "Italo-Disco"
+          alias: ["italo disco", "italo-disco", "italodisco"]
+        synth-pop:
+          nombre: "Synth-pop"
+          alias: ["electro pop synth", "new romantic", "synth pop", "synth-pop", "synthpop", "techno pop", "technopop", "tecnopop"]
+        synthwave:
+          nombre: "Synthwave"
+          alias: ["chillsynth", "chillwave synth", "cybersynth", "dark synth", "darksynth", "dreamwave", "new retro wave", "newretrowave", "outrun", "retro wave", "retrowave", "sovietwave", "space synth", "spacesynth", "synth rock", "synth wave", "synth-wave", "synthrock", "synthwave"]
+        vaporwave:
+          nombre: "Vaporwave"
+          alias: ["vaporwave"]
+        witch-house:
+          nombre: "Witch house"
+          alias: ["witch house"]
+  cantautores:
+    nombre: Cantautores
+    nombre_corto: Cantautores
+    grupos:
+      Cantautores:
+        cantautor:
+          nombre: "Cantautor"
+          alias: ["cancion de autor", "canción de autor", "cantautor", "cantautora"]
+
+# Categorías de los feeds y otras etiquetas que no son géneros (se ignoran sin consultar al LLM).
+ignorar_regex: '(?i)\b(album reviews?|reviews?|news|all posts|posts?|videos?|streams?|premieres?|interviews?|playlists?|readers|pick|featured|of the (week|month|year)|best of|reissues?|box ?sets?|artist of|exclusives?|galler(y|ies)|podcasts?|tours?|mobile|charts?|uncategori[sz]ed|lists?|essentials?|features?|columns?|blog|giveaways?|contests?|special purpose|guitarist|songwriting|concept album|live album|debut album|single|singles|ep|eps|pure metal)\b|\b(pr|publicity|press|records|recordings|music group)\s*$|^#|^(american|belgian|brazilian|british|danish|dutch|english|french|german|irish|italian|japanese|polish|russian|spanish|swedish|norwegian|finnish|scottish|austrian|swiss|chilean|peruvian|portuguese|icelandic|belarusian|costa rican|greek|international|uk|u\.k\.|us|new zealand)\s+(metal|rock)$'
+
+# Etiquetas que no dicen nada de género (lugares, décadas, formatos…). No se
+# consultan al LLM ni cuentan como "sin encajar".
+ignorar: ["folk, world, & country", usa, us, uk, american, british, canadian, australian, english, scottish, irish, swedish, norwegian, finnish, german, italian, nashville tennessee, texas usa, male vocalists, female vocalists, female vocals, male vocals, vocal, vocals, live, album, albums, music, new, 2020s, 2026, 2025, 2027, guitar, acoustic, instrumental, band, cover, covers, christmas, holiday, vinyl, cd, cassette, digital, debut, ep, lp, seen live, favorites, favourite, a]

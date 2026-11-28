@@ -1,0 +1,153 @@
+# Configuración general. Todo lo que el robot decide sale de aquí,
+# de data/fuentes.yaml y de data/taxonomia.yaml. Cambiar estos valores
+# no requiere tocar código.
+
+ventana:
+  meses_atras: 5          # discos publicados desde hace N meses...
+  meses_adelante: 6       # ...y anunciados hasta dentro de N meses ("próximamente")
+  anios_completos: [2026] # años enteros que se recogen además de los últimos N meses
+
+recogida:
+  # En la ejecución semanal (--incremental) solo se releen las páginas de los
+  # últimos N días; lo recogido antes se conserva mientras siga en la ventana.
+  dias_relectura_incremental: 21
+  # MusicBrainz: si un disco no aparece, se vuelve a buscar pasados N días.
+  dias_reintento_musicbrainz: 10
+  # Lo leído de cada fuente se guarda al momento; si la recogida se corta y se relanza
+  # antes de N horas, esas fuentes no se vuelven a leer (0 = no reutilizar nunca).
+  horas_validez_lecturas: 30
+
+identificacion:
+  # Cómo se presenta el robot a las webs. Sin datos personales.
+  user_agent: "Mozilla/5.0 (compatible; music-release-tracker/0.1)"
+  user_agent_musicbrainz: "music-release-tracker/0.1 ( generic research client )"
+
+peticiones:
+  intervalo_por_defecto: 2.0     # segundos entre peticiones a una misma web
+  intervalos:                    # excepciones por web
+    musicbrainz.org: 1.1
+    bandcamp.com: 4.0
+    api.discogs.com: 2.5          # sin clave: máximo 25 peticiones/minuto
+    wikidata.org: 2.0             # 27-nov: 429 a 1/s (la conexión de salida se comparte)
+    ws.audioscrobbler.com: 1.0
+    api.deezer.com: 0.25          # límite publicado: 50 peticiones cada 5 s (aquí, 4 por segundo)
+    itunes.apple.com: 4.0         # "unas 20 por minuto"; a 3,1 s respondió 403 (28-nov)
+    coverartarchive.org: 1.0
+  timeout: 30
+  respetar_robots_txt: true
+  # APIs públicas documentadas para uso por programas. Su robots.txt va dirigido a
+  # rastreadores web; se cumplen sus condiciones de uso (identificarse, ritmo).
+  apis_documentadas:
+    - https://musicbrainz.org/ws/2/     # https://musicbrainz.org/doc/MusicBrainz_API (1 petición/s)
+    - https://www.wikidata.org/wiki/Special:EntityData/   # https://www.wikidata.org/wiki/Wikidata:Data_access
+    - https://www.wikidata.org/w/api.php
+    - https://api.discogs.com/          # https://www.discogs.com/developers
+    - https://ws.audioscrobbler.com/2.0/  # https://www.last.fm/api
+    - https://api.deezer.com/           # https://developers.deezer.com/api
+    - https://itunes.apple.com/search   # API de búsqueda de iTunes (Apple)
+  cache_horas: 20                # no repetir la misma petición en este tiempo
+  reintentos_503: 5              # MusicBrainz responde 503 cuando está saturado
+  # MusicBrainz tarda ~3-4 s en responder. Con 4 consultas en paralelo se aprovecha esa
+  # espera sin pasar nunca del intervalo de arriba (1 petición cada 1,1 s).
+  hilos_musicbrainz: 4
+  # Fuentes y etiquetas extra en paralelo: son webs distintas; cada una conserva su ritmo.
+  hilos_fuentes: 6
+  hilos_enriquecer: 6
+
+# Señales de verificación anti-bots o bloqueo. Si aparecen, se deja la web
+# y se apunta en el informe. Nunca se intentan saltar.
+bloqueo:
+  estados: [401, 403, 429]
+  textos:
+    - "<title>Just a moment..."
+    - "<title>Client Challenge"
+    - "<title>Verifying your connection"
+    - "<title>Attention Required! | Cloudflare"
+    - "<title>429 Too Many Requests"
+    - "cf-mitigated"
+    - "Please wait while your request is being verified"   # verificación de WordPress/Sucuri (Rush On Rock, 27-nov)
+  cabeceras:
+    cf-mitigated: challenge
+
+reglas:
+  idiomas_permitidos: [eng]
+  # Si MusicBrainz no sabe el idioma: "mantener" (marcado como sin verificar) o "descartar".
+  idioma_desconocido: mantener
+  # EP: se descarta si alguna fuente o MusicBrainz lo dice. Si nadie dice el
+  # tipo, cuenta como EP con <= pistas_max_ep pistas.
+  pistas_max_ep: 6
+  # Tipos secundarios de MusicBrainz que no son "disco nuevo".
+  tipos_secundarios_excluidos: [Compilation, Soundtrack, Remix, DJ-mix, Mixtape/Street, Demo, Interview, Audiobook, Spokenword]
+  # Palabras en el título o en la descripción de la fuente que indican reedición.
+  reedicion: '(?i)\b(re-?release|reissue|re-?issue|remaster(ed)?|anniversary edition|\d+(st|nd|rd|th) anniversary|expanded edition|vinyl reissue|cd version|deluxe reissue|deluxe (version|edition) of|box set)\b'
+  # en descripciones largas no cuentan "box set" (formato de venta) ni el aniversario del artista ("marking his 50th anniversary")
+  reedicion_en_descripcion: '(?i)\b(re-?release|re-?issue|remaster(ed)?|archival release|anniversary (edition|reissue|re-?release|remaster|remix|collector)|anniversary of|expanded edition|deluxe (version|edition) of|deluxe reissue)'
+  ep: '(?i)(^|\W)(EP|E\.P\.)(\W|$)'          # en tipo, título o notas cortas
+  # En descripciones largas solo cuenta si se dice que ESTE disco es un EP.
+  ep_en_descripcion: '(?i)\b(\d+|one|two|three|four|five|six|seven)[- ](song|track)\s+EP\b|^(an?|new|debut)\s+EP\b|\b(releases?|shares?|drops?|unveils?|is)\s+(an?|her|his|their|the|new|debut)\s+(new\s+|debut\s+)?EP\b'
+  largo_nota_corta: 30
+  # Similitud mínima (0-1) para aceptar que un disco de MusicBrainz es el mismo.
+  similitud_minima: 0.86
+  # Títulos que significan "se llama como el artista".
+  titulo_homonimo: '(?i)^(self[- ]?titled|s/t)$'
+  # Número de canciones mencionado en una descripción ("13-song record", "five-song EP").
+  pistas_en_texto: '(?i)\b(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)[- ](?:song|track)s?\b'
+  # Discos que solo vienen de fuentes generalistas ("mixtas"): si la descripción
+  # de la fuente o las etiquetas del artista en MusicBrainz indican claramente
+  # otro género, se descartan sin más consultas (ahorra peticiones).
+  descripcion_ajena: '(?i)\b(metalcore|deathcore|death[- ]metal|black[- ]metal|thrash|grindcore|doom|sludge|djent|nu[- ]metal|\w+ metal|metal|hip[- ]hop|rapper|rap|trap|drill|rage|jazz|bebop|big band|electronic|electronica|techno|house|edm|dubstep|drum and bass|grime|synth-?pop|dance(-pop)?|disco|funk|ambient|classical|orchestra|symphony|opera|r&b|soul|neo-soul|reggae|afrobeats?|amapiano|k-pop|j-pop|j-rock|latin|reggaeton|salsa|emo|post-hardcore|hardcore|punk|post-punk|screamo|shoegaze|dream pop|indie pop|bedroom pop|hyperpop|pop|indie rock|alternative rock|noise|industrial|experimental|avant-garde|gospel choir|soundtrack|score)\b'
+  # Días de margen antes del inicio de la ventana (fechas de fuentes aproximadas).
+  margen_dias: 14
+
+# Consolidación antes de clasificar (scraper/consolidar.py): unir duplicados y apartar lo que no
+# es un disco nuevo de un artista. Salen de las medidas de calidad del informe.
+consolidacion:
+  similitud_titulo: 0.95        # mismo artista y título casi igual (erratas, espacios)
+  dias_maximos: 45              # ...y fechas a menos de N días
+  dias_maximos_titulo_identico: 200   # título idéntico (sin abreviaturas, espacios ni signos): una fuente da la fecha del anuncio
+  etiquetas_no_nuevo: '(?i)^\s*(reissues?|box ?sets?|compilations?|remaster(s|ed)?|anthology)\s*$'   # etiqueta de la propia fuente
+  descartar_ampliaciones: true      # "Título (In Full Bloom)" que sale meses después de "Título": no es disco nuevo
+  dias_minimos_ampliacion: 30
+  titulos_equivalentes:         # grafías especiales del mismo título (se comparan normalizadas)
+    ei8ht: eight
+  artista_recopilatorio: '(?i)^\s*(various artists|various|va|v\.a\.|tributes?|multiple artists|varios artistas)\s*$'
+  titulo_no_nuevo: '(?i)(^\s*(watch (the )?(new |official )?video for|listen to )|original (motion picture )?soundtrack|\bOST\b|music from the (motion picture|series|film)|\bthe best of (19|20)\d\d\b|\(so far\)|\bgreatest hits\b|\bthe very best of\b|\b(19|20)\d\d\s*[-–]\s*(19|20)?\d\d\b|(?<=\w)\s+(deluxe|redux|expanded)( edition| version)?\s*$|[(\[-]\s*(deluxe|redux|expanded|anniversary)\b)'
+
+enriquecimiento:
+  musicbrainz: true
+  bandcamp:
+    activo: true
+    max_paginas_por_ejecucion: 600
+  # Etiquetas extra solo para los discos que se quedan sin subgénero (scraper.enriquecer).
+  etiquetas_extra:
+    wikidata: {activo: true}
+    discogs: {activo: true, variable_token: DISCOGS_TOKEN}   # el token es opcional
+    lastfm: {activo: true, variable_clave: LASTFM_KEY}       # sin clave, se omite
+    deezer: {activo: true}     # a todos los discos: enlace, tipo (álbum/EP), reproductor, portada
+    itunes: {activo: false}    # desactivado: bloqueó (403) dos veces el 28-nov-2026; regla del usuario: ante un bloqueo, no insistir
+  # Mapeo de etiquetas con la API de pago de Anthropic: DESACTIVADO (decisión del usuario: sin gasto).
+  # El LLM se usa con el plan Pro a través de Claude Code (Action con CLAUDE_CODE_OAUTH_TOKEN, ver
+  # .github/workflows/semanal.yml, o en una sesión) mediante scraper.etiquetas_llm. Wikidata, siempre.
+  llm:
+    activo: false
+    variable_clave: ANTHROPIC_API_KEY
+    modelo: claude-opus-5-5          # claude-haiku-5-5 sería ~40 veces más barato
+    esfuerzo: low                    # clasificar etiquetas no necesita razonar mucho
+    lote: 50                         # etiquetas por petición
+    max_etiquetas_por_ejecucion: 600
+
+rutas:
+  fuentes: data/fuentes.yaml
+  taxonomia: data/taxonomia.yaml
+  mapeo_etiquetas: data/mapeo_etiquetas.csv
+  candidatos: data/candidatos.json     # salida de la recogida, antes de clasificar
+  discos: data/discos.json             # lo que publica la web
+  descartados: data/descartados.json
+  estado_fuentes: data/estado_fuentes.json
+  cache_http: data/cache/http
+  cache_lecturas: data/cache/lecturas  # lo leído de cada fuente (para reanudar)
+  cache_musicbrainz: data/cache/musicbrainz.json
+  cache_bandcamp: data/cache/bandcamp.json
+  cache_etiquetas_extra: data/cache/etiquetas_extra.json
+  listas_anuales: data/listas_anuales.json   # listas de fin de año (lo mejor de cada año)
+  estado_pipeline: data/estado_pipeline.json # fases hechas de la última ejecución (para reanudar)

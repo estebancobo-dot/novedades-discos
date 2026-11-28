@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Novedades · Country & Hard Rock</title>
+<meta name="description" content="Álbumes nuevos de country, americana y folk, y de hard rock y AOR. Actualizado cada semana.">
+<meta name="theme-color" content="#14110f">
+<!-- las portadas vienen de estos servicios: abrir la conexión antes acelera la primera imagen -->
+<link rel="preconnect" href="https://coverartarchive.org">
+<link rel="preconnect" href="https://archive.org">
+<link rel="preconnect" href="https://cdn-images.dzcdn.net">
+<!-- precarga:inicio --><link rel="preload" as="image" href="https://coverartarchive.org/release-group/f6adbcdf-8030-4eaf-9056-d98f24089303/front-250" imagesrcset="https://coverartarchive.org/release-group/f6adbcdf-8030-4eaf-9056-d98f24089303/front-250 1x, https://coverartarchive.org/release-group/f6adbcdf-8030-4eaf-9056-d98f24089303/front-500 2x" fetchpriority="high"><link rel="preload" as="image" href="https://coverartarchive.org/release-group/b3bc031a-3996-44d3-82aa-76ee661e4576/front-250" imagesrcset="https://coverartarchive.org/release-group/b3bc031a-3996-44d3-82aa-76ee661e4576/front-250 1x, https://coverartarchive.org/release-group/b3bc031a-3996-44d3-82aa-76ee661e4576/front-500 2x" fetchpriority="high"><!-- precarga:fin -->
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icono-192.png">
+<link rel="apple-touch-icon" href="icono-192.png">
+<link rel="alternate" type="application/rss+xml" title="Todas las novedades" href="rss/todo.xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="cab">
+  <div class="cab-fila">
+    <h1 class="marca"><span class="disco" aria-hidden="true"></span>Novedades</h1>
+    <button class="btn-pill" id="btnLista" aria-pressed="false" title="Mi lista">★ <span id="numLista">0</span></button>
+    <button class="btn-pill" id="abrirFiltros" aria-controls="panel" aria-expanded="false">
+      Filtros <span class="contador" id="numFiltros" hidden></span>
+    </button>
+  </div>
+  <div class="cab-fila">
+    <label class="buscar">
+      <span class="sr">Buscar</span>
+      <input id="q" type="search" placeholder="Artista, disco o sello" autocomplete="off" enterkeyhint="search">
+    </label>
+  </div>
+  <nav class="familias" id="familias" role="tablist" aria-label="Familia de géneros"></nav>
+  <div class="barra">
+    <label class="orden"><span class="sr">Ordenar</span>
+      <select id="orden">
+        <option value="fecha">Más recientes</option>
+        <option value="nota">Mejor valorados</option>
+        <option value="resenas">Más reseñados</option>
+        <option value="mejor">🏆 Lo mejor del año</option>
+        <option value="calendario">📅 Calendario</option>
+      </select>
+    </label>
+    <label class="orden" id="selAnio" hidden><span class="sr">Año</span><select id="anio"></select></label>
+    <button class="chip chip-sm" id="btnDest" aria-pressed="false">✦ Destacados</button>
+    <div class="vistas" role="group" aria-label="Vista">
+      <button id="vRejilla" aria-pressed="true" title="Cuadrícula" aria-label="Cuadrícula">▦</button>
+      <button id="vLista" aria-pressed="false" title="Lista" aria-label="Lista">☰</button>
+    </div>
+  </div>
+  <nav class="meses" id="meses" aria-label="Ir a un mes"></nav>
+</header>
+
+<main id="contenido" aria-live="polite">
+  <p class="estado" id="estado">Cargando discos…</p>
+</main>
+
+<aside class="panel" id="panel" aria-label="Filtros" hidden>
+  <div class="panel-caja" role="dialog" aria-modal="true" aria-labelledby="tituloFiltros">
+    <div class="panel-cab">
+      <h2 id="tituloFiltros">Filtros</h2>
+      <button class="cerrar" id="cerrarFiltros" aria-label="Cerrar filtros">×</button>
+    </div>
+    <div class="panel-cuerpo">
+    <section>
+      <h3>Fechas</h3>
+      <div class="fechas">
+        <label>Desde <input type="date" id="fDesde"></label>
+        <label>Hasta <input type="date" id="fHasta"></label>
+      </div>
+    </section>
+    <section>
+      <h3>Sello</h3>
+      <input id="fSello" list="sellos" placeholder="Cualquier sello" autocomplete="off">
+      <datalist id="sellos"></datalist>
+    </section>
+    <section>
+      <h3>Subgéneros</h3>
+      <p class="aviso">Toca ⓘ para saber qué es cada uno.</p>
+      <div id="subgeneros" class="grupos"></div>
+    </section>
+    <section>
+      <h3>Suscribirse</h3>
+      <div class="enlaces" id="suscribir"></div>
+    </section>
+    </div>
+    <div class="panel-pie">
+      <button class="sec" id="limpiar">Limpiar</button>
+      <button class="pri" id="aplicar">Ver <span id="numResultados">0</span> discos</button>
+    </div>
+  </div>
+</aside>
+
+<dialog id="ficha" aria-labelledby="fichaTitulo"></dialog>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<footer class="pie">
+  <p id="actualizado"></p>
+  <p>Datos de prensa especializada, sellos, <a href="https://musicbrainz.org">MusicBrainz</a>, Bandcamp, Deezer y Any Decent Music.
+     <a href="https://github.com/estebancobo-dot/novedades-discos/blob/main/docs/informe.md">Informe</a> ·
+     <a href="https://github.com/estebancobo-dot/novedades-discos/blob/main/docs/fuentes.md">Fuentes</a> ·
+     <a href="rss/todo.xml">RSS</a></p>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

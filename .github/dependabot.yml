@@ -1,0 +1,11 @@
+# Avisa (con una petición de cambios) cuando hay versiones nuevas de las librerías o de las
+# Actions; las pruebas se ejecutan solas sobre esa petición antes de aceptarla.
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: "/"
+    schedule: {interval: monthly}
+    open-pull-requests-limit: 5
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule: {interval: monthly}

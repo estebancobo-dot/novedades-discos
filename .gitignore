@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+data/cache/http/
+.venv/
+data/cache/lecturas/
+node_modules/
+data/etiquetas_pendientes.json
+data/respuestas_llm.json
+.coverage
+.coverage.*
