@@ -254,6 +254,10 @@
 "Drone",
 "Electronic"
 ],
+"dg:master:4419750": [
+"Deathcore",
+"Rock"
+],
 "dg:release:37090527": [
 "Heavy Metal",
 "Rock"
@@ -577,6 +581,10 @@
 "Indie Pop",
 "Pop"
 ],
+"dga:10013458|peelingflesh": [
+"Deathcore",
+"Rock"
+],
 "dga:10015342|icon": [
 "Metalcore",
 "Post-Hardcore",
@@ -585,6 +593,7 @@
 "Pop Punk",
 "Rock"
 ],
+"dga:10134205|zone 3": [],
 "dga:10171780|mountain goat": [
 "Country",
 "Folk, World, & Country"
@@ -631,6 +640,7 @@
 "Rock"
 ],
 "dga:12433393|void": [],
+"dga:12475435|salt around my bed": [],
 "dga:13008099|better over time": [
 "Trap",
 "Hip Hop"
@@ -648,6 +658,7 @@
 "Country",
 "Folk, World, & Country"
 ],
+"dga:1372401|dopamine hits": [],
 "dga:139175|love and other mysteries": [],
 "dga:1427425|wayward": [
 "Folk, World, & Country"
@@ -739,6 +750,7 @@
 "Heavy Metal",
 "Rock"
 ],
+"dga:2543086|darling": [],
 "dga:2583551|once upon a second time around": [
 "Country",
 "Bluegrass",
@@ -787,6 +799,7 @@
 "Pop"
 ],
 "dga:3211623|living proof": [],
+"dga:3221561|goodwife": [],
 "dga:3313705|with you from the garden shed": [],
 "dga:3325878|moiremoiremoire": [
 "Glitch",
@@ -825,11 +838,13 @@
 "Soul",
 "Rock"
 ],
+"dga:3767234|you sing like youre joking": [],
 "dga:3874157|gilding the lily": [
 "Post-Punk",
 "Electronic",
 "Rock"
 ],
+"dga:3914757|safe place to be wild": [],
 "dga:3961000|dirt road gold": [
 "Chillwave",
 "Electroacoustic",
@@ -842,6 +857,7 @@
 ],
 "dga:4073169|songs for the heavy hearted": [],
 "dga:4098392|longing years": [],
+"dga:4115|blue reservoir": [],
 "dga:416936|thunder god": [
 "Heavy Metal",
 "Power Metal",
@@ -913,6 +929,7 @@
 "Power Metal",
 "Rock"
 ],
+"dga:5014107|water taste of blood": [],
 "dga:5062142|open guitar volume two": [],
 "dga:5259196|killer show": [
 "Hard Rock",
@@ -1013,10 +1030,12 @@
 "dga:7364350|concrete cowboy": [
 "Rock"
 ],
+"dga:7470320|one day this will all be lore": [],
 "dga:7511784|picking petals": [
 "Rock",
 "Pop"
 ],
+"dga:764481|if im alive now then i was dead": [],
 "dga:76490|embers to ashes": [
 "Alternative Rock",
 "Country Rock",
@@ -1033,6 +1052,7 @@
 "Post Rock",
 "Rock"
 ],
+"dga:7735925|spin": [],
 "dga:7813589|running round the sun": [
 "Rock"
 ],
@@ -1096,6 +1116,7 @@
 "url": "https://www.deezer.com/album/996297981"
 },
 "dz:10cc|stockport shuffle": {},
+"dz:2 chainz and statik selektah|playaz only live once": {},
 "dz:25 year screamer|and from the deep there is a light": {},
 "dz:2nd grade|girls and boys": {},
 "dz:7 miles to pittsburgh|beyond repair": {
@@ -1114,6 +1135,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1081875082"
 },
+"dz:aaron freitas|featfoonese": {},
 "dz:aaron lewis|give my country back": {
 "id": 1025523742,
 "pistas": 10,
@@ -1174,6 +1196,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1064827231"
 },
+"dz:adeline hotel|source of magic": {},
 "dz:admiral radio|heirloom": {
 "id": 997796841,
 "pistas": 12,
@@ -1266,6 +1289,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1040477562"
 },
+"dz:ajna|mysterium tremendum": {},
 "dz:alabama shakes|i must be dreaming": {
 "id": 1059301512,
 "pistas": 11,
@@ -1395,6 +1419,14 @@
 "url": "https://www.deezer.com/album/1008114251"
 },
 "dz:amberian dawn|temptations gate": {},
+"dz:amble|love and all its wares": {
+"id": 1043528212,
+"pistas": 12,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1043528212"
+},
 "dz:ambrose akinmusire and mary halvorson|slo mo neon luminate hoverings": {},
 "dz:american aquarium|new ways to lose": {
 "id": 969117981,
@@ -1429,6 +1461,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1125470192"
 },
+"dz:ams|play trouble live": {},
 "dz:amy goddard|dawn": {
 "id": 1070238502,
 "pistas": 12,
@@ -1524,6 +1557,7 @@
 "url": "https://www.deezer.com/album/1116402232"
 },
 "dz:ann wilson and tripsitter|consecrated ground": {},
+"dz:anna domino|east and west and singles and demos": {},
 "dz:anna lapwood|not all those who wander are lost": {
 "id": 1076552762,
 "pistas": 20,
@@ -1532,6 +1566,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1076552762"
 },
+"dz:anna meredith|darling": {},
 "dz:anthrax|cursom perficio": {},
 "dz:antony szmierek|decoding birdsong": {},
 "dz:aoki hina|blaze": {},
@@ -1601,6 +1636,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1111461212"
 },
+"dz:armitage shanks|charge of the shite brigade": {},
 "dz:art decco|scheeles green": {
 "id": 1025391742,
 "pistas": 11,
@@ -1684,6 +1720,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/978576091"
 },
+"dz:august benjamin|august benjamin": {},
 "dz:avulsed|eminence in putrescence 2026 redux": {},
 "dz:awakening|lost theatre": {
 "id": 1043509642,
@@ -1761,6 +1798,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1116338822"
 },
+"dz:balaclava|money glitch": {},
 "dz:balourdet quartet|strange machines": {
 "id": 994504101,
 "pistas": 13,
@@ -1809,6 +1847,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1019614841"
 },
+"dz:basset|human nature": {},
 "dz:bcmc|stash": {
 "id": 944136161,
 "pistas": 8,
@@ -1817,6 +1856,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/944136161"
 },
+"dz:beabadoobee|bananas 4 cats": {},
 "dz:beabadoobee|pylon": {
 "id": 1079760932,
 "pistas": 14,
@@ -1825,6 +1865,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1079760932"
 },
+"dz:beans on toast|great unravelling": {},
 "dz:bear mccreary|singularity ekleipsis": {
 "id": 983188031,
 "pistas": 15,
@@ -1869,6 +1910,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1058221742"
 },
+"dz:belle and sebastian|lisa helps the blind": {},
 "dz:belles|midwestern": {
 "id": 1059958882,
 "pistas": 12,
@@ -2011,6 +2053,9 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1039174872"
 },
+"dz:bjork|bjork orkestral with the hamrahli choir live at harpa hall reykjavik": {},
+"dz:bjork|orkestral": {},
+"dz:black death|breaking the chains of death": {},
 "dz:black duck with elena setien|black duck with elena setien": {},
 "dz:black mekon|13 songs about monsters": {
 "id": 1034544432,
@@ -2070,6 +2115,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/935838341"
 },
+"dz:bleep|slug": {},
 "dz:blind illusion|stage flight live at the uc theatre": {},
 "dz:blind yeo|lemoine point": {},
 "dz:bloc party|anatomy of a brief romance": {
@@ -2079,6 +2125,14 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/6aa456f2e20e85669274435e553c81dd/1000x1000-000000-80-0-0.jpg",
 "tipo": "album",
 "url": "https://www.deezer.com/album/1120266402"
+},
+"dz:blondie|high noon": {
+"id": 1120289912,
+"pistas": 13,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1120289912"
 },
 "dz:bloodhunter|sons of the abandoned": {
 "id": 924411871,
@@ -2105,6 +2159,8 @@
 "url": "https://www.deezer.com/album/1000501191"
 },
 "dz:blue aeroplanes|tales from the silver lounge": {},
+"dz:blue bendy|one day this will all be lore": {},
+"dz:blue mena|pure luck": {},
 "dz:blue mountain swe|karma alarm": {
 "id": 278694282,
 "pistas": 10,
@@ -2388,6 +2444,15 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1039497282"
 },
+"dz:bruce dickinson|psycho god": {},
+"dz:bruce dickinson|psychogod": {
+"id": 1142320101,
+"pistas": 13,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1142320101"
+},
 "dz:brutalismus 3000|harmony": {
 "id": 1001866341,
 "pistas": 13,
@@ -2531,6 +2596,14 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1002837011"
 },
+"dz:carissas wierd|somewhere further than far away": {
+"id": 1046295072,
+"pistas": 13,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1046295072"
+},
 "dz:carl carlton and melanie wiegmann|miles of time": {},
 "dz:carla gover and friends|williams branch is hard to find": {
 "id": 1063006031,
@@ -2621,6 +2694,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1110662222"
 },
+"dz:casket sealed shut|strength of death": {},
 "dz:caspian|caspian": {
 "id": 1047962472,
 "pistas": 6,
@@ -2739,6 +2813,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/988884981"
 },
+"dz:chats|half cut": {},
 "dz:cheap jeep|weather lady": {
 "id": 1056639462,
 "pistas": 10,
@@ -2814,6 +2889,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1046023812"
 },
+"dz:chvrches|all the kings men": {},
 "dz:cimarron 615|same sky": {},
 "dz:cinder well|blooming body": {
 "id": 965387611,
@@ -2839,6 +2915,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1126254512"
 },
+"dz:citizend|doomsville": {},
 "dz:citizen|halcyon blues": {
 "id": 946704871,
 "pistas": 11,
@@ -2872,6 +2949,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1116333192"
 },
+"dz:claire rousay and zander raymond|something good": {},
 "dz:claire rousay|on holding": {
 "id": 1080847642,
 "pistas": 5,
@@ -2880,6 +2958,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1080847642"
 },
+"dz:clap your hands say yeah|burned": {},
 "dz:clara mann|wishbone": {
 "id": 1034536462,
 "pistas": 11,
@@ -2935,6 +3014,14 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/a640cb8f2474b4764dcd2aaaacdb4f90/1000x1000-000000-80-0-0.jpg",
 "tipo": "album",
 "url": "https://www.deezer.com/album/1063981151"
+},
+"dz:cliff richard|only number ones": {
+"id": 1070299512,
+"pistas": 29,
+"portada": "https://cdn-images.dzcdn.net/images/cover/86f140df2796f6211432d8241c9dc115/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/86f140df2796f6211432d8241c9dc115/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1070299512"
 },
 "dz:clinic|wild in the streets": {
 "id": 1008919861,
@@ -3049,6 +3136,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/952581481"
 },
+"dz:corde oblique|allombra dei fanciulli in fiore": {},
 "dz:coreleoni|generection": {
 "id": 996934211,
 "pistas": 11,
@@ -3228,6 +3316,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1009713881"
 },
+"dz:dancing plague|endlessness": {},
 "dz:daniel donatos cosmic country|ryman to roberts": {},
 "dz:daniel pickard|behaviour": {
 "id": 1053542042,
@@ -3253,6 +3342,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/951628621"
 },
+"dz:danny malone|flowers pt 1": {},
 "dz:danny sinoff|very sinoff christmas": {
 "id": 1122607422,
 "pistas": 11,
@@ -3261,6 +3351,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1122607422"
 },
+"dz:darkness|crock of hits": {},
 "dz:darlin brando song premiere|how it is": {},
 "dz:darrel treece birchs atlantea|truthsayer": {
 "id": 1055116202,
@@ -3374,6 +3465,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1062001412"
 },
+"dz:david sylvian|distance between the killer and the killing": {},
 "dz:dawuna|loves arp": {
 "id": 1029410062,
 "pistas": 13,
@@ -3417,6 +3509,7 @@
 "url": "https://www.deezer.com/album/1012763251"
 },
 "dz:deep purple|splat": {},
+"dz:deer park|matinee": {},
 "dz:defcee and steel tipped dove|we will be brief": {},
 "dz:delain|frozen silhouettes 2006 2009": {},
 "dz:delilah holliday|fat cat": {
@@ -3434,6 +3527,14 @@
 "portada_grande": null,
 "tipo": "album",
 "url": "https://www.deezer.com/album/1131936831"
+},
+"dz:delivery|zone 3": {
+"id": 1064588061,
+"pistas": 12,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1064588061"
 },
 "dz:dennis ellsworth|living": {
 "id": 1056913552,
@@ -3483,6 +3584,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1047083352"
 },
+"dz:destroy boys|foie gras": {},
 "dz:deux visages|call it goodbye": {
 "id": 1056467012,
 "pistas": 11,
@@ -3507,6 +3609,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1020179731"
 },
+"dz:dewey kincade|we us": {},
 "dz:dexys midnight runners|love": {
 "id": 981145201,
 "pistas": 10,
@@ -3562,6 +3665,14 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/bcdc57870eccdae8f724e4aa8e3613c6/1000x1000-000000-80-0-0.jpg",
 "tipo": "single",
 "url": "https://www.deezer.com/album/829060781"
+},
+"dz:dinosaur jr|bouncing off the walls the green mind tour 1991": {
+"id": 1132170651,
+"pistas": 57,
+"portada": "https://cdn-images.dzcdn.net/images/cover/4ced00e66f0329442ae2168b0be4149d/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/4ced00e66f0329442ae2168b0be4149d/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1132170651"
 },
 "dz:dinosaur jr|there near": {
 "id": 996725591,
@@ -3662,6 +3773,7 @@
 "url": "https://www.deezer.com/album/956250761"
 },
 "dz:don cusic|country bob dylan and country music": {},
+"dz:don toliver|nitrous": {},
 "dz:don was and the pan detroit ensemble|live dispatch vol 1 blues for allah 26": {
 "id": 1145684191,
 "pistas": 6,
@@ -3917,6 +4029,8 @@
 "url": "https://www.deezer.com/album/1140486831"
 },
 "dz:elefante john|stories the john elefante collection": {},
+"dz:eleine|water taste of blood": {},
+"dz:elena shirin|inter states": {},
 "dz:elephant stone|asha": {
 "id": 948321991,
 "pistas": 9,
@@ -3959,6 +4073,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1017584171"
 },
+"dz:elles bailey|cant take my story away live at the picturedrome": {},
 "dz:ellie goulding|i know too much": {
 "id": 1066224631,
 "pistas": 10,
@@ -4054,6 +4169,14 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/3e4f0cfd94d66dc11c2dd8f754f1a72a/1000x1000-000000-80-0-0.jpg",
 "tipo": "album",
 "url": "https://www.deezer.com/album/1074054312"
+},
+"dz:erasure|radio radio": {
+"id": 1075613872,
+"pistas": 10,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1075613872"
 },
 "dz:eric angelo bessel|illusion of an inland ocean": {
 "id": 1042488092,
@@ -4153,6 +4276,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/943454831"
 },
+"dz:everything but the girl|blue reservoir": {},
 "dz:evil island|terraform the afterlife": {
 "id": 971459271,
 "pistas": 13,
@@ -4163,6 +4287,7 @@
 },
 "dz:ewan macintyre and herding cats|on these islands we sing": {},
 "dz:ewan macintyre herding cats|on these islands we sing": {},
+"dz:ex nightwish singer floor jansen|hytress": {},
 "dz:ex re|save as": {
 "id": 1116702862,
 "pistas": 9,
@@ -4248,6 +4373,7 @@
 "dz:farner mark|some kind of wonderful": {},
 "dz:farner mark|wake up": {},
 "dz:fast eddie clarke|make my day the rock n roll story of fast eddie clarke": {},
+"dz:father hell mattie vant|trust some machines": {},
 "dz:fatima al qadiri|3twi": {},
 "dz:faux real|poison time": {
 "id": 971458781,
@@ -4289,6 +4415,14 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1063400221"
 },
+"dz:fink|2 meter sessions": {
+"id": 1150124281,
+"pistas": 9,
+"portada": "https://cdn-images.dzcdn.net/images/cover/ad9e8c951e596372c135fd83327325d2/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/ad9e8c951e596372c135fd83327325d2/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1150124281"
+},
 "dz:finn wolfhard|fire from the hip": {
 "id": 957454811,
 "pistas": 12,
@@ -4305,6 +4439,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1033683182"
 },
+"dz:fionn regan|berlin berlin": {},
 "dz:first light|gravity 2 0": {},
 "dz:five finger death punch|legacy": {
 "id": 1009868371,
@@ -4314,6 +4449,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1009868371"
 },
+"dz:flaming lips|teardrop throbs": {},
 "dz:flatland cavalry|work of heart heartstrings": {
 "id": 1104176442,
 "pistas": 17,
@@ -4417,7 +4553,18 @@
 "url": "https://www.deezer.com/album/1000086591"
 },
 "dz:french family band|from huron to hickory": {},
+"dz:friedberg|goodwife": {},
+"dz:friendly fires|dig deeper": {
+"id": 1125206062,
+"pistas": 11,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1125206062"
+},
 "dz:friends of jesse malin|i would do it for you vol 1": {},
+"dz:frog|kind of blah kinda bloated": {},
+"dz:frontal boundary|synthetic": {},
 "dz:fruit bats|landfill": {
 "id": 928260331,
 "pistas": 1,
@@ -4539,6 +4686,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1051637082"
 },
+"dz:general assembly|fundamental balancing": {},
 "dz:generation steel|steelmachine": {
 "id": 940845771,
 "pistas": 1,
@@ -4575,6 +4723,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/986579201"
 },
+"dz:gift|frenzy for the thrill": {},
 "dz:gilbert osullivan|on the record": {
 "id": 1031446072,
 "pistas": 13,
@@ -4690,6 +4839,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1011706721"
 },
+"dz:golgothan|offering": {},
 "dz:good habits|better for now": {
 "id": 1024174251,
 "pistas": 9,
@@ -4755,6 +4905,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/946592371"
 },
+"dz:graham coxon|live at the ica acoustic": {},
 "dz:graham hunt|american pyramid": {
 "id": 982079271,
 "pistas": 12,
@@ -4795,6 +4946,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1030196342"
 },
+"dz:gravite fresq|slightly wrong structural damage": {},
 "dz:grayson capps|weight of the world": {
 "id": 1073890362,
 "pistas": 9,
@@ -4931,6 +5083,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/939312081"
 },
+"dz:hank|hero weak thing": {},
 "dz:hanoi rocks|complete collection 1981 1984": {},
 "dz:hans williams|songs for the neighbors": {
 "id": 1103610492,
@@ -4992,6 +5145,7 @@
 "url": "https://www.deezer.com/album/1019240481"
 },
 "dz:hawk and steel|aint never moving on": {},
+"dz:hawkwind|bristol custom bike show concert 1986": {},
 "dz:hawxx|world splits open": {
 "id": 953868031,
 "pistas": 10,
@@ -5009,6 +5163,7 @@
 "url": "https://www.deezer.com/album/1034803712"
 },
 "dz:hayde|hayde": {},
+"dz:hayes carll|live from the old quarter": {},
 "dz:heather littlefield|wildflowers": {
 "id": 1118622562,
 "pistas": 1,
@@ -5053,6 +5208,14 @@
 },
 "dz:helado negro and reyna tropical|helado tropical": {},
 "dz:held by trees|call of home": {},
+"dz:helena deland|eternity shrugs": {
+"id": 1102366832,
+"pistas": 11,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1102366832"
+},
 "dz:henry o henry|apocrypha": {
 "id": 1001424811,
 "pistas": 9,
@@ -5118,6 +5281,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/756836881"
 },
+"dz:hollow hand|banquet rock": {},
 "dz:hollow hand|wish road south": {
 "id": 983775621,
 "pistas": 10,
@@ -5167,6 +5331,14 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/40d4705e217623d29b4d0146d37e49f4/1000x1000-000000-80-0-0.jpg",
 "tipo": "album",
 "url": "https://www.deezer.com/album/928895911"
+},
+"dz:hot chip|long way from kansas": {
+"id": 1103647112,
+"pistas": 11,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1103647112"
 },
 "dz:hot machine|comin in hot": {
 "id": 1063091481,
@@ -5242,6 +5414,7 @@
 "tipo": "single",
 "url": "https://www.deezer.com/album/954112451"
 },
+"dz:hurtsfall|darkest night": {},
 "dz:hu|hun": {
 "id": 976486601,
 "pistas": 11,
@@ -5310,6 +5483,7 @@
 "url": "https://www.deezer.com/album/994028121"
 },
 "dz:ike reilly feat shane reilly|blind and surrounded": {},
+"dz:illumishade featuring eluveitie members|unholy ghosts": {},
 "dz:immersion|what is lost will return": {
 "id": 1046846812,
 "pistas": 1,
@@ -5342,6 +5516,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/988619061"
 },
+"dz:indigo sparke|there is a light on the horizon line": {},
 "dz:inferno|anthropic sophisms": {},
 "dz:interpol|this mirror weighs a ton": {
 "id": 981299781,
@@ -5498,6 +5673,15 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/6b1c586cc6cbe0fe156573debb23caa2/1000x1000-000000-80-0-0.jpg",
 "tipo": "album",
 "url": "https://www.deezer.com/album/1048701612"
+},
+"dz:jake isaac|cry dance love": {},
+"dz:jake karlik band|jake karlik band": {
+"id": 1045181332,
+"pistas": 8,
+"portada": "https://cdn-images.dzcdn.net/images/cover/5e9167b27505a655d2cac091ed0dcbf6/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/5e9167b27505a655d2cac091ed0dcbf6/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1045181332"
 },
 "dz:jake xerxes fussell|old beloved path": {
 "id": 996547301,
@@ -5736,6 +5920,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1125522672"
 },
+"dz:joe rian and the a m drinkers|think yer in luv": {},
 "dz:joe rian|think yer in luv": {
 "id": 990809871,
 "pistas": 1,
@@ -5803,6 +5988,7 @@
 "url": "https://www.deezer.com/album/1122804382"
 },
 "dz:john leventhal|national dirft": {},
+"dz:john mccutcheon|winding stream the carter family at 100": {},
 "dz:johnny and lillie flynn|beam cottage": {},
 "dz:johnny delaware|on gods time": {
 "id": 991986931,
@@ -5871,6 +6057,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1131039891"
 },
+"dz:jonah yano|spin": {},
 "dz:jonathan paull gertler|unfinished business": {
 "id": 1001678121,
 "pistas": 1,
@@ -5887,6 +6074,8 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/994727721"
 },
+"dz:jonny greenwood and dudu tassa|jalsa": {},
+"dz:jordan rakei|safe place to be wild": {},
 "dz:jordan robert kirk|my fathers son": {
 "id": 1024841531,
 "pistas": 10,
@@ -5927,6 +6116,14 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/50d409daf478db8e07ed5613ac234519/1000x1000-000000-80-0-0.jpg",
 "tipo": "album",
 "url": "https://www.deezer.com/album/1030958682"
+},
+"dz:joshua redman|if ever you would leave us we play for rollins": {
+"id": 1071416022,
+"pistas": 11,
+"portada": "https://cdn-images.dzcdn.net/images/cover/b0be56c32b3ce802de3e774ed0a1b91f/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/b0be56c32b3ce802de3e774ed0a1b91f/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1071416022"
 },
 "dz:joy oladokun|hope is a heavy thing": {
 "id": 1081529172,
@@ -5993,6 +6190,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1069894191"
 },
+"dz:julien baker|this world or the next": {},
 "dz:june mcdoom|follow the light": {
 "id": 1040587872,
 "pistas": 12,
@@ -6018,6 +6216,7 @@
 "url": "https://www.deezer.com/album/1061669592"
 },
 "dz:kacey musgraves|middle of nowhere vol 2 tex mex tapes": {},
+"dz:kacey musgraves|tex mex tapes": {},
 "dz:kahil elzabar|sketches for trane": {},
 "dz:kai hansen|born with a hammer": {
 "id": 1006251591,
@@ -6076,6 +6275,8 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1025290322"
 },
+"dz:kate nash|cailin": {},
+"dz:kate nash|callin": {},
 "dz:kate prascher|sunday afternoon": {
 "id": 980231991,
 "pistas": 10,
@@ -6282,6 +6483,7 @@
 },
 "dz:king 810|la grande mort or silence of god": {},
 "dz:king gizzard and the lizard wizard|entropy": {},
+"dz:king leo and son|presenting king leo and son": {},
 "dz:kings of leon|o my beloved": {
 "id": 1057667902,
 "pistas": 13,
@@ -6326,6 +6528,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1045166762"
 },
+"dz:knifeplay|what is truth": {},
 "dz:knox|my midwest best": {
 "id": 1057081152,
 "pistas": 12,
@@ -6342,6 +6545,8 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/991810761"
 },
+"dz:kontrast|imperium proteus": {},
+"dz:kosmoberkh|troglobiten in absonderlicht": {},
 "dz:krill|secret language": {
 "id": 1047956722,
 "pistas": 9,
@@ -6426,6 +6631,7 @@
 },
 "dz:lael neale|all killers do": {},
 "dz:lael neale|as killers do": {},
+"dz:laibach|musick encore": {},
 "dz:lalu|mythmakers demise": {
 "id": 980355861,
 "pistas": 10,
@@ -6441,6 +6647,14 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/e963d9c2c21232f57301157a60ac8575/1000x1000-000000-80-0-0.jpg",
 "tipo": "album",
 "url": "https://www.deezer.com/album/957923091"
+},
+"dz:lambrini girls|no refunds": {
+"id": 1062819641,
+"pistas": 11,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1062819641"
 },
 "dz:lamplight|lick the spoon let it soften": {
 "id": 1028231872,
@@ -6549,6 +6763,7 @@
 "url": "https://www.deezer.com/album/984255191"
 },
 "dz:leah senior|pt roadknight": {},
+"dz:ledbyher|midwinter": {},
 "dz:lee brice|sunriser all nighter": {
 "id": 1011923961,
 "pistas": 32,
@@ -6633,6 +6848,14 @@
 "tipo": "single",
 "url": "https://www.deezer.com/album/957313181"
 },
+"dz:leviathan|die to this": {
+"id": 1114887332,
+"pistas": 9,
+"portada": "https://cdn-images.dzcdn.net/images/cover/ba712d72e7b761e709b11dc5eccba963/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/ba712d72e7b761e709b11dc5eccba963/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1114887332"
+},
 "dz:lex legion|lex legion": {
 "id": 908593462,
 "pistas": 9,
@@ -6641,6 +6864,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/908593462"
 },
+"dz:liars|ban on plastic bag bans": {},
 "dz:libby koch and michael oconnor|gulf coast duets": {},
 "dz:lido pimienta|caribenya": {
 "id": 966593721,
@@ -6694,6 +6918,7 @@
 "url": "https://www.deezer.com/album/1015669981"
 },
 "dz:linda sikhakhane|linda": {},
+"dz:lindsay everly|fools gold": {},
 "dz:lindsay lou|bluegrass women": {
 "id": 1019812501,
 "pistas": 10,
@@ -6710,6 +6935,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/941992171"
 },
+"dz:lisa hilton|naturally": {},
 "dz:little big town|its a dying art": {
 "id": 1059262212,
 "pistas": 13,
@@ -6718,6 +6944,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1059262212"
 },
+"dz:little grandad|speak softly son": {},
 "dz:live skull|what could go wrong": {
 "id": 1120887502,
 "pistas": 1,
@@ -6736,6 +6963,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1079550582"
 },
+"dz:lloren|love is alien to me": {},
 "dz:locash|chris and preston": {
 "id": 1102787392,
 "pistas": 12,
@@ -6786,6 +7014,8 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1036274562"
 },
+"dz:lottie brazier|on course but no one there to salute you": {},
+"dz:louis ohara|how could i hate you": {},
 "dz:louise bichan|binnorie": {
 "id": 1047962442,
 "pistas": 13,
@@ -6818,6 +7048,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1052689642"
 },
+"dz:lucas mason|lucas mason": {},
 "dz:lucia and the best boys|picking petals": {
 "id": 957270991,
 "pistas": 10,
@@ -6885,6 +7116,15 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1056406032"
 },
+"dz:maceration|mercy to the miserable": {
+"id": 1045152042,
+"pistas": 8,
+"portada": "https://cdn-images.dzcdn.net/images/cover/12138af8aa95fb67e62c59c3dc63a58b/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/12138af8aa95fb67e62c59c3dc63a58b/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1045152042"
+},
+"dz:maciek szymczuk|gandobendy": {},
 "dz:mack geiger|dying in this house": {
 "id": 1136899211,
 "pistas": 12,
@@ -6917,6 +7157,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1011924091"
 },
+"dz:madra salach|gorta": {},
 "dz:maggie rose|half moon": {
 "id": 956834691,
 "pistas": 10,
@@ -6960,6 +7201,7 @@
 "url": "https://www.deezer.com/album/957498151"
 },
 "dz:manchan magan|sli na samhaiochta the way of imagination": {},
+"dz:mandrake handshake|laputa": {},
 "dz:manic street preachers|holy bible live": {
 "id": 1058965492,
 "pistas": 13,
@@ -7017,6 +7259,14 @@
 "url": "https://www.deezer.com/album/1013644931"
 },
 "dz:maria teresa pirrigheddu and vieri mura|rundinas": {},
+"dz:marika hackman|false dogs": {
+"id": 1063646721,
+"pistas": 12,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1063646721"
+},
 "dz:marilyn manson|one assassination under god chapter 2": {
 "id": 1058159582,
 "pistas": 10,
@@ -7240,6 +7490,7 @@
 "url": "https://www.deezer.com/album/975602501"
 },
 "dz:melissa auf der mar|bass womb room": {},
+"dz:melting rust opera|dark light damage": {},
 "dz:menzingers|everything i ever saw": {
 "id": 952679661,
 "pistas": 11,
@@ -7298,6 +7549,14 @@
 },
 "dz:michael bormanns jaded hard|south west": {},
 "dz:michael hurleys 1964|first songs": {},
+"dz:michael hurley|first songs": {
+"id": 409097,
+"pistas": 12,
+"portada": "https://cdn-images.dzcdn.net/images/cover/2b7d95682a62fff973402579cbbd05bb/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/2b7d95682a62fff973402579cbbd05bb/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/409097"
+},
 "dz:michael mcdermott|flowers from the graveyard": {
 "id": 960534191,
 "pistas": 11,
@@ -7363,6 +7622,7 @@
 "tipo": "single",
 "url": "https://www.deezer.com/album/1012774561"
 },
+"dz:mike miley and rival sons|mike miley trio drummer boy a tribute to vince guaraldi": {},
 "dz:mike richmond|without an audience": {
 "id": 913618501,
 "pistas": 12,
@@ -7370,6 +7630,14 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/2cdaa0c498032fb43ac5d22467f443aa/1000x1000-000000-80-0-0.jpg",
 "tipo": "album",
 "url": "https://www.deezer.com/album/913618501"
+},
+"dz:miki berenyi trio|spoil the busy flames": {
+"id": 1122477332,
+"pistas": 9,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1122477332"
 },
 "dz:miko marks|hell or high water": {
 "id": 1067457221,
@@ -7491,6 +7759,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/980733961"
 },
+"dz:mouth ulcers|youre not in heaven": {},
 "dz:movements|happier now": {
 "id": 1064881151,
 "pistas": 12,
@@ -7523,6 +7792,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1031738672"
 },
+"dz:mulebone|cure for the miseries": {},
 "dz:murray hammond|another idle day": {},
 "dz:muse|wow signal": {
 "id": 941826421,
@@ -7559,6 +7829,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/995748821"
 },
+"dz:mynolia|salt around my bed": {},
 "dz:mystery jets|hole to see the sky through": {
 "id": 969016111,
 "pistas": 9,
@@ -7592,6 +7863,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1121896882"
 },
+"dz:nanowar of steel|where barbagiannis dare live at summer breeze 2026": {},
 "dz:naomi jane|kinda sorta country": {
 "id": 1079047532,
 "pistas": 9,
@@ -7769,6 +8041,7 @@
 "url": "https://www.deezer.com/album/1011686141"
 },
 "dz:night ranger|best of night ranger": {},
+"dz:night rider|fatebringer": {},
 "dz:nightwing|long hard road 1980 85": {},
 "dz:nightwish|greatest 30 years on earth": {
 "id": 1051375482,
@@ -7843,6 +8116,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/993210531"
 },
+"dz:northlane|anemoia": {},
 "dz:novareign|shifting the axis of the world": {
 "id": 950547511,
 "pistas": 7,
@@ -7918,6 +8192,7 @@
 "url": "https://www.deezer.com/album/961636081"
 },
 "dz:oklou and rob|in waves": {},
+"dz:oklou and rob|in waves official soundtrack": {},
 "dz:olivia rodrigo|you seem pretty sad for a girl so in love": {
 "id": 1002561451,
 "pistas": 13,
@@ -7944,6 +8219,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/986598051"
 },
+"dz:orbital|other": {},
 "dz:ordained|power of powers": {},
 "dz:oren ambarchi|cooked": {
 "id": 998861921,
@@ -8090,6 +8366,8 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1034698602"
 },
+"dz:palehound|you sing like youre joking": {},
+"dz:panchiko|chimera": {},
 "dz:panda bear and sonic boom|of when": {},
 "dz:panda bear|pb band live 25 at power station": {
 "id": 1114142952,
@@ -8220,6 +8498,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1028014822"
 },
+"dz:peelingflesh|peelingflesh": {},
 "dz:penelope isles|3": {
 "id": 982587821,
 "pistas": 10,
@@ -8344,6 +8623,7 @@
 "url": "https://www.deezer.com/album/1036267522"
 },
 "dz:pink rose|just what we needed": {},
+"dz:pins|if im alive now then i was dead": {},
 "dz:pj morton|saturday night sunday morning": {
 "id": 955594611,
 "pistas": 18,
@@ -8518,6 +8798,14 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1033853252"
 },
+"dz:pulled apart by horses|dopamine hits": {
+"id": 1114801492,
+"pistas": 12,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1114801492"
+},
 "dz:pulp|live": {
 "id": 1047626212,
 "pistas": 18,
@@ -8534,6 +8822,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1022261541"
 },
+"dz:purple pilgrims|given to the night": {},
 "dz:queens of the stone age|perfecth": {
 "id": 1116702872,
 "pistas": 9,
@@ -8594,6 +8883,7 @@
 "url": "https://www.deezer.com/album/1127820801"
 },
 "dz:radius etc|time is coming there it is": {},
+"dz:rafael toral|long ways": {},
 "dz:railroad|stand up for the future": {
 "id": 1063421991,
 "pistas": 10,
@@ -8620,7 +8910,16 @@
 "url": "https://www.deezer.com/album/1131077531"
 },
 "dz:rakim kurupt masta killa|godbody lp": {},
+"dz:ralphie choo|charmain le grand architecte": {
+"id": 1143892831,
+"pistas": 16,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1143892831"
+},
 "dz:randy rogers band|songbook": {},
+"dz:rapoon|goodbye to dreams of space": {},
 "dz:rare form|when it all falls down and more": {},
 "dz:ras michael and the sons of negus|rastafari in dub": {
 "id": 1022573481,
@@ -8696,6 +8995,7 @@
 "url": "https://www.deezer.com/album/967153341"
 },
 "dz:revelationseven|revelationseven": {},
+"dz:reverend shawn amos|dance party": {},
 "dz:revivalists|get it honest": {
 "id": 1031243692,
 "pistas": 12,
@@ -8829,6 +9129,9 @@
 "tipo": "single",
 "url": "https://www.deezer.com/album/1028198252"
 },
+"dz:robbie bennett the war on drugs|circulation": {},
+"dz:robbie bennett the war on drugs|steloken": {},
+"dz:robbie bennett|steloken circulation": {},
 "dz:robert henry and the repeaters|down the road": {
 "id": 1032966082,
 "pistas": 10,
@@ -8861,6 +9164,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/920360631"
 },
+"dz:rockie rode|babylon": {},
 "dz:rockitneedspace and surf gang|next day air": {},
 "dz:rodney crowell|then again": {
 "id": 957372011,
@@ -8887,6 +9191,15 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1021254041"
 },
+"dz:rolling stones|foreign tongues loose lips": {
+"id": 1151227051,
+"pistas": 19,
+"portada": "https://cdn-images.dzcdn.net/images/cover/be058d50116446585da675866d80a88a/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/be058d50116446585da675866d80a88a/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1151227051"
+},
+"dz:roman norfleet and be present art group|remembering": {},
 "dz:rome streetz|noise kandy 3 re press": {},
 "dz:rowena wise|bad things feel good": {},
 "dz:roy montgomery and martha skye murphy|nebular": {},
@@ -8923,6 +9236,15 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/ea426a8060736d73388902f6765c5a2c/1000x1000-000000-80-0-0.jpg",
 "tipo": "album",
 "url": "https://www.deezer.com/album/1073984532"
+},
+"dz:ryley walker|darkening the glass": {},
+"dz:saba lou|nothing but love": {
+"id": 1056424102,
+"pistas": 11,
+"portada": "https://cdn-images.dzcdn.net/images/cover/90c0e0d6500cbcc76e5b75ed8f9121c9/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/90c0e0d6500cbcc76e5b75ed8f9121c9/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1056424102"
 },
 "dz:sacral rage|ark of cosmic resonance": {},
 "dz:saddle|train holler": {
@@ -9289,6 +9611,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1029933082"
 },
+"dz:sharon lazibyrd|tides keep turning": {},
 "dz:sheila vee|ride": {
 "id": 1110631802,
 "pistas": 8,
@@ -9386,6 +9709,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/933485791"
 },
+"dz:silence|alien poetry": {},
 "dz:silkess demon|life is art art is life": {},
 "dz:silver linings|bygones": {},
 "dz:silverada|living proof": {
@@ -9444,6 +9768,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/957375681"
 },
+"dz:siv jakobsen|scandinavian dread": {},
 "dz:six gun sally|aint goin down": {
 "id": 1137139551,
 "pistas": 11,
@@ -9452,6 +9777,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1137139551"
 },
+"dz:skagos|stricken": {},
 "dz:skinshape|chapmans pool": {
 "id": 1026018152,
 "pistas": 11,
@@ -9476,6 +9802,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1068355851"
 },
+"dz:slayyyter|wor t man in america": {},
 "dz:slayyyter|worst man in america": {},
 "dz:sleep|hempispheres": {
 "id": 1033833632,
@@ -9529,6 +9856,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/953932991"
 },
+"dz:smush|ill always wish": {},
 "dz:snag|all the cages holding us will one day turn to dust": {
 "id": 965665601,
 "pistas": 11,
@@ -9579,6 +9907,14 @@
 "url": "https://www.deezer.com/album/941004011"
 },
 "dz:son lux|your mother your mother your mother": {},
+"dz:son of boar|hand that reigns": {
+"id": 1106812802,
+"pistas": 4,
+"portada": "https://cdn-images.dzcdn.net/images/cover/b17457b946a1266c818c178f89b42073/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/b17457b946a1266c818c178f89b42073/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1106812802"
+},
 "dz:son volt|sound signal serenades": {
 "id": 1011924081,
 "pistas": 12,
@@ -9621,6 +9957,7 @@
 "tipo": "single",
 "url": "https://www.deezer.com/album/1070399112"
 },
+"dz:soul glo|na im gon grab allat": {},
 "dz:soul wun|kaleidoscope": {
 "id": 1011162421,
 "pistas": 12,
@@ -9628,6 +9965,14 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/d1a00a030dc436840505031da6f40a21/1000x1000-000000-80-0-0.jpg",
 "tipo": "album",
 "url": "https://www.deezer.com/album/1011162421"
+},
+"dz:soulfallen|uncharted plains": {
+"id": 1130943111,
+"pistas": 7,
+"portada": "https://cdn-images.dzcdn.net/images/cover/31b7d7d2c95f9d1f461c458e92ada71e/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/31b7d7d2c95f9d1f461c458e92ada71e/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1130943111"
 },
 "dz:soundtracks|transformers the movie the soundtrack the reformatted edition": {},
 "dz:sour widows|sigil": {
@@ -9670,6 +10015,7 @@
 "tipo": "single",
 "url": "https://www.deezer.com/album/920911661"
 },
+"dz:spam javelin|i know its only guacnroll but i hate it": {},
 "dz:spanish love songs|future nausea": {
 "id": 1036606722,
 "pistas": 12,
@@ -9863,6 +10209,7 @@
 "url": "https://www.deezer.com/album/1111312862"
 },
 "dz:stick men|lets thrak again": {},
+"dz:still ruins|through the glass": {},
 "dz:stitched up heart|medusa": {
 "id": 978673271,
 "pistas": 10,
@@ -9944,6 +10291,14 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/84a4c9856e287a90c19a4897d87d501e/1000x1000-000000-80-0-0.jpg",
 "tipo": "album",
 "url": "https://www.deezer.com/album/928844991"
+},
+"dz:suicide silence|graceless": {
+"id": 1062812451,
+"pistas": 11,
+"portada": "https://cdn-images.dzcdn.net/images/cover/5f300c17e88c2731af3c42e7494d8fa8/250x250-000000-80-0-0.jpg",
+"portada_grande": "https://cdn-images.dzcdn.net/images/cover/5f300c17e88c2731af3c42e7494d8fa8/1000x1000-000000-80-0-0.jpg",
+"tipo": "album",
+"url": "https://www.deezer.com/album/1062812451"
 },
 "dz:suitcase junket|to go on": {
 "id": 1109823682,
@@ -10201,6 +10556,7 @@
 "tipo": "single",
 "url": "https://www.deezer.com/album/997102891"
 },
+"dz:teskey|live at the rhythm room": {},
 "dz:tesla|homage": {
 "id": 953373131,
 "pistas": 14,
@@ -10236,6 +10592,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1126821311"
 },
+"dz:ther realm|season of bloodshed": {},
 "dz:there were wires|vessel": {
 "id": 943467731,
 "pistas": 10,
@@ -10260,6 +10617,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1058739242"
 },
+"dz:this is the kit|ghost coat": {},
 "dz:thomas millers lazarus effect|thomas millers lazarus effect": {
 "id": 1061954782,
 "pistas": 8,
@@ -10284,8 +10642,10 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1002225691"
 },
+"dz:thundermother|mothers of thunder": {},
 "dz:tift merritt|sugar": {},
 "dz:tigertailz|fist full of dollarz 1992 2011": {},
+"dz:tigertailz|fistful of dollarz the archives vol2 1993 2011": {},
 "dz:tigirlily gold|country and midwestern": {
 "id": 1111780572,
 "pistas": 16,
@@ -10301,6 +10661,14 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/6ba5953241b2a7c78d32b585a28be8ae/1000x1000-000000-80-0-0.jpg",
 "tipo": "album",
 "url": "https://www.deezer.com/album/988902951"
+},
+"dz:tindersticks|dog roses": {
+"id": 1121510602,
+"pistas": 8,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1121510602"
 },
 "dz:toby jepson|fist full of flavours": {},
 "dz:todd rundgren|live at the ritz nyc 1989": {},
@@ -10336,6 +10704,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1033524742"
 },
+"dz:tom henry|whats left": {},
 "dz:tom morello|everyone gets everything they want": {
 "id": 1101840562,
 "pistas": 12,
@@ -10585,6 +10954,7 @@
 "tipo": "single",
 "url": "https://www.deezer.com/album/1057180482"
 },
+"dz:tusks|do i see you there": {},
 "dz:twenty one pilots|more than we ever imagined live in mexico city": {
 "id": 1048622292,
 "pistas": 21,
@@ -10653,6 +11023,7 @@
 "url": "https://www.deezer.com/album/1003631791"
 },
 "dz:ullnevano x philth spector|stephon barbury": {},
+"dz:ulver|neverland ii": {},
 "dz:uncle lucius|open eyes broken heart": {
 "id": 1023154811,
 "pistas": 11,
@@ -10661,6 +11032,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1023154811"
 },
+"dz:unify separate|god particle": {},
 "dz:unpeople|we are unpeople": {
 "id": 983374651,
 "pistas": 12,
@@ -10745,6 +11117,7 @@
 "dz:various artists|christmas that roxx volume 5": {},
 "dz:various artists|doom shall rise a tribute to saint vitus": {},
 "dz:various artists|felice county fair": {},
+"dz:various artists|hanzom 100": {},
 "dz:various artists|just look inside the cover songs of pete ham": {},
 "dz:various artists|long memory 20 years of free dirt records": {
 "id": 1058944812,
@@ -10758,6 +11131,7 @@
 "dz:various artists|mzansi bass curated by shannen sp": {},
 "dz:various artists|no static at all a journey into aor": {},
 "dz:various artists|sending hearts to all my dearies a tribute to smashing pumpkins": {},
+"dz:various artists|shogun audio presents 2026": {},
 "dz:various artists|sittin with blaze a tribute to blaze foley": {
 "id": 996016371,
 "pistas": 13,
@@ -10777,6 +11151,7 @@
 },
 "dz:various artists|where the willow and the dogwood grow words and music tom waits and kathleen brennan": {},
 "dz:various|bring your own hammer presents from the tombs": {},
+"dz:vehicle|fumes": {},
 "dz:velcro dog|fjord noir": {
 "id": 956146741,
 "pistas": 11,
@@ -10793,6 +11168,7 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/969035801"
 },
+"dz:venin carmin|of saints and vermin": {},
 "dz:verdin brothers|crooked serpent": {
 "id": 1127955951,
 "pistas": 9,
@@ -10818,7 +11194,9 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1004930181"
 },
+"dz:violent testimony|annihilate": {},
 "dz:vlad in tears|undead": {},
+"dz:void sector zero|dead space enigma": {},
 "dz:volster|aurora": {
 "id": 1119710892,
 "pistas": 11,
@@ -11002,6 +11380,8 @@
 "tipo": "album",
 "url": "https://www.deezer.com/album/1053828662"
 },
+"dz:whait wendy eisenberg and more eaze|sympathy at home": {},
+"dz:whait|sympathy at home": {},
 "dz:wheeler walker jr|pullin out": {
 "id": 982283941,
 "pistas": 11,
@@ -11108,6 +11488,14 @@
 "portada_grande": "https://cdn-images.dzcdn.net/images/cover/d9adb0a087d13d7f3cac6828839e4454/1000x1000-000000-80-0-0.jpg",
 "tipo": "album",
 "url": "https://www.deezer.com/album/983047391"
+},
+"dz:winona fighter|brutal and extremely underrated": {
+"id": 1110270402,
+"pistas": 12,
+"portada": null,
+"portada_grande": null,
+"tipo": "album",
+"url": "https://www.deezer.com/album/1110270402"
 },
 "dz:winter in eden|never untold": {
 "id": 990708821,
@@ -13853,5 +14241,43 @@
 "url": "https://music.apple.com/us/album/zebra-v/6827267861?uo=4"
 },
 "it:zelooperz and black noi e|pin breakers": {},
-"wd:Q15059510": []
+"wd:Q114842628": [
+"symphonic metal"
+],
+"wd:Q140050330": [],
+"wd:Q15059510": [],
+"wd:Q1675588": [
+"alternative rock",
+"indie rock"
+],
+"wd:Q191660": [
+"power metal",
+"progressive metal"
+],
+"wd:Q2096837": [
+"experimental music"
+],
+"wd:Q24060890": [],
+"wd:Q313779": [
+"pop music"
+],
+"wd:Q43510": [
+"symphonic metal",
+"power metal"
+],
+"wd:Q4767345": [
+"classical music"
+],
+"wd:Q55583815": [],
+"wdl:Q11366": "alternative rock",
+"wdl:Q11401": "hip-hop",
+"wdl:Q1640319": "experimental music",
+"wdl:Q183504": "indie rock",
+"wdl:Q2913982": "trap music",
+"wdl:Q37073": "pop music",
+"wdl:Q484344": "progressive metal",
+"wdl:Q486415": "symphonic metal",
+"wdl:Q57143": "power metal",
+"wdl:Q877693": "rap rock",
+"wdl:Q9730": "classical music"
 }
