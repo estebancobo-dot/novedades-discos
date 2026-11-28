@@ -94,7 +94,8 @@ def guardar_lectura(carpeta: str, res: ResultadoFuente, huella: str) -> None:
 
 
 def cargar_lectura(carpeta: str, id_: str, huella: str, horas: float) -> ResultadoFuente | None:
-    """La lectura guardada, si es de la misma definición, reciente y sin error; si no, None."""
+    """La lectura guardada, si es de la misma definición, reciente y correcta ("ok"); si no, None.
+    Una lectura vacía, bloqueada o con error se vuelve a hacer (puede ser algo pasajero)."""
     p = os.path.join(carpeta, f"{id_}.json")
     if horas <= 0 or not os.path.exists(p):
         return None
@@ -102,7 +103,7 @@ def cargar_lectura(carpeta: str, id_: str, huella: str, horas: float) -> Resulta
         with open(p, encoding="utf-8") as f:
             d = json.load(f)
         edad = dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(d["leida"])
-        if d.get("huella") != huella or edad > dt.timedelta(hours=horas) or d["estado"] in ("error", "bloqueada"):
+        if d.get("huella") != huella or edad > dt.timedelta(hours=horas) or d["estado"] != "ok":
             return None
         items = []
         for x in d["items"]:

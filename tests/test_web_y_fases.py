@@ -70,10 +70,11 @@ def test_lectura_guardada_se_descarta_si_cambia_algo(tmp_path):
     assert cargar_lectura(str(tmp_path), "f", h, 30) is None                    # dañada: se relee
 
 
-def test_lectura_con_error_no_se_reutiliza(tmp_path):
+def test_lectura_con_error_vacia_o_bloqueada_no_se_reutiliza(tmp_path):
     h = "h"
-    guardar_lectura(str(tmp_path), ResultadoFuente("f", "error", "Timeout"), h)
-    assert cargar_lectura(str(tmp_path), "f", h, 30) is None
+    for estado in ("error", "vacia", "bloqueada", "prohibida"):
+        guardar_lectura(str(tmp_path), ResultadoFuente("f", estado, "x"), h)
+        assert cargar_lectura(str(tmp_path), "f", h, 30) is None, estado
 
 
 # ------------------------------------------------------------------ orquestador
