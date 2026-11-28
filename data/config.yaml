@@ -11,6 +11,7 @@ recogida:
   # En la ejecución semanal (--incremental) solo se releen las páginas de los
   # últimos N días; lo recogido antes se conserva mientras siga en la ventana.
   dias_relectura_incremental: 21
+  descubrir_en_listas_anuales: true   # las listas de fin de año del año en curso también aportan discos
   # MusicBrainz: si un disco no aparece, se vuelve a buscar pasados N días.
   dias_reintento_musicbrainz: 10
   # Lo leído de cada fuente se guarda al momento; si la recogida se corta y se relanza

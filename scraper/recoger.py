@@ -203,6 +203,10 @@ def main():
     grupos: dict[str, list[Item]] = defaultdict(list)
     menciones: list[Item] = []
     listas = defaultdict(dict)        # año → clave → {artista, titulo, listas}
+    # las listas de fin de año del año de la ventana también descubren discos (los más destacados del
+    # año; algunos no salen en ninguna otra fuente). Pasan por las mismas reglas que cualquier otro.
+    anios_ventana = set(range(desde.year, hasta.year + 1))
+    descubrir_listas = bool(rec.get("descubrir_en_listas_anuales", True))
     for it in items:
         f = por_id[it.fuente]
         if f.get("rol") == "lista_anual":          # listas de fin de año: para "lo mejor de cada año"
@@ -214,7 +218,9 @@ def main():
                     e["listas"].append(nombre_lista)
                 if f.get("familia") and f["familia"] not in e["familias"]:
                     e["familias"].append(f["familia"])
-            continue
+            if not (descubrir_listas and it.anio and int(it.anio) in anios_ventana):
+                continue
+            it.fecha_tipo = "publicacion"            # la fecha es la de la lista, no la de salida
         if it.mencion:
             menciones.append(it)
             continue
@@ -288,7 +294,7 @@ def main():
     def enriquecer_mb(d: dict) -> None:
         it0 = d["items"][0]
         inter = any(por_id[i.fuente].get("intercambiable") for i in d["items"])
-        solo_mixta = all(por_id[i.fuente].get("mixta") for i in d["items"])
+        solo_mixta = all(_mixta(por_id[i.fuente]) for i in d["items"])
         if solo_mixta and rx_ajena:
             textos = [x for i in d["items"] for x in (i.extra, i.genero) if x]
             if any(rx_ajena.search(t) for t in textos) and not de_nuestras_familias(textos):
@@ -460,6 +466,12 @@ def _descartado(grupo, motivo, por_id):
             "fecha": _iso(i.fecha), "familia": sorted({str(por_id[g.fuente].get("familia")) for g in grupo})}
 
 
+def _mixta(f: dict) -> bool:
+    """Fuente que mezcla géneros: las marcadas como mixtas y las listas de fin de año generales (cuando
+    aportan discos, solo entran los de nuestros géneros)."""
+    return bool(f.get("mixta")) or (f.get("rol") == "lista_anual" and f.get("familia") in (None, "todas"))
+
+
 def _cargar_previos(p):
     if not os.path.exists(p):
         return {}
@@ -554,7 +566,7 @@ def _disco(d, fecha, exacta, origen, pistas, sec, por_id, hoy, previos, bc):
         "en_bandcamp": bool(enlaces.get("bandcamp") or art_enl.get("bandcamp")),
         "mbid": m.get("rg"),
         "mbid_artistas": m.get("artistas_id", []),
-        "requiere_subgenero": all(por_id[i.fuente].get("mixta") for i in grupo),
+        "requiere_subgenero": all(_mixta(por_id[i.fuente]) for i in grupo),
         "primera_mencion": None,
         "detectado": previo.get("detectado") or hoy.isoformat(),
     }
