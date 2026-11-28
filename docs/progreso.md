@@ -54,9 +54,8 @@ Pasos 3, 4 y parte del 7 (28-nov-2026). Hallazgos reales: 12 direcciones con el 
 
 ## Siguiente paso
 
-1. **Publicar W1 + Cara A** (aprobado por el usuario el 28-nov): petición a `main`, pruebas de GitHub en verde,
-   fusionar y lanzar la Action en modo incremental para regenerar los datos con todo lo nuevo (listas de fin de
-   año, fuentes de AOR, reseñas de AnyDecentMusic, Mike/Michael en MusicBrainz).
+1. ✅ **Publicado W1 + Cara A** (petición #12, 28-nov): la web abre en "Esta semana" con las portadas visibles
+   (comprobado en la web publicada: 0 tapadas). Lanzada la Action incremental para regenerar los datos.
 2. **W2 + idiomas** (aprobado): página del disco estilo Metacritic y web en español e inglés (L1–L6).
 3. Después: clasificación al 85 % en la muestra de referencia; MelodicRock.com y Pride & Joy; archivo de
    AnyDecentMusic; fuentes de krautrock/experimental, indie e industrial.
