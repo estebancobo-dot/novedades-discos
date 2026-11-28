@@ -689,5 +689,20 @@
  "menciones": {
   "total": 166,
   "sin_pareja": 103
+ },
+ "etiquetas_extra": {
+  "discos_sin_subgenero": 2265,
+  "con_subgenero_tras_extra": 373,
+  "consultas": {
+   "itunes": 31,
+   "deezer": 157,
+   "discogs": 90,
+   "wikidata": 56
+  },
+  "bloqueos": {
+   "itunes": "itunes.apple.com: HTTP 403",
+   "wikidata": "wikidata.org: HTTP 429"
+  },
+  "lastfm_sin_clave": true
  }
 }
