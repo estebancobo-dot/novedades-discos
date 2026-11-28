@@ -217,3 +217,15 @@ def test_lo_mejor_una_sola_resena_de_10_no_gana_a_cinco_buenas():
     assert cinco > una
     assert puntuacion([8.0], 2, 1, 1, True) > puntuacion([9.0], 0, 1, 1, True)      # dos listas de fin de año pesan
     assert puntuacion([], 0, 0, 1, False) < puntuacion([6.0], 0, 1, 1, False)        # sin nota, al final
+
+
+def test_regla_sin_palabra_de_genero():
+    from scraper.config import cargar_yaml
+    from scraper.mapear import tiene_palabra_de_genero
+    from tests.conftest import RAIZ
+    t = cargar_yaml(f"{RAIZ}/data/taxonomia.yaml")
+    tax, extra = Taxonomia(t), t["reglas"]["palabras_de_genero"]
+    for nombre in ["Bart Billekens", "Alvin Youngblood Hart", "Abbey Road", "Ain't Wasting Time"]:
+        assert not tiene_palabra_de_genero(nombre, tax, extra), nombre          # → "ninguno" sin LLM
+    for genero in ["A24 OSDM", "noisegaze", "#acousticblues", "zydeco", "Blackened Crust", "deathcore"]:
+        assert tiene_palabra_de_genero(genero, tax, extra), genero              # → se revisa (LLM o sesión)

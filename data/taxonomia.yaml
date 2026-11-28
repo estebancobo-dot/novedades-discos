@@ -14,6 +14,17 @@ reglas:
   # "Lo mejor del año": cuántas reseñas "imaginarias" con la nota media de todas se suman a cada
   # disco al ordenar (media bayesiana). Con 2, una sola reseña de 10 cuenta como un 8,3.
   peso_media_global: 2
+  # Etiquetas nuevas sin ninguna palabra de género (las de los alias + estas) se marcan "ninguno" sin
+  # LLM: son nombres de músicos, grupos, discos, sellos o lugares (scraper/mapear.py, paso 0).
+  ninguno_sin_palabra_de_genero: true
+  palabras_de_genero: [rock, metal, blues, folk, country, punk, pop, jazz, soul, funk, core, wave, grass, gaze, doom, death,
+    thrash, grind, sludge, stoner, psych, psychedelic, prog, progressive, indie, alternative, alt, emo, goth, gothic, industrial,
+    synth, electro, electronic, ambient, drone, noise, hardcore, americana, roots, gospel, bluegrass, rockabilly, swing, boogie,
+    rnb, "r&b", hip, hop, rap, trap, dub, reggae, ska, disco, house, techno, singer, songwriter, acoustic, orchestral, symphonic,
+    classical, avant, garde, experimental, shoegaze, grunge, garage, surf, lofi, lo-fi, outlaw, honky, tonk, western, cowboy,
+    appalachian, celtic, traditional, power, speed, heavy, melodic, djent, math, post, black, viking, pagan, crust, dark, ebm,
+    aor, glam, sleaze, southern, delta, piedmont, skiffle, zydeco, cajun, twang, old-time, fiddle, banjo, slide, harmonica,
+    nwobhm, osdm, outrun, krautrock, kosmische, neofolk]
   # Etiquetas de MusicBrainz que se miran (están ordenadas por votos).
   max_etiquetas_musicbrainz: 8
   # En descripciones de texto libre solo se buscan alias de 2+ palabras o con guion,

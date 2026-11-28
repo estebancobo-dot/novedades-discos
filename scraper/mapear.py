@@ -13,6 +13,7 @@ Nunca se crean subgéneros: solo se apunta a los que ya existen."""
 from __future__ import annotations
 
 import datetime as dt
+import re
 import json
 import sys
 import urllib.parse
@@ -135,6 +136,21 @@ def resolver(etiqueta: str, wd: Wikidata, tax: Taxonomia) -> tuple[str, str] | N
     return "ninguno", f"automático: género fuera de la taxonomía (Wikidata {g.get('id')}: {cadena})"
 
 
+def tiene_palabra_de_genero(etiqueta: str, tax: Taxonomia, extra: list[str]) -> bool:
+    """¿Contiene alguna palabra que nombre un género? (las de los alias y genéricas de la
+    taxonomía + 'palabras_de_genero' de taxonomia.yaml, también como trozo: "deathcore", "noisegaze").
+    Sin ninguna, la etiqueta es casi siempre un nombre de músico, grupo, disco, sello o lugar."""
+    n = normalizar(etiqueta).replace("#", " ")
+    palabras = set(re.findall(r"[a-z0-9&'\-]+", n))
+    voc = {w for a in list(tax.alias) + list(tax.genericas) for w in a.split() if len(w) >= 3} | set(extra)
+    voc -= {"the", "and", "new", "music", "band", "style", "sound", "old", "school", "modern", "contemporary", "time", "way"}
+    if palabras & voc:
+        return True
+    pegado = n.replace(" ", "")
+    return any(r in pegado for r in ("core", "wave", "gaze", "grass", "metal", "rock", "punk", "folk", "blues",
+                                     "pop", "jazz", "soul", "funk", "tronic", "psych", "goth", "doom", "thrash", "grind"))
+
+
 def main(args: list[str] | None = None) -> int:
     args = sys.argv[1:] if args is None else args
     config = cargar_config()
@@ -145,6 +161,19 @@ def main(args: list[str] | None = None) -> int:
     pend = sorted((k for k, v in mapeo.items() if v["subgenero"] == "pendiente"),
                   key=lambda k: -int(mapeo[k].get("veces") or 0))[:maximo]
     hoy = dt.date.today().isoformat()
+    # 0) Regla sin coste: sin ninguna palabra de género → "ninguno" (nombres, títulos, sellos, lugares).
+    #    Revisada a mano en una muestra (28-nov-2026): 3202 de 3776 etiquetas, sin errores en la muestra.
+    reglas = cargar_yaml(config["rutas"]["taxonomia"]).get("reglas") or {}
+    if reglas.get("ninguno_sin_palabra_de_genero", True):
+        extra = [str(x) for x in reglas.get("palabras_de_genero", [])]
+        por_regla = [k for k in pend if not tiene_palabra_de_genero(mapeo[k]["etiqueta"], tax, extra)]
+        for k in por_regla:
+            mapeo[k].update({"subgenero": "ninguno", "origen": "regla", "fecha": hoy,
+                             "nota": "sin palabra de género: nombre, título, lugar o sello (regla automática)"})
+        if por_regla:
+            guardar_mapeo(p, mapeo)
+        print(f"Regla sin palabra de género: {len(por_regla)} etiquetas → ninguno")
+        pend = [k for k in pend if mapeo[k]["subgenero"] == "pendiente"]
     # 1) LLM (Claude), solo si hay clave: entiende jerga y variantes que Wikidata no tiene
     cfg_llm = (config.get("enriquecimiento") or {}).get("llm") or {}
     if MapeadorLLM.disponible(cfg_llm) and "--sin-llm" not in args:
