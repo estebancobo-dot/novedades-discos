@@ -224,6 +224,52 @@ def muestra_de_referencia(c):
     return R("ok" if pct >= minimo else "fallo", pct, f"{bien} de {medidos} discos de referencia exactamente bien; mínimo {minimo} %", errores)
 
 
+def _familias_de_texto(c, texto: str) -> set[str]:
+    """Familias que nombra un texto de géneros ("Americana, alt-country, folk rock") según la taxonomía,
+    sus genéricas y la tabla de etiquetas."""
+    fams = set()
+    for trozo in re.split(r"\s*[,;/]\s*", texto or ""):
+        n = normalizar(trozo)
+        subs = set(c.tax.alias.get(n, ()))
+        v = c.mapeo.get(n)
+        if v and v["subgenero"] not in ("pendiente", "ninguno", ""):
+            subs |= set(v["subgenero"].split("|"))
+        for s in subs:
+            if s in c.tax.sub and not c.tax.sub[s]["frontera"]:
+                fams |= set(c.tax.sub[s]["familias"])
+        if n in c.tax.genericas:
+            fams.add(c.tax.genericas[n])
+    return fams
+
+
+@comprobacion
+def acuerdo_wikipedia(c):
+    """¿Coincide la familia que damos con el género que pone Wikipedia para ese disco? (Wikipedia también
+    es una de nuestras fuentes, así que no es del todo independiente: sirve para detectar desvíos.)"""
+    p = ruta(os.path.join(c.rutas.get("cache_lecturas", "data/cache/lecturas"), "wikipedia.json"))
+    if not os.path.exists(p):
+        return R("sin_datos")
+    items = json.load(open(p, encoding="utf-8")).get("items", [])
+    por_clave = {(normalizar(d["artista"]), canon(d["titulo"]).replace(" ", "")): d for d in c.discos}
+    total = bien = 0
+    malos = []
+    for it in items:
+        d = por_clave.get((normalizar(it.get("artista")), canon(it.get("titulo")).replace(" ", "")))
+        esperadas = _familias_de_texto(c, it.get("genero"))
+        if not d or not esperadas:
+            continue
+        total += 1
+        if esperadas & set(d.get("familias", [])):
+            bien += 1
+        else:
+            malos.append(f"{d['artista']} – {d['titulo']}: Wikipedia «{it.get('genero')}», aquí {d.get('familias')}")
+    if not total:
+        return R("sin_datos")
+    pct = round(100 * bien / total, 1)
+    minimo = float(c.umb.get("acuerdo_wikipedia_min_pct", 85))
+    return R("ok" if pct >= minimo else "fallo", pct, f"{bien} de {total} discos con la familia que indica Wikipedia; mínimo {minimo} %", malos)
+
+
 # ---------------------------------------------------------------- fuentes
 @comprobacion
 def fuentes_estado(c):

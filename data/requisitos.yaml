@@ -86,6 +86,7 @@ requisitos:
   comprobaciones:
   - coherencia_fuentes
   - muestra_de_referencia
+  - acuerdo_wikipedia
 - id: R14
   texto: Verificar cada fuente propuesta
   origen: docs/requisitos.md

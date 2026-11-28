@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-28T08:10:38+00:00",
+ "fecha": "2026-11-28T08:11:13+00:00",
  "capas": {
   "alcance": {
    "ok": 1
@@ -158,7 +158,8 @@
    "texto": "Clasificación correcta",
    "comprobaciones": [
     "coherencia_fuentes",
-    "muestra_de_referencia"
+    "muestra_de_referencia",
+    "acuerdo_wikipedia"
    ]
   },
   "R14": {
@@ -1278,6 +1279,16 @@
     "Vreid – The Skies Turn Black: sobra death-metal"
    ]
   },
+  "acuerdo_wikipedia": {
+   "estado": "ok",
+   "valor": 98.1,
+   "detalle": "155 de 158 discos con la familia que indica Wikipedia; mínimo 85.0 %",
+   "ejemplos": [
+    "Steve Lacy – Oh yeah?: Wikipedia «Rock, R&B, experimental», aquí ['indiepop']",
+    "The Damned – Not Like Everybody Else: Wikipedia «Rock», aquí ['punkgarage', 'rockmetal']",
+    "Yonaka – Until You’re Satisfied: Wikipedia «Rock», aquí ['indiepop', 'rockmetal']"
+   ]
+  },
   "fuentes_estado": {
    "estado": "ok",
    "valor": 98.5,
@@ -1514,7 +1525,7 @@
   },
   "validacion_automatica": {
    "estado": "ok",
-   "valor": 42,
+   "valor": 43,
    "detalle": "comprobaciones automáticas en scraper/validar.py",
    "ejemplos": []
   },

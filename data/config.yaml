@@ -160,6 +160,7 @@ validacion:
   fuentes_ok_min_pct: 90
   coherencia_fuentes_min_pct: 90
   muestra_acierto_min_pct: 85
+  acuerdo_wikipedia_min_pct: 85
   cobertura_min_pct: {portada: 95, fecha_exacta: 85, sello: 70, pistas: 80, enlace_escucha: 80, subgenero: 75}
   salto_max_pct: 30                 # cambio semana a semana que se marca como aviso
   listas_anuales_desde: 2019
