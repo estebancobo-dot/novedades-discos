@@ -10,8 +10,20 @@
    "segundos": 4865
   },
   "enriquecer": {
+   "estado": "hecha",
+   "inicio": "2026-11-28T03:31:54+00:00",
+   "fin": "2026-11-28T04:09:14+00:00",
+   "segundos": 2241
+  },
+  "clasificar": {
+   "estado": "hecha",
+   "inicio": "2026-11-28T04:09:14+00:00",
+   "fin": "2026-11-28T04:09:16+00:00",
+   "segundos": 2
+  },
+  "mapear": {
    "estado": "en_curso",
-   "inicio": "2026-11-28T03:31:54+00:00"
+   "inicio": "2026-11-28T04:09:16+00:00"
   }
  }
 }

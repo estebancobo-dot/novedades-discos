@@ -28,10 +28,10 @@ peticiones:
     musicbrainz.org: 1.1
     bandcamp.com: 4.0
     api.discogs.com: 2.5          # sin clave: máximo 25 peticiones/minuto
-    wikidata.org: 1.0
+    wikidata.org: 2.0             # 27-nov: 429 a 1/s (la conexión de salida se comparte)
     ws.audioscrobbler.com: 1.0
     api.deezer.com: 0.25          # límite publicado: 50 peticiones cada 5 s (aquí, 4 por segundo)
-    itunes.apple.com: 3.1         # límite publicado: unas 20 peticiones por minuto
+    itunes.apple.com: 4.0         # "unas 20 por minuto"; a 3,1 s respondió 403 (28-nov)
     coverartarchive.org: 1.0
   timeout: 30
   respetar_robots_txt: true
