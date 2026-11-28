@@ -27857,17 +27857,19 @@
   "resenas": [
    {
     "fuente": "anydecentmusic:rolling stone",
-    "nombre": "Rolling Stone (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15769/U2-Carnaval-de-Luz.aspx",
+    "nombre": "Rolling Stone",
+    "url": "https://www.rollingstone.com/music/music-album-reviews/u2-carnaval-de-luz-album-review-1235645569/",
     "nota": "9/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "The rock legends return with a tightly focused album that stands as a counterargument to pop-culture doomsaying"
    },
    {
     "fuente": "anydecentmusic:arts desk",
-    "nombre": "The Arts Desk (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15769/U2-Carnaval-de-Luz.aspx",
+    "nombre": "The Arts Desk",
+    "url": "https://theartsdesk.com/new-music/u2s-carnaval-de-luz-humdrum-when-compared-their-other-2026-releases",
     "nota": "4/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "It’s not that 'Carnaval De Luz' is bad. It isn’t. It’s just humdrum"
    },
    {
     "fuente": "metalplanet",
@@ -27875,6 +27877,168 @@
     "url": "https://metalplanetmusic.com/2026/11/album-review-u2-carnaval-de-luz/",
     "nota": null,
     "fecha": "2026-11-25"
+   },
+   {
+    "fuente": "anydecentmusic:xs noize",
+    "nombre": "XS Noize",
+    "url": "https://www.xsnoize.com/u2-carnaval-de-luz-review/",
+    "nota": "9/10",
+    "frase": "Carnaval De Luz finds U2 50 years after their formation with the same four members and the same desire to shake things up. The album provides a convincing answer to the question of why they keep doing what they do",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:hot press",
+    "nombre": "Hot Press",
+    "url": "https://www.hotpress.com/music/album-review-u2-carnaval-de-luz-23168853",
+    "nota": "9/10",
+    "frase": "U2 return with a defiant and celebratory record that captures them still at the height of their powers",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:mojo",
+    "nombre": "Mojo",
+    "url": "https://www.mojo4music.com/articles/new-music/u2-carnaval-de-luz-review/",
+    "nota": "8/10",
+    "frase": "Bono and co. return to full strength with a celebration of hope over despair",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:uncut",
+    "nombre": "Uncut",
+    "url": null,
+    "nota": "8/10",
+    "frase": "This is not a radical reinvention of Rattle And Hum-to-Achtung Baby magnitude, or even a wilful evolution akin to that from How To Dismantle An Atom Bomb to No Line On Th Horizon. The ghosts of U2's past are summoned in numbers, though they are frequently mischievously partnered to interestingly inc",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:all music",
+    "nombre": "All Music",
+    "url": "https://www.allmusic.com/album/carnaval-de-luz-mw0004889876",
+    "nota": "8/10",
+    "frase": "Letting loose and finding renewed purpose, U2 have delivered one of their most fun and engaging albums with Carnaval De Luz, a celebratory injection of positive vibes to both the world and this band",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:guardian",
+    "nombre": "The Guardian",
+    "url": "https://www.theguardian.com/music/2026/nov/09/u2-carnaval-de-luz-review",
+    "nota": "8/10",
+    "frase": "On their first album of new songs in nearly a decade, even earnest Bono-isms carry weight amid music that is impassioned and rejuvenated",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:irish times",
+    "nombre": "The Irish Times",
+    "url": "https://www.irishtimes.com/culture/music/review/2026/11/06/u2-carnaval-de-luz-review-irish-rocks-crazy-diamonds-shine-on-brighter-than-ever/",
+    "nota": "8/10",
+    "frase": "Irish rock’s crazy diamonds shine on brighter than ever",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:record collector",
+    "nombre": "Record Collector",
+    "url": "https://recordcollectormag.com/reviews/u2-carnaval-de-luz-review",
+    "nota": "8/10",
+    "frase": "They sound ambitious and engaged in their 50th year, swinging for the fences and hitting more targets than not. There’s still some gas in the tank",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:still listening",
+    "nombre": "Still Listening",
+    "url": "https://www.stilllisteningmagazine.com/reviews/u2-carnaval-de-luz-review",
+    "nota": "7.6/10",
+    "frase": "On their 16th studio album, U2 revisit their familiar sound while exploring themes of faith, hope and humanity",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:exclaim",
+    "nombre": "Exclaim",
+    "url": "https://exclaim.ca/music/article/u2-carnaval-de-luz-album-review",
+    "nota": "7/10",
+    "frase": "Ambitious but accessible, catchy but substantial, they've returned with a record that feels energized and alive, as though they have once again arrived at the start of something inventive and exciting",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:clash",
+    "nombre": "Clash",
+    "url": "https://www.clashmusic.com/reviews/u2-carnaval-de-luz/",
+    "nota": "7/10",
+    "frase": "At times thrilling, ‘Carnaval De Luz’ isn’t perfect, but it nonetheless contains some of U2’s best and most effective music for a decade. Shrugging off the cynics, it’s the work of a band with an appetite for the future",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spill magazine",
+    "nombre": "Spill Magazine",
+    "url": "https://spillmagazine.com/spill-album-review-u2-carnaval-de-luz/",
+    "nota": "7/10",
+    "frase": "With Carnaval De Luz they are not reinventing themselves or trying to be the current flavour of the month. What they do with this album is revisit their older glories and create new music and sounds. And as a legacy band it is near impossible to not compare their new music to their classic albums",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:musicomh",
+    "nombre": "musicOMH",
+    "url": "https://www.musicomh.com/reviews/albums/u2-carnaval-de-luz",
+    "nota": "7/10",
+    "frase": "The Irish legends' best work in 25 years homages their eras, brings Brian Eno to bear on keys and even wheels out the late Dolly Parton",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:pitchfork",
+    "nombre": "Pitchfork",
+    "url": "https://pitchfork.com/reviews/alums/u2-carnaval-de-luz/",
+    "nota": "6.5/10",
+    "frase": "With a sense of appreciation for their own longevity, U2 return with their first new album in nearly a decade to ask: What if rock’n’roll is the friends we made along the way?",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spectrum culture",
+    "nombre": "Spectrum Culture",
+    "url": "https://spectrumculture.com/2026/11/15/u2-carnaval-de-luz-review/",
+    "nota": "6.3/10",
+    "frase": "Despite Bono’s protests, a rock and roll band can’t save the world, but they may just be able to save themselve",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:nme",
+    "nombre": "NME",
+    "url": "https://www.nme.com/reviews/album/u2-carnaval-de-luz-review-3975730",
+    "nota": "6/10",
+    "frase": "On their sixteenth studio album, the Irish legends sound more playful than preachy for the first time in a long time",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:no ripcord",
+    "nombre": "No Ripcord",
+    "url": "https://www.noripcord.com/u2-carnaval-de-luz/",
+    "nota": "6/10",
+    "frase": "Their communion, while undeniably luminous in intent, doesn’t always translate as it should",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:paste magazine",
+    "nombre": "Paste Magazine",
+    "url": "https://www.pastemagazine.com/music/u2-carnaval-de-luz-review",
+    "nota": "2.5/10",
+    "frase": "The Irish stadium legends’ latest is pedantic and ambiguous, rife with centrist pandering that ends up saying nothing at all",
+    "fecha": null,
+    "via": "anydecentmusic"
    }
   ],
   "enlaces": {
@@ -32395,10 +32559,83 @@
   "resenas": [
    {
     "fuente": "anydecentmusic:northern transmissions",
-    "nombre": "Northern Transmissions (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15770/Twisted-Teens-The-Holy-Cross-Tigers-.aspx",
+    "nombre": "Northern Transmissions",
+    "url": "https://northerntransmissions.com/twisted-teens-the-holy-cross-tigers/#google_vignette",
     "nota": "9.5/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "It runs about half an hour, and it is also the most heartbroken thing they’ve put out. Their usual scruffy tunefulness is still there, but it now carries real weight"
+   },
+   {
+    "fuente": "anydecentmusic:paste magazine",
+    "nombre": "Paste Magazine",
+    "url": "https://www.pastemagazine.com/music/twisted-teens/twisted-teens-the-holy-cross-tigers-review",
+    "nota": "9.1/10",
+    "frase": "The New Orleans rock group’s third album of 2026 delves into the wilderness of all of their most exciting sonic and spiritual contradictions",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spectrum culture",
+    "nombre": "Spectrum Culture",
+    "url": "https://spectrumculture.com/2026/11/08/twisted-teens-the-holy-cross-tigers-review/",
+    "nota": "8.3/10",
+    "frase": "What could have been a crash landing has instead pushed Twisted Teens to new heights",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:beats per minute",
+    "nombre": "Beats Per Minute",
+    "url": "https://beatsperminute.com/album-review-twisted-teens-the-holy-cross-tigers/",
+    "nota": "8.1/10",
+    "frase": "They revamp the work of their progenitors while at the same time transcending it. Never wandering too far from the music that inspires them, Twisted Teens occupy a space that is distinctly theirs",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:pitchfork",
+    "nombre": "Pitchfork",
+    "url": "https://pitchfork.com/reviews/albums/twisted-teens-the-holy-cross-tigers/",
+    "nota": "8/10",
+    "frase": "On their third album this year, the New Orleans garage rockers embrace conflicting emotions and clashing sounds, balancing hard-charging rave-ups with exploratory tape experiments",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:mojo",
+    "nombre": "Mojo",
+    "url": null,
+    "nota": "8/10",
+    "frase": "Print edition only",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:under the radar",
+    "nombre": "Under The Radar",
+    "url": "https://www.undertheradarmag.com/reviews/the_holy_cross_tigers_twisted_teens",
+    "nota": "7.5/10",
+    "frase": "Whether or not Hollywell and Santos keep cranking out the work at the same pace, there’s no doubt that 2026 found them putting out three mighty fine albums",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:slant magazine",
+    "nombre": "Slant Magazine",
+    "url": "https://www.slantmagazine.com/music/twisted-teens-the-holy-cross-tigers-album-review/",
+    "nota": "7/10",
+    "frase": "Every explosive guitar solo feels both wildly improvised and carefully considered",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:uncut",
+    "nombre": "Uncut",
+    "url": null,
+    "nota": "7/10",
+    "frase": "Print edition only",
+    "fecha": null,
+    "via": "anydecentmusic"
    }
   ],
   "enlaces": {
@@ -35594,10 +35831,101 @@
   "resenas": [
    {
     "fuente": "anydecentmusic:clash",
-    "nombre": "Clash (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15772/Kings-Of-Leon-O-My-Beloved-.aspx",
+    "nombre": "Clash",
+    "url": "https://www.clashmusic.com/reviews/kings-of-leon-o-my-beloved/",
     "nota": "8/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "‘O My Beloved’ is a triumphant tenth album, defined by thought-provoking lyricism, unabashed Americana and soothing melodies, making the next chapter of life seem much less daunting"
+   },
+   {
+    "fuente": "anydecentmusic:hot press",
+    "nombre": "Hot Press",
+    "url": "https://www.hotpress.com/music/album-review-kings-of-leon-o-my-beloved-23168182",
+    "nota": "8/10",
+    "frase": "The significant distinction is that they’re reaching back to music they made before Kings Of Leon – a return to the spirit of their earliest Nashville songwriting",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:mojo",
+    "nombre": "Mojo",
+    "url": null,
+    "nota": "8/10",
+    "frase": "Print edition only",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:record collector",
+    "nombre": "Record Collector",
+    "url": "https://recordcollectormag.com/reviews/kings-of-leon-o-my-beloved-album-review",
+    "nota": "8/10",
+    "frase": "NEW Kings Of Leon enter reflective territory on O My Beloved, a personal tenth album looking back on family, childhood, gratitude and their long journey together",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:uncut",
+    "nombre": "Uncut",
+    "url": null,
+    "nota": "7/10",
+    "frase": "Print edition only",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spill magazine",
+    "nombre": "Spill Magazine",
+    "url": "https://spillmagazine.com/spill-album-review-u2-carnaval-de-luz/",
+    "nota": "7/10",
+    "frase": "With Carnaval De Luz they are not reinventing themselves or trying to be the current flavour of the month. What they do with this album is revisit their older glories and create new music and sound",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:all music",
+    "nombre": "All Music",
+    "url": "https://www.allmusic.com/album/o-my-beloved-mw0004887549",
+    "nota": "7/10",
+    "frase": "Though it may lack some of the euphoric rush of the band's biggest hits, O My Beloved has a relaxed emotional directness that draws you in",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:pitchfork",
+    "nombre": "Pitchfork",
+    "url": "https://pitchfork.com/reviews/albums/kings-of-leon-o-my-beloved/",
+    "nota": "6.7/10",
+    "frase": "The band’s 10th album is a shocking and largely impressive reinvention that’s also the loosest they’ve sounded in decades",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:far out",
+    "nombre": "Far Out",
+    "url": "https://faroutmagazine.co.uk/kings-of-leon-o-my-beloved-album-review/",
+    "nota": "6/10",
+    "frase": "Kings of Leon have always been a vital and emotional band, and while on O My Beloved comforts aches, it rarely inspires",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spectrum culture",
+    "nombre": "Spectrum Culture",
+    "url": "https://spectrumculture.com/2026/11/18/kings-of-leon-o-my-beloved/",
+    "nota": "4.5/10",
+    "frase": "O My Beloved falls into a small range of emotion and instrumentation, all dour three-chord slow jams that resemble Nickelback without the uppers",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:arts desk",
+    "nombre": "The Arts Desk",
+    "url": "https://theartsdesk.com/new-music/kings-leon-lack-depth-stripped-back-tenth-album-o-my-beloved",
+    "nota": "4/10",
+    "frase": "The group strip back to an intimate, personal feel",
+    "fecha": null,
+    "via": "anydecentmusic"
    }
   ],
   "enlaces": {
@@ -38690,17 +39018,73 @@
   "resenas": [
    {
     "fuente": "anydecentmusic:musicomh",
-    "nombre": "musicOMH (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15773/Django-Django-Doveland-.aspx",
+    "nombre": "musicOMH",
+    "url": "https://www.musicomh.com/reviews/albums/django-django-doveland",
     "nota": "8/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "Ditching erratic experimentation for an ambient concept, the indie shapeshifters' sixth album is their most coherent in years"
    },
    {
     "fuente": "anydecentmusic:skinny",
-    "nombre": "The Skinny (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15773/Django-Django-Doveland-.aspx",
+    "nombre": "The Skinny",
+    "url": "https://www.theskinny.co.uk/music/reviews/albums/django-django-doveland",
     "nota": "8/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "Electronic experimentalists Django Django ditch synths for sparseness on a gorgeous, ruminative sixth LP"
+   },
+   {
+    "fuente": "anydecentmusic:uncut",
+    "nombre": "Uncut",
+    "url": null,
+    "nota": "9/10",
+    "frase": "Print edition only",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:still listening",
+    "nombre": "Still Listening",
+    "url": "https://www.stilllisteningmagazine.com/reviews/django-django-doveland-review",
+    "nota": "9/10",
+    "frase": "Roads, deserted. Towns, sparse. Time, hangs. Doveland is not an album you listen to on a roadtrip; it IS the road trip",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:under the radar",
+    "nombre": "Under The Radar",
+    "url": "https://www.undertheradarmag.com/reviews/doveland_django_django",
+    "nota": "8/10",
+    "frase": "Doveland might be a departure for Django Django, but at least they sound like they’re having fun despite some of the deeper topics its songs address",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:arts desk",
+    "nombre": "The Arts Desk",
+    "url": "https://theartsdesk.com/new-music/django-django-kick-back-and-chill-out-doveland",
+    "nota": "8/10",
+    "frase": "Django Django would appear to have refreshed their approach and challenged themselves to try out previously unconsidered melodic avenues",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:popmatters",
+    "nombre": "PopMatters",
+    "url": "https://www.popmatters.com/django-django-doveland",
+    "nota": "8/10",
+    "frase": "Doveland sounds less like a reduction of Django Django’s musical vocabulary than a more relaxed demonstration of how much they possess",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:clash",
+    "nombre": "Clash",
+    "url": "https://www.clashmusic.com/reviews/django-django-doveland/",
+    "nota": "7/10",
+    "frase": "‘Doveland’ finds a restless band slowing down to make their most personal album yet",
+    "fecha": null,
+    "via": "anydecentmusic"
    }
   ],
   "enlaces": {
@@ -49602,10 +49986,11 @@
   "resenas": [
    {
     "fuente": "anydecentmusic:under the radar",
-    "nombre": "Under The Radar (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15765/DIIV-ZIRP.aspx",
+    "nombre": "Under The Radar",
+    "url": "https://www.undertheradarmag.com/reviews/zirp_diiv",
     "nota": "8.5/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "DIIV are clearly aiming for arena-sized shows, and ZIRP! is an anthem-packed album that can certainly take the band there"
    },
    {
     "fuente": "stereogum_aotw",
@@ -49613,6 +49998,96 @@
     "url": "https://stereogum.com/2515261/album-of-the-week-diiv-zirp/reviews/album-of-the-week/",
     "nota": null,
     "fecha": "2026-10-27"
+   },
+   {
+    "fuente": "anydecentmusic:paste magazine",
+    "nombre": "Paste Magazine",
+    "url": "https://www.pastemagazine.com/music/diiv/diiv-zirp-review",
+    "nota": "8.3/10",
+    "frase": "With A.G. Cook’s help, the California band melds electronic, nu metal, and shoegaze on their best album in years",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:exclaim",
+    "nombre": "Exclaim",
+    "url": "https://exclaim.ca/music/article/diiv-zirp-album-review",
+    "nota": "8/10",
+    "frase": "By the end of ZIRP!, it's clear that Cook's alt-rock and spirited production brings a poppy accessibility to DIIV without losing the emotional complexity of their shoegaze roots",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:clash",
+    "nombre": "Clash",
+    "url": "https://www.clashmusic.com/reviews/diiv-zirp/",
+    "nota": "8/10",
+    "frase": "A gorgeous and at times haunting shoegaze evolution",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:nme",
+    "nombre": "NME",
+    "url": "https://www.nme.com/reviews/album/diiv-zirp-review-3974219",
+    "nota": "8/10",
+    "frase": "Los Angeles band offer up an ambitious, unflinching look at where the ills of capitalism have taken us",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:beats per minute",
+    "nombre": "Beats Per Minute",
+    "url": "https://beatsperminute.com/album-review-diiv-zirp/",
+    "nota": "7.9/10",
+    "frase": "With each spin, ZIRP! becomes a stronger listen and truly unravels its status as valid shoegaze milestone",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:northern transmissions",
+    "nombre": "Northern Transmissions",
+    "url": "https://northerntransmissions.com/diiv-zirp/",
+    "nota": "7.7/10",
+    "frase": "The guitars still burn, the best hooks are real, and the anger feels earned. It’s a flawed, fascinating swing, and one of the more intriguing shoegaze-adjacent releases of the year",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:pitchfork",
+    "nombre": "Pitchfork",
+    "url": "https://pitchfork.com/reviews/albums/diiv-zirp/",
+    "nota": "7/10",
+    "frase": "The shoegaze band teams with producer A. G. Cook for its most pop-leaning record yet. Despite some welcome shifts in tone, the best moments sound like no one but DIIV",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spectrum culture",
+    "nombre": "Spectrum Culture",
+    "url": "https://spectrumculture.com/2026/11/09/diiv-zirp-review/",
+    "nota": "6.6/10",
+    "frase": "ZIRP! is neither a radical reinvention nor a straightforward continuation, but an uneasy negotiation between the band's established identity and its desire for something new",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:line of best fit",
+    "nombre": "The Line Of Best Fit",
+    "url": "https://www.thelineofbestfit.com/albums/diiv-confront-social-turmoil-with-more-simplicity-on-zirp",
+    "nota": "6/10",
+    "frase": "DIIV’s colossal shoegaze may have made them grow a little leaden, but ZIRP! is an overcorrection. In shrinking down their scale, DIIV end up missing out on what made them, them",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:slant magazine",
+    "nombre": "Slant Magazine",
+    "url": "https://www.slantmagazine.com/music/diiv-zirp-album-review/",
+    "nota": "5/10",
+    "frase": "The album is a bold swing, but perhaps not the one the band needed",
+    "fecha": null,
+    "via": "anydecentmusic"
    }
   ],
   "enlaces": {
@@ -55299,10 +55774,11 @@
   "resenas": [
    {
     "fuente": "anydecentmusic:louder than war",
-    "nombre": "Louder Than War (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15764/Tony-Iommi-From-The-Dark.aspx",
+    "nombre": "Louder Than War",
+    "url": "https://louderthanwar.com/tony-iommi-from-the-dark-album-review/",
     "nota": "10/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "This is a splendid album, brilliantly performed and recorded; it is forward-looking and completely able to hold its own in the contemporary metal world"
    },
    {
     "fuente": "distortedsound",
@@ -55331,6 +55807,87 @@
     "url": "https://louderthanwar.com/tony-iommi-from-the-dark-album-review/",
     "nota": null,
     "fecha": "2026-10-23"
+   },
+   {
+    "fuente": "anydecentmusic:arts desk",
+    "nombre": "The Arts Desk",
+    "url": "https://theartsdesk.com/new-music/tony-iommis-dark-sound-classic-heavy-metal-written-large",
+    "nota": "8/10",
+    "frase": "Iommi’s vision and intentions make for a seriously powerful set of tunes that will keep plenty of Metalheads more than happy",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:record collector",
+    "nombre": "Record Collector",
+    "url": null,
+    "nota": "8/10",
+    "frase": "From The Dark is the sort of album where nothing is out of place - everything adds to its integrity, and to the brooding atmosphere of foreboding. Print edition only",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:mojo",
+    "nombre": "Mojo",
+    "url": null,
+    "nota": "8/10",
+    "frase": "The whole thing is biblically, sometimes exhaustingly epic, but a timely reminder of Iommi's pioneering musicianship. Print edition only",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:kerrang",
+    "nombre": "Kerrang!",
+    "url": "https://www.kerrang.com/album-review-tony-iommi-from-the-dark",
+    "nota": "8/10",
+    "frase": "A reaffirmation of the man’s elemental power and enduring importance",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spill magazine",
+    "nombre": "Spill Magazine",
+    "url": "https://spillmagazine.com/spill-album-review-tony-iommi-from-the-dark/",
+    "nota": "8/10",
+    "frase": "From The Dark is a strong, latter career highlight that sees Iommi seamlessly pickup from where he left off over a decade ago in what hopefully ignites the start of a new era for Iommi",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:pitchfork",
+    "nombre": "Pitchfork",
+    "url": "https://pitchfork.com/reviews/albums/tony-iommi-from-the-dark/",
+    "nota": "7.5/10",
+    "frase": "Teaming with Norwegian vocalist Jørn Lande, the 78-year-old Black Sabbath guitarist gets back to heavy-metal basics on a proudly uncompromising new solo album",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spectrum culture",
+    "nombre": "Spectrum Culture",
+    "url": "https://spectrumculture.com/2026/11/02/iommi-from-the-dark-review/",
+    "nota": "7/10",
+    "frase": "From the Dark is probably the best album Black Sabbath guitarist Tony Iommi has released under his own name. It’s definitely good, but it’s also so typical of his music over the past four decades that it’s hard to get very excited about",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:far out",
+    "nombre": "Far Out",
+    "url": "https://faroutmagazine.co.uk/tony-iommi-from-the-dark-album-review/",
+    "nota": "7/10",
+    "frase": "Considering that Tony Iommi is one of, if not the, most significant heavy metal figure in the current landscape, you’d be hard-pressed to find anyone who doesn’t believe From The Dark to be a deeply significant moment in his career",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:uncut",
+    "nombre": "Uncut",
+    "url": null,
+    "nota": "6/10",
+    "frase": "Doomheads may regret this new record isn't an experimental black mass of riffs. Fans of lacy-sleeved hard rock, however, will lean into the tuneful thunderstorm. Print edition only",
+    "fecha": null,
+    "via": "anydecentmusic"
    }
   ],
   "enlaces": {
@@ -58787,17 +59344,163 @@
   "resenas": [
    {
     "fuente": "anydecentmusic:arts desk",
-    "nombre": "The Arts Desk (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15763/Michael-Kiwanuka-Fudge.aspx",
+    "nombre": "The Arts Desk",
+    "url": "https://theartsdesk.com/new-music/michael-kiwanuka-definitely-doesnt-fudge-his-first-self-produced-album",
     "nota": "10/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "It’s perfect listening as the seasons turn and the world seems harsh, real soft music for hard times"
    },
    {
     "fuente": "anydecentmusic:clash",
-    "nombre": "Clash (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15763/Michael-Kiwanuka-Fudge.aspx",
+    "nombre": "Clash",
+    "url": "https://www.clashmusic.com/reviews/michael-kiwanuka-fudge/",
     "nota": "8/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "Sombre and reflective songwriting from a modern soul great"
+   },
+   {
+    "fuente": "anydecentmusic:god is in the tv",
+    "nombre": "God Is In The TV",
+    "url": "https://www.godisinthetvzine.co.uk/2026/10/27/michael-kiwanuka-fudge-polydor-geffen/",
+    "nota": "9/10",
+    "frase": "This LP seems to have more of a hazy, late night essence. There is still an underlying melancholia but there is something lighter and hopeful. The strings are euphoric, the extended codas are extravagant and kaleidoscopic, stretching out for ever and ever in a glorious wall of sound, as on ‘Just Ano",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spill magazine",
+    "nombre": "Spill Magazine",
+    "url": "https://spillmagazine.com/spill-album-review-michael-kiwanuka-fudge/",
+    "nota": "8/10",
+    "frase": "A mostly brilliant effort from Michael Kiwanuka that serves as a showcase for his improvements in songwriting, as well as his ear for great melodies",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:record collector",
+    "nombre": "Record Collector",
+    "url": null,
+    "nota": "8/10",
+    "frase": "Kiwanuka sounds spiritually at home and much the better for it. Print edition only",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:all music",
+    "nombre": "All Music",
+    "url": "https://www.allmusic.com/album/fudge-mw0004892753",
+    "nota": "8/10",
+    "frase": "Fudge hardly resembles a low-budget effort, nor is it truly anomalous in the context of Kiwanuka's catalog. It largely consists of plaintive ballads -- fully formed hybrids of soul, folk, and roots rock teeming with heartache, doubt, and weary resolve",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:rolling stone",
+    "nombre": "Rolling Stone",
+    "url": "https://www.rollingstone.co.uk/music/album-reviews/michael-kiwanuka-fudge-review-a-beautiful-but-bittersweet-reminder-of-his-brilliance-65320/",
+    "nota": "8/10",
+    "frase": "Recorded just months before the singer suffered a catastrophic stroke, this album is a renewed reminder of his unbelievable talent",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:nme",
+    "nombre": "NME",
+    "url": "https://www.nme.com/reviews/album/michael-kiwanuka-fudge-review-3973478",
+    "nota": "8/10",
+    "frase": "Still in recovery from a life-shattering stroke, the Mercury Prize winner offers a deeply poignant, lyrically brilliant glimpse into his state pre-illness",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:mojo",
+    "nombre": "Mojo",
+    "url": "https://www.mojo4music.com/articles/new-music/michael-kiwanuka-fudge-reviewed/",
+    "nota": "8/10",
+    "frase": "Delayed following his recent stroke, Michael Kiwanuka’s fifth album presents the singer at his rawest",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:independent",
+    "nombre": "The Independent",
+    "url": "https://www.independent.co.uk/arts-entertainment/music/reviews/michael-kiwanuka-fudge-review-stroke-health-b3070655.html",
+    "nota": "8/10",
+    "frase": "Releasing the album not long after revealing that he had suffered a stroke and was unsure of when he would recover, the artist offers us a reminder of his remarkable gift",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:guardian",
+    "nombre": "The Guardian",
+    "url": "https://www.theguardian.com/music/2026/oct/19/michael-kiwanuka-fudge-review-rough-and-instinctive-but-also-lush-and-alive-with-melody",
+    "nota": "8/10",
+    "frase": "Its release delayed by ill health, Kiwanuka’s latest was made in tandem with 2024’s Small Changes – but it’s much more than a mere companion album",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:rolling stone uk",
+    "nombre": "Rolling Stone UK",
+    "url": "https://www.rollingstone.co.uk/music/album-reviews/michael-kiwanuka-fudge-review-a-beautiful-but-bittersweet-reminder-of-his-brilliance-65320/",
+    "nota": "8/10",
+    "frase": "Recorded just months before the singer suffered a catastrophic stroke, this album is a renewed reminder of his unbelievable talent",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:northern transmissions",
+    "nombre": "Northern Transmissions",
+    "url": "https://northerntransmissions.com/michael-kiwanuka-fudge/",
+    "nota": "7.5/10",
+    "frase": "Count-ins from the recording sessions, bits of conversation, or things that sound like a tape being loaded throughout the record. These little intentional details add a rawness to the recordings that mirror the emotional vulnerability in his songwriting and vocals",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:paste magazine",
+    "nombre": "Paste Magazine",
+    "url": "https://www.pastemagazine.com/music/michael-kiwanuka/michael-kiwanuka-fudge-review",
+    "nota": "7.5/10",
+    "frase": "Kiwanuka’s first self-produced album in 14 years has the loose and instinctive feeling of an artist doing exactly what he wants to do",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:exclaim",
+    "nombre": "Exclaim",
+    "url": "https://exclaim.ca/music/article/michael-kiwanuka-fudge-album-review",
+    "nota": "7/10",
+    "frase": "A portrait of an artist in-progress — still learning, still adapting and still evolving rather than staying complacent and safe once set",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:uncut",
+    "nombre": "Uncut",
+    "url": null,
+    "nota": "7/10",
+    "frase": "A creative partnership's end – and new beginnings. Print edition only",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:line of best fit",
+    "nombre": "The Line Of Best Fit",
+    "url": "https://www.thelineofbestfit.com/albums/on-fudge-michael-kiwanuka-makes-peace-with-taking-his-time",
+    "nota": "7/10",
+    "frase": "It is, unmistakably, a Michael Kiwanuka project, a feat achieved even in the face of the changes occurring behind the boards. He has earned the right to wander",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:far out",
+    "nombre": "Far Out",
+    "url": "https://faroutmagazine.co.uk/michael-kiwanuka-fudge-album-review/",
+    "nota": "6.5/10",
+    "frase": "A record of sprawling and elegant songs that invoke a sense of loss, confusion and hard goodbyes",
+    "fecha": null,
+    "via": "anydecentmusic"
    }
   ],
   "enlaces": {
@@ -68950,10 +69653,119 @@
   "resenas": [
    {
     "fuente": "anydecentmusic:clash",
-    "nombre": "Clash (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15760/The-Avalanches-No-Bad-Memories-.aspx",
+    "nombre": "Clash",
+    "url": "https://www.clashmusic.com/reviews/the-avalanches-no-bad-memories/",
     "nota": "9/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "Mad, joyous and utterly absorbing, ‘No Bad Memories’ proves that more than two decades on, The Avalanches can still surprise, and still make a concept this heady feel like pure play"
+   },
+   {
+    "fuente": "anydecentmusic:diy",
+    "nombre": "DIY",
+    "url": "https://diymag.com/review/album/the-avalanches-no-bad-memories",
+    "nota": "10/10",
+    "frase": "Structurally, this is chaos by design",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:slant magazine",
+    "nombre": "Slant Magazine",
+    "url": "https://www.slantmagazine.com/music/the-avalanches-no-bad-memories-album-review/",
+    "nota": "9/10",
+    "frase": "The album transforms obsolete technology and jingles into a euphoric exploration of nostalgia",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:pitchfork",
+    "nombre": "Pitchfork",
+    "url": "https://pitchfork.com/reviews/albums/the-avalanches-no-bad-memories/",
+    "nota": "8.2/10",
+    "frase": "Patching in audio logos and advertising dialog without interrupting the dreamlike sampledelic flow, the Australian band’s new album summons nostalgia for the era of truly mass media",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:far out",
+    "nombre": "Far Out",
+    "url": "https://faroutmagazine.co.uk/the-avalanches-no-bad-memories-album-review/",
+    "nota": "8/10",
+    "frase": "It’s masterful because it feels like the last party before the end times",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:quietus",
+    "nombre": "The Quietus",
+    "url": "https://thequietus.com/quietus-reviews/the-avalanches-no-bad-memories-review/",
+    "nota": "8/10",
+    "frase": "All these jingles, disk-drawer sounds, error parps and proprietary signatures might be the first elements they’ve used we can all relate to directly. Just another route to joyous shared experience",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:arts desk",
+    "nombre": "The Arts Desk",
+    "url": "https://www.theartsdesk.com/new-music/avalanches-take-sharp-stylistic-left-turn-no-bad-memories",
+    "nota": "8/10",
+    "frase": "It still forms a cohesive whole, never wavering from the basic concept - no matter how disorientating and claustrophobic it may become",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:still listening",
+    "nombre": "Still Listening",
+    "url": "https://www.stilllisteningmagazine.com/reviews/the-avalanches-no-bad-memories-review",
+    "nota": "7.9/10",
+    "frase": "The Avalanches sift through fragmented memories, advertising jingles and an unlikely cast of collaborators on a fourth album whose sunny exterior conceals a restless undercurrent",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:northern transmissions",
+    "nombre": "Northern Transmissions",
+    "url": "https://northerntransmissions.com/the-avalanches-no-bad-memories/#google_vignette",
+    "nota": "7.9/10",
+    "frase": "At 31 tracks in 52 minutes, it plays less like an album than like an evening of channel-surfing in 1998, with the remote in the hands of someone who has had a great deal of sugar",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:paste magazine",
+    "nombre": "Paste Magazine",
+    "url": "https://www.pastemagazine.com/music/the-avalanches/the-avalanches-no-bad-memories-review",
+    "nota": "7.5/10",
+    "frase": "The Australian plunderphonics group use commercial jingles and analog technology as a counterpoint to the false, grotesque fantasies generative AI induces",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:musicomh",
+    "nombre": "musicOMH",
+    "url": "https://www.musicomh.com/reviews/albums/the-avalanches-no-bad-memories",
+    "nota": "7/10",
+    "frase": "The outfit's fourth album explores nostalgia, childhood imagery, and the hypnotic power of modern advertising. As a commentary on consumerism, it's a fascinating achievement",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spectrum culture",
+    "nombre": "Spectrum Culture",
+    "url": "https://spectrumculture.com/2026/10/22/the-avalanches-no-bad-memories-review/",
+    "nota": "6.7/10",
+    "frase": "A trip through advertising sensations that haunt childhood memories and stick around forever. The Avalanches mine this concept imaginatively, even if the individual songs and overall flow sometimes fail to impress",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:nme",
+    "nombre": "NME",
+    "url": "https://www.nme.com/reviews/album/the-avalanches-no-bad-memories-review-3973070",
+    "nota": "6/10",
+    "frase": "The dance duo’s fourth album is their most eclectic and chaotic to date, for better and for worse",
+    "fecha": null,
+    "via": "anydecentmusic"
    }
   ],
   "enlaces": {
@@ -73228,17 +74040,316 @@
   "resenas": [
    {
     "fuente": "anydecentmusic:independent",
-    "nombre": "The Independent (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15757/Fontaines-DC-Dopamine-Chamber-.aspx",
+    "nombre": "The Independent",
+    "url": "https://www.independent.co.uk/arts-entertainment/music/reviews/fontaines-dc-review-dopamine-chamber-b3066646.html",
     "nota": "10/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "A masterpiece from the greatest band of their generation"
    },
    {
     "fuente": "anydecentmusic:dork",
-    "nombre": "Dork (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15757/Fontaines-DC-Dopamine-Chamber-.aspx",
+    "nombre": "Dork",
+    "url": "https://readdork.com/reviews/fontaines-d-c-dopamine-chamber",
     "nota": "10/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "When a band reaches a certain size, a lot of people start claiming they were better before they got big. We defy anyone to listen to 'Dopamine Chamber' and make that claim in good faith - this is a band firing on all cylinders and staking their claim to be the best band of their generation"
+   },
+   {
+    "fuente": "anydecentmusic:rolling stone uk",
+    "nombre": "Rolling Stone UK",
+    "url": "https://www.rollingstone.co.uk/music/album-reviews/fontaines-d-c-dopamine-chamber-review-album-65050/",
+    "nota": "10/10",
+    "frase": "After the surreal technicolour dreams of 'Romance', Fontaines D.C. have landed back on Earth to dissect our fractured reality. The result is something truly special",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:nme",
+    "nombre": "NME",
+    "url": "https://www.nme.com/reviews/album/fontaines-d-c-dopamine-chamber-album-review-3972863",
+    "nota": "10/10",
+    "frase": "As Dublin’s finest reach stadium level, album five dives deeper into the extremes of ‘Romance’ for a dark but exhilarating reflection of end times",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:guardian",
+    "nombre": "The Guardian",
+    "url": "https://www.theguardian.com/music/2026/oct/12/fontaines-dc-dopamine-chamber-album-review-xl-grian-chatten",
+    "nota": "10/10",
+    "frase": "This is a beguiling, endlessly inventive and frequently astonishing fifth LP from a group at increasing ease with being the best band of their generation",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:arts desk",
+    "nombre": "The Arts Desk",
+    "url": "https://www.theartsdesk.com/new-music/sweeping-sorrowful-surging-triumph-fontaines-dc-knock-it-out-park-once-more-dopamine-chamber",
+    "nota": "10/10",
+    "frase": "Incredibly, the intensity and complexity of Grian Chatten’s voice has deepened since the much-lauded 'Romance'",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:musicomh",
+    "nombre": "musicOMH",
+    "url": "https://www.musicomh.com/reviews/albums/fontaines-dc-dopamine-chamber",
+    "nota": "10/10",
+    "frase": "Fifth album finds Dublin quintet sounding grandiose and exhilarating, evolving while refusing to compromise any of their identity",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:diy",
+    "nombre": "DIY",
+    "url": "https://diymag.com/review/album/fontaines-d-c-dopamine-chamber",
+    "nota": "10/10",
+    "frase": "A mirror to our times casting back a stark, frightening image",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:skinny",
+    "nombre": "The Skinny",
+    "url": "https://www.theskinny.co.uk/music/reviews/albums/fontaines-d-c-dopamine-chamber",
+    "nota": "10/10",
+    "frase": "Dark, daring and decidedly enthralling, Fontaines D.C.'s fifth album Dopamine Chamber is the sound of a band completely in a league of their own",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:under the radar",
+    "nombre": "Under The Radar",
+    "url": "https://www.undertheradarmag.com/reviews/dopamine_chamber_fontaines_dc",
+    "nota": "9/10",
+    "frase": "If Romance was the first time Fontaines D.C. raised their head over the parapet, Dopamine Chamber is the storming of the Winter Palace. It is the absolute victory we always dream of, when the outsiders take over",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:still listening",
+    "nombre": "Still Listening",
+    "url": "https://www.stilllisteningmagazine.com/reviews/fontaines-dc-dopamine-chamber-review",
+    "nota": "9/10",
+    "frase": "Dopamine Chamber sounds like a busted limbic system that forces you to let all of the emotions hit you at once",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:far out",
+    "nombre": "Far Out",
+    "url": "https://faroutmagazine.co.uk/fontaines-dc-dopamine-chamber-album-review/",
+    "nota": "9/10",
+    "frase": "A wrecking ball of innovation that proves the band are a power unto themselves, and each new challenge posed by the release of a new album continues to draw out their undeniable genius",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spill magazine",
+    "nombre": "Spill Magazine",
+    "url": "https://spillmagazine.com/spill-album-review-fontaines-d-c-dopamine-chamber/",
+    "nota": "9/10",
+    "frase": "The band incorporates a great many influences, but they make everything their own distinct sound. It is an album of discovery and gets better with each spin on the turntable",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:hot press",
+    "nombre": "Hot Press",
+    "url": "https://www.hotpress.com/music/album-review-fontaines-d-c-dopamine-chamber-23164708",
+    "nota": "9/10",
+    "frase": "Dopamine Chamber finds Fontaines moving even further away from the live guitar emphasis of their earlier work – embracing new styles in ways that are, by turns, liberating and devastating",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:earmilk",
+    "nombre": "Earmilk",
+    "url": "https://earmilk.com/album-reviews/fontaines-d-c-dopamine-chamber-album-review/",
+    "nota": "8.5/10",
+    "frase": "If you've already started building your AOTY list but haven't listened to Dopamine Chamber yet, make sure you leave a slot open",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:consequence of sound",
+    "nombre": "Consequence Of Sound",
+    "url": "https://consequence.net/2026/10/fontaines-dc-dopamine-chamber-review/",
+    "nota": "8.3/10",
+    "frase": "The Irish band's fifth album is a synth-heavy reinvention, jagged and unnerving at multiple turns",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:rolling stone",
+    "nombre": "Rolling Stone",
+    "url": "https://www.rollingstone.com/music/music-album-reviews/fontaines-d-c-dopamine-chamber-album-review-1235637810/",
+    "nota": "8/10",
+    "frase": "On Dopamine Chamber, the Irish band reaches further into electronic moodiness while delivering hard-hitting reflections on how to stay sane — and maybe even hopeful — these days",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:exclaim",
+    "nombre": "Exclaim",
+    "url": "https://exclaim.ca/music/article/fontaines-d-c-dopamine-chamber-album-review",
+    "nota": "8/10",
+    "frase": "Dopamine Chamber is no different; while not too far removed from the sonic sensibilities of Romance, the darker tone and existential themes keep the band's meditations on the modern world as potent as ever",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:mojo",
+    "nombre": "Mojo",
+    "url": "https://www.mojo4music.com/articles/new-music/fontaines-d-c-dopamine-chamber-reviewed/",
+    "nota": "8/10",
+    "frase": "As dark chroniclers of their age, Fontaines D.C. are here to illuminate the gloom",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:clash",
+    "nombre": "Clash",
+    "url": "https://www.clashmusic.com/reviews/fontaines-d-c-dopamine-chamber/",
+    "nota": "8/10",
+    "frase": "‘Dopamine Chamber’ is Fontaines D.C. rambling about the worst bits of the modern world – environmental collapse, extreme wealth, political violence – over some of the prettiest instrumentals the band have written",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:all music",
+    "nombre": "All Music",
+    "url": "https://www.allmusic.com/album/dopamine-chamber-mw0004868007",
+    "nota": "8/10",
+    "frase": "Dopamine Chamber is larger than life in a way that very few bands can achieve, and although it dives into feelings of digital isolation, it manages to feel like a collective experience",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:irish times",
+    "nombre": "The Irish Times",
+    "url": "https://www.irishtimes.com/culture/music/review/2026/10/12/dopamine-chamber-is-the-sound-of-fontaines-dc-becoming-megastars-is-bigger-always-better/",
+    "nota": "8/10",
+    "frase": "Dopamine Chamber is the sound of Fontaines DC becoming megastars. Is bigger always better?",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:record collector",
+    "nombre": "Record Collector",
+    "url": "https://recordcollectormag.com/reviews/fontaines-dc-dopamine-chamber-review",
+    "nota": "8/10",
+    "frase": "Fontaines D.C. push deeper into synthetic territory on Dopamine Chamber, balancing stadium-sized melodies with restless experimentation and darker texture",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:northern transmissions",
+    "nombre": "Northern Transmissions",
+    "url": "https://northerntransmissions.com/fontaines-d-c-dopamine-chamber/#google_vignette",
+    "nota": "7.8/10",
+    "frase": "As they fine-tune their stylistic evolution, the perfect balance is yet to be discovered",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:pitchfork",
+    "nombre": "Pitchfork",
+    "url": "https://pitchfork.com/reviews/albums/fontaines-dc-dopamine-chamber/",
+    "nota": "7.8/10",
+    "frase": "Balances profound cynicism and genuine beauty as its ice-hearted stadium rock grows to darkly apocalyptic proportions",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:beats per minute",
+    "nombre": "Beats Per Minute",
+    "url": "https://beatsperminute.com/album-review-fontaines-d-c-dopamine-chamber/",
+    "nota": "7.7/10",
+    "frase": "Even with just one spin, it becomes evident that the album seems more like three distinct EPs, and one single, that have been collected. This might seem a weird way of assessing music, but the album clearly shifts gears after every three songs",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:uncut",
+    "nombre": "Uncut",
+    "url": "https://www.uncut.co.uk/reviews/fontaines-dcs-dopamine-chamber-reviewed-commanding-fifth-album-from-irelands-unstoppable-rock-stars-156708/",
+    "nota": "7/10",
+    "frase": "Grian Chatten and co swap guitars for icy synths and confront a world of endless conflict, digital dependency and creeping despair",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:popmatters",
+    "nombre": "PopMatters",
+    "url": "https://www.popmatters.com/fontaines-d-c-dopamine-chamber",
+    "nota": "7/10",
+    "frase": "While there is no doubt Fontaines D.C. will rightly go down as one of the era’s greats, this LP shows them struggling to close the gap between ambition and lasting impact",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:sputnik music staff",
+    "nombre": "Sputnik Music (staff)",
+    "url": "https://www.sputnikmusic.com/review/91348/Fontaines-D.C.-Dopamine-Chamber/",
+    "nota": "7/10",
+    "frase": "I don't know if Dopamine Chamber is destined for next-level success and massive airplay, but if there's a rock band built for the modern era and its sensibilities, it's Fontaines D.C",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:v club",
+    "nombre": "A.V. Club",
+    "url": "https://www.noripcord.com/fontaines-d-c-dopamine-chamber/",
+    "nota": "6.5/10",
+    "frase": "The fifth album from Dublin’s Fontaines D.C. trades post-punk for polished pop-rock jams",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:line of best fit",
+    "nombre": "The Line Of Best Fit",
+    "url": "https://www.thelineofbestfit.com/albums/on-dopamine-chamber-fontaines-d.c.-are-left-fumbling-for-direction",
+    "nota": "6/10",
+    "frase": "While Romance wasn’t the most cohesive LP, the majority of its tracks included beguiling hooks and textbook popcraft. Dopamine, too, is more a grab bag of songs than a precisely outlined set. Unfortunately, in Dopamine’s case, the pop savvy appears less consistently, leaving various tunes groping fo",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:paste magazine",
+    "nombre": "Paste Magazine",
+    "url": "https://www.pastemagazine.com/music/fontaines-d-c/fontaines-d-c-dopamine-chamber-review",
+    "nota": "5.8/10",
+    "frase": "Both in terms of indie rock writ large and the band’s own artistic development, the Dubliners’ latest isn’t nearly as revolutionary as 2024’s Romance",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:god is in the tv",
+    "nombre": "God Is In The TV",
+    "url": "https://www.godisinthetvzine.co.uk/2026/10/15/fontaines-d-c-dopamine-chamber-xl-recordings/",
+    "nota": "5/10",
+    "frase": "Dopamine Chamber in three words, then. Should do better",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spectrum culture",
+    "nombre": "Spectrum Culture",
+    "url": "https://spectrumculture.com/2026/10/18/fontaines-d-c-dopamine-chamber-review/",
+    "nota": "5/10",
+    "frase": "Doubles down on synthesizers and chokes out their previous sound; most of the album ends up sounding the same",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:slant magazine",
+    "nombre": "Slant Magazine",
+    "url": "https://www.slantmagazine.com/music/fontaines-dc-dopamine-chamber-album-review/",
+    "nota": "5/10",
+    "frase": "The album’s best songs lean into sinister undertones with relish",
+    "fecha": null,
+    "via": "anydecentmusic"
    }
   ],
   "enlaces": {
@@ -78968,10 +80079,137 @@
   "resenas": [
    {
     "fuente": "anydecentmusic:guardian",
-    "nombre": "The Guardian (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15754/Troye-Sivan-Shes-The-Best.aspx",
+    "nombre": "The Guardian",
+    "url": "https://www.theguardian.com/music/2026/oct/09/troye-sivan-shes-the-best-album-review",
     "nota": "8/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "Adored by the A-list and filling arenas, but without huge smash hits, the Australian singer treads his own distinctive path through pop via shoegaze, Balearic and the Smiths"
+   },
+   {
+    "fuente": "anydecentmusic:all music",
+    "nombre": "All Music",
+    "url": "https://www.allmusic.com/album/shes-the-best-mw0004864341",
+    "nota": "9/10",
+    "frase": "Depending on the type of listener, She's the Best has all the makings of becoming the fan-favorite album in his catalog",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:still listening",
+    "nombre": "Still Listening",
+    "url": "https://www.stilllisteningmagazine.com/reviews/troye-sivan-shes-the-best-review",
+    "nota": "9/10",
+    "frase": "Troye Sivan’s fourth album pushes his pop further out while staying rooted in love, memory and the women who shaped him",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:nme",
+    "nombre": "NME",
+    "url": "https://www.nme.com/reviews/album/troye-sivan-shes-the-best-review-3972714",
+    "nota": "8/10",
+    "frase": "On his fourth studio album, the pop-literate Australian swaps the heady rush of the dance floor for the balmy intimacy of an afters",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:line of best fit",
+    "nombre": "The Line Of Best Fit",
+    "url": "https://www.thelineofbestfit.com/albums/troye-sivan-strips-himself-bare-on-the-yearning-shes-the-best",
+    "nota": "8/10",
+    "frase": "More versatile than ever, he moves seamlessly between house, jazz, and electroclash, spoken word and singing",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:musicomh",
+    "nombre": "musicOMH",
+    "url": "https://www.musicomh.com/reviews/albums/troye-sivan-shes-the-best-review",
+    "nota": "8/10",
+    "frase": "The Australian star subverts expectation, toning down horny club hedonism for dreamy shoegaze and experimental introspection",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:clash",
+    "nombre": "Clash",
+    "url": "https://www.clashmusic.com/reviews/troye-sivan-shes-the-best/",
+    "nota": "8/10",
+    "frase": "A new chapter packed with detail and revelation",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:popmatters",
+    "nombre": "PopMatters",
+    "url": "https://www.popmatters.com/troye-sivan-shes-the-best",
+    "nota": "8/10",
+    "frase": "Troye Sivan’s elusive search for connection finds him languishing in the party’s afterglow",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:v club",
+    "nombre": "A.V. Club",
+    "url": "https://readdork.com/reviews/troye-sivan-shes-the-best",
+    "nota": "8/10",
+    "frase": "The record can be dreamy enough to lose the person inside it, but his loneliness keeps interrupting the fantasy",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:beats per minute",
+    "nombre": "Beats Per Minute",
+    "url": "https://beatsperminute.com/album-review-troye-sivan-shes-the-best/",
+    "nota": "7.9/10",
+    "frase": "Continues Sivan’s trajectory toward a more mature sound with some genuinely ambitious moves",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spectrum culture",
+    "nombre": "Spectrum Culture",
+    "url": "https://spectrumculture.com/2026/11/03/troye-sivan-shes-the-best-review/",
+    "nota": "7.3/10",
+    "frase": "Troye Sivan features a mood shift on She’s the Best from his earlier work; whether it works depends on if you’re comfortable with the Australian singer layering a different flavor of yearning into the mix",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:pitchfork",
+    "nombre": "Pitchfork",
+    "url": "https://pitchfork.com/reviews/albums/troye-sivan-shes-the-best/",
+    "nota": "7.3/10",
+    "frase": "The pop star’s fourth album explores the cracks between the hits, the climaxes, and the comedowns. When he steps off the dancefloor, he finds a looser and more liberated sound",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:exclaim",
+    "nombre": "Exclaim",
+    "url": "https://exclaim.ca/music/article/troye-sivan-she-s-the-best-album-review",
+    "nota": "7/10",
+    "frase": "She's the Best isn't chasing a tectonic shift in the pop culture zeitgeist. What Sivan offers instead is an honest and effective collection of songs about sexual freedom and the women whose creative influence has helped him grow into the man he's become",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:slant magazine",
+    "nombre": "Slant Magazine",
+    "url": "https://www.slantmagazine.com/music/troye-sivan-shes-the-best-album-review/",
+    "nota": "6/10",
+    "frase": "There are certainly pleasures to be found on the album, but the singer himself seems to get lost",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:paste magazine",
+    "nombre": "Paste Magazine",
+    "url": "https://www.pastemagazine.com/music/troye-sivan/troye-sivan-shes-the-best-review",
+    "nota": "5.8/10",
+    "frase": "The Australian singer broadens the sexy, sultry queer pop formula he cultivated on his last record, but loses some of its novelty and edge as he strains to go bigger and outdo himself",
+    "fecha": null,
+    "via": "anydecentmusic"
    }
   ],
   "enlaces": {
@@ -79601,10 +80839,11 @@
   "resenas": [
    {
     "fuente": "anydecentmusic:uncut",
-    "nombre": "Uncut (vía Any Decent Music)",
+    "nombre": "Uncut",
     "url": "http://www.anydecentmusic.com/review/15752/Teenage-Fanclub-Do-Not-Dare-To-Dream-.aspx",
     "nota": "9/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "While this, their 14th album, may not have the blood-rush of 1995's power-pop masterclass Grand Prix, it matches it every step of the way when it comes to hook-laden, harmonic thrills. Print edition only"
    },
    {
     "fuente": "americanauk",
@@ -79612,6 +80851,105 @@
     "url": "https://americana-uk.com/teenage-fanclub-do-not-dare-to-dream",
     "nota": "7/10",
     "fecha": "2026-10-09"
+   },
+   {
+    "fuente": "anydecentmusic:spill magazine",
+    "nombre": "Spill Magazine",
+    "url": "https://spillmagazine.com/spill-album-review-teenage-fanclub-do-not-dare-to-dream/",
+    "nota": "9/10",
+    "frase": "The key term here is immediate, as Norman Blake and Raymond McGinley who keep holding the Teenage Fanclub ship have gone for a more layered concept here, instinctively or intentionally, as the listeners have to keep peeling the layers to get to the essence here, and that peeling is quite worth every",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:record collector",
+    "nombre": "Record Collector",
+    "url": null,
+    "nota": "8/10",
+    "frase": "It's packed with effortless harmonies and melodies that feel as if they've always been there. Print edition only",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:mojo",
+    "nombre": "Mojo",
+    "url": "https://www.mojo4music.com/articles/new-music/teenage-fanclub-do-not-dare-to-dream-review/",
+    "nota": "8/10",
+    "frase": "Despite the no-nonsense title, Don Not Dare To Dream isn’t a bleak record: these warm, intuitive songs just know that glossy perfection isn’t necessarily the shape a happy life takes. It might be good to talk, but as Teenage Fanclub prove at this stage in their career, listening can be just as thera",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:all music",
+    "nombre": "All Music",
+    "url": "https://www.allmusic.com/album/do-not-dare-to-dream-mw0004856581",
+    "nota": "8/10",
+    "frase": "With Do Not Dare to Dream, Teenage Fanclub have made an album of gentle defiance, like a warm cup of tea on a late fall day",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spectrum culture",
+    "nombre": "Spectrum Culture",
+    "url": "https://spectrumculture.com/2026/10/12/teenage-fanclub-do-not-dare-to-dream-review/",
+    "nota": "7.8/10",
+    "frase": "Teenage Fanclub’s 13th album offers wisdom, warmth, comfort and hope, wrapped in beguilingly gentle and sensitive folk-inflected songs; it's a beautiful and perfectly realized record, if slightly lacking the fire of the band’s earlier work",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:under the radar",
+    "nombre": "Under The Radar",
+    "url": "https://www.undertheradarmag.com/reviews/do_not_dare_to_dream_teenage_fanclub",
+    "nota": "7.5/10",
+    "frase": "There are times when I think that Teenage Fanclub are one of the best bands to ever do it. Look at their back catalogue. Not a duffer in the bunch. Never a wrong foot taken and Do Not Dare to Dream joins that pantheon happily",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:clash",
+    "nombre": "Clash",
+    "url": "https://www.clashmusic.com/reviews/teenage-fanclub-do-not-dare-to-dream/",
+    "nota": "7/10",
+    "frase": "‘Do Not Dare To Dream’ is the audible culmination of a tried and tested Fanclub recipe: richly layered arrangements that interact with a warm embrace, alongside lyricism that manages both timelessness and contemporariness",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:musicomh",
+    "nombre": "musicOMH",
+    "url": "https://www.musicomh.com/reviews/albums/teenage-fanclub-do-not-dare-to-dream",
+    "nota": "6/10",
+    "frase": "Scottish quintet settle comfortably into late middle-age with sunny harmonies, chiming guitars and a general warm demeanour on 13th album",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:far out",
+    "nombre": "Far Out",
+    "url": "https://faroutmagazine.co.uk/teenage-fanclub-do-not-dare-to-dream-album-review/",
+    "nota": "6/10",
+    "frase": "Teenage Fanclub reveal they still have a knack for fashioning intriguing songcraft from unlikely places on Do Not Dare to Dream, offering a no-thrills but restorative LP warding off the busyness of the modern age",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:pitchfork",
+    "nombre": "Pitchfork",
+    "url": "https://pitchfork.com/reviews/albums/teenage-fanclub-do-not-dare-to-dream/",
+    "nota": "6/10",
+    "frase": "The latest album from the Scottish band settles into pleasant but predictable folk-rock doldrums",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:no ripcord",
+    "nombre": "No Ripcord",
+    "url": "https://www.noripcord.com/teenage-fanclub-do-not-dare-to-dream/",
+    "nota": "5.5/10",
+    "frase": "There are many artists of Teenage Fanclub’s vintage making vital, thrilling music. Do Not Dare to Dream is neither. Yes, it is comfortable, easy, and pleasant — but to be brutally frank, it is criminally dull",
+    "fecha": null,
+    "via": "anydecentmusic"
    }
   ],
   "enlaces": {
@@ -92891,10 +94229,128 @@
   "resenas": [
    {
     "fuente": "anydecentmusic:god is in the tv",
-    "nombre": "God Is In The TV (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15746/Johnny-Marr-The-Age-of-Everything.aspx",
+    "nombre": "God Is In The TV",
+    "url": "https://www.godisinthetvzine.co.uk/2026/10/02/johnny-marr-the-age-of-everything-bmg/",
     "nota": "9/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "Once again, Johnny has delivered a strong and assured body of work, with his solo material continuing to go from strength to strength"
+   },
+   {
+    "fuente": "anydecentmusic:louder than war",
+    "nombre": "Louder Than War",
+    "url": "https://louderthanwar.com/johnny-marr-the-age-of-everything-album-review/",
+    "nota": "9/10",
+    "frase": "The Mancunian icon confronts modern malaise, fractured times and the shifting sands of the now with restless, life-affirming rock ’n’ roll with an added post punk inventiveness",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spectrum culture",
+    "nombre": "Spectrum Culture",
+    "url": "https://spectrumculture.com/2026/10/11/johnny-marr-the-age-of-everything-review/",
+    "nota": "8/10",
+    "frase": "The Age of Everything isn’t the first of Johnny Marr’s solo albums to be able to stand on its own merits, but it’s the one that does it most confidently, a polished, consistent record on which he becomes a singer and guitarist rather than a singing guitarist",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:clash",
+    "nombre": "Clash",
+    "url": "https://www.clashmusic.com/reviews/johnny-marr-the-age-of-everything/",
+    "nota": "8/10",
+    "frase": "Four decades on, he remains a class act, still curious, still innovative and still relentlessly cool. If ‘The Age Of Everything’ is about embracing possibility, Johnny Marr embodies the very best of everything music has to offer",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:all music",
+    "nombre": "All Music",
+    "url": "https://www.allmusic.com/album/the-age-of-everything-mw0004828216",
+    "nota": "8/10",
+    "frase": "Another rock-solid, thoughtful set from guitarist/songwriter, one whose mirrored anxiety is partly offset by the hope and determination of tracks like \"Beyond the Rain\" and the rousing \"Fire with Fire\"",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:mojo",
+    "nombre": "Mojo",
+    "url": "https://www.mojo4music.com/articles/new-music/johnny-marr-the-age-of-everything-reviewed-smiths-guitarist-comes-into-his-own-on-fifth-solo-album/",
+    "nota": "8/10",
+    "frase": "Best of all is waltz-time ballad In And Out Of Love, one of Marr's best solo songs, in which his yearning vocal underlines the fact he now as much of an accomplished singer as near-peerless guitarist",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:record collector",
+    "nombre": "Record Collector",
+    "url": "https://recordcollectormag.com/reviews/johnny-marr-the-age-of-everything-review",
+    "nota": "8/10",
+    "frase": "Five solo albums in, there’s no let-up in intent or quality, Marr’s restless creative curiosity well and truly benefitting himself",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:no ripcord",
+    "nombre": "No Ripcord",
+    "url": "https://www.noripcord.com/johnny-marr-the-age-of-everything/",
+    "nota": "7.5/10",
+    "frase": "It is an unpretentious record from one of the UK’s most influential guitar players, and all the more effective for it",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:quietus",
+    "nombre": "The Quietus",
+    "url": "https://thequietus.com/quietus-reviews/johnny-marr-the-age-of-everything-review/",
+    "nota": "7/10",
+    "frase": "The melodies here are sharper than on any of his previous solo outings",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:musicomh",
+    "nombre": "musicOMH",
+    "url": "https://www.musicomh.com/reviews/albums/johnny-marr-the-age-of-everything",
+    "nota": "7/10",
+    "frase": "Former Smiths guitarist's fifth solo album may not contain any surprises but sees him refine his songwriting chops and deliver a solid record in the process",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:uncut",
+    "nombre": "Uncut",
+    "url": "https://www.uncut.co.uk/reviews/johnny-marrs-the-age-of-everything-reviewed-sharp-songs-from-an-indie-survivor-156556/",
+    "nota": "7/10",
+    "frase": "The Age Of Everything is an exemplar of all those elements that have made Marr's solo career such a satisfying success: big, hooky songs, hummable melodies, insightful lyrics and a distinctive guitar sound",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:far out",
+    "nombre": "Far Out",
+    "url": "https://faroutmagazine.co.uk/johnny-marr-the-age-of-everything-album-review/",
+    "nota": "6/10",
+    "frase": "Marr isn’t releasing The Age of Everything as a grand statement of career intent; he has afforded himself the right to comfortably write tunes within his wheelhouse and release them to a dedicated audience",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:paste magazine",
+    "nombre": "Paste Magazine",
+    "url": "https://www.pastemagazine.com/music/johnny-marr/johnny-marr-the-age-of-everything-review",
+    "nota": "5.8/10",
+    "frase": "Restless arrangements and dependable guitar performances can’t prevent the former Smiths co-founder from occasionally stumbling through the noise on his new solo album",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:arts desk",
+    "nombre": "The Arts Desk",
+    "url": "https://www.theartsdesk.com/new-music/manchester-guitar-don-johnny-marrs-latest-age-everything-lacks-spark",
+    "nota": "4/10",
+    "frase": "When a punchier mood is conjured, the overall impact still fails to lodge in the memory",
+    "fecha": null,
+    "via": "anydecentmusic"
    }
   ],
   "enlaces": {
@@ -93653,10 +95109,11 @@
   "resenas": [
    {
     "fuente": "anydecentmusic:far out",
-    "nombre": "Far Out (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15749/Greg-Freeman-All-Set-The-Bone-.aspx",
+    "nombre": "Far Out",
+    "url": "https://faroutmagazine.co.uk/greg-freeman-all-set-the-bone-album-review/",
     "nota": "9/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "A strong contender for the year’s Album of the Year list, full of brazen idiosyncrasies, kinetic explosions, and fortitudinous lyricism that captures one of America’s most talented songwriters on his glorious ascent to the top"
    },
    {
     "fuente": "stereogum_aotw",
@@ -93678,6 +95135,105 @@
     "url": "https://americanahighways.org/2026/09/30/review-greg-freeman-all-set-the-bone/",
     "nota": null,
     "fecha": "2026-09-30"
+   },
+   {
+    "fuente": "anydecentmusic:record collector",
+    "nombre": "Record Collector",
+    "url": "https://recordcollectormag.com/reviews/greg-freeman-all-set-the-bone-album-review",
+    "nota": "10/10",
+    "frase": "Greg Freeman’s previous two albums have flirted with greatness, but the fantastic widescreen Americana-founded experiential rock of his third finally achieves it",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:paste magazine",
+    "nombre": "Paste Magazine",
+    "url": "https://www.pastemagazine.com/music/greg-freeman/greg-freeman-all-set-the-bone-review",
+    "nota": "9.1/10",
+    "frase": "Freeman volleys between universally incisive truisms and lived-in specifics on his third album, capturing emotional and philosophical apocalypses with grim nuance",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:clash",
+    "nombre": "Clash",
+    "url": "https://www.clashmusic.com/reviews/greg-freeman-all-set-the-bone/",
+    "nota": "9/10",
+    "frase": "One of the year's best",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:popmatters",
+    "nombre": "PopMatters",
+    "url": "https://www.popmatters.com/greg-freeman-all-set-the-bone",
+    "nota": "9/10",
+    "frase": "A contender for album of the year, Greg Freeman’s All Set the Bone is an intense, stylistically varied testament to our grim reality, with lasting appeal",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:still listening",
+    "nombre": "Still Listening",
+    "url": "https://www.stilllisteningmagazine.com/reviews/greg-freeman-all-set-the-bone-review",
+    "nota": "8.3/10",
+    "frase": "Existentialism has a sound (and it’s hard to ignore) with Greg Freeman’s introspective All Set The Bone",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:no ripcord",
+    "nombre": "No Ripcord",
+    "url": "https://www.noripcord.com/greg-freeman-all-set-the-bone/",
+    "nota": "8/10",
+    "frase": "Three albums into his career, he’s simply starting to sound like Greg Freeman",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:pitchfork",
+    "nombre": "Pitchfork",
+    "url": "https://pitchfork.com/reviews/albums/greg-freeman-all-set-the-bone/",
+    "nota": "8/10",
+    "frase": "The indie rock songwriter’s latest album is menacing and ambitious, overflowing with quotable lyrics and the feverish energy of something about to fall apart",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:mojo",
+    "nombre": "Mojo",
+    "url": null,
+    "nota": "8/10",
+    "frase": "Don't miss where Freeman goes next. Print edition only",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:uncut",
+    "nombre": "Uncut",
+    "url": null,
+    "nota": "8/10",
+    "frase": "It's an inventive, agreeably rowdy trip. Print edition only",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:northern transmissions",
+    "nombre": "Northern Transmissions",
+    "url": "https://northerntransmissions.com/greg-freeman-all-set-the-bone/",
+    "nota": "6.8/10",
+    "frase": "Commendable for its thematic ambitions and instrumental sharpness",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:guardian",
+    "nombre": "The Guardian",
+    "url": "https://www.theguardian.com/music/2026/oct/02/greg-freeman-all-set-the-bone-review-ambitious-alt-country-double-album-spreads-its-talents-a-touch-thin",
+    "nota": "6/10",
+    "frase": "The Maryland singer-songwriter’s third album has an impressive sense of scale compared to last year’s breakout Burnover, but is less immediately appealing",
+    "fecha": null,
+    "via": "anydecentmusic"
    }
   ],
   "enlaces": {
@@ -94477,10 +96033,11 @@
   "resenas": [
    {
     "fuente": "anydecentmusic:dork",
-    "nombre": "Dork (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/15750/Fat-Dog-Cancel-Me-Im-Tired.aspx",
+    "nombre": "Dork",
+    "url": "https://readdork.com/reviews/fat-dog-cancel-me-i-m-tired-review",
     "nota": "10/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "'Cancel Me (I'm Tired)' is packed with choruses and bright synths, with the title track getting stuck into a funk groove that suits them remarkably well"
    },
    {
     "fuente": "bandcampdaily",
@@ -94488,6 +96045,87 @@
     "url": "https://fatdogfatdogfatdog.bandcamp.com/album/cancel-me-im-tired",
     "nota": null,
     "fecha": "2026-10-16"
+   },
+   {
+    "fuente": "anydecentmusic:still listening",
+    "nombre": "Still Listening",
+    "url": "https://www.stilllisteningmagazine.com/reviews/fat-dog-cancel-me-im-tired-review",
+    "nota": "8.7/10",
+    "frase": "It is, predictably, a mess. But it’s a purposeful mess of thunderous proportions, combining dance-punk, industrial disco and arena-ready anthems",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:record collector",
+    "nombre": "Record Collector",
+    "url": "https://recordcollectormag.com/reviews/fat-dog-cancel-me-i-m-tired-review",
+    "nota": "8/10",
+    "frase": "They channel a gathering capacity for connection into the tunes and lyrics of Cancel Me (I’m Tired), scoping out room to roam within their well-honed good-time vigour",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:northern transmissions",
+    "nombre": "Northern Transmissions",
+    "url": "https://northerntransmissions.com/fat-dog-cancel-me-im-tired/#google_vignette",
+    "nota": "7.9/10",
+    "frase": "Under all the rowdiness, Cancel Me (I’m Tired) gets to a place that makes room for sincerity. Fat Dog may have an unmarked path ahead, though they are more than willing to call the shots",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:line of best fit",
+    "nombre": "The Line Of Best Fit",
+    "url": "https://www.thelineofbestfit.com/albums/fat-dog-make-a-glorious-mess-of-cancel-me-im-tired",
+    "nota": "7/10",
+    "frase": "Cancel Me (I’m Tired) is a thrilling, carnivalesque extravaganza, and an oftentimes confusing record, but one that I’m more than happy to be baffled and completely turned around by",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spectrum culture",
+    "nombre": "Spectrum Culture",
+    "url": "https://spectrumculture.com/2026/10/07/fat-dog-cancel-me-im-tired-review/",
+    "nota": "6.5/10",
+    "frase": "As constructed, Cancel Me (I'm Tired) is an album that begs for attention through an eyebrow-raising title, musical bombast and mildly tasteless lyrics. Sometimes its strengths actually merit that consideration",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:mojo",
+    "nombre": "Mojo",
+    "url": null,
+    "nota": "6/10",
+    "frase": "Exhausting, but that's the point. Print edition only",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:musicomh",
+    "nombre": "musicOMH",
+    "url": "https://www.musicomh.com/reviews/albums/fat-dog-cancel-me-im-tired",
+    "nota": "6/10",
+    "frase": "Second album from South London six-piece mixes distorted electro-punk, industrial disco and nihilist anthems to cause a sense of disorientation",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:pitchfork",
+    "nombre": "Pitchfork",
+    "url": "https://pitchfork.com/reviews/albums/fat-dog-cancel-me-im-tired/",
+    "nota": "3.7/10",
+    "frase": "The London band wastes a great title on a second album of garish agit-rave punk that’s larded with references and desperately short on ideas",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:paste magazine",
+    "nombre": "Paste Magazine",
+    "url": "https://www.pastemagazine.com/music/fat-dog/fat-dog-cancel-me-im-tired-review",
+    "nota": "3.3/10",
+    "frase": "The South London band says little beyond juvenile catchphrases and rarely has the compositional depth to make its second album worth your time",
+    "fecha": null,
+    "via": "anydecentmusic"
    }
   ],
   "enlaces": {
@@ -123242,10 +124880,101 @@
   "resenas": [
    {
     "fuente": "anydecentmusic:mojo",
-    "nombre": "Mojo (vía Any Decent Music)",
-    "url": "http://www.anydecentmusic.com/review/14726/The-Tubs-Hard-Life-.aspx",
+    "nombre": "Mojo",
+    "url": "https://www.mojo4music.com/articles/new-music/the-tubs-hard-life-reviewed-folk-rockers-deliver-brutal-truths-on-superb-third-album/",
     "nota": "10/10",
-    "fecha": null
+    "fecha": null,
+    "frase": "An album that consolidates and amplifies both 2023’s debut Dead Meat and last year’s Cotton Crown, transcending notions of what indie rock is supposed to be in the 21st century"
+   },
+   {
+    "fuente": "anydecentmusic:god is in the tv",
+    "nombre": "God Is In The TV",
+    "url": "https://www.godisinthetvzine.co.uk/2026/09/11/the-tubs-hard-life-merge-records/",
+    "nota": "10/10",
+    "frase": "It’s a ludicrous, entirely unexpected occurrence when a band release a single album that sounds like a Greatest Hits collection, but track after track, hook after blinding hook, and line after wry line, that’s what we get – every song building on the glistening brilliance of the last",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:uncut",
+    "nombre": "Uncut",
+    "url": null,
+    "nota": "8/10",
+    "frase": "A record that is a ridiculously hook-heavy collection of songs - and one that unquestionably positions Williams as one of our most unique and arresting contemporary songwriters. Print edition only",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:slant magazine",
+    "nombre": "Slant Magazine",
+    "url": "https://www.slantmagazine.com/music/the-tubs-hard-life-album-review/",
+    "nota": "8/10",
+    "frase": "The band’s post-punk-infused songs sink in quickly and stand up to repeat listens",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:musicomh",
+    "nombre": "musicOMH",
+    "url": "https://www.musicomh.com/reviews/albums/the-tubs-hard-life",
+    "nota": "8/10",
+    "frase": "The Welsh band's classic rock twisted indie folk on their third album demonstrates their earwormy ability to write a hook",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:all music",
+    "nombre": "All Music",
+    "url": "https://www.allmusic.com/album/hard-life-mw0004847522",
+    "nota": "8/10",
+    "frase": "Their most fine-tuned and sonically rich album to date, with 12 more fantastically catchy and emotionally turbulent songs in the style they’ve been perfecting along the way",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:guardian",
+    "nombre": "The Guardian",
+    "url": "https://www.theguardian.com/music/2026/sep/10/the-tubs-hard-life-review",
+    "nota": "8/10",
+    "frase": "Britain’s best indie-rockers hold fast to their defiantly old-school sound, slipping wry sideways looks at despair in among hooky melodies that always sound like a good time",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:no ripcord",
+    "nombre": "No Ripcord",
+    "url": "https://www.noripcord.com/the-tubs-hard-life/",
+    "nota": "8/10",
+    "frase": "A consistently impressive record from a singular songwriting talent, brought to life by a remarkably talented band",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:pitchfork",
+    "nombre": "Pitchfork",
+    "url": "https://pitchfork.com/reviews/albums/the-tubs-hard-life/",
+    "nota": "7.7/10",
+    "frase": "The UK band’s Merge debut is an album of survival: a set of fatalistic jangle-rock anthems with just enough joy to keep going",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:spectrum culture",
+    "nombre": "Spectrum Culture",
+    "url": "https://spectrumculture.com/2026/09/14/the-tubs-hard-life-review/",
+    "nota": "7.6/10",
+    "frase": "On Hard Life, the Tubs finally homed in on a sound to match their self-supplied and tongue-in-cheek “Celtic jangle boyband” tagline. However, the description still fails to capture the London quartet’s complex context and the roughed-up heart that beats in their songs",
+    "fecha": null,
+    "via": "anydecentmusic"
+   },
+   {
+    "fuente": "anydecentmusic:far out",
+    "nombre": "Far Out",
+    "url": "https://faroutmagazine.co.uk/the-tubs-hard-life-album-review-fizzing-millennial-optimism-falls-flat/",
+    "nota": "4/10",
+    "frase": "There’s only so many jangly guitars, high-pitched vocals, and tales of moving to the big smoke that one needs in an album before it starts to grate",
+    "fecha": null,
+    "via": "anydecentmusic"
    }
   ],
   "enlaces": {

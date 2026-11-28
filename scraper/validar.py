@@ -420,6 +420,23 @@ def duplicados(c):
 
 
 @comprobacion
+def resenas_cobertura(c):
+    """Reseñas por disco: cuántos discos publicados tienen alguna, cuántos tres o más (destacables) y, de
+    los que salen en un agregador de crítica, si tienen ya todas sus reseñas integradas."""
+    pub = _publicados(c)
+    if not pub:
+        return R("sin_datos")
+    con = [d for d in pub if d.get("resenas")]
+    tres = sum(1 for d in pub if len(d.get("resenas", [])) >= 3)
+    agreg = [d for d in pub if any(r.get("via") for r in d.get("resenas", []))]
+    media = round(sum(len(d["resenas"]) for d in con) / len(con), 1) if con else 0
+    pct = round(100 * len(con) / len(pub), 1)
+    minimo = float(c.umb.get("resenas_min_pct", 50))
+    return R("ok" if pct >= minimo else "fallo", {"con_resena_pct": pct, "media_por_disco": media, "con_3_o_mas": tres,
+             "con_agregador_integrado": len(agreg)}, f"{len(con)} de {len(pub)} discos publicados con reseñas (mínimo {minimo} %)")
+
+
+@comprobacion
 def reseñas_con_frase(c):
     total = con = 0
     for f in glob.glob(ruta("site/data/fichas/*.json")):

@@ -131,7 +131,8 @@ def main():
             "puntos": puntos, "listas": en_listas,
             "deezer_id": (d.get("deezer") or {}).get("id"),
             "dicen": [t for t in d.get("descripciones", []) if len(t) > 30][:2],
-            "resenas": [{"nombre": r["nombre"], "url": r.get("url"), "nota": r.get("nota"), "fecha": r.get("fecha")}
+            "resenas": [{"nombre": r["nombre"], "url": r.get("url"), "nota": r.get("nota"), "fecha": r.get("fecha"),
+                         **({"frase": r["frase"]} if r.get("frase") else {})}
                         for r in d.get("resenas", [])],
             "fuentes": [{"nombre": x["nombre"], "url": x.get("url"), "fecha": x.get("fecha"), "rol": x.get("rol")}
                         for x in d.get("fuentes", [])],

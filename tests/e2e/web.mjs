@@ -63,6 +63,11 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   p.on('console', m => { if (m.type() === 'error' && !/net::ERR_FAILED|Failed to load resource/.test(m.text())) errores.push(m.text()); });
 
   await p.goto(BASE, { waitUntil: 'networkidle' });
+  // capturas de cada pantalla en cada ejecución (CAPTURAS=1): docs/capturas/, para verlas desde el móvil
+  const CAP = process.env.CAPTURAS ? path.resolve(path.dirname(new URL(import.meta.url).pathname), '../../docs/capturas') : null;
+  const capturar = async (nombreCap) => { if (!CAP) return; fs.mkdirSync(CAP, { recursive: true });
+    await p.screenshot({ path: path.join(CAP, `${nombreCap}-${nombre === 'móvil' ? 'movil' : 'escritorio'}.jpg`), type: 'jpeg', quality: 50 }); };
+  await capturar('portada');
   const n = await p.locator('.tarjeta').count();
   comprobar(n > 0, `carga y pinta tarjetas (${n})`);
   comprobar((await p.locator('#familias [role=tab]').count()) >= 3, 'pestañas de familias');
@@ -133,6 +138,7 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   comprobar(p.url().includes('#disco='), 'la ficha tiene enlace propio');
   comprobar(await p.locator('dialog#ficha a', { hasText: 'Qobuz' }).count() === 1, 'enlace a Qobuz en la ficha');
   comprobar(await p.locator('dialog#ficha h3', { hasText: 'Aparece en' }).count() === 1, 'la ficha carga sus detalles (fuentes)');
+  await capturar('ficha');
   // ---- aceptación de la página del disco nueva (W2, estilo Metacritic / AnyDecentMusic)
   const ficha = await p.evaluate(() => {
     const f = document.querySelector('dialog#ficha'); const t = f?.innerText || '';
@@ -172,6 +178,7 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   await p.selectOption('#orden', 'mejor');
   await p.waitForTimeout(300);
   comprobar(await p.locator('#selAnio:not([hidden])').count() === 1, 'lo mejor del año muestra selector de año');
+  await capturar('lo-mejor');
   // ---- aceptación del ranking (W3, estilo AOTY): lista numerada con portada, nota y nº de reseñas
   const ranking = await p.evaluate(() => { const f = [...document.querySelectorAll('.ranking-disco')].slice(0, 10);
     return { n: f.length, completas: f.filter(x => x.querySelector('.puesto') && x.querySelector('.nota-caja') && /reseña/i.test(x.innerText)).length }; });

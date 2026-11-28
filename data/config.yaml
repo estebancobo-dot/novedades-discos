@@ -119,6 +119,17 @@ enriquecimiento:
     activo: true
     max_paginas_por_ejecucion: 600
   # Etiquetas extra solo para los discos que se quedan sin subgénero (scraper.enriquecer).
+  # Reseñas completas de los agregadores de crítica (scraper/resenas.py): para cada disco que aparece en
+  # el agregador se lee su página y se añaden todas las reseñas (medio, nota, frase y enlace original).
+  resenas_agregadores:
+    - id: anydecentmusic
+      url: 'anydecentmusic\.com/review/\d+'
+      item: li.review_item
+      medio: h4 span
+      nota: .data_rating
+      frase: p
+      enlace: p a[href]
+      frase_max: 300
   etiquetas_extra:
     wikidata: {activo: true}
     discogs: {activo: true, variable_token: DISCOGS_TOKEN}   # el token es opcional
@@ -161,6 +172,7 @@ validacion:
   coherencia_fuentes_min_pct: 90
   muestra_acierto_min_pct: 85
   acuerdo_wikipedia_min_pct: 85
+  resenas_min_pct: 50             # discos publicados con al menos una reseña
   cobertura_min_pct: {portada: 95, fecha_exacta: 85, sello: 70, pistas: 80, enlace_escucha: 80, subgenero: 75}
   salto_max_pct: 30                 # cambio semana a semana que se marca como aviso
   listas_anuales_desde: 2019

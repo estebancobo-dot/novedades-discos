@@ -1,50 +1,58 @@
 {
- "modo": "incremental",
- "inicio": "2026-11-28T07:16:56+00:00",
+ "modo": "completa",
+ "inicio": "2026-11-28T08:29:29+00:00",
  "terminada": true,
  "fases": {
   "recoger": {
    "estado": "hecha",
-   "inicio": "2026-11-28T07:16:56+00:00",
-   "fin": "2026-11-28T07:35:52+00:00",
-   "segundos": 1136
+   "nota": "dada por hecha (--desde)",
+   "fin": "2026-11-28T08:29:29+00:00"
   },
   "enriquecer": {
    "estado": "hecha",
-   "inicio": "2026-11-28T07:35:56+00:00",
-   "fin": "2026-11-28T07:43:03+00:00",
-   "segundos": 427
+   "nota": "dada por hecha (--desde)",
+   "fin": "2026-11-28T08:29:29+00:00"
   },
   "clasificar": {
    "estado": "hecha",
-   "inicio": "2026-11-28T07:43:05+00:00",
-   "fin": "2026-11-28T07:43:09+00:00",
-   "segundos": 4
+   "nota": "dada por hecha (--desde)",
+   "fin": "2026-11-28T08:29:29+00:00"
   },
   "mapear": {
    "estado": "hecha",
-   "inicio": "2026-11-28T07:43:12+00:00",
-   "fin": "2026-11-28T08:12:13+00:00",
-   "segundos": 1741
+   "nota": "dada por hecha (--desde)",
+   "fin": "2026-11-28T08:29:29+00:00"
   },
   "clasificar_2": {
    "estado": "hecha",
-   "inicio": "2026-11-28T08:12:14+00:00",
-   "fin": "2026-11-28T08:12:18+00:00",
-   "segundos": 4
+   "inicio": "2026-11-28T08:29:29+00:00",
+   "fin": "2026-11-28T08:29:32+00:00",
+   "segundos": 3
   },
   "informe": {
    "estado": "hecha",
-   "inicio": "2026-11-28T08:12:21+00:00",
-   "fin": "2026-11-28T08:12:21+00:00",
+   "inicio": "2026-11-28T08:29:32+00:00",
+   "fin": "2026-11-28T08:29:33+00:00",
    "segundos": 1
   },
   "web": {
    "estado": "hecha",
-   "inicio": "2026-11-28T08:12:23+00:00",
-   "fin": "2026-11-28T08:12:24+00:00",
+   "inicio": "2026-11-28T08:29:33+00:00",
+   "fin": "2026-11-28T08:29:34+00:00",
+   "segundos": 1
+  },
+  "referencias": {
+   "estado": "hecha",
+   "inicio": "2026-11-28T08:29:34+00:00",
+   "fin": "2026-11-28T08:29:34+00:00",
+   "segundos": 1
+  },
+  "validar": {
+   "estado": "hecha",
+   "inicio": "2026-11-28T08:29:34+00:00",
+   "fin": "2026-11-28T08:29:35+00:00",
    "segundos": 1
   }
  },
- "fin": "2026-11-28T08:12:26+00:00"
+ "fin": "2026-11-28T08:29:35+00:00"
 }

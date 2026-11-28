@@ -28,8 +28,8 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 - 🔴 **muestra_de_referencia**: 42 de 53 discos de referencia exactamente bien; mínimo 85.0 % — 79.2
     - Onasander & RNGMNN – Illumination Phases: ha desaparecido de la web
     - Astral Spectre – Cosmic Mirage: sobra classic-rock
-    - Kreator – Krushers of the World: sobra hard-rock|death-metal
-    - The Notwist – News from Planet Zombie: sobra post-rock|post-hardcore
+    - Kreator – Krushers of the World: sobra death-metal|hard-rock
+    - The Notwist – News from Planet Zombie: sobra post-hardcore|post-rock
     - The Green Apple Sea – Dark Kid: sobra punk
 - 🔴 **fuentes_estado**: 60 de 67 fuentes leídas bien — 89.6
     - Heavy Harmonies – New Additions: prohibida robots.txt de heavyharmonies.com no permite https://heavyharmonies.com/cgi-bin/n
@@ -48,7 +48,7 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
     - fecha_exacta: 83.2 % (mínimo 85 %)
     - enlace_escucha: 78.0 % (mínimo 80 %)
 - 🔴 **cobertura_portadas**: mínimo 95 % — 80.0
-- 🔴 **reseñas_con_frase**: 0 de 2373 reseñas con frase — 0.0
+- 🔴 **reseñas_con_frase**: 209 de 2563 reseñas con frase — 8.2
 - 🔴 **canciones**: 0 de 3906 fichas con lista de canciones — 0.0
 - 🟡 **fuentes_por_familia**: fuentes especializadas por familia (mínimo 5; además cuentan las generales y los radares) — country 21, hardrock 16, rockmetal 4, blues 5, synthdark 4
     - rockmetal: 4

@@ -122,9 +122,9 @@ jobs:
         run: |
           npm install --no-save --no-package-lock playwright@1.63.0 axe-core@4.10.2
           npx playwright install --with-deps chromium
-          node tests/e2e/web.mjs site || echo "La prueba en navegador tiene fallos (ver docs/validacion.md)"
+          CAPTURAS=1 node tests/e2e/web.mjs site || echo "La prueba en navegador tiene fallos (ver docs/validacion.md)"
           python -m scraper.validar
-          git add data/validacion.json data/validacion_web.json data/historial_validacion.json docs/validacion.md
+          git add data/validacion.json data/validacion_web.json data/historial_validacion.json docs/validacion.md docs/capturas
           git commit -q -m "Validación automática $(date -u +%F)" || exit 0
           for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
       - name: Guardar páginas y lecturas para la próxima ejecución

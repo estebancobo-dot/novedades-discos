@@ -164,6 +164,7 @@ requisitos:
   capa: datos
   comprobaciones:
   - cobertura_campos
+  - resenas_cobertura
 - id: R27
   texto: Cuadrícula de portadas por semanas, lo más reciente arriba
   origen: docs/requisitos.md
