@@ -181,7 +181,7 @@
    "familia": "hardrock",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "https://loudwire.com/2027-hard-rock-metal-album-release-calendar/ → HTTP 404; (lectura guardada)",
+   "detalle": "https://loudwire.com/2027-hard-rock-metal-album-release-calendar/ → HTTP 404;",
    "paginas": 2,
    "items": 1021
   },
@@ -191,7 +191,7 @@
    "familia": "hardrock",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(al reintentar)",
+   "detalle": "(al reintentar) (lectura guardada)",
    "paginas": 60,
    "items": 54
   },
@@ -281,7 +281,7 @@
    "familia": "todas",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 29,
    "items": 226
   },
@@ -291,7 +291,7 @@
    "familia": "todas",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 30,
    "items": 55
   },
@@ -521,7 +521,7 @@
    "familia": "hardrock",
    "rol": "lista_anual",
    "estado": "vacia",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 0
   },
@@ -677,31 +677,17 @@
   }
  },
  "musicbrainz": {
-  "consultas": 1296,
+  "consultas": 534,
   "bloqueado": null
  },
  "bandcamp": {
   "paginas": 600,
   "bloqueado": null
  },
- "peticiones": 2508,
+ "peticiones": 1354,
  "hosts_bloqueados": {},
  "menciones": {
   "total": 166,
-  "sin_pareja": 111
- },
- "etiquetas_extra": {
-  "discos_sin_subgenero": 2302,
-  "con_subgenero_tras_extra": 397,
-  "consultas": {
-   "deezer": 3480,
-   "discogs": 561,
-   "wikidata": 147
-  },
-  "bloqueos": {
-   "itunes": "itunes.apple.com: HTTP 403",
-   "wikidata": "wikidata.org: HTTP 429"
-  },
-  "lastfm_sin_clave": true
+  "sin_pareja": 103
  }
 }

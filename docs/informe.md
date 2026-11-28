@@ -6,20 +6,20 @@ Ventana: del **2026-01-01** (5 meses atrás) al **2027-05-28** (anunciados). Gen
 
 | | |
 |---|---|
-| Discos en la web | **3536** (3454 publicados · 82 próximamente) |
-| Country / Americana / Folk | 1348 |
-| Hard rock / AOR | 697 |
-| Rock y metal | 1768 |
+| Discos en la web | **3481** (3400 publicados · 81 próximamente) |
+| Country / Americana / Folk | 1347 |
+| Hard rock / AOR | 691 |
+| Rock y metal | 1642 |
 | Punk y garage | 484 |
 | Indie y pop-rock | 616 |
-| Blues | 119 |
+| Blues | 198 |
 | Synthwave y dark wave | 211 |
-| Cantautores | 235 |
-| Con subgénero | 3020 (85 %) |
-| En Bandcamp | 1863 (53 %) |
-| Aparecen en una sola fuente | 1634 (46 %) |
-| Con al menos una reseña | 1828 (52 %) |
-| Descartados | 3478 (EP, reediciones, otro idioma, fuera de fecha, otros géneros…) |
+| Cantautores | 233 |
+| Con subgénero | 2910 (84 %) |
+| En Bandcamp | 1802 (52 %) |
+| Aparecen en una sola fuente | 1608 (46 %) |
+| Con al menos una reseña | 1818 (52 %) |
+| Descartados | 3533 (EP, reediciones, otro idioma, fuera de fecha, otros géneros…) |
 
 > «En Bandcamp» = MusicBrainz enlaza el disco o el artista a Bandcamp, o se ha encontrado la página del disco. La búsqueda de Bandcamp está prohibida a robots y no se usa.
 
@@ -37,34 +37,34 @@ Cuántos discos de la web aparecen en cada fuente, por mes de salida. «Web» es
 
 | Mes | Web | Saving Country Music | Americana UK | Radar de artistas (MusicBrainz) | Wikipedia | Mejor fuente sola |
 |---|---:|---:|---:|---:|---:|---:|
-| junio 2026 | **135** | 55 | 46 | 23 | 28 | 55 (41 %) |
-| julio 2026 | **104** | 26 | 29 | 33 | 24 | 33 (32 %) |
-| agosto 2026 | **159** | 38 | 40 | 52 | 39 | 59 (37 %) |
-| septiembre 2026 | **162** | 55 | 49 | 37 | 31 | 55 (34 %) |
-| octubre 2026 | **222** | 63 | 54 | 68 | 40 | 68 (31 %) |
-| noviembre 2026 | **114** | 26 | 22 | 0 | 12 | 37 (32 %) |
+| junio 2026 | **135** | 55 | 46 | 23 | 29 | 55 (41 %) |
+| julio 2026 | **105** | 26 | 29 | 34 | 24 | 34 (32 %) |
+| agosto 2026 | **158** | 38 | 40 | 50 | 37 | 59 (37 %) |
+| septiembre 2026 | **164** | 55 | 49 | 37 | 31 | 55 (34 %) |
+| octubre 2026 | **224** | 63 | 54 | 68 | 41 | 68 (30 %) |
+| noviembre 2026 | **116** | 26 | 22 | 0 | 13 | 37 (32 %) |
 
 **Hard rock / AOR**
 
 | Mes | Web | Radar de artistas (MusicBrainz) | Loudwire | Heavy Harmonies | Wikipedia | Mejor fuente sola |
 |---|---:|---:|---:|---:|---:|---:|
-| junio 2026 | **52** | 20 | 17 | 1 | 16 | 20 (38 %) |
+| junio 2026 | **51** | 20 | 17 | 1 | 16 | 20 (39 %) |
 | julio 2026 | **50** | 26 | 18 | 11 | 15 | 26 (52 %) |
-| agosto 2026 | **95** | 12 | 15 | 49 | 14 | 49 (52 %) |
+| agosto 2026 | **93** | 12 | 15 | 49 | 14 | 49 (53 %) |
 | septiembre 2026 | **106** | 41 | 28 | 53 | 21 | 53 (50 %) |
 | octubre 2026 | **94** | 29 | 18 | 39 | 18 | 39 (41 %) |
-| noviembre 2026 | **61** | 9 | 13 | 31 | 13 | 31 (51 %) |
+| noviembre 2026 | **59** | 9 | 13 | 31 | 13 | 31 (53 %) |
 
 **Rock y metal**
 
-| Mes | Web | Radar de artistas (MusicBrainz) | Loudwire | Wikipedia | Angry Metal Guy | Mejor fuente sola |
+| Mes | Web | Radar de artistas (MusicBrainz) | Loudwire | Angry Metal Guy | Wikipedia | Mejor fuente sola |
 |---|---:|---:|---:|---:|---:|---:|
-| junio 2026 | **163** | 75 | 55 | 48 | 45 | 75 (46 %) |
-| julio 2026 | **147** | 87 | 56 | 42 | 40 | 87 (59 %) |
-| agosto 2026 | **144** | 53 | 36 | 35 | 44 | 53 (37 %) |
-| septiembre 2026 | **189** | 88 | 56 | 77 | 47 | 88 (47 %) |
-| octubre 2026 | **244** | 120 | 75 | 79 | 54 | 120 (49 %) |
-| noviembre 2026 | **127** | 19 | 45 | 44 | 29 | 45 (35 %) |
+| junio 2026 | **149** | 71 | 53 | 45 | 44 | 71 (48 %) |
+| julio 2026 | **136** | 80 | 56 | 40 | 38 | 80 (59 %) |
+| agosto 2026 | **134** | 45 | 36 | 44 | 32 | 45 (34 %) |
+| septiembre 2026 | **174** | 80 | 56 | 47 | 67 | 80 (46 %) |
+| octubre 2026 | **224** | 110 | 74 | 54 | 72 | 110 (49 %) |
+| noviembre 2026 | **121** | 19 | 45 | 29 | 43 | 45 (37 %) |
 
 **Punk y garage**
 
@@ -90,14 +90,14 @@ Cuántos discos de la web aparecen en cada fuente, por mes de salida. «Web» es
 
 **Blues**
 
-| Mes | Web | Blues Blast Magazine | Radar de artistas (MusicBrainz) | Pause & Play | Radar de artistas (Deezer) | Mejor fuente sola |
+| Mes | Web | Blues Blast Magazine | Radar de artistas (MusicBrainz) | Radar de artistas (Deezer) | Wikipedia | Mejor fuente sola |
 |---|---:|---:|---:|---:|---:|---:|
-| junio 2026 | **9** | 4 | 0 | 0 | 0 | 4 (44 %) |
-| julio 2026 | **13** | 6 | 3 | 0 | 4 | 6 (46 %) |
-| agosto 2026 | **14** | 7 | 4 | 7 | 4 | 7 (50 %) |
-| septiembre 2026 | **11** | 7 | 4 | 0 | 3 | 7 (64 %) |
-| octubre 2026 | **15** | 1 | 5 | 4 | 7 | 7 (47 %) |
-| noviembre 2026 | **6** | 1 | 2 | 3 | 1 | 3 (50 %) |
+| junio 2026 | **21** | 9 | 1 | 3 | 4 | 9 (43 %) |
+| julio 2026 | **19** | 8 | 5 | 5 | 5 | 8 (42 %) |
+| agosto 2026 | **21** | 9 | 6 | 5 | 6 | 10 (48 %) |
+| septiembre 2026 | **19** | 9 | 6 | 5 | 2 | 9 (47 %) |
+| octubre 2026 | **26** | 4 | 8 | 11 | 3 | 11 (42 %) |
+| noviembre 2026 | **9** | 2 | 2 | 2 | 3 | 5 (56 %) |
 
 **Synthwave y dark wave**
 
@@ -115,7 +115,7 @@ Cuántos discos de la web aparecen en cada fuente, por mes de salida. «Web» es
 | Mes | Web | Wikipedia | Radar de artistas (MusicBrainz) | Pause & Play | Radar de artistas (Deezer) | Mejor fuente sola |
 |---|---:|---:|---:|---:|---:|---:|
 | junio 2026 | **21** | 10 | 9 | 0 | 9 | 10 (48 %) |
-| julio 2026 | **18** | 7 | 12 | 2 | 4 | 12 (67 %) |
+| julio 2026 | **17** | 7 | 11 | 2 | 3 | 11 (65 %) |
 | agosto 2026 | **31** | 11 | 15 | 14 | 9 | 15 (48 %) |
 | septiembre 2026 | **23** | 9 | 7 | 0 | 6 | 9 (39 %) |
 | octubre 2026 | **42** | 18 | 23 | 24 | 25 | 25 (60 %) |
@@ -123,14 +123,14 @@ Cuántos discos de la web aparecen en cada fuente, por mes de salida. «Web» es
 
 ### ¿Los encuentra antes?
 
-- **82 discos anunciados** que todavía no han salido ya están en la web; 5 de ellos tienen ya alguna reseña.
-- De los 1828 discos reseñados por la prensa, **950 (52 %)** también estaban en listados, anuncios o sellos, es decir, se encuentran sin esperar a la reseña.
-- 1631 discos publicados (47 %) no tienen ninguna reseña en las fuentes leídas: son los que un lector de prensa no vería.
+- **81 discos anunciados** que todavía no han salido ya están en la web; 5 de ellos tienen ya alguna reseña.
+- De los 1818 discos reseñados por la prensa, **941 (52 %)** también estaban en listados, anuncios o sellos, es decir, se encuentran sin esperar a la reseña.
+- 1587 discos publicados (47 %) no tienen ninguna reseña en las fuentes leídas: son los que un lector de prensa no vería.
 - **Limitación honesta:** en esta primera carga no sé *cuándo* anunció cada web cada disco, solo que lo anunció. Cada disco guarda la fecha en que el robot lo vio por primera vez (`detectado`); a partir de las ejecuciones semanales el informe podrá medir los días de antelación reales.
 
 ### ¿Asigna bien el subgénero?
 
-No hay una referencia independiente fiable (AOTY no es legible). Como control, en los 1103 discos en los que la prensa da un género reconocible, el subgénero asignado lo incluye en **100 %** de los casos. Discos sin subgénero: **516** (15 %).
+No hay una referencia independiente fiable (AOTY no es legible). Como control, en los 1100 discos en los que la prensa da un género reconocible, el subgénero asignado lo incluye en **100 %** de los casos. Discos sin subgénero: **571** (16 %).
 
 Ejemplos de desacuerdo para revisar:
 
@@ -143,36 +143,36 @@ Ejemplos de desacuerdo para revisar:
 
 | Campo | Discos | % |
 |---|---:|---:|
-| Portada | 2896 | 82 % |
-| Sello | 2604 | 74 % |
-| Número de pistas | 2974 | 84 % |
-| Fecha exacta (día) | 2999 | 85 % |
-| Idioma verificado | 2326 | 66 % |
-| Identificado en MusicBrainz | 2699 | 76 % |
-| Enlace para escuchar (Deezer, Bandcamp, Apple…) | 2888 | 82 % |
-| Subgénero | 3020 | 85 % |
-| Al menos una reseña | 1828 | 52 % |
+| Portada | 2835 | 81 % |
+| Sello | 2545 | 73 % |
+| Número de pistas | 2916 | 84 % |
+| Fecha exacta (día) | 2936 | 84 % |
+| Idioma verificado | 2278 | 65 % |
+| Identificado en MusicBrainz | 2643 | 76 % |
+| Enlace para escuchar (Deezer, Bandcamp, Apple…) | 2828 | 81 % |
+| Subgénero | 2910 | 84 % |
+| Al menos una reseña | 1818 | 52 % |
 
 ### Coherencia de la clasificación con fuentes especializadas
 
-De los **1309** discos con subgénero que vienen de una fuente especializada en una familia, **94 %** tienen al menos un subgénero de esa familia. Los demás pueden ser discos fuera de su género habitual o errores de clasificación:
+De los **1283** discos con subgénero que vienen de una fuente especializada en una familia, **94 %** tienen al menos un subgénero de esa familia. Los demás pueden ser discos fuera de su género habitual o errores de clasificación:
 
 - Jaren Johnston – *The Guest Room*: fuente de country, subgéneros southern-rock
 - Eddie 9V – *Down Here*: fuente de country, subgéneros blues-rock, modern-electric-blues
 - Iommi – *From the Dark*: fuente de hardrock, subgéneros heavy-metal
 - Galactic Cowboys – *What Planet Are You From?*: fuente de hardrock, subgéneros progressive-metal
 - Eivør – *Tungl*: fuente de rockmetal, subgéneros contemporary-folk, singer-songwriter
-- Blood and Sun – *Aion’s Light*: fuente de rockmetal, subgéneros contemporary-folk
 - claire rousay – *on holding*: fuente de country, subgéneros experimental
 - April Art – *RED*: fuente de hardrock, subgéneros alternative-rock, heavy-metal
 - Allison de Groot & Rich Ruth – *Allison de Groot & Rich Ruth*: fuente de country, subgéneros experimental, psychedelic-rock
 - Eternal – *Conspiracy of Warheads*: fuente de hardrock, subgéneros thrash, post-punk
 - Penelope Isles – *3*: fuente de country, subgéneros lo-fi
 - Oren Ambarchi – *Cooked*: fuente de country, subgéneros experimental
+- Night Laser – *Rats in the Cradle*: fuente de hardrock, subgéneros heavy-metal
 
 ### Posibles duplicados para revisar
 
-Parejas del mismo artista con títulos muy parecidos que **no** se han unido: **5** (sobre 3536 discos). Pueden ser el mismo disco escrito de dos formas o discos distintos (p. ej. un directo y el de estudio):
+Parejas del mismo artista con títulos muy parecidos que **no** se han unido: **5** (sobre 3481 discos). Pueden ser el mismo disco escrito de dos formas o discos distintos (p. ej. un directo y el de estudio):
 
 - Gnod: *Chronicles of Gnowt (Vol 2)* (2026-10-09) · *Chronicles of Gnowt (Vol 1)* (2026-04-10) — similitud 0.96
 - Jim O’Rourke: *Steamroom 69* (2026-10-05) · *Steamroom 68* (2026-08-07) — similitud 0.92
@@ -180,9 +180,31 @@ Parejas del mismo artista con títulos muy parecidos que **no** se han unido: **
 - Jim O’Rourke: *Steamroom 70* (2026-10-28) · *Steamroom 69* (2026-10-05) — similitud 0.83
 - Jim O’Rourke: *Steamroom 70* (2026-10-28) · *Steamroom 68* (2026-08-07) — similitud 0.83
 
+### Aciertos medidos en una muestra revisada
+
+Muestra al azar de **60** discos revisados uno a uno (`data/revision_clasificacion.csv`), según lo que se sabe de cada artista y el género que da la propia reseña.
+
+- De los **48** con subgénero que se pueden juzgar: correctos **79 %**, parcialmente correctos (algún subgénero de más) 19 %, incorrectos 2 %.
+- Sin subgénero (pero en su familia): 7 · sin datos suficientes para juzgar: 2.
+- Apartados al revisar las reglas: 3 (2 con razón, 1 probablemente por error).
+
+Errores y su causa:
+
+- Onasander & RNGMNN – *Illumination Phases* (fuera mal): probablemente synthwave; su única etiqueta era «Experimental» (Discogs) y la fuente es mixta
+- Astral Spectre – *Cosmic Mirage* (parcial): black y heavy metal bien; «classic rock» de más (etiqueta de MusicBrainz)
+- Kreator – *Krushers of the World* (parcial): thrash bien; «death metal» y «hard rock» de más (etiquetas de MusicBrainz)
+- The Notwist – *News from Planet Zombie* (parcial): indie bien; «post-hardcore» y «post-rock» de más (géneros de sus primeros discos en Wikipedia)
+- The Green Apple Sea – *Dark Kid* (parcial): folk y americana bien; «punk» de más (etiqueta «punkrock» de la fuente)
+- Art d’Ecco – *Scheele's Green* (parcial): «rock and roll» es genérico; es glam y art rock
+- Linda Perry – *Let It Die Here* (parcial): rock alternativo vale; «classic rock» sin pruebas
+- MY PET ROCKET – *Last of the Analogue Superheroes* (parcial): power pop y pop rock bien; «punk» de más
+- Kahil El’Zabar – *Sketches For Trane* (incorrecto): disco de jazz; entra en Country por la fuente (KLOF) y no tiene ninguna etiqueta
+- Vreid – *The Skies Turn Black* (parcial): black metal bien; «death metal» de más (etiqueta de MusicBrainz)
+- Son Little – *Cityfolk* (parcial): soul y R&B con toques indie; en Country por la fuente Americana UK
+
 ## Discos por familia y subgénero
 
-### Country / Americana / Folk · 1348 discos
+### Country / Americana / Folk · 1347 discos
 
 | Grupo | Subgénero | Discos |
 |---|---|---:|
@@ -195,29 +217,29 @@ Parejas del mismo artista con títulos muy parecidos que **no** se han unido: **
 | Country | Country pop | 34 |
 | Country | Country rock | 46 |
 | Country | Cosmic country | 6 |
-| Country | Western | 6 |
+| Country | Western | 5 |
 | Americana | Americana | 312 |
 | Americana | Alt-country | 98 |
-| Americana | Roots rock | 20 |
+| Americana | Roots rock | 21 |
 | Americana | Southern gothic | 3 |
 | Americana | Country soul | 4 |
 | Americana | Cowpunk | 0 |
 | Bluegrass y old-time | Bluegrass | 47 |
 | Bluegrass y old-time | Newgrass | 4 |
 | Bluegrass y old-time | Old-time | 13 |
-| Folk | Singer-songwriter | 235 |
-| Folk | Contemporary folk | 431 |
-| Folk | Indie folk | 120 |
-| Folk | Folk rock | 96 |
+| Folk | Singer-songwriter | 233 |
+| Folk | Contemporary folk | 370 |
+| Folk | Indie folk | 121 |
+| Folk | Folk rock | 98 |
 | Folk | Traditional folk | 18 |
 | Folk | Psych folk | 13 |
 | Folk | Folk pop | 29 |
 | Fronteras | Country blues *(frontera)* | 7 |
 | Fronteras | Southern gospel *(frontera)* | 2 |
 | Fronteras | Heartland rock *(frontera)* | 4 |
-| — | *sin subgénero* | 402 |
+| — | *sin subgénero* | 443 |
 
-### Hard rock / AOR · 697 discos
+### Hard rock / AOR · 691 discos
 
 | Grupo | Subgénero | Discos |
 |---|---|---:|
@@ -239,18 +261,18 @@ Parejas del mismo artista con títulos muy parecidos que **no** se han unido: **
 | Fronteras | Melodic metal *(frontera)* | 41 |
 | Fronteras | Power metal *(frontera)* | 66 |
 | Fronteras | Soft rock *(frontera)* | 14 |
-| — | *sin subgénero* | 114 |
+| — | *sin subgénero* | 111 |
 
-### Rock y metal · 1768 discos
+### Rock y metal · 1642 discos
 
 | Grupo | Subgénero | Discos |
 |---|---|---:|
 | Rock y metal | Acid rock | 1 |
 | Rock y metal | Alternative rock | 303 |
 | Rock y metal | Atmospheric black metal | 52 |
-| Rock y metal | Avantgarde | 43 |
+| Rock y metal | Avantgarde *(frontera)* | 38 |
 | Rock y metal | Black metal | 219 |
-| Rock y metal | Classic rock | 38 |
+| Rock y metal | Classic rock | 37 |
 | Rock y metal | Death metal | 241 |
 | Rock y metal | Deathcore | 27 |
 | Rock y metal | Depressive black metal | 5 |
@@ -258,20 +280,20 @@ Parejas del mismo artista con títulos muy parecidos que **no** se han unido: **
 | Rock y metal | Doom metal | 146 |
 | Rock y metal | Emo | 69 |
 | Rock y metal | Ethereal | 1 |
-| Rock y metal | Experimental | 230 |
+| Rock y metal | Experimental *(frontera)* | 163 |
 | Rock y metal | Folk metal | 35 |
 | Rock y metal | Funeral doom metal | 13 |
 | Rock y metal | Funk metal | 0 |
 | Rock y metal | Glam | 18 |
 | Rock y metal | Goregrind | 4 |
-| Rock y metal | Goth rock | 46 |
+| Rock y metal | Goth rock | 43 |
 | Rock y metal | Gothic metal | 24 |
 | Rock y metal | Grindcore | 20 |
 | Rock y metal | Groove metal | 26 |
 | Rock y metal | Grunge | 28 |
-| Rock y metal | Hard rock | 236 |
+| Rock y metal | Hard rock | 234 |
 | Rock y metal | Heavy metal | 255 |
-| Rock y metal | Industrial | 104 |
+| Rock y metal | Industrial | 102 |
 | Rock y metal | Industrial metal | 39 |
 | Rock y metal | Instrumental | 11 |
 | Rock y metal | J-Rock | 4 |
@@ -300,7 +322,7 @@ Parejas del mismo artista con títulos muy parecidos que **no** se han unido: **
 | Rock y metal | Twist | 0 |
 | Rock y metal | Viking metal | 6 |
 | Rock y metal | Yé-Yé | 0 |
-| — | *sin subgénero* | 0 |
+| — | *sin subgénero* | 1 |
 
 ### Punk y garage · 484 discos
 
@@ -343,7 +365,7 @@ Parejas del mismo artista con títulos muy parecidos que **no** se han unido: **
 | Indie y pop-rock | Shoegaze | 52 |
 | — | *sin subgénero* | 0 |
 
-### Blues · 119 discos
+### Blues · 198 discos
 
 | Grupo | Subgénero | Discos |
 |---|---|---:|
@@ -360,7 +382,7 @@ Parejas del mismo artista con títulos muy parecidos que **no** se han unido: **
 | Blues | Piano blues | 2 |
 | Blues | Rhythm & blues | 12 |
 | Blues | Texas blues | 0 |
-| — | *sin subgénero* | 0 |
+| — | *sin subgénero* | 23 |
 
 ### Synthwave y dark wave · 211 discos
 
@@ -379,7 +401,7 @@ Parejas del mismo artista con títulos muy parecidos que **no** se han unido: **
 | Synthwave y dark wave | Witch house | 1 |
 | — | *sin subgénero* | 0 |
 
-### Cantautores · 235 discos
+### Cantautores · 233 discos
 
 | Grupo | Subgénero | Discos |
 |---|---|---:|
@@ -406,30 +428,30 @@ Parejas del mismo artista con títulos muy parecidos que **no** se han unido: **
 | MelodicRock.com | ✅ funciona | 6 | 1 |
 | Fireworks Magazine – reseñas del número actual | ✅ funciona | 7 | 1 |
 | Angelic Warlord – Release Dates | ✅ funciona | 10 | 2 |
-| Get Ready to ROCK! | ✅ funciona | 145 | 57 |
+| Get Ready to ROCK! | ✅ funciona | 139 | 51 |
 | Loudwire – 2026 Hard Rock + Metal Release Calendar | ✅ funciona | 612 | 78 |
 | Metal Planet Music | ✅ funciona | 31 | 0 |
-| Louder (Classic Rock / Prog) – reseñas | ✅ funciona | 17 | 0 |
-| Pause & Play – On the CD Front | ✅ funciona | 584 | 101 |
-| Wikipedia – List of albums | ✅ funciona | 968 | 157 |
-| Pitchfork – guía de próximos discos | ✅ funciona | 20 | 0 |
-| The Line of Best Fit – Album release schedule | ✅ funciona | 24 | 5 |
-| Any Decent Music – agregador de crítica | ✅ funciona | 12 | 0 |
-| Bandcamp Daily – Essential Releases | ✅ funciona | 75 | 16 |
+| Louder (Classic Rock / Prog) – reseñas | ✅ funciona | 16 | 0 |
+| Pause & Play – On the CD Front | ✅ funciona | 575 | 100 |
+| Wikipedia – List of albums | ✅ funciona | 941 | 145 |
+| Pitchfork – guía de próximos discos | ✅ funciona | 19 | 0 |
+| The Line of Best Fit – Album release schedule | ✅ funciona | 23 | 5 |
+| Any Decent Music – agregador de crítica | ✅ funciona | 11 | 0 |
+| Bandcamp Daily – Essential Releases | ✅ funciona | 64 | 9 |
 | Stereogum – Album of the Week | ✅ funciona | 24 | 0 |
-| Blues Blast Magazine – reseñas | ✅ funciona | 80 | 43 |
-| Blues Rock Review | ✅ funciona | 32 | 4 |
+| Blues Blast Magazine – reseñas | ✅ funciona | 97 | 58 |
+| Blues Rock Review | ✅ funciona | 35 | 5 |
 | Dying Scene (punk) | ✅ funciona | 2 | 1 |
-| The Quietus | ✅ funciona | 37 | 2 |
-| Side-Line (dark electrónico, EBM, synth, goth) | ✅ funciona | 132 | 50 |
-| ReGen Magazine – reseñas (industrial, synthpop, darkwave) | ✅ funciona | 83 | 47 |
+| The Quietus | ✅ funciona | 30 | 0 |
+| Side-Line (dark electrónico, EBM, synth, goth) | ✅ funciona | 126 | 47 |
+| ReGen Magazine – reseñas (industrial, synthpop, darkwave) | ✅ funciona | 78 | 43 |
 | Angry Metal Guy – reseñas | ✅ funciona | 512 | 205 |
 | Distorted Sound – reseñas | ✅ funciona | 270 | 47 |
 | Blabbermouth – noticias (metal y hard rock) | ✅ funciona | 0 | 0 |
-| Louder Than War (punk, post-punk, indie) | ✅ funciona | 103 | 45 |
+| Louder Than War (punk, post-punk, indie) | ✅ funciona | 99 | 43 |
 | Psychedelic Baby Magazine (psicodelia, garage, prog) | ✅ funciona | 17 | 12 |
-| Radar de artistas (MusicBrainz) | ✅ funciona | 1128 | 45 |
-| Radar de artistas (Deezer) | ✅ funciona | 706 | 17 |
+| Radar de artistas (MusicBrainz) | ✅ funciona | 1104 | 41 |
+| Radar de artistas (Deezer) | ✅ funciona | 693 | 16 |
 | New West Records – Recent Releases | ✅ funciona | 8 | 0 |
 | Oh Boy Records – New Releases | ✅ funciona | 4 | 1 |
 | Frontiers – New Releases | ✅ funciona | 0 | 0 |
@@ -464,7 +486,7 @@ MusicBrainz: 1296 consultas. Bandcamp: 600 páginas. Peticiones totales: 2508.
 
 | Motivo | Discos |
 |---|---:|
-| clasificación | 1575 |
+| clasificación | 1630 |
 | otro género | 498 |
 | no es nuevo | 408 |
 | reedición o formato especial | 231 |
@@ -507,9 +529,11 @@ Lista completa en `data/descartados.json`.
 
 ## Etiquetas sin encajar y subgéneros propuestos
 
-- Etiquetas en `data/mapeo_etiquetas.csv`: 6283 · resueltas por el LLM: 2447 · **pendientes: 3774**.
+- Etiquetas en `data/mapeo_etiquetas.csv`: 6285 · resueltas por el LLM: 2447 · **pendientes: 3776**.
 - Las pendientes no tienen todavía respuesta del LLM (la Action semanal no tiene clave de API); se resuelven una sola vez en una sesión de Claude Code. Las más frecuentes:
+  - «Rainbow» (3 veces; p. ej. Tungsten – Ashes)
   - «10000 Years» (1 veces; p. ej. 10,000 Years – Esox Lucifer)
+  - «10CC» (1 veces; p. ej. Burning Rope – Dissolution)
   - «10s» (1 veces; p. ej. Squeeze – Trixies)
   - «14 Karat Soul» (1 veces; p. ej. Greg Piccolo & Heavy Juice – Who Knows What the Future Holds)
   - «16 Horsepower» (1 veces; p. ej. Wailin Storms – The Arsonist)
@@ -522,8 +546,6 @@ Lista completa en `data/descartados.json`.
   - «21st Century Blues» (1 veces; p. ej. Ben Rice & The PDX Hustle – Fallen Angel)
   - «25 Forever» (1 veces; p. ej. Chroma – 25 Forever)
   - «2fast2die» (1 veces; p. ej. Archspire – Too Fast to Die)
-  - «30 years» (1 veces; p. ej. Pulley – Rise of the Underdog)
-  - «40 Watt Music» (1 veces; p. ej. G.E. Long Band – Ain’t No Rain)
 
 **Subgéneros nuevos propuestos** (no se han creado; decide tú si se añaden a la taxonomía):
 
