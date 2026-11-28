@@ -151,3 +151,29 @@ rutas:
   cache_etiquetas_extra: data/cache/etiquetas_extra.json
   listas_anuales: data/listas_anuales.json   # listas de fin de año (lo mejor de cada año)
   estado_pipeline: data/estado_pipeline.json # fases hechas de la última ejecución (para reanudar)
+
+# Validación automática de todas las capas (scraper/validar.py). Umbrales de cada comprobación.
+validacion:
+  discos_min_por_familia: 20
+  discos_min_por_mes: 30            # cada mes de los años completos
+  fuentes_min_por_familia: 5
+  fuentes_ok_min_pct: 90
+  coherencia_fuentes_min_pct: 90
+  muestra_acierto_min_pct: 85
+  acuerdo_wikipedia_min_pct: 85
+  cobertura_min_pct: {portada: 95, fecha_exacta: 85, sello: 70, pistas: 80, enlace_escucha: 80, subgenero: 75}
+  salto_max_pct: 30                 # cambio semana a semana que se marca como aviso
+  listas_anuales_desde: 2019
+  listas_anuales_min: 20
+  estudio_max_dias: 120             # antigüedad máxima del estudio de referencias
+  # Referencias independientes para "¿perdemos discos?" (scraper/referencias.py). No son fuentes: no
+  # añaden discos, solo se comparan con los nuestros. Se leen con las mismas reglas (robots.txt, ritmo,
+  # parada ante bloqueos).
+  referencias:
+    - id: metacritic
+      nombre: Metacritic – All New Music by Release Date
+      url: "https://www.metacritic.com/browse/music/all/all/current-year/new/"
+      pagina: "?page={n}"
+      paginas: 3
+      enlace: '/music/(?P<titulo>[^/"?#]+)/(?P<artista>[^/"?#]+)/'
+  perdidos_max_pct: 10            # de los discos de nuestros géneros que tiene la referencia

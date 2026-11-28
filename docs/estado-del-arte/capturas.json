@@ -1,0 +1,229 @@
+{
+ "fecha": "2026-11-28T07:45:44.132Z",
+ "webs": {
+  "aoty": {
+   "nombre": "Album of the Year",
+   "paginas": [
+    {
+     "n": 1,
+     "url": "https://www.albumoftheyear.org/",
+     "movil": "no accesible (ni en directo ni en Wayback)",
+     "escritorio": "no accesible (ni en directo ni en Wayback)"
+    },
+    {
+     "n": 2,
+     "url": "https://www.albumoftheyear.org/releases/",
+     "movil": "no accesible (ni en directo ni en Wayback)",
+     "escritorio": "no accesible (ni en directo ni en Wayback)"
+    },
+    {
+     "n": 3,
+     "url": "https://www.albumoftheyear.org/ratings/6-highest-rated/2025/1",
+     "movil": "no accesible (ni en directo ni en Wayback)",
+     "escritorio": "no accesible (ni en directo ni en Wayback)"
+    },
+    {
+     "n": 4,
+     "url": "https://www.albumoftheyear.org/upcoming/",
+     "movil": "no accesible (ni en directo ni en Wayback)",
+     "escritorio": "no accesible (ni en directo ni en Wayback)"
+    }
+   ]
+  },
+  "rym": {
+   "nombre": "Rate Your Music",
+   "paginas": [
+    {
+     "n": 1,
+     "url": "https://rateyourmusic.com/new-music/",
+     "movil": "no accesible (ni en directo ni en Wayback)",
+     "escritorio": "no accesible (ni en directo ni en Wayback)"
+    },
+    {
+     "n": 2,
+     "url": "https://rateyourmusic.com/charts/top/album/2025/",
+     "movil": "no accesible (ni en directo ni en Wayback)",
+     "escritorio": "no accesible (ni en directo ni en Wayback)"
+    }
+   ]
+  },
+  "allmusic": {
+   "nombre": "AllMusic",
+   "paginas": [
+    {
+     "n": 1,
+     "url": "https://www.allmusic.com/newreleases",
+     "movil": "no accesible (ni en directo ni en Wayback)",
+     "escritorio": "no accesible (ni en directo ni en Wayback)"
+    },
+    {
+     "n": 2,
+     "url": "https://www.allmusic.com/",
+     "movil": "no accesible (ni en directo ni en Wayback)",
+     "escritorio": "no accesible (ni en directo ni en Wayback)"
+    }
+   ]
+  },
+  "metacritic": {
+   "nombre": "Metacritic (música)",
+   "paginas": [
+    {
+     "n": 1,
+     "url": "https://www.metacritic.com/browse/albums/release-date/new-releases/date",
+     "movil": "01-movil.jpg",
+     "via": "directo",
+     "final": "https://www.metacritic.com/browse/game/",
+     "escritorio": "01-escritorio.jpg"
+    },
+    {
+     "n": 2,
+     "url": "https://www.metacritic.com/browse/albums/score/metascore/year/filtered",
+     "movil": "02-movil.jpg",
+     "via": "directo",
+     "final": "https://www.metacritic.com/browse/game/",
+     "escritorio": "02-escritorio.jpg"
+    },
+    {
+     "n": 3,
+     "url": "https://www.metacritic.com/music/oi/peter-gabriel/",
+     "movil": "no accesible (ni en directo ni en Wayback)",
+     "escritorio": "no accesible (ni en directo ni en Wayback)"
+    },
+    {
+     "n": 4,
+     "url": "https://www.metacritic.com/music/carnaval-de-luz/u2/",
+     "movil": "04-movil.jpg",
+     "via": "directo",
+     "final": "https://www.metacritic.com/music/carnaval-de-luz/u2/",
+     "escritorio": "no accesible (ni en directo ni en Wayback)"
+    }
+   ]
+  },
+  "nmt": {
+   "nombre": "New Music Tracker",
+   "paginas": [
+    {
+     "n": 1,
+     "url": "https://newmusictracker.com/",
+     "movil": "01-movil.jpg",
+     "via": "directo",
+     "final": "https://newmusictracker.com/",
+     "escritorio": "01-escritorio.jpg"
+    },
+    {
+     "n": 2,
+     "url": "https://newmusictracker.com/releases/recent",
+     "movil": "02-movil.jpg",
+     "via": "directo",
+     "final": "https://newmusictracker.com/releases/recent",
+     "escritorio": "02-escritorio.jpg"
+    },
+    {
+     "n": 3,
+     "url": "https://newmusictracker.com/featured",
+     "movil": "03-movil.jpg",
+     "via": "directo",
+     "final": "https://newmusictracker.com/featured",
+     "escritorio": "03-escritorio.jpg"
+    },
+    {
+     "n": 4,
+     "url": "https://newmusictracker.com/release-groups/24dd0836-a911-4fc6-b19f-4f8ce027f849",
+     "movil": "04-movil.jpg",
+     "via": "directo",
+     "final": "https://newmusictracker.com/release-groups/24dd0836-a911-4fc6-b19f-4f8ce027f849",
+     "escritorio": "04-escritorio.jpg"
+    },
+    {
+     "n": 5,
+     "url": "https://newmusictracker.com/artists/07832b42-8826-4ab1-acd3-c49a2f595ffe",
+     "movil": "05-movil.jpg",
+     "via": "directo",
+     "final": "https://newmusictracker.com/artists/07832b42-8826-4ab1-acd3-c49a2f595ffe",
+     "escritorio": "05-escritorio.jpg"
+    }
+   ]
+  },
+  "anydecentmusic": {
+   "nombre": "AnyDecentMusic?",
+   "paginas": [
+    {
+     "n": 1,
+     "url": "http://www.anydecentmusic.com/",
+     "movil": "01-movil.jpg",
+     "via": "directo",
+     "final": "http://www.anydecentmusic.com/",
+     "escritorio": "01-escritorio.jpg"
+    },
+    {
+     "n": 2,
+     "url": "http://www.anydecentmusic.com/review/15769/U2-Carnaval-de-Luz.aspx",
+     "movil": "02-movil.jpg",
+     "via": "directo",
+     "final": "http://www.anydecentmusic.com/review/15769/U2-Carnaval-de-Luz.aspx",
+     "escritorio": "02-escritorio.jpg"
+    }
+   ]
+  },
+  "listenbrainz": {
+   "nombre": "ListenBrainz – Fresh releases (código abierto)",
+   "paginas": [
+    {
+     "n": 1,
+     "url": "https://listenbrainz.org/explore/fresh-releases/",
+     "movil": "01-movil.jpg",
+     "via": "directo",
+     "final": "https://listenbrainz.org/explore/fresh-releases/",
+     "escritorio": "01-escritorio.jpg"
+    }
+   ]
+  },
+  "pitchfork": {
+   "nombre": "Pitchfork",
+   "paginas": [
+    {
+     "n": 1,
+     "url": "https://pitchfork.com/reviews/albums/",
+     "movil": "01-movil.jpg",
+     "via": "directo",
+     "final": "https://pitchfork.com/reviews/albums/",
+     "escritorio": "01-escritorio.jpg"
+    },
+    {
+     "n": 2,
+     "url": "https://pitchfork.com/reviews/albums/various-artists-la-ola-nocturna-experimental-songs-and-deviant-pop-from-the-spanish-80s/",
+     "movil": "02-movil.jpg",
+     "via": "directo",
+     "final": "https://pitchfork.com/reviews/albums/various-artists-la-ola-nocturna-experimental-songs-and-deviant-pop-from-the-spanish-80s/",
+     "escritorio": "02-escritorio.jpg"
+    }
+   ]
+  },
+  "bandcamp_daily": {
+   "nombre": "Bandcamp Daily",
+   "paginas": [
+    {
+     "n": 1,
+     "url": "https://daily.bandcamp.com/best-of-2025",
+     "movil": "01-movil.jpg",
+     "via": "directo",
+     "final": "https://daily.bandcamp.com/best-of-2025",
+     "escritorio": "01-escritorio.jpg"
+    }
+   ]
+  },
+  "musicboard": {
+   "nombre": "Musicboard",
+   "paginas": [
+    {
+     "n": 1,
+     "url": "https://musicboard.app/",
+     "movil": "01-movil.jpg",
+     "via": "directo",
+     "final": "https://musicboard.app/",
+     "escritorio": "01-escritorio.jpg"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1563 @@
+{
+ "fecha": "2026-11-28T08:22:36+00:00",
+ "capas": {
+  "alcance": {
+   "ok": 1
+  },
+  "clasificacion": {
+   "ok": 6,
+   "fallo": 1
+  },
+  "datos": {
+   "ok": 1,
+   "fallo": 4,
+   "sin_comprobar": 3
+  },
+  "descubrimiento": {
+   "ok": 2
+  },
+  "estudio": {
+   "ok": 2
+  },
+  "fuentes": {
+   "fallo": 4,
+   "aviso": 1,
+   "ok": 8,
+   "sin_comprobar": 4
+  },
+  "informe": {
+   "ok": 1
+  },
+  "procesos": {
+   "ok": 11,
+   "sin_comprobar": 2,
+   "fallo": 1,
+   "aviso": 1
+  },
+  "publicacion": {
+   "ok": 1
+  },
+  "reglas": {
+   "ok": 3
+  },
+  "validacion": {
+   "sin_datos": 1,
+   "fallo": 1,
+   "ok": 2,
+   "sin_comprobar": 1
+  },
+  "web": {
+   "ok": 21,
+   "sin_comprobar": 36,
+   "fallo": 21
+  }
+ },
+ "requisitos": {
+  "R1": {
+   "estado": "ok",
+   "capa": "alcance",
+   "texto": "Web de novedades de country/americana/folk y hard rock/AOR",
+   "comprobaciones": [
+    "familias_presentes"
+   ]
+  },
+  "R2": {
+   "estado": "ok",
+   "capa": "reglas",
+   "texto": "Solo discos en inglés",
+   "comprobaciones": [
+    "solo_ingles"
+   ]
+  },
+  "R3": {
+   "estado": "ok",
+   "capa": "descubrimiento",
+   "texto": "\"Mejor que el mercado\" frente a AOTY (más discos, antes, subgénero correcto) y decirlo si no se logra",
+   "comprobaciones": [
+    "descubrimiento_referencias"
+   ]
+  },
+  "R4": {
+   "estado": "ok",
+   "capa": "reglas",
+   "texto": "Descartar EP",
+   "comprobaciones": [
+    "sin_ep"
+   ]
+  },
+  "R5": {
+   "estado": "ok",
+   "capa": "reglas",
+   "texto": "Descartar reediciones / remasters",
+   "comprobaciones": [
+    "sin_reediciones"
+   ]
+  },
+  "R6": {
+   "estado": "ok",
+   "capa": "descubrimiento",
+   "texto": "Todo 2026 (enero–diciembre) además de los 5 últimos meses",
+   "comprobaciones": [
+    "ventana_y_meses"
+   ]
+  },
+  "R7": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "\"Lo mejor de cada año\"",
+   "comprobaciones": [
+    "mejores_del_anio"
+   ]
+  },
+  "R8": {
+   "estado": "ok",
+   "capa": "clasificacion",
+   "texto": "Taxonomía cerrada del usuario con alias",
+   "comprobaciones": [
+    "taxonomia_valida"
+   ]
+  },
+  "R9": {
+   "estado": "ok",
+   "capa": "clasificacion",
+   "texto": "Familias \"en foco\" de agenda-conciertos (rock y metal, punk y garage, indie y pop-rock, blues, synthwave y dark wave, cantautores; americana = country; \"sin clasificar\" como filtro)",
+   "comprobaciones": [
+    "taxonomia_valida",
+    "familias_presentes"
+   ]
+  },
+  "R10": {
+   "estado": "ok",
+   "capa": "clasificacion",
+   "texto": "Etiqueta nueva → LLM una sola vez → mapeo_etiquetas.csv",
+   "comprobaciones": [
+    "mapeo_sin_pendientes"
+   ]
+  },
+  "R11": {
+   "estado": "ok",
+   "capa": "clasificacion",
+   "texto": "Nunca crear subgéneros; proponerlos en el informe",
+   "comprobaciones": [
+    "taxonomia_valida"
+   ]
+  },
+  "R12": {
+   "estado": "ok",
+   "capa": "procesos",
+   "texto": "LLM solo con el plan Pro, sin pagar API",
+   "comprobaciones": [
+    "llm_sin_pago"
+   ]
+  },
+  "R13": {
+   "estado": "fallo",
+   "capa": "clasificacion",
+   "texto": "Clasificación correcta",
+   "comprobaciones": [
+    "coherencia_fuentes",
+    "muestra_de_referencia",
+    "acuerdo_wikipedia"
+   ]
+  },
+  "R14": {
+   "estado": "fallo",
+   "capa": "fuentes",
+   "texto": "Verificar cada fuente propuesta",
+   "comprobaciones": [
+    "fuentes_estado"
+   ]
+  },
+  "R15": {
+   "estado": "aviso",
+   "capa": "fuentes",
+   "texto": "5 fuentes extra por familia",
+   "comprobaciones": [
+    "fuentes_por_familia"
+   ]
+  },
+  "R16": {
+   "estado": "fallo",
+   "capa": "fuentes",
+   "texto": "Usar todas las fuentes posibles",
+   "comprobaciones": [
+    "fuentes_estado"
+   ]
+  },
+  "R17": {
+   "estado": "ok",
+   "capa": "fuentes",
+   "texto": "Bandcamp ≤ 1 petición / 4 s; MusicBrainz ≤ 1 / s",
+   "comprobaciones": [
+    "ritmo_peticiones"
+   ]
+  },
+  "R18": {
+   "estado": "ok",
+   "capa": "fuentes",
+   "texto": "Captcha o bloqueo: no saltarlo, avisar",
+   "comprobaciones": [
+    "bloqueos_respetados"
+   ]
+  },
+  "R19": {
+   "estado": "ok",
+   "capa": "fuentes",
+   "texto": "Respetar robots.txt",
+   "comprobaciones": [
+    "robots_activo"
+   ]
+  },
+  "R20": {
+   "estado": "ok",
+   "capa": "datos",
+   "texto": "No inventar datos ni fuentes",
+   "comprobaciones": [
+    "fuente_por_disco"
+   ]
+  },
+  "R21": {
+   "estado": "ok",
+   "capa": "fuentes",
+   "texto": "Extensible sin código: nuevas fuentes solo con configuración",
+   "comprobaciones": [
+    "configuracion_valida"
+   ]
+  },
+  "R22": {
+   "estado": "ok",
+   "capa": "fuentes",
+   "texto": "Wikipedia \"List of 2026 albums\"",
+   "comprobaciones": [
+    "fuente_wikipedia"
+   ]
+  },
+  "R23": {
+   "estado": "ok",
+   "capa": "fuentes",
+   "texto": "Usar los repositorios compartidos (agenda-conciertos, radar de MusicBrainz, Deezer, UI de roberto-cabal…)",
+   "comprobaciones": [
+    "radares_activos"
+   ]
+  },
+  "R24": {
+   "estado": "ok",
+   "capa": "fuentes",
+   "texto": "Year End Lists; evaluar Musicboard, MusicTaste, Shfl, New Music Tracker",
+   "comprobaciones": [
+    "listas_anuales"
+   ]
+  },
+  "R25": {
+   "estado": "sin_comprobar",
+   "capa": "fuentes",
+   "texto": "Spotify, Tidal",
+   "comprobaciones": []
+  },
+  "R26": {
+   "estado": "fallo",
+   "capa": "datos",
+   "texto": "Artista, título, fecha, sello, subgéneros, etiquetas originales, portada, nº de pistas, tipo, fuentes, reseñas (web + nota), enlaces",
+   "comprobaciones": [
+    "cobertura_campos"
+   ]
+  },
+  "R27": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Cuadrícula de portadas por semanas, lo más reciente arriba",
+   "comprobaciones": [
+    "web:portada_semanas"
+   ]
+  },
+  "R28": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Ficha del disco",
+   "comprobaciones": [
+    "web:ficha"
+   ]
+  },
+  "R29": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Filtros: familia, subgénero múltiple, fechas (5 meses por defecto), sello, búsqueda",
+   "comprobaciones": [
+    "web:filtros"
+   ]
+  },
+  "R30": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Pensada para móvil",
+   "comprobaciones": [
+    "web:movil"
+   ]
+  },
+  "R31": {
+   "estado": "ok",
+   "capa": "publicacion",
+   "texto": "Estática en GitHub Pages",
+   "comprobaciones": [
+    "web_publicada"
+   ]
+  },
+  "R32": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Mejoras de UX del estudio (Mi lista, nota, orden, lista, compartir, calendario .ics, RSS, app instalable, meses, destacados, Deezer, Qobuz, calendario de salidas…)",
+   "comprobaciones": [
+    "web:mi_lista",
+    "web:calendario"
+   ]
+  },
+  "R33": {
+   "estado": "ok",
+   "capa": "estudio",
+   "texto": "Estudio de las funciones de AOTY, RYM, Metacritic, AllMusic",
+   "comprobaciones": [
+    "estudio_repetible"
+   ]
+  },
+  "R34": {
+   "estado": "sin_comprobar",
+   "capa": "procesos",
+   "texto": "Plan corto y OK antes de programar; un commit por fase",
+   "comprobaciones": []
+  },
+  "R35": {
+   "estado": "ok",
+   "capa": "procesos",
+   "texto": "Action semanal",
+   "comprobaciones": [
+    "action_semanal"
+   ]
+  },
+  "R36": {
+   "estado": "ok",
+   "capa": "procesos",
+   "texto": "Todo automático, sin sesión ni gasto",
+   "comprobaciones": [
+    "action_semanal",
+    "llm_sin_pago"
+   ]
+  },
+  "R37": {
+   "estado": "ok",
+   "capa": "procesos",
+   "texto": "Persistencia, tolerancia a fallos, reanudar",
+   "comprobaciones": [
+    "reanudacion"
+   ]
+  },
+  "R38": {
+   "estado": "ok",
+   "capa": "procesos",
+   "texto": "Escenarios nominales, de borde, esquina y error",
+   "comprobaciones": [
+    "pruebas_existentes"
+   ]
+  },
+  "R39": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Rendimiento",
+   "comprobaciones": [
+    "web:rendimiento"
+   ]
+  },
+  "R40": {
+   "estado": "ok",
+   "capa": "procesos",
+   "texto": "Secretos fuera del chat y del código",
+   "comprobaciones": [
+    "sin_secretos"
+   ]
+  },
+  "M1": {
+   "estado": "ok",
+   "capa": "informe",
+   "texto": "El informe debe dar: discos por familia y subgénero, % con subgénero, % en Bandcamp, discos que solo están en una fuente, comparación con la página de géneros de AOTY o decir que no se puede",
+   "comprobaciones": [
+    "informe_secciones"
+   ]
+  },
+  "M2": {
+   "estado": "ok",
+   "capa": "clasificacion",
+   "texto": "Subgéneros \"frontera\" (country-blues, southern-gospel, heartland-rock; melodic-metal, power-metal, soft-rock): se etiquetan pero no son el foco",
+   "comprobaciones": [
+    "taxonomia_valida"
+   ]
+  },
+  "M3": {
+   "estado": "ok",
+   "capa": "clasificacion",
+   "texto": "Un disco puede tener varios subgéneros",
+   "comprobaciones": [
+    "varios_subgeneros"
+   ]
+  },
+  "M4": {
+   "estado": "fallo",
+   "capa": "fuentes",
+   "texto": "Fuentes concretas de prensa, listados y sellos",
+   "comprobaciones": [
+    "fuentes_estado"
+   ]
+  },
+  "M5": {
+   "estado": "sin_comprobar",
+   "capa": "procesos",
+   "texto": "Preguntas y explicaciones no técnicas",
+   "comprobaciones": []
+  },
+  "M6": {
+   "estado": "fallo",
+   "capa": "fuentes",
+   "texto": "Fuentes de r/Music: Pause & Play, Hello Weimar Republic, Bandcamp Daily, Metacritic, AllMusic, AOTY",
+   "comprobaciones": [
+    "fuentes_estado"
+   ]
+  },
+  "M7": {
+   "estado": "sin_comprobar",
+   "capa": "fuentes",
+   "texto": "Repos: albumoftheyearapi, album-of-the-year-analysis, topic \"allmusic\", radares de Spotify (robbyrussell, PaulMcInnis, dttncl, MusicReleases)",
+   "comprobaciones": []
+  },
+  "M8": {
+   "estado": "sin_comprobar",
+   "capa": "fuentes",
+   "texto": "Fuentes de agenda-conciertos: Wikipedia, Wikidata, Discogs, MusicBrainz, Last.fm, ReccoBeats, Wikimedia Commons",
+   "comprobaciones": []
+  },
+  "M9": {
+   "estado": "ok",
+   "capa": "fuentes",
+   "texto": "Pruebas de concepto saltándose Cloudflare",
+   "comprobaciones": [
+    "bloqueos_respetados"
+   ]
+  },
+  "M10": {
+   "estado": "sin_comprobar",
+   "capa": "fuentes",
+   "texto": "¿Tidal tiene API gratis?",
+   "comprobaciones": []
+  },
+  "M11": {
+   "estado": "ok",
+   "capa": "estudio",
+   "texto": "New Music Tracker",
+   "comprobaciones": [
+    "estudio_repetible"
+   ]
+  },
+  "A1": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Abrir en \"Esta semana\" (de viernes a jueves) con discos ya publicados",
+   "comprobaciones": [
+    "web:A1"
+   ]
+  },
+  "A2": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Secciones: Esta semana · Destacados (mejor nota / más reseñas) · Recientes · Próximos",
+   "comprobaciones": [
+    "web:A2"
+   ]
+  },
+  "A3": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Cada sección con \"ver todo ›\"",
+   "comprobaciones": [
+    "web:A3"
+   ]
+  },
+  "A4": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Próximos lanzamientos aparte, en lista compacta por fecha (sin cuadros grandes)",
+   "comprobaciones": [
+    "web:A4"
+   ]
+  },
+  "A5": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Sin cuadros de colores con el nombre: si no hay portada, un marcador neutro discreto",
+   "comprobaciones": [
+    "web:A5"
+   ]
+  },
+  "A6": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Cabecera limpia: nombre, buscar, menú; la fila de meses dentro de Filtros",
+   "comprobaciones": [
+    "web:A6"
+   ]
+  },
+  "A7": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "\"Semana del 27 de noviembre · 137 discos\" visible",
+   "comprobaciones": [
+    "web:A7"
+   ]
+  },
+  "A8": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Identidad propia: nombre, logo y estilo que no recuerden a la web de conciertos",
+   "comprobaciones": [
+    "web:A8"
+   ]
+  },
+  "A9": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "\"Mejores notas recientes\": lista corta con nota, artista y medio",
+   "comprobaciones": [
+    "web:A9"
+   ]
+  },
+  "A10": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "\"Discos a seguir\": portada + una frase de una reseña con su nota y medio",
+   "comprobaciones": [
+    "web:A10"
+   ]
+  },
+  "A11": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Sin publicidad ni rastreo",
+   "comprobaciones": [
+    "sin_rastreo"
+   ]
+  },
+  "B1": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Portada real, cuadrada, protagonista",
+   "comprobaciones": [
+    "web:B1"
+   ]
+  },
+  "B2": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Título del disco (letra con remate) y artista debajo, sin repetir el nombre",
+   "comprobaciones": [
+    "web:B2"
+   ]
+  },
+  "B3": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Fecha · estilo en una línea",
+   "comprobaciones": [
+    "web:B3"
+   ]
+  },
+  "B4": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Nota visible tipo Metacritic: cuadro de color (verde ≥ 8, amarillo 6–7,9, rojo < 6) + nº de reseñas",
+   "comprobaciones": [
+    "web:B4"
+   ]
+  },
+  "B5": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Indicador de interés (nº de reseñas/fuentes) en puntos, como la popularidad de NMT",
+   "comprobaciones": [
+    "web:B5"
+   ]
+  },
+  "B6": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Marca de tipo cuando no es estudio (Directo, Recopilatorio)",
+   "comprobaciones": [
+    "web:B6"
+   ]
+  },
+  "B7": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Guardar con un toque",
+   "comprobaciones": [
+    "web:mi_lista"
+   ]
+  },
+  "C1": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Página propia que se puede compartir (hoy es una ventana con #id)",
+   "comprobaciones": [
+    "web:C1"
+   ]
+  },
+  "C2": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Migas: Artista / Disco",
+   "comprobaciones": [
+    "web:C2"
+   ]
+  },
+  "C3": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Cabecera: portada + título grande + \"de Artista\" enlazado + tipo · fecha · sello",
+   "comprobaciones": [
+    "web:C3"
+   ]
+  },
+  "C4": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Nota media grande + \"según N reseñas\"",
+   "comprobaciones": [
+    "web:C4"
+   ]
+  },
+  "C5": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "\"Qué dice la crítica\": medio, nota, fecha, primera frase, \"leer reseña\"",
+   "comprobaciones": [
+    "web:C5"
+   ]
+  },
+  "C6": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Acciones: Escuchar luego · Escuchado · Favorito",
+   "comprobaciones": [
+    "web:C6"
+   ]
+  },
+  "C7": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Géneros y estilos como etiquetas que filtran",
+   "comprobaciones": [
+    "web:C7"
+   ]
+  },
+  "C8": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Escuchar en Qobuz, TIDAL, Apple Music, Spotify, Deezer, Bandcamp, YouTube",
+   "comprobaciones": [
+    "web:escuchar"
+   ]
+  },
+  "C9": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Comprar en Bandcamp / Qobuz",
+   "comprobaciones": [
+    "web:C9"
+   ]
+  },
+  "C10": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Lista de canciones con duración",
+   "comprobaciones": [
+    "web:C10"
+   ]
+  },
+  "C11": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "\"Más de este artista\" con portadas",
+   "comprobaciones": [
+    "web:C11"
+   ]
+  },
+  "C12": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Parecidos",
+   "comprobaciones": [
+    "web:parecidos"
+   ]
+  },
+  "C13": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "En qué listas de fin de año aparece",
+   "comprobaciones": [
+    "web:C13"
+   ]
+  },
+  "C14": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Dónde lo vimos (fuentes) y enlace a MusicBrainz",
+   "comprobaciones": [
+    "web:fuentes"
+   ]
+  },
+  "C15": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Nota con palabra: \"Muy favorable / Favorable / Dividida / Desfavorable\" + \"según N reseñas\"",
+   "comprobaciones": [
+    "web:C15"
+   ]
+  },
+  "C16": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Barra de reseñas positivas / mixtas / negativas con su número",
+   "comprobaciones": [
+    "web:C16"
+   ]
+  },
+  "C17": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Filtrar las reseñas: todas, positivas, mixtas, negativas",
+   "comprobaciones": [
+    "web:C17"
+   ]
+  },
+  "C18": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Cada reseña como tarjeta: fecha, nota en cuadro de color, medio, frase, \"reseña completa ↗\"",
+   "comprobaciones": [
+    "web:C18"
+   ]
+  },
+  "C19": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Resumen del disco en 1–2 frases",
+   "comprobaciones": [
+    "web:C19"
+   ]
+  },
+  "C20": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Estados de ánimo y temas",
+   "comprobaciones": [
+    "web:C20"
+   ]
+  },
+  "D1": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Página del artista con sus discos",
+   "comprobaciones": [
+    "web:D1"
+   ]
+  },
+  "D2": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Origen (\"de Nashville, EE. UU.\")",
+   "comprobaciones": [
+    "web:D2"
+   ]
+  },
+  "D3": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Discografía: álbumes, EP, directos",
+   "comprobaciones": [
+    "web:D3"
+   ]
+  },
+  "D4": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Seguir al artista → sus novedades arriba en la portada",
+   "comprobaciones": [
+    "web:D4"
+   ]
+  },
+  "E1": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Periodo: esta semana · 30 días · 90 días · año",
+   "comprobaciones": [
+    "web:E1"
+   ]
+  },
+  "E2": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Familia (chips) y subgénero dentro",
+   "comprobaciones": [
+    "web:filtros"
+   ]
+  },
+  "E3": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Orden: más nuevos · mejor nota · más reseñados",
+   "comprobaciones": [
+    "web:orden"
+   ]
+  },
+  "E4": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "País del artista",
+   "comprobaciones": [
+    "web:E4"
+   ]
+  },
+  "E5": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "\"Solo mis artistas\"",
+   "comprobaciones": [
+    "web:E5"
+   ]
+  },
+  "E6": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Contador de resultados y \"cargar más\"",
+   "comprobaciones": [
+    "web:filtros"
+   ]
+  },
+  "E7": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Búsqueda por artista, disco o sello",
+   "comprobaciones": [
+    "web:busqueda"
+   ]
+  },
+  "E8": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Vista de galería y de lista compacta",
+   "comprobaciones": [
+    "web:vistas"
+   ]
+  },
+  "E9": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Tabla de todos los lanzamientos, ordenable por artista, disco, sello, género y nota",
+   "comprobaciones": [
+    "web:E9"
+   ]
+  },
+  "E10": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Agrupar por día con una línea de tiempo para saltar de fecha",
+   "comprobaciones": [
+    "web:E10"
+   ]
+  },
+  "F1": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Lo mejor del año: lista numerada con portada, nota, nº de reseñas",
+   "comprobaciones": [
+    "web:F1"
+   ]
+  },
+  "F2": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Por familia",
+   "comprobaciones": [
+    "web:mejores"
+   ]
+  },
+  "F3": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Lo mejor del mes y de la semana",
+   "comprobaciones": [
+    "web:F3"
+   ]
+  },
+  "F4": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Listas de fin de año de la prensa (2019–2025)",
+   "comprobaciones": [
+    "listas_anuales"
+   ]
+  },
+  "F5": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Orden ponderado por nº de reseñas (que un disco con 1 reseña no gane)",
+   "comprobaciones": [
+    "ranking_ponderado"
+   ]
+  },
+  "F6": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Opción \"un disco por artista\" en los rankings",
+   "comprobaciones": [
+    "web:F6"
+   ]
+  },
+  "F7": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "\"Imprescindibles\" del mes (los de mejor nota con un mínimo de reseñas)",
+   "comprobaciones": [
+    "web:F7"
+   ]
+  },
+  "F8": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "\"Tal día como hoy\": discos que cumplen años",
+   "comprobaciones": [
+    "web:F8"
+   ]
+  },
+  "G1": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "Escuchar luego",
+   "comprobaciones": [
+    "web:mi_lista"
+   ]
+  },
+  "G2": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Escuchados",
+   "comprobaciones": [
+    "web:G2"
+   ]
+  },
+  "G3": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Favoritos",
+   "comprobaciones": [
+    "web:G3"
+   ]
+  },
+  "G4": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Seguir artistas",
+   "comprobaciones": [
+    "web:G4"
+   ]
+  },
+  "G5": {
+   "estado": "ok",
+   "capa": "web",
+   "texto": "RSS y calendario",
+   "comprobaciones": [
+    "rss_y_calendarios"
+   ]
+  },
+  "I1": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Títulos con letra con remate; datos con letra sin remate",
+   "comprobaciones": [
+    "web:I1"
+   ]
+  },
+  "I2": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Paleta sobria con un color de acento",
+   "comprobaciones": [
+    "web:I2"
+   ]
+  },
+  "I3": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Jerarquía y espacios: una cosa importante por bloque",
+   "comprobaciones": [
+    "web:I3"
+   ]
+  },
+  "I4": {
+   "estado": "fallo",
+   "capa": "web",
+   "texto": "Iconos propios, sin emojis",
+   "comprobaciones": [
+    "web:I4"
+   ]
+  },
+  "I5": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Escritorio: rejilla de 4–6 columnas; página del disco en dos columnas",
+   "comprobaciones": [
+    "web:I5"
+   ]
+  },
+  "I6": {
+   "estado": "sin_comprobar",
+   "capa": "web",
+   "texto": "Modo oscuro",
+   "comprobaciones": [
+    "web:modo_oscuro"
+   ]
+  },
+  "J1": {
+   "estado": "fallo",
+   "capa": "datos",
+   "texto": "Portadas en el 95 % de los publicados (hoy 79 %)",
+   "comprobaciones": [
+    "cobertura_portadas"
+   ]
+  },
+  "J2": {
+   "estado": "fallo",
+   "capa": "datos",
+   "texto": "Primera frase de cada reseña",
+   "comprobaciones": [
+    "reseñas_con_frase"
+   ]
+  },
+  "J3": {
+   "estado": "fallo",
+   "capa": "datos",
+   "texto": "Lista de canciones",
+   "comprobaciones": [
+    "canciones"
+   ]
+  },
+  "J4": {
+   "estado": "sin_comprobar",
+   "capa": "datos",
+   "texto": "Origen del artista",
+   "comprobaciones": []
+  },
+  "J5": {
+   "estado": "sin_comprobar",
+   "capa": "datos",
+   "texto": "Popularidad",
+   "comprobaciones": []
+  },
+  "J6": {
+   "estado": "sin_comprobar",
+   "capa": "datos",
+   "texto": "Discografía del artista",
+   "comprobaciones": []
+  },
+  "K1": {
+   "estado": "sin_datos",
+   "capa": "validacion",
+   "texto": "Capturas de cada pantalla en móvil y escritorio, enviadas al usuario y aprobadas antes de publicar",
+   "comprobaciones": [
+    "aprobacion_usuario"
+   ]
+  },
+  "K2": {
+   "estado": "fallo",
+   "capa": "validacion",
+   "texto": "Pruebas automáticas de contenido: portada en la primera pantalla, título y artista visibles, nota visible si existe, sin cuadros de color",
+   "comprobaciones": [
+    "web:contenido"
+   ]
+  },
+  "K3": {
+   "estado": "ok",
+   "capa": "validacion",
+   "texto": "Comparación lado a lado con NMT en las mismas pantallas",
+   "comprobaciones": [
+    "estudio_repetible"
+   ]
+  },
+  "K4": {
+   "estado": "ok",
+   "capa": "validacion",
+   "texto": "Accesibilidad WCAG 2.1 AA",
+   "comprobaciones": [
+    "web:accesibilidad"
+   ]
+  },
+  "K5": {
+   "estado": "sin_comprobar",
+   "capa": "validacion",
+   "texto": "Rendimiento móvil ≥ 90",
+   "comprobaciones": [
+    "web:rendimiento"
+   ]
+  },
+  "P1": {
+   "estado": "fallo",
+   "capa": "procesos",
+   "texto": "Cargar un año entero (p. ej. 2025) cambiando solo la configuración",
+   "comprobaciones": [
+    "anios_por_plantilla"
+   ]
+  },
+  "P2": {
+   "estado": "ok",
+   "capa": "procesos",
+   "texto": "Recogida semanal automática",
+   "comprobaciones": [
+    "action_semanal"
+   ]
+  },
+  "P3": {
+   "estado": "ok",
+   "capa": "procesos",
+   "texto": "Auditoría \"¿perdemos discos?\" cada semana",
+   "comprobaciones": [
+    "descubrimiento_referencias"
+   ]
+  },
+  "P4": {
+   "estado": "ok",
+   "capa": "procesos",
+   "texto": "Validación automática del procesamiento",
+   "comprobaciones": [
+    "validacion_automatica"
+   ]
+  },
+  "P5": {
+   "estado": "ok",
+   "capa": "procesos",
+   "texto": "Estudio del estado del arte repetible",
+   "comprobaciones": [
+    "estudio_repetible"
+   ]
+  },
+  "P7": {
+   "estado": "aviso",
+   "capa": "procesos",
+   "texto": "Cada disco con sus pruebas por fuente (quién lo anunció, cuándo, con qué fecha) y una confianza",
+   "comprobaciones": [
+    "pruebas_por_fuente"
+   ]
+  },
+  "P6": {
+   "estado": "ok",
+   "capa": "procesos",
+   "texto": "Webs que bloquean (AOTY, RYM, AllMusic)",
+   "comprobaciones": [
+    "bloqueos_respetados"
+   ]
+  }
+ },
+ "comprobaciones": {
+  "familias_presentes": {
+   "estado": "ok",
+   "valor": {
+    "punkgarage": 556,
+    "indiepop": 683,
+    "rockmetal": 1900,
+    "hardrock": 712,
+    "synthdark": 226,
+    "cantautores": 238,
+    "country": 1408,
+    "blues": 314
+   },
+   "detalle": "mínimo 20 por familia",
+   "ejemplos": []
+  },
+  "solo_ingles": {
+   "estado": "ok",
+   "valor": 0,
+   "detalle": "1390 discos sin idioma verificado",
+   "ejemplos": []
+  },
+  "sin_ep": {
+   "estado": "ok",
+   "valor": 0,
+   "detalle": "EP, sencillos o ≤ 6 pistas entre los discos",
+   "ejemplos": []
+  },
+  "sin_reediciones": {
+   "estado": "ok",
+   "valor": 0,
+   "detalle": "títulos de reedición o edición especial entre los discos",
+   "ejemplos": []
+  },
+  "ventana_y_meses": {
+   "estado": "ok",
+   "valor": {
+    "2026-01": 237,
+    "2026-02": 252,
+    "2026-03": 280,
+    "2026-04": 294,
+    "2026-05": 395,
+    "2026-06": 364,
+    "2026-07": 298,
+    "2026-08": 380,
+    "2026-09": 427,
+    "2026-10": 542,
+    "2026-11": 329,
+    "2026-12": 58,
+    "2027-01": 26,
+    "2027-02": 16,
+    "2027-03": 6,
+    "2027-04": 2
+   },
+   "detalle": "ventana ['2026-01-01', '2027-05-28']; mínimo 30 por mes",
+   "ejemplos": []
+  },
+  "taxonomia_valida": {
+   "estado": "ok",
+   "valor": 0,
+   "detalle": "subgéneros y familias que no existen en la taxonomía",
+   "ejemplos": []
+  },
+  "varios_subgeneros": {
+   "estado": "ok",
+   "valor": 2252,
+   "detalle": "discos con dos o más subgéneros",
+   "ejemplos": []
+  },
+  "mapeo_sin_pendientes": {
+   "estado": "ok",
+   "valor": {
+    "pendientes": 6,
+    "en_discos_sin_subgenero": 0,
+    "ids_invalidos": 0
+   },
+   "detalle": "etiquetas pendientes que dejan discos sin subgénero; ids que no existen",
+   "ejemplos": []
+  },
+  "coherencia_fuentes": {
+   "estado": "ok",
+   "valor": 93.2,
+   "detalle": "1238 de 1329; mínimo 90.0 %",
+   "ejemplos": [
+    "Jaren Johnston – The Guest Room: fuente de country, subgéneros ['southern-rock']",
+    "Eddie 9V – Down Here: fuente de country, subgéneros ['blues-rock', 'modern-electric-blues']",
+    "Bryan Adams – How’s It Goin: fuente de country, subgéneros ['pop-rock', 'soft-rock', 'aor', 'classic-rock']",
+    "Iommi – From the Dark: fuente de hardrock, subgéneros ['heavy-metal']",
+    "Grey DeLisle – Don't Turn Around: fuente de hardrock, subgéneros ['singer-songwriter', 'outlaw-country', 'americana', 'contemporary-folk']",
+    "Galactic Cowboys – What Planet Are You From?: fuente de hardrock, subgéneros ['progressive-metal']",
+    "Eivør – Tungl: fuente de rockmetal, subgéneros ['contemporary-folk', 'traditional-folk', 'singer-songwriter']",
+    "April Art – RED: fuente de hardrock, subgéneros ['alternative-rock', 'heavy-metal']",
+    "Eternal – Conspiracy of Warheads: fuente de hardrock, subgéneros ['thrash', 'post-punk']",
+    "Penelope Isles – 3: fuente de country, subgéneros ['lo-fi']"
+   ]
+  },
+  "muestra_de_referencia": {
+   "estado": "fallo",
+   "valor": 79.2,
+   "detalle": "42 de 53 discos de referencia exactamente bien; mínimo 85.0 %",
+   "ejemplos": [
+    "Onasander & RNGMNN – Illumination Phases: ha desaparecido de la web",
+    "Astral Spectre – Cosmic Mirage: sobra classic-rock",
+    "Kreator – Krushers of the World: sobra hard-rock|death-metal",
+    "The Notwist – News from Planet Zombie: sobra post-rock|post-hardcore",
+    "The Green Apple Sea – Dark Kid: sobra punk",
+    "Art d’Ecco – Scheele's Green: le falta glam",
+    "Linda Perry – Let It Die Here: sobra classic-rock",
+    "MY PET ROCKET – Last of the Analogue Superheroes: sobra punk",
+    "Kahil El’Zabar – Sketches For Trane: debía quedar fuera",
+    "Vreid – The Skies Turn Black: sobra death-metal"
+   ]
+  },
+  "acuerdo_wikipedia": {
+   "estado": "ok",
+   "valor": 98.1,
+   "detalle": "155 de 158 discos con la familia que indica Wikipedia; mínimo 85.0 %",
+   "ejemplos": [
+    "Steve Lacy – Oh yeah?: Wikipedia «Rock, R&B, experimental», aquí ['indiepop']",
+    "The Damned – Not Like Everybody Else: Wikipedia «Rock», aquí ['punkgarage', 'rockmetal']",
+    "Yonaka – Until You’re Satisfied: Wikipedia «Rock», aquí ['indiepop', 'rockmetal']"
+   ]
+  },
+  "fuentes_estado": {
+   "estado": "fallo",
+   "valor": 89.6,
+   "detalle": "60 de 67 fuentes leídas bien",
+   "ejemplos": [
+    "Heavy Harmonies – New Additions: prohibida robots.txt de heavyharmonies.com no permite https://heavyharmonies.com/cgi-bin/n",
+    "Metal Planet Music: vacia ",
+    "Blues Rock Review: vacia ",
+    "Heavy Harmonies – Best CDs of the year: prohibida robots.txt de heavyharmonies.com no permite https://heavyharmonies.com/cgi-bin/2",
+    "Rush On Rock – The best melodic rock albums: vacia ",
+    "Paste – The 50 best albums: bloqueada pastemagazine.com: cabecera cf-mitigated: challenge",
+    "Rush On Rock – The best blues albums: vacia "
+   ]
+  },
+  "fuentes_por_familia": {
+   "estado": "aviso",
+   "valor": {
+    "country": 21,
+    "hardrock": 16,
+    "rockmetal": 4,
+    "blues": 5,
+    "synthdark": 4
+   },
+   "detalle": "fuentes especializadas por familia (mínimo 5; además cuentan las generales y los radares)",
+   "ejemplos": [
+    "rockmetal: 4",
+    "punkgarage: 0",
+    "indiepop: 0",
+    "synthdark: 4",
+    "cantautores: 0"
+   ]
+  },
+  "ritmo_peticiones": {
+   "estado": "ok",
+   "valor": {
+    "bandcamp": 4.0,
+    "musicbrainz": 1.1
+   },
+   "detalle": "Bandcamp ≥ 4 s, MusicBrainz ≥ 1 s",
+   "ejemplos": []
+  },
+  "robots_activo": {
+   "estado": "ok",
+   "valor": null,
+   "detalle": "",
+   "ejemplos": []
+  },
+  "bloqueos_respetados": {
+   "estado": "ok",
+   "valor": 3,
+   "detalle": "detección de bloqueos activa; fuentes bloqueadas que se dejan de leer",
+   "ejemplos": [
+    "Heavy Harmonies – New Additions: robots.txt de heavyharmonies.com no permite https://heavyharmonies.com/cgi-bin/n",
+    "Heavy Harmonies – Best CDs of the year: robots.txt de heavyharmonies.com no permite https://heavyharmonies.com/cgi-bin/2",
+    "Paste – The 50 best albums: pastemagazine.com: cabecera cf-mitigated: challenge"
+   ]
+  },
+  "configuracion_valida": {
+   "estado": "ok",
+   "valor": 72,
+   "detalle": "fuentes configuradas",
+   "ejemplos": []
+  },
+  "fuente_wikipedia": {
+   "estado": "ok",
+   "valor": 1740,
+   "detalle": "https://en.wikipedia.org/wiki/List_of_2027_albums_(January%E2%80%93June) → HTTP 404;",
+   "ejemplos": []
+  },
+  "radares_activos": {
+   "estado": "ok",
+   "valor": {
+    "radar_musicbrainz": "ok",
+    "radar_deezer": "ok"
+   },
+   "detalle": "",
+   "ejemplos": []
+  },
+  "listas_anuales": {
+   "estado": "ok",
+   "valor": {
+    "2019": 132,
+    "2020": 220,
+    "2021": 176,
+    "2022": 116,
+    "2023": 149,
+    "2024": 78,
+    "2025": 1932,
+    "2026": 322
+   },
+   "detalle": "discos en listas de fin de año por año (mínimo 20)",
+   "ejemplos": []
+  },
+  "anios_por_plantilla": {
+   "estado": "fallo",
+   "valor": 12,
+   "detalle": "direcciones con el año escrito a mano",
+   "ejemplos": [
+    "scm_radar: https://savingcountrymusic.com/release-radar-most-anticipated-new-country-albums-for-2026/",
+    "scm_radar: https://savingcountrymusic.com/release-radar-most-anticipated-new-albums-for-2nd-half-of-2026/",
+    "scm_radar: https://savingcountrymusic.com/release-radar-most-anticipated-new-albums-for-final-portion-of-2026/",
+    "loudwire: https://loudwire.com/2026-hard-rock-metal-album-release-calendar/",
+    "loudwire: https://loudwire.com/2027-hard-rock-metal-album-release-calendar/",
+    "wikipedia: https://en.wikipedia.org/wiki/List_of_2026_albums_(July%E2%80%93December)",
+    "wikipedia: https://en.wikipedia.org/wiki/List_of_2026_albums_(January%E2%80%93June)",
+    "wikipedia: https://en.wikipedia.org/wiki/List_of_2027_albums_(January%E2%80%93June)",
+    "countryuniverse_mejores: https://www.countryuniverse.net/2026/01/31/the-forty-best-country-albums-of-2025/",
+    "rushonrock_mejores: https://rushonrock.com/2025/12/21/the-best-melodic-rock-albums-of-2025/"
+   ]
+  },
+  "cobertura_campos": {
+   "estado": "fallo",
+   "valor": {
+    "portada": 80.0,
+    "fecha_exacta": 83.2,
+    "sello": 73.1,
+    "pistas": 82.3,
+    "subgenero": 79.9,
+    "enlace_escucha": 78.0
+   },
+   "detalle": "3798 discos ya publicados",
+   "ejemplos": [
+    "portada: 80.0 % (mínimo 95 %)",
+    "fecha_exacta: 83.2 % (mínimo 85 %)",
+    "enlace_escucha: 78.0 % (mínimo 80 %)"
+   ]
+  },
+  "cobertura_portadas": {
+   "estado": "fallo",
+   "valor": 80.0,
+   "detalle": "mínimo 95 %",
+   "ejemplos": []
+  },
+  "fuente_por_disco": {
+   "estado": "ok",
+   "valor": 0,
+   "detalle": "discos sin fuente",
+   "ejemplos": []
+  },
+  "pruebas_por_fuente": {
+   "estado": "aviso",
+   "valor": 59.3,
+   "detalle": "cada disco con fuente y fecha; falta la confianza por fuente (P7)",
+   "ejemplos": []
+  },
+  "duplicados": {
+   "estado": "ok",
+   "valor": 0,
+   "detalle": "mismo artista y título, o mismo disco de MusicBrainz",
+   "ejemplos": []
+  },
+  "reseñas_con_frase": {
+   "estado": "fallo",
+   "valor": 0.0,
+   "detalle": "0 de 2373 reseñas con frase",
+   "ejemplos": []
+  },
+  "canciones": {
+   "estado": "fallo",
+   "valor": 0.0,
+   "detalle": "0 de 3906 fichas con lista de canciones",
+   "ejemplos": []
+  },
+  "mejores_del_anio": {
+   "estado": "ok",
+   "valor": "discos",
+   "detalle": "'lo mejor de 2026' en la web",
+   "ejemplos": []
+  },
+  "ranking_ponderado": {
+   "estado": "ok",
+   "valor": 2.0,
+   "detalle": "media bayesiana activada",
+   "ejemplos": []
+  },
+  "web_publicada": {
+   "estado": "ok",
+   "valor": 3906,
+   "detalle": "la web tiene 3906 discos y los datos 3906",
+   "ejemplos": []
+  },
+  "rss_y_calendarios": {
+   "estado": "ok",
+   "valor": {
+    "rss": 165,
+    "calendarios": 9
+   },
+   "detalle": "",
+   "ejemplos": []
+  },
+  "sin_rastreo": {
+   "estado": "ok",
+   "valor": 0,
+   "detalle": "scripts de rastreo o publicidad en la web",
+   "ejemplos": []
+  },
+  "aprobacion_usuario": {
+   "estado": "sin_datos",
+   "valor": null,
+   "detalle": "diseño aprobado por el usuario con capturas (data/aprobaciones.yaml)",
+   "ejemplos": []
+  },
+  "llm_sin_pago": {
+   "estado": "ok",
+   "valor": false,
+   "detalle": "API de pago desactivada",
+   "ejemplos": []
+  },
+  "action_semanal": {
+   "estado": "ok",
+   "valor": null,
+   "detalle": "Action con ejecución cada sábado",
+   "ejemplos": []
+  },
+  "reanudacion": {
+   "estado": "ok",
+   "valor": null,
+   "detalle": "estado de fases, lecturas guardadas, CLAUDE.md y docs/progreso.md",
+   "ejemplos": []
+  },
+  "pruebas_existentes": {
+   "estado": "ok",
+   "valor": 107,
+   "detalle": "pruebas unitarias y de extremo a extremo",
+   "ejemplos": []
+  },
+  "sin_secretos": {
+   "estado": "ok",
+   "valor": 0,
+   "detalle": "claves o tokens escritos en el repositorio",
+   "ejemplos": []
+  },
+  "informe_secciones": {
+   "estado": "ok",
+   "valor": null,
+   "detalle": "secciones del informe",
+   "ejemplos": []
+  },
+  "estudio_repetible": {
+   "estado": "ok",
+   "valor": 0,
+   "detalle": "días desde el último estudio (máximo 120)",
+   "ejemplos": []
+  },
+  "validacion_automatica": {
+   "estado": "ok",
+   "valor": 43,
+   "detalle": "comprobaciones automáticas en scraper/validar.py",
+   "ejemplos": []
+  },
+  "descubrimiento_referencias": {
+   "estado": "ok",
+   "valor": null,
+   "detalle": "Metacritic – All New Music by Release Date: ok, 151 discos · en la web 100 · perdidos 6 (5.7 %) · descartados con motivo 24 · no son novedad 5 · de otros géneros 8 · sin poder saber su género 8 (máximo 10.0 % perdidos)",
+   "ejemplos": [
+    "perdido: dis fig – what to make of these mortal hands (death industrial, post-industrial)",
+    "perdido: faust – moi (krautrock, experimental rock, progressive rock)",
+    "perdido: miley – bass persuades (pop, pop rock, rock)",
+    "perdido: neil young and the chrome hearts – second song (rock, folk rock, country rock)",
+    "perdido: the mary wallopers – paddywhackery (irish folk, folk, folk punk)",
+    "perdido: formal sppeedwear – punch card (art rock, new wave)",
+    "sin género: all – all",
+    "sin género: howlin rain – watermelon",
+    "sin género: anna butterss john raymond ben lumsdaine – beginningless",
+    "sin género:  at – autosmile"
+   ]
+  }
+ },
+ "totales": {
+  "ok": 59,
+  "fallo": 32,
+  "aviso": 2,
+  "sin_comprobar": 46,
+  "sin_datos": 1
+ },
+ "avisos_historial": []
+}

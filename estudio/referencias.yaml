@@ -1,0 +1,54 @@
+# Webs de referencia para el estudio del estado del arte (estudio/capturar.mjs).
+# Para cada web: páginas fijas (urls) y páginas de detalle que se descubren desde una página
+# (descubrir: desde, patron = regex sobre el enlace, max). Si la web bloquea a los navegadores
+# automáticos, se usa la copia más reciente de la Wayback Machine (archive.org).
+webs:
+  - id: aoty
+    nombre: Album of the Year
+    urls: ["https://www.albumoftheyear.org/", "https://www.albumoftheyear.org/releases/",
+           "https://www.albumoftheyear.org/ratings/6-highest-rated/2025/1", "https://www.albumoftheyear.org/upcoming/"]
+    descubrir:
+      - {desde: "https://www.albumoftheyear.org/", patron: "/album/\\d+-", max: 2}
+      - {desde: "https://www.albumoftheyear.org/", patron: "/artist/\\d+-", max: 1}
+  - id: rym
+    nombre: Rate Your Music
+    urls: ["https://rateyourmusic.com/new-music/", "https://rateyourmusic.com/charts/top/album/2025/"]
+    descubrir:
+      - {desde: "https://rateyourmusic.com/new-music/", patron: "/release/album/", max: 2}
+  - id: allmusic
+    nombre: AllMusic
+    urls: ["https://www.allmusic.com/newreleases", "https://www.allmusic.com/"]
+    descubrir:
+      - {desde: "https://www.allmusic.com/newreleases", patron: "/album/[^/]+-mw\\d+", max: 2}
+      - {desde: "https://www.allmusic.com/newreleases", patron: "/artist/[^/]+-mn\\d+", max: 1}
+  - id: metacritic
+    nombre: Metacritic (música)
+    urls: ["https://www.metacritic.com/browse/albums/release-date/new-releases/date",
+           "https://www.metacritic.com/browse/albums/score/metascore/year/filtered"]
+    descubrir:
+      - {desde: "https://www.metacritic.com/browse/albums/release-date/new-releases/date", patron: "/music/[^/]+/[^/]+", max: 2}
+  - id: nmt
+    nombre: New Music Tracker
+    urls: ["https://newmusictracker.com/", "https://newmusictracker.com/releases/recent", "https://newmusictracker.com/featured"]
+    descubrir:
+      - {desde: "https://newmusictracker.com/", patron: "/release-groups/", max: 1}
+      - {desde: "https://newmusictracker.com/", patron: "/artists/", max: 1}
+  - id: anydecentmusic
+    nombre: AnyDecentMusic?
+    urls: ["http://www.anydecentmusic.com/"]
+    descubrir:
+      - {desde: "http://www.anydecentmusic.com/", patron: "/review/\\d+", max: 1}
+  - id: listenbrainz
+    nombre: ListenBrainz – Fresh releases (código abierto)
+    urls: ["https://listenbrainz.org/explore/fresh-releases/"]
+  - id: pitchfork
+    nombre: Pitchfork
+    urls: ["https://pitchfork.com/reviews/albums/"]
+    descubrir:
+      - {desde: "https://pitchfork.com/reviews/albums/", patron: "/reviews/albums/[a-z0-9-]{6,}", max: 1}
+  - id: bandcamp_daily
+    nombre: Bandcamp Daily
+    urls: ["https://daily.bandcamp.com/best-of-2025"]
+  - id: musicboard
+    nombre: Musicboard
+    urls: ["https://musicboard.app/"]
