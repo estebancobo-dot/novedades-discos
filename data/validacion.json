@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-28T08:06:27+00:00",
+ "fecha": "2026-11-28T08:08:56+00:00",
  "capas": {
   "alcance": {
    "ok": 1
@@ -42,12 +42,15 @@
    "ok": 3
   },
   "validacion": {
-   "sin_datos": 4,
-   "ok": 1
+   "sin_datos": 1,
+   "fallo": 1,
+   "ok": 2,
+   "sin_comprobar": 1
   },
   "web": {
-   "ok": 5,
-   "sin_datos": 73
+   "ok": 21,
+   "sin_comprobar": 36,
+   "fallo": 21
   }
  },
  "requisitos": {
@@ -260,7 +263,7 @@
    ]
   },
   "R27": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Cuadrícula de portadas por semanas, lo más reciente arriba",
    "comprobaciones": [
@@ -268,7 +271,7 @@
    ]
   },
   "R28": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Ficha del disco",
    "comprobaciones": [
@@ -276,7 +279,7 @@
    ]
   },
   "R29": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Filtros: familia, subgénero múltiple, fechas (5 meses por defecto), sello, búsqueda",
    "comprobaciones": [
@@ -284,7 +287,7 @@
    ]
   },
   "R30": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Pensada para móvil",
    "comprobaciones": [
@@ -300,7 +303,7 @@
    ]
   },
   "R32": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Mejoras de UX del estudio (Mi lista, nota, orden, lista, compartir, calendario .ics, RSS, app instalable, meses, destacados, Deezer, Qobuz, calendario de salidas…)",
    "comprobaciones": [
@@ -356,7 +359,7 @@
    ]
   },
   "R39": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Rendimiento",
    "comprobaciones": [
@@ -452,7 +455,7 @@
    ]
   },
   "A1": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Abrir en \"Esta semana\" (de viernes a jueves) con discos ya publicados",
    "comprobaciones": [
@@ -460,7 +463,7 @@
    ]
   },
   "A2": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Secciones: Esta semana · Destacados (mejor nota / más reseñas) · Recientes · Próximos",
    "comprobaciones": [
@@ -468,7 +471,7 @@
    ]
   },
   "A3": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Cada sección con \"ver todo ›\"",
    "comprobaciones": [
@@ -476,7 +479,7 @@
    ]
   },
   "A4": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Próximos lanzamientos aparte, en lista compacta por fecha (sin cuadros grandes)",
    "comprobaciones": [
@@ -484,7 +487,7 @@
    ]
   },
   "A5": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Sin cuadros de colores con el nombre: si no hay portada, un marcador neutro discreto",
    "comprobaciones": [
@@ -492,7 +495,7 @@
    ]
   },
   "A6": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Cabecera limpia: nombre, buscar, menú; la fila de meses dentro de Filtros",
    "comprobaciones": [
@@ -500,7 +503,7 @@
    ]
   },
   "A7": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "\"Semana del 27 de noviembre · 137 discos\" visible",
    "comprobaciones": [
@@ -508,7 +511,7 @@
    ]
   },
   "A8": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Identidad propia: nombre, logo y estilo que no recuerden a la web de conciertos",
    "comprobaciones": [
@@ -516,7 +519,7 @@
    ]
   },
   "A9": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "\"Mejores notas recientes\": lista corta con nota, artista y medio",
    "comprobaciones": [
@@ -524,7 +527,7 @@
    ]
   },
   "A10": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "\"Discos a seguir\": portada + una frase de una reseña con su nota y medio",
    "comprobaciones": [
@@ -540,7 +543,7 @@
    ]
   },
   "B1": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Portada real, cuadrada, protagonista",
    "comprobaciones": [
@@ -548,7 +551,7 @@
    ]
   },
   "B2": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Título del disco (letra con remate) y artista debajo, sin repetir el nombre",
    "comprobaciones": [
@@ -556,7 +559,7 @@
    ]
   },
   "B3": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Fecha · estilo en una línea",
    "comprobaciones": [
@@ -564,7 +567,7 @@
    ]
   },
   "B4": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Nota visible tipo Metacritic: cuadro de color (verde ≥ 8, amarillo 6–7,9, rojo < 6) + nº de reseñas",
    "comprobaciones": [
@@ -572,7 +575,7 @@
    ]
   },
   "B5": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Indicador de interés (nº de reseñas/fuentes) en puntos, como la popularidad de NMT",
    "comprobaciones": [
@@ -580,7 +583,7 @@
    ]
   },
   "B6": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Marca de tipo cuando no es estudio (Directo, Recopilatorio)",
    "comprobaciones": [
@@ -588,7 +591,7 @@
    ]
   },
   "B7": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Guardar con un toque",
    "comprobaciones": [
@@ -596,7 +599,7 @@
    ]
   },
   "C1": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Página propia que se puede compartir (hoy es una ventana con #id)",
    "comprobaciones": [
@@ -604,7 +607,7 @@
    ]
   },
   "C2": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Migas: Artista / Disco",
    "comprobaciones": [
@@ -612,7 +615,7 @@
    ]
   },
   "C3": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Cabecera: portada + título grande + \"de Artista\" enlazado + tipo · fecha · sello",
    "comprobaciones": [
@@ -620,7 +623,7 @@
    ]
   },
   "C4": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Nota media grande + \"según N reseñas\"",
    "comprobaciones": [
@@ -628,7 +631,7 @@
    ]
   },
   "C5": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "\"Qué dice la crítica\": medio, nota, fecha, primera frase, \"leer reseña\"",
    "comprobaciones": [
@@ -636,7 +639,7 @@
    ]
   },
   "C6": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Acciones: Escuchar luego · Escuchado · Favorito",
    "comprobaciones": [
@@ -644,7 +647,7 @@
    ]
   },
   "C7": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Géneros y estilos como etiquetas que filtran",
    "comprobaciones": [
@@ -652,7 +655,7 @@
    ]
   },
   "C8": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Escuchar en Qobuz, TIDAL, Apple Music, Spotify, Deezer, Bandcamp, YouTube",
    "comprobaciones": [
@@ -660,7 +663,7 @@
    ]
   },
   "C9": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Comprar en Bandcamp / Qobuz",
    "comprobaciones": [
@@ -668,7 +671,7 @@
    ]
   },
   "C10": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Lista de canciones con duración",
    "comprobaciones": [
@@ -676,7 +679,7 @@
    ]
   },
   "C11": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "\"Más de este artista\" con portadas",
    "comprobaciones": [
@@ -684,7 +687,7 @@
    ]
   },
   "C12": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Parecidos",
    "comprobaciones": [
@@ -692,7 +695,7 @@
    ]
   },
   "C13": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "En qué listas de fin de año aparece",
    "comprobaciones": [
@@ -700,7 +703,7 @@
    ]
   },
   "C14": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Dónde lo vimos (fuentes) y enlace a MusicBrainz",
    "comprobaciones": [
@@ -708,7 +711,7 @@
    ]
   },
   "C15": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Nota con palabra: \"Muy favorable / Favorable / Dividida / Desfavorable\" + \"según N reseñas\"",
    "comprobaciones": [
@@ -716,7 +719,7 @@
    ]
   },
   "C16": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Barra de reseñas positivas / mixtas / negativas con su número",
    "comprobaciones": [
@@ -724,7 +727,7 @@
    ]
   },
   "C17": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Filtrar las reseñas: todas, positivas, mixtas, negativas",
    "comprobaciones": [
@@ -732,7 +735,7 @@
    ]
   },
   "C18": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Cada reseña como tarjeta: fecha, nota en cuadro de color, medio, frase, \"reseña completa ↗\"",
    "comprobaciones": [
@@ -740,7 +743,7 @@
    ]
   },
   "C19": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Resumen del disco en 1–2 frases",
    "comprobaciones": [
@@ -748,7 +751,7 @@
    ]
   },
   "C20": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Estados de ánimo y temas",
    "comprobaciones": [
@@ -756,7 +759,7 @@
    ]
   },
   "D1": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Página del artista con sus discos",
    "comprobaciones": [
@@ -764,7 +767,7 @@
    ]
   },
   "D2": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Origen (\"de Nashville, EE. UU.\")",
    "comprobaciones": [
@@ -772,7 +775,7 @@
    ]
   },
   "D3": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Discografía: álbumes, EP, directos",
    "comprobaciones": [
@@ -780,7 +783,7 @@
    ]
   },
   "D4": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Seguir al artista → sus novedades arriba en la portada",
    "comprobaciones": [
@@ -788,7 +791,7 @@
    ]
   },
   "E1": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Periodo: esta semana · 30 días · 90 días · año",
    "comprobaciones": [
@@ -796,7 +799,7 @@
    ]
   },
   "E2": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Familia (chips) y subgénero dentro",
    "comprobaciones": [
@@ -804,7 +807,7 @@
    ]
   },
   "E3": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Orden: más nuevos · mejor nota · más reseñados",
    "comprobaciones": [
@@ -812,7 +815,7 @@
    ]
   },
   "E4": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "País del artista",
    "comprobaciones": [
@@ -820,7 +823,7 @@
    ]
   },
   "E5": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "\"Solo mis artistas\"",
    "comprobaciones": [
@@ -828,7 +831,7 @@
    ]
   },
   "E6": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Contador de resultados y \"cargar más\"",
    "comprobaciones": [
@@ -836,7 +839,7 @@
    ]
   },
   "E7": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Búsqueda por artista, disco o sello",
    "comprobaciones": [
@@ -844,7 +847,7 @@
    ]
   },
   "E8": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Vista de galería y de lista compacta",
    "comprobaciones": [
@@ -852,7 +855,7 @@
    ]
   },
   "E9": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Tabla de todos los lanzamientos, ordenable por artista, disco, sello, género y nota",
    "comprobaciones": [
@@ -860,7 +863,7 @@
    ]
   },
   "E10": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Agrupar por día con una línea de tiempo para saltar de fecha",
    "comprobaciones": [
@@ -868,7 +871,7 @@
    ]
   },
   "F1": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Lo mejor del año: lista numerada con portada, nota, nº de reseñas",
    "comprobaciones": [
@@ -876,7 +879,7 @@
    ]
   },
   "F2": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Por familia",
    "comprobaciones": [
@@ -884,7 +887,7 @@
    ]
   },
   "F3": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Lo mejor del mes y de la semana",
    "comprobaciones": [
@@ -908,7 +911,7 @@
    ]
   },
   "F6": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Opción \"un disco por artista\" en los rankings",
    "comprobaciones": [
@@ -916,7 +919,7 @@
    ]
   },
   "F7": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "\"Imprescindibles\" del mes (los de mejor nota con un mínimo de reseñas)",
    "comprobaciones": [
@@ -924,7 +927,7 @@
    ]
   },
   "F8": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "\"Tal día como hoy\": discos que cumplen años",
    "comprobaciones": [
@@ -932,7 +935,7 @@
    ]
   },
   "G1": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "web",
    "texto": "Escuchar luego",
    "comprobaciones": [
@@ -940,7 +943,7 @@
    ]
   },
   "G2": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Escuchados",
    "comprobaciones": [
@@ -948,7 +951,7 @@
    ]
   },
   "G3": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Favoritos",
    "comprobaciones": [
@@ -956,7 +959,7 @@
    ]
   },
   "G4": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Seguir artistas",
    "comprobaciones": [
@@ -972,7 +975,7 @@
    ]
   },
   "I1": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Títulos con letra con remate; datos con letra sin remate",
    "comprobaciones": [
@@ -980,7 +983,7 @@
    ]
   },
   "I2": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Paleta sobria con un color de acento",
    "comprobaciones": [
@@ -988,7 +991,7 @@
    ]
   },
   "I3": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Jerarquía y espacios: una cosa importante por bloque",
    "comprobaciones": [
@@ -996,7 +999,7 @@
    ]
   },
   "I4": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "web",
    "texto": "Iconos propios, sin emojis",
    "comprobaciones": [
@@ -1004,7 +1007,7 @@
    ]
   },
   "I5": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Escritorio: rejilla de 4–6 columnas; página del disco en dos columnas",
    "comprobaciones": [
@@ -1012,7 +1015,7 @@
    ]
   },
   "I6": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "web",
    "texto": "Modo oscuro",
    "comprobaciones": [
@@ -1070,7 +1073,7 @@
    ]
   },
   "K2": {
-   "estado": "sin_datos",
+   "estado": "fallo",
    "capa": "validacion",
    "texto": "Pruebas automáticas de contenido: portada en la primera pantalla, título y artista visibles, nota visible si existe, sin cuadros de color",
    "comprobaciones": [
@@ -1086,7 +1089,7 @@
    ]
   },
   "K4": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "validacion",
    "texto": "Accesibilidad WCAG 2.1 AA",
    "comprobaciones": [
@@ -1094,7 +1097,7 @@
    ]
   },
   "K5": {
-   "estado": "sin_datos",
+   "estado": "sin_comprobar",
    "capa": "validacion",
    "texto": "Rendimiento móvil ≥ 90",
    "comprobaciones": [
@@ -1511,11 +1514,11 @@
   }
  },
  "totales": {
-  "ok": 44,
-  "sin_datos": 79,
+  "ok": 61,
+  "sin_datos": 3,
   "aviso": 3,
-  "sin_comprobar": 9,
-  "fallo": 5
+  "sin_comprobar": 46,
+  "fallo": 27
  },
  "avisos_historial": []
 }

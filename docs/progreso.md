@@ -21,7 +21,7 @@ Si la sesión se corta, la siguiente empieza por aquí. Cada línea de "Hecho" e
 | 7 | Historial semana a semana y saltos por fuente, familia y motivo de descarte (V3) | 🟡 historial y avisos hechos (`data/historial_validacion.json`); falta el aviso de "descartado con ≥ 2 reseñas especializadas" |
 | 8 | Descubrimiento frente a referencias externas: Metacritic, AnyDecentMusic (V1) | ⬜ |
 | 9 | Reseñas frente a AnyDecentMusic (V5) | ⬜ |
-| 10 | Web: pruebas de contenido + capturas automáticas de cada pantalla en cada publicación (V7) | ⬜ |
+| 10 | Web: pruebas de contenido + capturas automáticas de cada pantalla en cada publicación (V7) | 🟡 la prueba en navegador escribe `data/validacion_web.json` por requisito, con criterios de aceptación de W1/W2/W3 (hoy fallan: es lo correcto); faltan las capturas automáticas |
 | 11 | Fase `validar` en el orquestador y semáforo en el resumen de la Action (V8) | ⬜ |
 | 12 | W1 portada y tarjeta (con capturas al usuario) | ⬜ |
 | 13 | W2 página del disco | ⬜ |
@@ -33,5 +33,5 @@ Pasos 3, 4 y parte del 7 (28-nov-2026). Hallazgos reales: 12 direcciones con el 
 
 ## Siguiente paso
 
-Paso 10: que la prueba en navegador (`tests/e2e/web.mjs`) escriba `data/validacion_web.json` con el resultado de cada
-comprobación `web:NOMBRE` de `data/requisitos.yaml` (hoy 79 requisitos salen "sin datos" por esto). Después, paso 11.
+Paso 11: fase `validar` en `scraper/pipeline.py` y en `.github/workflows/semanal.yml` (prueba en navegador → validar →
+semáforo en el resumen de la Action). Después, capturas automáticas (resto del paso 10) y pasos 5, 6, 8, 9.

@@ -35,7 +35,22 @@ async function auditar(p, donde) {
   for (const v of graves) console.log(`   ${donde}: ${v.id} (${v.nodes.length}) ${v.nodes[0].target.join(' ')}`);
   return graves.length;
 }
-const comprobar = (ok, texto) => { console.log(`${ok ? '✓' : '✗'} ${texto}`); if (!ok) fallos++; };
+// Cada comprobación se apunta con el nombre que usa data/requisitos.yaml ("web:NOMBRE"); al final se
+// escribe data/validacion_web.json, que lee la validación automática (scraper/validar.py).
+const RESULTADOS = {};
+const CLAVES = [[/^carga y pinta tarjetas/, 'portada_semanas'], [/pestañas|familia queda|filtro|limpiar|chips|panel/, 'filtros'],
+  [/búsqueda/, 'busqueda'], [/ficha tiene enlace|abre la ficha|cierra la ficha|abrir un disco/, 'ficha'], [/Qobuz/, 'escuchar'],
+  [/detalles \(fuentes\)/, 'fuentes'], [/parecidos/, 'parecidos'], [/Mi lista/, 'mi_lista'], [/vista de lista/, 'vistas'],
+  [/orden por/, 'orden'], [/lo mejor/, 'mejores'], [/calendario|tocar un día/, 'calendario'], [/accesibilidad|nombre accesible|tienen alt/, 'accesibilidad'],
+  [/desplazamiento horizontal|alta densidad/, 'movil'], [/errores de JavaScript/, 'contenido']];
+const apuntar = (clave, ok) => { if (clave) RESULTADOS[clave] = (RESULTADOS[clave] ?? true) && !!ok; };
+const comprobar = (ok, texto, clave) => {
+  console.log(`${ok ? '✓' : '✗'} ${texto}`); if (!ok) fallos++;
+  apuntar(clave || CLAVES.find(([r]) => r.test(texto))?.[1], ok);
+};
+// Criterios de aceptación del diseño nuevo (docs/requisitos-web.md): se apuntan pero no rompen la prueba
+// mientras la fase W correspondiente no esté hecha.
+const aceptacion = (ok, texto, clave) => { console.log(`${ok ? '✓' : '○'} [${clave}] ${texto}`); apuntar(clave, ok); };
 
 const navegador = await chromium.launch();
 for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['escritorio', { viewport: { width: 1280, height: 900 } }]]) {
@@ -51,6 +66,42 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   const n = await p.locator('.tarjeta').count();
   comprobar(n > 0, `carga y pinta tarjetas (${n})`);
   comprobar((await p.locator('#familias [role=tab]').count()) >= 3, 'pestañas de familias');
+
+  // ---- aceptación de la portada y la tarjeta nuevas (W1)
+  const portada = await p.evaluate(() => {
+    const secs = [...document.querySelectorAll('[data-seccion], .semana')];
+    const primera = secs[0]?.querySelector('h2')?.textContent || '';
+    const tarjetas = [...document.querySelectorAll('.tarjeta')].slice(0, 12);
+    const emoji = /\p{Extended_Pictographic}/u;
+    const textosUI = [...document.querySelectorAll('header button, header a, #orden option, .vistas button')].map(e => e.textContent);
+    const t0 = tarjetas[0];
+    return {
+      primera, secciones: [...document.querySelectorAll('[data-seccion]')].map(e => e.dataset.seccion),
+      cuadrosColor: tarjetas.filter(t => !t.querySelector('img') && (t.querySelector('.portada')?.textContent || '').trim()).length,
+      conImg: tarjetas.filter(t => t.querySelector('.portada img')).length, n: tarjetas.length,
+      titulo: !!t0?.querySelector('.t-titulo'), artista: !!t0?.querySelector('.t-artista'),
+      artistaUnaVez: t0 ? (t0.innerText.split(t0.querySelector('.t-artista')?.textContent?.trim() || '§').length - 1) === 1 : false,
+      meta: !!t0?.querySelector('.t-meta'),
+      conNota: tarjetas.filter(t => t.dataset.nota).length, cajasNota: tarjetas.filter(t => t.querySelector('.nota-caja.verde, .nota-caja.amarillo, .nota-caja.rojo')).length,
+      serif: t0?.querySelector('.t-titulo') ? /serif/.test(getComputedStyle(t0.querySelector('.t-titulo')).fontFamily) && !/sans-serif\s*$/.test(getComputedStyle(t0.querySelector('.t-titulo')).fontFamily) : false,
+      semanaTexto: /Semana del \d+/.test(document.body.innerText), mesesFuera: !document.querySelector('#meses button') || !!document.querySelector('#meses')?.closest('#panel'),
+      emojis: textosUI.filter(t => emoji.test(t)).length,
+      proximosCompactos: !!document.querySelector('[data-seccion=proximos] .lista-compacta'),
+    };
+  });
+  aceptacion(/esta semana/i.test(portada.primera), `la portada abre en "Esta semana" (abre en "${portada.primera.trim()}")`, 'A1');
+  aceptacion(['semana', 'destacados', 'recientes', 'proximos'].every(x => portada.secciones.includes(x)), 'secciones Esta semana, Destacados, Recientes y Próximos', 'A2');
+  aceptacion(portada.proximosCompactos && !/próximamente/i.test(portada.primera), 'próximos aparte, en lista compacta', 'A4');
+  aceptacion(portada.cuadrosColor === 0, `sin cuadros de color con el nombre (${portada.cuadrosColor} en las 12 primeras)`, 'A5');
+  aceptacion(portada.mesesFuera, 'cabecera limpia: la fila de meses va dentro de Filtros', 'A6');
+  aceptacion(portada.semanaTexto, '"Semana del …" visible', 'A7');
+  aceptacion(portada.secciones.includes('mejores-notas'), '"Mejores notas recientes" en la portada', 'A9');
+  aceptacion(portada.n > 0 && portada.conImg >= Math.ceil(portada.n * 0.75), `portadas en las primeras tarjetas (${portada.conImg} de ${portada.n})`, 'B1');
+  aceptacion(portada.titulo && portada.artista && portada.artistaUnaVez, 'tarjeta: título y artista, sin repetir el nombre', 'B2');
+  aceptacion(portada.meta, 'tarjeta: fecha · estilo en una línea', 'B3');
+  aceptacion(portada.conNota > 0 && portada.cajasNota === portada.conNota, `nota en cuadro de color en las tarjetas con nota (${portada.cajasNota} de ${portada.conNota})`, 'B4');
+  aceptacion(portada.serif, 'títulos con letra con remate', 'I1');
+  aceptacion(portada.emojis === 0, `sin emojis en la interfaz (${portada.emojis})`, 'I4');
 
   // familia
   const pestanas = p.locator('#familias [role=tab]');
@@ -82,6 +133,22 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   comprobar(p.url().includes('#disco='), 'la ficha tiene enlace propio');
   comprobar(await p.locator('dialog#ficha a', { hasText: 'Qobuz' }).count() === 1, 'enlace a Qobuz en la ficha');
   comprobar(await p.locator('dialog#ficha h3', { hasText: 'Aparece en' }).count() === 1, 'la ficha carga sus detalles (fuentes)');
+  // ---- aceptación de la página del disco nueva (W2, estilo Metacritic / AnyDecentMusic)
+  const ficha = await p.evaluate(() => {
+    const f = document.querySelector('dialog#ficha'); const t = f?.innerText || '';
+    const tarjetas = [...(f?.querySelectorAll('.resena-tarjeta') || [])];
+    return { migas: !!f?.querySelector('.migas'), h1: !!f?.querySelector('h1, .f-titulo'), deArtista: !!f?.querySelector('.de-artista a, a.de-artista, .de-artista button'),
+      notaGrande: !!f?.querySelector('.nota-grande'), segun: /según \d+ reseñas?/i.test(t),
+      palabra: /muy favorable|favorable|dividida|desfavorable/i.test(t), barra: !!f?.querySelector('.barra-resenas'),
+      resenas: tarjetas.length, resenasCompletas: tarjetas.filter(r => r.querySelector('.medio') && r.querySelector('a[href]')).length };
+  });
+  aceptacion(ficha.migas, 'ficha: migas Artista / Disco', 'C2');
+  aceptacion(ficha.h1 && ficha.deArtista, 'ficha: título grande y "de Artista" enlazado', 'C3');
+  aceptacion(ficha.notaGrande && ficha.segun, 'ficha: nota grande y "según N reseñas"', 'C4');
+  aceptacion(ficha.resenas > 0 && ficha.resenasCompletas === ficha.resenas, `ficha: "Qué dice la crítica" con medio y enlace (${ficha.resenasCompletas}/${ficha.resenas})`, 'C5');
+  aceptacion(ficha.palabra, 'ficha: nota con palabra (favorable, dividida…)', 'C15');
+  aceptacion(ficha.barra, 'ficha: barra de reseñas positivas / mixtas / negativas', 'C16');
+  aceptacion(ficha.resenas > 0, 'ficha: cada reseña como tarjeta', 'C18');
   const conSubs = await p.evaluate(() => document.querySelectorAll('dialog#ficha .chips .chip').length);
   if (conSubs) comprobar(await p.locator('dialog#ficha h3', { hasText: 'Parecidos' }).count() === 1, 'la ficha propone discos parecidos');
   comprobar(await p.locator('.tarjeta img[srcset]').count() > 0 || await p.locator('.tarjeta img').count() === 0, 'portadas con versión para pantallas de alta densidad');
@@ -105,6 +172,10 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   await p.selectOption('#orden', 'mejor');
   await p.waitForTimeout(300);
   comprobar(await p.locator('#selAnio:not([hidden])').count() === 1, 'lo mejor del año muestra selector de año');
+  // ---- aceptación del ranking (W3, estilo AOTY): lista numerada con portada, nota y nº de reseñas
+  const ranking = await p.evaluate(() => { const f = [...document.querySelectorAll('.ranking-disco')].slice(0, 10);
+    return { n: f.length, completas: f.filter(x => x.querySelector('.puesto') && x.querySelector('.nota-caja') && /reseña/i.test(x.innerText)).length }; });
+  aceptacion(ranking.n > 0 && ranking.completas === ranking.n, `lo mejor: lista numerada con nota y nº de reseñas (${ranking.completas}/${ranking.n})`, 'F1');
 
   // calendario
   await p.selectOption('#orden', 'calendario');
@@ -177,5 +248,10 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
 }
 await navegador.close();
 servidor.close();
+// K2: pruebas de contenido de la portada y la tarjeta
+apuntar('contenido', ['A1', 'A5', 'B1', 'B2', 'B4', 'C3', 'C4'].every(k => RESULTADOS[k]));
+const SALIDA_VALIDACION = path.resolve(path.dirname(new URL(import.meta.url).pathname), '../../data/validacion_web.json');
+fs.writeFileSync(SALIDA_VALIDACION, JSON.stringify(RESULTADOS, null, 1));
+console.log(`Resultados por requisito → ${path.relative(process.cwd(), SALIDA_VALIDACION)}`);
 console.log(fallos ? `${fallos} comprobaciones fallidas` : 'Todo correcto');
 process.exit(fallos ? 1 : 0);

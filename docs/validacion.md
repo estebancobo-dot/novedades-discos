@@ -18,10 +18,10 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | procesos | 10 | 1 | 1 | 1 | 2 |
 | publicacion | 1 | 0 | 0 | 0 | 0 |
 | reglas | 3 | 0 | 0 | 0 | 0 |
-| validacion | 1 | 0 | 0 | 4 | 0 |
-| web | 5 | 0 | 0 | 73 | 0 |
+| validacion | 2 | 0 | 1 | 1 | 1 |
+| web | 21 | 0 | 21 | 0 | 36 |
 
-**Total: 140 requisitos** · cumplen 44 · aviso 3 · no cumplen 5 · sin datos 79 · sin comprobación 9
+**Total: 140 requisitos** · cumplen 61 · aviso 3 · no cumplen 27 · sin datos 3 · sin comprobación 46
 
 ## Comprobaciones que fallan o avisan
 
@@ -79,19 +79,19 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | R24 | Year End Lists; evaluar Musicboard, MusicTaste, Shfl, New Music Tracker | fuentes | 🟢 cumple |
 | R25 | Spotify, Tidal | fuentes | ⚫ sin comprobación automática |
 | R26 | Artista, título, fecha, sello, subgéneros, etiquetas originales, portada, nº de pistas, ti | datos | 🔴 no cumple |
-| R27 | Cuadrícula de portadas por semanas, lo más reciente arriba | web | ⚪ sin datos todavía |
-| R28 | Ficha del disco | web | ⚪ sin datos todavía |
-| R29 | Filtros: familia, subgénero múltiple, fechas (5 meses por defecto), sello, búsqueda | web | ⚪ sin datos todavía |
-| R30 | Pensada para móvil | web | ⚪ sin datos todavía |
+| R27 | Cuadrícula de portadas por semanas, lo más reciente arriba | web | 🟢 cumple |
+| R28 | Ficha del disco | web | 🟢 cumple |
+| R29 | Filtros: familia, subgénero múltiple, fechas (5 meses por defecto), sello, búsqueda | web | 🟢 cumple |
+| R30 | Pensada para móvil | web | 🟢 cumple |
 | R31 | Estática en GitHub Pages | publicacion | 🟢 cumple |
-| R32 | Mejoras de UX del estudio (Mi lista, nota, orden, lista, compartir, calendario .ics, RSS,  | web | ⚪ sin datos todavía |
+| R32 | Mejoras de UX del estudio (Mi lista, nota, orden, lista, compartir, calendario .ics, RSS,  | web | 🟢 cumple |
 | R33 | Estudio de las funciones de AOTY, RYM, Metacritic, AllMusic | estudio | 🟢 cumple |
 | R34 | Plan corto y OK antes de programar; un commit por fase | procesos | ⚫ sin comprobación automática |
 | R35 | Action semanal | procesos | 🟢 cumple |
 | R36 | Todo automático, sin sesión ni gasto | procesos | 🟢 cumple |
 | R37 | Persistencia, tolerancia a fallos, reanudar | procesos | 🟢 cumple |
 | R38 | Escenarios nominales, de borde, esquina y error | procesos | 🟢 cumple |
-| R39 | Rendimiento | web | ⚪ sin datos todavía |
+| R39 | Rendimiento | web | ⚫ sin comprobación automática |
 | R40 | Secretos fuera del chat y del código | procesos | 🟢 cumple |
 | M1 | El informe debe dar: discos por familia y subgénero, % con subgénero, % en Bandcamp, disco | informe | 🟢 cumple |
 | M2 | Subgéneros "frontera" (country-blues, southern-gospel, heartland-rock; melodic-metal, powe | clasificacion | 🟢 cumple |
@@ -104,77 +104,77 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | M9 | Pruebas de concepto saltándose Cloudflare | fuentes | 🟢 cumple |
 | M10 | ¿Tidal tiene API gratis? | fuentes | ⚫ sin comprobación automática |
 | M11 | New Music Tracker | estudio | 🟢 cumple |
-| A1 | Abrir en "Esta semana" (de viernes a jueves) con discos ya publicados | web | ⚪ sin datos todavía |
-| A2 | Secciones: Esta semana · Destacados (mejor nota / más reseñas) · Recientes · Próximos | web | ⚪ sin datos todavía |
-| A3 | Cada sección con "ver todo ›" | web | ⚪ sin datos todavía |
-| A4 | Próximos lanzamientos aparte, en lista compacta por fecha (sin cuadros grandes) | web | ⚪ sin datos todavía |
-| A5 | Sin cuadros de colores con el nombre: si no hay portada, un marcador neutro discreto | web | ⚪ sin datos todavía |
-| A6 | Cabecera limpia: nombre, buscar, menú; la fila de meses dentro de Filtros | web | ⚪ sin datos todavía |
-| A7 | "Semana del 27 de noviembre · 137 discos" visible | web | ⚪ sin datos todavía |
-| A8 | Identidad propia: nombre, logo y estilo que no recuerden a la web de conciertos | web | ⚪ sin datos todavía |
-| A9 | "Mejores notas recientes": lista corta con nota, artista y medio | web | ⚪ sin datos todavía |
-| A10 | "Discos a seguir": portada + una frase de una reseña con su nota y medio | web | ⚪ sin datos todavía |
+| A1 | Abrir en "Esta semana" (de viernes a jueves) con discos ya publicados | web | 🔴 no cumple |
+| A2 | Secciones: Esta semana · Destacados (mejor nota / más reseñas) · Recientes · Próximos | web | 🔴 no cumple |
+| A3 | Cada sección con "ver todo ›" | web | ⚫ sin comprobación automática |
+| A4 | Próximos lanzamientos aparte, en lista compacta por fecha (sin cuadros grandes) | web | 🔴 no cumple |
+| A5 | Sin cuadros de colores con el nombre: si no hay portada, un marcador neutro discreto | web | 🔴 no cumple |
+| A6 | Cabecera limpia: nombre, buscar, menú; la fila de meses dentro de Filtros | web | 🔴 no cumple |
+| A7 | "Semana del 27 de noviembre · 137 discos" visible | web | 🔴 no cumple |
+| A8 | Identidad propia: nombre, logo y estilo que no recuerden a la web de conciertos | web | ⚫ sin comprobación automática |
+| A9 | "Mejores notas recientes": lista corta con nota, artista y medio | web | 🔴 no cumple |
+| A10 | "Discos a seguir": portada + una frase de una reseña con su nota y medio | web | ⚫ sin comprobación automática |
 | A11 | Sin publicidad ni rastreo | web | 🟢 cumple |
-| B1 | Portada real, cuadrada, protagonista | web | ⚪ sin datos todavía |
-| B2 | Título del disco (letra con remate) y artista debajo, sin repetir el nombre | web | ⚪ sin datos todavía |
-| B3 | Fecha · estilo en una línea | web | ⚪ sin datos todavía |
-| B4 | Nota visible tipo Metacritic: cuadro de color (verde ≥ 8, amarillo 6–7,9, rojo < 6) + nº d | web | ⚪ sin datos todavía |
-| B5 | Indicador de interés (nº de reseñas/fuentes) en puntos, como la popularidad de NMT | web | ⚪ sin datos todavía |
-| B6 | Marca de tipo cuando no es estudio (Directo, Recopilatorio) | web | ⚪ sin datos todavía |
-| B7 | Guardar con un toque | web | ⚪ sin datos todavía |
-| C1 | Página propia que se puede compartir (hoy es una ventana con #id) | web | ⚪ sin datos todavía |
-| C2 | Migas: Artista / Disco | web | ⚪ sin datos todavía |
-| C3 | Cabecera: portada + título grande + "de Artista" enlazado + tipo · fecha · sello | web | ⚪ sin datos todavía |
-| C4 | Nota media grande + "según N reseñas" | web | ⚪ sin datos todavía |
-| C5 | "Qué dice la crítica": medio, nota, fecha, primera frase, "leer reseña" | web | ⚪ sin datos todavía |
-| C6 | Acciones: Escuchar luego · Escuchado · Favorito | web | ⚪ sin datos todavía |
-| C7 | Géneros y estilos como etiquetas que filtran | web | ⚪ sin datos todavía |
-| C8 | Escuchar en Qobuz, TIDAL, Apple Music, Spotify, Deezer, Bandcamp, YouTube | web | ⚪ sin datos todavía |
-| C9 | Comprar en Bandcamp / Qobuz | web | ⚪ sin datos todavía |
-| C10 | Lista de canciones con duración | web | ⚪ sin datos todavía |
-| C11 | "Más de este artista" con portadas | web | ⚪ sin datos todavía |
-| C12 | Parecidos | web | ⚪ sin datos todavía |
-| C13 | En qué listas de fin de año aparece | web | ⚪ sin datos todavía |
-| C14 | Dónde lo vimos (fuentes) y enlace a MusicBrainz | web | ⚪ sin datos todavía |
-| C15 | Nota con palabra: "Muy favorable / Favorable / Dividida / Desfavorable" + "según N reseñas | web | ⚪ sin datos todavía |
-| C16 | Barra de reseñas positivas / mixtas / negativas con su número | web | ⚪ sin datos todavía |
-| C17 | Filtrar las reseñas: todas, positivas, mixtas, negativas | web | ⚪ sin datos todavía |
-| C18 | Cada reseña como tarjeta: fecha, nota en cuadro de color, medio, frase, "reseña completa ↗ | web | ⚪ sin datos todavía |
-| C19 | Resumen del disco en 1–2 frases | web | ⚪ sin datos todavía |
-| C20 | Estados de ánimo y temas | web | ⚪ sin datos todavía |
-| D1 | Página del artista con sus discos | web | ⚪ sin datos todavía |
-| D2 | Origen ("de Nashville, EE. UU.") | web | ⚪ sin datos todavía |
-| D3 | Discografía: álbumes, EP, directos | web | ⚪ sin datos todavía |
-| D4 | Seguir al artista → sus novedades arriba en la portada | web | ⚪ sin datos todavía |
-| E1 | Periodo: esta semana · 30 días · 90 días · año | web | ⚪ sin datos todavía |
-| E2 | Familia (chips) y subgénero dentro | web | ⚪ sin datos todavía |
-| E3 | Orden: más nuevos · mejor nota · más reseñados | web | ⚪ sin datos todavía |
-| E4 | País del artista | web | ⚪ sin datos todavía |
-| E5 | "Solo mis artistas" | web | ⚪ sin datos todavía |
-| E6 | Contador de resultados y "cargar más" | web | ⚪ sin datos todavía |
-| E7 | Búsqueda por artista, disco o sello | web | ⚪ sin datos todavía |
-| E8 | Vista de galería y de lista compacta | web | ⚪ sin datos todavía |
-| E9 | Tabla de todos los lanzamientos, ordenable por artista, disco, sello, género y nota | web | ⚪ sin datos todavía |
-| E10 | Agrupar por día con una línea de tiempo para saltar de fecha | web | ⚪ sin datos todavía |
-| F1 | Lo mejor del año: lista numerada con portada, nota, nº de reseñas | web | ⚪ sin datos todavía |
-| F2 | Por familia | web | ⚪ sin datos todavía |
-| F3 | Lo mejor del mes y de la semana | web | ⚪ sin datos todavía |
+| B1 | Portada real, cuadrada, protagonista | web | 🔴 no cumple |
+| B2 | Título del disco (letra con remate) y artista debajo, sin repetir el nombre | web | 🔴 no cumple |
+| B3 | Fecha · estilo en una línea | web | 🔴 no cumple |
+| B4 | Nota visible tipo Metacritic: cuadro de color (verde ≥ 8, amarillo 6–7,9, rojo < 6) + nº d | web | 🔴 no cumple |
+| B5 | Indicador de interés (nº de reseñas/fuentes) en puntos, como la popularidad de NMT | web | ⚫ sin comprobación automática |
+| B6 | Marca de tipo cuando no es estudio (Directo, Recopilatorio) | web | ⚫ sin comprobación automática |
+| B7 | Guardar con un toque | web | 🟢 cumple |
+| C1 | Página propia que se puede compartir (hoy es una ventana con #id) | web | ⚫ sin comprobación automática |
+| C2 | Migas: Artista / Disco | web | 🔴 no cumple |
+| C3 | Cabecera: portada + título grande + "de Artista" enlazado + tipo · fecha · sello | web | 🔴 no cumple |
+| C4 | Nota media grande + "según N reseñas" | web | 🔴 no cumple |
+| C5 | "Qué dice la crítica": medio, nota, fecha, primera frase, "leer reseña" | web | 🔴 no cumple |
+| C6 | Acciones: Escuchar luego · Escuchado · Favorito | web | ⚫ sin comprobación automática |
+| C7 | Géneros y estilos como etiquetas que filtran | web | ⚫ sin comprobación automática |
+| C8 | Escuchar en Qobuz, TIDAL, Apple Music, Spotify, Deezer, Bandcamp, YouTube | web | 🟢 cumple |
+| C9 | Comprar en Bandcamp / Qobuz | web | ⚫ sin comprobación automática |
+| C10 | Lista de canciones con duración | web | ⚫ sin comprobación automática |
+| C11 | "Más de este artista" con portadas | web | ⚫ sin comprobación automática |
+| C12 | Parecidos | web | 🟢 cumple |
+| C13 | En qué listas de fin de año aparece | web | ⚫ sin comprobación automática |
+| C14 | Dónde lo vimos (fuentes) y enlace a MusicBrainz | web | 🟢 cumple |
+| C15 | Nota con palabra: "Muy favorable / Favorable / Dividida / Desfavorable" + "según N reseñas | web | 🔴 no cumple |
+| C16 | Barra de reseñas positivas / mixtas / negativas con su número | web | 🔴 no cumple |
+| C17 | Filtrar las reseñas: todas, positivas, mixtas, negativas | web | ⚫ sin comprobación automática |
+| C18 | Cada reseña como tarjeta: fecha, nota en cuadro de color, medio, frase, "reseña completa ↗ | web | 🔴 no cumple |
+| C19 | Resumen del disco en 1–2 frases | web | ⚫ sin comprobación automática |
+| C20 | Estados de ánimo y temas | web | ⚫ sin comprobación automática |
+| D1 | Página del artista con sus discos | web | ⚫ sin comprobación automática |
+| D2 | Origen ("de Nashville, EE. UU.") | web | ⚫ sin comprobación automática |
+| D3 | Discografía: álbumes, EP, directos | web | ⚫ sin comprobación automática |
+| D4 | Seguir al artista → sus novedades arriba en la portada | web | ⚫ sin comprobación automática |
+| E1 | Periodo: esta semana · 30 días · 90 días · año | web | ⚫ sin comprobación automática |
+| E2 | Familia (chips) y subgénero dentro | web | 🟢 cumple |
+| E3 | Orden: más nuevos · mejor nota · más reseñados | web | 🟢 cumple |
+| E4 | País del artista | web | ⚫ sin comprobación automática |
+| E5 | "Solo mis artistas" | web | ⚫ sin comprobación automática |
+| E6 | Contador de resultados y "cargar más" | web | 🟢 cumple |
+| E7 | Búsqueda por artista, disco o sello | web | 🟢 cumple |
+| E8 | Vista de galería y de lista compacta | web | 🟢 cumple |
+| E9 | Tabla de todos los lanzamientos, ordenable por artista, disco, sello, género y nota | web | ⚫ sin comprobación automática |
+| E10 | Agrupar por día con una línea de tiempo para saltar de fecha | web | ⚫ sin comprobación automática |
+| F1 | Lo mejor del año: lista numerada con portada, nota, nº de reseñas | web | 🔴 no cumple |
+| F2 | Por familia | web | 🟢 cumple |
+| F3 | Lo mejor del mes y de la semana | web | ⚫ sin comprobación automática |
 | F4 | Listas de fin de año de la prensa (2019–2025) | web | 🟢 cumple |
 | F5 | Orden ponderado por nº de reseñas (que un disco con 1 reseña no gane) | web | 🟢 cumple |
-| F6 | Opción "un disco por artista" en los rankings | web | ⚪ sin datos todavía |
-| F7 | "Imprescindibles" del mes (los de mejor nota con un mínimo de reseñas) | web | ⚪ sin datos todavía |
-| F8 | "Tal día como hoy": discos que cumplen años | web | ⚪ sin datos todavía |
-| G1 | Escuchar luego | web | ⚪ sin datos todavía |
-| G2 | Escuchados | web | ⚪ sin datos todavía |
-| G3 | Favoritos | web | ⚪ sin datos todavía |
-| G4 | Seguir artistas | web | ⚪ sin datos todavía |
+| F6 | Opción "un disco por artista" en los rankings | web | ⚫ sin comprobación automática |
+| F7 | "Imprescindibles" del mes (los de mejor nota con un mínimo de reseñas) | web | ⚫ sin comprobación automática |
+| F8 | "Tal día como hoy": discos que cumplen años | web | ⚫ sin comprobación automática |
+| G1 | Escuchar luego | web | 🟢 cumple |
+| G2 | Escuchados | web | ⚫ sin comprobación automática |
+| G3 | Favoritos | web | ⚫ sin comprobación automática |
+| G4 | Seguir artistas | web | ⚫ sin comprobación automática |
 | G5 | RSS y calendario | web | 🟢 cumple |
-| I1 | Títulos con letra con remate; datos con letra sin remate | web | ⚪ sin datos todavía |
-| I2 | Paleta sobria con un color de acento | web | ⚪ sin datos todavía |
-| I3 | Jerarquía y espacios: una cosa importante por bloque | web | ⚪ sin datos todavía |
-| I4 | Iconos propios, sin emojis | web | ⚪ sin datos todavía |
-| I5 | Escritorio: rejilla de 4–6 columnas; página del disco en dos columnas | web | ⚪ sin datos todavía |
-| I6 | Modo oscuro | web | ⚪ sin datos todavía |
+| I1 | Títulos con letra con remate; datos con letra sin remate | web | 🔴 no cumple |
+| I2 | Paleta sobria con un color de acento | web | ⚫ sin comprobación automática |
+| I3 | Jerarquía y espacios: una cosa importante por bloque | web | ⚫ sin comprobación automática |
+| I4 | Iconos propios, sin emojis | web | 🔴 no cumple |
+| I5 | Escritorio: rejilla de 4–6 columnas; página del disco en dos columnas | web | ⚫ sin comprobación automática |
+| I6 | Modo oscuro | web | ⚫ sin comprobación automática |
 | J1 | Portadas en el 95 % de los publicados (hoy 79 %) | datos | 🔴 no cumple |
 | J2 | Primera frase de cada reseña | datos | 🔴 no cumple |
 | J3 | Lista de canciones | datos | 🔴 no cumple |
@@ -182,10 +182,10 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | J5 | Popularidad | datos | ⚫ sin comprobación automática |
 | J6 | Discografía del artista | datos | ⚫ sin comprobación automática |
 | K1 | Capturas de cada pantalla en móvil y escritorio, enviadas al usuario y aprobadas antes de  | validacion | ⚪ sin datos todavía |
-| K2 | Pruebas automáticas de contenido: portada en la primera pantalla, título y artista visible | validacion | ⚪ sin datos todavía |
+| K2 | Pruebas automáticas de contenido: portada en la primera pantalla, título y artista visible | validacion | 🔴 no cumple |
 | K3 | Comparación lado a lado con NMT en las mismas pantallas | validacion | 🟢 cumple |
-| K4 | Accesibilidad WCAG 2.1 AA | validacion | ⚪ sin datos todavía |
-| K5 | Rendimiento móvil ≥ 90 | validacion | ⚪ sin datos todavía |
+| K4 | Accesibilidad WCAG 2.1 AA | validacion | 🟢 cumple |
+| K5 | Rendimiento móvil ≥ 90 | validacion | ⚫ sin comprobación automática |
 | P1 | Cargar un año entero (p. ej. 2025) cambiando solo la configuración | procesos | 🔴 no cumple |
 | P2 | Recogida semanal automática | procesos | 🟢 cumple |
 | P3 | Auditoría "¿perdemos discos?" cada semana | procesos | ⚪ sin datos todavía |

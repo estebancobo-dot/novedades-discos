@@ -512,7 +512,8 @@ def ejecutar() -> dict:
         for nombre in r["comprobaciones"]:
             if nombre.startswith("web:"):
                 v = c.web_pruebas.get(nombre[4:])
-                estados.append("sin_datos" if v is None else ("ok" if v else "fallo"))
+                # sin resultado: si la prueba en navegador ya se ejecutó, es que esa comprobación no existe aún
+                estados.append(("sin_comprobar" if c.web_pruebas else "sin_datos") if v is None else ("ok" if v else "fallo"))
             else:
                 estados.append(res_comp.get(nombre, {"estado": "sin_comprobar"})["estado"])
         estado = min(estados, key=lambda e: ORDEN[e]) if estados else "sin_comprobar"
