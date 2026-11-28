@@ -26,6 +26,7 @@ Si la sesión se corta, la siguiente empieza por aquí. Cada línea de "Hecho" e
 | 12 | W1 portada y tarjeta (con capturas al usuario) | ⬜ |
 | 13 | W2 página del disco | ⬜ |
 | 14 | W3–W7 | ⬜ |
+| 15 | Por qué faltan los discos perdidos | ✅ 2 eran fallos de comparación y 1 un duplicado (corregidos: mismo nombre con "&", "and", "the"); quedan 5 reales con su causa |
 
 ## Avisos abiertos (los detectó la validación automática)
 
@@ -34,7 +35,10 @@ Si la sesión se corta, la siguiente empieza por aquí. Cada línea de "Hecho" e
   sustituyan** (E1).
 - Metal Planet y Blues Rock Review salieron vacías en la primera ejecución en GitHub (vigilar la próxima).
 - Punk, indie y cantautores no tienen fuentes especializadas propias (E1).
-- 6 discos perdidos frente a Metacritic: Editors, The Mary Wallopers, Formal Sppeedwear, Faust, Los Bitchos, Dis Fig.
+- 5 discos perdidos frente a Metacritic (28-nov): The Mary Wallopers (solo sale en listas de fin de año: usarlas
+  también para descubrir), Formal Sppeedwear, Faust, Dis Fig, "Miley" (ninguna fuente los tiene: buscar fuentes de
+  krautrock/experimental, indie e industrial). Editors, Los Bitchos, Echo & the Bunnymen y Neil Young sí estaban:
+  eran fallos de comparación ("&", "and", "the"), ya corregidos con `util.clave_nombre`.
 
 ## Publicado en `main`
 
@@ -47,7 +51,7 @@ Pasos 3, 4 y parte del 7 (28-nov-2026). Hallazgos reales: 12 direcciones con el 
 
 ## Siguiente paso
 
-Paso 15 (nuevo): por qué faltan los 6 discos perdidos frente a Metacritic (Editors, The Mary Wallopers, Formal
-Sppeedwear, Faust, Los Bitchos, Dis Fig): qué fuente debía traerlos → fuente nueva o regla. Después: clasificación
-del 79 % al 85 % en la muestra de referencia; fuentes de AOR que sustituyan a Heavy Harmonies; archivo de
-AnyDecentMusic para tener reseñas de todo el año. Luego W1 con capturas al usuario.
+Paso 16: usar las listas de fin de año del año en curso también para descubrir discos (The Mary Wallopers solo sale
+ahí). Después: clasificación del 79 % al 85 % en la muestra de referencia (subgéneros que sobran por etiquetas
+débiles de MusicBrainz); fuentes de AOR que sustituyan a Heavy Harmonies; fuentes de krautrock/experimental, indie
+e industrial; archivo de AnyDecentMusic. Luego W1 con capturas al usuario.

@@ -72242,6 +72242,7 @@
    "Uncut: 80 Best Albums of 2026"
   ],
   "unidos": [
+   "neil-young-and-chrome-hearts-second-song",
    "neil-young-and-the-chrome-hearts-second-song"
   ],
   "subgeneros_frontera": []
@@ -148027,7 +148028,10 @@
    "post-metal"
   ],
   "etiquetas_originales": [
-   "Gothic roots"
+   "Gothic roots",
+   "Albums",
+   "brown bird",
+   "MorganEve Swain"
   ],
   "descripciones": [],
   "etiquetas_musicbrainz_bandcamp": [
@@ -148050,10 +148054,26 @@
     "rol": "listado",
     "url": "https://savingcountrymusic.com",
     "fecha": null
+   },
+   {
+    "id": "klof",
+    "nombre": "KLOF Mag (antes Folk Radio UK)",
+    "rol": "resena",
+    "url": "https://klofmag.com/2026/06/the-huntress-and-the-holder-of-hands-babylon/",
+    "fecha": "2026-06-17"
    }
   ],
-  "resenas": [],
+  "resenas": [
+   {
+    "fuente": "klof",
+    "nombre": "KLOF Mag (antes Folk Radio UK)",
+    "url": "https://klofmag.com/2026/06/the-huntress-and-the-holder-of-hands-babylon/",
+    "nota": null,
+    "fecha": "2026-06-17"
+   }
+  ],
   "enlaces": {
+   "deezer": "https://www.deezer.com/album/993497111",
    "bandcamp": "https://thehuntressmusic.bandcamp.com/album/babylon",
    "musicbrainz": "https://musicbrainz.org/release-group/34afa2c3-7909-4a5a-b4a4-7d19ddf90b03"
   },
@@ -148064,8 +148084,19 @@
    "ea254fe0-f2b8-459f-84f8-975f9f112005"
   ],
   "requiere_subgenero": false,
-  "primera_mencion": null,
+  "primera_mencion": "2026-06-17",
   "detectado": "2026-11-28",
+  "deezer": {
+   "id": 993497111,
+   "pistas": 10,
+   "portada": "https://cdn-images.dzcdn.net/images/cover/681220a472f984b9f6da63afbbfce808/250x250-000000-80-0-0.jpg",
+   "portada_grande": "https://cdn-images.dzcdn.net/images/cover/681220a472f984b9f6da63afbbfce808/1000x1000-000000-80-0-0.jpg",
+   "tipo": "album",
+   "url": "https://www.deezer.com/album/993497111"
+  },
+  "unidos": [
+   "huntress-and-the-holder-of-hands-babylon"
+  ],
   "subgeneros_frontera": []
  },
  {
@@ -223478,7 +223509,8 @@
    "News",
    "This Morn' Omina",
    "ReViews",
-   "Industrial / Ambient / Dark Electronic"
+   "Industrial / Ambient / Dark Electronic",
+   "This Mon’Omina"
   ],
   "descripciones": [],
   "etiquetas_musicbrainz_bandcamp": [
@@ -223517,6 +223549,13 @@
     "rol": "listado",
     "url": "https://musicbrainz.org/release-group/8a012a2d-f64f-46a9-838b-6e1077454c3f",
     "fecha": null
+   },
+   {
+    "id": "sideline",
+    "nombre": "Side-Line (dark electrónico, EBM, synth, goth)",
+    "rol": "noticia",
+    "url": "https://www.side-line.com/this-mornomina-insha-digital-cd-cyclic-law/",
+    "fecha": "2026-03-23"
    }
   ],
   "resenas": [
@@ -223543,7 +223582,10 @@
   "requiere_subgenero": true,
   "primera_mencion": "2026-01-28",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [],
+  "unidos": [
+   "this-mornomina-insha"
+  ]
  },
  {
   "id": "greyhawk-warriors-of-greyhawk",
@@ -267922,18 +267964,21 @@
   "id": "ethan-setiawan-and-the-fine-ground-little-storms",
   "artista": "Ethan Setiawan & The Fine Ground",
   "titulo": "Little Storms",
-  "fecha": "2026-10-06",
-  "fecha_exacta": false,
+  "fecha": "2026-10-02",
+  "fecha_exacta": true,
   "fecha_origen": "reseña",
   "estado": "publicado",
   "sello": null,
   "familias": [
    "country"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "bluegrass"
+  ],
   "etiquetas_originales": [
    "Reviews",
-   "Ethan Setiawan"
+   "Ethan Setiawan",
+   "bluegrass"
   ],
   "descripciones": [],
   "etiquetas_musicbrainz_bandcamp": [],
@@ -267949,6 +267994,13 @@
     "rol": "resena",
     "url": "https://americanahighways.org/2026/10/06/review-ethan-setiawan-the-ground-little-storms/",
     "fecha": "2026-10-06"
+   },
+   {
+    "id": "scm_radar",
+    "nombre": "Saving Country Music – Release Radar",
+    "rol": "listado",
+    "url": "https://savingcountrymusic.com",
+    "fecha": null
    }
   ],
   "resenas": [
@@ -267969,7 +268021,10 @@
   "primera_mencion": "2026-10-06",
   "detectado": "2026-11-28",
   "etiquetas_extra": [],
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [],
+  "unidos": [
+   "ethan-setiawan-and-fine-ground-little-storms"
+  ]
  },
  {
   "id": "barnes-long-road",
@@ -269512,51 +269567,6 @@
     "origen": "itunes"
    }
   ],
-  "subgeneros_frontera": []
- },
- {
-  "id": "ethan-setiawan-and-fine-ground-little-storms",
-  "artista": "Ethan Setiawan & Fine Ground",
-  "titulo": "Little Storms",
-  "fecha": "2026-10-02",
-  "fecha_exacta": true,
-  "fecha_origen": "fuente",
-  "estado": "publicado",
-  "sello": null,
-  "familias": [
-   "country"
-  ],
-  "subgeneros": [
-   "bluegrass"
-  ],
-  "etiquetas_originales": [
-   "bluegrass"
-  ],
-  "descripciones": [],
-  "etiquetas_musicbrainz_bandcamp": [],
-  "portada": null,
-  "pistas": null,
-  "tipo": "álbum",
-  "tipo_verificado": false,
-  "idioma": null,
-  "fuentes": [
-   {
-    "id": "scm_radar",
-    "nombre": "Saving Country Music – Release Radar",
-    "rol": "listado",
-    "url": "https://savingcountrymusic.com",
-    "fecha": null
-   }
-  ],
-  "resenas": [],
-  "enlaces": {},
-  "enlace_artista_bandcamp": null,
-  "en_bandcamp": false,
-  "mbid": null,
-  "mbid_artistas": [],
-  "requiere_subgenero": false,
-  "primera_mencion": null,
-  "detectado": "2026-11-22",
   "subgeneros_frontera": []
  },
  {
@@ -273847,51 +273857,6 @@
   "subgeneros_frontera": []
  },
  {
-  "id": "neil-young-and-chrome-hearts-second-song",
-  "artista": "Neil Young & Chrome Hearts",
-  "titulo": "Second Song",
-  "fecha": "2026-09-18",
-  "fecha_exacta": true,
-  "fecha_origen": "fuente",
-  "estado": "publicado",
-  "sello": null,
-  "familias": [
-   "country"
-  ],
-  "subgeneros": [
-   "americana"
-  ],
-  "etiquetas_originales": [
-   "Americana"
-  ],
-  "descripciones": [],
-  "etiquetas_musicbrainz_bandcamp": [],
-  "portada": null,
-  "pistas": null,
-  "tipo": "álbum",
-  "tipo_verificado": false,
-  "idioma": null,
-  "fuentes": [
-   {
-    "id": "scm_radar",
-    "nombre": "Saving Country Music – Release Radar",
-    "rol": "listado",
-    "url": "https://savingcountrymusic.com",
-    "fecha": null
-   }
-  ],
-  "resenas": [],
-  "enlaces": {},
-  "enlace_artista_bandcamp": null,
-  "en_bandcamp": false,
-  "mbid": null,
-  "mbid_artistas": [],
-  "requiere_subgenero": false,
-  "primera_mencion": null,
-  "detectado": "2026-11-22",
-  "subgeneros_frontera": []
- },
- {
   "id": "ned-hill-saw-jesus-in-the-park",
   "artista": "Ned Hill",
   "titulo": "Saw Jesus in the Park",
@@ -275152,14 +275117,29 @@
   "estado": "publicado",
   "sello": null,
   "familias": [
-   "country"
+   "cantautores",
+   "country",
+   "hardrock"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "contemporary-folk",
+   "singer-songwriter",
+   "traditional-folk"
+  ],
   "etiquetas_originales": [
    "Album Reviews",
    "Reviews",
    "Ewan Macintyre",
-   "Herding Cats"
+   "Herding Cats",
+   "ALBUM REVIEWS (Mobile)",
+   "ALL POSTS",
+   "Ewan Macintyre & Herding Cats",
+   "folk",
+   "Gaelic",
+   "On These Islands We Sing",
+   "review",
+   "singer songwriter",
+   "traditional"
   ],
   "descripciones": [],
   "etiquetas_musicbrainz_bandcamp": [],
@@ -275175,6 +275155,13 @@
     "rol": "resena",
     "url": "https://americana-uk.com/ewan-macintyre-herding-cats-on-these-islands-we-sing",
     "fecha": "2026-09-14"
+   },
+   {
+    "id": "getreadytorock",
+    "nombre": "Get Ready to ROCK!",
+    "rol": "resena",
+    "url": "https://getreadytorock.me.uk/blog/2026/08/album-review-ewan-macintyreherding-cats-on-these-islands-we-sing/",
+    "fecha": "2026-08-20"
    }
   ],
   "resenas": [
@@ -275184,6 +275171,13 @@
     "url": "https://americana-uk.com/ewan-macintyre-herding-cats-on-these-islands-we-sing",
     "nota": "7/10",
     "fecha": "2026-09-14"
+   },
+   {
+    "fuente": "getreadytorock",
+    "nombre": "Get Ready to ROCK!",
+    "url": "https://getreadytorock.me.uk/blog/2026/08/album-review-ewan-macintyreherding-cats-on-these-islands-we-sing/",
+    "nota": null,
+    "fecha": "2026-08-20"
    }
   ],
   "enlaces": {},
@@ -275192,10 +275186,13 @@
   "mbid": null,
   "mbid_artistas": [],
   "requiere_subgenero": false,
-  "primera_mencion": "2026-09-14",
+  "primera_mencion": "2026-08-20",
   "detectado": "2026-11-22",
   "etiquetas_extra": [],
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [],
+  "unidos": [
+   "ewan-macintyre-herding-cats-on-these-islands-we-sing"
+  ]
  },
  {
   "id": "carla-gover-and-friends-williams-branch-is-hard-to-find",
@@ -281445,72 +281442,6 @@
   "requiere_subgenero": true,
   "primera_mencion": "2026-08-21",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
- },
- {
-  "id": "ewan-macintyre-herding-cats-on-these-islands-we-sing",
-  "artista": "EWAN MACINTYRE/HERDING CATS",
-  "titulo": "On These Islands We Sing",
-  "fecha": "2026-08-20",
-  "fecha_exacta": false,
-  "fecha_origen": "reseña",
-  "estado": "publicado",
-  "sello": null,
-  "familias": [
-   "cantautores",
-   "country",
-   "hardrock"
-  ],
-  "subgeneros": [
-   "contemporary-folk",
-   "singer-songwriter",
-   "traditional-folk"
-  ],
-  "etiquetas_originales": [
-   "ALBUM REVIEWS",
-   "ALBUM REVIEWS (Mobile)",
-   "ALL POSTS",
-   "Ewan Macintyre & Herding Cats",
-   "folk",
-   "Gaelic",
-   "On These Islands We Sing",
-   "review",
-   "singer songwriter",
-   "traditional"
-  ],
-  "descripciones": [],
-  "etiquetas_musicbrainz_bandcamp": [],
-  "portada": null,
-  "pistas": null,
-  "tipo": "álbum",
-  "tipo_verificado": false,
-  "idioma": null,
-  "fuentes": [
-   {
-    "id": "getreadytorock",
-    "nombre": "Get Ready to ROCK!",
-    "rol": "resena",
-    "url": "https://getreadytorock.me.uk/blog/2026/08/album-review-ewan-macintyreherding-cats-on-these-islands-we-sing/",
-    "fecha": "2026-08-20"
-   }
-  ],
-  "resenas": [
-   {
-    "fuente": "getreadytorock",
-    "nombre": "Get Ready to ROCK!",
-    "url": "https://getreadytorock.me.uk/blog/2026/08/album-review-ewan-macintyreherding-cats-on-these-islands-we-sing/",
-    "nota": null,
-    "fecha": "2026-08-20"
-   }
-  ],
-  "enlaces": {},
-  "enlace_artista_bandcamp": null,
-  "en_bandcamp": false,
-  "mbid": null,
-  "mbid_artistas": [],
-  "requiere_subgenero": false,
-  "primera_mencion": "2026-08-20",
-  "detectado": "2026-11-22",
   "subgeneros_frontera": []
  },
  {
@@ -291488,70 +291419,6 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-06-18",
   "detectado": "2026-11-22",
-  "etiquetas_extra": [],
-  "subgeneros_frontera": []
- },
- {
-  "id": "huntress-and-the-holder-of-hands-babylon",
-  "artista": "The Huntress And The Holder Of Hands",
-  "titulo": "Babylon",
-  "fecha": "2026-06-17",
-  "fecha_exacta": false,
-  "fecha_origen": "reseña",
-  "estado": "publicado",
-  "sello": null,
-  "familias": [
-   "country"
-  ],
-  "subgeneros": [],
-  "etiquetas_originales": [
-   "Albums",
-   "brown bird",
-   "MorganEve Swain"
-  ],
-  "descripciones": [],
-  "etiquetas_musicbrainz_bandcamp": [],
-  "portada": "https://cdn-images.dzcdn.net/images/cover/681220a472f984b9f6da63afbbfce808/250x250-000000-80-0-0.jpg",
-  "pistas": 10,
-  "tipo": "álbum",
-  "tipo_verificado": false,
-  "idioma": null,
-  "fuentes": [
-   {
-    "id": "klof",
-    "nombre": "KLOF Mag (antes Folk Radio UK)",
-    "rol": "resena",
-    "url": "https://klofmag.com/2026/06/the-huntress-and-the-holder-of-hands-babylon/",
-    "fecha": "2026-06-17"
-   }
-  ],
-  "resenas": [
-   {
-    "fuente": "klof",
-    "nombre": "KLOF Mag (antes Folk Radio UK)",
-    "url": "https://klofmag.com/2026/06/the-huntress-and-the-holder-of-hands-babylon/",
-    "nota": null,
-    "fecha": "2026-06-17"
-   }
-  ],
-  "enlaces": {
-   "deezer": "https://www.deezer.com/album/993497111"
-  },
-  "enlace_artista_bandcamp": null,
-  "en_bandcamp": false,
-  "mbid": null,
-  "mbid_artistas": [],
-  "requiere_subgenero": false,
-  "primera_mencion": "2026-06-17",
-  "detectado": "2026-11-22",
-  "deezer": {
-   "id": 993497111,
-   "pistas": 10,
-   "portada": "https://cdn-images.dzcdn.net/images/cover/681220a472f984b9f6da63afbbfce808/250x250-000000-80-0-0.jpg",
-   "portada_grande": "https://cdn-images.dzcdn.net/images/cover/681220a472f984b9f6da63afbbfce808/1000x1000-000000-80-0-0.jpg",
-   "tipo": "album",
-   "url": "https://www.deezer.com/album/993497111"
-  },
   "etiquetas_extra": [],
   "subgeneros_frontera": []
  },

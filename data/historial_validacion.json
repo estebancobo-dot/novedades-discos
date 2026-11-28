@@ -244,8 +244,8 @@
 {
 "fecha": "2026-11-28",
 "modo": "completa",
-"discos": 3906,
-"descartados": 2424,
+"discos": 3902,
+"descartados": 2423,
 "por_familia": {
 "punkgarage": 556,
 "indiepop": 683,
@@ -253,7 +253,7 @@
 "hardrock": 712,
 "synthdark": 226,
 "cantautores": 238,
-"country": 1408,
+"country": 1404,
 "blues": 314
 },
 "por_fuente": {
@@ -329,7 +329,7 @@
 "EP": 118,
 "EP según MusicBrainz": 85,
 "SINGLE según MusicBrainz": 15,
-"clasificación": 1400,
+"clasificación": 1399,
 "fuera de la ventana": 90,
 "idioma ces": 1,
 "idioma deu": 9,

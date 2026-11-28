@@ -18,7 +18,7 @@ from .config import RAIZ, cargar_config, cargar_yaml, ruta
 from .http import Bloqueado, Navegador, Prohibido, guardar_json
 from .consolidar import motivo_no_nuevo
 from .musicbrainz import MusicBrainz
-from .util import normalizar, similitud
+from .util import clave_nombre, normalizar, similitud
 
 
 def buscar_artista(mb: MusicBrainz, nombre: str) -> str | None:
@@ -35,9 +35,9 @@ def buscar_artista(mb: MusicBrainz, nombre: str) -> str | None:
 
 
 def clave(texto: str) -> str:
-    """Igual para "THE ROLLING STONES" y "the-rolling-stones", "o\\i" y "oi"."""
-    # "&" se quita antes de normalizar: Metacritic lo omite en sus direcciones ("echo-the-bunnymen")
-    return re.sub(r"[^a-z0-9]", "", normalizar((texto or "").replace("-", " ").replace("&", " ")))
+    """Igual para "THE ROLLING STONES" y "the-rolling-stones", "o\\i" y "oi", "Echo & the Bunnymen" y
+    "echo-the-bunnymen" (la misma regla que la consolidación: util.clave_nombre)."""
+    return clave_nombre(texto)
 
 
 def leer_referencia(nav: Navegador, ref: dict) -> tuple[list[dict], str]:

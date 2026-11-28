@@ -25,7 +25,7 @@ from .clasificar import Taxonomia, cargar_mapeo, etiquetas_de
 from .config import RAIZ, cargar_config, cargar_yaml, ruta
 from .consolidar import canon
 from .http import guardar_json
-from .util import normalizar
+from .util import clave_nombre, normalizar
 
 ORDEN = {"fallo": 0, "aviso": 1, "sin_datos": 2, "sin_comprobar": 3, "ok": 4}
 ICONO = {"ok": "🟢", "aviso": "🟡", "fallo": "🔴", "sin_datos": "⚪", "sin_comprobar": "⚫"}
@@ -410,7 +410,7 @@ def pruebas_por_fuente(c):
 def duplicados(c):
     vistos, dup = {}, []
     for d in c.discos:
-        k = (normalizar(d["artista"]), canon(d["titulo"]).replace(" ", ""))
+        k = (clave_nombre(d["artista"]), canon(d["titulo"]).replace(" ", ""))
         if k in vistos:
             dup.append(f"{d['artista']} – {d['titulo']} ({d['fecha']} y {vistos[k]})")
         vistos[k] = d["fecha"]

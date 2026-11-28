@@ -126,3 +126,12 @@ def test_la_fuente_lo_etiqueta_como_reedicion_o_caja():
     assert "Box sets" in motivo_no_nuevo({"artista": "Rainbow", "titulo": "Live In Koln",
                                            "etiquetas_originales": ["ALBUM REVIEWS", "Box sets"]}, REGLAS)
     assert motivo_no_nuevo({"artista": "X", "titulo": "Y", "etiquetas_originales": ["Reviews", "reissue culture"]}, REGLAS) is None
+
+
+def test_mismo_artista_escrito_con_and_the_o_ampersand():
+    from scraper.util import clave_nombre
+    assert clave_nombre("Neil Young & The Chrome Hearts") == clave_nombre("Neil Young & Chrome Hearts") == clave_nombre("neil-young-and-the-chrome-hearts")
+    assert clave_nombre("Echo and the Bunnymen") == clave_nombre("echo-the-bunnymen") and clave_nombre("The The") != ""
+    r, n = unir_duplicados([disco("a", "Neil Young & The Chrome Hearts", "Second Song", "2026-09-18"),
+                            disco("b", "Neil Young & Chrome Hearts", "Second Song", "2026-09-18")])
+    assert n == 1 and len(r) == 1

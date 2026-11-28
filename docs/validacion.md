@@ -25,12 +25,12 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 
 ## Comprobaciones que fallan o avisan
 
-- 🔴 **muestra_de_referencia**: 42 de 53 discos de referencia exactamente bien; mínimo 85.0 % — 79.2
+- 🔴 **muestra_de_referencia**: 41 de 53 discos de referencia exactamente bien; mínimo 85.0 % — 77.4
     - Onasander & RNGMNN – Illumination Phases: ha desaparecido de la web
     - Astral Spectre – Cosmic Mirage: sobra classic-rock
     - Kreator – Krushers of the World: sobra death-metal|hard-rock
-    - The Notwist – News from Planet Zombie: sobra post-hardcore|post-rock
-    - The Green Apple Sea – Dark Kid: sobra punk
+    - The Notwist – News from Planet Zombie: sobra post-rock|post-hardcore
+    - Ethan Setiawan & Fine Ground – Little Storms: ha desaparecido de la web
 - 🔴 **fuentes_estado**: 60 de 67 fuentes leídas bien — 89.6
     - Heavy Harmonies – New Additions: prohibida robots.txt de heavyharmonies.com no permite https://heavyharmonies.com/cgi-bin/n
     - Metal Planet Music: vacia 
@@ -43,13 +43,13 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
     - scm_radar: https://savingcountrymusic.com/release-radar-most-anticipated-new-albums-for-final-portion-of-2026/
     - loudwire: https://loudwire.com/2026-hard-rock-metal-album-release-calendar/
     - loudwire: https://loudwire.com/2027-hard-rock-metal-album-release-calendar/
-- 🔴 **cobertura_campos**: 3798 discos ya publicados — portada 80.0, fecha_exacta 83.2, sello 73.1, pistas 82.3, subgenero 79.9, enlace_escucha 78.0
-    - portada: 80.0 % (mínimo 95 %)
-    - fecha_exacta: 83.2 % (mínimo 85 %)
-    - enlace_escucha: 78.0 % (mínimo 80 %)
-- 🔴 **cobertura_portadas**: mínimo 95 % — 80.0
+- 🔴 **cobertura_campos**: 3794 discos ya publicados — portada 80.1, fecha_exacta 83.3, sello 73.2, pistas 82.3, subgenero 79.9, enlace_escucha 78.1
+    - portada: 80.1 % (mínimo 95 %)
+    - fecha_exacta: 83.3 % (mínimo 85 %)
+    - enlace_escucha: 78.1 % (mínimo 80 %)
+- 🔴 **cobertura_portadas**: mínimo 95 % — 80.1
 - 🔴 **reseñas_con_frase**: 209 de 2563 reseñas con frase — 8.2
-- 🔴 **canciones**: 0 de 3906 fichas con lista de canciones — 0.0
+- 🔴 **canciones**: 0 de 3902 fichas con lista de canciones — 0.0
 - 🟡 **fuentes_por_familia**: fuentes especializadas por familia (mínimo 5; además cuentan las generales y los radares) — country 21, hardrock 16, rockmetal 4, blues 5, synthdark 4
     - rockmetal: 4
     - punkgarage: 0
