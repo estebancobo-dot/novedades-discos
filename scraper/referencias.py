@@ -36,7 +36,8 @@ def buscar_artista(mb: MusicBrainz, nombre: str) -> str | None:
 
 def clave(texto: str) -> str:
     """Igual para "THE ROLLING STONES" y "the-rolling-stones", "o\\i" y "oi"."""
-    return re.sub(r"[^a-z0-9]", "", normalizar((texto or "").replace("-", " ")))
+    # "&" se quita antes de normalizar: Metacritic lo omite en sus direcciones ("echo-the-bunnymen")
+    return re.sub(r"[^a-z0-9]", "", normalizar((texto or "").replace("-", " ").replace("&", " ")))
 
 
 def leer_referencia(nav: Navegador, ref: dict) -> tuple[list[dict], str]:

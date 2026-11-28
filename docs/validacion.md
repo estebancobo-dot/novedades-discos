@@ -29,7 +29,7 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
     - Onasander & RNGMNN – Illumination Phases: ha desaparecido de la web
     - Astral Spectre – Cosmic Mirage: sobra classic-rock
     - Kreator – Krushers of the World: sobra hard-rock|death-metal
-    - The Notwist – News from Planet Zombie: sobra post-rock|post-hardcore
+    - The Notwist – News from Planet Zombie: sobra post-hardcore|post-rock
     - The Green Apple Sea – Dark Kid: sobra punk
 - 🔴 **anios_por_plantilla**: direcciones con el año escrito a mano — 12
     - scm_radar: https://savingcountrymusic.com/release-radar-most-anticipated-new-country-albums-for-2026/

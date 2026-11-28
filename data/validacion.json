@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-28T08:17:15+00:00",
+ "fecha": "2026-11-28T08:17:53+00:00",
  "capas": {
   "alcance": {
    "ok": 1
@@ -1268,7 +1268,7 @@
     "Onasander & RNGMNN – Illumination Phases: ha desaparecido de la web",
     "Astral Spectre – Cosmic Mirage: sobra classic-rock",
     "Kreator – Krushers of the World: sobra hard-rock|death-metal",
-    "The Notwist – News from Planet Zombie: sobra post-rock|post-hardcore",
+    "The Notwist – News from Planet Zombie: sobra post-hardcore|post-rock",
     "The Green Apple Sea – Dark Kid: sobra punk",
     "Art d’Ecco – Scheele's Green: le falta glam",
     "Linda Perry – Let It Die Here: sobra classic-rock",
@@ -1499,7 +1499,7 @@
   },
   "pruebas_existentes": {
    "estado": "ok",
-   "valor": 105,
+   "valor": 107,
    "detalle": "pruebas unitarias y de extremo a extremo",
    "ejemplos": []
   },
@@ -1530,18 +1530,18 @@
   "descubrimiento_referencias": {
    "estado": "ok",
    "valor": null,
-   "detalle": "Metacritic – All New Music by Release Date: ok, 151 discos · en la web 97 · perdidos 7 (6.7 %) · descartados con motivo 21 · no son novedad 5 · de otros géneros 10 · sin poder saber su género 11 (máximo 10.0 % perdidos)",
+   "detalle": "Metacritic – All New Music by Release Date: ok, 151 discos · en la web 100 · perdidos 6 (5.7 %) · descartados con motivo 24 · no son novedad 5 · de otros géneros 8 · sin poder saber su género 8 (máximo 10.0 % perdidos)",
    "ejemplos": [
-    "perdido: los bitchos – los bitchos friends vol 1 (cumbia, indie pop, psychedelic rock)",
-    "perdido: editors – surface echo sound (alternative rock, indie rock, post-punk revival)",
     "perdido: dis fig – what to make of these mortal hands (death industrial, post-industrial)",
     "perdido: faust – moi (krautrock, experimental rock, progressive rock)",
     "perdido: miley – bass persuades (pop, pop rock, rock)",
+    "perdido: neil young and the chrome hearts – second song (rock, folk rock, country rock)",
     "perdido: the mary wallopers – paddywhackery (irish folk, folk, folk punk)",
     "perdido: formal sppeedwear – punch card (art rock, new wave)",
     "sin género: all – all",
-    "sin género: the body cel genesis – whole wide world",
-    "sin género: howlin rain – watermelon"
+    "sin género: howlin rain – watermelon",
+    "sin género: anna butterss john raymond ben lumsdaine – beginningless",
+    "sin género:  at – autosmile"
    ]
   }
  },

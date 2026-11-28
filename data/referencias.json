@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-28T08:17:14+00:00",
+ "fecha": "2026-11-28T08:17:52+00:00",
  "referencias": {
   "metacritic": {
    "nombre": "Metacritic – All New Music by Release Date",
@@ -166,8 +166,7 @@
       "wholewideworld"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "generos": [],
-     "resultado": "sin_genero"
+     "resultado": "en_web"
     },
     {
      "artista": "howlin rain",
@@ -199,12 +198,8 @@
       "fantasyreveries"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "generos": [
-      "jazz",
-      "post-bop",
-      "third stream"
-     ],
-     "resultado": "fuera_de_genero"
+     "resultado": "descartado",
+     "motivo": "idioma nld"
     },
     {
      "artista": "blackhaine",
@@ -224,13 +219,7 @@
       "losbitchosfriendsvol1"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "generos": [
-      "cumbia",
-      "indie pop",
-      "psychedelic rock",
-      "surf rock"
-     ],
-     "resultado": "perdido"
+     "resultado": "en_web"
     },
     {
      "artista": "kim deal",
@@ -251,8 +240,8 @@
       "troublemountain"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "generos": [],
-     "resultado": "sin_genero"
+     "resultado": "descartado",
+     "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía"
     },
     {
      "artista": "menahan street band",
@@ -312,16 +301,8 @@
       "snakesladders"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "generos": [
-      "hip hop",
-      "abstract hip hop",
-      "drumless hip hop",
-      "east coast hip hop",
-      "experimental hip hop",
-      "hardcore hip hop",
-      "industrial hip hop"
-     ],
-     "resultado": "fuera_de_genero"
+     "resultado": "descartado",
+     "motivo": "clasificación: solo subgéneros frontera y fuente mixta"
     },
     {
      "artista": "twisted teens",
@@ -403,8 +384,7 @@
       "inendlessaweagony"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "generos": [],
-     "resultado": "sin_genero"
+     "resultado": "en_web"
     },
     {
      "artista": "ane brun",
@@ -551,15 +531,7 @@
       "surfaceechosound"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "generos": [
-      "alternative rock",
-      "indie rock",
-      "post-punk revival",
-      "pop rock",
-      "rock",
-      "synth-pop"
-     ],
-     "resultado": "perdido"
+     "resultado": "en_web"
     },
     {
      "artista": "clinic",
@@ -1424,7 +1396,17 @@
       "secondsong"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "resultado": "en_web"
+     "generos": [
+      "rock",
+      "folk rock",
+      "country rock",
+      "folk",
+      "classic rock",
+      "hard rock",
+      "contemporary folk",
+      "country"
+     ],
+     "resultado": "perdido"
     },
     {
      "artista": "kristin hersh",
@@ -1661,12 +1643,12 @@
     }
    ],
    "resumen": {
-    "sin_genero": 11,
-    "en_web": 97,
-    "descartado": 21,
-    "fuera_de_genero": 10,
-    "perdido": 7,
-    "no_es_nuevo": 5
+    "sin_genero": 8,
+    "en_web": 100,
+    "descartado": 24,
+    "fuera_de_genero": 8,
+    "no_es_nuevo": 5,
+    "perdido": 6
    }
   }
  }
