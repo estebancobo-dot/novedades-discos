@@ -62,11 +62,19 @@ def cargar_mapeo(p: str) -> dict[str, dict]:
 
 
 def guardar_mapeo(p: str, mapeo: dict[str, dict]):
-    with open(p, "w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=CAMPOS_CSV)
-        w.writeheader()
-        for k in sorted(mapeo, key=lambda k: (mapeo[k]["subgenero"] != "pendiente", k)):
-            w.writerow({c: mapeo[k].get(c, "") for c in CAMPOS_CSV})
+    """Escritura atómica (archivo temporal + renombrado): quien lea la tabla a la vez nunca ve
+    un archivo a medias."""
+    tmp = p + ".tmp"
+    try:
+        with open(tmp, "w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=CAMPOS_CSV)
+            w.writeheader()
+            for k in sorted(mapeo, key=lambda k: (mapeo[k]["subgenero"] != "pendiente", k)):
+                w.writerow({c: mapeo[k].get(c, "") for c in CAMPOS_CSV})
+        os.replace(tmp, p)
+    finally:
+        if os.path.exists(tmp):
+            os.remove(tmp)
 
 
 def etiquetas_de(d: dict, tax: Taxonomia) -> list[tuple[str, str]]:
