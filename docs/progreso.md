@@ -26,6 +26,8 @@ Si la sesión se corta, la siguiente empieza por aquí. Cada línea de "Hecho" e
 | 12 | W1 portada y tarjeta (con capturas al usuario) | ⬜ |
 | 13 | W2 página del disco | ⬜ |
 | 14 | W3–W7 | ⬜ |
+| 16 | Listas de fin de año del año en curso también descubren discos | ✅ código y configuración (`descubrir_en_listas_anuales`); comprobándose con una recogida real |
+| 17 | Fuentes que sustituyen a Heavy Harmonies | ✅ Ultimate Classic Rock y Burning Minds/Art of Melody (`docs/fuentes.md`) |
 | 15 | Por qué faltan los discos perdidos | ✅ 2 eran fallos de comparación y 1 un duplicado (corregidos: mismo nombre con "&", "and", "the"); quedan 5 reales con su causa |
 
 ## Avisos abiertos (los detectó la validación automática)
@@ -51,7 +53,8 @@ Pasos 3, 4 y parte del 7 (28-nov-2026). Hallazgos reales: 12 direcciones con el 
 
 ## Siguiente paso
 
-Paso 16: usar las listas de fin de año del año en curso también para descubrir discos (The Mary Wallopers solo sale
-ahí). Después: clasificación del 79 % al 85 % en la muestra de referencia (subgéneros que sobran por etiquetas
-débiles de MusicBrainz); fuentes de AOR que sustituyan a Heavy Harmonies; fuentes de krautrock/experimental, indie
-e industrial; archivo de AnyDecentMusic. Luego W1 con capturas al usuario.
+**W1** (portada y tarjeta nuevas): criterios de aceptación ya escritos en `tests/e2e/web.mjs` (A1, A2, A4, A5, A6,
+A7, A9, B1–B4, I1, I4). Hacerlos pasar en `site/app.js`, `site/index.html`, `site/styles.css`; capturas de móvil al
+usuario antes de publicar. En paralelo (máquina): comprobar en el log de la recogida que entra The Mary Wallopers.
+Pendientes después: clasificación al 85 % en la muestra de referencia; MelodicRock.com y Pride & Joy; archivo de
+AnyDecentMusic; fuentes de krautrock/experimental, indie e industrial.
