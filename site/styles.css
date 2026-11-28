@@ -356,3 +356,7 @@ main#contenido { min-height: 100vh; }
 /* La portada siempre encima del marcador (antes el marcador, con position:absolute, tapaba la imagen
    aunque hubiera cargado: "la web no tiene carátulas"). */
 .portada img, .f-portada img { position: relative; }   /* posicionada y después del marcador: queda encima de él, no de los botones */
+/* Marca: Cara A (logo de etiqueta de disco) */
+.marca { display: flex; align-items: center; gap: 10px; font-family: var(--serif); letter-spacing: -.01em; }
+.marca .logo { width: 30px; height: 30px; flex: none; }
+.marca .disco { display: none; }

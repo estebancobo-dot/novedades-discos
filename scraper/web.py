@@ -242,7 +242,7 @@ def _rss(base, discos, familias, nombres_sub, actualizado):
                          f"<pubDate>{format_datetime(fecha)}</pubDate>"
                          f"<description><![CDATA[{img}{escape(desc)}]]></description></item>")
         xml = ('<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>'
-               f"<title>Novedades · {escape(titulo)}</title><link>{escape(URL_WEB)}</link>"
+               f"<title>Cara A · {escape(titulo)}</title><link>{escape(URL_WEB)}</link>"
                f"<description>Álbumes nuevos: {escape(titulo)}</description><language>es</language>"
                f"<lastBuildDate>{format_datetime(dt.datetime.fromisoformat(actualizado + 'T06:00:00+00:00'))}</lastBuildDate>"
                + "".join(items) + "</channel></rss>")

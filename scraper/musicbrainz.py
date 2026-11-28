@@ -21,6 +21,12 @@ def _esc(s: str) -> str:
     return re.sub(r'([+\-&|!(){}\[\]^"~*?:\\/])', r"\\\1", s)
 
 
+def _mismo_apellido_e_inicial(a: str, b: str) -> bool:
+    """"Mike Hurley" y "Michael Hurley", "Bob Dylan" y "Robert Dylan" no (distinta inicial)."""
+    x, y = normalizar(a).split(), normalizar(b).split()
+    return len(x) >= 2 and len(y) >= 2 and x[-1] == y[-1] and x[0][0] == y[0][0]
+
+
 class MusicBrainz:
     def __init__(self, nav: Navegador, ruta_cache: str, umbral: float = 0.86, dias_reintento: int = 10):
         self.dias_reintento = dias_reintento
@@ -104,6 +110,9 @@ class MusicBrainz:
             sa = max(similitud(nombre, artista), *(similitud(a.get("name"), artista) for a in rg.get("artist-credit", [{}])))
             if normalizar(artista) and normalizar(artista) in normalizar(nombre):
                 sa = max(sa, 0.95)
+            # mismo título y mismo artista con el nombre de pila abreviado ("Mike"/"Michael Hurley")
+            if st >= 0.97 and sa < self.umbral and _mismo_apellido_e_inicial(nombre, artista):
+                sa = self.umbral
             p = st * 0.6 + sa * 0.4
             # Mismo nombre para el disco y su sencillo (la canción que da título): a igualdad, el disco.
             p += {"Album": 0.02, "EP": 0.01}.get(rg.get("primary-type") or "", 0.0)

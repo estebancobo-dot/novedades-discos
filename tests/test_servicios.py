@@ -57,6 +57,14 @@ def test_mb_disco_y_sencillo_con_el_mismo_nombre_elige_el_disco(tmp_path):
     assert r["rg"] == "a" and r["tipo"] == "Album"
 
 
+def test_mb_mismo_titulo_y_nombre_de_pila_abreviado(tmp_path):
+    m = mb(tmp_path, lambda u: {"release-groups": [rg("a", "First Songs", "Mike Hurley", fecha="1964")]} if "release-group" in u else {"releases": []})
+    r = m.buscar("Michael Hurley", "First Songs", completar=False)
+    assert r and r["rg"] == "a" and r["primera_fecha"] == "1964"         # es un disco de 1964: no es novedad
+    m2 = mb(tmp_path / "otro", lambda u: {"release-groups": [rg("b", "First Songs", "Mike Hurley")]} if "release-group" in u else {"releases": []})
+    assert m2.buscar("Robert Hurley", "First Songs", completar=False) is None   # otra inicial: otro artista
+
+
 def test_mb_sin_resultado_se_recuerda_y_se_reintenta_pasados_n_dias(tmp_path):
     m = mb(tmp_path, lambda u: {"release-groups": []})
     assert m.buscar("Nadie", "Nada") is None

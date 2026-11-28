@@ -23,7 +23,7 @@ Si la sesión se corta, la siguiente empieza por aquí. Cada línea de "Hecho" e
 | 9 | Reseñas frente a AnyDecentMusic (V5) | ✅ `scraper/resenas.py`: cada disco con página en AnyDecentMusic recibe **todas** sus reseñas (medio, nota, frase, enlace original): U2 pasa de 3 a 21. Comprobación `resenas_cobertura`: 52,5 % de los publicados con reseña. Falta: leer el archivo de ADM (solo hay páginas de los discos actuales: 15) |
 | 10 | Web: pruebas de contenido + capturas automáticas de cada pantalla en cada publicación (V7) | ✅ resultados por requisito + capturas en `docs/capturas/` (portada, ficha y lo mejor; móvil y escritorio) en cada ejecución |
 | 11 | Fase `validar` en el orquestador y semáforo en el resumen de la Action (V8) | ✅ fase `validar` en `scraper/pipeline.py`; en la Action: prueba en navegador → validar → guarda y pone el semáforo en el resumen |
-| 12 | W1 portada y tarjeta (con capturas al usuario) | 🟡 hecha y con todas sus comprobaciones en verde; **encontrado y corregido el fallo de "sin carátulas"**: el marcador tapaba la portada aunque cargara (nueva comprobación automática: las portadas cargadas se ven). Falta: OK del usuario con capturas y publicar |
+| 12 | W1 portada y tarjeta (con capturas al usuario) | ✅ aprobada por el usuario; nombre **Cara A** (Side A) y logo; 🟡 hecha y con todas sus comprobaciones en verde; **encontrado y corregido el fallo de "sin carátulas"**: el marcador tapaba la portada aunque cargara (nueva comprobación automática: las portadas cargadas se ven). Falta: OK del usuario con capturas y publicar |
 | 13 | W2 página del disco | ⬜ |
 | 14 | W3–W7 | ⬜ |
 | 16 | Listas de fin de año del año en curso también descubren discos | ✅ código y configuración (`descubrir_en_listas_anuales`); comprobándose con una recogida real |
@@ -54,8 +54,9 @@ Pasos 3, 4 y parte del 7 (28-nov-2026). Hallazgos reales: 12 direcciones con el 
 
 ## Siguiente paso
 
-**W1** (portada y tarjeta nuevas): criterios de aceptación ya escritos en `tests/e2e/web.mjs` (A1, A2, A4, A5, A6,
-A7, A9, B1–B4, I1, I4). Hacerlos pasar en `site/app.js`, `site/index.html`, `site/styles.css`; capturas de móvil al
-usuario antes de publicar. En paralelo (máquina): comprobar en el log de la recogida que entra The Mary Wallopers.
-Pendientes después: clasificación al 85 % en la muestra de referencia; MelodicRock.com y Pride & Joy; archivo de
-AnyDecentMusic; fuentes de krautrock/experimental, indie e industrial.
+1. **Publicar W1 + Cara A** (aprobado por el usuario el 28-nov): petición a `main`, pruebas de GitHub en verde,
+   fusionar y lanzar la Action en modo incremental para regenerar los datos con todo lo nuevo (listas de fin de
+   año, fuentes de AOR, reseñas de AnyDecentMusic, Mike/Michael en MusicBrainz).
+2. **W2 + idiomas** (aprobado): página del disco estilo Metacritic y web en español e inglés (L1–L6).
+3. Después: clasificación al 85 % en la muestra de referencia; MelodicRock.com y Pride & Joy; archivo de
+   AnyDecentMusic; fuentes de krautrock/experimental, indie e industrial.
