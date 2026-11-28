@@ -1,0 +1,847 @@
+# Todos los requisitos (131) con su capa y las comprobaciones automáticas que los verifican.
+# Lo lee scraper/validar.py en cada ejecución. comprobaciones:
+#   nombre        → función de scraper/validar.py (sobre los datos, la configuración o el repositorio)
+#   web:NOMBRE    → comprobación de la prueba en navegador (tests/e2e/web.mjs) con ese nombre
+#   []            → todavía sin comprobación automática: sale como "sin comprobar", nunca como hecho
+# Origen del texto: docs/requisitos.md (R1–R40, M1–M11) y docs/requisitos-web.md (A–K, P).
+requisitos:
+- id: R1
+  texto: Web de novedades de country/americana/folk y hard rock/AOR
+  origen: docs/requisitos.md
+  capa: alcance
+  comprobaciones:
+  - familias_presentes
+- id: R2
+  texto: Solo discos en inglés
+  origen: docs/requisitos.md
+  capa: reglas
+  comprobaciones:
+  - solo_ingles
+- id: R3
+  texto: '"Mejor que el mercado" frente a AOTY (más discos, antes, subgénero correcto) y decirlo si no se logra'
+  origen: docs/requisitos.md
+  capa: descubrimiento
+  comprobaciones:
+  - descubrimiento_referencias
+- id: R4
+  texto: Descartar EP
+  origen: docs/requisitos.md
+  capa: reglas
+  comprobaciones:
+  - sin_ep
+- id: R5
+  texto: Descartar reediciones / remasters
+  origen: docs/requisitos.md
+  capa: reglas
+  comprobaciones:
+  - sin_reediciones
+- id: R6
+  texto: Todo 2026 (enero–diciembre) además de los 5 últimos meses
+  origen: docs/requisitos.md
+  capa: descubrimiento
+  comprobaciones:
+  - ventana_y_meses
+- id: R7
+  texto: '"Lo mejor de cada año"'
+  origen: docs/requisitos.md
+  capa: web
+  comprobaciones:
+  - mejores_del_anio
+- id: R8
+  texto: Taxonomía cerrada del usuario con alias
+  origen: docs/requisitos.md
+  capa: clasificacion
+  comprobaciones:
+  - taxonomia_valida
+- id: R9
+  texto: Familias "en foco" de agenda-conciertos (rock y metal, punk y garage, indie y pop-rock, blues, synthwave y dark wave, cantautores; americana
+    = country; "sin clasificar" como filtro)
+  origen: docs/requisitos.md
+  capa: clasificacion
+  comprobaciones:
+  - taxonomia_valida
+  - familias_presentes
+- id: R10
+  texto: Etiqueta nueva → LLM una sola vez → mapeo_etiquetas.csv
+  origen: docs/requisitos.md
+  capa: clasificacion
+  comprobaciones:
+  - mapeo_sin_pendientes
+- id: R11
+  texto: Nunca crear subgéneros; proponerlos en el informe
+  origen: docs/requisitos.md
+  capa: clasificacion
+  comprobaciones:
+  - taxonomia_valida
+- id: R12
+  texto: LLM solo con el plan Pro, sin pagar API
+  origen: docs/requisitos.md
+  capa: procesos
+  comprobaciones:
+  - llm_sin_pago
+- id: R13
+  texto: Clasificación correcta
+  origen: docs/requisitos.md
+  capa: clasificacion
+  comprobaciones:
+  - coherencia_fuentes
+  - muestra_de_referencia
+- id: R14
+  texto: Verificar cada fuente propuesta
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones:
+  - fuentes_estado
+- id: R15
+  texto: 5 fuentes extra por familia
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones:
+  - fuentes_por_familia
+- id: R16
+  texto: Usar todas las fuentes posibles
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones:
+  - fuentes_estado
+- id: R17
+  texto: Bandcamp ≤ 1 petición / 4 s; MusicBrainz ≤ 1 / s
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones:
+  - ritmo_peticiones
+- id: R18
+  texto: 'Captcha o bloqueo: no saltarlo, avisar'
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones:
+  - bloqueos_respetados
+- id: R19
+  texto: Respetar robots.txt
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones:
+  - robots_activo
+- id: R20
+  texto: No inventar datos ni fuentes
+  origen: docs/requisitos.md
+  capa: datos
+  comprobaciones:
+  - fuente_por_disco
+- id: R21
+  texto: 'Extensible sin código: nuevas fuentes solo con configuración'
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones:
+  - configuracion_valida
+- id: R22
+  texto: Wikipedia "List of 2026 albums"
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones:
+  - fuente_wikipedia
+- id: R23
+  texto: Usar los repositorios compartidos (agenda-conciertos, radar de MusicBrainz, Deezer, UI de roberto-cabal…)
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones:
+  - radares_activos
+- id: R24
+  texto: Year End Lists; evaluar Musicboard, MusicTaste, Shfl, New Music Tracker
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones:
+  - listas_anuales
+- id: R25
+  texto: Spotify, Tidal
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones: []
+- id: R26
+  texto: Artista, título, fecha, sello, subgéneros, etiquetas originales, portada, nº de pistas, tipo, fuentes, reseñas (web + nota), enlaces
+  origen: docs/requisitos.md
+  capa: datos
+  comprobaciones:
+  - cobertura_campos
+- id: R27
+  texto: Cuadrícula de portadas por semanas, lo más reciente arriba
+  origen: docs/requisitos.md
+  capa: web
+  comprobaciones:
+  - web:portada_semanas
+- id: R28
+  texto: Ficha del disco
+  origen: docs/requisitos.md
+  capa: web
+  comprobaciones:
+  - web:ficha
+- id: R29
+  texto: 'Filtros: familia, subgénero múltiple, fechas (5 meses por defecto), sello, búsqueda'
+  origen: docs/requisitos.md
+  capa: web
+  comprobaciones:
+  - web:filtros
+- id: R30
+  texto: Pensada para móvil
+  origen: docs/requisitos.md
+  capa: web
+  comprobaciones:
+  - web:movil
+- id: R31
+  texto: Estática en GitHub Pages
+  origen: docs/requisitos.md
+  capa: publicacion
+  comprobaciones:
+  - web_publicada
+- id: R32
+  texto: Mejoras de UX del estudio (Mi lista, nota, orden, lista, compartir, calendario .ics, RSS, app instalable, meses, destacados, Deezer,
+    Qobuz, calendario de salidas…)
+  origen: docs/requisitos.md
+  capa: web
+  comprobaciones:
+  - web:mi_lista
+  - web:calendario
+- id: R33
+  texto: Estudio de las funciones de AOTY, RYM, Metacritic, AllMusic
+  origen: docs/requisitos.md
+  capa: estudio
+  comprobaciones:
+  - estudio_repetible
+- id: R34
+  texto: Plan corto y OK antes de programar; un commit por fase
+  origen: docs/requisitos.md
+  capa: procesos
+  comprobaciones: []
+- id: R35
+  texto: Action semanal
+  origen: docs/requisitos.md
+  capa: procesos
+  comprobaciones:
+  - action_semanal
+- id: R36
+  texto: Todo automático, sin sesión ni gasto
+  origen: docs/requisitos.md
+  capa: procesos
+  comprobaciones:
+  - action_semanal
+  - llm_sin_pago
+- id: R37
+  texto: Persistencia, tolerancia a fallos, reanudar
+  origen: docs/requisitos.md
+  capa: procesos
+  comprobaciones:
+  - reanudacion
+- id: R38
+  texto: Escenarios nominales, de borde, esquina y error
+  origen: docs/requisitos.md
+  capa: procesos
+  comprobaciones:
+  - pruebas_existentes
+- id: R39
+  texto: Rendimiento
+  origen: docs/requisitos.md
+  capa: web
+  comprobaciones:
+  - web:rendimiento
+- id: R40
+  texto: Secretos fuera del chat y del código
+  origen: docs/requisitos.md
+  capa: procesos
+  comprobaciones:
+  - sin_secretos
+- id: M1
+  texto: 'El informe debe dar: discos por familia y subgénero, % con subgénero, % en Bandcamp, discos que solo están en una fuente, comparación
+    con la página de géneros de AOTY o decir que no se puede'
+  origen: docs/requisitos.md
+  capa: informe
+  comprobaciones:
+  - informe_secciones
+- id: M2
+  texto: 'Subgéneros "frontera" (country-blues, southern-gospel, heartland-rock; melodic-metal, power-metal, soft-rock): se etiquetan pero no
+    son el foco'
+  origen: docs/requisitos.md
+  capa: clasificacion
+  comprobaciones:
+  - taxonomia_valida
+- id: M3
+  texto: Un disco puede tener varios subgéneros
+  origen: docs/requisitos.md
+  capa: clasificacion
+  comprobaciones:
+  - varios_subgeneros
+- id: M4
+  texto: Fuentes concretas de prensa, listados y sellos
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones:
+  - fuentes_estado
+- id: M5
+  texto: Preguntas y explicaciones no técnicas
+  origen: docs/requisitos.md
+  capa: procesos
+  comprobaciones: []
+- id: M6
+  texto: 'Fuentes de r/Music: Pause & Play, Hello Weimar Republic, Bandcamp Daily, Metacritic, AllMusic, AOTY'
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones:
+  - fuentes_estado
+- id: M7
+  texto: 'Repos: albumoftheyearapi, album-of-the-year-analysis, topic "allmusic", radares de Spotify (robbyrussell, PaulMcInnis, dttncl, MusicReleases)'
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones: []
+- id: M8
+  texto: 'Fuentes de agenda-conciertos: Wikipedia, Wikidata, Discogs, MusicBrainz, Last.fm, ReccoBeats, Wikimedia Commons'
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones: []
+- id: M9
+  texto: Pruebas de concepto saltándose Cloudflare
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones:
+  - bloqueos_respetados
+- id: M10
+  texto: ¿Tidal tiene API gratis?
+  origen: docs/requisitos.md
+  capa: fuentes
+  comprobaciones: []
+- id: M11
+  texto: New Music Tracker
+  origen: docs/requisitos.md
+  capa: estudio
+  comprobaciones:
+  - estudio_repetible
+- id: A1
+  texto: Abrir en "Esta semana" (de viernes a jueves) con discos ya publicados
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:A1
+- id: A2
+  texto: 'Secciones: Esta semana · Destacados (mejor nota / más reseñas) · Recientes · Próximos'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:A2
+- id: A3
+  texto: Cada sección con "ver todo ›"
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:A3
+- id: A4
+  texto: Próximos lanzamientos aparte, en lista compacta por fecha (sin cuadros grandes)
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:A4
+- id: A5
+  texto: 'Sin cuadros de colores con el nombre: si no hay portada, un marcador neutro discreto'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:A5
+- id: A6
+  texto: 'Cabecera limpia: nombre, buscar, menú; la fila de meses dentro de Filtros'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:A6
+- id: A7
+  texto: '"Semana del 27 de noviembre · 137 discos" visible'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:A7
+- id: A8
+  texto: 'Identidad propia: nombre, logo y estilo que no recuerden a la web de conciertos'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:A8
+- id: A9
+  texto: '"Mejores notas recientes": lista corta con nota, artista y medio'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:A9
+- id: A10
+  texto: '"Discos a seguir": portada + una frase de una reseña con su nota y medio'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:A10
+- id: A11
+  texto: Sin publicidad ni rastreo
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - sin_rastreo
+- id: B1
+  texto: Portada real, cuadrada, protagonista
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:B1
+- id: B2
+  texto: Título del disco (letra con remate) y artista debajo, sin repetir el nombre
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:B2
+- id: B3
+  texto: Fecha · estilo en una línea
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:B3
+- id: B4
+  texto: 'Nota visible tipo Metacritic: cuadro de color (verde ≥ 8, amarillo 6–7,9, rojo < 6) + nº de reseñas'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:B4
+- id: B5
+  texto: Indicador de interés (nº de reseñas/fuentes) en puntos, como la popularidad de NMT
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:B5
+- id: B6
+  texto: Marca de tipo cuando no es estudio (Directo, Recopilatorio)
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:B6
+- id: B7
+  texto: Guardar con un toque
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:mi_lista
+- id: C1
+  texto: 'Página propia que se puede compartir (hoy es una ventana con #id)'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C1
+- id: C2
+  texto: 'Migas: Artista / Disco'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C2
+- id: C3
+  texto: 'Cabecera: portada + título grande + "de Artista" enlazado + tipo · fecha · sello'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C3
+- id: C4
+  texto: Nota media grande + "según N reseñas"
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C4
+- id: C5
+  texto: '"Qué dice la crítica": medio, nota, fecha, primera frase, "leer reseña"'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C5
+- id: C6
+  texto: 'Acciones: Escuchar luego · Escuchado · Favorito'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C6
+- id: C7
+  texto: Géneros y estilos como etiquetas que filtran
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C7
+- id: C8
+  texto: Escuchar en Qobuz, TIDAL, Apple Music, Spotify, Deezer, Bandcamp, YouTube
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:escuchar
+- id: C9
+  texto: Comprar en Bandcamp / Qobuz
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C9
+- id: C10
+  texto: Lista de canciones con duración
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C10
+- id: C11
+  texto: '"Más de este artista" con portadas'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C11
+- id: C12
+  texto: Parecidos
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:parecidos
+- id: C13
+  texto: En qué listas de fin de año aparece
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C13
+- id: C14
+  texto: Dónde lo vimos (fuentes) y enlace a MusicBrainz
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:fuentes
+- id: C15
+  texto: 'Nota con palabra: "Muy favorable / Favorable / Dividida / Desfavorable" + "según N reseñas"'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C15
+- id: C16
+  texto: Barra de reseñas positivas / mixtas / negativas con su número
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C16
+- id: C17
+  texto: 'Filtrar las reseñas: todas, positivas, mixtas, negativas'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C17
+- id: C18
+  texto: 'Cada reseña como tarjeta: fecha, nota en cuadro de color, medio, frase, "reseña completa ↗"'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C18
+- id: C19
+  texto: Resumen del disco en 1–2 frases
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C19
+- id: C20
+  texto: Estados de ánimo y temas
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:C20
+- id: D1
+  texto: Página del artista con sus discos
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:D1
+- id: D2
+  texto: Origen ("de Nashville, EE. UU.")
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:D2
+- id: D3
+  texto: 'Discografía: álbumes, EP, directos'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:D3
+- id: D4
+  texto: Seguir al artista → sus novedades arriba en la portada
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:D4
+- id: E1
+  texto: 'Periodo: esta semana · 30 días · 90 días · año'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:E1
+- id: E2
+  texto: Familia (chips) y subgénero dentro
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:filtros
+- id: E3
+  texto: 'Orden: más nuevos · mejor nota · más reseñados'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:orden
+- id: E4
+  texto: País del artista
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:E4
+- id: E5
+  texto: '"Solo mis artistas"'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:E5
+- id: E6
+  texto: Contador de resultados y "cargar más"
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:filtros
+- id: E7
+  texto: Búsqueda por artista, disco o sello
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:busqueda
+- id: E8
+  texto: Vista de galería y de lista compacta
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:vistas
+- id: E9
+  texto: Tabla de todos los lanzamientos, ordenable por artista, disco, sello, género y nota
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:E9
+- id: E10
+  texto: Agrupar por día con una línea de tiempo para saltar de fecha
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:E10
+- id: F1
+  texto: 'Lo mejor del año: lista numerada con portada, nota, nº de reseñas'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:F1
+- id: F2
+  texto: Por familia
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:mejores
+- id: F3
+  texto: Lo mejor del mes y de la semana
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:F3
+- id: F4
+  texto: Listas de fin de año de la prensa (2019–2025)
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - listas_anuales
+- id: F5
+  texto: Orden ponderado por nº de reseñas (que un disco con 1 reseña no gane)
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - ranking_ponderado
+- id: F6
+  texto: Opción "un disco por artista" en los rankings
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:F6
+- id: F7
+  texto: '"Imprescindibles" del mes (los de mejor nota con un mínimo de reseñas)'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:F7
+- id: F8
+  texto: '"Tal día como hoy": discos que cumplen años'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:F8
+- id: G1
+  texto: Escuchar luego
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:mi_lista
+- id: G2
+  texto: Escuchados
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:G2
+- id: G3
+  texto: Favoritos
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:G3
+- id: G4
+  texto: Seguir artistas
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:G4
+- id: G5
+  texto: RSS y calendario
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - rss_y_calendarios
+- id: I1
+  texto: Títulos con letra con remate; datos con letra sin remate
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:I1
+- id: I2
+  texto: Paleta sobria con un color de acento
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:I2
+- id: I3
+  texto: 'Jerarquía y espacios: una cosa importante por bloque'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:I3
+- id: I4
+  texto: Iconos propios, sin emojis
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:I4
+- id: I5
+  texto: 'Escritorio: rejilla de 4–6 columnas; página del disco en dos columnas'
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:I5
+- id: I6
+  texto: Modo oscuro
+  origen: docs/requisitos-web.md
+  capa: web
+  comprobaciones:
+  - web:modo_oscuro
+- id: J1
+  texto: Portadas en el 95 % de los publicados (hoy 79 %)
+  origen: docs/requisitos-web.md
+  capa: datos
+  comprobaciones:
+  - cobertura_portadas
+- id: J2
+  texto: Primera frase de cada reseña
+  origen: docs/requisitos-web.md
+  capa: datos
+  comprobaciones:
+  - reseñas_con_frase
+- id: J3
+  texto: Lista de canciones
+  origen: docs/requisitos-web.md
+  capa: datos
+  comprobaciones:
+  - canciones
+- id: J4
+  texto: Origen del artista
+  origen: docs/requisitos-web.md
+  capa: datos
+  comprobaciones: []
+- id: J5
+  texto: Popularidad
+  origen: docs/requisitos-web.md
+  capa: datos
+  comprobaciones: []
+- id: J6
+  texto: Discografía del artista
+  origen: docs/requisitos-web.md
+  capa: datos
+  comprobaciones: []
+- id: K1
+  texto: Capturas de cada pantalla en móvil y escritorio, enviadas al usuario y aprobadas antes de publicar
+  origen: docs/requisitos-web.md
+  capa: validacion
+  comprobaciones:
+  - aprobacion_usuario
+- id: K2
+  texto: 'Pruebas automáticas de contenido: portada en la primera pantalla, título y artista visibles, nota visible si existe, sin cuadros de
+    color'
+  origen: docs/requisitos-web.md
+  capa: validacion
+  comprobaciones:
+  - web:contenido
+- id: K3
+  texto: Comparación lado a lado con NMT en las mismas pantallas
+  origen: docs/requisitos-web.md
+  capa: validacion
+  comprobaciones:
+  - estudio_repetible
+- id: K4
+  texto: Accesibilidad WCAG 2.1 AA
+  origen: docs/requisitos-web.md
+  capa: validacion
+  comprobaciones:
+  - web:accesibilidad
+- id: K5
+  texto: Rendimiento móvil ≥ 90
+  origen: docs/requisitos-web.md
+  capa: validacion
+  comprobaciones:
+  - web:rendimiento
+- id: P1
+  texto: Cargar un año entero (p. ej. 2025) cambiando solo la configuración
+  origen: docs/requisitos-web.md
+  capa: procesos
+  comprobaciones:
+  - anios_por_plantilla
+- id: P2
+  texto: Recogida semanal automática
+  origen: docs/requisitos-web.md
+  capa: procesos
+  comprobaciones:
+  - action_semanal
+- id: P3
+  texto: Auditoría "¿perdemos discos?" cada semana
+  origen: docs/requisitos-web.md
+  capa: procesos
+  comprobaciones:
+  - descubrimiento_referencias
+- id: P4
+  texto: Validación automática del procesamiento
+  origen: docs/requisitos-web.md
+  capa: procesos
+  comprobaciones:
+  - validacion_automatica
+- id: P5
+  texto: Estudio del estado del arte repetible
+  origen: docs/requisitos-web.md
+  capa: procesos
+  comprobaciones:
+  - estudio_repetible
+- id: P7
+  texto: Cada disco con sus pruebas por fuente (quién lo anunció, cuándo, con qué fecha) y una confianza
+  origen: docs/requisitos-web.md
+  capa: procesos
+  comprobaciones:
+  - pruebas_por_fuente
+- id: P6
+  texto: Webs que bloquean (AOTY, RYM, AllMusic)
+  origen: docs/requisitos-web.md
+  capa: procesos
+  comprobaciones:
+  - bloqueos_respetados
