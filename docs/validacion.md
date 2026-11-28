@@ -19,9 +19,9 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | publicacion | 1 | 0 | 0 | 0 | 0 |
 | reglas | 3 | 0 | 0 | 0 | 0 |
 | validacion | 2 | 0 | 1 | 1 | 1 |
-| web | 21 | 0 | 21 | 0 | 36 |
+| web | 34 | 0 | 8 | 0 | 42 |
 
-**Total: 140 requisitos** · cumplen 59 · aviso 2 · no cumplen 32 · sin datos 1 · sin comprobación 46
+**Total: 146 requisitos** · cumplen 72 · aviso 2 · no cumplen 19 · sin datos 1 · sin comprobación 52
 
 ## Comprobaciones que fallan o avisan
 
@@ -29,9 +29,9 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
     - Onasander & RNGMNN – Illumination Phases: ha desaparecido de la web
     - Astral Spectre – Cosmic Mirage: sobra classic-rock
     - Kreator – Krushers of the World: sobra death-metal|hard-rock
-    - The Notwist – News from Planet Zombie: sobra post-rock|post-hardcore
+    - The Notwist – News from Planet Zombie: sobra post-hardcore|post-rock
     - Ethan Setiawan & Fine Ground – Little Storms: ha desaparecido de la web
-- 🔴 **fuentes_estado**: 60 de 67 fuentes leídas bien — 89.6
+- 🔴 **fuentes_estado**: 62 de 69 fuentes leídas bien — 89.9
     - Heavy Harmonies – New Additions: prohibida robots.txt de heavyharmonies.com no permite https://heavyharmonies.com/cgi-bin/n
     - Metal Planet Music: vacia 
     - Blues Rock Review: vacia 
@@ -43,20 +43,20 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
     - scm_radar: https://savingcountrymusic.com/release-radar-most-anticipated-new-albums-for-final-portion-of-2026/
     - loudwire: https://loudwire.com/2026-hard-rock-metal-album-release-calendar/
     - loudwire: https://loudwire.com/2027-hard-rock-metal-album-release-calendar/
-- 🔴 **cobertura_campos**: 3794 discos ya publicados — portada 80.1, fecha_exacta 83.3, sello 73.2, pistas 82.3, subgenero 79.9, enlace_escucha 78.1
-    - portada: 80.1 % (mínimo 95 %)
-    - fecha_exacta: 83.3 % (mínimo 85 %)
-    - enlace_escucha: 78.1 % (mínimo 80 %)
-- 🔴 **cobertura_portadas**: mínimo 95 % — 80.1
-- 🔴 **reseñas_con_frase**: 209 de 2563 reseñas con frase — 8.2
-- 🔴 **canciones**: 0 de 3902 fichas con lista de canciones — 0.0
-- 🟡 **fuentes_por_familia**: fuentes especializadas por familia (mínimo 5; además cuentan las generales y los radares) — country 21, hardrock 16, rockmetal 4, blues 5, synthdark 4
+- 🔴 **cobertura_campos**: 3855 discos ya publicados — portada 80.3, fecha_exacta 83.6, sello 73.0, pistas 82.6, subgenero 80.2, enlace_escucha 78.0
+    - portada: 80.3 % (mínimo 95 %)
+    - fecha_exacta: 83.6 % (mínimo 85 %)
+    - enlace_escucha: 78.0 % (mínimo 80 %)
+- 🔴 **cobertura_portadas**: mínimo 95 % — 80.3
+- 🔴 **reseñas_con_frase**: 209 de 2561 reseñas con frase — 8.2
+- 🔴 **canciones**: 0 de 3970 fichas con lista de canciones — 0.0
+- 🟡 **fuentes_por_familia**: fuentes especializadas por familia (mínimo 5; además cuentan las generales y los radares) — country 21, hardrock 17, rockmetal 4, blues 5, synthdark 4
     - rockmetal: 4
     - punkgarage: 0
     - indiepop: 0
     - synthdark: 4
     - cantautores: 0
-- 🟡 **pruebas_por_fuente**: cada disco con fuente y fecha; falta la confianza por fuente (P7) — 59.3
+- 🟡 **pruebas_por_fuente**: cada disco con fuente y fecha; falta la confianza por fuente (P7) — 61.4
 
 ## Todos los requisitos
 
@@ -113,21 +113,21 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | M9 | Pruebas de concepto saltándose Cloudflare | fuentes | 🟢 cumple |
 | M10 | ¿Tidal tiene API gratis? | fuentes | ⚫ sin comprobación automática |
 | M11 | New Music Tracker | estudio | 🟢 cumple |
-| A1 | Abrir en "Esta semana" (de viernes a jueves) con discos ya publicados | web | 🔴 no cumple |
-| A2 | Secciones: Esta semana · Destacados (mejor nota / más reseñas) · Recientes · Próximos | web | 🔴 no cumple |
+| A1 | Abrir en "Esta semana" (de viernes a jueves) con discos ya publicados | web | 🟢 cumple |
+| A2 | Secciones: Esta semana · Destacados (mejor nota / más reseñas) · Recientes · Próximos | web | 🟢 cumple |
 | A3 | Cada sección con "ver todo ›" | web | ⚫ sin comprobación automática |
-| A4 | Próximos lanzamientos aparte, en lista compacta por fecha (sin cuadros grandes) | web | 🔴 no cumple |
-| A5 | Sin cuadros de colores con el nombre: si no hay portada, un marcador neutro discreto | web | 🔴 no cumple |
-| A6 | Cabecera limpia: nombre, buscar, menú; la fila de meses dentro de Filtros | web | 🔴 no cumple |
-| A7 | "Semana del 27 de noviembre · 137 discos" visible | web | 🔴 no cumple |
+| A4 | Próximos lanzamientos aparte, en lista compacta por fecha (sin cuadros grandes) | web | 🟢 cumple |
+| A5 | Sin cuadros de colores con el nombre: si no hay portada, un marcador neutro discreto | web | 🟢 cumple |
+| A6 | Cabecera limpia: nombre, buscar, menú; la fila de meses dentro de Filtros | web | 🟢 cumple |
+| A7 | "Semana del 27 de noviembre · 137 discos" visible | web | 🟢 cumple |
 | A8 | Identidad propia: nombre, logo y estilo que no recuerden a la web de conciertos | web | ⚫ sin comprobación automática |
-| A9 | "Mejores notas recientes": lista corta con nota, artista y medio | web | 🔴 no cumple |
+| A9 | "Mejores notas recientes": lista corta con nota, artista y medio | web | 🟢 cumple |
 | A10 | "Discos a seguir": portada + una frase de una reseña con su nota y medio | web | ⚫ sin comprobación automática |
 | A11 | Sin publicidad ni rastreo | web | 🟢 cumple |
-| B1 | Portada real, cuadrada, protagonista | web | 🔴 no cumple |
-| B2 | Título del disco (letra con remate) y artista debajo, sin repetir el nombre | web | 🔴 no cumple |
-| B3 | Fecha · estilo en una línea | web | 🔴 no cumple |
-| B4 | Nota visible tipo Metacritic: cuadro de color (verde ≥ 8, amarillo 6–7,9, rojo < 6) + nº d | web | 🔴 no cumple |
+| B1 | Portada real, cuadrada, protagonista | web | 🟢 cumple |
+| B2 | Título del disco (letra con remate) y artista debajo, sin repetir el nombre | web | 🟢 cumple |
+| B3 | Fecha · estilo en una línea | web | 🟢 cumple |
+| B4 | Nota visible tipo Metacritic: cuadro de color (verde ≥ 8, amarillo 6–7,9, rojo < 6) + nº d | web | 🟢 cumple |
 | B5 | Indicador de interés (nº de reseñas/fuentes) en puntos, como la popularidad de NMT | web | ⚫ sin comprobación automática |
 | B6 | Marca de tipo cuando no es estudio (Directo, Recopilatorio) | web | ⚫ sin comprobación automática |
 | B7 | Guardar con un toque | web | 🟢 cumple |
@@ -178,10 +178,10 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | G3 | Favoritos | web | ⚫ sin comprobación automática |
 | G4 | Seguir artistas | web | ⚫ sin comprobación automática |
 | G5 | RSS y calendario | web | 🟢 cumple |
-| I1 | Títulos con letra con remate; datos con letra sin remate | web | 🔴 no cumple |
+| I1 | Títulos con letra con remate; datos con letra sin remate | web | 🟢 cumple |
 | I2 | Paleta sobria con un color de acento | web | ⚫ sin comprobación automática |
 | I3 | Jerarquía y espacios: una cosa importante por bloque | web | ⚫ sin comprobación automática |
-| I4 | Iconos propios, sin emojis | web | 🔴 no cumple |
+| I4 | Iconos propios, sin emojis | web | 🟢 cumple |
 | I5 | Escritorio: rejilla de 4–6 columnas; página del disco en dos columnas | web | ⚫ sin comprobación automática |
 | I6 | Modo oscuro | web | ⚫ sin comprobación automática |
 | J1 | Portadas en el 95 % de los publicados (hoy 79 %) | datos | 🔴 no cumple |
@@ -202,3 +202,9 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | P5 | Estudio del estado del arte repetible | procesos | 🟢 cumple |
 | P7 | Cada disco con sus pruebas por fuente (quién lo anunció, cuándo, con qué fecha) y una conf | procesos | 🟡 aviso |
 | P6 | Webs que bloquean (AOTY, RYM, AllMusic) | procesos | 🟢 cumple |
+| L1 | Web en español e inglés, con selector ES / EN en la cabecera | web | ⚫ sin comprobación automática |
+| L2 | Idioma inicial el del móvil; se recuerda la elección; enlace con ?lang=en | web | ⚫ sin comprobación automática |
+| L3 | Textos en archivos por idioma (site/i18n/es.json, en.json) | web | ⚫ sin comprobación automática |
+| L4 | Familias y grupos con nombre en los dos idiomas; fechas y números según el idioma | web | ⚫ sin comprobación automática |
+| L5 | Todos los textos existen en los dos idiomas y no queda texto sin traducir | web | ⚫ sin comprobación automática |
+| L6 | Nombre propio: Cara A (Side A) y logo de etiqueta de disco | web | ⚫ sin comprobación automática |
