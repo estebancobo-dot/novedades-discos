@@ -52982,6 +52982,21 @@
 "nombre": "MYSTERY",
 "pais": "AU"
 },
+"art:7383a7fd-74e8-494e-8786-2894c589ec85": {
+"enlaces": {
+"discogs": "https://www.discogs.com/artist/1550134",
+"facebook": "https://www.facebook.com/pages/Invisible-System/46460854245",
+"harperdiabate.com": "http://www.harperdiabate.com/",
+"myspace.com": "https://myspace.com/invisiblesystem",
+"wikidata": "https://www.wikidata.org/wiki/Q14159274"
+},
+"etiquetas": [
+"baba maal"
+],
+"generos": [],
+"nombre": "Invisible System",
+"pais": "GB"
+},
 "art:738992a4-05a5-4ca1-b81e-c282e6351044": {
 "enlaces": {
 "about.me": "https://about.me/jonesdominique",
@@ -61854,6 +61869,26 @@
 "nombre": "Snail Mail",
 "pais": "US"
 },
+"art:86d37606-192d-4704-a171-49cec07ff800": {
+"enlaces": {
+"apple": "https://music.apple.com/gb/artist/1466905163",
+"bandcamp": "https://realfarmer.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/66953452",
+"discogs": "https://www.discogs.com/artist/7238463",
+"facebook": "https://www.facebook.com/realfarmer050",
+"instagram": "https://www.instagram.com/realfarmer91/",
+"last.fm": "https://www.last.fm/music/Real+Farmer",
+"leftofthedial.nl": "http://leftofthedial.nl/act/real-farmer/",
+"setlist.fm": "https://www.setlist.fm/setlists/real-farmer-33c96045.html",
+"spotify": "https://open.spotify.com/artist/19lSZSwxm5y6ihi5mODLaK",
+"tidal": "https://tidal.com/artist/15948078",
+"twitter.com": "https://twitter.com/realfarmer_band"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Real Farmer",
+"pais": "NL"
+},
 "art:86d9ef34-b6a8-45e8-af1d-57b65b123c2b": {
 "enlaces": {},
 "etiquetas": [],
@@ -68636,6 +68671,19 @@
 "nombre": "Ten",
 "pais": "GB"
 },
+"art:95609898-be2b-4e5a-9b40-c2ab8467b495": {
+"enlaces": {
+"bandcamp": "https://cableboyband.bandcamp.com/",
+"cableboyband.com": "https://cableboyband.com/home",
+"instagram": "https://www.instagram.com/cableboyband/",
+"soundcloud": "https://soundcloud.com/cableboyband",
+"spotify": "https://open.spotify.com/artist/4IkbijVrvq7OLHo8h7Inah"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Cable Boy",
+"pais": "IE"
+},
 "art:9573ca26-3e40-4139-a8b9-909ac6fd4f91": {
 "enlaces": {
 "apple": "https://itunes.apple.com/cr/artist/id1515044485",
@@ -74693,6 +74741,18 @@
 ],
 "nombre": "Noah Kahan",
 "pais": "US"
+},
+"art:a2a57527-0375-4789-8913-da1aac870235": {
+"enlaces": {
+"discogs": "https://www.discogs.com/artist/7258177",
+"facebook": "https://www.facebook.com/forbreakfastband",
+"instagram": "https://www.instagram.com/forbreakfastband/",
+"twitter.com": "https://twitter.com/forbreakfast420"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "For Breakfast",
+"pais": "GB"
 },
 "art:a2a7a393-5a91-4b77-a493-bec188e1f0d7": {
 "enlaces": {},
@@ -100645,6 +100705,15 @@
 "nombre": "Pilori",
 "pais": "FR"
 },
+"art:db8d29da-2d73-418a-af2d-a2d87d8ebcd4": {
+"enlaces": {
+"burnedaswitches.com": "http://burnedaswitches.com/"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "Burned As Witches",
+"pais": null
+},
 "art:db8efd58-7cd0-4ca8-a538-14ad6b44640b": {
 "enlaces": {
 "allmusic": "https://www.allmusic.com/artist/mn0003902290",
@@ -105105,6 +105174,33 @@
 "nombre": "Tony Iommi",
 "pais": "GB"
 },
+"art:e6066553-7787-4b74-8560-44a9df5c5813": {
+"enlaces": {
+"bandcamp": "https://urzahband.bandcamp.com/",
+"facebook": "https://www.facebook.com/urzahband",
+"instagram": "https://www.instagram.com/urzahband/"
+},
+"etiquetas": [
+"doom metal",
+"heavy metal",
+"metal",
+"metalcore",
+"post-metal",
+"progressive metal",
+"sludge metal"
+],
+"generos": [
+"doom metal",
+"heavy metal",
+"metal",
+"metalcore",
+"post-metal",
+"progressive metal",
+"sludge metal"
+],
+"nombre": "Urzah",
+"pais": "GB"
+},
 "art:e636499d-e34d-4154-be4c-2de9210d12c3": {
 "enlaces": {
 "apple": "https://music.apple.com/gb/artist/1820833266",
@@ -106006,6 +106102,13 @@
 ],
 "nombre": "Lair of the Minotaur",
 "pais": "US"
+},
+"art:e81699c8-605c-4473-a6ce-623f1c8836f3": {
+"enlaces": {},
+"etiquetas": [],
+"generos": [],
+"nombre": "CROMLECH",
+"pais": null
 },
 "art:e86492c1-0376-4df0-8042-8ba058c83960": {
 "enlaces": {
@@ -108846,6 +108949,28 @@
 "etiquetas": [],
 "generos": [],
 "nombre": "Jamie Lenman",
+"pais": "GB"
+},
+"art:eec6108a-240e-4dc2-89d7-a6e1c3ff14e4": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000786652",
+"apple": "https://music.apple.com/us/artist/68209657",
+"creation-records.com": "http://www.creation-records.com/weatherprophets/",
+"deezer": "https://www.deezer.com/artist/204029",
+"discogs": "https://www.discogs.com/artist/310024",
+"myspace.com": "https://myspace.com/bandtheloft",
+"songkick.com": "https://www.songkick.com/artists/330991",
+"spotify": "https://open.spotify.com/artist/28D4CxE3IfTcY2M4TDWNV8",
+"wikidata": "https://www.wikidata.org/wiki/Q3521623"
+},
+"etiquetas": [
+"ghost trains and country lanes",
+"indie pop"
+],
+"generos": [
+"indie pop"
+],
+"nombre": "The Loft",
 "pais": "GB"
 },
 "art:eed2aea2-a7ae-4fcb-81da-2792227fb502": {
@@ -112303,6 +112428,13 @@
 "etiquetas": [],
 "generos": [],
 "nombre": "DEADLETTER",
+"pais": "GB"
+},
+"art:f642895c-2dff-43be-8d4d-4f4010145c0a": {
+"enlaces": {},
+"etiquetas": [],
+"generos": [],
+"nombre": "Shapes Like People",
 "pais": "GB"
 },
 "art:f64da283-5134-4d8a-8d2d-8b3d0be06374": {
@@ -131776,6 +131908,30 @@
 "tipos_secundarios": [],
 "titulo": "Concrete Cowboy"
 },
+"rg:burned as witches|burned as witches": {
+"artista": "Burned As Witches",
+"artistas_id": [
+"db8d29da-2d73-418a-af2d-a2d87d8ebcd4"
+],
+"enlaces": {
+"apple": "https://music.apple.com/us/album/1876932628"
+},
+"fecha_release": "2026-04-17",
+"idioma": "eng",
+"pais": null,
+"pistas": 8,
+"portada": "https://coverartarchive.org/release-group/8093dbca-0ace-432e-aec9-5872ab1c2eee/front-250",
+"primera_fecha": "2026-04-17",
+"puntuacion": 1.0,
+"release": "4c7950fd-8006-4643-a5e7-6ed0ca105c67",
+"rg": "8093dbca-0ace-432e-aec9-5872ab1c2eee",
+"sellos": [
+"Fierce Panda Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Burned As Witches"
+},
 "rg:burner|no one is coming to save us": {
 "artista": "Burner",
 "artistas_id": [
@@ -132128,6 +132284,28 @@
 "Live"
 ],
 "titulo": "But What Time Is It Really?"
+},
+"rg:cable boy|forever": {
+"artista": "Cable Boy",
+"artistas_id": [
+"95609898-be2b-4e5a-9b40-c2ab8467b495"
+],
+"enlaces": {
+"apple": "https://music.apple.com/fr/album/1886412956"
+},
+"fecha_release": "2026-04-17",
+"idioma": "eng",
+"pais": null,
+"pistas": 13,
+"portada": "https://coverartarchive.org/release-group/28ec7ee8-3b10-4ff9-b48b-0fadbb2250eb/front-250",
+"primera_fecha": "2026-04-17",
+"puntuacion": 1.0,
+"release": "c03d38d2-a724-43a2-a324-62ef7e7a31f3",
+"rg": "28ec7ee8-3b10-4ff9-b48b-0fadbb2250eb",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Forever"
 },
 "rg:cactus|temple of blues ii": {
 "no_encontrado": "2026-11-22"
@@ -138144,9 +138322,21 @@
 "artistas_id": [
 "e81699c8-605c-4473-a6ce-623f1c8836f3"
 ],
+"enlaces": {
+"bandcamp": "https://deathbedtapes.bandcamp.com/album/expect-poison"
+},
+"fecha_release": "2026-05-15",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 7,
+"portada": "https://coverartarchive.org/release-group/d5a7b017-487f-4bdb-a463-dadf463321b6/front-250",
 "primera_fecha": "2026-05-15",
 "puntuacion": 1.0,
+"release": "07dcb616-aae2-48db-830e-b95b8ac5381c",
 "rg": "d5a7b017-487f-4bdb-a463-dadf463321b6",
+"sellos": [
+"Deathbed Tapes"
+],
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "EXPECT POISON"
@@ -141145,6 +141335,9 @@
 },
 "rg:dead south|silence please": {
 "no_encontrado": "2026-11-22"
+},
+"rg:dead stilettos|bodge job": {
+"no_encontrado": "2026-11-28"
 },
 "rg:dead sun|this life is a grave": {
 "artista": "Dead Sun",
@@ -147530,6 +147723,9 @@
 "tipos_secundarios": [],
 "titulo": "Big Mike"
 },
+"rg:ella clayton|could it be you": {
+"no_encontrado": "2026-11-28"
+},
 "rg:ella hooper|overnight success": {
 "artista": "Ella Hooper",
 "artistas_id": [
@@ -152474,6 +152670,30 @@
 "tipos_secundarios": [],
 "titulo": "Topanga Canyon"
 },
+"rg:for breakfast|longer than spring": {
+"artista": "For Breakfast",
+"artistas_id": [
+"a2a57527-0375-4789-8913-da1aac870235"
+],
+"enlaces": {
+"bandcamp": "https://forbreakfast.bandcamp.com/album/longer-than-spring"
+},
+"fecha_release": "2026-05-15",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 7,
+"portada": "https://coverartarchive.org/release-group/2a4e1159-5486-4718-91ff-b5c5b571dcb6/front-250",
+"primera_fecha": "2026-05-15",
+"puntuacion": 1.0,
+"release": "c013b940-98af-4054-a7bb-5135f0f2d53b",
+"rg": "2a4e1159-5486-4718-91ff-b5c5b571dcb6",
+"sellos": [
+"[no label]"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Longer Than Spring"
+},
 "rg:for king and country|most beautiful colours": {
 "artista": "for KING & COUNTRY",
 "artistas_id": [
@@ -154874,6 +155094,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Wellness Plan"
+},
+"rg:gentilesky|dream": {
+"no_encontrado": "2026-11-28"
 },
 "rg:geography of hell|baghdad 1991 baghdad 2003": {
 "artista": "Geography of Hell",
@@ -161652,6 +161875,9 @@
 "tipos_secundarios": [],
 "titulo": "Big World"
 },
+"rg:howlers|heavy and release new single viper": {
+"no_encontrado": "2026-11-28"
+},
 "rg:howling bells|strange life": {
 "artista": "Howling Bells",
 "artistas_id": [
@@ -162431,6 +162657,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "II"
+},
+"rg:icons of filth|time of the signs": {
+"no_encontrado": "2026-11-28"
 },
 "rg:id id id|sour": {
 "no_encontrado": "2026-11-27"
@@ -163626,6 +163855,18 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Nocturnal Visions"
+},
+"rg:invisible system|dub": {
+"artista": "Invisible System",
+"artistas_id": [
+"7383a7fd-74e8-494e-8786-2894c589ec85"
+],
+"primera_fecha": "2026-03-31",
+"puntuacion": 1.0,
+"rg": "439f7eea-648f-4570-af68-61598526d827",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "DUB"
 },
 "rg:iommi|from the dark": {
 "artista": "Iommi",
@@ -173186,6 +173427,9 @@
 "tipos_secundarios": [],
 "titulo": "The Dead Ones"
 },
+"rg:late transmissions starring eve quartermain|heart wants what it wants": {
+"no_encontrado": "2026-11-28"
+},
 "rg:laura chavez|my voice": {
 "artista": "Laura Chavez",
 "artistas_id": [
@@ -174073,6 +174317,9 @@
 },
 "rg:leslie waugh|night bloom": {
 "no_encontrado": "2026-11-22"
+},
+"rg:lester square|sin": {
+"no_encontrado": "2026-11-28"
 },
 "rg:lester winchester mckendree|they got it all": {
 "no_encontrado": "2026-11-22"
@@ -175441,6 +175688,30 @@
 },
 "rg:locustz|buzzkill": {
 "no_encontrado": "2026-11-22"
+},
+"rg:loft|badges": {
+"artista": "The Loft",
+"artistas_id": [
+"eec6108a-240e-4dc2-89d7-a6e1c3ff14e4"
+],
+"enlaces": {
+"apple": "https://music.apple.com/fr/album/1871533125"
+},
+"fecha_release": "2026-05-08",
+"idioma": "eng",
+"pais": null,
+"pistas": 10,
+"portada": "https://coverartarchive.org/release-group/d010098c-5453-4003-b720-622233dd908c/front-250",
+"primera_fecha": "2026-05-08",
+"puntuacion": 1.0,
+"release": "8a4241a9-6e13-48e1-aa08-b9ae1ef6b198",
+"rg": "d010098c-5453-4003-b720-622233dd908c",
+"sellos": [
+"Tapete Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Badges"
 },
 "rg:logan mac|live at the print shop": {
 "no_encontrado": "2026-11-22"
@@ -177793,6 +178064,9 @@
 "tipos_secundarios": [],
 "titulo": "The Dance of Tragedies"
 },
+"rg:malcolm mcintyre|every bullet hit": {
+"no_encontrado": "2026-11-28"
+},
 "rg:malcolm todd|do that again": {
 "artista": "Malcolm Todd",
 "artistas_id": [
@@ -178624,6 +178898,9 @@
 },
 "rg:mark sanders|luck of the draw": {
 "no_encontrado": "2026-11-22"
+},
+"rg:mark vennis and different place|goodbye to all that": {
+"no_encontrado": "2026-11-28"
 },
 "rg:mark wills|grand ole revival": {
 "no_encontrado": "2026-11-22"
@@ -184728,6 +185005,9 @@
 },
 "rg:name droppers|lets live together": {
 "no_encontrado": "2026-11-22"
+},
+"rg:nameless friends|quiet part loudly": {
+"no_encontrado": "2026-11-28"
 },
 "rg:nanowar of steel|where barbagiannis dare live at summer breeze 2026": {
 "no_encontrado": "2026-11-27"
@@ -194651,6 +194931,9 @@
 "tipos_secundarios": [],
 "titulo": "Master of the Skies"
 },
+"rg:quogne|doux": {
+"no_encontrado": "2026-11-28"
+},
 "rg:r e m|black sessions revealed": {
 "no_encontrado": "2026-11-22"
 },
@@ -195633,6 +195916,31 @@
 },
 "rg:re mattei|stories lived": {
 "no_encontrado": "2026-11-22"
+},
+"rg:real farmer|two wrongs dont make a right": {
+"artista": "Real Farmer",
+"artistas_id": [
+"86d37606-192d-4704-a171-49cec07ff800"
+],
+"enlaces": {
+"bandcamp": "https://realfarmer.bandcamp.com/album/two-wrongs-dont-make-a-right",
+"spotify": "https://open.spotify.com/album/2XxibTCJ6QIEdFQ7gZnc13"
+},
+"fecha_release": "2026-05-01",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/f503944e-305d-41d8-a505-025c3f03865f/front-250",
+"primera_fecha": "2026-05-01",
+"puntuacion": 1.0,
+"release": "747e6a28-d497-444e-99d1-44e120b99df6",
+"rg": "f503944e-305d-41d8-a505-025c3f03865f",
+"sellos": [
+"Strap Originals"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Two Wrongs Don't Make a Right"
 },
 "rg:real mckenzies|paul mckenzie sings on yer bike": {
 "artista": "The Real McKenzies",
@@ -200962,6 +201270,9 @@
 "tipos_secundarios": [],
 "titulo": "Have Mercy!"
 },
+"rg:search for autonomy|search for autonomy": {
+"no_encontrado": "2026-11-28"
+},
 "rg:search results|sun or man or god": {
 "artista": "Search Results",
 "artistas_id": [
@@ -202477,6 +202788,28 @@
 "tipos_secundarios": [],
 "titulo": "Journal"
 },
+"rg:shapes like people|under the rainbow": {
+"artista": "Shapes Like People",
+"artistas_id": [
+"f642895c-2dff-43be-8d4d-4f4010145c0a"
+],
+"enlaces": {
+"bandcamp": "https://shapeslikepeople.bandcamp.com/album/under-the-rainbow"
+},
+"fecha_release": "2026-04-17",
+"idioma": null,
+"pais": "XW",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/81d86bfc-d568-4ada-855d-3fab148f5c6b/front-250",
+"primera_fecha": "2026-04-17",
+"puntuacion": 1.0,
+"release": "6995260a-e568-40fc-984f-56edfdea958d",
+"rg": "81d86bfc-d568-4ada-855d-3fab148f5c6b",
+"sellos": [],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Under the Rainbow"
+},
 "rg:sharon lazibyrd|tides keep turning": {
 "no_encontrado": "2026-11-27"
 },
@@ -203577,6 +203910,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Looking Glass Hymnal Blue"
+},
+"rg:simon bromide and the bromides|forest mountain forest": {
+"no_encontrado": "2026-11-28"
 },
 "rg:simon joyner|tough love": {
 "artista": "Simon Joyner",
@@ -206678,6 +207014,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Recuerda Tu Muerte"
+},
+"rg:spont ar stad|lp": {
+"no_encontrado": "2026-11-28"
 },
 "rg:spooky eyes|spooky eyes": {
 "artista": "Spooky Eyes",
@@ -216028,6 +216367,30 @@
 "tipos_secundarios": [],
 "titulo": "Setting Fire to the Sky"
 },
+"rg:urzah|tranquil void": {
+"artista": "Urzah",
+"artistas_id": [
+"e6066553-7787-4b74-8560-44a9df5c5813"
+],
+"enlaces": {
+"bandcamp": "https://urzahband.bandcamp.com/album/a-tranquil-void"
+},
+"fecha_release": "2026-06-05",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 8,
+"portada": "https://coverartarchive.org/release-group/e9f1c71d-f704-4fd9-86f3-5e52dc99359a/front-250",
+"primera_fecha": "2026-06-05",
+"puntuacion": 1.0,
+"release": "b9b5a245-7175-46b2-adf4-8433f86a2467",
+"rg": "e9f1c71d-f704-4fd9-86f3-5e52dc99359a",
+"sellos": [
+"APF Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "A Tranquil Void"
+},
 "rg:utility|futures": {
 "artista": "UTILITY",
 "artistas_id": [
@@ -218626,6 +218989,9 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "System Error: Humanity"
+},
+"rg:walter verdin and various artists|minimalize your reworks": {
+"no_encontrado": "2026-11-28"
 },
 "rg:war and treaty|story of michael and tanya": {
 "artista": "The War And Treaty",
@@ -221379,6 +221745,18 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Bakerz Dozen"
+},
+"rg:wu lyf|wave that will never break": {
+"artista": "WU LYF",
+"artistas_id": [
+"338aa8c7-a7c0-4043-9c49-657ae3714f9b"
+],
+"primera_fecha": "2026-04-10",
+"puntuacion": 1.0,
+"rg": "650b830c-2b95-4ca6-bfb4-e3b1f3385058",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "A Wave That Will Never Break"
 },
 "rg:wulf and cashew|rebirth rebrand": {
 "no_encontrado": "2026-11-22"
