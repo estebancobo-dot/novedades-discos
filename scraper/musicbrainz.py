@@ -105,6 +105,8 @@ class MusicBrainz:
             if normalizar(artista) and normalizar(artista) in normalizar(nombre):
                 sa = max(sa, 0.95)
             p = st * 0.6 + sa * 0.4
+            # Mismo nombre para el disco y su sencillo (la canción que da título): a igualdad, el disco.
+            p += {"Album": 0.02, "EP": 0.01}.get(rg.get("primary-type") or "", 0.0)
             if st >= self.umbral and sa >= self.umbral and p > puntos:
                 mejor, puntos = rg, p
         if not mejor:

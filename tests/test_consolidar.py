@@ -120,3 +120,9 @@ def test_ediciones_ampliadas_de_un_disco_anterior():
          disco("g", "Other", "Sun", "2026-05-01"), disco("h", "Other", "Sun Rising", "2026-05-10")]  # 9 días: no
     r = ampliaciones(l)
     assert list(r) == [1] and "Magnolia Sage" in r[1]
+
+
+def test_la_fuente_lo_etiqueta_como_reedicion_o_caja():
+    assert "Box sets" in motivo_no_nuevo({"artista": "Rainbow", "titulo": "Live In Koln",
+                                           "etiquetas_originales": ["ALBUM REVIEWS", "Box sets"]}, REGLAS)
+    assert motivo_no_nuevo({"artista": "X", "titulo": "Y", "etiquetas_originales": ["Reviews", "reissue culture"]}, REGLAS) is None

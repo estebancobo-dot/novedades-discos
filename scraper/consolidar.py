@@ -168,4 +168,9 @@ def motivo_no_nuevo(d: dict, reglas: dict) -> str | None:
         m = re.search(rx_titulo, d.get("titulo") or "")
         if m:
             return f"no es un disco nuevo («{m.group(0).strip()}» en el título)"
+    rx_etq = reglas.get("etiquetas_no_nuevo")
+    if rx_etq:
+        for e in d.get("etiquetas_originales") or []:
+            if re.search(rx_etq, e):
+                return f"no es un disco nuevo (la fuente lo etiqueta «{e}»)"
     return None

@@ -115,3 +115,16 @@ def test_formato_de_los_datos_publicados(rel):
         ids.add(x["id"])
         assert all(s in tax.sub for s in x["subgeneros"]), x["id"]
         assert all(fam in TAX["familias"] for fam in x["familias"]), x["id"]
+
+
+def test_reedicion_en_descripciones_largas_no_confunde_formatos_ni_aniversarios():
+    import re
+    reglas = cargar("data/config.yaml")["reglas"]
+    rx = re.compile(reglas["reedicion_en_descripcion"])
+    for nuevo in ["Vinyl; Purple Marble Vinyl; Box Set, containing CD, splatter vinyl and cassette",
+                  "his 21st studio album, marking his 50th anniversary as a recording artist; 13 tracks"]:
+        assert not rx.search(nuevo), nuevo
+    for viejo in ["Retroactive Records vinyl reissue", "35th Anniversary Remix & Remaster",
+                  "a newly curated archival release celebrating the 30th anniversary of Lost Dogs",
+                  "releases a deluxe version of his well-received album", "Ulterium Records 2LP re-release"]:
+        assert rx.search(viejo), viejo

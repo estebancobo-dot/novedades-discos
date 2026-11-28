@@ -201,12 +201,23 @@ def main():
     if os.path.exists(p_rev):
         with open(p_rev, encoding="utf-8", newline="") as f:
             rev = list(csv.DictReader(f))
-        ok = sum(1 for r in rev if r.get("resultado") == "correcto")
-        parcial = sum(1 for r in rev if r.get("resultado") == "parcial")
+        c = Counter(r.get("resultado") for r in rev)
+        juzgados = c["correcto"] + c["parcial"] + c["incorrecto"]
         w("### Aciertos medidos en una muestra revisada\n")
-        w(f"Muestra de **{len(rev)}** discos revisados uno a uno (`data/revision_clasificacion.csv`): "
-          f"correctos **{pct(ok, len(rev))}**, parcialmente correctos {pct(parcial, len(rev))}, "
-          f"incorrectos {pct(len(rev) - ok - parcial, len(rev))}.\n")
+        w(f"Muestra al azar de **{len(rev)}** discos revisados uno a uno (`data/revision_clasificacion.csv`), "
+          "según lo que se sabe de cada artista y el género que da la propia reseña.\n")
+        w(f"- De los **{juzgados}** con subgénero que se pueden juzgar: correctos **{pct(c['correcto'], juzgados)}**, "
+          f"parcialmente correctos (algún subgénero de más) {pct(c['parcial'], juzgados)}, incorrectos {pct(c['incorrecto'], juzgados)}.")
+        w(f"- Sin subgénero (pero en su familia): {c['sin_subgenero']} · sin datos suficientes para juzgar: {c['no_verificable']}.")
+        if c["fuera_bien"] or c["fuera_mal"]:
+            w(f"- Apartados al revisar las reglas: {c['fuera_bien'] + c['fuera_mal']} "
+              f"({c['fuera_bien']} con razón, {c['fuera_mal']} probablemente por error).")
+        errores = [r for r in rev if r.get("resultado") in ("incorrecto", "fuera_mal", "parcial") and r.get("nota")]
+        if errores:
+            w("\nErrores y su causa:\n")
+            for r in errores:
+                w(f"- {r['artista']} – *{r['titulo']}* ({r['resultado'].replace('_', ' ')}): {r['nota']}")
+        w("")
 
     w("## Discos por familia y subgénero\n")
     datos_tax = cargar_yaml(R["taxonomia"])

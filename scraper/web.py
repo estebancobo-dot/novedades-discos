@@ -104,6 +104,12 @@ def main():
     listas = json.load(open(p_listas, encoding="utf-8")) if os.path.exists(p_listas) else {}
     reglas = (tax.get("reglas") or {})
     umbral_dest = float(reglas.get("destacado_nota", 8.0))
+    # Para ordenar "lo mejor", nota media ponderada (bayesiana, como IMDb): con pocas reseñas se
+    # acerca a la media de todas; una sola reseña de 10 no gana a cinco de 8,5. La nota que se
+    # muestra sigue siendo la media real.
+    todas = [n for d in discos for n in (nota_10(r.get("nota")) for r in d.get("resenas", [])) if n is not None]
+    media_global = sum(todas) / len(todas) if todas else 7.0
+    peso_prior = float(reglas.get("peso_media_global", 2))
     salida = []
     for d in discos:
         peq, gra = _portadas(d.get("portada"), d.get("deezer"))
@@ -111,8 +117,8 @@ def main():
         media = round(sum(notas) / len(notas), 1) if notas else None
         destacado = bool((media is not None and media >= umbral_dest and len(notas) >= 1) or len(d.get("resenas", [])) >= 3)
         en_listas = d.get("listas_anuales", [])
-        puntos = round((media or 0) + 1.5 * len(en_listas) + 0.3 * min(len(d.get("resenas", [])), 5)
-                       + 0.2 * min(len({x["id"] for x in d.get("fuentes", [])}), 5) + (1 if destacado else 0), 2)
+        puntos = puntuacion(notas, len(en_listas), len(d.get("resenas", [])), len({x["id"] for x in d.get("fuentes", [])}),
+                            destacado, media_global, peso_prior)
         salida.append({
             "id": d["id"], "artista": d["artista"], "titulo": d["titulo"],
             "fecha": d["fecha"], "fecha_exacta": d.get("fecha_exacta", True),
@@ -169,6 +175,14 @@ def main():
 
 
 # ------------------------------------------------------------------ RSS
+def puntuacion(notas: list[float], n_listas: int, n_resenas: int, n_fuentes: int, destacado: bool,
+               media_global: float = 7.0, peso_prior: float = 2.0) -> float:
+    """Puntos para "lo mejor del año": nota media ponderada (bayesiana) + listas de fin de año
+    + reseñas y fuentes (con tope) + destacado."""
+    ponderada = (sum(notas) + peso_prior * media_global) / (len(notas) + peso_prior) if notas else 0
+    return round(ponderada + 1.5 * n_listas + 0.3 * min(n_resenas, 5) + 0.2 * min(n_fuentes, 5) + (1 if destacado else 0), 2)
+
+
 def version_2x(url: str | None) -> str | None:
     """La misma portada al doble de tamaño. Debe coincidir con version2x() de site/app.js."""
     if not url:

@@ -80,6 +80,8 @@ reglas:
   tipos_secundarios_excluidos: [Compilation, Soundtrack, Remix, DJ-mix, Mixtape/Street, Demo, Interview, Audiobook, Spokenword]
   # Palabras en el título o en la descripción de la fuente que indican reedición.
   reedicion: '(?i)\b(re-?release|reissue|re-?issue|remaster(ed)?|anniversary edition|\d+(st|nd|rd|th) anniversary|expanded edition|vinyl reissue|cd version|deluxe reissue|deluxe (version|edition) of|box set)\b'
+  # en descripciones largas no cuentan "box set" (formato de venta) ni el aniversario del artista ("marking his 50th anniversary")
+  reedicion_en_descripcion: '(?i)\b(re-?release|re-?issue|remaster(ed)?|archival release|anniversary (edition|reissue|re-?release|remaster|remix|collector)|anniversary of|expanded edition|deluxe (version|edition) of|deluxe reissue)'
   ep: '(?i)(^|\W)(EP|E\.P\.)(\W|$)'          # en tipo, título o notas cortas
   # En descripciones largas solo cuenta si se dice que ESTE disco es un EP.
   ep_en_descripcion: '(?i)\b(\d+|one|two|three|four|five|six|seven)[- ](song|track)\s+EP\b|^(an?|new|debut)\s+EP\b|\b(releases?|shares?|drops?|unveils?|is)\s+(an?|her|his|their|the|new|debut)\s+(new\s+|debut\s+)?EP\b'
@@ -103,6 +105,7 @@ consolidacion:
   similitud_titulo: 0.95        # mismo artista y título casi igual (erratas, espacios)
   dias_maximos: 45              # ...y fechas a menos de N días
   dias_maximos_titulo_identico: 200   # título idéntico (sin abreviaturas, espacios ni signos): una fuente da la fecha del anuncio
+  etiquetas_no_nuevo: '(?i)^\s*(reissues?|box ?sets?|compilations?|remaster(s|ed)?|anthology)\s*$'   # etiqueta de la propia fuente
   descartar_ampliaciones: true      # "Título (In Full Bloom)" que sale meses después de "Título": no es disco nuevo
   dias_minimos_ampliacion: 30
   titulos_equivalentes:         # grafías especiales del mismo título (se comparan normalizadas)
@@ -121,7 +124,7 @@ enriquecimiento:
     discogs: {activo: true, variable_token: DISCOGS_TOKEN}   # el token es opcional
     lastfm: {activo: true, variable_clave: LASTFM_KEY}       # sin clave, se omite
     deezer: {activo: true}     # a todos los discos: enlace, tipo (álbum/EP), reproductor, portada
-    itunes: {activo: true}     # solo a los que siguen sin subgénero: género de Apple y enlace
+    itunes: {activo: true}     # solo a los que siguen sin subgénero (403 el 28-nov a 3,1 s: ahora 1 cada 4 s)
   # Mapeo de etiquetas con la API de pago de Anthropic: DESACTIVADO (decisión del usuario: sin gasto).
   # El LLM se usa con el plan Pro a través de Claude Code (Action con CLAUDE_CODE_OAUTH_TOKEN, ver
   # .github/workflows/semanal.yml, o en una sesión) mediante scraper.etiquetas_llm. Wikidata, siempre.

@@ -83,12 +83,27 @@ def etiquetas_de(d: dict, tax: Taxonomia) -> list[tuple[str, str]]:
     return out
 
 
+def _conocida_entera(n: str, tax: Taxonomia, mapeo: dict) -> bool:
+    """La etiqueta entera ya dice algo: no se trocea ("Folk, World, & Country" de Discogs es una
+    categoría amplia; sus trozos "Folk" y "Country" dirían más de lo que dice)."""
+    return n in tax.ignorar or n in tax.alias or n in tax.genericas or (n in mapeo and mapeo[n]["subgenero"] not in ("pendiente", "", "ninguno"))
+
+
+def _sin_genero_ajeno(d: dict, tax: Taxonomia, r: dict) -> bool:
+    """El disco no trae etiquetas de género de los servicios (MusicBrainz, Discogs, Deezer...) o
+    solo genéricas nuestras ("blues", "rock"). Las de la propia fuente en estas webs son nombres de
+    músicos y secciones ("Album Reviews"). Si trae "soul" o "jazz" de un servicio, no se le pone familia."""
+    return r["familias_genericas"] != [] or not any(o != "fuente" for _, o in etiquetas_de(d, tax))
+
+
 def clasificar_disco(d: dict, tax: Taxonomia, mapeo: dict, desconocidas: Counter, ejemplo: dict) -> dict:
     puntos: Counter = Counter()
-    familias_gen = set()
+    familias_gen, familias_gen_fuertes = set(), set()
     for etiqueta, origen in etiquetas_de(d, tax):
         reconocida = False
-        for trozo in _trocear(etiqueta):
+        entera = normalizar(etiqueta)
+        trozos = [etiqueta] if _conocida_entera(entera, tax, mapeo) else _trocear(etiqueta)
+        for trozo in trozos:
             n = normalizar(trozo)
             if not n or n in tax.ignorar:
                 reconocida = True
@@ -99,6 +114,8 @@ def clasificar_disco(d: dict, tax: Taxonomia, mapeo: dict, desconocidas: Counter
                 reconocida = True
             elif n in tax.genericas:
                 familias_gen.add(tax.genericas[n])
+                if PESOS.get(origen, 1) >= 2:
+                    familias_gen_fuertes.add(tax.genericas[n])
                 reconocida = True
             elif n in mapeo and mapeo[n]["subgenero"] not in ("pendiente", ""):
                 for s in mapeo[n]["subgenero"].split("|"):
@@ -119,7 +136,9 @@ def clasificar_disco(d: dict, tax: Taxonomia, mapeo: dict, desconocidas: Counter
                     puntos[s] += PESOS["descripcion"]
     maxs = int(tax.reglas.get("max_subgeneros", 4))
     subs = [s for s, _ in sorted(puntos.items(), key=lambda kv: (-kv[1], kv[0]))][:maxs]
-    return {"subgeneros": subs, "familias_genericas": sorted(familias_gen)}
+    suman = set(tax.reglas.get("genericas_suman_familia") or [])
+    return {"subgeneros": subs, "familias_genericas": sorted(familias_gen),
+            "familias_suman": sorted(familias_gen_fuertes & suman)}
 
 
 def main():
@@ -178,6 +197,8 @@ def main():
         fam_fuentes = {fuentes[x["id"]].get("familia") for x in d["fuentes"]
                        if x["id"] in fuentes and not fuentes[x["id"]].get("mixta")} - {None, "todas", "ninguna"}
         familias = fam_subs | fam_fuentes
+        if familias:
+            familias |= set(r["familias_suman"])
         if not familias and not d.get("requiere_subgenero"):
             familias = set(r["familias_genericas"])
         motivo = None
@@ -185,7 +206,12 @@ def main():
         if tipo_dz in ("ep", "single") and not d.get("tipo_verificado"):
             motivo = f"clasificación: {tipo_dz.upper()} según Deezer"
         elif d.get("requiere_subgenero"):
-            if not subs:
+            por_defecto = {fuentes[x["id"]].get("familia_sin_subgenero") for x in d["fuentes"] if x["id"] in fuentes} - {None}
+            if not subs and r["familias_suman"]:
+                familias = set(r["familias_suman"])       # "country" o "blues" explícito y con peso: basta
+            elif not subs and por_defecto and _sin_genero_ajeno(d, tax, r):
+                familias = por_defecto                    # sin ninguna etiqueta de género: la de la fuente
+            elif not subs:
                 motivo = "clasificación: fuente mixta y ningún subgénero de la taxonomía"
             elif all(tax.sub[s]["frontera"] for s in subs):
                 motivo = "clasificación: solo subgéneros frontera y fuente mixta"

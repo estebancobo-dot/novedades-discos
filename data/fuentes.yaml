@@ -16,6 +16,9 @@
 #   fecha_es              lanzamiento | publicacion | alta   (qué significa la fecha)
 #   mixta                 true si la fuente mezcla otros géneros (metal, pop…):
 #                         sus discos solo entran si se les reconoce un subgénero
+#   familia_sin_subgenero familia para los discos de una fuente mixta que llegan sin ninguna
+#                         etiqueta (una revista de blues que también reseña soul: si no hay
+#                         etiquetas, es blues; si las hay, tienen que ser de nuestros géneros)
 #   texto                 cómo convertir el HTML: selector, marcas, enlaces, imagenes,
 #                         desde, hasta, quitar
 #   cabecera_fecha        regex: línea que fija la fecha de los items siguientes
@@ -324,6 +327,7 @@ fuentes:
   familia: hardrock
   rol: listado
   mixta: true
+  familia_sin_subgenero: rockmetal
   lector: texto
   fecha_es: lanzamiento
   urls:
@@ -518,6 +522,7 @@ fuentes:
   familia: todas
   rol: resena
   mixta: true
+  familia_sin_subgenero: blues
   lector: rss
   urls: [https://www.bluesblastmagazine.com/feed/]
   paginacion: {plantilla: "https://www.bluesblastmagazine.com/feed/?paged={n}", desde: 2, hasta: 40}
@@ -531,6 +536,7 @@ fuentes:
   familia: todas
   rol: resena
   mixta: true
+  familia_sin_subgenero: blues
   lector: rss
   urls: [https://bluesrockreview.com/feed]
   paginacion: {plantilla: "https://bluesrockreview.com/feed?paged={n}", desde: 2, hasta: 30}

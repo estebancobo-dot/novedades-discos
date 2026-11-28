@@ -22,7 +22,7 @@ import sys
 from collections import defaultdict
 
 from .bandcamp import Bandcamp
-from .clasificar import Taxonomia
+from .clasificar import Taxonomia, cargar_mapeo
 from .config import RAIZ, cargar_config, cargar_fuentes, cargar_yaml, ruta
 from .http import Navegador, guardar_json
 from .lectores import Item, ResultadoFuente, leer_fuente
@@ -148,6 +148,7 @@ def main():
     rx_ep_desc = re.compile(reglas.get("ep_en_descripcion") or reglas["ep"])
     corta = int(reglas.get("largo_nota_corta", 30))
     rx_reed = re.compile(reglas["reedicion"])
+    rx_reed_desc = re.compile(reglas.get("reedicion_en_descripcion") or reglas["reedicion"])
     rx_homo = re.compile(reglas["titulo_homonimo"])
     rx_pistas = re.compile(reglas["pistas_en_texto"])
 
@@ -230,11 +231,16 @@ def main():
     discos = []
     for k, grupo in grupos.items():
         d = {"clave": k, "items": grupo}
-        textos = " ".join(" ".join(x for x in (i.tipo, i.extra, i.genero, i.titulo) if x) for i in grupo)
+        # Campos cortos (tipo, título, género, notas breves) con la regla normal; las descripciones
+        # largas, con la estricta: "Box Set, containing CD, splatter vinyl" son los formatos del disco nuevo.
+        textos = " ".join(" ".join(x for x in (i.tipo, i.genero, i.titulo, i.extra if i.extra and len(i.extra) <= corta else None) if x)
+                          for i in grupo)
+        largas = [i.extra for i in grupo if i.extra and len(i.extra) > corta]
         d["ep_fuente"] = any(rx_ep.search(" ".join(x for x in (i.tipo, i.titulo) if x))
                              or (i.extra and (rx_ep.search(i.extra) if len(i.extra) <= corta else rx_ep_desc.search(i.extra)))
                              for i in grupo)
-        d["reedicion_fuente"] = bool(rx_reed.search(textos)) or any((i.tipo or "").lower() == "reissue" for i in grupo)
+        d["reedicion_fuente"] = bool(rx_reed.search(textos)) or any(rx_reed_desc.search(t) for t in largas) \
+            or any((i.tipo or "").lower() == "reissue" for i in grupo)
         fechas_lanz = [i.fecha for i in grupo if i.fecha and i.fecha_tipo == "lanzamiento"]
         fechas_pub = [i.fecha_publicacion or i.fecha for i in grupo if (i.fecha_publicacion or i.fecha) and i.fecha_tipo != "lanzamiento"]
         d["fecha_fuente"] = min(fechas_lanz) if fechas_lanz else None
@@ -262,12 +268,15 @@ def main():
     bc = Bandcamp(nav, ruta(config["rutas"]["cache_bandcamp"]), int(bc_cfg.get("max_paginas_por_ejecucion", 500)), umbral) \
         if bc_cfg.get("activo") and "--sin-bandcamp" not in args else None
     tax = Taxonomia(cargar_yaml(config["rutas"]["taxonomia"]))
+    # etiquetas ya mapeadas a un subgénero (data/mapeo_etiquetas.csv): "screamo", "bedroom pop"...
+    mapeadas = {k for k, v in cargar_mapeo(ruta(config["rutas"]["mapeo_etiquetas"])).items()
+                if v["subgenero"] not in ("pendiente", "", "ninguno")}
     rx_ajena = re.compile(reglas["descripcion_ajena"]) if reglas.get("descripcion_ajena") else None
 
     def de_nuestras_familias(textos: list[str]) -> bool:
         for t in textos:
             n = normalizar(t)
-            if n in tax.alias or n in tax.genericas:
+            if n in tax.alias or n in tax.genericas or n in mapeadas:
                 return True
             palabras = set(n.split())
             if palabras & {a for a in tax.alias if " " not in a} or palabras & {g for g in tax.genericas if " " not in g}:

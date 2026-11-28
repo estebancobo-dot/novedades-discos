@@ -1,6 +1,6 @@
 // Funciona sin conexión: todo se pide primero a la red (así se ven siempre las
 // novedades y los cambios de la web) y, si no hay red, se usa lo último guardado.
-const VERSION = "v4";
+const VERSION = "v5";
 const CARCASA = ["./", "index.html", "app.js", "styles.css", "manifest.webmanifest", "icono-192.png", "icono-512.png"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(CARCASA)).then(() => self.skipWaiting()));

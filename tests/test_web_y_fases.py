@@ -208,3 +208,12 @@ def test_version_2x_coincide_con_la_web():
     assert version_2x("https://cdn-images.dzcdn.net/images/cover/a/250x250-000000-80-0-0.jpg").endswith("/500x500-000000-80-0-0.jpg")
     assert version_2x("https://f4.bcbits.com/img/a123_2.jpg") == "https://f4.bcbits.com/img/a123_16.jpg"
     assert version_2x("https://otra.web/x.jpg") is None and version_2x(None) is None
+
+
+def test_lo_mejor_una_sola_resena_de_10_no_gana_a_cinco_buenas():
+    from scraper.web import puntuacion
+    una = puntuacion([10.0], 0, 1, 1, True, media_global=7.45)
+    cinco = puntuacion([8.5, 8.5, 8.0, 9.0, 8.5], 0, 5, 5, True, media_global=7.45)
+    assert cinco > una
+    assert puntuacion([8.0], 2, 1, 1, True) > puntuacion([9.0], 0, 1, 1, True)      # dos listas de fin de año pesan
+    assert puntuacion([], 0, 0, 1, False) < puntuacion([6.0], 0, 1, 1, False)        # sin nota, al final

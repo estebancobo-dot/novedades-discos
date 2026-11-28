@@ -59,7 +59,9 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   comprobar(p.url().includes('familia='), 'la familia queda en la URL (se puede compartir)');
 
   // búsqueda por palabras en cualquier orden
-  const ejemplo = await p.evaluate(async () => (await (await fetch('data/discos.json')).json()).discos.find(d => d.artista.split(' ').length >= 2));
+  // un artista de dos o más palabras entre los discos que se ven (la página ya tiene familia y fechas)
+  const ejemplo = await p.evaluate(() => [...document.querySelectorAll('.tarjeta .t-artista')]
+    .map(e => ({ artista: e.textContent.trim() })).find(d => d.artista.split(' ').length >= 2 && !/[^\p{L}\p{N} ]/u.test(d.artista)));
   if (ejemplo) {
     const alReves = ejemplo.artista.split(' ').reverse().join(' ');
     await p.fill('#q', alReves);
@@ -120,6 +122,7 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
   // filtros
   await p.click('#abrirFiltros');
   comprobar(await p.locator('#panel:not([hidden])').count() === 1, 'abre el panel de filtros');
+  comprobar(await p.evaluate(() => getComputedStyle(document.body).overflow) === 'hidden', 'con el panel abierto, la página de detrás no se desplaza');
   comprobar(await p.locator('#subgeneros .chip').count() > 5, 'chips de subgéneros');
   comprobar((await auditar(p, 'panel de filtros')) === 0, 'accesibilidad del panel de filtros (WCAG 2.1 AA)');
   // fechas: una fecha futura lejana deja la lista vacía; "Limpiar" la recupera
@@ -141,6 +144,7 @@ for (const [nombre, opciones] of [['móvil', { ...devices['iPhone 13'] }], ['esc
     await p.click('#limpiar');
   }
   await p.click('#cerrarFiltros');
+  comprobar(await p.evaluate(() => getComputedStyle(document.body).overflow) !== 'hidden', 'al cerrar el panel, la página vuelve a desplazarse');
 
   // enlace profundo a un disco
   // la ficha más completa (con subgéneros y reseñas): así la auditoría cubre todos sus bloques

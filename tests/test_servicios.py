@@ -49,6 +49,14 @@ def test_mb_elige_la_coincidencia_y_descarta_parecidos(tmp_path):
     assert r["rg"] == "ok" and r["primera_fecha"] == "2026-10-03"
 
 
+def test_mb_disco_y_sencillo_con_el_mismo_nombre_elige_el_disco(tmp_path):
+    sencillo, disco = rg("s", "Dream Chaser", "Willie Nelson"), rg("a", "Dream Chaser", "Willie Nelson")
+    sencillo["primary-type"], disco["primary-type"] = "Single", "Album"
+    m = mb(tmp_path, lambda u: {"release-groups": [sencillo, disco]} if "release-group" in u else {"releases": []})
+    r = m.buscar("Willie Nelson", "Dream Chaser", completar=False)
+    assert r["rg"] == "a" and r["tipo"] == "Album"
+
+
 def test_mb_sin_resultado_se_recuerda_y_se_reintenta_pasados_n_dias(tmp_path):
     m = mb(tmp_path, lambda u: {"release-groups": []})
     assert m.buscar("Nadie", "Nada") is None

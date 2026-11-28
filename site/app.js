@@ -281,7 +281,7 @@ function pintarMejores(lista, main) {
   if (info.tipo === "discos") {
     const orden = [...lista].sort((a, b) => b.puntos - a.puntos || b.fecha.localeCompare(a.fecha)).slice(0, 100);
     main.innerHTML = `<section class="semana"><h2><span>Lo mejor de ${estado.anio}</span><span>top ${orden.length}</span></h2>
-      <p class="aviso">Orden: nota media de las reseñas, listas de fin de año, número de reseñas y de fuentes.</p>
+      <p class="aviso">Orden: nota media de las reseñas (con pocas reseñas cuenta menos), listas de fin de año, número de reseñas y de fuentes.</p>
       <div class="rejilla">${orden.map((d, i) => tarjeta(d).replace('<div class="portada">', `<div class="portada"><span class="puesto">${i + 1}</span>`)).join("")}</div></section>`;
     return;
   }
@@ -479,8 +479,12 @@ function eventos() {
     temp = setTimeout(() => { estado.q = e.target.value.trim(); estado.tandas = 1; actualizar(); }, 200);
   });
   const panel = $("#panel");
-  const abrir = () => { panel.hidden = false; $("#abrirFiltros").setAttribute("aria-expanded", "true"); pintarPanel(); };
-  const cerrar = () => { panel.hidden = true; $("#abrirFiltros").setAttribute("aria-expanded", "false"); };
+  // con el panel abierto la página de detrás no se desplaza (en el móvil, deslizar dentro del panel
+  // movía la lista de fondo y el panel se descolocaba respecto al dedo)
+  const abrir = () => { panel.hidden = false; document.documentElement.classList.add("con-panel");
+    $("#abrirFiltros").setAttribute("aria-expanded", "true"); pintarPanel(); };
+  const cerrar = () => { panel.hidden = true; document.documentElement.classList.remove("con-panel");
+    $("#abrirFiltros").setAttribute("aria-expanded", "false"); };
   $("#abrirFiltros").onclick = abrir;
   $("#cerrarFiltros").onclick = cerrar;
   $("#aplicar").onclick = cerrar;

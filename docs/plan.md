@@ -1,7 +1,7 @@
 # Plan de trabajo
 
 Fuente de verdad del plan. Cada tarea tiene: **entradas** (de qué depende), **salida**, **cómo se
-valida** (criterio comprobable), **quién** la hace y **estado**. Actualizado el 27-nov-2026.
+valida** (criterio comprobable), **quién** la hace y **estado**. Actualizado el 28-nov-2026.
 
 Estados: ✅ hecha y validada · ⏳ en curso · ⬜ pendiente · 👤 necesita al usuario.
 
@@ -30,10 +30,10 @@ A1 recoger ─► A2 etiquetas extra ─► A3 consolidar+clasificar ─► A4 m
 
 | ID | Tarea | Entradas | Salida | Cómo se valida | Quién | Estado |
 |---|---|---|---|---|---|---|
-| A1 | Recogida completa (fuentes, radares, listas anuales, MusicBrainz, Bandcamp) | `fuentes.yaml`, `config.yaml`, cachés | `data/candidatos.json`, `estado_fuentes.json`, `listas_anuales.json` | Todas las fuentes "ok" o con motivo; 0 bloqueos nuevos sin anotar; discos en cada mes de enero a diciembre | máquina (`scraper.pipeline`) | ⏳ |
-| A2 | Etiquetas extra (Deezer, iTunes, Wikidata, Discogs, Last.fm) | A1 | candidatos enriquecidos | Consultas > 0 por servicio, sin bloqueos; baja el % sin subgénero | máquina | ⬜ |
-| A3 | Consolidar (duplicados, no-novedades) y clasificar | A2, `taxonomia.yaml`, `mapeo_etiquetas.csv` | `data/discos.json`, `descartados.json` | ≥ 75 % con subgénero; coherencia con fuentes especializadas ≥ 90 %; duplicados dudosos revisados uno a uno | máquina + revisión mía | ⬜ |
-| A4 | Mapear etiquetas nuevas | etiquetas pendientes de A3 | `mapeo_etiquetas.csv` | 0 pendientes o justificadas; ids validados contra la taxonomía (automático) | Wikidata + yo (plan Pro, en sesión) | ⬜ |
+| A1 | Recogida completa (fuentes, radares, listas anuales, MusicBrainz, Bandcamp) | `fuentes.yaml`, `config.yaml`, cachés | `data/candidatos.json`, `estado_fuentes.json`, `listas_anuales.json` | Todas las fuentes "ok" o con motivo; 0 bloqueos nuevos sin anotar; discos en cada mes de enero a diciembre | máquina (`scraper.pipeline`) | ✅ 66/67 fuentes ok (Rush On Rock: verificación anti-bots, anotada); todos los meses de 2026 y anuncios de 2027 |
+| A2 | Etiquetas extra (Deezer, iTunes, Wikidata, Discogs, Last.fm) | A1 | candidatos enriquecidos | Consultas > 0 por servicio, sin bloqueos; baja el % sin subgénero | máquina | ✅ Deezer 3480, Discogs 561, Wikidata 147; 397 discos resueltos. iTunes (403) y Wikidata (429) pararon: respetado; iTunes se vuelve a probar la semana que viene a 1/4 s |
+| A3 | Consolidar (duplicados, no-novedades) y clasificar | A2, `taxonomia.yaml`, `mapeo_etiquetas.csv` | `data/discos.json`, `descartados.json` | ≥ 75 % con subgénero; coherencia con fuentes especializadas ≥ 90 %; duplicados dudosos revisados uno a uno | máquina + revisión mía | ✅ 85 % con subgénero, coherencia 94 %; 15 parejas dudosas revisadas → 3 reglas nuevas (abreviaturas, título idéntico, ediciones ampliadas); quedan 9 que son discos distintos |
+| A4 | Mapear etiquetas nuevas | etiquetas pendientes de A3 | `mapeo_etiquetas.csv` | 0 pendientes o justificadas; ids validados contra la taxonomía (automático) | Wikidata + yo (plan Pro, en sesión) | ✅ 943 revisadas (103 a subgénero); 0 pendientes en discos sin subgénero; 3774 que salen una sola vez en discos ya clasificados (no cambian nada) |
 | A5 | Informe | A3–A4 | `docs/informe.md` | Todas las secciones con datos de enero a diciembre; cifras coherentes entre secciones | máquina | ⬜ |
 | A6 | Web con los datos de 2026 | A5 | `site/data/*` | Pruebas de navegador en verde, 0 infracciones de accesibilidad, revisión visual en móvil | máquina + yo | ⬜ |
 | A7 | "Lo mejor del año" con 2026 | A3 + listas anuales | vista en la web | Ranking 2026 coherente (discos con más reseñas/nota/listas arriba); 2025 por listas | yo | ⬜ |
@@ -42,8 +42,8 @@ A1 recoger ─► A2 etiquetas extra ─► A3 consolidar+clasificar ─► A4 m
 
 | ID | Tarea | Entradas | Salida | Cómo se valida | Quién | Estado |
 |---|---|---|---|---|---|---|
-| B1 | Revisar una muestra de 60 discos (subgéneros correctos, parciales o no) | A3 | `data/revision_clasificacion.csv` + aciertos en el informe | Objetivo: ≥ 85 % correctos o parciales; cada error explicado y, si es de reglas, corregido | yo (plan Pro, en sesión) | ⬜ |
-| B2 | Revisar descartes por regla (muestra de cada motivo) | A3 | notas en el informe | Ningún disco nuevo descartado por error en la muestra | yo | ⬜ |
+| B1 | Revisar una muestra de 60 discos (subgéneros correctos, parciales o no) | A3 | `data/revision_clasificacion.csv` + aciertos en el informe | Objetivo: ≥ 85 % correctos o parciales; cada error explicado y, si es de reglas, corregido | yo (plan Pro, en sesión) | ✅ 98 % correctos o parciales (79 % correctos); 4 causas corregidas en las reglas (ver abajo) |
+| B2 | Revisar descartes por regla (muestra de cada motivo) | A3 | notas en el informe | Ningún disco nuevo descartado por error en la muestra | yo | ⏳ revisados los 30 motivos; 4 fallos encontrados y corregidos (ver abajo); falta comprobar el resultado de la nueva recogida |
 | B3 | Rendimiento de la web (Lighthouse, móvil) | web actual | cifras en `docs/requisitos.md` | Rendimiento ≥ 90 y accesibilidad ≥ 95 en móvil | yo | 🟡 hecho: 83–87 (antes 56) y accesibilidad 100; repetir con la web publicada |
 | B4 | Cobertura por campo, coherencia, duplicados | A3 | informe § Calidad | Se publica cada semana | máquina | ✅ (con 5 meses) |
 
@@ -54,6 +54,23 @@ A1 recoger ─► A2 etiquetas extra ─► A3 consolidar+clasificar ─► A4 m
 | C1 | Petición para pasar los cambios a `main` | A6, B1 | petición en GitHub | Pruebas de GitHub en verde | yo | ⬜ |
 | C2 | Aprobar la petición y activar GitHub Pages | C1 | web pública | Settings → Pages → Source: GitHub Actions | 👤 | ⬜ |
 | C3 | Primera ejecución de la Action en `main` | C2 | web publicada + datos | Ejecución en verde; la web abre en el móvil; resumen sin fuentes nuevas con problemas | máquina (👤 la lanza o espera al sábado) | ⬜ |
+
+### Lo que encontraron B1 y B2 (28-nov) y cómo se corrigió
+
+| Problema | Ejemplo | Corrección | Prueba |
+|---|---|---|---|
+| Disco y sencillo con el mismo nombre en MusicBrainz: a veces se cogía el sencillo y el disco se descartaba | Willie Nelson – *Dream Chaser* | A igualdad, gana el disco (`musicbrainz.py`); se repiten las 338 búsquedas que dieron sencillo/EP | `test_mb_disco_y_sencillo_con_el_mismo_nombre_elige_el_disco` |
+| "¿Es de nuestros géneros?" no miraba la tabla de etiquetas: screamo, bedroom pop… contaban como "otro género" | Roman Candle (screamo) | La comprobación usa también `mapeo_etiquetas.csv`; "electropop" pasa a "ninguno" (traía Pitbull y K-pop) | prueba de extremo a extremo |
+| Webs especializadas marcadas como mixtas: sus discos sin etiquetas se perdían | Blues Blast (90), Loudwire (108), Blues Rock Review (15) | `familia_sin_subgenero` en `fuentes.yaml`: sin etiquetas de género, la familia de la web | `test_familia_por_defecto_de_fuente_mixta_solo_sin_genero_ajeno` |
+| "Box set" en la descripción de un disco nuevo (formatos de venta) se leía como reedición | Darkthrone – *Pre-Historic Metal* | Regla estricta para descripciones largas (`reedicion_en_descripcion`) | `test_reedicion_en_descripciones_largas_...` |
+| La categoría amplia de Discogs "Folk, World, & Country" daba "contemporary folk" | Morgan Myles (country) | Se ignora entera; "country"/"blues" explícitos suman su familia | `test_categoria_amplia_de_discogs_...` |
+| "Experimental" o "avant-garde" a secas metían en metal discos de electrónica, clásica o hip hop | Hildur Guðnadóttir, Skrillex | Subgéneros frontera: solos no bastan en fuentes mixtas | revisados los 59 que cambian |
+| Reediciones que la fuente etiqueta "Reissues"/"Box sets" | Rainbow – *In Concert 1976* | `etiquetas_no_nuevo` en `config.yaml` | `test_la_fuente_lo_etiqueta_como_reedicion_o_caja` |
+
+Decisiones que no se tomaron (y por qué): **no** recortar subgéneros con poco peso (quitaba tantos buenos
+como malos: The Jayhawks perdía "americana"); **no** poner subgénero por defecto a Heavy Harmonies (sería
+inventar: mezcla hard rock, AOR, metal y glam). Errores conocidos que quedan: Blackhaine (rap) entra en
+Blues por una etiqueta de MusicBrainz; Kontrast – *Imperium – Proteus* se trató como edición ampliada (dudoso).
 
 ## Medio plazo (próximas semanas): funcionamiento solo y mejora continua
 

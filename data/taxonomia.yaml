@@ -11,11 +11,17 @@ reglas:
   max_subgeneros: 4
   # Un disco es "Destacado" con nota media >= este valor o con 3 reseñas o más.
   destacado_nota: 8.0
+  # "Lo mejor del año": cuántas reseñas "imaginarias" con la nota media de todas se suman a cada
+  # disco al ordenar (media bayesiana). Con 2, una sola reseña de 10 cuenta como un 8,3.
+  peso_media_global: 2
   # Etiquetas de MusicBrainz que se miran (están ordenadas por votos).
   max_etiquetas_musicbrainz: 8
   # En descripciones de texto libre solo se buscan alias de 2+ palabras o con guion,
   # para evitar falsos positivos ("western Pennsylvania").
   alias_en_texto_min_palabras: 2
+  # Etiquetas genéricas que, con peso fuerte (fuente, MusicBrainz principal, Discogs...), suman su
+  # familia aunque el disco ya tenga otras ("blues" en un disco de soul-blues de una web de americana).
+  genericas_suman_familia: [country, blues]
 
 familias:
 
@@ -263,6 +269,7 @@ familias:
         avantgarde:
           nombre: "Avantgarde"
           alias: ["avantgarde"]
+          frontera: true        # "avant-garde" a secas también es clásica o jazz: solo no basta
         black-metal:
           nombre: "Black metal"
           alias: ["black metal"]
@@ -294,6 +301,7 @@ familias:
         experimental:
           nombre: "Experimental"
           alias: ["experimental"]
+          frontera: true        # "experimental" a secas también es electrónica, clásica o jazz
         folk-metal:
           nombre: "Folk metal"
           alias: ["folk metal"]
@@ -615,4 +623,4 @@ ignorar_regex: '(?i)\b(album reviews?|reviews?|news|all posts|posts?|videos?|str
 
 # Etiquetas que no dicen nada de género (lugares, décadas, formatos…). No se
 # consultan al LLM ni cuentan como "sin encajar".
-ignorar: [usa, us, uk, american, british, canadian, australian, english, scottish, irish, swedish, norwegian, finnish, german, italian, nashville tennessee, texas usa, male vocalists, female vocalists, female vocals, male vocals, vocal, vocals, live, album, albums, music, new, 2020s, 2026, 2025, 2027, guitar, acoustic, instrumental, band, cover, covers, christmas, holiday, vinyl, cd, cassette, digital, debut, ep, lp, seen live, favorites, favourite, a]
+ignorar: ["folk, world, & country", usa, us, uk, american, british, canadian, australian, english, scottish, irish, swedish, norwegian, finnish, german, italian, nashville tennessee, texas usa, male vocalists, female vocalists, female vocals, male vocals, vocal, vocals, live, album, albums, music, new, 2020s, 2026, 2025, 2027, guitar, acoustic, instrumental, band, cover, covers, christmas, holiday, vinyl, cd, cassette, digital, debut, ep, lp, seen live, favorites, favourite, a]

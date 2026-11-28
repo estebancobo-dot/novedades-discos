@@ -79,4 +79,30 @@ def test_subgenero_en_varias_familias():
 
 def test_disco_sin_nada():
     r, desconocidas = clasificar(disco())
-    assert r == {"subgeneros": [], "familias_genericas": []} and not desconocidas
+    assert r == {"subgeneros": [], "familias_genericas": [], "familias_suman": []} and not desconocidas
+
+
+def test_categoria_amplia_de_discogs_no_se_trocea_y_genericas_que_suman():
+    from collections import Counter
+    from scraper.clasificar import Taxonomia, clasificar_disco
+    from scraper.config import cargar_yaml
+    from tests.conftest import RAIZ
+    tax = Taxonomia(cargar_yaml(f"{RAIZ}/data/taxonomia.yaml"))
+    d = {"artista": "Morgan Myles", "titulo": "Laced", "etiquetas_extra": [{"etiqueta": "Folk, World, & Country", "origen": "discogs"}]}
+    r = clasificar_disco(d, tax, {}, Counter(), {})
+    assert r["subgeneros"] == [] and r["familias_genericas"] == []       # ni "contemporary folk" ni country: no dice el género
+    d = {"artista": "A", "titulo": "B", "etiquetas_originales": ["soul blues", "Blues"]}
+    assert "blues" in clasificar_disco(d, tax, {}, Counter(), {})["familias_suman"]
+    d = {"artista": "A", "titulo": "B", "etiquetas_musicbrainz_bandcamp": ["x", "y", "z", "blues"]}   # peso débil
+    assert clasificar_disco(d, tax, {}, Counter(), {})["familias_suman"] == []
+
+
+def test_familia_por_defecto_de_fuente_mixta_solo_sin_genero_ajeno():
+    from scraper.clasificar import Taxonomia, _sin_genero_ajeno
+    from scraper.config import cargar_yaml
+    from tests.conftest import RAIZ
+    tax = Taxonomia(cargar_yaml(f"{RAIZ}/data/taxonomia.yaml"))
+    r = {"familias_genericas": []}
+    assert _sin_genero_ajeno({"etiquetas_originales": ["Album Reviews", "Bobby Murray"]}, tax, r)      # solo músicos
+    assert not _sin_genero_ajeno({"etiquetas_musicbrainz_bandcamp": ["soul", "funk"]}, tax, r)        # soul: no
+    assert _sin_genero_ajeno({"etiquetas_musicbrainz_bandcamp": ["soul", "blues"]}, tax, {"familias_genericas": ["blues"]})

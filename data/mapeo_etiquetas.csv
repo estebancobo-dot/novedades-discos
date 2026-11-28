@@ -1,5 +1,6 @@
 etiqueta,subgenero,origen,fecha,veces,ejemplo,nota
 10000 Years,pendiente,,2026-11-28,1,"10,000 Years – Esox Lucifer",
+10CC,pendiente,,2026-11-28,1,Burning Rope – Dissolution,
 10s,pendiente,,2026-11-28,1,Squeeze – Trixies,
 14 Karat Soul,pendiente,,2026-11-28,1,Greg Piccolo & Heavy Juice – Who Knows What the Future Holds,
 16 Horsepower,pendiente,,2026-11-28,1,Wailin Storms – The Arsonist,
@@ -2817,6 +2818,7 @@ Rafe Klein,pendiente,,2026-11-28,1,The Name Droppers – Let’s Live Together,
 raga rock,pendiente,,2026-11-28,1,Kula Shaker – Wormslayer,
 Ragana,pendiente,,2026-11-28,1,Galvanist – The Silence Between Stars,
 Ragga HipHop,pendiente,,2026-11-28,1,Chase & Status – Generic Everything,
+Rainbow,pendiente,,2026-11-28,3,Tungsten – Ashes,
 Rakoth,pendiente,,2026-11-28,1,Orbital Soul System – Nightwing,
 Ramblin' Jack Elliott,pendiente,,2026-11-28,1,Andy Hedges – The Westerner,
 Ramin Djawadi,pendiente,,2026-11-28,1,"Nihil Admiral – The Axes, the Flesh Hooks and the Spits",
@@ -4562,7 +4564,7 @@ Eleanor Moss,ninguno,llm,2026-11-22,1,"Elanor Moss – The Knife, The Needle","r
 electric guitar,ninguno,llm,2026-11-22,1,Sir Richard Bishop – Hillbilly Erotica,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 electro,ninguno,llm,2026-11-22,3,Eerie Enterprise – Places Remember Events,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 electro house,ninguno,llm,2026-11-28,4,Peking Duk – Paradise,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
-electro pop,synth-pop,llm,2026-11-22,2,Starcleaner Reunion – Umbrella,
+electro pop,ninguno,llm,2026-11-22,2,Starcleaner Reunion – Umbrella,"pop comercial (Pitbull, K-pop): no es el synth-pop de la familia synthwave/dark wave (revisión B2)"
 electroacoustic,ninguno,llm,2026-11-22,2,claire rousay – on holding,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 electronic,ninguno,llm,2026-11-22,,,
 electronic dance,ninguno,llm,2026-11-28,2,Laibach – Musick: Encore,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
@@ -4574,7 +4576,7 @@ electronic rock,ninguno,llm,2026-11-22,3,Factory Floor – One Trip,"revisada: n
 electronica,ninguno,llm,2026-11-22,6,Eivør – Tungl,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 electronicore,metalcore,llm,2026-11-28,4,Kingdom of Giants – Usurper,
 electronics,ninguno,llm,2026-11-22,1,Oren Ambarchi – Cooked,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
-electropop,synth-pop,llm,2026-11-22,,,
+electropop,ninguno,llm,2026-11-22,,,"pop comercial (Pitbull, K-pop): no es el synth-pop de la familia synthwave/dark wave (revisión B2)"
 electropunk,ninguno,llm,2026-11-28,2,Adult – Kissing Luck Goodbye,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
 Elena Setién,ninguno,llm,2026-11-22,1,Black Duck with Elena Setién – Black Duck with Elena Setién,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 Elevator,ninguno,llm,2026-11-22,1,WILL PIKE – Elevator,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
@@ -4640,7 +4642,7 @@ Experimental Death Metal,death-metal|experimental,llm,2026-11-28,3,Veilburner �
 experimental electronic,ninguno,llm,2026-11-22,3,Dawuna – Love’s Arp,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 experimental folk,experimental,llm,2026-11-22,5,Shovel Dance Collective – Everything in Readiness,
 Experimental Folklore,ninguno,llm,2026-11-22,2,sourdure – Outredore,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
-experimental hip hop,experimental,wikidata,2026-11-28,16,Armand Hammer – Snakes & Ladders,automático (Wikidata Q5421158): experimental hip-hop → experimental music
+experimental hip hop,ninguno,wikidata,2026-11-28,16,Armand Hammer – Snakes & Ladders,hip hop: fuera de la taxonomía (revisado en la muestra B1)
 Experimental Metal,avantgarde|experimental,llm,2026-11-28,7,Veilburner – All That Glimmers Is Gloam,
 experimental pop,experimental,llm,2026-11-22,3,Foot Ox – Topanga Canyon,
 experimental rock,experimental,llm,2026-11-22,17,Alan Vega – Live at Max’s Kansas City,
