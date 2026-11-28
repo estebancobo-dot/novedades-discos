@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-28T08:33:55+00:00",
+ "fecha": "2026-11-28T13:00:15+00:00",
  "referencias": {
   "metacritic": {
    "nombre": "Metacritic – All New Music by Release Date",
@@ -149,11 +149,11 @@
      "motivo": "idioma urd"
     },
     {
-     "artista": "jake bugg",
-     "titulo": "alamo",
+     "artista": "wavves",
+     "titulo": "cherry soda",
      "clave": [
-      "jakebugg",
-      "alamo"
+      "wavves",
+      "cherrysoda"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "en_web"
@@ -202,6 +202,17 @@
      "motivo": "idioma nld"
     },
     {
+     "artista": "aesop rock blockhead",
+     "titulo": "trouble mountain",
+     "clave": [
+      "aesoprockblockhead",
+      "troublemountain"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
+     "resultado": "descartado",
+     "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía"
+    },
+    {
      "artista": "blackhaine",
      "titulo": "saints in the wethouse",
      "clave": [
@@ -233,17 +244,6 @@
      "motivo": "otro género (según la descripción de la fuente)"
     },
     {
-     "artista": "aesop rock blockhead",
-     "titulo": "trouble mountain",
-     "clave": [
-      "aesoprockblockhead",
-      "troublemountain"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "resultado": "descartado",
-     "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía"
-    },
-    {
      "artista": "menahan street band",
      "titulo": "illusions",
      "clave": [
@@ -259,11 +259,11 @@
      "resultado": "fuera_de_genero"
     },
     {
-     "artista": "wavves",
-     "titulo": "cherry soda",
+     "artista": "jake bugg",
+     "titulo": "alamo",
      "clave": [
-      "wavves",
-      "cherrysoda"
+      "jakebugg",
+      "alamo"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "en_web"
@@ -305,24 +305,25 @@
      "motivo": "clasificación: solo subgéneros frontera y fuente mixta"
     },
     {
-     "artista": "twisted teens",
-     "titulo": "the holy cross tigers",
+     "artista": "shygirl",
+     "titulo": "swallow!",
      "clave": [
-      "twistedteens",
-      "holycrosstigers"
+      "shygirl",
+      "swallow"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
+     "resultado": "descartado",
+     "motivo": "otro género (según MusicBrainz: hip hop, hip hop)"
+    },
+    {
+     "artista": "daine",
+     "titulo": "in endless awe agony",
+     "clave": [
+      "daine",
+      "inendlessaweagony"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "en_web"
-    },
-    {
-     "artista": "bob dylan",
-     "titulo": "the rolling thunder revue the 1976 live recordings box set",
-     "clave": [
-      "bobdylan",
-      "rollingthunderrevue1976liverecordingsboxset"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "resultado": "no_es_nuevo"
     },
     {
      "artista": "la roux",
@@ -345,6 +346,16 @@
      "resultado": "en_web"
     },
     {
+     "artista": "ane brun",
+     "titulo": "i thought we were the same",
+     "clave": [
+      "anebrun",
+      "ithoughtweweresame"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
+     "resultado": "en_web"
+    },
+    {
      "artista": "2hollis",
      "titulo": "pirouette",
      "clave": [
@@ -356,52 +367,31 @@
      "motivo": "otro género (según la descripción de la fuente)"
     },
     {
-     "artista": "django django",
-     "titulo": "doveland",
+     "artista": "twisted teens",
+     "titulo": "the holy cross tigers",
      "clave": [
-      "djangodjango",
-      "doveland"
+      "twistedteens",
+      "holycrosstigers"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "en_web"
     },
     {
-     "artista": "shygirl",
-     "titulo": "swallow!",
+     "artista": "bob dylan",
+     "titulo": "the rolling thunder revue the 1976 live recordings box set",
      "clave": [
-      "shygirl",
-      "swallow"
+      "bobdylan",
+      "rollingthunderrevue1976liverecordingsboxset"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "resultado": "descartado",
-     "motivo": "otro género (según MusicBrainz: hip hop, hip hop)"
+     "resultado": "no_es_nuevo"
     },
     {
-     "artista": "daine",
-     "titulo": "in endless awe agony",
+     "artista": "untitled halo",
+     "titulo": "untitled halo",
      "clave": [
-      "daine",
-      "inendlessaweagony"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "resultado": "en_web"
-    },
-    {
-     "artista": "ane brun",
-     "titulo": "i thought we were the same",
-     "clave": [
-      "anebrun",
-      "ithoughtweweresame"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "resultado": "en_web"
-    },
-    {
-     "artista": "royal blood",
-     "titulo": "dead company",
-     "clave": [
-      "royalblood",
-      "deadcompany"
+      "untitledhalo",
+      "untitledhalo"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "en_web"
@@ -417,11 +407,21 @@
      "resultado": "en_web"
     },
     {
-     "artista": "untitled halo",
-     "titulo": "untitled halo",
+     "artista": "royal blood",
+     "titulo": "dead company",
      "clave": [
-      "untitledhalo",
-      "untitledhalo"
+      "royalblood",
+      "deadcompany"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
+     "resultado": "en_web"
+    },
+    {
+     "artista": "django django",
+     "titulo": "doveland",
+     "clave": [
+      "djangodjango",
+      "doveland"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "en_web"
@@ -436,31 +436,6 @@
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "descartado",
      "motivo": "otro género (según la descripción de la fuente)"
-    },
-    {
-     "artista": "sampa the great",
-     "titulo": "nu zamrock",
-     "clave": [
-      "sampagreat",
-      "nuzamrock"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "generos": [
-      "hip hop",
-      "r&b",
-      "soul"
-     ],
-     "resultado": "fuera_de_genero"
-    },
-    {
-     "artista": "radio free alice",
-     "titulo": "whats in between",
-     "clave": [
-      "radiofreealice",
-      "whatsinbetween"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "resultado": "en_web"
     },
     {
      "artista": "kali malone",
@@ -514,24 +489,19 @@
      "resultado": "fuera_de_genero"
     },
     {
-     "artista": "sam burton",
-     "titulo": "fairweather friend",
+     "artista": "sampa the great",
+     "titulo": "nu zamrock",
      "clave": [
-      "samburton",
-      "fairweatherfriend"
+      "sampagreat",
+      "nuzamrock"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "resultado": "en_web"
-    },
-    {
-     "artista": "editors",
-     "titulo": "surface echo sound",
-     "clave": [
-      "editors",
-      "surfaceechosound"
+     "generos": [
+      "hip hop",
+      "r&b",
+      "soul"
      ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "resultado": "en_web"
+     "resultado": "fuera_de_genero"
     },
     {
      "artista": "clinic",
@@ -565,11 +535,41 @@
      "resultado": "en_web"
     },
     {
+     "artista": "sam burton",
+     "titulo": "fairweather friend",
+     "clave": [
+      "samburton",
+      "fairweatherfriend"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
+     "resultado": "en_web"
+    },
+    {
+     "artista": "editors",
+     "titulo": "surface echo sound",
+     "clave": [
+      "editors",
+      "surfaceechosound"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
+     "resultado": "en_web"
+    },
+    {
      "artista": "exre",
      "titulo": "save as",
      "clave": [
       "exre",
       "saveas"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
+     "resultado": "en_web"
+    },
+    {
+     "artista": "radio free alice",
+     "titulo": "whats in between",
+     "clave": [
+      "radiofreealice",
+      "whatsinbetween"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
      "resultado": "en_web"
@@ -595,36 +595,14 @@
      "resultado": "no_es_nuevo"
     },
     {
-     "artista": "james brandon lewis",
-     "titulo": "calling antonin",
+     "artista": "shovel dance collective",
+     "titulo": "everything in readiness",
      "clave": [
-      "jamesbrandonlewis",
-      "callingantonin"
+      "shoveldancecollective",
+      "everythinginreadiness"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/",
-     "resultado": "descartado",
-     "motivo": "otro género (según MusicBrainz: avant-garde jazz, contemporary jazz, jazz)"
-    },
-    {
-     "artista": "tony iommi",
-     "titulo": "from the dark",
-     "clave": [
-      "tonyiommi",
-      "fromdark"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "en_web"
-    },
-    {
-     "artista": "orchestra baobab",
-     "titulo": "made in senegal",
-     "clave": [
-      "orchestrabaobab",
-      "madeinsenegal"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
-     "resultado": "descartado",
-     "motivo": "otro género (según MusicBrainz: afro-cuban, world)"
     },
     {
      "artista": "the olivia tremor control",
@@ -672,21 +650,32 @@
      "resultado": "perdido"
     },
     {
-     "artista": "shovel dance collective",
-     "titulo": "everything in readiness",
+     "artista": "james brandon lewis",
+     "titulo": "calling antonin",
      "clave": [
-      "shoveldancecollective",
-      "everythinginreadiness"
+      "jamesbrandonlewis",
+      "callingantonin"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
+     "resultado": "descartado",
+     "motivo": "otro género (según MusicBrainz: avant-garde jazz, contemporary jazz, jazz)"
+    },
+    {
+     "artista": "tony iommi",
+     "titulo": "from the dark",
+     "clave": [
+      "tonyiommi",
+      "fromdark"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "en_web"
     },
     {
-     "artista": "michael kiwanuka",
-     "titulo": "fudge",
+     "artista": "caroline rose",
+     "titulo": "gentling the horse at the walt whitman mall",
      "clave": [
-      "michaelkiwanuka",
-      "fudge"
+      "carolinerose",
+      "gentlinghorseatwaltwhitmanmall"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "en_web"
@@ -702,11 +691,31 @@
      "resultado": "en_web"
     },
     {
-     "artista": "caroline rose",
-     "titulo": "gentling the horse at the walt whitman mall",
+     "artista": "michael kiwanuka",
+     "titulo": "fudge",
      "clave": [
-      "carolinerose",
-      "gentlinghorseatwaltwhitmanmall"
+      "michaelkiwanuka",
+      "fudge"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
+     "resultado": "en_web"
+    },
+    {
+     "artista": "rachel chinouriri",
+     "titulo": "i think i spoke too soon",
+     "clave": [
+      "rachelchinouriri",
+      "ithinkispoketoosoon"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
+     "resultado": "en_web"
+    },
+    {
+     "artista": "charlie parr",
+     "titulo": "rooming house",
+     "clave": [
+      "charlieparr",
+      "roominghouse"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "en_web"
@@ -741,71 +750,6 @@
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "generos": [],
      "resultado": "sin_genero"
-    },
-    {
-     "artista": "rachel chinouriri",
-     "titulo": "i think i spoke too soon",
-     "clave": [
-      "rachelchinouriri",
-      "ithinkispoketoosoon"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
-     "resultado": "en_web"
-    },
-    {
-     "artista": "charlie parr",
-     "titulo": "rooming house",
-     "clave": [
-      "charlieparr",
-      "roominghouse"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
-     "resultado": "en_web"
-    },
-    {
-     "artista": "teenage fanclub",
-     "titulo": "do not dare to dream",
-     "clave": [
-      "teenagefanclub",
-      "donotdaretodream"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
-     "resultado": "en_web"
-    },
-    {
-     "artista": "pet shop boys",
-     "titulo": "a man from the future",
-     "clave": [
-      "petshopboys",
-      "manfromfuture"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
-     "resultado": "en_web"
-    },
-    {
-     "artista": "jess williamson",
-     "titulo": "a mile south of heaven",
-     "clave": [
-      "jesswilliamson",
-      "milesouthofheaven"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
-     "resultado": "en_web"
-    },
-    {
-     "artista": "more eaze",
-     "titulo": "valley and structure",
-     "clave": [
-      "moreeaze",
-      "valleystructure"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
-     "generos": [
-      "experimental",
-      "glitch",
-      "noise"
-     ],
-     "resultado": "fuera_de_genero"
     },
     {
      "artista": "death valley girls",
@@ -858,6 +802,51 @@
      "resultado": "en_web"
     },
     {
+     "artista": "pet shop boys",
+     "titulo": "a man from the future",
+     "clave": [
+      "petshopboys",
+      "manfromfuture"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
+     "resultado": "en_web"
+    },
+    {
+     "artista": "teenage fanclub",
+     "titulo": "do not dare to dream",
+     "clave": [
+      "teenagefanclub",
+      "donotdaretodream"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
+     "resultado": "en_web"
+    },
+    {
+     "artista": "jess williamson",
+     "titulo": "a mile south of heaven",
+     "clave": [
+      "jesswilliamson",
+      "milesouthofheaven"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
+     "resultado": "en_web"
+    },
+    {
+     "artista": "more eaze",
+     "titulo": "valley and structure",
+     "clave": [
+      "moreeaze",
+      "valleystructure"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
+     "generos": [
+      "experimental",
+      "glitch",
+      "noise"
+     ],
+     "resultado": "fuera_de_genero"
+    },
+    {
      "artista": "cameron winter",
      "titulo": "live at carnegie hall",
      "clave": [
@@ -868,22 +857,11 @@
      "resultado": "en_web"
     },
     {
-     "artista": "haai",
-     "titulo": "digitise",
+     "artista": "jamie t",
+     "titulo": "ghosts 100 days of morning",
      "clave": [
-      "haai",
-      "digitise"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
-     "resultado": "descartado",
-     "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía"
-    },
-    {
-     "artista": "remi wolf",
-     "titulo": "mud",
-     "clave": [
-      "remiwolf",
-      "mud"
+      "jamiet",
+      "ghosts100daysofmorning"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "en_web"
@@ -909,48 +887,32 @@
      "resultado": "en_web"
     },
     {
-     "artista": "jamie t",
-     "titulo": "ghosts 100 days of morning",
+     "artista": "remi wolf",
+     "titulo": "mud",
      "clave": [
-      "jamiet",
-      "ghosts100daysofmorning"
+      "remiwolf",
+      "mud"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "en_web"
     },
     {
-     "artista": "drink the sea",
-     "titulo": "drink the sea iii",
+     "artista": "haai",
+     "titulo": "digitise",
      "clave": [
-      "drinksea",
-      "drinkseaiii"
+      "haai",
+      "digitise"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "descartado",
      "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía"
     },
     {
-     "artista": "jon hassell",
-     "titulo": "music is invisible pentimento volume three",
+     "artista": "miranda lambert",
+     "titulo": "crisco",
      "clave": [
-      "jonhassell",
-      "musicisinvisiblepentimentovolumethree"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
-     "generos": [
-      "acid jazz",
-      "ambient",
-      "jazz",
-      "tribal ambient"
-     ],
-     "resultado": "fuera_de_genero"
-    },
-    {
-     "artista": "fat dog",
-     "titulo": "cancel me im tired",
-     "clave": [
-      "fatdog",
-      "cancelmeimtired"
+      "mirandalambert",
+      "crisco"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "resultado": "en_web"
@@ -1026,11 +988,43 @@
      "resultado": "no_es_nuevo"
     },
     {
+     "artista": "fat dog",
+     "titulo": "cancel me im tired",
+     "clave": [
+      "fatdog",
+      "cancelmeimtired"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
+     "resultado": "en_web"
+    },
+    {
      "artista": "helen",
      "titulo": "lindas head",
      "clave": [
       "helen",
       "lindashead"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
+     "generos": [],
+     "resultado": "sin_genero"
+    },
+    {
+     "artista": "victoria monet",
+     "titulo": "frequency of love",
+     "clave": [
+      "victoriamonet",
+      "frequencyoflove"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
+     "resultado": "descartado",
+     "motivo": "otro género (según la descripción de la fuente)"
+    },
+    {
+     "artista": "wishy",
+     "titulo": "natures pill",
+     "clave": [
+      "wishy",
+      "naturespill"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
      "generos": [],
@@ -1057,77 +1051,52 @@
      "resultado": "fuera_de_genero"
     },
     {
-     "artista": "wishy",
-     "titulo": "natures pill",
+     "artista": "jon hassell",
+     "titulo": "music is invisible pentimento volume three",
      "clave": [
-      "wishy",
-      "naturespill"
+      "jonhassell",
+      "musicisinvisiblepentimentovolumethree"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
-     "generos": [],
-     "resultado": "sin_genero"
+     "generos": [
+      "acid jazz",
+      "ambient",
+      "jazz",
+      "tribal ambient"
+     ],
+     "resultado": "fuera_de_genero"
     },
     {
-     "artista": "miranda lambert",
-     "titulo": "crisco",
+     "artista": "drink the sea",
+     "titulo": "drink the sea iii",
      "clave": [
-      "mirandalambert",
-      "crisco"
+      "drinksea",
+      "drinkseaiii"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
-     "resultado": "en_web"
+     "resultado": "descartado",
+     "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía"
     },
     {
-     "artista": "victoria monet",
-     "titulo": "frequency of love",
+     "artista": "tinashe",
+     "titulo": "popstar",
      "clave": [
-      "victoriamonet",
-      "frequencyoflove"
+      "tinashe",
+      "popstar"
      ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=2",
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
      "resultado": "descartado",
      "motivo": "otro género (según la descripción de la fuente)"
     },
     {
-     "artista": "julia jacklin",
-     "titulo": "the gem",
+     "artista": "can",
+     "titulo": "live in arles 1975",
      "clave": [
-      "juliajacklin",
-      "gem"
+      "can",
+      "liveinarles1975"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
      "resultado": "en_web"
-    },
-    {
-     "artista": "penelope isles",
-     "titulo": "3",
-     "clave": [
-      "penelopeisles",
-      "3"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "resultado": "en_web"
-    },
-    {
-     "artista": "adult dvd",
-     "titulo": "adult dvd",
-     "clave": [
-      "adultdvd",
-      "adultdvd"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "resultado": "en_web"
-    },
-    {
-     "artista": "space afrika",
-     "titulo": "quiet storm",
-     "clave": [
-      "spaceafrika",
-      "quietstorm"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "resultado": "descartado",
-     "motivo": "clasificación: solo subgéneros frontera y fuente mixta"
     },
     {
      "artista": "gilla band",
@@ -1225,53 +1194,11 @@
      "resultado": "en_web"
     },
     {
-     "artista": "oren ambarchi",
-     "titulo": "cooked",
+     "artista": "m83",
+     "titulo": "i wrote you a letter",
      "clave": [
-      "orenambarchi",
-      "cooked"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "resultado": "descartado",
-     "motivo": "clasificación: solo subgéneros frontera y fuente mixta"
-    },
-    {
-     "artista": "tom morello",
-     "titulo": "everyone gets everything they want",
-     "clave": [
-      "tommorello",
-      "everyonegetseverythingtheywant"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "resultado": "en_web"
-    },
-    {
-     "artista": "tinashe",
-     "titulo": "popstar",
-     "clave": [
-      "tinashe",
-      "popstar"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "resultado": "descartado",
-     "motivo": "otro género (según la descripción de la fuente)"
-    },
-    {
-     "artista": "protomartyr",
-     "titulo": "hotel usona",
-     "clave": [
-      "protomartyr",
-      "hotelusona"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "resultado": "en_web"
-    },
-    {
-     "artista": "can",
-     "titulo": "live in arles 1975",
-     "clave": [
-      "can",
-      "liveinarles1975"
+      "m83",
+      "iwroteyoualetter"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
      "resultado": "en_web"
@@ -1287,14 +1214,66 @@
      "resultado": "no_es_nuevo"
     },
     {
-     "artista": "m83",
-     "titulo": "i wrote you a letter",
+     "artista": "protomartyr",
+     "titulo": "hotel usona",
      "clave": [
-      "m83",
-      "iwroteyoualetter"
+      "protomartyr",
+      "hotelusona"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
      "resultado": "en_web"
+    },
+    {
+     "artista": "oren ambarchi",
+     "titulo": "cooked",
+     "clave": [
+      "orenambarchi",
+      "cooked"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
+     "resultado": "descartado",
+     "motivo": "clasificación: solo subgéneros frontera y fuente mixta"
+    },
+    {
+     "artista": "julia jacklin",
+     "titulo": "the gem",
+     "clave": [
+      "juliajacklin",
+      "gem"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
+     "resultado": "en_web"
+    },
+    {
+     "artista": "penelope isles",
+     "titulo": "3",
+     "clave": [
+      "penelopeisles",
+      "3"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
+     "resultado": "en_web"
+    },
+    {
+     "artista": "adult dvd",
+     "titulo": "adult dvd",
+     "clave": [
+      "adultdvd",
+      "adultdvd"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
+     "resultado": "en_web"
+    },
+    {
+     "artista": "space afrika",
+     "titulo": "quiet storm",
+     "clave": [
+      "spaceafrika",
+      "quietstorm"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
+     "resultado": "descartado",
+     "motivo": "clasificación: solo subgéneros frontera y fuente mixta"
     },
     {
      "artista": "gurriers",
@@ -1307,11 +1286,21 @@
      "resultado": "en_web"
     },
     {
-     "artista": "slow pulp",
-     "titulo": "melodie",
+     "artista": "tom morello",
+     "titulo": "everyone gets everything they want",
      "clave": [
-      "slowpulp",
-      "melodie"
+      "tommorello",
+      "everyonegetseverythingtheywant"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
+     "resultado": "en_web"
+    },
+    {
+     "artista": "beck",
+     "titulo": "ride lonesome",
+     "clave": [
+      "beck",
+      "ridelonesome"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
      "resultado": "en_web"
@@ -1414,12 +1403,27 @@
       "paddywhackery"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "generos": [
-      "irish folk",
-      "folk",
-      "folk punk"
+     "resultado": "en_web"
+    },
+    {
+     "artista": "anthrax",
+     "titulo": "cursum perficio",
+     "clave": [
+      "anthrax",
+      "cursumperficio"
      ],
-     "resultado": "perdido"
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
+     "resultado": "en_web"
+    },
+    {
+     "artista": "beabadoobee",
+     "titulo": "pylon",
+     "clave": [
+      "beabadoobee",
+      "pylon"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
+     "resultado": "en_web"
     },
     {
      "artista": "actress",
@@ -1433,21 +1437,31 @@
      "motivo": "clasificación: solo subgéneros frontera y fuente mixta"
     },
     {
-     "artista": "orville peck",
-     "titulo": "mule",
+     "artista": "boy harsher",
+     "titulo": "get mean",
      "clave": [
-      "orvillepeck",
-      "mule"
+      "boyharsher",
+      "getmean"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
      "resultado": "en_web"
     },
     {
-     "artista": "rodrigo y gabriela",
-     "titulo": "ourhome",
+     "artista": "lizzy mcalpine",
+     "titulo": "angel",
      "clave": [
-      "rodrigoygabriela",
-      "ourhome"
+      "lizzymcalpine",
+      "angel"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
+     "resultado": "en_web"
+    },
+    {
+     "artista": "slow pulp",
+     "titulo": "melodie",
+     "clave": [
+      "slowpulp",
+      "melodie"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
      "resultado": "en_web"
@@ -1473,54 +1487,38 @@
      "resultado": "en_web"
     },
     {
-     "artista": "anthrax",
-     "titulo": "cursum perficio",
+     "artista": "orville peck",
+     "titulo": "mule",
      "clave": [
-      "anthrax",
-      "cursumperficio"
+      "orvillepeck",
+      "mule"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
      "resultado": "en_web"
     },
     {
-     "artista": "beabadoobee",
-     "titulo": "pylon",
+     "artista": "rodrigo y gabriela",
+     "titulo": "ourhome",
      "clave": [
-      "beabadoobee",
-      "pylon"
+      "rodrigoygabriela",
+      "ourhome"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
      "resultado": "en_web"
     },
     {
-     "artista": "beck",
-     "titulo": "ride lonesome",
+     "artista": "formal sppeedwear",
+     "titulo": "punch card",
      "clave": [
-      "beck",
-      "ridelonesome"
+      "formalsppeedwear",
+      "punchcard"
      ],
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "resultado": "en_web"
-    },
-    {
-     "artista": "boy harsher",
-     "titulo": "get mean",
-     "clave": [
-      "boyharsher",
-      "getmean"
+     "generos": [
+      "art rock",
+      "new wave"
      ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "resultado": "en_web"
-    },
-    {
-     "artista": "lizzy mcalpine",
-     "titulo": "angel",
-     "clave": [
-      "lizzymcalpine",
-      "angel"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "resultado": "en_web"
+     "resultado": "perdido"
     },
     {
      "artista": "bonobo",
@@ -1565,6 +1563,16 @@
      "resultado": "en_web"
     },
     {
+     "artista": "the tubs",
+     "titulo": "hard life",
+     "clave": [
+      "tubs",
+      "hardlife"
+     ],
+     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
+     "resultado": "en_web"
+    },
+    {
      "artista": "haruomi hosono",
      "titulo": "yours sincerely",
      "clave": [
@@ -1584,30 +1592,6 @@
      "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
      "generos": [],
      "resultado": "sin_genero"
-    },
-    {
-     "artista": "formal sppeedwear",
-     "titulo": "punch card",
-     "clave": [
-      "formalsppeedwear",
-      "punchcard"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "generos": [
-      "art rock",
-      "new wave"
-     ],
-     "resultado": "perdido"
-    },
-    {
-     "artista": "the tubs",
-     "titulo": "hard life",
-     "clave": [
-      "tubs",
-      "hardlife"
-     ],
-     "url": "https://www.metacritic.com/browse/music/all/all/current-year/new/?page=3",
-     "resultado": "en_web"
     },
     {
      "artista": "arab strap",
@@ -1632,11 +1616,11 @@
    ],
    "resumen": {
     "sin_genero": 7,
-    "en_web": 103,
-    "descartado": 23,
+    "en_web": 104,
+    "descartado": 22,
     "fuera_de_genero": 8,
     "no_es_nuevo": 5,
-    "perdido": 5
+    "perdido": 4
    }
   }
  }
