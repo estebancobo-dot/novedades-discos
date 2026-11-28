@@ -3,6 +3,52 @@
 Fuente de verdad del plan. Cada tarea tiene: **entradas** (de qué depende), **salida**, **cómo se
 valida** (criterio comprobable), **quién** la hace y **estado**. Actualizado el 28-nov-2026.
 
+**Plan único.** Incluye los requisitos de datos (`docs/requisitos.md`), los de la web y los procesos
+(`docs/requisitos-web.md`, IDs A–K y P) y el estudio del estado del arte (`docs/estado-del-arte/README.md`).
+
+## Lo que se hizo a mano y cómo queda automático
+
+| Trabajo hecho en el chat | Qué queda | ¿Se repite solo? |
+|---|---|---|
+| Mapeo de 1.517 etiquetas | `data/mapeo_etiquetas.csv` (se reutiliza cada semana) + regla "sin palabra de género" | ✅ las nuevas: regla automática; las que tienen palabra de género esperan (Action con token o sesión) |
+| Revisión de 60 discos | `data/revision_clasificacion.csv` | ❌ **solo se midió una vez** → pasa a ser el conjunto de referencia de V4 |
+| 7 fallos de reglas encontrados | Código con pruebas | ✅ |
+| Revisión de duplicados y descartes | Reglas nuevas con pruebas | ❌ la revisión no se repite → V2 y V3 |
+| Estudio del estado del arte | `estudio/capturar.mjs` + `estudio/referencias.yaml` | ✅ repetible con un comando |
+| Validación de la web | Pruebas de que funciona | ❌ **no se comprueba que se vea bien** → V7 |
+
+## Bloque V · Validación automática de cada capa (lo primero)
+
+Cada ejecución semanal mide cada capa contra referencias **independientes**, compara con la semana
+anterior y pone un semáforo en el resumen de la Action. Si una capa cae por debajo de su umbral, la
+Action lo marca en rojo y no publica en silencio.
+
+| ID | Capa | Qué se mide, solo | Referencia | Umbral | Estado |
+|---|---|---|---|---|---|
+| V1 | Descubrimiento | % de discos de nuestros géneros que tenemos; **lista de los que faltan y por qué** (descartado con motivo, o nunca visto → fuente que falta) | Novedades de Metacritic, AnyDecentMusic, Wikipedia del mes (columna de género) | ≥ 90 % | ❌ |
+| V2 | Duplicados | Discos con el mismo artista y título (o el mismo MusicBrainz) que siguen separados | Comparación interna | 0 | 🟡 se listan en el informe; sin umbral |
+| V3 | Descartes | Descartes por motivo y su cambio semanal; discos con ≥ 2 reseñas especializadas descartados como "otro género" | Semana anterior | sin saltos > 30 % | ❌ |
+| V4 | Clasificación | (a) acuerdo con el género de Wikipedia y de MusicBrainz/Discogs del disco; (b) acuerdo con la fuente especializada (hoy 94 %); (c) acierto sobre la muestra revisada, recalculado en cada ejecución | Wikipedia, fuentes, `revision_clasificacion.csv` | (b) ≥ 90 %, (c) ≥ 85 % | 🟡 solo (b) |
+| V5 | Reseñas | % de reseñas emparejadas con su disco; notas fuera de rango; reseñas por disco frente a AnyDecentMusic | AnyDecentMusic | ≥ 80 % de las de ADM | ❌ |
+| V6 | Datos por disco | Cobertura de portada, fecha, sello, idioma, enlaces | Semana anterior | portada ≥ 95 % (W4) | 🟡 se mide, sin umbral |
+| V7 | Web | Pruebas de contenido (portada en la primera pantalla, título y artista, nota visible) + **capturas de cada pantalla en cada publicación**, guardadas para comparar | Capturas de la semana anterior | todas las pruebas | 🟡 solo funciona/no funciona |
+| V8 | Resumen | Semáforo por capa en la Action y en el informe; aviso si algo cae | — | — | ❌ |
+
+## Bloque W · Web (detalle en `docs/requisitos-web.md`)
+
+| ID | Qué | Requisitos | Estado |
+|---|---|---|---|
+| W1 | Portada y tarjeta (estilo New Music Tracker); identidad propia | A1–A11, B1–B5, I1–I4 | ❌ |
+| W2 | Página del disco (estilo Metacritic / AnyDecentMusic) | C1–C7, C13, C15–C19, J2 | ❌ |
+| W3 | Rankings numerados, imprescindibles del mes, mejor de la semana | F1, F3, F7 | ❌ |
+| W4 | Portadas al 95 %; años por plantilla (cargar 2025 = cambiar un número) | J1, P1 | ❌ |
+| W5 | Artista, seguir, escuchados, favoritos | D1, D4, G2–G4 | ❌ |
+| W6 | Canciones, más del artista, semana / 30 / 90 días, tabla ordenable | C10, C11, E1, E9, J3 | ❌ |
+| W7 | Extras | D2, D3, E4, C9, C20, F6, F8, J4–J6 | ❌ |
+
+**Orden:** V1–V8 y W1 a la vez → W2 → W3 → W4 → W5 → W6 → W7. Cada fase de la web se enseña con capturas
+del móvil antes de publicarse.
+
 Estados: ✅ hecha y validada · ⏳ en curso · ⬜ pendiente · 👤 necesita al usuario.
 
 ## Cómo encajan (qué va en paralelo y qué no)
@@ -34,16 +80,16 @@ A1 recoger ─► A2 etiquetas extra ─► A3 consolidar+clasificar ─► A4 m
 | A2 | Etiquetas extra (Deezer, iTunes, Wikidata, Discogs, Last.fm) | A1 | candidatos enriquecidos | Consultas > 0 por servicio, sin bloqueos; baja el % sin subgénero | máquina | ✅ Deezer 3480, Discogs 561, Wikidata 147; 397 discos resueltos. iTunes (403) y Wikidata (429) pararon: respetado; iTunes se vuelve a probar la semana que viene a 1/4 s |
 | A3 | Consolidar (duplicados, no-novedades) y clasificar | A2, `taxonomia.yaml`, `mapeo_etiquetas.csv` | `data/discos.json`, `descartados.json` | ≥ 75 % con subgénero; coherencia con fuentes especializadas ≥ 90 %; duplicados dudosos revisados uno a uno | máquina + revisión mía | ✅ 85 % con subgénero, coherencia 94 %; 15 parejas dudosas revisadas → 3 reglas nuevas (abreviaturas, título idéntico, ediciones ampliadas); quedan 9 que son discos distintos |
 | A4 | Mapear etiquetas nuevas | etiquetas pendientes de A3 | `mapeo_etiquetas.csv` | 0 pendientes o justificadas; ids validados contra la taxonomía (automático) | Wikidata + yo (plan Pro, en sesión) | ✅ **0 pendientes**: 1517 revisadas en sesión (306 a subgénero), 3202 por la regla "sin palabra de género" (muestra revisada); 0 ids rechazados |
-| A5 | Informe | A3–A4 | `docs/informe.md` | Todas las secciones con datos de enero a diciembre; cifras coherentes entre secciones | máquina | ⬜ |
-| A6 | Web con los datos de 2026 | A5 | `site/data/*` | Pruebas de navegador en verde, 0 infracciones de accesibilidad, revisión visual en móvil | máquina + yo | ⬜ |
-| A7 | "Lo mejor del año" con 2026 | A3 + listas anuales | vista en la web | Ranking 2026 coherente (discos con más reseñas/nota/listas arriba); 2025 por listas | yo | ⬜ |
+| A5 | Informe | A3–A4 | `docs/informe.md` | Todas las secciones con datos de enero a diciembre; cifras coherentes entre secciones | máquina | 🟡 generado cada semana; la parte de validación pasa a V8 |
+| A6 | Web con los datos de 2026 | A5 | `site/data/*` | Pruebas de navegador en verde, 0 infracciones de accesibilidad, revisión visual en móvil | máquina + yo | ❌ publicada, pero **la revisión visual falló** (sin portadas arriba, notas y artistas poco claros) → bloque W y V7 |
+| A7 | "Lo mejor del año" con 2026 | A3 + listas anuales | vista en la web | Ranking 2026 coherente (discos con más reseñas/nota/listas arriba); 2025 por listas | yo | 🟡 orden ponderado hecho; presentación → W3 |
 
 ### Bloque B · Calidad medida
 
 | ID | Tarea | Entradas | Salida | Cómo se valida | Quién | Estado |
 |---|---|---|---|---|---|---|
 | B1 | Revisar una muestra de 60 discos (subgéneros correctos, parciales o no) | A3 | `data/revision_clasificacion.csv` + aciertos en el informe | Objetivo: ≥ 85 % correctos o parciales; cada error explicado y, si es de reglas, corregido | yo (plan Pro, en sesión) | ✅ 98 % correctos o parciales (79 % correctos); 4 causas corregidas en las reglas (ver abajo) |
-| B2 | Revisar descartes por regla (muestra de cada motivo) | A3 | notas en el informe | Ningún disco nuevo descartado por error en la muestra | yo | ⏳ revisados los 30 motivos; 4 fallos encontrados y corregidos (ver abajo); falta comprobar el resultado de la nueva recogida |
+| B2 | Revisar descartes por regla (muestra de cada motivo) | A3 | notas en el informe | Ningún disco nuevo descartado por error en la muestra | yo | ✅ una vez (4 fallos corregidos) → **se automatiza en V3** |
 | B3 | Rendimiento de la web (Lighthouse, móvil) | web actual | cifras en `docs/requisitos.md` | Rendimiento ≥ 90 y accesibilidad ≥ 95 en móvil | yo | 🟡 hecho: 83–87 (antes 56) y accesibilidad 100; repetir con la web publicada |
 | B4 | Cobertura por campo, coherencia, duplicados | A3 | informe § Calidad | Se publica cada semana | máquina | ✅ (con 5 meses) |
 
@@ -51,9 +97,9 @@ A1 recoger ─► A2 etiquetas extra ─► A3 consolidar+clasificar ─► A4 m
 
 | ID | Tarea | Entradas | Salida | Cómo se valida | Quién | Estado |
 |---|---|---|---|---|---|---|
-| C1 | Petición para pasar los cambios a `main` | A6, B1 | petición en GitHub | Pruebas de GitHub en verde | yo | ⬜ |
-| C2 | Aprobar la petición y activar GitHub Pages | C1 | web pública | Settings → Pages → Source: GitHub Actions | 👤 | ⬜ |
-| C3 | Primera ejecución de la Action en `main` | C2 | web publicada + datos | Ejecución en verde; la web abre en el móvil; resumen sin fuentes nuevas con problemas | máquina (👤 la lanza o espera al sábado) | ⬜ |
+| C1 | Petición para pasar los cambios a `main` | A6, B1 | petición en GitHub | Pruebas de GitHub en verde | yo | ✅ #1 fusionada |
+| C2 | Aprobar la petición y activar GitHub Pages | C1 | web pública | Settings → Pages → Source: GitHub Actions | 👤 | ✅ web en https://estebancobo-dot.github.io/novedades-discos/ |
+| C3 | Primera ejecución de la Action en `main` | C2 | web publicada + datos | Ejecución en verde; la web abre en el móvil; resumen sin fuentes nuevas con problemas | máquina (👤 la lanza o espera al sábado) | ⏳ lanzada el 28-nov |
 
 ### Lo que encontraron B1 y B2 (28-nov) y cómo se corrigió
 
@@ -80,7 +126,7 @@ Blues por una etiqueta de MusicBrainz; Kontrast – *Imperium – Proteus* se tr
 | D2 | Vigilancia semanal | Action | resumen de cada ejecución | Si una fuente sale "vacía", "bloqueada" o "error" dos semanas seguidas, se revisa su patrón | máquina + yo | ⬜ |
 | E1 | Búsqueda continua de fuentes (synth/dark, punk, blues, cantautores) | `docs/fuentes.md` | fuentes nuevas probadas | Cada fuente nueva probada con `scraper.probar` y documentada con su motivo | yo | ⏳ continuo |
 | E2 | Listas de fin de año 2026 (salen en diciembre–enero) | Year End Lists, plantillas por año | "Lo mejor de 2026" con listas | La vista muestra las listas de 2026 | máquina (automático) | ⬜ |
-| F1 | Revisar AOTY, RYM y AllMusic con el navegador del usuario | 👤 navegador | `docs/estado-del-arte.md` completo | Ficha de disco y filtros de las 4 webs descritos | 👤 + yo | ⬜ (sin PC: hecho lo posible por otras vías) |
+| F1 | Revisar AOTY, RYM y AllMusic con el navegador del usuario | 👤 navegador | `docs/estado-del-arte/README.md` | Ficha de disco y filtros de las 4 webs descritos | 👤 + yo | 🟡 Metacritic en directo ✅; AOTY/RYM/AllMusic bloquean: estudiadas por su documentación y el código abierto que las lee; verlas en directo necesita el navegador del usuario |
 | F2 | Mejoras de la web que salgan de F1 y del uso real | F1, opiniones del usuario | cambios en `site/` | Pruebas de navegador y accesibilidad en verde | yo | ⬜ |
 
 ## Largo plazo (opcional, a decidir por el usuario)
