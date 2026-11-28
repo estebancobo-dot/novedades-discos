@@ -28,7 +28,7 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 - 🔴 **muestra_de_referencia**: 41 de 53 discos de referencia exactamente bien; mínimo 85.0 % — 77.4
     - Onasander & RNGMNN – Illumination Phases: ha desaparecido de la web
     - Astral Spectre – Cosmic Mirage: sobra classic-rock
-    - Kreator – Krushers of the World: sobra death-metal|hard-rock
+    - Kreator – Krushers of the World: sobra hard-rock|death-metal
     - The Notwist – News from Planet Zombie: sobra post-hardcore|post-rock
     - Ethan Setiawan & Fine Ground – Little Storms: ha desaparecido de la web
 - 🔴 **fuentes_estado**: 62 de 69 fuentes leídas bien — 89.9
