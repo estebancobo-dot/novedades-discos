@@ -11,7 +11,7 @@
    "familia": "country",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 3,
    "items": 711
   },
@@ -21,9 +21,9 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 18,
-   "items": 24
+   "detalle": "",
+   "paginas": 2,
+   "items": 4
   },
   "scm_noticias": {
    "nombre": "Saving Country Music – noticias",
@@ -31,9 +31,9 @@
    "familia": "country",
    "rol": "noticia",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 18,
-   "items": 20
+   "detalle": "",
+   "paginas": 2,
+   "items": 1
   },
   "holler": {
    "nombre": "Holler – First Listen",
@@ -41,7 +41,7 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 2,
    "items": 12
   },
@@ -51,9 +51,9 @@
    "familia": "country",
    "rol": "noticia",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 40,
-   "items": 2
+   "detalle": "",
+   "paginas": 31,
+   "items": 1
   },
   "americanauk": {
    "nombre": "Americana UK",
@@ -61,9 +61,9 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 40,
-   "items": 385
+   "detalle": "",
+   "paginas": 5,
+   "items": 48
   },
   "twangville": {
    "nombre": "Twangville",
@@ -71,9 +71,9 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 20,
-   "items": 82
+   "detalle": "",
+   "paginas": 3,
+   "items": 10
   },
   "cst": {
    "nombre": "Country Standard Time – CD releases",
@@ -81,7 +81,7 @@
    "familia": "country",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 30
   },
@@ -91,7 +91,7 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 5
   },
@@ -101,9 +101,9 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 30,
-   "items": 129
+   "detalle": "",
+   "paginas": 5,
+   "items": 18
   },
   "glide": {
    "nombre": "Glide Magazine",
@@ -111,7 +111,7 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 2
   },
@@ -121,19 +121,19 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 40,
-   "items": 240
+   "detalle": "",
+   "paginas": 7,
+   "items": 49
   },
   "heavyharmonies": {
    "nombre": "Heavy Harmonies – New Additions",
    "web": "https://heavyharmonies.com",
    "familia": "hardrock",
    "rol": "listado",
-   "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 1,
-   "items": 300
+   "estado": "prohibida",
+   "detalle": "robots.txt de heavyharmonies.com no permite https://heavyharmonies.com/cgi-bin/newcds.cgi",
+   "paginas": 0,
+   "items": 0
   },
   "melodicrock": {
    "nombre": "MelodicRock.com",
@@ -141,7 +141,7 @@
    "familia": "hardrock",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 7
   },
@@ -151,7 +151,7 @@
    "familia": "hardrock",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 9
   },
@@ -161,7 +161,7 @@
    "familia": "hardrock",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 183
   },
@@ -171,9 +171,9 @@
    "familia": "hardrock",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 60,
-   "items": 190
+   "detalle": "",
+   "paginas": 6,
+   "items": 18
   },
   "loudwire": {
    "nombre": "Loudwire – 2026 Hard Rock + Metal Release Calendar",
@@ -190,10 +190,10 @@
    "web": "https://metalplanetmusic.com",
    "familia": "hardrock",
    "rol": "resena",
-   "estado": "ok",
-   "detalle": "(al reintentar) (lectura guardada)",
-   "paginas": 60,
-   "items": 54
+   "estado": "vacia",
+   "detalle": "",
+   "paginas": 1,
+   "items": 0
   },
   "louder": {
    "nombre": "Louder (Classic Rock / Prog) – reseñas",
@@ -201,7 +201,7 @@
    "familia": "hardrock",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 12,
    "items": 120
   },
@@ -211,9 +211,9 @@
    "familia": "todas",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 51,
-   "items": 1096
+   "detalle": "",
+   "paginas": 4,
+   "items": 144
   },
   "wikipedia": {
    "nombre": "Wikipedia – List of albums",
@@ -221,9 +221,9 @@
    "familia": "todas",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "https://en.wikipedia.org/wiki/List_of_2027_albums_(January%E2%80%93June) → HTTP 404; (lectura guardada)",
+   "detalle": "https://en.wikipedia.org/wiki/List_of_2027_albums_(January%E2%80%93June) → HTTP 404;",
    "paginas": 3,
-   "items": 1736
+   "items": 1740
   },
   "pitchfork_proximos": {
    "nombre": "Pitchfork – guía de próximos discos",
@@ -231,7 +231,7 @@
    "familia": "todas",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 46
   },
@@ -241,7 +241,7 @@
    "familia": "todas",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 70
   },
@@ -251,7 +251,7 @@
    "familia": "todas",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 3,
    "items": 48
   },
@@ -261,7 +261,7 @@
    "familia": "todas",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 179
   },
@@ -271,7 +271,7 @@
    "familia": "todas",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 40
   },
@@ -282,18 +282,18 @@
    "rol": "resena",
    "estado": "ok",
    "detalle": "",
-   "paginas": 29,
-   "items": 226
+   "paginas": 3,
+   "items": 22
   },
   "bluesrockreview": {
    "nombre": "Blues Rock Review",
    "web": "https://bluesrockreview.com",
    "familia": "todas",
    "rol": "resena",
-   "estado": "ok",
+   "estado": "vacia",
    "detalle": "",
-   "paginas": 30,
-   "items": 55
+   "paginas": 1,
+   "items": 0
   },
   "dyingscene": {
    "nombre": "Dying Scene (punk)",
@@ -301,9 +301,9 @@
    "familia": "todas",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 27,
-   "items": 2
+   "detalle": "",
+   "paginas": 3,
+   "items": 1
   },
   "quietus": {
    "nombre": "The Quietus",
@@ -311,9 +311,9 @@
    "familia": "todas",
    "rol": "noticia",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 30,
-   "items": 62
+   "detalle": "",
+   "paginas": 4,
+   "items": 4
   },
   "sideline": {
    "nombre": "Side-Line (dark electrónico, EBM, synth, goth)",
@@ -321,9 +321,9 @@
    "familia": "synthdark",
    "rol": "noticia",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 49,
-   "items": 579
+   "detalle": "",
+   "paginas": 7,
+   "items": 75
   },
   "regen": {
    "nombre": "ReGen Magazine – reseñas (industrial, synthpop, darkwave)",
@@ -331,9 +331,9 @@
    "familia": "synthdark",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 15,
-   "items": 148
+   "detalle": "",
+   "paginas": 1,
+   "items": 10
   },
   "angrymetalguy": {
    "nombre": "Angry Metal Guy – reseñas",
@@ -341,9 +341,9 @@
    "familia": "rockmetal",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 67,
-   "items": 583
+   "detalle": "",
+   "paginas": 6,
+   "items": 51
   },
   "distortedsound": {
    "nombre": "Distorted Sound – reseñas",
@@ -351,9 +351,9 @@
    "familia": "rockmetal",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 45,
-   "items": 328
+   "detalle": "",
+   "paginas": 4,
+   "items": 31
   },
   "blabbermouth": {
    "nombre": "Blabbermouth – noticias (metal y hard rock)",
@@ -361,7 +361,7 @@
    "familia": "rockmetal",
    "rol": "noticia",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 2
   },
@@ -371,9 +371,9 @@
    "familia": "todas",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 110,
-   "items": 264
+   "detalle": "",
+   "paginas": 9,
+   "items": 24
   },
   "psychedelicbaby": {
    "nombre": "Psychedelic Baby Magazine (psicodelia, garage, prog)",
@@ -381,9 +381,9 @@
    "familia": "todas",
    "rol": "noticia",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
-   "paginas": 72,
-   "items": 73
+   "detalle": "",
+   "paginas": 5,
+   "items": 3
   },
   "radar_musicbrainz": {
    "nombre": "Radar de artistas (MusicBrainz)",
@@ -391,9 +391,9 @@
    "familia": "todas",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "2275 artistas por id y 2458 por nombre (lectura guardada)",
-   "paginas": 18,
-   "items": 1547
+   "detalle": "3039 artistas por id y 3418 por nombre",
+   "paginas": 7,
+   "items": 142
   },
   "radar_deezer": {
    "nombre": "Radar de artistas (Deezer)",
@@ -401,9 +401,9 @@
    "familia": "todas",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "2260 artistas consultados (lectura guardada)",
+   "detalle": "2967 artistas consultados",
    "paginas": 1000,
-   "items": 992
+   "items": 53
   },
   "newwest": {
    "nombre": "New West Records – Recent Releases",
@@ -411,7 +411,7 @@
    "familia": "country",
    "rol": "sello",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 2,
    "items": 64
   },
@@ -421,7 +421,7 @@
    "familia": "country",
    "rol": "sello",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 30
   },
@@ -431,7 +431,7 @@
    "familia": "hardrock",
    "rol": "sello",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 2,
    "items": 49
   },
@@ -441,7 +441,7 @@
    "familia": "hardrock",
    "rol": "sello",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 64
   },
@@ -451,7 +451,7 @@
    "familia": "hardrock",
    "rol": "sello",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 7
   },
@@ -461,7 +461,7 @@
    "familia": "hardrock",
    "rol": "sello",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 1
   },
@@ -470,10 +470,10 @@
    "web": "https://heavyharmonies.com",
    "familia": "hardrock",
    "rol": "lista_anual",
-   "estado": "ok",
-   "detalle": "https://heavyharmonies.com/cgi-bin/2026best.cgi → HTTP 404; (lectura guardada)",
-   "paginas": 11,
-   "items": 866
+   "estado": "prohibida",
+   "detalle": "robots.txt de heavyharmonies.com no permite https://heavyharmonies.com/cgi-bin/2016best.cgi",
+   "paginas": 0,
+   "items": 0
   },
   "scm_esenciales": {
    "nombre": "Saving Country Music – Essential Albums",
@@ -481,7 +481,7 @@
    "familia": "country",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://savingcountrymusic.com/saving-country-musics-2026-essential-albums-list/ → HTTP 404; (lectura guardada)",
+   "detalle": "https://savingcountrymusic.com/saving-country-musics-2026-essential-albums-list/ → HTTP 404;",
    "paginas": 7,
    "items": 170
   },
@@ -491,7 +491,7 @@
    "familia": "country",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://savingcountrymusic.com/2020-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2021-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2022-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2023-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2024-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2026-saving-country-music-album-of-the-year-nominees/ → HTTP 404; (lectura guardada)",
+   "detalle": "https://savingcountrymusic.com/2020-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2021-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2022-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2023-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2024-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2026-saving-country-music-album-of-the-year-nominees/ → HTTP 404;",
    "paginas": 7,
    "items": 15
   },
@@ -501,7 +501,7 @@
    "familia": "country",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://holler.country/lists/essentials/best-country-music-albums-2024/ → HTTP 404; https://holler.country/lists/essentials/best-country-music-albums-2026/ → HTTP 404; (lectura guardada)",
+   "detalle": "https://holler.country/lists/essentials/best-country-music-albums-2024/ → HTTP 404; https://holler.country/lists/essentials/best-country-music-albums-2026/ → HTTP 404;",
    "paginas": 3,
    "items": 25
   },
@@ -511,7 +511,7 @@
    "familia": "country",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 10
   },
@@ -531,7 +531,7 @@
    "familia": "hardrock",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://www.loudersound.com/bands-artists/classic-rock-50-best-albums-2026 → HTTP 404; (lectura guardada)",
+   "detalle": "https://www.loudersound.com/bands-artists/classic-rock-50-best-albums-2026 → HTTP 404;",
    "paginas": 2,
    "items": 34
   },
@@ -541,7 +541,7 @@
    "familia": "hardrock",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 5
   },
@@ -550,10 +550,10 @@
    "web": "https://www.pastemagazine.com",
    "familia": "todas",
    "rol": "lista_anual",
-   "estado": "ok",
-   "detalle": "https://www.pastemagazine.com/music/best-albums/the-50-best-albums-of-2026 → HTTP 404; (lectura guardada)",
-   "paginas": 2,
-   "items": 50
+   "estado": "bloqueada",
+   "detalle": "pastemagazine.com: cabecera cf-mitigated: challenge",
+   "paginas": 0,
+   "items": 0
   },
   "bpm_mejores": {
    "nombre": "Beats Per Minute – Top 50 albums",
@@ -561,7 +561,7 @@
    "familia": "todas",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://beatsperminute.com/bpms-top-50-albums-of-2026/ → HTTP 404; (lectura guardada)",
+   "detalle": "https://beatsperminute.com/bpms-top-50-albums-of-2026/ → HTTP 404;",
    "paginas": 2,
    "items": 48
   },
@@ -571,7 +571,7 @@
    "familia": "todas",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://www.yearendlists.com/category/2025-albums/page/7 → HTTP 404; https://www.yearendlists.com/category/2025-albums/page/8 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/2 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/3 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/4 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/5 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/6 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/7 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/8 → HTTP 404; (lectura guardada)",
+   "detalle": "https://www.yearendlists.com/category/2025-albums/page/7 → HTTP 404; https://www.yearendlists.com/category/2025-albums/page/8 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/2 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/3 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/4 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/5 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/6 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/7 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/8 → HTTP 404;",
    "paginas": 16,
    "items": 5495
   },
@@ -581,7 +581,7 @@
    "familia": "todas",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 2,
    "items": 40
   },
@@ -591,7 +591,7 @@
    "familia": "blues",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 50
   },
@@ -601,7 +601,7 @@
    "familia": "country",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 50
   },
@@ -611,7 +611,7 @@
    "familia": "country",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 50
   },
@@ -621,7 +621,7 @@
    "familia": "country",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 50
   },
@@ -631,7 +631,7 @@
    "familia": "blues",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "detalle": "",
    "paginas": 1,
    "items": 50
   },
@@ -640,10 +640,10 @@
    "web": "https://rushonrock.com",
    "familia": "blues",
    "rol": "lista_anual",
-   "estado": "ok",
-   "detalle": "(lectura guardada)",
+   "estado": "vacia",
+   "detalle": "",
    "paginas": 1,
-   "items": 10
+   "items": 0
   },
   "synthpopfanatic_mejores": {
    "nombre": "Synthpop Fanatic – The 25 best synthpop albums",
@@ -651,7 +651,7 @@
    "familia": "synthdark",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://www.synthpopfanatic.com/best/the-25-best-synthpop-albums-of-2026/ → HTTP 404; (lectura guardada)",
+   "detalle": "https://www.synthpopfanatic.com/best/the-25-best-synthpop-albums-of-2026/ → HTTP 404;",
    "paginas": 2,
    "items": 25
   },
@@ -661,7 +661,7 @@
    "familia": "synthdark",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://post-punk.com/post-punk-com-the-best-of-2026 → HTTP 404; (lectura guardada)",
+   "detalle": "https://post-punk.com/post-punk-com-the-best-of-2026 → HTTP 404;",
    "paginas": 2,
    "items": 35
   },
@@ -671,38 +671,36 @@
    "familia": "ninguna",
    "rol": "sonda",
    "estado": "ok",
-   "detalle": "responde HTTP 200 (lectura guardada)",
+   "detalle": "responde HTTP 200",
    "paginas": 1,
    "items": 0
   }
  },
  "musicbrainz": {
-  "consultas": 534,
+  "consultas": 111,
   "bloqueado": null
  },
  "bandcamp": {
-  "paginas": 600,
+  "paginas": 77,
   "bloqueado": null
  },
- "peticiones": 1354,
- "hosts_bloqueados": {},
+ "peticiones": 2595,
+ "hosts_bloqueados": {
+  "pastemagazine.com": "pastemagazine.com: cabecera cf-mitigated: challenge"
+ },
  "menciones": {
-  "total": 166,
-  "sin_pareja": 103
+  "total": 164,
+  "sin_pareja": 110
  },
  "etiquetas_extra": {
-  "discos_sin_subgenero": 2265,
-  "con_subgenero_tras_extra": 373,
+  "discos_sin_subgenero": 2131,
+  "con_subgenero_tras_extra": 194,
   "consultas": {
-   "itunes": 31,
-   "deezer": 157,
-   "discogs": 90,
-   "wikidata": 56
+   "deezer": 39,
+   "discogs": 20,
+   "wikidata": 198
   },
-  "bloqueos": {
-   "itunes": "itunes.apple.com: HTTP 403",
-   "wikidata": "wikidata.org: HTTP 429"
-  },
+  "bloqueos": {},
   "lastfm_sin_clave": true
  }
 }
