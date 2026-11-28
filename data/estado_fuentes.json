@@ -11,7 +11,7 @@
    "familia": "country",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 3,
    "items": 711
   },
@@ -21,7 +21,7 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 2,
    "items": 4
   },
@@ -31,7 +31,7 @@
    "familia": "country",
    "rol": "noticia",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 2,
    "items": 1
   },
@@ -41,7 +41,7 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 2,
    "items": 12
   },
@@ -51,7 +51,7 @@
    "familia": "country",
    "rol": "noticia",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 31,
    "items": 1
   },
@@ -61,7 +61,7 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 5,
    "items": 48
   },
@@ -71,7 +71,7 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 3,
    "items": 10
   },
@@ -81,7 +81,7 @@
    "familia": "country",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 30
   },
@@ -91,7 +91,7 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 5
   },
@@ -101,7 +101,7 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 5,
    "items": 18
   },
@@ -111,7 +111,7 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 2
   },
@@ -121,7 +121,7 @@
    "familia": "country",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 7,
    "items": 49
   },
@@ -141,7 +141,7 @@
    "familia": "hardrock",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 7
   },
@@ -151,7 +151,7 @@
    "familia": "hardrock",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 9
   },
@@ -161,7 +161,7 @@
    "familia": "hardrock",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 183
   },
@@ -171,7 +171,7 @@
    "familia": "hardrock",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 6,
    "items": 18
   },
@@ -181,7 +181,7 @@
    "familia": "hardrock",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "https://loudwire.com/2027-hard-rock-metal-album-release-calendar/ → HTTP 404;",
+   "detalle": "https://loudwire.com/2027-hard-rock-metal-album-release-calendar/ → HTTP 404; (lectura guardada)",
    "paginas": 2,
    "items": 1021
   },
@@ -201,7 +201,7 @@
    "familia": "hardrock",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 12,
    "items": 120
   },
@@ -211,7 +211,7 @@
    "familia": "todas",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 4,
    "items": 144
   },
@@ -221,7 +221,7 @@
    "familia": "todas",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "https://en.wikipedia.org/wiki/List_of_2027_albums_(January%E2%80%93June) → HTTP 404;",
+   "detalle": "https://en.wikipedia.org/wiki/List_of_2027_albums_(January%E2%80%93June) → HTTP 404; (lectura guardada)",
    "paginas": 3,
    "items": 1740
   },
@@ -231,7 +231,7 @@
    "familia": "todas",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 46
   },
@@ -241,7 +241,7 @@
    "familia": "todas",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 70
   },
@@ -251,7 +251,7 @@
    "familia": "todas",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 3,
    "items": 48
   },
@@ -261,7 +261,7 @@
    "familia": "todas",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 179
   },
@@ -271,7 +271,7 @@
    "familia": "todas",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 40
   },
@@ -281,7 +281,7 @@
    "familia": "todas",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 3,
    "items": 22
   },
@@ -301,7 +301,7 @@
    "familia": "todas",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 3,
    "items": 1
   },
@@ -311,7 +311,7 @@
    "familia": "todas",
    "rol": "noticia",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 4,
    "items": 4
   },
@@ -321,7 +321,7 @@
    "familia": "synthdark",
    "rol": "noticia",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 7,
    "items": 75
   },
@@ -331,7 +331,7 @@
    "familia": "synthdark",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 10
   },
@@ -341,7 +341,7 @@
    "familia": "rockmetal",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 6,
    "items": 51
   },
@@ -351,7 +351,7 @@
    "familia": "rockmetal",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 4,
    "items": 31
   },
@@ -361,7 +361,7 @@
    "familia": "rockmetal",
    "rol": "noticia",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 2
   },
@@ -371,7 +371,7 @@
    "familia": "todas",
    "rol": "resena",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 9,
    "items": 24
   },
@@ -381,7 +381,7 @@
    "familia": "todas",
    "rol": "noticia",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 5,
    "items": 3
   },
@@ -391,7 +391,7 @@
    "familia": "todas",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "3039 artistas por id y 3418 por nombre",
+   "detalle": "3039 artistas por id y 3418 por nombre (lectura guardada)",
    "paginas": 7,
    "items": 142
   },
@@ -401,7 +401,7 @@
    "familia": "todas",
    "rol": "listado",
    "estado": "ok",
-   "detalle": "2967 artistas consultados",
+   "detalle": "2967 artistas consultados (lectura guardada)",
    "paginas": 1000,
    "items": 53
   },
@@ -411,7 +411,7 @@
    "familia": "country",
    "rol": "sello",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 2,
    "items": 64
   },
@@ -421,7 +421,7 @@
    "familia": "country",
    "rol": "sello",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 30
   },
@@ -431,7 +431,7 @@
    "familia": "hardrock",
    "rol": "sello",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 2,
    "items": 49
   },
@@ -441,7 +441,7 @@
    "familia": "hardrock",
    "rol": "sello",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 64
   },
@@ -451,7 +451,7 @@
    "familia": "hardrock",
    "rol": "sello",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 7
   },
@@ -461,7 +461,7 @@
    "familia": "hardrock",
    "rol": "sello",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 1
   },
@@ -481,7 +481,7 @@
    "familia": "country",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://savingcountrymusic.com/saving-country-musics-2026-essential-albums-list/ → HTTP 404;",
+   "detalle": "https://savingcountrymusic.com/saving-country-musics-2026-essential-albums-list/ → HTTP 404; (lectura guardada)",
    "paginas": 7,
    "items": 170
   },
@@ -491,7 +491,7 @@
    "familia": "country",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://savingcountrymusic.com/2020-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2021-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2022-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2023-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2024-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2026-saving-country-music-album-of-the-year-nominees/ → HTTP 404;",
+   "detalle": "https://savingcountrymusic.com/2020-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2021-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2022-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2023-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2024-saving-country-music-album-of-the-year-nominees/ → HTTP 404; https://savingcountrymusic.com/2026-saving-country-music-album-of-the-year-nominees/ → HTTP 404; (lectura guardada)",
    "paginas": 7,
    "items": 15
   },
@@ -501,7 +501,7 @@
    "familia": "country",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://holler.country/lists/essentials/best-country-music-albums-2024/ → HTTP 404; https://holler.country/lists/essentials/best-country-music-albums-2026/ → HTTP 404;",
+   "detalle": "https://holler.country/lists/essentials/best-country-music-albums-2024/ → HTTP 404; https://holler.country/lists/essentials/best-country-music-albums-2026/ → HTTP 404; (lectura guardada)",
    "paginas": 3,
    "items": 25
   },
@@ -511,7 +511,7 @@
    "familia": "country",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 10
   },
@@ -531,7 +531,7 @@
    "familia": "hardrock",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://www.loudersound.com/bands-artists/classic-rock-50-best-albums-2026 → HTTP 404;",
+   "detalle": "https://www.loudersound.com/bands-artists/classic-rock-50-best-albums-2026 → HTTP 404; (lectura guardada)",
    "paginas": 2,
    "items": 34
   },
@@ -541,7 +541,7 @@
    "familia": "hardrock",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 5
   },
@@ -561,7 +561,7 @@
    "familia": "todas",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://beatsperminute.com/bpms-top-50-albums-of-2026/ → HTTP 404;",
+   "detalle": "https://beatsperminute.com/bpms-top-50-albums-of-2026/ → HTTP 404; (lectura guardada)",
    "paginas": 2,
    "items": 48
   },
@@ -571,7 +571,7 @@
    "familia": "todas",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://www.yearendlists.com/category/2025-albums/page/7 → HTTP 404; https://www.yearendlists.com/category/2025-albums/page/8 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/2 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/3 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/4 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/5 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/6 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/7 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/8 → HTTP 404;",
+   "detalle": "https://www.yearendlists.com/category/2025-albums/page/7 → HTTP 404; https://www.yearendlists.com/category/2025-albums/page/8 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/2 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/3 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/4 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/5 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/6 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/7 → HTTP 404; https://www.yearendlists.com/category/2026-albums/page/8 → HTTP 404; (lectura guardada)",
    "paginas": 16,
    "items": 5495
   },
@@ -581,7 +581,7 @@
    "familia": "todas",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 2,
    "items": 40
   },
@@ -591,7 +591,7 @@
    "familia": "blues",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 50
   },
@@ -601,7 +601,7 @@
    "familia": "country",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 50
   },
@@ -611,7 +611,7 @@
    "familia": "country",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 50
   },
@@ -621,7 +621,7 @@
    "familia": "country",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 50
   },
@@ -631,7 +631,7 @@
    "familia": "blues",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "",
+   "detalle": "(lectura guardada)",
    "paginas": 1,
    "items": 50
   },
@@ -651,7 +651,7 @@
    "familia": "synthdark",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://www.synthpopfanatic.com/best/the-25-best-synthpop-albums-of-2026/ → HTTP 404;",
+   "detalle": "https://www.synthpopfanatic.com/best/the-25-best-synthpop-albums-of-2026/ → HTTP 404; (lectura guardada)",
    "paginas": 2,
    "items": 25
   },
@@ -661,7 +661,7 @@
    "familia": "synthdark",
    "rol": "lista_anual",
    "estado": "ok",
-   "detalle": "https://post-punk.com/post-punk-com-the-best-of-2026 → HTTP 404;",
+   "detalle": "https://post-punk.com/post-punk-com-the-best-of-2026 → HTTP 404; (lectura guardada)",
    "paginas": 2,
    "items": 35
   },
@@ -671,36 +671,45 @@
    "familia": "ninguna",
    "rol": "sonda",
    "estado": "ok",
-   "detalle": "responde HTTP 200",
+   "detalle": "responde HTTP 200 (lectura guardada)",
    "paginas": 1,
    "items": 0
+  },
+  "ucr_lanzamientos": {
+   "nombre": "Ultimate Classic Rock – New Music Releases (calendario anual)",
+   "web": "https://ultimateclassicrock.com",
+   "familia": "todas",
+   "rol": "listado",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 1,
+   "items": 688
+  },
+  "burningminds_aor": {
+   "nombre": "Burning Minds / Art of Melody Music – lanzamientos (AOR, melodic rock, westcoast)",
+   "web": "https://www.burningmindsgroup.com",
+   "familia": "hardrock",
+   "rol": "listado",
+   "estado": "ok",
+   "detalle": "",
+   "paginas": 1,
+   "items": 4
   }
  },
  "musicbrainz": {
-  "consultas": 111,
+  "consultas": 706,
   "bloqueado": null
  },
  "bandcamp": {
-  "paginas": 77,
+  "paginas": 47,
   "bloqueado": null
  },
- "peticiones": 2595,
+ "peticiones": 1168,
  "hosts_bloqueados": {
   "pastemagazine.com": "pastemagazine.com: cabecera cf-mitigated: challenge"
  },
  "menciones": {
   "total": 164,
-  "sin_pareja": 110
- },
- "etiquetas_extra": {
-  "discos_sin_subgenero": 2131,
-  "con_subgenero_tras_extra": 194,
-  "consultas": {
-   "deezer": 39,
-   "discogs": 20,
-   "wikidata": 198
-  },
-  "bloqueos": {},
-  "lastfm_sin_clave": true
+  "sin_pareja": 105
  }
 }
