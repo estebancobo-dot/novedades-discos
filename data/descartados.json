@@ -6589,26 +6589,6 @@
   "etiquetas": []
  },
  {
-  "artista": "6lack",
-  "titulo": "Love Is the New Gangsta",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "wikipedia"
-  ],
-  "fecha": "2026-05-21",
-  "etiquetas": [
-   "hip hop",
-   "contemporary r&b",
-   "hip hop soul",
-   "pop soul",
-   "alternative r&b",
-   "r&b",
-   "soul",
-   "trap soul",
-   "2010s"
-  ]
- },
- {
   "artista": "The Magus",
   "titulo": "Concentrated Hell",
   "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
@@ -7588,24 +7568,6 @@
   ]
  },
  {
-  "artista": "Dirt Buyer",
-  "titulo": "Dirt Buyer III",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "wikipedia",
-   "pauseandplay"
-  ],
-  "fecha": "2026-02-06",
-  "etiquetas": [
-   "Alternative",
-   "brooklyn",
-   "emo folk",
-   "nyc",
-   "weird folk",
-   "New York"
-  ]
- },
- {
   "artista": "Eugene Mirman",
   "titulo": "Here Comes the Whimsy",
   "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
@@ -7896,19 +7858,6 @@
    "house",
    "warp",
    "Sheffield"
-  ]
- },
- {
-  "artista": "Ugasanie",
-  "titulo": "Endless Cold, Endless Darkness",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "sideline"
-  ],
-  "fecha": "2026-01-13",
-  "etiquetas": [
-   "Reviews",
-   "Ugasanie"
   ]
  },
  {
@@ -19462,6 +19411,19 @@
    "symphonic metal",
    "power metal",
    "austrian"
+  ]
+ },
+ {
+  "artista": "Ugasanie",
+  "titulo": "Endless Cold, Endless Darkness",
+  "motivo": "clasificación: solo subgéneros frontera y fuente mixta",
+  "fuentes": [
+   "sideline"
+  ],
+  "fecha": "2026-01-13",
+  "etiquetas": [
+   "Reviews",
+   "Ugasanie"
   ]
  },
  {

@@ -7353,10 +7353,12 @@
   "sello": "The Stones Of Naples Records",
   "familias": [
    "hardrock",
-   "rockmetal"
+   "rockmetal",
+   "synthdark"
   ],
   "subgeneros": [
    "ethereal",
+   "darkwave",
    "prog-rock"
   ],
   "etiquetas_originales": [
@@ -10636,13 +10638,11 @@
   "estado": "publicado",
   "sello": "Minuswelt Musikfabrik",
   "familias": [
-   "rockmetal",
    "synthdark"
   ],
   "subgeneros": [
    "ebm",
-   "darkwave",
-   "industrial"
+   "darkwave"
   ],
   "etiquetas_originales": [
    "News",
@@ -20883,9 +20883,9 @@
   ],
   "subgeneros": [
    "darkwave",
+   "deathrock",
    "goth-rock",
-   "post-punk",
-   "synthwave"
+   "post-punk"
   ],
   "etiquetas_originales": [
    "News",
@@ -23032,10 +23032,12 @@
   "estado": "publicado",
   "sello": "It Records",
   "familias": [
+   "punkgarage",
    "synthdark"
   ],
   "subgeneros": [
-   "darkwave"
+   "darkwave",
+   "deathrock"
   ],
   "etiquetas_originales": [
    "News",
@@ -72975,7 +72977,8 @@
   "subgeneros": [
    "lo-fi",
    "indie-pop",
-   "shoegaze"
+   "shoegaze",
+   "indie-rock"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -148796,7 +148799,7 @@
    "darkwave",
    "post-punk",
    "coldwave",
-   "synth-pop"
+   "no-wave"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -163211,6 +163214,116 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-05-31",
   "detectado": "2026-11-28",
+  "subgeneros_frontera": []
+ },
+ {
+  "id": "6lack-love-is-the-new-gangsta",
+  "artista": "6lack",
+  "titulo": "Love Is the New Gangsta",
+  "fecha": "2026-05-21",
+  "fecha_exacta": true,
+  "fecha_origen": "musicbrainz",
+  "estado": "publicado",
+  "sello": "Interscope Records",
+  "familias": [
+   "rockmetal"
+  ],
+  "subgeneros": [
+   "industrial"
+  ],
+  "etiquetas_originales": [],
+  "descripciones": [],
+  "etiquetas_musicbrainz_bandcamp": [
+   "hip hop",
+   "contemporary r&b",
+   "hip hop soul",
+   "pop soul",
+   "alternative r&b",
+   "r&b",
+   "soul",
+   "trap soul",
+   "2010s"
+  ],
+  "portada": "https://coverartarchive.org/release-group/7c7d99b0-810a-458d-889c-5a566391a389/front-250",
+  "pistas": 15,
+  "tipo": "álbum",
+  "tipo_verificado": true,
+  "idioma": "eng",
+  "fuentes": [
+   {
+    "id": "wikipedia",
+    "nombre": "Wikipedia – List of albums",
+    "rol": "listado",
+    "url": "https://en.wikipedia.org/wiki/List_of_2026_albums",
+    "fecha": null
+   }
+  ],
+  "resenas": [],
+  "enlaces": {
+   "discogs": "https://www.discogs.com/release/37476198",
+   "spotify": "https://open.spotify.com/album/0DUJdzFUyxiNUheVGbdWrd",
+   "musicbrainz": "https://musicbrainz.org/release-group/7c7d99b0-810a-458d-889c-5a566391a389",
+   "deezer": "https://www.deezer.com/album/983760861"
+  },
+  "enlace_artista_bandcamp": null,
+  "en_bandcamp": false,
+  "mbid": "7c7d99b0-810a-458d-889c-5a566391a389",
+  "mbid_artistas": [
+   "07832b42-8826-4ab1-acd3-c49a2f595ffe"
+  ],
+  "requiere_subgenero": true,
+  "primera_mencion": null,
+  "detectado": "2026-11-28",
+  "deezer": {
+   "id": 983760861,
+   "pistas": 15,
+   "portada": "https://cdn-images.dzcdn.net/images/cover/13237b557dd6068b5b97c1f3064e63b9/250x250-000000-80-0-0.jpg",
+   "portada_grande": "https://cdn-images.dzcdn.net/images/cover/13237b557dd6068b5b97c1f3064e63b9/1000x1000-000000-80-0-0.jpg",
+   "tipo": "album",
+   "url": "https://www.deezer.com/album/983760861"
+  },
+  "etiquetas_extra": [
+   {
+    "etiqueta": "alternative R&B",
+    "origen": "wikidata"
+   },
+   {
+    "etiqueta": "contemporary R&B",
+    "origen": "wikidata"
+   },
+   {
+    "etiqueta": "trap music",
+    "origen": "wikidata"
+   },
+   {
+    "etiqueta": "cloud rap",
+    "origen": "wikidata"
+   },
+   {
+    "etiqueta": "industrial music",
+    "origen": "wikidata"
+   },
+   {
+    "etiqueta": "soul",
+    "origen": "wikidata"
+   },
+   {
+    "etiqueta": "hip-hop soul",
+    "origen": "wikidata"
+   },
+   {
+    "etiqueta": "Contemporary R&B",
+    "origen": "discogs"
+   },
+   {
+    "etiqueta": "Hip Hop",
+    "origen": "discogs"
+   },
+   {
+    "etiqueta": "Funk / Soul",
+    "origen": "discogs"
+   }
+  ],
   "subgeneros_frontera": []
  },
  {
@@ -199491,10 +199604,12 @@
   "estado": "publicado",
   "sello": "Wharf Cat Records",
   "familias": [
-   "indiepop"
+   "indiepop",
+   "rockmetal"
   ],
   "subgeneros": [
    "indie-pop",
+   "instrumental",
    "shoegaze"
   ],
   "etiquetas_originales": [],
@@ -201602,12 +201717,14 @@
   "estado": "publicado",
   "sello": "Wax Bodega",
   "familias": [
+   "indiepop",
    "punkgarage",
    "rockmetal"
   ],
   "subgeneros": [
    "emo",
    "pop-punk",
+   "indie-rock",
    "punk"
   ],
   "etiquetas_originales": [
@@ -222039,6 +222156,7 @@
   ],
   "subgeneros": [
    "punk",
+   "pop-punk",
    "rock-and-roll"
   ],
   "etiquetas_originales": [],
@@ -227485,7 +227603,7 @@
    "indie-pop",
    "alternative-rock",
    "emo",
-   "grunge"
+   "glam"
   ],
   "etiquetas_originales": [],
   "descripciones": [
@@ -231237,6 +231355,7 @@
   ],
   "subgeneros": [
    "indie-pop",
+   "experimental",
    "dream-pop",
    "synth-pop"
   ],
@@ -231285,7 +231404,9 @@
   "requiere_subgenero": true,
   "primera_mencion": null,
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "experimental"
+  ]
  },
  {
   "id": "kmfdm-enemy",
@@ -232439,6 +232560,70 @@
   "requiere_subgenero": true,
   "primera_mencion": null,
   "detectado": "2026-11-28",
+  "subgeneros_frontera": []
+ },
+ {
+  "id": "dirt-buyer-dirt-buyer-iii",
+  "artista": "Dirt Buyer",
+  "titulo": "Dirt Buyer III",
+  "fecha": "2026-02-06",
+  "fecha_exacta": true,
+  "fecha_origen": "musicbrainz",
+  "estado": "publicado",
+  "sello": "Bayonet Records",
+  "familias": [
+   "country"
+  ],
+  "subgeneros": [
+   "psych-folk"
+  ],
+  "etiquetas_originales": [],
+  "descripciones": [],
+  "etiquetas_musicbrainz_bandcamp": [
+   "Alternative",
+   "brooklyn",
+   "emo folk",
+   "nyc",
+   "weird folk",
+   "New York"
+  ],
+  "portada": "https://coverartarchive.org/release-group/def84f2c-2b31-40fd-9888-42b6db198d9b/front-250",
+  "pistas": 11,
+  "tipo": "álbum",
+  "tipo_verificado": true,
+  "idioma": "eng",
+  "fuentes": [
+   {
+    "id": "wikipedia",
+    "nombre": "Wikipedia – List of albums",
+    "rol": "listado",
+    "url": "https://en.wikipedia.org/wiki/List_of_2026_albums",
+    "fecha": null
+   },
+   {
+    "id": "pauseandplay",
+    "nombre": "Pause & Play – On the CD Front",
+    "rol": "listado",
+    "url": "https://www.pauseandplay.com",
+    "fecha": null
+   }
+  ],
+  "resenas": [],
+  "enlaces": {
+   "apple": "https://music.apple.com/us/album/1846456194",
+   "bandcamp": "https://dirtbuyer.bandcamp.com/album/dirt-buyer-iii",
+   "musicbrainz": "https://musicbrainz.org/release-group/def84f2c-2b31-40fd-9888-42b6db198d9b"
+  },
+  "enlace_artista_bandcamp": "https://dirtbuyer.bandcamp.com/",
+  "en_bandcamp": true,
+  "mbid": "def84f2c-2b31-40fd-9888-42b6db198d9b",
+  "mbid_artistas": [
+   "1526645b-282e-435c-8c91-f69f973e1fc7"
+  ],
+  "requiere_subgenero": true,
+  "primera_mencion": null,
+  "detectado": "2026-11-28",
+  "etiquetas_extra": [],
   "subgeneros_frontera": []
  },
  {
@@ -241534,6 +241719,7 @@
   ],
   "subgeneros": [
    "contemporary-folk",
+   "folk-pop",
    "indie-folk",
    "indie-pop"
   ],
