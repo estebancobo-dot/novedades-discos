@@ -102,8 +102,13 @@ reglas:
 consolidacion:
   similitud_titulo: 0.95        # mismo artista y título casi igual (erratas, espacios)
   dias_maximos: 45              # ...y fechas a menos de N días
+  dias_maximos_titulo_identico: 200   # título idéntico (sin abreviaturas, espacios ni signos): una fuente da la fecha del anuncio
+  descartar_ampliaciones: true      # "Título (In Full Bloom)" que sale meses después de "Título": no es disco nuevo
+  dias_minimos_ampliacion: 30
+  titulos_equivalentes:         # grafías especiales del mismo título (se comparan normalizadas)
+    ei8ht: eight
   artista_recopilatorio: '(?i)^\s*(various artists|various|va|v\.a\.|tributes?|multiple artists|varios artistas)\s*$'
-  titulo_no_nuevo: '(?i)(original (motion picture )?soundtrack|\bOST\b|music from the (motion picture|series|film)|\bthe best of (19|20)\d\d\b|\(so far\)|\bgreatest hits\b|\bthe very best of\b|\b(19|20)\d\d\s*[-–]\s*(19|20)?\d\d\b|(?<=\w)\s+(deluxe|redux|expanded)( edition| version)?\s*$|[(\[-]\s*(deluxe|redux|expanded|anniversary)\b)'
+  titulo_no_nuevo: '(?i)(^\s*(watch (the )?(new |official )?video for|listen to )|original (motion picture )?soundtrack|\bOST\b|music from the (motion picture|series|film)|\bthe best of (19|20)\d\d\b|\(so far\)|\bgreatest hits\b|\bthe very best of\b|\b(19|20)\d\d\s*[-–]\s*(19|20)?\d\d\b|(?<=\w)\s+(deluxe|redux|expanded)( edition| version)?\s*$|[(\[-]\s*(deluxe|redux|expanded|anniversary)\b)'
 
 enriquecimiento:
   musicbrainz: true

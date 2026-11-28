@@ -6093,6 +6093,71 @@
   ]
  },
  {
+  "artista": "THE ROLLING STONES",
+  "titulo": "Foreign Tongues, Loose Lips",
+  "motivo": "clasificación: edición ampliada de «Foreign Tongues» (2026-07-10)",
+  "fuentes": [
+   "getreadytorock"
+  ],
+  "fecha": "2026-11-27"
+ },
+ {
+  "artista": "Kontrast",
+  "titulo": "Imperium – Proteus",
+  "motivo": "clasificación: edición ampliada de «Imperium» (2026-07-14)",
+  "fuentes": [
+   "sideline"
+  ],
+  "fecha": "2026-11-21"
+ },
+ {
+  "artista": "Jackson Dean",
+  "titulo": "Magnolia Sage (In Full Bloom)",
+  "motivo": "clasificación: edición ampliada de «Magnolia Sage» (2026-04-24)",
+  "fuentes": [
+   "cst"
+  ],
+  "fecha": "2026-10-09"
+ },
+ {
+  "artista": "Laibach",
+  "titulo": "Musick: Encore",
+  "motivo": "clasificación: edición ampliada de «Musick» (2026-05-01)",
+  "fuentes": [
+   "radar_musicbrainz"
+  ],
+  "fecha": "2026-11-20"
+ },
+ {
+  "artista": "Lee Brice",
+  "titulo": "Sunriser All-Nighter",
+  "motivo": "clasificación: edición ampliada de «Sunriser» (2026-06-05)",
+  "fuentes": [
+   "pauseandplay"
+  ],
+  "fecha": "2026-10-02"
+ },
+ {
+  "artista": "All the Damn Vampires",
+  "titulo": "VICECORE DLC",
+  "motivo": "clasificación: edición ampliada de «VICECORE» (2026-02-06)",
+  "fuentes": [
+   "radar_deezer"
+  ],
+  "fecha": "2026-07-24"
+ },
+ {
+  "artista": "Flatland Cavalry",
+  "titulo": "Work of Heart – Heartstrings",
+  "motivo": "clasificación: edición ampliada de «Work of Heart» (2026-03-27)",
+  "fuentes": [
+   "scm_radar",
+   "cst",
+   "radar_deezer"
+  ],
+  "fecha": "2026-10-02"
+ },
+ {
   "artista": "Friedberg",
   "titulo": "Goodwife",
   "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
@@ -6420,16 +6485,6 @@
    "trap",
    "r&b"
   ]
- },
- {
-  "artista": "Revnoir",
-  "titulo": "Sometimes I feel you, sometimes I don’t",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "loudwire"
-  ],
-  "fecha": "2026-11-27",
-  "etiquetas": []
  },
  {
   "artista": "Repentance",
@@ -8038,16 +8093,6 @@
   "etiquetas": []
  },
  {
-  "artista": "Green Carnation",
-  "titulo": "Green Carnation - A Dark Poem, Pt. III: The Messiah Complex",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "radar_deezer"
-  ],
-  "fecha": "2026-09-04",
-  "etiquetas": []
- },
- {
   "artista": "Gradience",
   "titulo": "Anomaly",
   "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
@@ -9153,18 +9198,6 @@
   "etiquetas": []
  },
  {
-  "artista": "matt proxy",
-  "titulo": "trojan horse",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "wikipedia"
-  ],
-  "fecha": "2026-06-19",
-  "etiquetas": [
-   "Experimental hip-hop"
-  ]
- },
- {
   "artista": "Graham Coxon",
   "titulo": "Live At The ICA Acoustic",
   "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
@@ -9282,22 +9315,6 @@
   ]
  },
  {
-  "artista": "Vince Staples",
-  "titulo": "Cry Baby",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "wikipedia"
-  ],
-  "fecha": "2026-06-05",
-  "etiquetas": [
-   "hip hop",
-   "conscious hip hop",
-   "experimental hip hop",
-   "hardcore hip hop",
-   "west coast hip hop"
-  ]
- },
- {
   "artista": "Roger Sanchez",
   "titulo": "Spectrum",
   "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
@@ -9359,16 +9376,6 @@
    "News",
    "Makes My Blood Dance"
   ]
- },
- {
-  "artista": "Lee Brice",
-  "titulo": "Sunriser All-Nighter",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "pauseandplay"
-  ],
-  "fecha": "2026-10-02",
-  "etiquetas": []
  },
  {
   "artista": "Jeff Goldblum & The Mildred Snitzer Orchestra",
@@ -10050,39 +10057,6 @@
   ],
   "fecha": "2026-04-24",
   "etiquetas": []
- },
- {
-  "artista": "Fatboi Sharif & Child Actor",
-  "titulo": "Crayola Circles",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "wikipedia"
-  ],
-  "fecha": "2026-04-24",
-  "etiquetas": [
-   "abstract hip hop",
-   "drumless hip hop",
-   "experimental hip hop",
-   "hip hop"
-  ]
- },
- {
-  "artista": "Cadence Weapon",
-  "titulo": "Forager",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "wikipedia"
-  ],
-  "fecha": "2026-04-24",
-  "etiquetas": [
-   "alternative hip hop",
-   "electronic",
-   "experimental hip hop",
-   "grime",
-   "hip hop",
-   "underground hip hop",
-   "rock and indie"
-  ]
  },
  {
   "artista": "Rogue Unit vs. Darkvolt",
@@ -10962,16 +10936,6 @@
   "etiquetas": []
  },
  {
-  "artista": "All the Damn Vampires",
-  "titulo": "VICECORE DLC",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "radar_deezer"
-  ],
-  "fecha": "2026-07-24",
-  "etiquetas": []
- },
- {
   "artista": "2070",
   "titulo": "Big Blue",
   "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
@@ -11341,27 +11305,6 @@
    "The Trevor B. Power Band",
    "Trevor B. Power",
    "Two Crows"
-  ]
- },
- {
-  "artista": "Earl “Guitar” Williams",
-  "titulo": "The Soul King of Bessemer, AL",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "bluesblast"
-  ],
-  "fecha": "2026-01-01",
-  "etiquetas": [
-   "Album Reviews",
-   "Alabama blues",
-   "Bronson Tew",
-   "Earl \"Guitar\" Williams",
-   "Jimbo Mathus",
-   "Juke joint blues",
-   "modern juke joint blues",
-   "Music Maker Foundation",
-   "Rhys Williams",
-   "The Crimestoppers"
   ]
  },
  {
@@ -12265,19 +12208,6 @@
   "etiquetas": [
    "News",
    "KOSMOBERKH"
-  ]
- },
- {
-  "artista": "Kontrast",
-  "titulo": "Imperium – Proteus",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "sideline"
-  ],
-  "fecha": "2026-11-21",
-  "etiquetas": [
-   "Reviews",
-   "Kontrast – Imperium – Proteus"
   ]
  },
  {
@@ -16315,27 +16245,6 @@
   ]
  },
  {
-  "artista": "Alex Kilroy",
-  "titulo": "Break My Chains",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "bluesblast"
-  ],
-  "fecha": "2026-08-01",
-  "etiquetas": [
-   "Album Reviews",
-   "Alex Kilroy",
-   "Berian Henri",
-   "blues-rock guitar virtuoso",
-   "Break My Chains",
-   "Florida guitar players",
-   "Jarquis Dolphus",
-   "Joe Costa",
-   "Leonard Douglas Jackson Jr",
-   "modern American music"
-  ]
- },
- {
   "artista": "Yes",
   "titulo": "Live at Roosevelt Stadium, Jersey City, 17 June 1976",
   "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
@@ -17028,27 +16937,6 @@
   ]
  },
  {
-  "artista": "Nicky T And The Snake Charmers",
-  "titulo": "Ain’t Wasting Time",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "bluesblast"
-  ],
-  "fecha": "2026-07-13",
-  "etiquetas": [
-   "Album Reviews",
-   "Ain't Wasting Time",
-   "Alex Lyon",
-   "Andy Szymanski",
-   "Chris Codish",
-   "Detroit blues",
-   "Frank Greenhalgh",
-   "great modern blues",
-   "great modern slow blues",
-   "Jason Bone"
-  ]
- },
- {
   "artista": "Steven Charles Cecil",
   "titulo": "Teens Know Best (Story and Clark Vol. 2)",
   "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
@@ -17461,26 +17349,6 @@
   "etiquetas": []
  },
  {
-  "artista": "Denise La Grassa",
-  "titulo": "A Crossroads Communion",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "bluesblast"
-  ],
-  "fecha": "2026-06-26",
-  "etiquetas": [
-   "Album Reviews",
-   "Alvin Santner",
-   "Denise La Grassa",
-   "John Kregor",
-   "modern blues",
-   "Pierre Lacoque",
-   "Stephen Ryan",
-   "Steven C. Manns",
-   "Timothy Walker"
-  ]
- },
- {
   "artista": "Skyracer",
   "titulo": "Skyracer V1.0",
   "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
@@ -17871,25 +17739,6 @@
   ],
   "fecha": "2026-06-12",
   "etiquetas": []
- },
- {
-  "artista": "The Sensational Country Blues Wonders!",
-  "titulo": "Music Sounds Better When You’re Stoned",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "bluesblast"
-  ],
-  "fecha": "2026-06-09",
-  "etiquetas": [
-   "Album Reviews",
-   "Gary Van Miert",
-   "Music Sounds Better When You're Stoned",
-   "New Jersey music",
-   "psychedelia",
-   "Rhys Williams",
-   "Stoner music",
-   "The Sensational Country Blues Wonders!"
-  ]
  },
  {
   "artista": "Stakkato",
@@ -19390,27 +19239,6 @@
   ]
  },
  {
-  "artista": "Charlie Barath",
-  "titulo": "Issaquena Getaway",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "bluesblast"
-  ],
-  "fecha": "2026-04-13",
-  "etiquetas": [
-   "Album Reviews",
-   "Andrew Sherer",
-   "blues harmonica virtuoso",
-   "Charlier Barath",
-   "Clarksdale Soundstage",
-   "Danny Banks",
-   "Gary Vincent",
-   "harmonica",
-   "Issaquena Getaway",
-   "Johnny Burgin"
-  ]
- },
- {
   "artista": "Sister May",
   "titulo": "VII",
   "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
@@ -19731,21 +19559,6 @@
   ],
   "fecha": "2026-04-03",
   "etiquetas": []
- },
- {
-  "artista": "Angine de Poitrine",
-  "titulo": "Volume II",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "louderthanwar"
-  ],
-  "fecha": "2026-04-02",
-  "etiquetas": [
-   "Album Reviews",
-   "Bands & Artists",
-   "Blogs",
-   "Music"
-  ]
  },
  {
   "artista": "Uncivilized",
@@ -20412,27 +20225,6 @@
   "etiquetas": [
    "News",
    "Stabbed By Prongs"
-  ]
- },
- {
-  "artista": "Tony O Blues",
-  "titulo": "Free Life",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "bluesblast"
-  ],
-  "fecha": "2026-03-10",
-  "etiquetas": [
-   "Album Reviews",
-   "Angelo Olivieri",
-   "Bob Stander",
-   "classic Chicago blues",
-   "Craig \"Holiday\" Hayes",
-   "Free Life",
-   "G&J Audio",
-   "Gene Paul",
-   "lesser known blues guitar players",
-   "Mike Severino"
   ]
  },
  {
@@ -21521,18 +21313,6 @@
   "etiquetas": []
  },
  {
-  "artista": "ASAP Rocky",
-  "titulo": "Don't Be Dumb",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "wikipedia"
-  ],
-  "fecha": "2026-01-16",
-  "etiquetas": [
-   "Experimental hip-hop"
-  ]
- },
- {
   "artista": "Carl Sjöström from Scapa Flow",
   "titulo": "Getting Closer",
   "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
@@ -22134,6 +21914,15 @@
   "fecha": "2026-05-15"
  },
  {
+  "artista": "The Wild High",
+  "titulo": "Listen to The Wild High",
+  "motivo": "clasificación: no es un disco nuevo («Listen to» en el título)",
+  "fuentes": [
+   "americanauk"
+  ],
+  "fecha": "2026-08-07"
+ },
+ {
   "artista": "Graham Coxon",
   "titulo": "Curio (Original Motion Picture Soundtrack)",
   "motivo": "clasificación: no es un disco nuevo («Original Motion Picture Soundtrack» en el título)",
@@ -22198,6 +21987,15 @@
    "twangville"
   ],
   "fecha": "2026-07-09"
+ },
+ {
+  "artista": "Twisted Teens",
+  "titulo": "Watch the Video for “Florida Water Blues",
+  "motivo": "clasificación: no es un disco nuevo («Watch the Video for» en el título)",
+  "fuentes": [
+   "klof"
+  ],
+  "fecha": "2026-08-05"
  },
  {
   "artista": "Various Artists",

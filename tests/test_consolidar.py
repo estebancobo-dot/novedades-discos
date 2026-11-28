@@ -75,3 +75,48 @@ def test_no_es_disco_nuevo():
              ("Eliza Carthy", "Mr Sits in the Dark (a Tribute to Martin Carthy)"): False}   # versiones nuevas de un artista
     for (art, tit), esperado in casos.items():
         assert bool(motivo_no_nuevo({"artista": art, "titulo": tit}, REGLAS)) == esperado, tit
+
+
+def test_abreviaturas_y_grafias_especiales_se_unen():
+    eq = {"ei8ht": "eight"}
+    r, n = unir_duplicados([disco("a", "Green Carnation", "A Dark Poem, Part II: Sanguis"),
+                            disco("b", "Green Carnation", "A Dark Poem, Pt. II: Sanguis"),
+                            disco("c", "Jerry Joseph", "Panther Tracks Volume 2", "2026-08-24"),
+                            disco("d", "Jerry Joseph", "Panther Tracks Vol. 2", "2026-07-29"),
+                            disco("e", "Shinedown", "Ei8ht", "2026-05-29"), disco("f", "Shinedown", "Eight", "2026-05-29")],
+                           equivalentes=eq)
+    assert n == 3 and len(r) == 3
+
+
+def test_titulo_identico_admite_fechas_mas_lejanas_pero_no_sin_limite():
+    a = disco("a", "Albert Bouchard", "Imaginos IV: Rhyme of the Starclock", "2026-09-25")
+    b = disco("b", "Albert Bouchard", "Imaginos IV - Rhyme of the Star Clock", "2026-08-06")      # 50 días
+    assert unir_duplicados([a, b])[1] == 1
+    c = disco("c", "Band", "Same Name", "2026-01-10")
+    d = disco("d", "Band", "Same Name", "2026-11-20")                                           # 314 días: otro disco
+    assert unir_duplicados([c, d])[1] == 0
+    e = disco("e", "Band", "Almost the Same Name", "2026-01-10")
+    f = disco("f", "Band", "Almost the Same Name!", "2026-04-10")                                # 90 días, igual
+    assert unir_duplicados([e, f])[1] == 1
+    g = disco("g", "Gnod", "Chronicles of Gnowt (Vol 2)", "2026-10-09")
+    h = disco("h", "Gnod", "Chronicles of Gnowt (Vol 1)", "2026-04-10")
+    assert unir_duplicados([g, h])[1] == 0                                                      # volúmenes distintos
+
+
+def test_titulares_de_noticia_no_son_discos():
+    assert motivo_no_nuevo({"artista": "Twisted Teens", "titulo": "Watch the Video for “Florida Water Blues"}, REGLAS)
+    assert motivo_no_nuevo({"artista": "The Wild High", "titulo": "Listen to The Wild High"}, REGLAS)
+    assert motivo_no_nuevo({"artista": "New Found Glory", "titulo": "Listen Up!"}, REGLAS) is None
+    assert motivo_no_nuevo({"artista": "Mega Colossus", "titulo": "Watch Out!"}, REGLAS) is None
+
+
+def test_ediciones_ampliadas_de_un_disco_anterior():
+    from scraper.consolidar import ampliaciones
+    l = [disco("a", "Jackson Dean", "Magnolia Sage", "2026-04-24"),
+         disco("b", "Jackson Dean", "Magnolia Sage (In Full Bloom)", "2026-10-09"),
+         disco("c", "Albert Bouchard", "Imaginos", "2026-01-10"),
+         disco("d", "Albert Bouchard", "Imaginos IV", "2026-09-25"),               # otra parte: disco nuevo
+         disco("e", "Band", "Night", "2026-03-01"), disco("f", "Band", "Night Live", "2026-09-01"),  # directo: otro disco
+         disco("g", "Other", "Sun", "2026-05-01"), disco("h", "Other", "Sun Rising", "2026-05-10")]  # 9 días: no
+    r = ampliaciones(l)
+    assert list(r) == [1] and "Magnolia Sage" in r[1]

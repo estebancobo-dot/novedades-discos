@@ -17,7 +17,7 @@ import re
 from collections import Counter, defaultdict
 
 from .config import cargar_config, cargar_yaml, ruta
-from .consolidar import motivo_no_nuevo, unir_duplicados
+from .consolidar import ampliaciones, motivo_no_nuevo, unir_duplicados
 from .util import normalizar
 
 PESOS = {"fuente": 3, "bandcamp": 2, "musicbrainz_top": 2, "musicbrainz": 1, "descripcion": 2, "categoria": 1,
@@ -137,17 +137,21 @@ def main():
     # Consolidación: unir duplicados que la recogida dejó separados y apartar lo que no es un
     # disco nuevo de un artista (recopilatorios, bandas sonoras, deluxe...). Ver scraper/consolidar.py
     cons = config.get("consolidacion") or {}
-    discos, uniones = unir_duplicados(discos, float(cons.get("similitud_titulo", 0.95)), int(cons.get("dias_maximos", 45)))
+    equivalentes = {normalizar(k): normalizar(v) for k, v in (cons.get("titulos_equivalentes") or {}).items()}
+    discos, uniones = unir_duplicados(discos, float(cons.get("similitud_titulo", 0.95)), int(cons.get("dias_maximos", 45)),
+                                      int(cons.get("dias_maximos_titulo_identico", 200)), equivalentes)
+    ampliadas = ampliaciones(discos, int(cons.get("dias_minimos_ampliacion", 30)), equivalentes) \
+        if cons.get("descartar_ampliaciones", True) else {}
     nuevos = []
-    for d in discos:
-        motivo = motivo_no_nuevo(d, cons)
+    for i, d in enumerate(discos):
+        motivo = ampliadas.get(i) or motivo_no_nuevo(d, cons)
         if motivo:
             descartados.append({"artista": d["artista"], "titulo": d["titulo"], "motivo": "clasificación: " + motivo,
                                 "fuentes": [x["id"] for x in d["fuentes"]], "fecha": d["fecha"]})
         else:
             nuevos.append(d)
     discos = nuevos
-    print(f"Consolidación: {uniones} duplicados unidos · {sum(1 for x in descartados if 'disco nuevo' in x['motivo'] or 'recopilatorio' in x['motivo'])} no son discos nuevos")
+    print(f"Consolidación: {uniones} duplicados unidos · {sum(1 for x in descartados if 'disco nuevo' in x['motivo'] or 'recopilatorio' in x['motivo'] or 'ampliada' in x['motivo'])} no son discos nuevos")
 
     # Corte exacto de la ventana (por si la recogida se hizo con otra configuración).
     estado_p = ruta(rutas["estado_fuentes"])

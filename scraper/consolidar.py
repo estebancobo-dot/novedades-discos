@@ -54,6 +54,16 @@ def fusionar(base: dict, otro: dict) -> dict:
     return res
 
 
+ABREVIATURAS = {"pt": "part", "pts": "parts", "vol": "volume", "vols": "volumes"}
+
+
+def canon(t: str | None, equivalentes: dict | None = None) -> str:
+    """Título normalizado y sin abreviaturas ("Pt. III" = "Part III", "Vol. 2" = "Volume 2").
+    'equivalentes' (config) iguala grafías especiales: "ei8ht" = "eight"."""
+    n = " ".join(ABREVIATURAS.get(x, x) for x in normalizar(t).split())
+    return (equivalentes or {}).get(n, n)
+
+
 NUMERALES = {"i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "vol", "volume", "part", "pt", "chapter"}
 
 
@@ -70,8 +80,8 @@ def _solo_cambia_el_numero(t1: str, t2: str) -> bool:
     return any(x.isdigit() or x in NUMERALES or x in DISTINTIVAS for x in dif)
 
 
-def _mismo_titulo(d: dict, q: dict, umbral: float, dias_entre: int | None) -> bool:
-    t1, t2 = normalizar(d.get("titulo")), normalizar(q.get("titulo"))
+def _mismo_titulo(d: dict, q: dict, umbral: float, dias_entre: int | None, equivalentes: dict | None = None) -> bool:
+    t1, t2 = canon(d.get("titulo"), equivalentes), canon(q.get("titulo"), equivalentes)
     if not t1 or not t2 or _solo_cambia_el_numero(t1, t2):
         return False
     if similitud(t1, t2) >= umbral or t1.replace(" ", "") == t2.replace(" ", ""):
@@ -83,8 +93,11 @@ def _mismo_titulo(d: dict, q: dict, umbral: float, dias_entre: int | None) -> bo
     return False
 
 
-def unir_duplicados(discos: list[dict], umbral: float = 0.95, dias: int = 45) -> tuple[list[dict], int]:
-    """→ (discos sin duplicados, nº de uniones)."""
+def unir_duplicados(discos: list[dict], umbral: float = 0.95, dias: int = 45,
+                    dias_identico: int = 200, equivalentes: dict | None = None) -> tuple[list[dict], int]:
+    """→ (discos sin duplicados, nº de uniones). Con el título idéntico (tras quitar abreviaturas,
+    espacios y signos) se admite más distancia entre fechas: una fuente da la fecha del anuncio y
+    otra la de salida ("Imaginos IV: Rhyme of the Starclock" / "... Star Clock", 50 días)."""
     uniones = 0
     # 1) mismo MBID
     por_mbid, sin_mbid = {}, []
@@ -109,8 +122,9 @@ def unir_duplicados(discos: list[dict], umbral: float = 0.95, dias: int = 45) ->
             for i, q in enumerate(quedan):
                 fa, fb = _fecha(d.get("fecha")), _fecha(q.get("fecha"))
                 entre = abs((fa - fb).days) if fa and fb else None
-                cerca = entre is None or entre <= dias
-                parecido = _mismo_titulo(d, q, umbral, entre)
+                identico = canon(d.get("titulo"), equivalentes).replace(" ", "") == canon(q.get("titulo"), equivalentes).replace(" ", "")
+                cerca = entre is None or entre <= (dias_identico if identico else dias)
+                parecido = _mismo_titulo(d, q, umbral, entre, equivalentes)
                 mbids_distintos = d.get("mbid") and q.get("mbid") and d["mbid"] != q["mbid"]
                 if parecido and cerca and not mbids_distintos:
                     quedan[i] = fusionar(q, d)
@@ -120,6 +134,28 @@ def unir_duplicados(discos: list[dict], umbral: float = 0.95, dias: int = 45) ->
                 quedan.append(d)
         salida.extend(quedan)
     return salida, uniones
+
+
+def ampliaciones(discos: list[dict], dias_minimos: int = 30, equivalentes: dict | None = None) -> dict[int, str]:
+    """Ediciones ampliadas de un disco anterior del mismo artista: el título empieza por el del
+    disco anterior y añade algo ("Magnolia Sage (In Full Bloom)", "Musick: Encore"), y sale al menos
+    'dias_minimos' después. No cuenta si cambia un número o parte ("Imaginos" / "Imaginos IV")
+    ni si es un directo o una maqueta (eso ya es otro disco). → {posición en la lista: motivo}."""
+    por_artista = defaultdict(list)
+    for i, d in enumerate(discos):
+        por_artista[normalizar(d.get("artista"))].append(i)
+    out = {}
+    for idx in por_artista.values():
+        for i in idx:
+            ti, fi = canon(discos[i].get("titulo"), equivalentes), _fecha(discos[i].get("fecha"))
+            for j in idx:
+                tj, fj = canon(discos[j].get("titulo"), equivalentes), _fecha(discos[j].get("fecha"))
+                if i == j or not fi or not fj or len(tj) < 4 or not ti.startswith(tj + " "):
+                    continue
+                if (fi - fj).days >= dias_minimos and not _solo_cambia_el_numero(ti, tj):
+                    out[i] = f"edición ampliada de «{discos[j]['titulo']}» ({discos[j]['fecha']})"
+                    break
+    return out
 
 
 def motivo_no_nuevo(d: dict, reglas: dict) -> str | None:

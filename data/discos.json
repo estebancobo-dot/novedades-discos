@@ -4171,6 +4171,71 @@
   "subgeneros_frontera": []
  },
  {
+  "id": "revnoir-sometimes-i-feel-you-sometimes-i-dont",
+  "artista": "Revnoir",
+  "titulo": "Sometimes I feel you, sometimes I don’t",
+  "fecha": "2026-11-27",
+  "fecha_exacta": true,
+  "fecha_origen": "musicbrainz",
+  "estado": "publicado",
+  "sello": "Arising Empire",
+  "familias": [
+   "rockmetal"
+  ],
+  "subgeneros": [
+   "heavy-metal"
+  ],
+  "etiquetas_originales": [],
+  "descripciones": [],
+  "etiquetas_musicbrainz_bandcamp": [],
+  "portada": "https://coverartarchive.org/release-group/0f0e4607-2d93-474e-9c60-83f0086ba9aa/front-250",
+  "pistas": 10,
+  "tipo": "álbum",
+  "tipo_verificado": true,
+  "idioma": "eng",
+  "fuentes": [
+   {
+    "id": "loudwire",
+    "nombre": "Loudwire – 2026 Hard Rock + Metal Release Calendar",
+    "rol": "listado",
+    "url": "https://loudwire.com",
+    "fecha": null
+   }
+  ],
+  "resenas": [],
+  "enlaces": {
+   "apple": "https://music.apple.com/fr/album/6805909139",
+   "deezer": "https://www.deezer.com/album/1064327541",
+   "qobuz": "https://www.qobuz.com/fr-fr/album/sometimes-i-feel-you-sometimes-i-dont-revnoir/rube4h9jvifwe",
+   "tidal": "https://tidal.com/album/556058895",
+   "musicbrainz": "https://musicbrainz.org/release-group/0f0e4607-2d93-474e-9c60-83f0086ba9aa"
+  },
+  "enlace_artista_bandcamp": null,
+  "en_bandcamp": false,
+  "mbid": "0f0e4607-2d93-474e-9c60-83f0086ba9aa",
+  "mbid_artistas": [
+   "553331a9-fcac-47c0-8299-62cbbca5b521"
+  ],
+  "requiere_subgenero": true,
+  "primera_mencion": null,
+  "detectado": "2026-11-22",
+  "deezer": {
+   "id": 1064327541,
+   "pistas": 10,
+   "portada": null,
+   "portada_grande": null,
+   "tipo": "album",
+   "url": "https://www.deezer.com/album/1064327541"
+  },
+  "etiquetas_extra": [
+   {
+    "etiqueta": "heavy metal music",
+    "origen": "wikidata"
+   }
+  ],
+  "subgeneros_frontera": []
+ },
+ {
   "id": "purple-pilgrims-given-to-the-night",
   "artista": "Purple Pilgrims",
   "titulo": "Given to the Night",
@@ -4380,6 +4445,7 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "death-metal",
    "deathcore"
   ],
   "etiquetas_originales": [],
@@ -4821,8 +4887,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "black-metal",
-   "depressive-black-metal"
+   "depressive-black-metal",
+   "black-metal"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -6324,65 +6390,6 @@
   "subgeneros_frontera": []
  },
  {
-  "id": "laibach-musick-encore",
-  "artista": "Laibach",
-  "titulo": "Musick: Encore",
-  "fecha": "2026-11-20",
-  "fecha_exacta": true,
-  "fecha_origen": "musicbrainz",
-  "estado": "publicado",
-  "sello": "Mute",
-  "familias": [
-   "rockmetal"
-  ],
-  "subgeneros": [
-   "experimental",
-   "industrial",
-   "avantgarde"
-  ],
-  "etiquetas_originales": [],
-  "descripciones": [],
-  "etiquetas_musicbrainz_bandcamp": [
-   "industrial",
-   "martial industrial",
-   "experimental",
-   "avant-garde",
-   "post-industrial",
-   "slovenian",
-   "electronic dance",
-   "martial"
-  ],
-  "portada": "https://coverartarchive.org/release-group/8ff00b33-5de4-42bb-b7a4-dc3f534990a0/front-250",
-  "pistas": 13,
-  "tipo": "álbum",
-  "tipo_verificado": true,
-  "idioma": null,
-  "fuentes": [
-   {
-    "id": "radar_musicbrainz",
-    "nombre": "Radar de artistas (MusicBrainz)",
-    "rol": "listado",
-    "url": "https://musicbrainz.org/release-group/8ff00b33-5de4-42bb-b7a4-dc3f534990a0",
-    "fecha": null
-   }
-  ],
-  "resenas": [],
-  "enlaces": {
-   "discogs": "https://www.discogs.com/release/39107601",
-   "musicbrainz": "https://musicbrainz.org/release-group/8ff00b33-5de4-42bb-b7a4-dc3f534990a0"
-  },
-  "enlace_artista_bandcamp": "https://laibach.bandcamp.com/",
-  "en_bandcamp": true,
-  "mbid": "8ff00b33-5de4-42bb-b7a4-dc3f534990a0",
-  "mbid_artistas": [
-   "c779e090-909f-4403-a90e-c1d08cdbb719"
-  ],
-  "requiere_subgenero": true,
-  "primera_mencion": null,
-  "detectado": "2026-11-28",
-  "subgeneros_frontera": []
- },
- {
   "id": "laibach-musick",
   "artista": "Laibach",
   "titulo": "Musick",
@@ -6585,6 +6592,7 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "instrumental",
    "post-rock"
   ],
   "etiquetas_originales": [
@@ -7033,8 +7041,8 @@
   ],
   "subgeneros": [
    "sludge-metal",
-   "stoner-rock",
-   "groove-metal"
+   "groove-metal",
+   "stoner-rock"
   ],
   "etiquetas_originales": [
    "Album Reviews",
@@ -7333,8 +7341,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "punk",
    "crust",
+   "punk",
    "grindcore",
    "hardcore"
   ],
@@ -7509,6 +7517,7 @@
   ],
   "subgeneros": [
    "metalcore",
+   "noisecore",
    "death-metal",
    "hardcore"
   ],
@@ -8247,8 +8256,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "thrash",
    "black-metal",
+   "thrash",
    "speed-metal"
   ],
   "etiquetas_originales": [
@@ -8516,6 +8525,7 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "death-metal",
    "technical-death-metal"
   ],
   "etiquetas_originales": [
@@ -10551,10 +10561,10 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "metalcore",
    "alternative-rock",
    "heavy-metal",
-   "post-hardcore",
-   "emo"
+   "post-hardcore"
   ],
   "etiquetas_originales": [],
   "descripciones": [
@@ -11462,7 +11472,8 @@
   ],
   "subgeneros": [
    "death-metal",
-   "thrash"
+   "thrash",
+   "black-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -11772,8 +11783,10 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "black-metal",
    "atmospheric-black-metal",
-   "black-metal"
+   "melodic-metal",
+   "psychedelic-rock"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -11850,7 +11863,9 @@
    "portada": "https://cdn-images.dzcdn.net/images/cover/1c48f9b0cad798658632d1a0053d3b94/250x250-000000-80-0-0.jpg",
    "portada_grande": "https://cdn-images.dzcdn.net/images/cover/1c48f9b0cad798658632d1a0053d3b94/1000x1000-000000-80-0-0.jpg"
   },
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "david-kushner-devotion",
@@ -11937,6 +11952,7 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "death-metal",
    "technical-death-metal"
   ],
   "etiquetas_originales": [
@@ -12012,7 +12028,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "noise"
+   "noise",
+   "industrial"
   ],
   "etiquetas_originales": [
    "News",
@@ -12358,7 +12375,8 @@
   "subgeneros": [
    "death-metal",
    "progressive-metal",
-   "technical-death-metal"
+   "technical-death-metal",
+   "black-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -13830,59 +13848,6 @@
    "portada": "https://cdn-images.dzcdn.net/images/cover/df73aeaf91d585e711a30186eaa3c4cf/250x250-000000-80-0-0.jpg",
    "portada_grande": "https://cdn-images.dzcdn.net/images/cover/df73aeaf91d585e711a30186eaa3c4cf/1000x1000-000000-80-0-0.jpg"
   },
-  "subgeneros_frontera": []
- },
- {
-  "id": "twisted-teens-watch-the-video-for-florida-water-blues",
-  "artista": "Twisted Teens",
-  "titulo": "Watch the Video for “Florida Water Blues",
-  "fecha": "2026-08-05",
-  "fecha_exacta": false,
-  "fecha_origen": "reseña",
-  "estado": "publicado",
-  "sello": null,
-  "familias": [
-   "country"
-  ],
-  "subgeneros": [],
-  "etiquetas_originales": [
-   "News",
-   "Twisted Teens"
-  ],
-  "descripciones": [],
-  "etiquetas_musicbrainz_bandcamp": [],
-  "portada": null,
-  "pistas": null,
-  "tipo": "álbum",
-  "tipo_verificado": false,
-  "idioma": null,
-  "fuentes": [
-   {
-    "id": "klof",
-    "nombre": "KLOF Mag (antes Folk Radio UK)",
-    "rol": "resena",
-    "url": "https://klofmag.com/2026/08/twisted-teens-watch-the-video-for-florida-water-blues/",
-    "fecha": "2026-08-05"
-   }
-  ],
-  "resenas": [
-   {
-    "fuente": "klof",
-    "nombre": "KLOF Mag (antes Folk Radio UK)",
-    "url": "https://klofmag.com/2026/08/twisted-teens-watch-the-video-for-florida-water-blues/",
-    "nota": null,
-    "fecha": "2026-08-05"
-   }
-  ],
-  "enlaces": {},
-  "enlace_artista_bandcamp": null,
-  "en_bandcamp": false,
-  "mbid": null,
-  "mbid_artistas": [],
-  "requiere_subgenero": false,
-  "primera_mencion": "2026-08-05",
-  "detectado": "2026-11-22",
-  "etiquetas_extra": [],
   "subgeneros_frontera": []
  },
  {
@@ -15634,6 +15599,8 @@
    "synthdark"
   ],
   "subgeneros": [
+   "black-metal",
+   "death-metal",
    "ebm",
    "industrial-metal"
   ],
@@ -16541,6 +16508,7 @@
   ],
   "subgeneros": [
    "black-metal",
+   "melodic-metal",
    "death-metal",
    "melodic-death-metal"
   ],
@@ -16619,7 +16587,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-11-02",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "hudson-westbrook-made-you-look",
@@ -17302,6 +17272,7 @@
   ],
   "subgeneros": [
    "power-metal",
+   "progressive-metal",
    "speed-metal"
   ],
   "etiquetas_originales": [
@@ -20228,8 +20199,9 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "black-metal",
    "atmospheric-black-metal",
-   "black-metal"
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -20303,7 +20275,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-10-29",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "thomas-millers-lazarus-effect-thomas-millers-lazarus-effect",
@@ -20537,7 +20511,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "death-metal"
+   "death-metal",
+   "black-metal"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -22108,8 +22083,8 @@
    "synthdark"
   ],
   "subgeneros": [
-   "synthwave",
    "industrial-metal",
+   "synthwave",
    "ebm"
   ],
   "etiquetas_originales": [
@@ -23090,7 +23065,8 @@
   ],
   "subgeneros": [
    "atmospheric-black-metal",
-   "doom-metal"
+   "doom-metal",
+   "funeral-doom-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -24142,8 +24118,9 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "doom-metal",
    "death-metal",
-   "doom-metal"
+   "melodic-death-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -24992,8 +24969,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "doom-metal",
    "heavy-metal",
+   "doom-metal",
    "power-metal"
   ],
   "etiquetas_originales": [
@@ -27618,8 +27595,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "death-metal",
    "doom-metal",
+   "death-metal",
    "progressive-metal"
   ],
   "etiquetas_originales": [
@@ -29369,10 +29346,10 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "deathcore",
-   "melodic-death-metal",
+   "black-metal",
    "death-metal",
-   "black-metal"
+   "deathcore",
+   "melodic-death-metal"
   ],
   "etiquetas_originales": [
    "Deathcore, melodic death metal, symphonic black metal",
@@ -33672,6 +33649,7 @@
   ],
   "subgeneros": [
    "black-metal",
+   "folk-metal",
    "thrash"
   ],
   "etiquetas_originales": [
@@ -34152,8 +34130,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "atmospheric-black-metal",
    "black-metal",
+   "atmospheric-black-metal",
    "post-metal"
   ],
   "etiquetas_originales": [
@@ -34835,8 +34813,9 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "black-metal",
    "death-metal",
+   "black-metal",
+   "experimental",
    "progressive-metal"
   ],
   "etiquetas_originales": [
@@ -35275,7 +35254,7 @@
    "post-hardcore",
    "emo",
    "grindcore",
-   "experimental"
+   "noisecore"
   ],
   "etiquetas_originales": [],
   "descripciones": [
@@ -36881,8 +36860,8 @@
   ],
   "subgeneros": [
    "doom-metal",
-   "melodic-death-metal",
-   "death-metal"
+   "death-metal",
+   "melodic-death-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -38074,9 +38053,9 @@
   ],
   "subgeneros": [
    "noise",
-   "metalcore",
-   "post-metal",
-   "sludge-metal"
+   "noisecore",
+   "avantgarde",
+   "experimental"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -48964,6 +48943,7 @@
   ],
   "subgeneros": [
    "black-metal",
+   "thrash",
    "heavy-metal"
   ],
   "etiquetas_originales": [
@@ -50206,7 +50186,8 @@
   ],
   "subgeneros": [
    "metalcore",
-   "post-hardcore"
+   "post-hardcore",
+   "progressive-metal"
   ],
   "etiquetas_originales": [
    "Metalcore",
@@ -50424,9 +50405,9 @@
    "punkgarage"
   ],
   "subgeneros": [
-   "hardcore",
    "oi",
-   "punk"
+   "punk",
+   "hardcore"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -51331,9 +51312,9 @@
   ],
   "subgeneros": [
    "black-metal",
-   "death-metal",
    "folk-metal",
-   "atmospheric-black-metal"
+   "death-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -51416,7 +51397,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-10-02",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "firtan-live-at-summer-breeze",
@@ -51432,7 +51415,8 @@
   ],
   "subgeneros": [
    "atmospheric-black-metal",
-   "black-metal"
+   "black-metal",
+   "folk-metal"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -53054,9 +53038,11 @@
   "estado": "publicado",
   "sello": "X8 Music",
   "familias": [
-   "indiepop"
+   "indiepop",
+   "rockmetal"
   ],
   "subgeneros": [
+   "experimental",
    "shoegaze"
   ],
   "etiquetas_originales": [],
@@ -53409,9 +53395,9 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "industrial-metal",
    "black-metal",
    "death-metal",
-   "industrial-metal",
    "atmospheric-black-metal"
   ],
   "etiquetas_originales": [
@@ -59427,8 +59413,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "deathcore",
    "death-metal",
+   "deathcore",
    "technical-death-metal"
   ],
   "etiquetas_originales": [
@@ -60240,8 +60226,8 @@
   "subgeneros": [
    "death-metal",
    "grindcore",
-   "hardcore",
-   "thrash"
+   "power-violence",
+   "hardcore"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -60582,12 +60568,12 @@
   "subgeneros_frontera": []
  },
  {
-  "id": "albert-bouchard-imaginos-iv-rhyme-of-the-starclock",
+  "id": "albert-bouchard-imaginos-iv-rhyme-of-the-star-clock",
   "artista": "Albert Bouchard",
-  "titulo": "Imaginos IV: Rhyme of the Starclock",
+  "titulo": "Imaginos IV - Rhyme of the Star Clock",
   "fecha": "2026-09-25",
   "fecha_exacta": true,
-  "fecha_origen": "musicbrainz",
+  "fecha_origen": "reseña",
   "estado": "publicado",
   "sello": "Deko Music",
   "familias": [
@@ -60595,69 +60581,9 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "hard-rock"
-  ],
-  "etiquetas_originales": [],
-  "descripciones": [],
-  "etiquetas_musicbrainz_bandcamp": [],
-  "portada": "https://coverartarchive.org/release-group/21e04c0b-e1d4-4c22-a100-6db72b80f1f9/front-250",
-  "pistas": 11,
-  "tipo": "álbum",
-  "tipo_verificado": true,
-  "idioma": "eng",
-  "fuentes": [
-   {
-    "id": "radar_musicbrainz",
-    "nombre": "Radar de artistas (MusicBrainz)",
-    "rol": "listado",
-    "url": "https://musicbrainz.org/release-group/21e04c0b-e1d4-4c22-a100-6db72b80f1f9",
-    "fecha": null
-   }
-  ],
-  "resenas": [],
-  "enlaces": {
-   "musicbrainz": "https://musicbrainz.org/release-group/21e04c0b-e1d4-4c22-a100-6db72b80f1f9"
-  },
-  "enlace_artista_bandcamp": null,
-  "en_bandcamp": false,
-  "mbid": "21e04c0b-e1d4-4c22-a100-6db72b80f1f9",
-  "mbid_artistas": [
-   "5e010e55-68c7-48d8-a4c5-d511dc8c100e"
-  ],
-  "requiere_subgenero": true,
-  "primera_mencion": null,
-  "detectado": "2026-11-28",
-  "etiquetas_extra": [
-   {
-    "etiqueta": "heavy metal music",
-    "origen": "wikidata"
-   },
-   {
-    "etiqueta": "hard rock",
-    "origen": "wikidata"
-   },
-   {
-    "etiqueta": "Rock",
-    "origen": "discogs"
-   }
-  ],
-  "subgeneros_frontera": []
- },
- {
-  "id": "albert-bouchard-imaginos-iv-rhyme-of-the-star-clock",
-  "artista": "Albert Bouchard",
-  "titulo": "Imaginos IV - Rhyme of the Star Clock",
-  "fecha": "2026-08-06",
-  "fecha_exacta": false,
-  "fecha_origen": "reseña",
-  "estado": "publicado",
-  "sello": null,
-  "familias": [
-   "hardrock",
-   "rockmetal"
-  ],
-  "subgeneros": [
-   "classic-rock"
+   "classic-rock",
+   "hard-rock",
+   "heavy-metal"
   ],
   "etiquetas_originales": [
    "ALBUM REVIEWS",
@@ -60679,11 +60605,11 @@
   ],
   "descripciones": [],
   "etiquetas_musicbrainz_bandcamp": [],
-  "portada": null,
-  "pistas": null,
+  "portada": "https://coverartarchive.org/release-group/21e04c0b-e1d4-4c22-a100-6db72b80f1f9/front-250",
+  "pistas": 11,
   "tipo": "álbum",
   "tipo_verificado": false,
-  "idioma": null,
+  "idioma": "eng",
   "fuentes": [
    {
     "id": "heavyharmonies",
@@ -60698,6 +60624,13 @@
     "rol": "resena",
     "url": "https://getreadytorock.me.uk/blog/2026/08/album-review-albert-bouchard-imaginos-iv-rhyme-of-the-star-clock/",
     "fecha": "2026-08-06"
+   },
+   {
+    "id": "radar_musicbrainz",
+    "nombre": "Radar de artistas (MusicBrainz)",
+    "rol": "listado",
+    "url": "https://musicbrainz.org/release-group/21e04c0b-e1d4-4c22-a100-6db72b80f1f9",
+    "fecha": null
    }
   ],
   "resenas": [
@@ -60709,14 +60642,35 @@
     "fecha": "2026-08-06"
    }
   ],
-  "enlaces": {},
+  "enlaces": {
+   "musicbrainz": "https://musicbrainz.org/release-group/21e04c0b-e1d4-4c22-a100-6db72b80f1f9"
+  },
   "enlace_artista_bandcamp": null,
   "en_bandcamp": false,
-  "mbid": null,
-  "mbid_artistas": [],
+  "mbid": "21e04c0b-e1d4-4c22-a100-6db72b80f1f9",
+  "mbid_artistas": [
+   "5e010e55-68c7-48d8-a4c5-d511dc8c100e"
+  ],
   "requiere_subgenero": false,
   "primera_mencion": "2026-08-06",
   "detectado": "2026-11-22",
+  "etiquetas_extra": [
+   {
+    "etiqueta": "heavy metal music",
+    "origen": "wikidata"
+   },
+   {
+    "etiqueta": "hard rock",
+    "origen": "wikidata"
+   },
+   {
+    "etiqueta": "Rock",
+    "origen": "discogs"
+   }
+  ],
+  "unidos": [
+   "albert-bouchard-imaginos-iv-rhyme-of-the-starclock"
+  ],
   "subgeneros_frontera": []
  },
  {
@@ -60904,6 +60858,7 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "avantgarde",
    "black-metal",
    "doom-metal"
   ],
@@ -61281,7 +61236,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "folk-metal"
+   "folk-metal",
+   "heavy-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -64221,8 +64177,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "power-metal",
-   "heavy-metal"
+   "heavy-metal",
+   "power-metal"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -68470,7 +68426,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "death-metal"
+   "death-metal",
+   "black-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -72635,8 +72592,9 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "atmospheric-black-metal",
-   "black-metal"
+   "black-metal",
+   "melodic-metal",
+   "atmospheric-black-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -72703,7 +72661,9 @@
    "portada": "https://cdn-images.dzcdn.net/images/cover/3762953267f6c3a2ceec4477ebdde646/250x250-000000-80-0-0.jpg",
    "portada_grande": "https://cdn-images.dzcdn.net/images/cover/3762953267f6c3a2ceec4477ebdde646/1000x1000-000000-80-0-0.jpg"
   },
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "spirit-mother-thistle",
@@ -74922,14 +74882,13 @@
   "estado": "publicado",
   "sello": "Season of Mist",
   "familias": [
-   "hardrock",
    "rockmetal"
   ],
   "subgeneros": [
    "progressive-metal",
+   "gothic-metal",
    "doom-metal",
-   "post-metal",
-   "prog-rock"
+   "post-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -74941,7 +74900,8 @@
    "Progressive Metal",
    "Review",
    "Season of Mist",
-   "Sep26"
+   "Sep26",
+   "Gothic metal, progressive doom"
   ],
   "descripciones": [],
   "etiquetas_musicbrainz_bandcamp": [
@@ -74951,7 +74911,6 @@
    "progressive rock",
    "Hard Rock",
    "Metal",
-   "Progressive Rock",
    "gothic metal",
    "heavy metal",
    "Kristiansand"
@@ -74982,6 +74941,20 @@
     "rol": "listado",
     "url": "https://musicbrainz.org/release-group/0b443f13-719c-4c2e-8a13-754c1ab818f6",
     "fecha": null
+   },
+   {
+    "id": "radar_deezer",
+    "nombre": "Radar de artistas (Deezer)",
+    "rol": "listado",
+    "url": "https://www.deezer.com/album/996442151",
+    "fecha": null
+   },
+   {
+    "id": "wikipedia",
+    "nombre": "Wikipedia – List of albums",
+    "rol": "listado",
+    "url": "https://en.wikipedia.org/wiki/List_of_2026_albums",
+    "fecha": null
    }
   ],
   "resenas": [
@@ -74994,9 +74967,9 @@
    }
   ],
   "enlaces": {
+   "deezer": "https://www.deezer.com/album/996442151",
    "apple": "https://music.apple.com/no/album/6775900563",
    "bandcamp": "https://greencarnationsom.bandcamp.com/album/a-dark-poem-part-iii-the-messiah-complex",
-   "deezer": "https://www.deezer.com/album/996442151",
    "discogs": "https://www.discogs.com/release/38370615",
    "qobuz": "https://www.qobuz.com/no-en/album/green-carnation-a-dark-poem-pt-iii-the-messiah-complex-green-carnation/g1dpptbvle4b6",
    "shop.season-of-mist.com": "https://shop.season-of-mist.com/green-carnation-a-dark-poem-part-iii-the-messiah-complex-lp-gatefold-coloured-multicolour",
@@ -75013,6 +74986,18 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-09-04",
   "detectado": "2026-11-22",
+  "deezer": {
+   "id": 996442151,
+   "url": "https://www.deezer.com/album/996442151",
+   "tipo": "album",
+   "pistas": 4,
+   "portada": "https://cdn-images.dzcdn.net/images/cover/ccca30d3efdc3cb39a76ce67fa392b84/250x250-000000-80-0-0.jpg",
+   "portada_grande": "https://cdn-images.dzcdn.net/images/cover/ccca30d3efdc3cb39a76ce67fa392b84/1000x1000-000000-80-0-0.jpg"
+  },
+  "unidos": [
+   "green-carnation-dark-poem-pt-iii-the-messiah-complex",
+   "green-carnation-green-carnation-a-dark-poem-pt-iii-the-messiah-complex"
+  ],
   "subgeneros_frontera": []
  },
  {
@@ -75025,14 +75010,13 @@
   "estado": "publicado",
   "sello": "Season of Mist",
   "familias": [
-   "hardrock",
    "rockmetal"
   ],
   "subgeneros": [
    "progressive-metal",
    "doom-metal",
-   "post-metal",
-   "prog-rock"
+   "gothic-metal",
+   "post-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -75044,7 +75028,8 @@
    "Norwegian Metal",
    "Progressive Metal",
    "Review",
-   "Season of Mist"
+   "Season of Mist",
+   "Doom metal, gothic metal, progressive metal"
   ],
   "descripciones": [],
   "etiquetas_musicbrainz_bandcamp": [
@@ -75054,7 +75039,6 @@
    "progressive rock",
    "Hard Rock",
    "Metal",
-   "Progressive Rock",
    "gothic metal",
    "heavy metal",
    "Kristiansand"
@@ -75092,6 +75076,13 @@
     "rol": "listado",
     "url": "https://www.deezer.com/album/892821092",
     "fecha": null
+   },
+   {
+    "id": "wikipedia",
+    "nombre": "Wikipedia – List of albums",
+    "rol": "listado",
+    "url": "https://en.wikipedia.org/wiki/List_of_2026_albums",
+    "fecha": null
    }
   ],
   "resenas": [
@@ -75122,98 +75113,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-04-03",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
- },
- {
-  "id": "green-carnation-dark-poem-pt-ii-sanguis",
-  "artista": "Green Carnation",
-  "titulo": "A Dark Poem, Pt. II: Sanguis",
-  "fecha": "2026-04-03",
-  "fecha_exacta": true,
-  "fecha_origen": "fuente",
-  "estado": "publicado",
-  "sello": "Season of Mist",
-  "familias": [
-   "rockmetal"
+  "unidos": [
+   "green-carnation-dark-poem-pt-ii-sanguis"
   ],
-  "subgeneros": [
-   "doom-metal",
-   "gothic-metal",
-   "progressive-metal"
-  ],
-  "etiquetas_originales": [
-   "Doom metal, gothic metal, progressive metal"
-  ],
-  "descripciones": [],
-  "etiquetas_musicbrainz_bandcamp": [],
-  "portada": null,
-  "pistas": null,
-  "tipo": "álbum",
-  "tipo_verificado": false,
-  "idioma": null,
-  "fuentes": [
-   {
-    "id": "wikipedia",
-    "nombre": "Wikipedia – List of albums",
-    "rol": "listado",
-    "url": "https://en.wikipedia.org/wiki/List_of_2026_albums",
-    "fecha": null
-   }
-  ],
-  "resenas": [],
-  "enlaces": {},
-  "enlace_artista_bandcamp": null,
-  "en_bandcamp": false,
-  "mbid": null,
-  "mbid_artistas": [],
-  "requiere_subgenero": true,
-  "primera_mencion": null,
-  "detectado": "2026-11-28",
-  "subgeneros_frontera": []
- },
- {
-  "id": "green-carnation-dark-poem-pt-iii-the-messiah-complex",
-  "artista": "Green Carnation",
-  "titulo": "A Dark Poem, Pt. III: The Messiah Complex",
-  "fecha": "2026-04-03",
-  "fecha_exacta": true,
-  "fecha_origen": "fuente",
-  "estado": "publicado",
-  "sello": "Season of Mist",
-  "familias": [
-   "rockmetal"
-  ],
-  "subgeneros": [
-   "gothic-metal"
-  ],
-  "etiquetas_originales": [
-   "Gothic metal, progressive doom"
-  ],
-  "descripciones": [],
-  "etiquetas_musicbrainz_bandcamp": [],
-  "portada": null,
-  "pistas": null,
-  "tipo": "álbum",
-  "tipo_verificado": false,
-  "idioma": null,
-  "fuentes": [
-   {
-    "id": "wikipedia",
-    "nombre": "Wikipedia – List of albums",
-    "rol": "listado",
-    "url": "https://en.wikipedia.org/wiki/List_of_2026_albums",
-    "fecha": null
-   }
-  ],
-  "resenas": [],
-  "enlaces": {},
-  "enlace_artista_bandcamp": null,
-  "en_bandcamp": false,
-  "mbid": null,
-  "mbid_artistas": [],
-  "requiere_subgenero": true,
-  "primera_mencion": null,
-  "detectado": "2026-11-28",
   "subgeneros_frontera": []
  },
  {
@@ -75377,6 +75279,7 @@
   ],
   "subgeneros": [
    "death-metal",
+   "progressive-metal",
    "technical-death-metal"
   ],
   "etiquetas_originales": [
@@ -76229,7 +76132,8 @@
   "subgeneros": [
    "darkwave",
    "ebm",
-   "post-punk"
+   "post-punk",
+   "punk"
   ],
   "etiquetas_originales": [
    "News",
@@ -76957,7 +76861,8 @@
   "subgeneros": [
    "death-metal",
    "technical-death-metal",
-   "black-metal"
+   "black-metal",
+   "experimental"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -77209,6 +77114,7 @@
   ],
   "subgeneros": [
    "metalcore",
+   "noisecore",
    "post-hardcore"
   ],
   "etiquetas_originales": [
@@ -78960,7 +78866,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "atmospheric-black-metal"
+   "atmospheric-black-metal",
+   "black-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -79034,8 +78941,8 @@
   "subgeneros": [
    "black-metal",
    "death-metal",
-   "heavy-metal",
-   "progressive-metal"
+   "doom-metal",
+   "heavy-metal"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -79579,8 +79486,8 @@
   "subgeneros": [
    "post-metal",
    "post-rock",
-   "math-rock",
-   "sludge-metal"
+   "sludge-metal",
+   "math-rock"
   ],
   "etiquetas_originales": [
    "Album Reviews",
@@ -80101,8 +80008,9 @@
   ],
   "subgeneros": [
    "death-metal",
+   "thrash",
    "technical-death-metal",
-   "thrash"
+   "progressive-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -81750,8 +81658,8 @@
   ],
   "subgeneros": [
    "progressive-metal",
-   "death-metal",
-   "technical-death-metal"
+   "technical-death-metal",
+   "death-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -84686,7 +84594,9 @@
   "familias": [
    "rockmetal"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "black-metal"
+  ],
   "etiquetas_originales": [
    "Reviews",
    "0.5",
@@ -86110,9 +86020,11 @@
   "estado": "publicado",
   "sello": "Carbonized Records",
   "familias": [
+   "punkgarage",
    "rockmetal"
   ],
   "subgeneros": [
+   "crust",
    "death-metal"
   ],
   "etiquetas_originales": [
@@ -90229,7 +90141,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "black-metal"
+   "black-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Album Reviews",
@@ -90291,7 +90204,9 @@
   "requiere_subgenero": true,
   "primera_mencion": "2026-08-20",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "dan-and-shay-young",
@@ -93025,6 +92940,7 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "instrumental",
    "post-metal",
    "sludge-metal"
   ],
@@ -93457,6 +93373,7 @@
   ],
   "subgeneros": [
    "metalcore",
+   "noisecore",
    "hardcore"
   ],
   "etiquetas_originales": [],
@@ -98339,9 +98256,9 @@
   ],
   "subgeneros": [
    "black-metal",
+   "melodic-metal",
    "death-metal",
-   "doom-metal",
-   "heavy-metal"
+   "doom-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -98445,7 +98362,9 @@
   "listas_anuales": [
    "Decibel: Top 40 Albums of 2026"
   ],
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "hana-stretton-tiarn",
@@ -98559,7 +98478,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "death-metal"
+   "death-metal",
+   "black-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -99259,12 +99179,14 @@
   "estado": "publicado",
   "sello": "Relapse Records",
   "familias": [
-   "punkgarage"
+   "punkgarage",
+   "rockmetal"
   ],
   "subgeneros": [
    "punk",
    "hardcore",
-   "post-punk"
+   "post-punk",
+   "power-violence"
   ],
   "etiquetas_originales": [
    "Album Reviews",
@@ -99393,12 +99315,14 @@
   "estado": "publicado",
   "sello": "Relapse",
   "familias": [
-   "punkgarage"
+   "punkgarage",
+   "rockmetal"
   ],
   "subgeneros": [
    "hardcore",
    "post-punk",
-   "punk"
+   "punk",
+   "power-violence"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -100153,7 +100077,8 @@
   ],
   "subgeneros": [
    "doom-metal",
-   "death-metal"
+   "death-metal",
+   "funeral-doom-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -102766,7 +102691,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "death-metal"
+   "death-metal",
+   "black-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -104088,6 +104014,7 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "melodic-death-metal",
    "metalcore"
   ],
   "etiquetas_originales": [
@@ -104713,8 +104640,8 @@
   ],
   "subgeneros": [
    "doom-metal",
-   "sludge-metal",
-   "stoner-rock"
+   "stoner-rock",
+   "sludge-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -105714,6 +105641,7 @@
   ],
   "subgeneros": [
    "noise",
+   "noisecore",
    "progressive-metal"
   ],
   "etiquetas_originales": [
@@ -107209,7 +107137,8 @@
    "country"
   ],
   "subgeneros": [
-   "contemporary-folk"
+   "contemporary-folk",
+   "americana"
   ],
   "etiquetas_originales": [
    "News",
@@ -108877,7 +108806,7 @@
    "progressive-metal",
    "metalcore",
    "post-punk",
-   "punk"
+   "noisecore"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -110684,7 +110613,8 @@
   "subgeneros": [
    "death-metal",
    "hardcore",
-   "metalcore"
+   "metalcore",
+   "punk"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -110970,9 +110900,9 @@
   ],
   "subgeneros": [
    "black-metal",
-   "industrial-metal",
-   "post-metal",
-   "death-metal"
+   "experimental",
+   "avantgarde",
+   "industrial-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -111604,10 +111534,12 @@
   "estado": "publicado",
   "sello": "Sumerian Records",
   "familias": [
+   "punkgarage",
    "rockmetal"
   ],
   "subgeneros": [
-   "metalcore"
+   "metalcore",
+   "hardcore"
   ],
   "etiquetas_originales": [
    "Album Reviews",
@@ -112091,10 +112023,12 @@
   "estado": "publicado",
   "sello": null,
   "familias": [
-   "punkgarage"
+   "punkgarage",
+   "rockmetal"
   ],
   "subgeneros": [
-   "garage-rock"
+   "garage-rock",
+   "psychedelic-rock"
   ],
   "etiquetas_originales": [
    "Uncategorized",
@@ -112392,7 +112326,7 @@
    "doom-metal",
    "goth-rock",
    "gothic-metal",
-   "noise"
+   "groove-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -115060,6 +114994,7 @@
   "subgeneros": [
    "post-rock",
    "post-metal",
+   "instrumental",
    "experimental"
   ],
   "etiquetas_originales": [
@@ -115697,9 +115632,11 @@
   "estado": "publicado",
   "sello": "Mad Decent",
   "familias": [
-   "country"
+   "country",
+   "rockmetal"
   ],
   "subgeneros": [
+   "experimental",
    "indie-folk",
    "psych-folk"
   ],
@@ -115805,7 +115742,9 @@
   "familias": [
    "rockmetal"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "death-metal"
+  ],
   "etiquetas_originales": [
    "Reviews",
    "2.5",
@@ -115888,7 +115827,8 @@
    "blues"
   ],
   "subgeneros": [
-   "harmonica-blues"
+   "harmonica-blues",
+   "modern-electric-blues"
   ],
   "etiquetas_originales": [
    "Album Reviews",
@@ -118038,7 +117978,8 @@
   ],
   "subgeneros": [
    "doom-metal",
-   "stoner-rock"
+   "stoner-rock",
+   "heavy-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -118393,8 +118334,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "death-metal",
-   "doom-metal"
+   "doom-metal",
+   "death-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -118881,7 +118822,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "black-metal"
+   "black-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -118941,7 +118883,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-07-07",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "verdun-abyssal-womb",
@@ -120631,6 +120575,7 @@
   "subgeneros": [
    "thrash",
    "speed-metal",
+   "death-metal",
    "heavy-metal"
   ],
   "etiquetas_originales": [
@@ -124964,7 +124909,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "black-metal"
+   "black-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -125038,7 +124984,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-07-10",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "prince-of-failure-prince-of-failure",
@@ -125312,6 +125260,70 @@
   "subgeneros_frontera": []
  },
  {
+  "id": "matt-proxy-trojan-horse",
+  "artista": "matt proxy",
+  "titulo": "trojan horse",
+  "fecha": "2026-06-19",
+  "fecha_exacta": true,
+  "fecha_origen": "musicbrainz",
+  "estado": "publicado",
+  "sello": "[no label]",
+  "familias": [
+   "rockmetal"
+  ],
+  "subgeneros": [
+   "experimental"
+  ],
+  "etiquetas_originales": [
+   "Experimental hip-hop"
+  ],
+  "descripciones": [],
+  "etiquetas_musicbrainz_bandcamp": [],
+  "portada": "https://coverartarchive.org/release-group/0f39bd7f-7afd-4bf5-89aa-668153076e6a/front-250",
+  "pistas": 13,
+  "tipo": "álbum",
+  "tipo_verificado": true,
+  "idioma": "eng",
+  "fuentes": [
+   {
+    "id": "wikipedia",
+    "nombre": "Wikipedia – List of albums",
+    "rol": "listado",
+    "url": "https://en.wikipedia.org/wiki/List_of_2026_albums",
+    "fecha": null
+   }
+  ],
+  "resenas": [],
+  "enlaces": {
+   "apple": "https://music.apple.com/gb/album/6775601380",
+   "bandcamp": "https://mattproxy.bandcamp.com/album/trojan-horse",
+   "deezer": "https://www.deezer.com/album/996141621",
+   "qobuz": "https://www.qobuz.com/gb-en/album/trojan-horse-matt-proxy/k76dztmz5lraz",
+   "spotify": "https://open.spotify.com/album/0eOPNw5U3ltlDVOJvy1sN5",
+   "tidal": "https://tidal.com/album/529874919",
+   "musicbrainz": "https://musicbrainz.org/release-group/0f39bd7f-7afd-4bf5-89aa-668153076e6a"
+  },
+  "enlace_artista_bandcamp": null,
+  "en_bandcamp": true,
+  "mbid": "0f39bd7f-7afd-4bf5-89aa-668153076e6a",
+  "mbid_artistas": [
+   "50bb4480-9b14-4a25-902f-3047352aeabb"
+  ],
+  "requiere_subgenero": true,
+  "primera_mencion": null,
+  "detectado": "2026-11-28",
+  "deezer": {
+   "id": 1115060472,
+   "url": "https://www.deezer.com/album/1115060472",
+   "tipo": "album",
+   "pistas": 12,
+   "portada": "https://cdn-images.dzcdn.net/images/cover/ae417a2603b14a27c6ca052103d45263/250x250-000000-80-0-0.jpg",
+   "portada_grande": "https://cdn-images.dzcdn.net/images/cover/ae417a2603b14a27c6ca052103d45263/1000x1000-000000-80-0-0.jpg"
+  },
+  "etiquetas_extra": [],
+  "subgeneros_frontera": []
+ },
+ {
   "id": "lost-in-kyiv-were-all-going-to-be-fine",
   "artista": "Lost in Kyiv",
   "titulo": "We’re All Going to Be Fine",
@@ -125326,6 +125338,7 @@
   "subgeneros": [
    "post-metal",
    "post-rock",
+   "instrumental",
    "progressive-metal"
   ],
   "etiquetas_originales": [
@@ -125894,8 +125907,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "death-metal",
    "thrash",
+   "death-metal",
    "technical-death-metal"
   ],
   "etiquetas_originales": [
@@ -126691,8 +126704,8 @@
    "punkgarage"
   ],
   "subgeneros": [
-   "melodic-hardcore",
-   "punk"
+   "punk",
+   "melodic-hardcore"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -126904,7 +126917,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "industrial"
+   "industrial",
+   "noise"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -127168,8 +127182,8 @@
   ],
   "subgeneros": [
    "power-metal",
-   "heavy-metal",
-   "progressive-metal"
+   "progressive-metal",
+   "heavy-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -127816,7 +127830,8 @@
   ],
   "subgeneros": [
    "black-metal",
-   "dungeon-synth"
+   "dungeon-synth",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Album Reviews",
@@ -127892,7 +127907,9 @@
    "portada": "https://cdn-images.dzcdn.net/images/cover/2e33f91c8566b32fb3e9ca8c1fc01177/250x250-000000-80-0-0.jpg",
    "portada_grande": "https://cdn-images.dzcdn.net/images/cover/2e33f91c8566b32fb3e9ca8c1fc01177/1000x1000-000000-80-0-0.jpg"
   },
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "stoned-statues-nothing-is-ever-over",
@@ -129200,7 +129217,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "black-metal"
+   "black-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -129255,7 +129273,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-06-15",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "lex-legion-lex-legion",
@@ -130160,7 +130180,9 @@
   ],
   "subgeneros": [
    "experimental",
-   "grindcore"
+   "grindcore",
+   "industrial",
+   "noise"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -130447,8 +130469,8 @@
   ],
   "subgeneros": [
    "death-metal",
-   "melodic-death-metal",
    "doom-metal",
+   "melodic-death-metal",
    "progressive-metal"
   ],
   "etiquetas_originales": [
@@ -132381,14 +132403,13 @@
   "estado": "publicado",
   "sello": null,
   "familias": [
-   "hardrock",
    "rockmetal"
   ],
   "subgeneros": [
+   "avantgarde",
    "death-metal",
    "doom-metal",
-   "progressive-metal",
-   "stoner-rock"
+   "experimental"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -132642,6 +132663,7 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "experimental",
    "post-punk",
    "psychedelic-rock"
   ],
@@ -132954,6 +132976,90 @@
   "requiere_subgenero": true,
   "primera_mencion": "2026-06-05",
   "detectado": "2026-11-28",
+  "subgeneros_frontera": []
+ },
+ {
+  "id": "vince-staples-cry-baby",
+  "artista": "Vince Staples",
+  "titulo": "Cry Baby",
+  "fecha": "2026-06-05",
+  "fecha_exacta": true,
+  "fecha_origen": "musicbrainz",
+  "estado": "publicado",
+  "sello": "Loma Vista Recordings",
+  "familias": [
+   "rockmetal"
+  ],
+  "subgeneros": [
+   "experimental"
+  ],
+  "etiquetas_originales": [],
+  "descripciones": [],
+  "etiquetas_musicbrainz_bandcamp": [
+   "hip hop",
+   "conscious hip hop",
+   "experimental hip hop",
+   "hardcore hip hop",
+   "west coast hip hop"
+  ],
+  "portada": "https://coverartarchive.org/release-group/c61a29d8-6311-4b4a-96ab-e5f1b2294dab/front-250",
+  "pistas": 10,
+  "tipo": "álbum",
+  "tipo_verificado": true,
+  "idioma": "eng",
+  "fuentes": [
+   {
+    "id": "wikipedia",
+    "nombre": "Wikipedia – List of albums",
+    "rol": "listado",
+    "url": "https://en.wikipedia.org/wiki/List_of_2026_albums",
+    "fecha": null
+   }
+  ],
+  "resenas": [],
+  "enlaces": {
+   "amazon": "https://www.amazon.com/gp/product/B0GY75ZPTR",
+   "apple": "https://music.apple.com/gb/album/1887627836",
+   "bandcamp": "https://vincestaples.bandcamp.com/album/cry-baby",
+   "bodega.lomavistarecordings.com": "https://bodega.lomavistarecordings.com/collections/vince-staples/products/vince-staples-cry-baby-cd",
+   "discogs": "https://www.discogs.com/release/37562205",
+   "mora.jp": "https://mora.jp/package/43000006/00888072784420/",
+   "qobuz": "https://www.qobuz.com/album/cry-baby-vince-staples/fqeioxrsib8jv",
+   "spotify": "https://open.spotify.com/album/5Asm8hPfn7pAlxpoir4ljs",
+   "tidal": "https://tidal.com/album/528878821",
+   "musicbrainz": "https://musicbrainz.org/release-group/c61a29d8-6311-4b4a-96ab-e5f1b2294dab",
+   "deezer": "https://www.deezer.com/album/993652651"
+  },
+  "enlace_artista_bandcamp": "https://vincestaples.bandcamp.com/",
+  "en_bandcamp": true,
+  "mbid": "c61a29d8-6311-4b4a-96ab-e5f1b2294dab",
+  "mbid_artistas": [
+   "78e854b8-9713-4ff2-9218-6b3784893bff"
+  ],
+  "requiere_subgenero": true,
+  "primera_mencion": null,
+  "detectado": "2026-11-28",
+  "listas_anuales": [
+   "Rough Trade: Albums of the Year 2026"
+  ],
+  "deezer": {
+   "id": 993652651,
+   "url": "https://www.deezer.com/album/993652651",
+   "tipo": "album",
+   "pistas": 10,
+   "portada": "https://cdn-images.dzcdn.net/images/cover/2392637dfa7d4daabcba1cc604e74148/250x250-000000-80-0-0.jpg",
+   "portada_grande": "https://cdn-images.dzcdn.net/images/cover/2392637dfa7d4daabcba1cc604e74148/1000x1000-000000-80-0-0.jpg"
+  },
+  "etiquetas_extra": [
+   {
+    "etiqueta": "Hip Hop",
+    "origen": "discogs"
+   },
+   {
+    "etiqueta": "Rock",
+    "origen": "discogs"
+   }
+  ],
   "subgeneros_frontera": []
  },
  {
@@ -136507,9 +136613,9 @@
   ],
   "subgeneros": [
    "emo",
+   "alternative-rock",
    "indie-pop",
-   "indie-rock",
-   "alternative-rock"
+   "indie-rock"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -136611,8 +136717,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "death-metal",
    "doom-metal",
+   "death-metal",
    "black-metal"
   ],
   "etiquetas_originales": [],
@@ -137571,10 +137677,13 @@
   "estado": "publicado",
   "sello": "Fearless Records",
   "familias": [
+   "punkgarage",
    "rockmetal"
   ],
   "subgeneros": [
    "metalcore",
+   "progressive-metal",
+   "hardcore",
    "heavy-metal"
   ],
   "etiquetas_originales": [
@@ -137698,15 +137807,14 @@
   "estado": "publicado",
   "sello": "Terminus Hate City",
   "familias": [
-   "indiepop",
    "punkgarage",
    "rockmetal"
   ],
   "subgeneros": [
    "black-metal",
+   "grindcore",
    "hardcore",
-   "post-rock",
-   "shoegaze"
+   "post-rock"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -139053,9 +139161,9 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "progressive-metal",
    "technical-death-metal",
-   "death-metal",
-   "progressive-metal"
+   "death-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -139145,10 +139253,12 @@
   "estado": "publicado",
   "sello": "Stomp Records",
   "familias": [
+   "country",
    "punkgarage"
   ],
   "subgeneros": [
-   "punk"
+   "punk",
+   "folk-rock"
   ],
   "etiquetas_originales": [],
   "descripciones": [
@@ -139804,6 +139914,13 @@
     "rol": "listado",
     "url": "https://musicbrainz.org/release-group/3e891057-bc4c-4d0c-b075-af4fd7048626",
     "fecha": null
+   },
+   {
+    "id": "wikipedia",
+    "nombre": "Wikipedia – List of albums",
+    "rol": "listado",
+    "url": "https://en.wikipedia.org/wiki/List_of_2026_albums",
+    "fecha": null
    }
   ],
   "resenas": [
@@ -139841,54 +139958,11 @@
   "requiere_subgenero": true,
   "primera_mencion": "2026-05-29",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
- },
- {
-  "id": "shinedown-eight",
-  "artista": "Shinedown",
-  "titulo": "Eight",
-  "fecha": "2026-05-29",
-  "fecha_exacta": true,
-  "fecha_origen": "fuente",
-  "estado": "publicado",
-  "sello": "Atlantic",
-  "familias": [
-   "hardrock",
-   "rockmetal"
-  ],
-  "subgeneros": [
-   "hard-rock"
-  ],
-  "etiquetas_originales": [
-   "Hard rock"
-  ],
-  "descripciones": [],
-  "etiquetas_musicbrainz_bandcamp": [],
-  "portada": null,
-  "pistas": null,
-  "tipo": "álbum",
-  "tipo_verificado": false,
-  "idioma": null,
-  "fuentes": [
-   {
-    "id": "wikipedia",
-    "nombre": "Wikipedia – List of albums",
-    "rol": "listado",
-    "url": "https://en.wikipedia.org/wiki/List_of_2026_albums",
-    "fecha": null
-   }
-  ],
-  "resenas": [],
-  "enlaces": {},
-  "enlace_artista_bandcamp": null,
-  "en_bandcamp": false,
-  "mbid": null,
-  "mbid_artistas": [],
-  "requiere_subgenero": true,
-  "primera_mencion": null,
-  "detectado": "2026-11-28",
   "listas_anuales": [
    "Loudwire: 25 Best Rock + Metal Albums of 2026"
+  ],
+  "unidos": [
+   "shinedown-eight"
   ],
   "subgeneros_frontera": []
  },
@@ -139906,6 +139980,7 @@
   ],
   "subgeneros": [
    "black-metal",
+   "folk-metal",
    "atmospheric-black-metal"
   ],
   "etiquetas_originales": [
@@ -140013,7 +140088,9 @@
   ],
   "subgeneros": [
    "death-metal",
-   "melodic-death-metal"
+   "black-metal",
+   "melodic-death-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -140078,7 +140155,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-06-05",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "saint-agnes-your-god-fearing-days-are-about-to-begin",
@@ -140668,7 +140747,8 @@
   ],
   "subgeneros": [
    "atmospheric-black-metal",
-   "black-metal"
+   "black-metal",
+   "depressive-black-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -142318,8 +142398,8 @@
   "subgeneros": [
    "black-metal",
    "atmospheric-black-metal",
-   "heavy-metal",
-   "death-metal"
+   "death-metal",
+   "heavy-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -143366,8 +143446,8 @@
   ],
   "subgeneros": [
    "death-metal",
-   "melodic-death-metal",
-   "black-metal"
+   "black-metal",
+   "melodic-death-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -144188,7 +144268,9 @@
   ],
   "subgeneros": [
    "black-metal",
-   "doom-metal"
+   "death-metal",
+   "doom-metal",
+   "progressive-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -145060,9 +145142,9 @@
   ],
   "subgeneros": [
    "black-metal",
+   "folk-metal",
    "melodic-death-metal",
-   "viking-metal",
-   "folk-metal"
+   "viking-metal"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -146165,7 +146247,9 @@
   ],
   "subgeneros": [
    "black-metal",
-   "gothic-metal"
+   "death-metal",
+   "gothic-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -146247,7 +146331,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-06-01",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "mick-flannery-house-must-win",
@@ -146335,15 +146421,14 @@
   "estado": "publicado",
   "sello": "Nettwerk Music Group",
   "familias": [
-   "hardrock",
    "punkgarage",
    "rockmetal"
   ],
   "subgeneros": [
    "math-rock",
+   "noisecore",
    "post-hardcore",
-   "alternative-rock",
-   "hard-rock"
+   "alternative-rock"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -146600,10 +146685,10 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "contemporary-folk",
    "experimental",
    "traditional-folk",
-   "old-time",
-   "psych-folk"
+   "old-time"
   ],
   "etiquetas_originales": [
    "Albums",
@@ -146682,6 +146767,7 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "noisecore",
    "post-rock",
    "prog-rock"
   ],
@@ -147565,8 +147651,8 @@
    "synthdark"
   ],
   "subgeneros": [
-   "black-metal",
    "doom-metal",
+   "black-metal",
    "dungeon-synth",
    "noise"
   ],
@@ -147844,6 +147930,8 @@
   ],
   "subgeneros": [
    "alternative-rock",
+   "metalcore",
+   "pop-punk",
    "punk"
   ],
   "etiquetas_originales": [],
@@ -147918,7 +148006,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "black-metal"
+   "black-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -148045,7 +148134,9 @@
    "portada": "https://cdn-images.dzcdn.net/images/cover/3fd0692f6f28ffed4056548a3ee3af73/250x250-000000-80-0-0.jpg",
    "portada_grande": "https://cdn-images.dzcdn.net/images/cover/3fd0692f6f28ffed4056548a3ee3af73/1000x1000-000000-80-0-0.jpg"
   },
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "devlin-and-the-harm-devlin-and-the-harm",
@@ -148290,9 +148381,9 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "doom-metal",
    "death-metal",
-   "progressive-metal",
-   "doom-metal"
+   "progressive-metal"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -148481,11 +148572,13 @@
   "estado": "publicado",
   "sello": "Bretford",
   "familias": [
+   "punkgarage",
    "synthdark"
   ],
   "subgeneros": [
    "coldwave",
-   "ebm"
+   "ebm",
+   "punk"
   ],
   "etiquetas_originales": [
    "ReViews",
@@ -149816,7 +149909,8 @@
   ],
   "subgeneros": [
    "black-metal",
-   "heavy-metal"
+   "heavy-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -149885,7 +149979,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-02-25",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "von-groove-born-to-rock",
@@ -149983,10 +150079,10 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "heavy-metal",
+   "thrash",
    "black-metal",
    "death-metal",
-   "thrash"
+   "heavy-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -152540,10 +152636,12 @@
   "sello": "Ourness",
   "familias": [
    "indiepop",
+   "punkgarage",
    "synthdark"
   ],
   "subgeneros": [
    "indie-pop",
+   "punk",
    "synth-pop"
   ],
   "etiquetas_originales": [
@@ -155788,9 +155886,10 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "black-metal",
    "atmospheric-black-metal",
    "melodic-death-metal",
-   "black-metal"
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -155857,7 +155956,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-05-25",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "neil-diamond-wild-at-heart",
@@ -157013,8 +157114,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "deathcore",
    "death-metal",
+   "deathcore",
    "heavy-metal"
   ],
   "etiquetas_originales": [
@@ -158992,8 +159093,8 @@
   "subgeneros": [
    "black-metal",
    "heavy-metal",
-   "atmospheric-black-metal",
-   "progressive-metal"
+   "avantgarde",
+   "atmospheric-black-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -163222,8 +163323,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "atmospheric-black-metal",
    "black-metal",
+   "atmospheric-black-metal",
    "noise"
   ],
   "etiquetas_originales": [
@@ -163494,7 +163595,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "death-metal"
+   "death-metal",
+   "doom-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -164302,8 +164404,8 @@
   "subgeneros": [
    "emo",
    "post-hardcore",
-   "hardcore",
-   "melodic-hardcore"
+   "noisecore",
+   "hardcore"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -164564,8 +164666,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "metalcore",
    "emo",
+   "metalcore",
    "post-hardcore",
    "melodic-hardcore"
   ],
@@ -165026,7 +165128,9 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "atmospheric-black-metal"
+   "atmospheric-black-metal",
+   "black-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -165089,7 +165193,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-05-30",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "ringo-starr-long-long-road",
@@ -165593,7 +165699,7 @@
    "death-metal",
    "grindcore",
    "hardcore",
-   "sludge-metal"
+   "noisecore"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -166509,66 +166615,6 @@
   "subgeneros_frontera": []
  },
  {
-  "id": "jackson-dean-magnolia-sage-in-full-bloom",
-  "artista": "Jackson Dean",
-  "titulo": "Magnolia Sage (In Full Bloom)",
-  "fecha": "2026-10-09",
-  "fecha_exacta": true,
-  "fecha_origen": "fuente",
-  "estado": "publicado",
-  "sello": "Blue Highway",
-  "familias": [
-   "country"
-  ],
-  "subgeneros": [],
-  "etiquetas_originales": [],
-  "descripciones": [
-   "Jackson Dean plans a deluxe disc, \"Magnolia Sage (In Full Bloom).\" Comprised of \"The Moon And The Wolf (featuring Laci Kaye Booth),\" an unplugged, take on \"Wildfire,\" \"Wildfire (Afterburn)\" and two new live tracks - \"Blacktop Blues (Live In Colorado)\" and the atmospheric \"Hey Mississippi (Live In London)\" – the record now totals 15 songs."
-  ],
-  "etiquetas_musicbrainz_bandcamp": [],
-  "portada": "https://cdn-images.dzcdn.net/images/cover/135350e08a6c21d4f9840df1c697d3f7/250x250-000000-80-0-0.jpg",
-  "pistas": 15,
-  "tipo": "álbum",
-  "tipo_verificado": false,
-  "idioma": null,
-  "fuentes": [
-   {
-    "id": "cst",
-    "nombre": "Country Standard Time – CD releases",
-    "rol": "listado",
-    "url": "https://www.countrystandardtime.com",
-    "fecha": null
-   }
-  ],
-  "resenas": [],
-  "enlaces": {
-   "deezer": "https://www.deezer.com/album/1111624532",
-   "apple": "https://music.apple.com/us/album/magnolia-sage-in-full-bloom/6805969617?uo=4"
-  },
-  "enlace_artista_bandcamp": null,
-  "en_bandcamp": false,
-  "mbid": null,
-  "mbid_artistas": [],
-  "requiere_subgenero": false,
-  "primera_mencion": null,
-  "detectado": "2026-11-22",
-  "deezer": {
-   "id": 1111624532,
-   "pistas": 15,
-   "portada": "https://cdn-images.dzcdn.net/images/cover/135350e08a6c21d4f9840df1c697d3f7/250x250-000000-80-0-0.jpg",
-   "portada_grande": "https://cdn-images.dzcdn.net/images/cover/135350e08a6c21d4f9840df1c697d3f7/1000x1000-000000-80-0-0.jpg",
-   "tipo": "album",
-   "url": "https://www.deezer.com/album/1111624532"
-  },
-  "etiquetas_extra": [
-   {
-    "etiqueta": "Country",
-    "origen": "itunes"
-   }
-  ],
-  "subgeneros_frontera": []
- },
- {
   "id": "irmin-schmidt-requiem",
   "artista": "Irmin Schmidt",
   "titulo": "Requiem",
@@ -167333,6 +167379,66 @@
    },
    {
     "etiqueta": "Electronic",
+    "origen": "discogs"
+   }
+  ],
+  "subgeneros_frontera": []
+ },
+ {
+  "id": "fatboi-sharif-and-child-actor-crayola-circles",
+  "artista": "Fatboi Sharif & Child Actor",
+  "titulo": "Crayola Circles",
+  "fecha": "2026-04-24",
+  "fecha_exacta": true,
+  "fecha_origen": "musicbrainz",
+  "estado": "publicado",
+  "sello": "Backwoodz Studioz",
+  "familias": [
+   "rockmetal"
+  ],
+  "subgeneros": [
+   "experimental"
+  ],
+  "etiquetas_originales": [],
+  "descripciones": [],
+  "etiquetas_musicbrainz_bandcamp": [
+   "abstract hip hop",
+   "drumless hip hop",
+   "experimental hip hop",
+   "hip hop"
+  ],
+  "portada": "https://coverartarchive.org/release-group/6cc51b78-b2ad-442e-a62a-57db48a22a6a/front-250",
+  "pistas": 15,
+  "tipo": "álbum",
+  "tipo_verificado": true,
+  "idioma": "eng",
+  "fuentes": [
+   {
+    "id": "wikipedia",
+    "nombre": "Wikipedia – List of albums",
+    "rol": "listado",
+    "url": "https://en.wikipedia.org/wiki/List_of_2026_albums",
+    "fecha": null
+   }
+  ],
+  "resenas": [],
+  "enlaces": {
+   "bandcamp": "https://fatboisharif.bandcamp.com/album/crayola-circles",
+   "musicbrainz": "https://musicbrainz.org/release-group/6cc51b78-b2ad-442e-a62a-57db48a22a6a"
+  },
+  "enlace_artista_bandcamp": "https://fatboisharif.bandcamp.com/",
+  "en_bandcamp": true,
+  "mbid": "6cc51b78-b2ad-442e-a62a-57db48a22a6a",
+  "mbid_artistas": [
+   "7ca273eb-8150-4ac4-ac55-8209593f682c",
+   "c7efa7c7-95da-4db2-8da7-eb322b3e6d8b"
+  ],
+  "requiere_subgenero": true,
+  "primera_mencion": null,
+  "detectado": "2026-11-28",
+  "etiquetas_extra": [
+   {
+    "etiqueta": "Hip Hop",
     "origen": "discogs"
    }
   ],
@@ -168369,6 +168475,68 @@
    "portada": "https://cdn-images.dzcdn.net/images/cover/cab650ef363671fc9d46525a60a0aa38/250x250-000000-80-0-0.jpg",
    "portada_grande": "https://cdn-images.dzcdn.net/images/cover/cab650ef363671fc9d46525a60a0aa38/1000x1000-000000-80-0-0.jpg"
   },
+  "subgeneros_frontera": []
+ },
+ {
+  "id": "cadence-weapon-forager",
+  "artista": "Cadence Weapon",
+  "titulo": "Forager",
+  "fecha": "2026-04-24",
+  "fecha_exacta": true,
+  "fecha_origen": "musicbrainz",
+  "estado": "publicado",
+  "sello": "Six Shooter Records",
+  "familias": [
+   "rockmetal"
+  ],
+  "subgeneros": [
+   "experimental"
+  ],
+  "etiquetas_originales": [],
+  "descripciones": [],
+  "etiquetas_musicbrainz_bandcamp": [
+   "alternative hip hop",
+   "electronic",
+   "experimental hip hop",
+   "grime",
+   "hip hop",
+   "underground hip hop",
+   "rock and indie"
+  ],
+  "portada": "https://coverartarchive.org/release-group/ada7954a-ca88-47b9-8890-d474951c4ecc/front-250",
+  "pistas": 12,
+  "tipo": "álbum",
+  "tipo_verificado": true,
+  "idioma": "eng",
+  "fuentes": [
+   {
+    "id": "wikipedia",
+    "nombre": "Wikipedia – List of albums",
+    "rol": "listado",
+    "url": "https://en.wikipedia.org/wiki/List_of_2026_albums",
+    "fecha": null
+   }
+  ],
+  "resenas": [],
+  "enlaces": {
+   "bandcamp": "https://cadenceweapon.bandcamp.com/album/forager",
+   "musicbrainz": "https://musicbrainz.org/release-group/ada7954a-ca88-47b9-8890-d474951c4ecc"
+  },
+  "enlace_artista_bandcamp": "https://cadenceweapon.bandcamp.com/",
+  "en_bandcamp": true,
+  "mbid": "ada7954a-ca88-47b9-8890-d474951c4ecc",
+  "mbid_artistas": [
+   "9abfb2cd-7a7f-444a-b1db-7e5dd1def050"
+  ],
+  "requiere_subgenero": true,
+  "primera_mencion": null,
+  "detectado": "2026-11-28",
+  "etiquetas_extra": [
+   {
+    "etiqueta": "Hip Hop",
+    "origen": "discogs"
+   }
+  ],
   "subgeneros_frontera": []
  },
  {
@@ -169473,7 +169641,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "doom-metal"
+   "doom-metal",
+   "funeral-doom-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -170063,8 +170232,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "power-metal",
-   "heavy-metal"
+   "heavy-metal",
+   "power-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -170924,7 +171093,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "death-metal"
+   "death-metal",
+   "progressive-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -171534,7 +171704,10 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "goth-rock"
+   "avantgarde",
+   "experimental",
+   "goth-rock",
+   "industrial-metal"
   ],
   "etiquetas_originales": [
    "ReViews",
@@ -172091,8 +172264,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "metalcore",
    "nu-metal",
+   "metalcore",
    "hard-rock",
    "post-hardcore"
   ],
@@ -172568,8 +172741,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "prog-rock",
    "experimental",
+   "prog-rock",
    "psychedelic-rock",
    "folk-rock"
   ],
@@ -174319,8 +174492,9 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "atmospheric-black-metal",
    "black-metal",
+   "atmospheric-black-metal",
+   "melodic-metal",
    "post-metal"
   ],
   "etiquetas_originales": [
@@ -174385,7 +174559,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-05-09",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "sicarius-nex",
@@ -174927,6 +175103,7 @@
   "subgeneros": [
    "emo",
    "post-hardcore",
+   "noisecore",
    "math-rock"
   ],
   "etiquetas_originales": [
@@ -176530,8 +176707,8 @@
   ],
   "subgeneros": [
    "deathcore",
-   "death-metal",
    "hardcore",
+   "death-metal",
    "heavy-metal"
   ],
   "etiquetas_originales": [
@@ -177093,7 +177270,8 @@
   "subgeneros": [
    "death-metal",
    "technical-death-metal",
-   "deathcore"
+   "deathcore",
+   "grindcore"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -177515,9 +177693,9 @@
   ],
   "subgeneros": [
    "post-hardcore",
+   "metalcore",
    "alternative-rock",
-   "emo",
-   "experimental"
+   "emo"
   ],
   "etiquetas_originales": [
    "Album Reviews",
@@ -178844,7 +179022,7 @@
    "doom-metal",
    "gothic-metal",
    "black-metal",
-   "post-metal"
+   "depressive-black-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -179367,9 +179545,9 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "death-metal",
    "goregrind",
-   "technical-death-metal",
-   "death-metal"
+   "technical-death-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -179465,7 +179643,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "black-metal"
+   "black-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -179537,7 +179716,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-04-10",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "maria-taylor-storys-end",
@@ -180909,7 +181090,9 @@
   ],
   "subgeneros": [
    "black-metal",
-   "death-metal"
+   "death-metal",
+   "experimental",
+   "progressive-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -181563,7 +181746,9 @@
   ],
   "subgeneros": [
    "black-metal",
-   "atmospheric-black-metal"
+   "atmospheric-black-metal",
+   "folk-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Album Reviews",
@@ -181657,7 +181842,9 @@
    "portada": "https://cdn-images.dzcdn.net/images/cover/5b18ff6bf27611be2fe07578ab5822fe/250x250-000000-80-0-0.jpg",
    "portada_grande": "https://cdn-images.dzcdn.net/images/cover/5b18ff6bf27611be2fe07578ab5822fe/1000x1000-000000-80-0-0.jpg"
   },
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "uni-boys-uni-boys",
@@ -182257,7 +182444,8 @@
   "subgeneros": [
    "punk",
    "hardcore",
-   "noise"
+   "noise",
+   "crust"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -183657,8 +183845,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "death-metal",
-   "grindcore"
+   "grindcore",
+   "death-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -184160,8 +184348,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "atmospheric-black-metal",
    "black-metal",
+   "atmospheric-black-metal",
    "folk-metal",
    "depressive-black-metal"
   ],
@@ -184409,11 +184597,14 @@
   "sello": "Thirty Tigers",
   "familias": [
    "indiepop",
-   "punkgarage"
+   "punkgarage",
+   "rockmetal"
   ],
   "subgeneros": [
    "garage-rock",
-   "indie-pop"
+   "indie-pop",
+   "indie-rock",
+   "psychedelic-rock"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -185086,8 +185277,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "death-metal",
-   "doom-metal"
+   "doom-metal",
+   "death-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -185241,82 +185432,6 @@
    "portada": "https://cdn-images.dzcdn.net/images/cover/43dc09e68b921f8e652015777cf9eb63/250x250-000000-80-0-0.jpg",
    "portada_grande": "https://cdn-images.dzcdn.net/images/cover/43dc09e68b921f8e652015777cf9eb63/1000x1000-000000-80-0-0.jpg"
   },
-  "subgeneros_frontera": []
- },
- {
-  "id": "flatland-cavalry-work-of-heart-heartstrings",
-  "artista": "Flatland Cavalry",
-  "titulo": "Work of Heart – Heartstrings",
-  "fecha": "2026-10-02",
-  "fecha_exacta": true,
-  "fecha_origen": "fuente",
-  "estado": "publicado",
-  "sello": "Lost Highway",
-  "familias": [
-   "country"
-  ],
-  "subgeneros": [],
-  "etiquetas_originales": [
-   "Deluxe Edition"
-  ],
-  "descripciones": [
-   "Flatland Cavalry goes the deluxe route following their March release. The deluxe version has five new songs. Dwight A. Baker produced the set."
-  ],
-  "etiquetas_musicbrainz_bandcamp": [],
-  "portada": "https://cdn-images.dzcdn.net/images/cover/9146490d5735e09bfc53edc33f87ba06/250x250-000000-80-0-0.jpg",
-  "pistas": 17,
-  "tipo": "álbum",
-  "tipo_verificado": false,
-  "idioma": null,
-  "fuentes": [
-   {
-    "id": "scm_radar",
-    "nombre": "Saving Country Music – Release Radar",
-    "rol": "listado",
-    "url": "https://savingcountrymusic.com",
-    "fecha": null
-   },
-   {
-    "id": "cst",
-    "nombre": "Country Standard Time – CD releases",
-    "rol": "listado",
-    "url": "https://www.countrystandardtime.com",
-    "fecha": null
-   },
-   {
-    "id": "radar_deezer",
-    "nombre": "Radar de artistas (Deezer)",
-    "rol": "listado",
-    "url": "https://www.deezer.com/album/1104176442",
-    "fecha": null
-   }
-  ],
-  "resenas": [],
-  "enlaces": {
-   "deezer": "https://www.deezer.com/album/1104176442",
-   "apple": "https://music.apple.com/us/album/work-of-heart-heartstrings/6799280805?uo=4"
-  },
-  "enlace_artista_bandcamp": null,
-  "en_bandcamp": false,
-  "mbid": null,
-  "mbid_artistas": [],
-  "requiere_subgenero": false,
-  "primera_mencion": null,
-  "detectado": "2026-11-22",
-  "deezer": {
-   "id": 1104176442,
-   "pistas": 17,
-   "portada": "https://cdn-images.dzcdn.net/images/cover/9146490d5735e09bfc53edc33f87ba06/250x250-000000-80-0-0.jpg",
-   "portada_grande": "https://cdn-images.dzcdn.net/images/cover/9146490d5735e09bfc53edc33f87ba06/1000x1000-000000-80-0-0.jpg",
-   "tipo": "album",
-   "url": "https://www.deezer.com/album/1104176442"
-  },
-  "etiquetas_extra": [
-   {
-    "etiqueta": "Country",
-    "origen": "itunes"
-   }
-  ],
   "subgeneros_frontera": []
  },
  {
@@ -185534,6 +185649,7 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "experimental",
    "noise"
   ],
   "etiquetas_originales": [],
@@ -186219,7 +186335,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "metalcore"
+   "metalcore",
+   "noisecore"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -186350,7 +186467,7 @@
    "hard-rock",
    "heavy-metal",
    "groove-metal",
-   "southern-rock"
+   "sludge-metal"
   ],
   "etiquetas_originales": [
    "Album Reviews",
@@ -187714,8 +187831,9 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "black-metal",
    "atmospheric-black-metal",
-   "black-metal"
+   "folk-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -189687,7 +189805,8 @@
   ],
   "subgeneros": [
    "death-metal",
-   "progressive-metal"
+   "progressive-metal",
+   "doom-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -190137,8 +190256,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "death-metal",
    "doom-metal",
+   "death-metal",
    "black-metal",
    "melodic-death-metal"
   ],
@@ -190374,12 +190493,15 @@
   "estado": "publicado",
   "sello": "DEATHGOD CORP",
   "familias": [
+   "indiepop",
    "punkgarage",
    "rockmetal"
   ],
   "subgeneros": [
    "psychedelic-rock",
-   "post-punk"
+   "garage-rock",
+   "post-punk",
+   "indie-pop"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -191107,10 +191229,12 @@
   "estado": "publicado",
   "sello": "Apocalyptic Witchcraft Recordings",
   "familias": [
+   "punkgarage",
    "rockmetal"
   ],
   "subgeneros": [
    "black-metal",
+   "crust",
    "death-metal"
   ],
   "etiquetas_originales": [
@@ -191577,10 +191701,14 @@
   "estado": "publicado",
   "sello": "Perrystown Music Ltd",
   "familias": [
-   "indiepop"
+   "country",
+   "indiepop",
+   "punkgarage"
   ],
   "subgeneros": [
-   "indie-rock"
+   "folk-rock",
+   "indie-rock",
+   "punk"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -192555,6 +192683,7 @@
   "subgeneros": [
    "grindcore",
    "death-metal",
+   "crust",
    "hardcore"
   ],
   "etiquetas_originales": [
@@ -194193,7 +194322,10 @@
   "familias": [
    "rockmetal"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "black-metal",
+   "death-metal"
+  ],
   "etiquetas_originales": [
    "Reviews",
    "1.0",
@@ -194341,7 +194473,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "industrial"
+   "industrial",
+   "noise"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -194763,6 +194896,7 @@
   ],
   "subgeneros": [
    "black-metal",
+   "melodic-metal",
    "death-metal"
   ],
   "etiquetas_originales": [
@@ -194850,7 +194984,9 @@
    "portada": "https://cdn-images.dzcdn.net/images/cover/5c368c6b0e4fdfb2923791895a63edf5/250x250-000000-80-0-0.jpg",
    "portada_grande": "https://cdn-images.dzcdn.net/images/cover/5c368c6b0e4fdfb2923791895a63edf5/1000x1000-000000-80-0-0.jpg"
   },
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "vial-hellhound",
@@ -195521,8 +195657,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "death-metal",
    "doom-metal",
+   "death-metal",
    "black-metal"
   ],
   "etiquetas_originales": [
@@ -196030,7 +196166,9 @@
   "familias": [
    "rockmetal"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "death-metal"
+  ],
   "etiquetas_originales": [
    "Reviews",
    "2.0",
@@ -197368,9 +197506,11 @@
   "estado": "publicado",
   "sello": "10K Projects",
   "familias": [
-   "indiepop"
+   "indiepop",
+   "rockmetal"
   ],
   "subgeneros": [
+   "experimental",
    "pop-rock"
   ],
   "etiquetas_originales": [],
@@ -200139,7 +200279,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "black-metal"
+   "black-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -200234,7 +200375,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-02-23",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "motorpsycho-gaia-ii-space-corps",
@@ -202148,10 +202291,10 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "thrash",
    "progressive-metal",
    "death-metal",
-   "technical-death-metal",
-   "thrash"
+   "technical-death-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -203629,6 +203772,7 @@
   ],
   "subgeneros": [
    "synth-pop",
+   "psychedelic-rock",
    "alternative-rock"
   ],
   "etiquetas_originales": [
@@ -203757,7 +203901,8 @@
   ],
   "subgeneros": [
    "industrial",
-   "ebm"
+   "ebm",
+   "noise"
   ],
   "etiquetas_originales": [
    "News",
@@ -204697,8 +204842,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "black-metal",
    "death-metal",
+   "black-metal",
    "deathcore",
    "hardcore"
   ],
@@ -205039,7 +205184,8 @@
   "subgeneros": [
    "pop-punk",
    "punk",
-   "emo"
+   "emo",
+   "metalcore"
   ],
   "etiquetas_originales": [
    "Album Reviews",
@@ -205990,7 +206136,10 @@
   "familias": [
    "rockmetal"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "black-metal",
+   "doom-metal"
+  ],
   "etiquetas_originales": [
    "Reviews",
    "2.0",
@@ -206231,9 +206380,11 @@
   "estado": "publicado",
   "sello": "Stanze Fredde Records",
   "familias": [
+   "punkgarage",
    "synthdark"
   ],
   "subgeneros": [
+   "punk",
    "synth-pop",
    "synthwave"
   ],
@@ -206683,7 +206834,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "progressive-metal"
+   "progressive-metal",
+   "death-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -207560,7 +207712,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "black-metal"
+   "black-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -207632,7 +207785,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-03-15",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "ward-davis-here-i-am",
@@ -209535,7 +209690,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "death-metal"
+   "death-metal",
+   "doom-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -209632,7 +209788,8 @@
    "punkgarage"
   ],
   "subgeneros": [
-   "hardcore"
+   "hardcore",
+   "punk"
   ],
   "etiquetas_originales": [
    "Digital hardcore"
@@ -210338,8 +210495,8 @@
   ],
   "subgeneros": [
    "atmospheric-black-metal",
-   "shoegaze",
    "black-metal",
+   "shoegaze",
    "folk-metal"
   ],
   "etiquetas_originales": [
@@ -210531,10 +210688,10 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "metalcore",
    "deathcore",
    "death-metal",
-   "experimental",
-   "metalcore"
+   "experimental"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -210606,8 +210763,8 @@
   ],
   "subgeneros": [
    "black-metal",
-   "post-metal",
    "progressive-metal",
+   "post-metal",
    "atmospheric-black-metal"
   ],
   "etiquetas_originales": [
@@ -211735,7 +211892,8 @@
   ],
   "subgeneros": [
    "death-metal",
-   "doom-metal"
+   "doom-metal",
+   "funeral-doom-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -212919,6 +213077,7 @@
   ],
   "subgeneros": [
    "blues-rock",
+   "hill-country-blues",
    "roots-rock"
   ],
   "etiquetas_originales": [
@@ -215792,7 +215951,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "black-metal"
+   "black-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -215857,7 +216017,9 @@
    "portada": "https://cdn-images.dzcdn.net/images/cover/e48a1b2fc919f1934d4463277d9709e9/250x250-000000-80-0-0.jpg",
    "portada_grande": "https://cdn-images.dzcdn.net/images/cover/e48a1b2fc919f1934d4463277d9709e9/1000x1000-000000-80-0-0.jpg"
   },
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "sam-quealy-jawbreaker",
@@ -216008,8 +216170,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "hard-rock",
-   "heavy-metal"
+   "heavy-metal",
+   "hard-rock"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -216098,9 +216260,10 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "atmospheric-black-metal",
    "black-metal",
-   "post-metal"
+   "atmospheric-black-metal",
+   "death-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -216158,7 +216321,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-02-07",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "plantoid-flare",
@@ -216327,7 +216492,8 @@
   ],
   "subgeneros": [
    "black-metal",
-   "dungeon-synth"
+   "dungeon-synth",
+   "avantgarde"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -216684,7 +216850,8 @@
   ],
   "subgeneros": [
    "doom-metal",
-   "funeral-doom-metal"
+   "funeral-doom-metal",
+   "death-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -219187,7 +219354,7 @@
    "prog-rock",
    "doom-metal",
    "noise",
-   "sludge-metal"
+   "avantgarde"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -219769,8 +219936,8 @@
   ],
   "subgeneros": [
    "progressive-metal",
-   "death-metal",
-   "metalcore"
+   "metalcore",
+   "death-metal"
   ],
   "etiquetas_originales": [
    "Progressive metalcore, djent",
@@ -221073,6 +221240,7 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "black-metal",
    "heavy-metal",
    "punk"
   ],
@@ -222697,7 +222865,8 @@
   ],
   "subgeneros": [
    "americana",
-   "alt-country"
+   "alt-country",
+   "indie-folk"
   ],
   "etiquetas_originales": [
    "Americana"
@@ -223843,7 +224012,8 @@
   "subgeneros": [
    "doom-metal",
    "melodic-death-metal",
-   "death-metal"
+   "death-metal",
+   "funeral-doom-metal"
   ],
   "etiquetas_originales": [],
   "descripciones": [],
@@ -224631,7 +224801,9 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "doom-metal"
+   "doom-metal",
+   "death-metal",
+   "funeral-doom-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -225023,7 +225195,8 @@
   "subgeneros": [
    "progressive-metal",
    "deathcore",
-   "experimental"
+   "experimental",
+   "noisecore"
   ],
   "etiquetas_originales": [
    "Album Reviews",
@@ -225818,9 +225991,9 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "thrash",
    "heavy-metal",
-   "power-metal",
-   "thrash"
+   "power-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -225904,7 +226077,7 @@
    "progressive-metal",
    "experimental",
    "industrial-metal",
-   "post-metal"
+   "instrumental"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -228850,6 +229023,76 @@
   "subgeneros_frontera": []
  },
  {
+  "id": "earl-guitar-williams-soul-king-of-bessemer-al",
+  "artista": "Earl “Guitar” Williams",
+  "titulo": "The Soul King of Bessemer, AL",
+  "fecha": "2026-01-01",
+  "fecha_exacta": false,
+  "fecha_origen": "musicbrainz",
+  "estado": "publicado",
+  "sello": "Music Maker Relief Foundation",
+  "familias": [
+   "blues"
+  ],
+  "subgeneros": [
+   "hill-country-blues"
+  ],
+  "etiquetas_originales": [
+   "Album Reviews",
+   "Alabama blues",
+   "Bronson Tew",
+   "Earl \"Guitar\" Williams",
+   "Jimbo Mathus",
+   "Juke joint blues",
+   "modern juke joint blues",
+   "Music Maker Foundation",
+   "Rhys Williams",
+   "The Crimestoppers",
+   "The Soul King of Bessemer Al",
+   "Tim Duffy"
+  ],
+  "descripciones": [],
+  "etiquetas_musicbrainz_bandcamp": [],
+  "portada": "https://coverartarchive.org/release-group/0a68ce5e-df75-44a7-8a3c-b8261b5782c6/front-250",
+  "pistas": 10,
+  "tipo": "álbum",
+  "tipo_verificado": true,
+  "idioma": "eng",
+  "fuentes": [
+   {
+    "id": "bluesblast",
+    "nombre": "Blues Blast Magazine – reseñas",
+    "rol": "resena",
+    "url": "https://www.bluesblastmagazine.com/earl-guitar-williams-the-soul-king-of-bessemer-al-album-review/",
+    "fecha": "2026-07-01"
+   }
+  ],
+  "resenas": [
+   {
+    "fuente": "bluesblast",
+    "nombre": "Blues Blast Magazine – reseñas",
+    "url": "https://www.bluesblastmagazine.com/earl-guitar-williams-the-soul-king-of-bessemer-al-album-review/",
+    "nota": null,
+    "fecha": "2026-07-01"
+   }
+  ],
+  "enlaces": {
+   "bandcamp": "https://earlguitarwilliams.bandcamp.com/album/listeners-circle-vol-76-soul-king-of-bessemer-al",
+   "musicbrainz": "https://musicbrainz.org/release-group/0a68ce5e-df75-44a7-8a3c-b8261b5782c6"
+  },
+  "enlace_artista_bandcamp": "https://earlguitarwilliams.bandcamp.com/",
+  "en_bandcamp": true,
+  "mbid": "0a68ce5e-df75-44a7-8a3c-b8261b5782c6",
+  "mbid_artistas": [
+   "b6009b2f-503c-45de-9456-1d0b02839586"
+  ],
+  "requiere_subgenero": true,
+  "primera_mencion": "2026-07-01",
+  "detectado": "2026-11-28",
+  "etiquetas_extra": [],
+  "subgeneros_frontera": []
+ },
+ {
   "id": "den-der-hale-larking-about",
   "artista": "Den Der Hale",
   "titulo": "Larking About",
@@ -228991,9 +229234,12 @@
   "estado": "publicado",
   "sello": null,
   "familias": [
+   "blues",
    "country"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "harmonica-blues"
+  ],
   "etiquetas_originales": [
    "Reviews",
    "Big Harp George",
@@ -230566,89 +230812,6 @@
   "primera_mencion": null,
   "detectado": "2026-11-22",
   "etiquetas_extra": [],
-  "subgeneros_frontera": []
- },
- {
-  "id": "rolling-stones-foreign-tongues-loose-lips",
-  "artista": "THE ROLLING STONES",
-  "titulo": "Foreign Tongues, Loose Lips",
-  "fecha": "2026-11-27",
-  "fecha_exacta": false,
-  "fecha_origen": "reseña",
-  "estado": "publicado",
-  "sello": null,
-  "familias": [
-   "blues",
-   "hardrock",
-   "rockmetal"
-  ],
-  "subgeneros": [
-   "blues-rock",
-   "classic-rock"
-  ],
-  "etiquetas_originales": [
-   "ALBUM REVIEWS",
-   "ALBUM REVIEWS (Mobile)",
-   "ALL POSTS",
-   "Reissues",
-   "album",
-   "blues",
-   "blues rock",
-   "Charlie Watts",
-   "classic rock",
-   "Courtney Pine",
-   "Foreign Tongues",
-   "Keith Richards",
-   "Loose Lips",
-   "Mick Jagger",
-   "review",
-   "rock",
-   "Ronnie Wood",
-   "The Rolling Stones"
-  ],
-  "descripciones": [],
-  "etiquetas_musicbrainz_bandcamp": [],
-  "portada": "https://cdn-images.dzcdn.net/images/cover/be058d50116446585da675866d80a88a/250x250-000000-80-0-0.jpg",
-  "pistas": 19,
-  "tipo": "álbum",
-  "tipo_verificado": false,
-  "idioma": null,
-  "fuentes": [
-   {
-    "id": "getreadytorock",
-    "nombre": "Get Ready to ROCK!",
-    "rol": "resena",
-    "url": "https://getreadytorock.me.uk/blog/2026/11/album-review-the-rolling-stones-foreign-tongues-loose-lips/",
-    "fecha": "2026-11-27"
-   }
-  ],
-  "resenas": [
-   {
-    "fuente": "getreadytorock",
-    "nombre": "Get Ready to ROCK!",
-    "url": "https://getreadytorock.me.uk/blog/2026/11/album-review-the-rolling-stones-foreign-tongues-loose-lips/",
-    "nota": null,
-    "fecha": "2026-11-27"
-   }
-  ],
-  "enlaces": {
-   "deezer": "https://www.deezer.com/album/1151227051"
-  },
-  "enlace_artista_bandcamp": null,
-  "en_bandcamp": false,
-  "mbid": null,
-  "mbid_artistas": [],
-  "requiere_subgenero": false,
-  "primera_mencion": "2026-11-27",
-  "detectado": "2026-11-28",
-  "deezer": {
-   "id": 1151227051,
-   "url": "https://www.deezer.com/album/1151227051",
-   "tipo": "album",
-   "pistas": 19,
-   "portada": "https://cdn-images.dzcdn.net/images/cover/be058d50116446585da675866d80a88a/250x250-000000-80-0-0.jpg",
-   "portada_grande": "https://cdn-images.dzcdn.net/images/cover/be058d50116446585da675866d80a88a/1000x1000-000000-80-0-0.jpg"
-  },
   "subgeneros_frontera": []
  },
  {
@@ -244267,6 +244430,7 @@
    "country"
   ],
   "subgeneros": [
+   "americana",
    "folk-rock"
   ],
   "etiquetas_originales": [
@@ -254094,7 +254258,8 @@
   ],
   "subgeneros": [
    "power-metal",
-   "prog-rock"
+   "prog-rock",
+   "progressive-metal"
   ],
   "etiquetas_originales": [
    "ReViews",
@@ -256221,11 +256386,16 @@
   "familias": [
    "country"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "americana"
+  ],
   "etiquetas_originales": [
    "Album Reviews",
    "Reviews",
-   "Jerry Joseph & The Jackmormons"
+   "Jerry Joseph & The Jackmormons",
+   "americana",
+   "Jerry Joseph and The Jack Mormons",
+   "Panther Tracks Vol. 2"
   ],
   "descripciones": [],
   "etiquetas_musicbrainz_bandcamp": [],
@@ -256241,64 +256411,7 @@
     "rol": "resena",
     "url": "https://americana-uk.com/jerry-joseph-and-the-jackmormons-panther-tracks-volume-2",
     "fecha": "2026-08-24"
-   }
-  ],
-  "resenas": [
-   {
-    "fuente": "americanauk",
-    "nombre": "Americana UK",
-    "url": "https://americana-uk.com/jerry-joseph-and-the-jackmormons-panther-tracks-volume-2",
-    "nota": "9/10",
-    "fecha": "2026-08-24"
-   }
-  ],
-  "enlaces": {
-   "apple": "https://music.apple.com/us/album/panther-tracks-vol-2/6786774174?uo=4"
-  },
-  "enlace_artista_bandcamp": null,
-  "en_bandcamp": false,
-  "mbid": null,
-  "mbid_artistas": [],
-  "requiere_subgenero": false,
-  "primera_mencion": "2026-08-24",
-  "detectado": "2026-11-22",
-  "etiquetas_extra": [
-   {
-    "etiqueta": "Alternative",
-    "origen": "itunes"
-   }
-  ],
-  "subgeneros_frontera": []
- },
- {
-  "id": "jerry-joseph-and-the-jackmormons-panther-tracks-vol-2",
-  "artista": "Jerry Joseph and The Jackmormons",
-  "titulo": "Panther Tracks Vol. 2",
-  "fecha": "2026-07-29",
-  "fecha_exacta": false,
-  "fecha_origen": "reseña",
-  "estado": "publicado",
-  "sello": null,
-  "familias": [
-   "country"
-  ],
-  "subgeneros": [
-   "americana"
-  ],
-  "etiquetas_originales": [
-   "Reviews",
-   "americana",
-   "Jerry Joseph and The Jack Mormons",
-   "Panther Tracks Vol. 2"
-  ],
-  "descripciones": [],
-  "etiquetas_musicbrainz_bandcamp": [],
-  "portada": null,
-  "pistas": null,
-  "tipo": "álbum",
-  "tipo_verificado": false,
-  "idioma": null,
-  "fuentes": [
+   },
    {
     "id": "americanahighways",
     "nombre": "Americana Highways",
@@ -256309,6 +256422,13 @@
   ],
   "resenas": [
    {
+    "fuente": "americanauk",
+    "nombre": "Americana UK",
+    "url": "https://americana-uk.com/jerry-joseph-and-the-jackmormons-panther-tracks-volume-2",
+    "nota": "9/10",
+    "fecha": "2026-08-24"
+   },
+   {
     "fuente": "americanahighways",
     "nombre": "Americana Highways",
     "url": "https://americanahighways.org/2026/07/29/review-jerry-joseph-and-the-jackmormons-panther-tracks-vol-2/",
@@ -256316,14 +256436,25 @@
     "fecha": "2026-07-29"
    }
   ],
-  "enlaces": {},
+  "enlaces": {
+   "apple": "https://music.apple.com/us/album/panther-tracks-vol-2/6786774174?uo=4"
+  },
   "enlace_artista_bandcamp": null,
   "en_bandcamp": false,
   "mbid": null,
   "mbid_artistas": [],
   "requiere_subgenero": false,
   "primera_mencion": "2026-07-29",
-  "detectado": "2026-11-28",
+  "detectado": "2026-11-22",
+  "etiquetas_extra": [
+   {
+    "etiqueta": "Alternative",
+    "origen": "itunes"
+   }
+  ],
+  "unidos": [
+   "jerry-joseph-and-the-jackmormons-panther-tracks-vol-2"
+  ],
   "subgeneros_frontera": []
  },
  {
@@ -257448,9 +257579,11 @@
   "sello": null,
   "familias": [
    "blues",
+   "country",
    "hardrock"
   ],
   "subgeneros": [
+   "americana",
    "blues-rock"
   ],
   "etiquetas_originales": [
@@ -257952,7 +258085,9 @@
   "familias": [
    "country"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "americana"
+  ],
   "etiquetas_originales": [
    "Reviews",
    "americanamusic",
@@ -258745,76 +258880,6 @@
   "subgeneros_frontera": []
  },
  {
-  "id": "wild-high-listen-to-the-wild-high",
-  "artista": "The Wild High",
-  "titulo": "Listen to The Wild High",
-  "fecha": "2026-08-07",
-  "fecha_exacta": false,
-  "fecha_origen": "reseña",
-  "estado": "publicado",
-  "sello": null,
-  "familias": [
-   "country"
-  ],
-  "subgeneros": [],
-  "etiquetas_originales": [
-   "Album Reviews",
-   "Reviews",
-   "The Wild High"
-  ],
-  "descripciones": [],
-  "etiquetas_musicbrainz_bandcamp": [],
-  "portada": "https://cdn-images.dzcdn.net/images/cover/76d4a57102e009723ac1cffdc34ae39c/250x250-000000-80-0-0.jpg",
-  "pistas": 10,
-  "tipo": "álbum",
-  "tipo_verificado": false,
-  "idioma": null,
-  "fuentes": [
-   {
-    "id": "americanauk",
-    "nombre": "Americana UK",
-    "rol": "resena",
-    "url": "https://americana-uk.com/the-wild-high-listen-to-the-wild-high",
-    "fecha": "2026-08-07"
-   }
-  ],
-  "resenas": [
-   {
-    "fuente": "americanauk",
-    "nombre": "Americana UK",
-    "url": "https://americana-uk.com/the-wild-high-listen-to-the-wild-high",
-    "nota": "8/10",
-    "fecha": "2026-08-07"
-   }
-  ],
-  "enlaces": {
-   "deezer": "https://www.deezer.com/album/1079386242",
-   "apple": "https://music.apple.com/us/album/listen-to-the-wild-high/6812340385?uo=4"
-  },
-  "enlace_artista_bandcamp": null,
-  "en_bandcamp": false,
-  "mbid": null,
-  "mbid_artistas": [],
-  "requiere_subgenero": false,
-  "primera_mencion": "2026-08-07",
-  "detectado": "2026-11-22",
-  "deezer": {
-   "id": 1079386242,
-   "pistas": 10,
-   "portada": "https://cdn-images.dzcdn.net/images/cover/76d4a57102e009723ac1cffdc34ae39c/250x250-000000-80-0-0.jpg",
-   "portada_grande": "https://cdn-images.dzcdn.net/images/cover/76d4a57102e009723ac1cffdc34ae39c/1000x1000-000000-80-0-0.jpg",
-   "tipo": "album",
-   "url": "https://www.deezer.com/album/1079386242"
-  },
-  "etiquetas_extra": [
-   {
-    "etiqueta": "Rock",
-    "origen": "itunes"
-   }
-  ],
-  "subgeneros_frontera": []
- },
- {
   "id": "hopeful-machines-35-witchspace",
   "artista": "Hopeful Machines",
   "titulo": "35 Witchspace",
@@ -258938,9 +259003,10 @@
    "rockmetal"
   ],
   "subgeneros": [
+   "thrash",
+   "black-metal",
    "heavy-metal",
-   "progressive-metal",
-   "thrash"
+   "progressive-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -260178,6 +260244,76 @@
   "subgeneros_frontera": []
  },
  {
+  "id": "alex-kilroy-break-my-chains",
+  "artista": "Alex Kilroy",
+  "titulo": "Break My Chains",
+  "fecha": "2026-08-01",
+  "fecha_exacta": false,
+  "fecha_origen": "reseña",
+  "estado": "publicado",
+  "sello": null,
+  "familias": [
+   "blues",
+   "hardrock"
+  ],
+  "subgeneros": [
+   "blues-rock"
+  ],
+  "etiquetas_originales": [
+   "Album Reviews",
+   "Alex Kilroy",
+   "Berian Henri",
+   "blues-rock guitar virtuoso",
+   "Break My Chains",
+   "Florida guitar players",
+   "Jarquis Dolphus",
+   "Joe Costa",
+   "Leonard Douglas Jackson Jr",
+   "modern American music",
+   "modern blues-rock",
+   "PARC Records",
+   "Rhys Williams",
+   "Sterling Sound",
+   "Ted Jenson",
+   "Tres Sasser"
+  ],
+  "descripciones": [],
+  "etiquetas_musicbrainz_bandcamp": [],
+  "portada": null,
+  "pistas": null,
+  "tipo": "álbum",
+  "tipo_verificado": false,
+  "idioma": null,
+  "fuentes": [
+   {
+    "id": "bluesblast",
+    "nombre": "Blues Blast Magazine – reseñas",
+    "rol": "resena",
+    "url": "https://www.bluesblastmagazine.com/alex-kilroy-break-my-chains-album-review/",
+    "fecha": "2026-08-01"
+   }
+  ],
+  "resenas": [
+   {
+    "fuente": "bluesblast",
+    "nombre": "Blues Blast Magazine – reseñas",
+    "url": "https://www.bluesblastmagazine.com/alex-kilroy-break-my-chains-album-review/",
+    "nota": null,
+    "fecha": "2026-08-01"
+   }
+  ],
+  "enlaces": {},
+  "enlace_artista_bandcamp": null,
+  "en_bandcamp": false,
+  "mbid": null,
+  "mbid_artistas": [],
+  "requiere_subgenero": true,
+  "primera_mencion": "2026-08-01",
+  "detectado": "2026-11-28",
+  "etiquetas_extra": [],
+  "subgeneros_frontera": []
+ },
+ {
   "id": "yes-roosevelt-stadium-jersey-city-17-june-1976",
   "artista": "Yes",
   "titulo": "Roosevelt Stadium - Jersey City - 17 June 1976",
@@ -260632,7 +260768,8 @@
   ],
   "subgeneros": [
    "death-metal",
-   "doom-metal"
+   "doom-metal",
+   "funeral-doom-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -261212,7 +261349,10 @@
   "familias": [
    "rockmetal"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "black-metal",
+   "thrash"
+  ],
   "etiquetas_originales": [
    "Reviews",
    "1.5",
@@ -262076,9 +262216,12 @@
   "estado": "publicado",
   "sello": null,
   "familias": [
-   "country"
+   "country",
+   "rockmetal"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "psychedelic-rock"
+  ],
   "etiquetas_originales": [
    "Reviews",
    "Michael Falzarano",
@@ -263161,6 +263304,84 @@
   "mbid_artistas": [],
   "requiere_subgenero": false,
   "primera_mencion": "2026-07-14",
+  "detectado": "2026-11-28",
+  "etiquetas_extra": [],
+  "subgeneros_frontera": []
+ },
+ {
+  "id": "nicky-t-and-the-snake-charmers-aint-wasting-time",
+  "artista": "Nicky T And The Snake Charmers",
+  "titulo": "Ain’t Wasting Time",
+  "fecha": "2026-07-13",
+  "fecha_exacta": false,
+  "fecha_origen": "reseña",
+  "estado": "publicado",
+  "sello": null,
+  "familias": [
+   "blues"
+  ],
+  "subgeneros": [
+   "modern-electric-blues"
+  ],
+  "etiquetas_originales": [
+   "Album Reviews",
+   "Ain't Wasting Time",
+   "Alex Lyon",
+   "Andy Szymanski",
+   "Chris Codish",
+   "Detroit blues",
+   "Frank Greenhalgh",
+   "great modern blues",
+   "great modern slow blues",
+   "Jason Bone",
+   "John Galvin",
+   "Jon Johnson",
+   "Josh Ford",
+   "Keith Kaminski",
+   "Mike Marshall",
+   "modern blue singer-guitarists",
+   "modern blues",
+   "Nicholas Tabarias",
+   "Nicky T",
+   "Nicky T and The Snake Charmers",
+   "Pete Berg",
+   "Rhys Williams",
+   "Ronnie Earl",
+   "The Snake Charmers",
+   "Todd Glass"
+  ],
+  "descripciones": [],
+  "etiquetas_musicbrainz_bandcamp": [],
+  "portada": null,
+  "pistas": null,
+  "tipo": "álbum",
+  "tipo_verificado": false,
+  "idioma": null,
+  "fuentes": [
+   {
+    "id": "bluesblast",
+    "nombre": "Blues Blast Magazine – reseñas",
+    "rol": "resena",
+    "url": "https://www.bluesblastmagazine.com/nicky-t-and-the-snake-charmers-aint-wasting-time-album-review/",
+    "fecha": "2026-07-13"
+   }
+  ],
+  "resenas": [
+   {
+    "fuente": "bluesblast",
+    "nombre": "Blues Blast Magazine – reseñas",
+    "url": "https://www.bluesblastmagazine.com/nicky-t-and-the-snake-charmers-aint-wasting-time-album-review/",
+    "nota": null,
+    "fecha": "2026-07-13"
+   }
+  ],
+  "enlaces": {},
+  "enlace_artista_bandcamp": null,
+  "en_bandcamp": false,
+  "mbid": null,
+  "mbid_artistas": [],
+  "requiere_subgenero": true,
+  "primera_mencion": "2026-07-13",
   "detectado": "2026-11-28",
   "etiquetas_extra": [],
   "subgeneros_frontera": []
@@ -264814,6 +265035,68 @@
   "subgeneros_frontera": []
  },
  {
+  "id": "denise-la-grassa-crossroads-communion",
+  "artista": "Denise La Grassa",
+  "titulo": "A Crossroads Communion",
+  "fecha": "2026-06-26",
+  "fecha_exacta": false,
+  "fecha_origen": "reseña",
+  "estado": "publicado",
+  "sello": null,
+  "familias": [
+   "blues"
+  ],
+  "subgeneros": [
+   "modern-electric-blues"
+  ],
+  "etiquetas_originales": [
+   "Album Reviews",
+   "Alvin Santner",
+   "Denise La Grassa",
+   "John Kregor",
+   "modern blues",
+   "Pierre Lacoque",
+   "Stephen Ryan",
+   "Steven C. Manns",
+   "Timothy Walker"
+  ],
+  "descripciones": [],
+  "etiquetas_musicbrainz_bandcamp": [],
+  "portada": null,
+  "pistas": null,
+  "tipo": "álbum",
+  "tipo_verificado": false,
+  "idioma": null,
+  "fuentes": [
+   {
+    "id": "bluesblast",
+    "nombre": "Blues Blast Magazine – reseñas",
+    "rol": "resena",
+    "url": "https://www.bluesblastmagazine.com/denise-la-grassa-a-crossroads-communion-album-review/",
+    "fecha": "2026-06-26"
+   }
+  ],
+  "resenas": [
+   {
+    "fuente": "bluesblast",
+    "nombre": "Blues Blast Magazine – reseñas",
+    "url": "https://www.bluesblastmagazine.com/denise-la-grassa-a-crossroads-communion-album-review/",
+    "nota": null,
+    "fecha": "2026-06-26"
+   }
+  ],
+  "enlaces": {},
+  "enlace_artista_bandcamp": null,
+  "en_bandcamp": false,
+  "mbid": null,
+  "mbid_artistas": [],
+  "requiere_subgenero": true,
+  "primera_mencion": "2026-06-26",
+  "detectado": "2026-11-28",
+  "etiquetas_extra": [],
+  "subgeneros_frontera": []
+ },
+ {
   "id": "brandon-jane-making-peace",
   "artista": "Brandon Jane",
   "titulo": "Making Peace",
@@ -265663,7 +265946,8 @@
   ],
   "subgeneros": [
    "doom-metal",
-   "goth-rock"
+   "goth-rock",
+   "gothic-metal"
   ],
   "etiquetas_originales": [
    "ReViews",
@@ -265836,6 +266120,7 @@
   ],
   "subgeneros": [
    "black-metal",
+   "death-metal",
    "noise"
   ],
   "etiquetas_originales": [
@@ -267194,6 +267479,67 @@
   "subgeneros_frontera": []
  },
  {
+  "id": "sensational-country-blues-wonders-music-sounds-better-when-youre-stoned",
+  "artista": "The Sensational Country Blues Wonders!",
+  "titulo": "Music Sounds Better When You’re Stoned",
+  "fecha": "2026-06-09",
+  "fecha_exacta": false,
+  "fecha_origen": "reseña",
+  "estado": "publicado",
+  "sello": null,
+  "familias": [
+   "rockmetal"
+  ],
+  "subgeneros": [
+   "psychedelic-rock"
+  ],
+  "etiquetas_originales": [
+   "Album Reviews",
+   "Gary Van Miert",
+   "Music Sounds Better When You're Stoned",
+   "New Jersey music",
+   "psychedelia",
+   "Rhys Williams",
+   "Stoner music",
+   "The Sensational Country Blues Wonders!"
+  ],
+  "descripciones": [],
+  "etiquetas_musicbrainz_bandcamp": [],
+  "portada": null,
+  "pistas": null,
+  "tipo": "álbum",
+  "tipo_verificado": false,
+  "idioma": null,
+  "fuentes": [
+   {
+    "id": "bluesblast",
+    "nombre": "Blues Blast Magazine – reseñas",
+    "rol": "resena",
+    "url": "https://www.bluesblastmagazine.com/the-sensational-country-blues-wonders-music-sounds-better-when-youre-stoned-album-review/",
+    "fecha": "2026-06-09"
+   }
+  ],
+  "resenas": [
+   {
+    "fuente": "bluesblast",
+    "nombre": "Blues Blast Magazine – reseñas",
+    "url": "https://www.bluesblastmagazine.com/the-sensational-country-blues-wonders-music-sounds-better-when-youre-stoned-album-review/",
+    "nota": null,
+    "fecha": "2026-06-09"
+   }
+  ],
+  "enlaces": {},
+  "enlace_artista_bandcamp": null,
+  "en_bandcamp": false,
+  "mbid": null,
+  "mbid_artistas": [],
+  "requiere_subgenero": true,
+  "primera_mencion": "2026-06-09",
+  "detectado": "2026-11-28",
+  "etiquetas_extra": [],
+  "subgeneros_frontera": []
+ },
+ {
   "id": "nick-mulvey-dark-harvest-live",
   "artista": "Nick Mulvey",
   "titulo": "Dark Harvest (Live)",
@@ -267739,7 +268085,9 @@
   "familias": [
    "country"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "americana"
+  ],
   "etiquetas_originales": [
    "Irish Americana"
   ],
@@ -267892,7 +268240,9 @@
   "familias": [
    "country"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "americana"
+  ],
   "etiquetas_originales": [
    "Irish Americana"
   ],
@@ -271425,8 +271775,8 @@
   ],
   "subgeneros": [
    "black-metal",
-   "thrash",
-   "death-metal"
+   "death-metal",
+   "thrash"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -272817,7 +273167,9 @@
   "familias": [
    "country"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "bluegrass"
+  ],
   "etiquetas_originales": [
    "instrumental bluegrass"
   ],
@@ -273196,6 +273548,77 @@
   "subgeneros_frontera": []
  },
  {
+  "id": "charlie-barath-issaquena-getaway",
+  "artista": "Charlie Barath",
+  "titulo": "Issaquena Getaway",
+  "fecha": "2026-04-13",
+  "fecha_exacta": false,
+  "fecha_origen": "reseña",
+  "estado": "publicado",
+  "sello": null,
+  "familias": [
+   "blues"
+  ],
+  "subgeneros": [
+   "modern-electric-blues",
+   "harmonica-blues"
+  ],
+  "etiquetas_originales": [
+   "Album Reviews",
+   "Andrew Sherer",
+   "blues harmonica virtuoso",
+   "Charlier Barath",
+   "Clarksdale Soundstage",
+   "Danny Banks",
+   "Gary Vincent",
+   "harmonica",
+   "Issaquena Getaway",
+   "Johnny Burgin",
+   "joyful blues",
+   "Mark Yacovone",
+   "Mike Law",
+   "modern blues",
+   "Modern Blues Harmonica",
+   "Rhys Williams",
+   "Shari Richards"
+  ],
+  "descripciones": [],
+  "etiquetas_musicbrainz_bandcamp": [],
+  "portada": null,
+  "pistas": null,
+  "tipo": "álbum",
+  "tipo_verificado": false,
+  "idioma": null,
+  "fuentes": [
+   {
+    "id": "bluesblast",
+    "nombre": "Blues Blast Magazine – reseñas",
+    "rol": "resena",
+    "url": "https://www.bluesblastmagazine.com/charlie-barath-issaquena-getaway-album-review/",
+    "fecha": "2026-04-13"
+   }
+  ],
+  "resenas": [
+   {
+    "fuente": "bluesblast",
+    "nombre": "Blues Blast Magazine – reseñas",
+    "url": "https://www.bluesblastmagazine.com/charlie-barath-issaquena-getaway-album-review/",
+    "nota": null,
+    "fecha": "2026-04-13"
+   }
+  ],
+  "enlaces": {},
+  "enlace_artista_bandcamp": null,
+  "en_bandcamp": false,
+  "mbid": null,
+  "mbid_artistas": [],
+  "requiere_subgenero": true,
+  "primera_mencion": "2026-04-13",
+  "detectado": "2026-11-28",
+  "etiquetas_extra": [],
+  "subgeneros_frontera": []
+ },
+ {
   "id": "ritchie-blackmores-rainbow-in-concert-1976-live-in-koln",
   "artista": "Ritchie Blackmore’s RAINBOW In Concert 1976",
   "titulo": "Live In Koln",
@@ -273276,7 +273699,8 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "black-metal"
+   "black-metal",
+   "instrumental"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -274254,7 +274678,11 @@
    "experimental"
   ],
   "etiquetas_originales": [
-   "Experimental rock"
+   "Experimental rock",
+   "Album Reviews",
+   "Bands & Artists",
+   "Blogs",
+   "Music"
   ],
   "descripciones": [],
   "etiquetas_musicbrainz_bandcamp": [],
@@ -274270,9 +274698,24 @@
     "rol": "listado",
     "url": "https://en.wikipedia.org/wiki/List_of_2026_albums",
     "fecha": null
+   },
+   {
+    "id": "louderthanwar",
+    "nombre": "Louder Than War (punk, post-punk, indie)",
+    "rol": "resena",
+    "url": "https://louderthanwar.com/angine-de-poitrine-volume-ii-album-review/",
+    "fecha": "2026-04-02"
    }
   ],
-  "resenas": [],
+  "resenas": [
+   {
+    "fuente": "louderthanwar",
+    "nombre": "Louder Than War (punk, post-punk, indie)",
+    "url": "https://louderthanwar.com/angine-de-poitrine-volume-ii-album-review/",
+    "nota": null,
+    "fecha": "2026-04-02"
+   }
+  ],
   "enlaces": {
    "deezer": "https://www.deezer.com/album/916215321"
   },
@@ -274281,7 +274724,7 @@
   "mbid": null,
   "mbid_artistas": [],
   "requiere_subgenero": true,
-  "primera_mencion": null,
+  "primera_mencion": "2026-04-02",
   "detectado": "2026-11-28",
   "listas_anuales": [
    "Mojo: The 75 Best Albums of 2026",
@@ -274297,6 +274740,9 @@
    "portada": "https://cdn-images.dzcdn.net/images/cover/081d76954770ca7c4d9e4138fe717629/250x250-000000-80-0-0.jpg",
    "portada_grande": "https://cdn-images.dzcdn.net/images/cover/081d76954770ca7c4d9e4138fe717629/1000x1000-000000-80-0-0.jpg"
   },
+  "unidos": [
+   "angine-de-poitrine-volume-ii"
+  ],
   "subgeneros_frontera": []
  },
  {
@@ -275362,7 +275808,9 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "black-metal"
+   "black-metal",
+   "death-metal",
+   "melodic-metal"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -275414,7 +275862,9 @@
   "requiere_subgenero": false,
   "primera_mencion": "2026-03-17",
   "detectado": "2026-11-28",
-  "subgeneros_frontera": []
+  "subgeneros_frontera": [
+   "melodic-metal"
+  ]
  },
  {
   "id": "steel-wheels-steel-wheels",
@@ -275605,6 +276055,78 @@
   "requiere_subgenero": false,
   "primera_mencion": null,
   "detectado": "2026-11-28",
+  "subgeneros_frontera": []
+ },
+ {
+  "id": "tony-o-blues-free-life",
+  "artista": "Tony O Blues",
+  "titulo": "Free Life",
+  "fecha": "2026-03-10",
+  "fecha_exacta": false,
+  "fecha_origen": "reseña",
+  "estado": "publicado",
+  "sello": null,
+  "familias": [
+   "blues"
+  ],
+  "subgeneros": [
+   "modern-electric-blues"
+  ],
+  "etiquetas_originales": [
+   "Album Reviews",
+   "Angelo Olivieri",
+   "Bob Stander",
+   "classic Chicago blues",
+   "Craig \"Holiday\" Hayes",
+   "Free Life",
+   "G&J Audio",
+   "Gene Paul",
+   "lesser known blues guitar players",
+   "Mike Severino",
+   "Mitch Marcus",
+   "modern blues",
+   "Parcheesi Studio",
+   "Rhys Williams",
+   "Steven DeMieri",
+   "Tony O",
+   "Tony O Blues",
+   "Tribute to James Cotton",
+   "underrated blues guitarists"
+  ],
+  "descripciones": [],
+  "etiquetas_musicbrainz_bandcamp": [],
+  "portada": null,
+  "pistas": null,
+  "tipo": "álbum",
+  "tipo_verificado": false,
+  "idioma": null,
+  "fuentes": [
+   {
+    "id": "bluesblast",
+    "nombre": "Blues Blast Magazine – reseñas",
+    "rol": "resena",
+    "url": "https://www.bluesblastmagazine.com/tony-o-blues-free-life-album-review/",
+    "fecha": "2026-03-10"
+   }
+  ],
+  "resenas": [
+   {
+    "fuente": "bluesblast",
+    "nombre": "Blues Blast Magazine – reseñas",
+    "url": "https://www.bluesblastmagazine.com/tony-o-blues-free-life-album-review/",
+    "nota": null,
+    "fecha": "2026-03-10"
+   }
+  ],
+  "enlaces": {},
+  "enlace_artista_bandcamp": null,
+  "en_bandcamp": false,
+  "mbid": null,
+  "mbid_artistas": [],
+  "requiere_subgenero": true,
+  "primera_mencion": "2026-03-10",
+  "detectado": "2026-11-28",
+  "etiquetas_extra": [],
   "subgeneros_frontera": []
  },
  {
@@ -276523,7 +277045,8 @@
   ],
   "subgeneros": [
    "doom-metal",
-   "goth-rock"
+   "goth-rock",
+   "gothic-metal"
   ],
   "etiquetas_originales": [
    "ReViews",
@@ -276681,9 +277204,10 @@
    "rockmetal"
   ],
   "subgeneros": [
-   "atmospheric-black-metal",
    "black-metal",
-   "death-metal"
+   "death-metal",
+   "atmospheric-black-metal",
+   "avantgarde"
   ],
   "etiquetas_originales": [
    "Reviews",
@@ -277236,7 +277760,9 @@
   "familias": [
    "country"
   ],
-  "subgeneros": [],
+  "subgeneros": [
+   "folk-pop"
+  ],
   "etiquetas_originales": [
    "Deluxe Edition – folk pop"
   ],
@@ -277553,6 +278079,62 @@
   "requiere_subgenero": false,
   "primera_mencion": null,
   "detectado": "2026-11-28",
+  "etiquetas_extra": [],
+  "subgeneros_frontera": []
+ },
+ {
+  "id": "asap-rocky-dont-be-dumb",
+  "artista": "ASAP Rocky",
+  "titulo": "Don't Be Dumb",
+  "fecha": "2026-01-16",
+  "fecha_exacta": true,
+  "fecha_origen": "fuente",
+  "estado": "publicado",
+  "sello": "AWGE, ASAP Worldwide, RCA",
+  "familias": [
+   "rockmetal"
+  ],
+  "subgeneros": [
+   "experimental"
+  ],
+  "etiquetas_originales": [
+   "Experimental hip-hop"
+  ],
+  "descripciones": [],
+  "etiquetas_musicbrainz_bandcamp": [],
+  "portada": "https://cdn-images.dzcdn.net/images/cover/1b12a3693578183b0ece3544133f41ad/250x250-000000-80-0-0.jpg",
+  "pistas": 19,
+  "tipo": "álbum",
+  "tipo_verificado": false,
+  "idioma": null,
+  "fuentes": [
+   {
+    "id": "wikipedia",
+    "nombre": "Wikipedia – List of albums",
+    "rol": "listado",
+    "url": "https://en.wikipedia.org/wiki/List_of_2026_albums",
+    "fecha": null
+   }
+  ],
+  "resenas": [],
+  "enlaces": {
+   "deezer": "https://www.deezer.com/album/902338002"
+  },
+  "enlace_artista_bandcamp": null,
+  "en_bandcamp": false,
+  "mbid": null,
+  "mbid_artistas": [],
+  "requiere_subgenero": true,
+  "primera_mencion": null,
+  "detectado": "2026-11-28",
+  "deezer": {
+   "id": 902338002,
+   "url": "https://www.deezer.com/album/902338002",
+   "tipo": "album",
+   "pistas": 19,
+   "portada": "https://cdn-images.dzcdn.net/images/cover/1b12a3693578183b0ece3544133f41ad/250x250-000000-80-0-0.jpg",
+   "portada_grande": "https://cdn-images.dzcdn.net/images/cover/1b12a3693578183b0ece3544133f41ad/1000x1000-000000-80-0-0.jpg"
+  },
   "etiquetas_extra": [],
   "subgeneros_frontera": []
  },
