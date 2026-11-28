@@ -36,6 +36,11 @@ Si la sesión se corta, la siguiente empieza por aquí. Cada línea de "Hecho" e
 - Punk, indie y cantautores no tienen fuentes especializadas propias (E1).
 - 6 discos perdidos frente a Metacritic: Editors, The Mary Wallopers, Formal Sppeedwear, Faust, Los Bitchos, Dis Fig.
 
+## Publicado en `main`
+
+- 28-nov-2026: petición #11 fusionada. Desde ahora **cada ejecución en GitHub valida todas las capas** (fases
+  `referencias` y `validar`, prueba en navegador y semáforo en el resumen de la Action).
+
 ## Último paso hecho
 
 Pasos 3, 4 y parte del 7 (28-nov-2026). Hallazgos reales: 12 direcciones con el año escrito a mano (impide cargar 2025 cambiando un número); portadas 80 %; punk, indie y cantautores sin fuentes especializadas propias.
