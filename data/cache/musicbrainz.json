@@ -26611,6 +26611,53 @@
 "nombre": "Kip Moore",
 "pais": "US"
 },
+"art:3b1c66fb-98ad-417f-b01e-49baf37f06a3": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000061041",
+"apple": "https://music.apple.com/gb/artist/2035343",
+"bandsintown.com": "https://www.bandsintown.com/a/3581",
+"bbc.co.uk": "https://www.bbc.co.uk/music/artists/3b1c66fb-98ad-417f-b01e-49baf37f06a3",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:The_Coral.jpg",
+"deezer": "https://www.deezer.com/artist/1233",
+"discogs": "https://www.discogs.com/artist/138082",
+"imdb.com": "https://www.imdb.com/name/nm1940855/",
+"last.fm": "https://www.last.fm/music/The+Coral",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/the-coral/",
+"muzikum.eu": "http://muzikum.eu/en/122-5752/the-coral/lyrics.html",
+"qobuz": "https://www.qobuz.com/us-en/interpreter/the-coral/176116",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/the_coral",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/47243",
+"spotify": "https://open.spotify.com/artist/6OiHleP2bHM18dXq4aZQWt",
+"thecoral.co.uk": "http://www.thecoral.co.uk/",
+"tidal": "https://tidal.com/artist/1310",
+"twitter.com": "https://twitter.com/thecoralband",
+"viaf.org": "http://viaf.org/viaf/153007682",
+"wikidata": "https://www.wikidata.org/wiki/Q1777045",
+"worldcat.org": "http://www.worldcat.org/wcidentities/lccn-no2003-26130",
+"youtube": "https://music.youtube.com/channel/UCHZ6OSRj6CkwrchUskpsXUg"
+},
+"etiquetas": [
+"indie rock",
+"indie pop",
+"jangle pop",
+"folk rock",
+"neo-psychedelia",
+"rock",
+"merseyside",
+"psychedelic rock"
+],
+"generos": [
+"indie rock",
+"indie pop",
+"jangle pop",
+"folk rock",
+"neo-psychedelia",
+"rock",
+"psychedelic rock"
+],
+"nombre": "The Coral",
+"pais": "GB"
+},
 "art:3b1f913c-64f6-4d88-9ce1-6f35259e1554": {
 "enlaces": {
 "bandcamp": "https://dtime.bandcamp.com/",
@@ -76810,6 +76857,18 @@
 "nombre": "THE HARA",
 "pais": "GB"
 },
+"art:a75ddcdc-80b1-478f-aaa6-225844c0a8ac": {
+"enlaces": {
+"facebook": "https://www.facebook.com/thefamilymenband",
+"instagram": "https://www.instagram.com/thefamilymengbg/",
+"soundcloud": "https://soundcloud.com/thefamilymengbg",
+"spotify": "https://open.spotify.com/artist/1ANDjinr8OtamQ6TCV2HBG"
+},
+"etiquetas": [],
+"generos": [],
+"nombre": "The Family Men",
+"pais": "SE"
+},
 "art:a77f6f2f-19a2-4648-9018-3ad3aa4c1b9b": {
 "enlaces": {
 "7digital.com": "https://www.7digital.com/artist/nathan-fake",
@@ -82579,6 +82638,92 @@
 "nombre": "Sennen",
 "pais": "GB"
 },
+"art:b2d122f9-eadb-4930-a196-8f221eeb0c66": {
+"enlaces": {
+"45cat.com": "https://www.45cat.com/artist/rammstein",
+"allmusic": "https://www.allmusic.com/artist/mn0000333648",
+"amazon": "https://www.amazon.com/gp/product/B000S9XUG4",
+"apple": "https://itunes.apple.com/de/artist/id408932",
+"bandsintown.com": "https://www.bandsintown.com/a/627",
+"bbc.co.uk": "https://www.bbc.co.uk/music/artists/b2d122f9-eadb-4930-a196-8f221eeb0c66",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb14006978k",
+"cdjapan.co.jp": "https://www.cdjapan.co.jp/person/700153203",
+"commons.wikimedia.org": "https://commons.wikimedia.org/wiki/File:Rammstein_at_Wacken_Open_Air_2013_06.jpg",
+"d-nb.info": "https://d-nb.info/gnd/5507628-2",
+"deezer": "https://www.deezer.com/artist/464",
+"discogs": "https://www.discogs.com/artist/11771",
+"en.affenknecht.com": "http://en.affenknecht.com/",
+"facebook": "https://www.facebook.com/Rammstein",
+"freewebs.com": "http://www.freewebs.com/rammstein_isle/",
+"genius.com": "https://genius.com/artists/Rammstein",
+"hem.bredband.net": "http://hem.bredband.net/victor90/",
+"herzeleid.com": "http://herzeleid.com/",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no00017292",
+"imdb.com": "https://www.imdb.com/name/nm1339792/",
+"imvdb.com": "https://imvdb.com/n/rammstein",
+"instagram": "https://www.instagram.com/rammsteinofficial/",
+"last.fm": "https://www.last.fm/music/Rammstein",
+"livefans.jp": "https://www.livefans.jp/artists/2161",
+"maniadb.com": "http://www.maniadb.com/artist/129194",
+"melon.com": "https://www.melon.com/artist/detail.htm?artistId=100335",
+"metalmusicarchives.com": "https://www.metalmusicarchives.com/artist/rammstein",
+"music.bugs.co.kr": "https://music.bugs.co.kr/artist/469",
+"music.line.me": "https://music.line.me/webapp/artist/mi00000000001bfe4d",
+"musicmoz.org": "http://musicmoz.org/Bands_and_Artists/R/Rammstein/",
+"musik-sammler.de": "https://www.musik-sammler.de/artist/1820/",
+"musixmatch.com": "https://www.musixmatch.com/artist/Rammstein",
+"muziekweb.nl": "https://www.muziekweb.nl/Link/M00000049430/POPULAR/",
+"muzikum.eu": "http://muzikum.eu/en/122-3910/rammstein/lyrics.html",
+"myspace.com": "https://myspace.com/rammstein",
+"ototoy.jp": "https://ototoy.jp/_/default/a/2154121",
+"pandora.com": "http://www.pandora.com/rammstein",
+"planetrammstein.com": "http://www.planetrammstein.com/en/",
+"play.google.com": "https://play.google.com/store/music/artist?id=Af5vdzoipx4mkkxdxlroxpd6tou",
+"purevolume.com": "http://www.purevolume.com/rammstein",
+"qobuz": "https://www.qobuz.com/gb-en/interpreter/rammstein/download-streaming-albums",
+"rammstein-portugal.com": "http://www.rammstein-portugal.com/",
+"rammstein.com": "http://www.rammstein.com/",
+"rammstein.de": "https://www.rammstein.de/",
+"rammstein.fan.pl": "http://www.rammstein.fan.pl/",
+"rammstein.ru": "http://rammstein.ru/",
+"rammsteinfan.cz": "http://rammsteinfan.cz/",
+"rammsteinworld.com": "http://www.rammsteinworld.com/",
+"rammwiki.net": "https://rammwiki.net/wiki/Main_Page",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/rammstein",
+"secondhandsongs.com": "https://secondhandsongs.com/artist/1924",
+"sehnsucht.dk": "http://www.sehnsucht.dk/",
+"setlist.fm": "https://www.setlist.fm/setlists/rammstein-3bd43cd0.html",
+"songkick.com": "https://www.songkick.com/artists/11557",
+"soundcloud": "https://soundcloud.com/rammstein-official",
+"spirit-of-metal.com": "https://www.spirit-of-metal.com/en/band/Rammstein",
+"spotify": "https://open.spotify.com/artist/6wWVKhxIU2cEi0K81v7HvP",
+"tidal": "https://tidal.com/artist/24972",
+"tiktok.com": "https://www.tiktok.com/@rammstein",
+"twitter.com": "https://twitter.com/RSprachrohr",
+"uk.7digital.com": "https://uk.7digital.com/artist/rammstein",
+"viaf.org": "http://viaf.org/viaf/139823889",
+"vibe.naver.com": "https://vibe.naver.com/artist/1005",
+"whosampled.com": "https://www.whosampled.com/Rammstein/",
+"wikidata": "https://www.wikidata.org/wiki/Q25177",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no00017292/",
+"youtube": "https://www.youtube.com/channel/UCYp3rk70ACGXQ4gFAiMr1SQ"
+},
+"etiquetas": [
+"industrial metal",
+"german",
+"neue deutsche härte",
+"metal",
+"industrial"
+],
+"generos": [
+"industrial metal",
+"neue deutsche härte",
+"metal",
+"industrial"
+],
+"nombre": "Rammstein",
+"pais": "DE"
+},
 "art:b2d27026-38e4-464d-aba6-a33701c7ec75": {
 "enlaces": {
 "apple": "https://music.apple.com/us/artist/1506386095",
@@ -83210,6 +83355,36 @@
 ],
 "nombre": "Krallice",
 "pais": "US"
+},
+"art:b4e8e5f4-be91-473f-af73-de332ecd8f20": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0003469768",
+"bandcamp": "https://ulrikaspacek.bandcamp.com/",
+"deezer": "https://www.deezer.com/artist/9177160",
+"discogs": "https://www.discogs.com/artist/4777169",
+"facebook": "https://www.facebook.com/ulrikaspacek",
+"last.fm": "https://www.last.fm/music/Ulrika+Spacek",
+"qobuz": "https://open.qobuz.com/artist/2466336",
+"songkick.com": "https://www.songkick.com/artists/8492438",
+"spotify": "https://open.spotify.com/artist/07vC6cutbett8UknXnqxsu",
+"tidal": "https://tidal.com/artist/7351209",
+"ulrikaspacek.com": "https://www.ulrikaspacek.com/",
+"wikidata": "https://www.wikidata.org/wiki/Q23018832"
+},
+"etiquetas": [
+"alternative rock",
+"dream pop",
+"indie rock",
+"post-rock"
+],
+"generos": [
+"alternative rock",
+"dream pop",
+"indie rock",
+"post-rock"
+],
+"nombre": "Ulrika Spacek",
+"pais": "GB"
 },
 "art:b506d0b1-fd16-4ba0-a3dc-a20095c93024": {
 "enlaces": {
@@ -97436,6 +97611,67 @@
 ],
 "nombre": "Ninth Realm",
 "pais": "US"
+},
+"art:d2ad8774-9173-4970-8427-06b04df201c1": {
+"enlaces": {
+"allmusic": "https://www.allmusic.com/artist/mn0000315403",
+"amazon": "https://music.amazon.co.uk/artists/B001E32SC0",
+"apple": "https://itunes.apple.com/gb/artist/id3222127",
+"catalogue.bnf.fr": "https://catalogue.bnf.fr/ark:/12148/cb13907295w",
+"d-nb.info": "https://d-nb.info/gnd/10188929-X",
+"deezer": "https://www.deezer.com/artist/15775",
+"discogs": "https://www.discogs.com/artist/251788",
+"facebook": "https://www.facebook.com/officialvenomband",
+"genius.com": "https://genius.com/artists/Venom-band",
+"id.loc.gov": "http://id.loc.gov/authorities/names/no98046905",
+"instagram": "https://www.instagram.com/venom_band_official/",
+"last.fm": "https://www.last.fm/music/Venom",
+"metal-archives.com": "https://www.metal-archives.com/bands/Venom/128",
+"metalmusicarchives.com": "https://www.metalmusicarchives.com/artist/venom",
+"musicmoz.org": "http://musicmoz.org/Bands_and_Artists/V/Venom/",
+"musik-sammler.de": "http://www.musik-sammler.de/artist/128",
+"myspace.com": "https://myspace.com/venomlegions",
+"qobuz": "https://www.qobuz.com/us-en/interpreter/venom/286295",
+"rateyourmusic.com": "https://rateyourmusic.com/artist/venom",
+"setlist.fm": "https://www.setlist.fm/setlists/venom-73d68e9d.html",
+"songkick.com": "https://www.songkick.com/artists/466777",
+"spirit-of-metal.com": "https://www.spirit-of-metal.com/en/band/Venom",
+"spotify": "https://open.spotify.com/artist/5fwaejlOHVBAw1KhIPPaQe",
+"tidal": "https://tidal.com/artist/3534270",
+"venomslegions.com": "http://www.venomslegions.com/",
+"viaf.org": "http://viaf.org/viaf/130042191",
+"wikidata": "https://www.wikidata.org/wiki/Q192861",
+"worldcat.org": "https://www.worldcat.org/identities/lccn-no98046905/",
+"youtube": "https://www.youtube.com/channel/UCS9dNvPJeJJuUKMxYdawZ7A"
+},
+"etiquetas": [
+"black metal",
+"speed metal",
+"thrash metal",
+"nwobhm",
+"metal",
+"first-wave black metal",
+"heavy metal",
+"blackened heavy metal",
+"british",
+"british black metal",
+"death",
+"death metal",
+"hell",
+"nwobhm/heavy metal",
+"old school thrash"
+],
+"generos": [
+"black metal",
+"speed metal",
+"thrash metal",
+"nwobhm",
+"metal",
+"heavy metal",
+"death metal"
+],
+"nombre": "Venom",
+"pais": "GB"
 },
 "art:d2b9a472-9a22-408f-97aa-19ce4f6f02d3": {
 "enlaces": {
@@ -122594,6 +122830,9 @@
 "tipos_secundarios": [],
 "titulo": "THE EARTH IS BREATHING BENEATH ME"
 },
+"rg:armitage shanks|charge of the shite brigade": {
+"no_encontrado": "2026-11-28"
+},
 "rg:armored saint|emotion factory reset": {
 "artista": "Armored Saint",
 "artistas_id": [
@@ -130641,6 +130880,9 @@
 "tipos_secundarios": [],
 "titulo": "Leaf Miner's Daughter"
 },
+"rg:broken down golf cart|funeral smoker": {
+"no_encontrado": "2026-11-28"
+},
 "rg:broken social scene|remember the humans": {
 "artista": "Broken Social Scene",
 "artistas_id": [
@@ -136744,6 +136986,30 @@
 "tipos_secundarios": [],
 "titulo": "Year Of The Horse"
 },
+"rg:coral|388": {
+"artista": "The Coral",
+"artistas_id": [
+"3b1c66fb-98ad-417f-b01e-49baf37f06a3"
+],
+"enlaces": {
+"discogs": "https://www.discogs.com/release/37523295"
+},
+"fecha_release": "2026-05-08",
+"idioma": "eng",
+"pais": "GB",
+"pistas": 11,
+"portada": "https://coverartarchive.org/release-group/0fc8f274-b6e5-48b6-8d88-c450dcef5035/front-250",
+"primera_fecha": "2026-05-08",
+"puntuacion": 1.0,
+"release": "fcaf63e9-52a5-4b63-b73b-ed4aa1e952c2",
+"rg": "0fc8f274-b6e5-48b6-8d88-c450dcef5035",
+"sellos": [
+"Run on Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "388"
+},
 "rg:coranatus|dreadful waters": {
 "no_encontrado": "2026-11-22"
 },
@@ -137872,6 +138138,18 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Swarm of Insects"
+},
+"rg:cromlech|expect poison": {
+"artista": "CROMLECH",
+"artistas_id": [
+"e81699c8-605c-4473-a6ce-623f1c8836f3"
+],
+"primera_fecha": "2026-05-15",
+"puntuacion": 1.0,
+"rg": "d5a7b017-487f-4bdb-a463-dadf463321b6",
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "EXPECT POISON"
 },
 "rg:crooked colours|dirt road gold": {
 "artista": "Crooked Colours",
@@ -139864,6 +140142,9 @@
 },
 "rg:darkmechanic|hypercontrol": {
 "no_encontrado": "2026-11-22"
+},
+"rg:darkness|crock of hits": {
+"no_encontrado": "2026-11-28"
 },
 "rg:darkswoon|antivenom": {
 "artista": "Darkswoon",
@@ -145535,6 +145816,9 @@
 "tipos_secundarios": [],
 "titulo": "Dutch Elm"
 },
+"rg:dutch embassy|lighting the beacons": {
+"no_encontrado": "2026-11-28"
+},
 "rg:duwayne burnside|red rooster": {
 "artista": "Duwayne Burnside",
 "artistas_id": [
@@ -150146,6 +150430,30 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Incarnate"
+},
+"rg:family men|co de termination": {
+"artista": "The Family Men",
+"artistas_id": [
+"a75ddcdc-80b1-478f-aaa6-225844c0a8ac"
+],
+"enlaces": {
+"welfaresounds.com": "https://welfaresounds.com/products/the-family-men-co-de-termination-vinyl-preorder"
+},
+"fecha_release": "2026-05-08",
+"idioma": "eng",
+"pais": "SE",
+"pistas": 9,
+"portada": "https://coverartarchive.org/release-group/7d36708d-890c-47f1-853d-cf1ce6c2914f/front-250",
+"primera_fecha": "2026-05-08",
+"puntuacion": 1.0,
+"release": "d75aaf6c-9da1-4673-a6b6-a06d98b7cb09",
+"rg": "7d36708d-890c-47f1-853d-cf1ce6c2914f",
+"sellos": [
+"Welfare Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Co/de/termination"
 },
 "rg:family|delusions of grandeur": {
 "artista": "The Family",
@@ -161447,6 +161755,9 @@
 "tipos_secundarios": [],
 "titulo": "Made You Look"
 },
+"rg:hue and cry|everybody": {
+"no_encontrado": "2026-11-28"
+},
 "rg:hugh jackman and kate hudson|song sung blue music from the motion picture": {
 "artista": "Hugh Jackman & Kate Hudson",
 "artistas_id": [
@@ -166005,6 +166316,9 @@
 },
 "rg:jinda biant|love on the line": {
 "no_encontrado": "2026-11-22"
+},
+"rg:jk flesh monrella|shouting the odds": {
+"no_encontrado": "2026-11-28"
 },
 "rg:jk northrup|11 11": {
 "no_encontrado": "2026-11-22"
@@ -175840,9 +176154,21 @@
 "artistas_id": [
 "f105b0a8-3d31-4e2c-8611-5bbe07d6ac1c"
 ],
+"enlaces": {
+"apple": "https://music.apple.com/se/album/6776484438"
+},
+"fecha_release": "2026-05-29",
+"idioma": "eng",
+"pais": "SE",
+"pistas": 12,
+"portada": "https://coverartarchive.org/release-group/b677ec16-6145-4ade-8ef3-5eae06e1ffdd/front-250",
 "primera_fecha": "2026-05-29",
 "puntuacion": 1.0,
+"release": "77a38e47-2519-4c69-bb85-a7384314b717",
 "rg": "b677ec16-6145-4ade-8ef3-5eae06e1ffdd",
+"sellos": [
+"Spinout Nuggets"
+],
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Pavement Drawings"
@@ -194710,6 +195036,39 @@
 },
 "rg:ralphie choo|charmain le grand architecte": {
 "no_encontrado": "2026-11-22"
+},
+"rg:rammstein|live in mexico city": {
+"artista": "Rammstein",
+"artistas_id": [
+"b2d122f9-eadb-4930-a196-8f221eeb0c66"
+],
+"enlaces": {
+"amazon": "https://www.amazon.de/gp/product/B0HKQ6W8HN",
+"apple": "https://music.apple.com/fr/album/6813114279",
+"deezer": "https://www.deezer.com/album/1149645661",
+"discogs": "https://www.discogs.com/release/39107352",
+"hdtracks.com": "https://www.hdtracks.com/#/album/6b010e6fdef6da549a07fb8f",
+"musik-sammler.de": "https://www.musik-sammler.de/release/1773187/",
+"qobuz": "https://www.qobuz.com/us-en/album/live-in-mexico-city-rammstein/s3r1a2wge7k1h",
+"spotify": "https://open.spotify.com/album/2W46XPjgtKUJ7viCox96YR"
+},
+"fecha_release": "2026-11-20",
+"idioma": "deu",
+"pais": "DE",
+"pistas": 24,
+"portada": "https://coverartarchive.org/release-group/fe51a4f3-049a-489a-892a-4aebe2f036d4/front-250",
+"primera_fecha": "2026-11-20",
+"puntuacion": 1.0,
+"release": "409d1c4d-7030-4334-a379-853a11ef4b82",
+"rg": "fe51a4f3-049a-489a-892a-4aebe2f036d4",
+"sellos": [
+"Universal Music Group"
+],
+"tipo": "Album",
+"tipos_secundarios": [
+"Live"
+],
+"titulo": "Live in Mexico City"
 },
 "rg:ramsey thornton|i called it": {
 "artista": "Ramsey Thornton",
@@ -215058,6 +215417,30 @@
 "rg:ullnevano x philth spector|stephon barbury": {
 "no_encontrado": "2026-11-22"
 },
+"rg:ulrika spacek|expo": {
+"artista": "Ulrika Spacek",
+"artistas_id": [
+"b4e8e5f4-be91-473f-af73-de332ecd8f20"
+],
+"enlaces": {
+"bandcamp": "https://ulrikaspacek.bandcamp.com/album/expo"
+},
+"fecha_release": "2026-02-06",
+"idioma": "eng",
+"pais": "XW",
+"pistas": 11,
+"portada": "https://coverartarchive.org/release-group/02570bfc-67d8-4d28-ae18-98c440d23b14/front-250",
+"primera_fecha": "2026-02-06",
+"puntuacion": 1.0,
+"release": "f670fc28-2b3c-4fe3-8811-2253c5512c59",
+"rg": "02570bfc-67d8-4d28-ae18-98c440d23b14",
+"sellos": [
+"Full Time Hobby"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "EXPO"
+},
 "rg:ultima engine|failures of humanity": {
 "no_encontrado": "2026-11-27"
 },
@@ -216713,6 +217096,35 @@
 "tipo": "Album",
 "tipos_secundarios": [],
 "titulo": "Of Saints And Vermin"
+},
+"rg:venom|into oblivion": {
+"artista": "Venom",
+"artistas_id": [
+"d2ad8774-9173-4970-8427-06b04df201c1"
+],
+"enlaces": {
+"amazon": "https://www.amazon.co.uk/gp/product/B0GQN5NPNF",
+"apple": "https://music.apple.com/gb/album/1872651243",
+"deezer": "https://www.deezer.com/album/918515851",
+"discogs": "https://www.discogs.com/release/37232490",
+"metal-archives.com": "https://www.metal-archives.com/albums/Venom/Into_Oblivion/1417550",
+"spotify": "https://open.spotify.com/album/3R5yeXBBbjqHxSOuBfhDAb"
+},
+"fecha_release": "2026-05-01",
+"idioma": "eng",
+"pais": "GB",
+"pistas": 13,
+"portada": "https://coverartarchive.org/release-group/4c5e3d13-7a1c-46e3-8439-5a04339cbd04/front-250",
+"primera_fecha": "2026-05-01",
+"puntuacion": 1.0,
+"release": "4b1999f3-a314-46fb-9f5a-73467ec5f8f6",
+"rg": "4c5e3d13-7a1c-46e3-8439-5a04339cbd04",
+"sellos": [
+"Noise Records"
+],
+"tipo": "Album",
+"tipos_secundarios": [],
+"titulo": "Into Oblivion"
 },
 "rg:ventilator|reseda spleen": {
 "no_encontrado": "2026-11-22"
