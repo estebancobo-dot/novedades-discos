@@ -11,17 +11,17 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | alcance | 1 | 0 | 0 | 0 | 0 |
 | clasificacion | 5 | 1 | 1 | 0 | 0 |
 | datos | 1 | 0 | 4 | 0 | 3 |
-| descubrimiento | 1 | 0 | 0 | 1 | 0 |
+| descubrimiento | 2 | 0 | 0 | 0 | 0 |
 | estudio | 2 | 0 | 0 | 0 | 0 |
 | fuentes | 12 | 1 | 0 | 0 | 4 |
 | informe | 1 | 0 | 0 | 0 | 0 |
-| procesos | 10 | 1 | 1 | 1 | 2 |
+| procesos | 11 | 1 | 1 | 0 | 2 |
 | publicacion | 1 | 0 | 0 | 0 | 0 |
 | reglas | 3 | 0 | 0 | 0 | 0 |
 | validacion | 2 | 0 | 1 | 1 | 1 |
 | web | 21 | 0 | 21 | 0 | 36 |
 
-**Total: 140 requisitos** · cumplen 60 · aviso 3 · no cumplen 28 · sin datos 3 · sin comprobación 46
+**Total: 140 requisitos** · cumplen 62 · aviso 3 · no cumplen 28 · sin datos 1 · sin comprobación 46
 
 ## Comprobaciones que fallan o avisan
 
@@ -61,7 +61,7 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 |---|---|---|---|
 | R1 | Web de novedades de country/americana/folk y hard rock/AOR | alcance | 🟢 cumple |
 | R2 | Solo discos en inglés | reglas | 🟢 cumple |
-| R3 | "Mejor que el mercado" frente a AOTY (más discos, antes, subgénero correcto) y decirlo si  | descubrimiento | ⚪ sin datos todavía |
+| R3 | "Mejor que el mercado" frente a AOTY (más discos, antes, subgénero correcto) y decirlo si  | descubrimiento | 🟢 cumple |
 | R4 | Descartar EP | reglas | 🟢 cumple |
 | R5 | Descartar reediciones / remasters | reglas | 🟢 cumple |
 | R6 | Todo 2026 (enero–diciembre) además de los 5 últimos meses | descubrimiento | 🟢 cumple |
@@ -194,7 +194,7 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | K5 | Rendimiento móvil ≥ 90 | validacion | ⚫ sin comprobación automática |
 | P1 | Cargar un año entero (p. ej. 2025) cambiando solo la configuración | procesos | 🔴 no cumple |
 | P2 | Recogida semanal automática | procesos | 🟢 cumple |
-| P3 | Auditoría "¿perdemos discos?" cada semana | procesos | ⚪ sin datos todavía |
+| P3 | Auditoría "¿perdemos discos?" cada semana | procesos | 🟢 cumple |
 | P4 | Validación automática del procesamiento | procesos | 🟢 cumple |
 | P5 | Estudio del estado del arte repetible | procesos | 🟢 cumple |
 | P7 | Cada disco con sus pruebas por fuente (quién lo anunció, cuándo, con qué fecha) y una conf | procesos | 🟡 aviso |

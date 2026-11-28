@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-28T08:11:13+00:00",
+ "fecha": "2026-11-28T08:17:15+00:00",
  "capas": {
   "alcance": {
    "ok": 1
@@ -15,8 +15,7 @@
    "sin_comprobar": 3
   },
   "descubrimiento": {
-   "sin_datos": 1,
-   "ok": 1
+   "ok": 2
   },
   "estudio": {
    "ok": 2
@@ -30,10 +29,9 @@
    "ok": 1
   },
   "procesos": {
-   "ok": 10,
+   "ok": 11,
    "sin_comprobar": 2,
    "fallo": 1,
-   "sin_datos": 1,
    "aviso": 1
   },
   "publicacion": {
@@ -72,7 +70,7 @@
    ]
   },
   "R3": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "descubrimiento",
    "texto": "\"Mejor que el mercado\" frente a AOTY (más discos, antes, subgénero correcto) y decirlo si no se logra",
    "comprobaciones": [
@@ -1123,7 +1121,7 @@
    ]
   },
   "P3": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "capa": "procesos",
    "texto": "Auditoría \"¿perdemos discos?\" cada semana",
    "comprobaciones": [
@@ -1530,18 +1528,29 @@
    "ejemplos": []
   },
   "descubrimiento_referencias": {
-   "estado": "sin_datos",
+   "estado": "ok",
    "valor": null,
-   "detalle": "pendiente: comparar con Metacritic y AnyDecentMusic (paso 8 de docs/progreso.md)",
-   "ejemplos": []
+   "detalle": "Metacritic – All New Music by Release Date: ok, 151 discos · en la web 97 · perdidos 7 (6.7 %) · descartados con motivo 21 · no son novedad 5 · de otros géneros 10 · sin poder saber su género 11 (máximo 10.0 % perdidos)",
+   "ejemplos": [
+    "perdido: los bitchos – los bitchos friends vol 1 (cumbia, indie pop, psychedelic rock)",
+    "perdido: editors – surface echo sound (alternative rock, indie rock, post-punk revival)",
+    "perdido: dis fig – what to make of these mortal hands (death industrial, post-industrial)",
+    "perdido: faust – moi (krautrock, experimental rock, progressive rock)",
+    "perdido: miley – bass persuades (pop, pop rock, rock)",
+    "perdido: the mary wallopers – paddywhackery (irish folk, folk, folk punk)",
+    "perdido: formal sppeedwear – punch card (art rock, new wave)",
+    "sin género: all – all",
+    "sin género: the body cel genesis – whole wide world",
+    "sin género: howlin rain – watermelon"
+   ]
   }
  },
  "totales": {
-  "ok": 60,
-  "sin_datos": 3,
+  "ok": 62,
   "aviso": 3,
   "fallo": 28,
-  "sin_comprobar": 46
+  "sin_comprobar": 46,
+  "sin_datos": 1
  },
  "avisos_historial": []
 }

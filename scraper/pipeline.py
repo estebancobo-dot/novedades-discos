@@ -34,6 +34,7 @@ FASES = [
     ("clasificar_2", "scraper.clasificar", []),
     ("informe", "scraper.informe", []),
     ("web", "scraper.web", []),
+    ("referencias", "scraper.referencias", []),  # ¿perdemos discos? frente a referencias independientes
     ("validar", "scraper.validar", []),     # comprobación automática de todas las capas (docs/validacion.md)
 ]
 CADUCIDAD_DIAS = 3          # una ejecución a medias más antigua no se reanuda: se empieza otra

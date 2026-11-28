@@ -554,7 +554,27 @@ def validacion_automatica(c):
 
 @comprobacion
 def descubrimiento_referencias(c):
-    return R("sin_datos", detalle="pendiente: comparar con Metacritic y AnyDecentMusic (paso 8 de docs/progreso.md)")
+    """¿Perdemos discos? Frente a referencias independientes (scraper/referencias.py): de los discos de
+    nuestros géneros que tiene la referencia, cuántos no tenemos."""
+    ref = _leer("data/referencias.json", {}) or {}
+    if not ref.get("referencias"):
+        return R("sin_datos", detalle="sin lectura de referencias (python -m scraper.referencias)")
+    tope = float(c.umb.get("perdidos_max_pct", 10))
+    peor, detalle, ejemplos = "ok", [], []
+    for rid, r in ref["referencias"].items():
+        cnt = Counter(i["resultado"] for i in r["items"])
+        base = cnt["en_web"] + cnt["perdido"]
+        pct = round(100 * cnt["perdido"] / base, 1) if base else None
+        detalle.append(f"{r['nombre']}: {r['estado']}, {len(r['items'])} discos · en la web {cnt['en_web']} · perdidos {cnt['perdido']} "
+                       f"({pct} %) · descartados con motivo {cnt['descartado']} · no son novedad {cnt['no_es_nuevo']} · "
+                       f"de otros géneros {cnt['fuera_de_genero']} · sin poder saber su género {cnt['sin_genero']}")
+        ejemplos += [f"perdido: {i['artista']} – {i['titulo']} ({', '.join(i.get('generos', [])[:3])})" for i in r["items"] if i["resultado"] == "perdido"]
+        ejemplos += [f"sin género: {i['artista']} – {i['titulo']}" for i in r["items"] if i["resultado"] == "sin_genero"]
+        if r["estado"] != "ok" or pct is None:
+            peor = "aviso" if peor == "ok" else peor
+        elif pct > tope:
+            peor = "fallo"
+    return R(peor, None, " | ".join(detalle) + f" (máximo {tope} % perdidos)", ejemplos)
 
 
 # ---------------------------------------------------------------- motor

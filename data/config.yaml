@@ -166,3 +166,14 @@ validacion:
   listas_anuales_desde: 2019
   listas_anuales_min: 20
   estudio_max_dias: 120             # antigüedad máxima del estudio de referencias
+  # Referencias independientes para "¿perdemos discos?" (scraper/referencias.py). No son fuentes: no
+  # añaden discos, solo se comparan con los nuestros. Se leen con las mismas reglas (robots.txt, ritmo,
+  # parada ante bloqueos).
+  referencias:
+    - id: metacritic
+      nombre: Metacritic – All New Music by Release Date
+      url: "https://www.metacritic.com/browse/music/all/all/current-year/new/"
+      pagina: "?page={n}"
+      paginas: 3
+      enlace: '/music/(?P<titulo>[^/"?#]+)/(?P<artista>[^/"?#]+)/'
+  perdidos_max_pct: 10            # de los discos de nuestros géneros que tiene la referencia
