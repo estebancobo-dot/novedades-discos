@@ -1,7 +1,7 @@
 {
  "modo": "incremental",
  "inicio": "2026-11-28T12:30:47+00:00",
- "terminada": false,
+ "terminada": true,
  "fases": {
   "recoger": {
    "estado": "hecha",
@@ -57,5 +57,6 @@
    "fin": "2026-11-28T13:00:23+00:00",
    "segundos": 1
   }
- }
+ },
+ "fin": "2026-11-28T13:00:25+00:00"
 }
