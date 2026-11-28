@@ -23,7 +23,7 @@ Si la sesión se corta, la siguiente empieza por aquí. Cada línea de "Hecho" e
 | 9 | Reseñas frente a AnyDecentMusic (V5) | ✅ `scraper/resenas.py`: cada disco con página en AnyDecentMusic recibe **todas** sus reseñas (medio, nota, frase, enlace original): U2 pasa de 3 a 21. Comprobación `resenas_cobertura`: 52,5 % de los publicados con reseña. Falta: leer el archivo de ADM (solo hay páginas de los discos actuales: 15) |
 | 10 | Web: pruebas de contenido + capturas automáticas de cada pantalla en cada publicación (V7) | ✅ resultados por requisito + capturas en `docs/capturas/` (portada, ficha y lo mejor; móvil y escritorio) en cada ejecución |
 | 11 | Fase `validar` en el orquestador y semáforo en el resumen de la Action (V8) | ✅ fase `validar` en `scraper/pipeline.py`; en la Action: prueba en navegador → validar → guarda y pone el semáforo en el resumen |
-| 12 | W1 portada y tarjeta (con capturas al usuario) | ⬜ |
+| 12 | W1 portada y tarjeta (con capturas al usuario) | 🟡 hecha y con todas sus comprobaciones en verde; **encontrado y corregido el fallo de "sin carátulas"**: el marcador tapaba la portada aunque cargara (nueva comprobación automática: las portadas cargadas se ven). Falta: OK del usuario con capturas y publicar |
 | 13 | W2 página del disco | ⬜ |
 | 14 | W3–W7 | ⬜ |
 | 16 | Listas de fin de año del año en curso también descubren discos | ✅ código y configuración (`descubrir_en_listas_anuales`); comprobándose con una recogida real |
@@ -37,6 +37,7 @@ Si la sesión se corta, la siguiente empieza por aquí. Cada línea de "Hecho" e
   sustituyan** (E1).
 - Metal Planet y Blues Rock Review salieron vacías en la primera ejecución en GitHub (vigilar la próxima).
 - Punk, indie y cantautores no tienen fuentes especializadas propias (E1).
+- "First Songs" de Michael Hurley (1964, Folkways) sale como novedad de esta semana: revisar por qué no se descartó como reedición.
 - 5 discos perdidos frente a Metacritic (28-nov): The Mary Wallopers (solo sale en listas de fin de año: usarlas
   también para descubrir), Formal Sppeedwear, Faust, Dis Fig, "Miley" (ninguna fuente los tiene: buscar fuentes de
   krautrock/experimental, indie e industrial). Editors, Los Bitchos, Echo & the Bunnymen y Neil Young sí estaban:

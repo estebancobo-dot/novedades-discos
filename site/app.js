@@ -48,7 +48,7 @@ function color(texto) {
   return `linear-gradient(135deg, hsl(${h} 45% 38%), hsl(${(h + 40) % 360} 50% 26%))`;
 }
 function portadaHTML(d, grande = false) {
-  const vacia = `<div class="vacia" style="background:${color(d.artista + d.titulo)}">${esc(d.artista)}</div>`;
+  const vacia = `<div class="vacia" aria-hidden="true"></div>`;     // sin portada: marcador neutro, sin texto
   const url = grande ? (d.portada_grande || d.portada) : d.portada;
   const alt = d.portada_alt ? ` data-alt="${esc(d.portada_alt)}"` : "";
   const doble = grande ? null : version2x(url);
@@ -153,21 +153,31 @@ function pintarFamilias() {
   };
 }
 
+// Nota en cuadro de color, como Metacritic: verde ≥ 8, amarillo 6–7,9, rojo < 6.
+function claseNota(n) { return n >= 8 ? "verde" : n >= 6 ? "amarillo" : "rojo"; }
+function cajaNota(d, extra = "") {
+  return d.nota != null ? `<span class="nota-caja ${claseNota(d.nota)}${extra}" title="Nota media de ${d.n_notas} ${d.n_notas === 1 ? "reseña" : "reseñas"}">${d.nota.toFixed(1)}</span>` : "";
+}
+function fechaCorta(iso) { const [, m, d] = iso.split("-").map(Number); return `${d} ${MESES[m - 1]}`; }
+
 function tarjeta(d) {
-  const subs = d.subgeneros.slice(0, 2).map(s => SUB[s]?.nombre || s).join(" · ");
-  const fam = d.familias.length === 1 ? `fam-${d.familias[0]}` : "";
-  const insignia = d.nota != null ? `<span class="nota-badge" title="Nota media de ${d.n_notas} reseña(s)">${d.nota.toFixed(1)}</span>`
-    : d.n_resenas ? `<span class="insignia">${d.n_resenas} ${d.n_resenas === 1 ? "reseña" : "reseñas"}</span>` : "";
-  const lado = `<div class="t-lado">${d.nota != null ? `<b>${d.nota.toFixed(1)}</b>` : ""}${fechaLarga(d.fecha)}</div>`;
-  return `<button class="tarjeta" data-id="${esc(d.id)}">
-    <div class="portada">${portadaHTML(d)}${insignia}
-      ${d.destacado ? '<span class="dest-badge" title="Destacado">✦</span>' : ""}
-      ${MI_LISTA[d.id] ? '<span class="lista-badge" title="En mi lista">★</span>' : ""}</div>
-    <div><div class="t-artista">${esc(d.artista)}</div>
-    <div class="t-titulo">${esc(d.titulo)}</div>
-    <div class="t-sub ${fam}">${subs ? esc(subs) : "<i>sin subgénero</i>"}</div></div>
-    ${lado}
+  const estilo = d.subgeneros.slice(0, 2).map(s => SUB[s]?.nombre || s).join(" · ");
+  const resenas = d.nota == null && d.n_resenas ? ` · ${d.n_resenas} ${d.n_resenas === 1 ? "reseña" : "reseñas"}` : "";
+  return `<button class="tarjeta" data-id="${esc(d.id)}"${d.nota != null ? ` data-nota="${d.nota}"` : ""}${d.portada ? " data-portada" : ""}>
+    <div class="t-img"><div class="portada">${portadaHTML(d)}</div>${cajaNota(d)}
+      ${MI_LISTA[d.id] ? '<span class="lista-badge" title="En mi lista" aria-label="En mi lista"></span>' : ""}</div>
+    <div class="t-texto"><div class="t-titulo">${esc(d.titulo)}</div>
+    <div class="t-artista">${esc(d.artista)}</div>
+    <div class="t-meta">${fechaCorta(d.fecha)}${estilo ? " · " + esc(estilo) : ""}${resenas}</div></div>
   </button>`;
+}
+
+// Fila compacta (próximos y mejores notas): abre la ficha igual que una tarjeta.
+function filaCompacta(d, conNota = false) {
+  return `<li><button class="abre-ficha fila" data-id="${esc(d.id)}">
+    ${conNota ? cajaNota(d) : `<span class="f-fecha">${fechaCorta(d.fecha)}</span>`}
+    <span class="f-texto"><b>${esc(d.titulo)}</b> <span>${esc(d.artista)}</span></span>
+    ${conNota ? `<span class="f-extra">${d.n_notas} ${d.n_notas === 1 ? "reseña" : "reseñas"}</span>` : ""}</button></li>`;
 }
 
 function pintarMeses(publ) {
@@ -177,6 +187,7 @@ function pintarMeses(publ) {
   nav.innerHTML = meses.map(m => `<button data-mes="${m}">${MESES_LARGO[+m.slice(5) - 1]}${m.slice(0, 4) !== HOY.slice(0, 4) ? " " + m.slice(0, 4) : ""}</button>`).join("");
   nav.onclick = e => {
     const b = e.target.closest("button"); if (!b) return;
+    if (!$("#panel").hidden) $("#cerrarFiltros").click();       // la fila de meses está dentro de Filtros
     let sec = document.querySelector(`.semana[data-mes="${b.dataset.mes}"]`);
     while (!sec && $("#mas")) { estado.tandas++; pintar(); sec = document.querySelector(`.semana[data-mes="${b.dataset.mes}"]`); }
     if (sec) window.scrollTo({ top: sec.getBoundingClientRect().top + scrollY - $(".cab").offsetHeight - 8, behavior: "smooth" });
@@ -219,17 +230,44 @@ function pintar() {
     const semanas = new Map();
     for (const d of publ) { const k = lunes(d.fecha); if (!semanas.has(k)) semanas.set(k, []); semanas.get(k).push(d); }
     const claves = [...semanas.keys()].sort().reverse();
-    const visibles = claves.slice(0, estado.tandas * SEMANAS_POR_TANDA);
-    const nProx = estado.verProximos ? prox.length : PROXIMOS_VISIBLES;
-    if (prox.length) html += `<section class="semana prox"><h2><span>Próximamente</span><span>${prox.length}</span></h2>
-      <div class="rejilla">${prox.slice(0, nProx).map(tarjeta).join("")}</div>
-      ${prox.length > nProx ? `<button class="mas" id="masProx">Ver los ${prox.length} próximos</button>` : ""}</section>`;
-    for (const k of visibles) {
-      const ds = semanas.get(k).sort((a, b) => (b.destacado - a.destacado) || b.n_resenas - a.n_resenas || a.artista.localeCompare(b.artista));
-      const mes = ds.reduce((m, d) => d.fecha.slice(0, 7) > m ? d.fecha.slice(0, 7) : m, "");
-      html += `<section class="semana" data-mes="${mes}"><h2><span>Semana del ${fechaLarga(k)}</span><span>${ds.length}</span></h2>
+    // primero lo que ya ha salido con portada; los que no tienen, al final
+    const ordenSemana = ds => ds.sort((a, b) => (!!b.portada - !!a.portada) || (b.destacado - a.destacado) || b.n_resenas - a.n_resenas || a.artista.localeCompare(b.artista));
+    // 1. Esta semana (la última semana con discos publicados)
+    if (claves.length) {
+      const k0 = claves[0], ds = ordenSemana(semanas.get(k0));
+      html += `<section class="semana" data-seccion="semana" data-mes="${k0.slice(0, 7)}"><h2><span>Esta semana</span><span>${ds.length}</span></h2>
+        <p class="sub-semana">Semana del ${fechaLarga(k0)} · ${ds.length} ${ds.length === 1 ? "disco" : "discos"}</p>
         <div class="rejilla">${ds.map(tarjeta).join("")}</div></section>`;
     }
+    // 2. Mejores notas recientes (último mes), como AnyDecentMusic
+    const haceUnMes = restarMeses(HOY, 1);
+    const conNota = publ.filter(d => d.nota != null && d.fecha >= haceUnMes).sort((a, b) => b.nota - a.nota || b.n_notas - a.n_notas).slice(0, 8);
+    if (conNota.length) html += `<section class="bloque" data-seccion="mejores-notas"><h2><span>Mejores notas recientes</span></h2>
+      <ol class="lista-notas">${conNota.map(d => filaCompacta(d, true)).join("")}</ol></section>`;
+    // 3. Destacados de las últimas semanas (más reseñas y mejor nota)
+    const haceSeis = restarMeses(HOY, 2);
+    const dest = publ.filter(d => d.destacado && d.fecha >= haceSeis && !(claves.length && lunes(d.fecha) === claves[0]))
+      .sort((a, b) => b.puntos - a.puntos).slice(0, 8);
+    if (dest.length) html += `<section class="semana" data-seccion="destacados"><h2><span>Destacados</span><span>${dest.length}</span></h2>
+      <div class="rejilla">${dest.map(tarjeta).join("")}</div></section>`;
+    // 4. Próximos lanzamientos: lista compacta por fecha
+    const nProx = estado.verProximos ? prox.length : 15;
+    if (prox.length) html += `<section class="bloque" data-seccion="proximos"><h2><span>Próximos lanzamientos</span><span>${prox.length}</span></h2>
+      <ol class="lista-compacta">${prox.slice(0, nProx).map(d => filaCompacta(d)).join("")}</ol>
+      ${prox.length > nProx ? `<button class="mas" id="masProx">Ver los ${prox.length} próximos</button>` : ""}</section>`;
+    // 5. Recientes: las semanas anteriores
+    const anteriores = claves.slice(1, 1 + estado.tandas * SEMANAS_POR_TANDA);
+    if (anteriores.length) {
+      html += `<div data-seccion="recientes">`;
+      for (const k of anteriores) {
+        const ds = ordenSemana(semanas.get(k));
+        const mes = ds.reduce((m, d) => d.fecha.slice(0, 7) > m ? d.fecha.slice(0, 7) : m, "");
+        html += `<section class="semana" data-mes="${mes}"><h2><span>Semana del ${fechaLarga(k)}</span><span>${ds.length}</span></h2>
+          <div class="rejilla">${ds.map(tarjeta).join("")}</div></section>`;
+      }
+      html += `</div>`;
+    }
+    const visibles = [claves[0], ...anteriores];
     if (claves.length > visibles.length) html += `<button class="mas" id="mas">Ver semanas anteriores</button>`;
     main.innerHTML = html; pintarMeses(publ);
   }
@@ -471,7 +509,7 @@ async function abrirFicha(id) {
 
 // ------------------------------------------------------------ eventos
 function eventos() {
-  $("#contenido").addEventListener("click", e => { const t = e.target.closest(".tarjeta"); if (t) abrirFicha(t.dataset.id); });
+  $("#contenido").addEventListener("click", e => { const t = e.target.closest(".tarjeta, .abre-ficha"); if (t) abrirFicha(t.dataset.id); });
   let temp;
   $("#q").value = estado.q;
   $("#q").addEventListener("input", e => {
