@@ -181,32 +181,47 @@ def coherencia_fuentes(c):
 
 @comprobacion
 def muestra_de_referencia(c):
-    """Repite cada semana la revisión hecha a mano: los discos juzgados correctos siguen teniendo sus
-    subgéneros, los apartados con razón siguen fuera, y los que cambian se marcan para revisar."""
+    """Conjunto de referencia (data/revision_clasificacion.csv): para cada disco revisado, lo que debe
+    tener y lo que no. Cada semana se compara, disco a disco, con la clasificación actual."""
     p = ruta("data/revision_clasificacion.csv")
     if not os.path.exists(p):
         return R("sin_datos", detalle="no hay muestra revisada")
     with open(p, encoding="utf-8", newline="") as f:
         filas = list(csv.DictReader(f))
     por_id = {d["id"]: d for d in c.discos}
-    juzgados = bien = 0
-    cambios = []
+    sp = lambda x: set(filter(None, (x or "").split("|")))
+    medidos = bien = 0
+    errores = []
     for r in filas:
+        if not any(r.get(k) for k in ("esperado", "no_esperado", "familia_esperada", "familia_no_esperada", "fuera")):
+            continue                                   # sin respuesta esperada (no se pudo verificar)
+        medidos += 1
         d = por_id.get(r["id"])
-        res = r["resultado"]
-        esperado = set(filter(None, (r.get("esperado") or r.get("subgeneros") or "").split("|")))
-        if res in ("correcto", "parcial", "incorrecto"):
-            juzgados += 1
-            if res in ("correcto", "parcial") and d and (not esperado or esperado & set(d.get("subgeneros", []))):
-                bien += 1
-            elif res in ("correcto", "parcial"):
-                cambios.append(f"{r['artista']} – {r['titulo']}: antes {res}, ahora {d.get('subgeneros') if d else 'fuera'}")
-        elif res == "fuera_bien" and d:
-            cambios.append(f"{r['artista']} – {r['titulo']}: debía estar fuera y ha vuelto")
-    pct = round(100 * bien / juzgados, 1) if juzgados else None
+        subs, fams = set(d.get("subgeneros", [])) if d else set(), set(d.get("familias", [])) if d else set()
+        fallos = []
+        if r.get("fuera") == "si":
+            if d:
+                fallos.append("debía quedar fuera")
+        elif not d:
+            fallos.append("ha desaparecido de la web")
+        else:
+            if sp(r.get("esperado")) and not sp(r["esperado"]) & subs:
+                fallos.append(f"le falta {r['esperado']}")
+            if sp(r.get("no_esperado")) & subs:
+                fallos.append(f"sobra {'|'.join(sp(r['no_esperado']) & subs)}")
+            if sp(r.get("familia_esperada")) - fams:
+                fallos.append(f"falta la familia {r['familia_esperada']}")
+            if sp(r.get("familia_no_esperada")) & fams:
+                fallos.append(f"sobra la familia {r['familia_no_esperada']}")
+        if fallos:
+            errores.append(f"{r['artista']} – {r['titulo']}: " + "; ".join(fallos))
+        else:
+            bien += 1
+    if not medidos:
+        return R("sin_datos")
+    pct = round(100 * bien / medidos, 1)
     minimo = float(c.umb.get("muestra_acierto_min_pct", 85))
-    return R("ok" if pct is not None and pct >= minimo and not cambios else ("aviso" if pct and pct >= minimo else "fallo"),
-             pct, f"{bien} de {juzgados} siguen bien clasificados; mínimo {minimo} %", cambios)
+    return R("ok" if pct >= minimo else "fallo", pct, f"{bien} de {medidos} discos de referencia exactamente bien; mínimo {minimo} %", errores)
 
 
 # ---------------------------------------------------------------- fuentes

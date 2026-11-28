@@ -1,12 +1,13 @@
 {
- "fecha": "2026-11-28T08:08:56+00:00",
+ "fecha": "2026-11-28T08:10:38+00:00",
  "capas": {
   "alcance": {
    "ok": 1
   },
   "clasificacion": {
-   "ok": 6,
-   "aviso": 1
+   "ok": 5,
+   "aviso": 1,
+   "fallo": 1
   },
   "datos": {
    "ok": 1,
@@ -152,7 +153,7 @@
    ]
   },
   "R13": {
-   "estado": "ok",
+   "estado": "fallo",
    "capa": "clasificacion",
    "texto": "Clasificación correcta",
    "comprobaciones": [
@@ -1261,10 +1262,21 @@
    ]
   },
   "muestra_de_referencia": {
-   "estado": "ok",
-   "valor": 97.9,
-   "detalle": "47 de 48 siguen bien clasificados; mínimo 85.0 %",
-   "ejemplos": []
+   "estado": "fallo",
+   "valor": 79.2,
+   "detalle": "42 de 53 discos de referencia exactamente bien; mínimo 85.0 %",
+   "ejemplos": [
+    "Onasander & RNGMNN – Illumination Phases: ha desaparecido de la web",
+    "Astral Spectre – Cosmic Mirage: sobra classic-rock",
+    "Kreator – Krushers of the World: sobra hard-rock|death-metal",
+    "The Notwist – News from Planet Zombie: sobra post-rock|post-hardcore",
+    "The Green Apple Sea – Dark Kid: sobra punk",
+    "Art d’Ecco – Scheele's Green: le falta glam",
+    "Linda Perry – Let It Die Here: sobra classic-rock",
+    "MY PET ROCKET – Last of the Analogue Superheroes: sobra punk",
+    "Kahil El’Zabar – Sketches For Trane: debía quedar fuera",
+    "Vreid – The Skies Turn Black: sobra death-metal"
+   ]
   },
   "fuentes_estado": {
    "estado": "ok",
@@ -1514,11 +1526,11 @@
   }
  },
  "totales": {
-  "ok": 61,
+  "ok": 60,
   "sin_datos": 3,
   "aviso": 3,
-  "sin_comprobar": 46,
-  "fallo": 27
+  "fallo": 28,
+  "sin_comprobar": 46
  },
  "avisos_historial": []
 }

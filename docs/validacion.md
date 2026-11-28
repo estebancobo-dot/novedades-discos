@@ -9,7 +9,7 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | Capa | 🟢 | 🟡 | 🔴 | ⚪ | ⚫ |
 |---|---:|---:|---:|---:|---:|
 | alcance | 1 | 0 | 0 | 0 | 0 |
-| clasificacion | 6 | 1 | 0 | 0 | 0 |
+| clasificacion | 5 | 1 | 1 | 0 | 0 |
 | datos | 1 | 0 | 4 | 0 | 3 |
 | descubrimiento | 1 | 0 | 0 | 1 | 0 |
 | estudio | 2 | 0 | 0 | 0 | 0 |
@@ -21,10 +21,16 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | validacion | 2 | 0 | 1 | 1 | 1 |
 | web | 21 | 0 | 21 | 0 | 36 |
 
-**Total: 140 requisitos** · cumplen 61 · aviso 3 · no cumplen 27 · sin datos 3 · sin comprobación 46
+**Total: 140 requisitos** · cumplen 60 · aviso 3 · no cumplen 28 · sin datos 3 · sin comprobación 46
 
 ## Comprobaciones que fallan o avisan
 
+- 🔴 **muestra_de_referencia**: 42 de 53 discos de referencia exactamente bien; mínimo 85.0 % — 79.2
+    - Onasander & RNGMNN – Illumination Phases: ha desaparecido de la web
+    - Astral Spectre – Cosmic Mirage: sobra classic-rock
+    - Kreator – Krushers of the World: sobra hard-rock|death-metal
+    - The Notwist – News from Planet Zombie: sobra post-rock|post-hardcore
+    - The Green Apple Sea – Dark Kid: sobra punk
 - 🔴 **anios_por_plantilla**: direcciones con el año escrito a mano — 12
     - scm_radar: https://savingcountrymusic.com/release-radar-most-anticipated-new-country-albums-for-2026/
     - scm_radar: https://savingcountrymusic.com/release-radar-most-anticipated-new-albums-for-2nd-half-of-2026/
@@ -65,7 +71,7 @@ Generado por `python -m scraper.validar` (cada semana en la Action). Cada requis
 | R10 | Etiqueta nueva → LLM una sola vez → mapeo_etiquetas.csv | clasificacion | 🟡 aviso |
 | R11 | Nunca crear subgéneros; proponerlos en el informe | clasificacion | 🟢 cumple |
 | R12 | LLM solo con el plan Pro, sin pagar API | procesos | 🟢 cumple |
-| R13 | Clasificación correcta | clasificacion | 🟢 cumple |
+| R13 | Clasificación correcta | clasificacion | 🔴 no cumple |
 | R14 | Verificar cada fuente propuesta | fuentes | 🟢 cumple |
 | R15 | 5 fuentes extra por familia | fuentes | 🟡 aviso |
 | R16 | Usar todas las fuentes posibles | fuentes | 🟢 cumple |
