@@ -22,7 +22,7 @@ Si la sesión se corta, la siguiente empieza por aquí. Cada línea de "Hecho" e
 | 8 | Descubrimiento frente a referencias externas: Metacritic, AnyDecentMusic (V1) | ⬜ |
 | 9 | Reseñas frente a AnyDecentMusic (V5) | ⬜ |
 | 10 | Web: pruebas de contenido + capturas automáticas de cada pantalla en cada publicación (V7) | 🟡 la prueba en navegador escribe `data/validacion_web.json` por requisito, con criterios de aceptación de W1/W2/W3 (hoy fallan: es lo correcto); faltan las capturas automáticas |
-| 11 | Fase `validar` en el orquestador y semáforo en el resumen de la Action (V8) | ⬜ |
+| 11 | Fase `validar` en el orquestador y semáforo en el resumen de la Action (V8) | ✅ fase `validar` en `scraper/pipeline.py`; en la Action: prueba en navegador → validar → guarda y pone el semáforo en el resumen |
 | 12 | W1 portada y tarjeta (con capturas al usuario) | ⬜ |
 | 13 | W2 página del disco | ⬜ |
 | 14 | W3–W7 | ⬜ |
@@ -33,5 +33,7 @@ Pasos 3, 4 y parte del 7 (28-nov-2026). Hallazgos reales: 12 direcciones con el 
 
 ## Siguiente paso
 
-Paso 11: fase `validar` en `scraper/pipeline.py` y en `.github/workflows/semanal.yml` (prueba en navegador → validar →
-semáforo en el resumen de la Action). Después, capturas automáticas (resto del paso 10) y pasos 5, 6, 8, 9.
+Paso 5: conjunto de referencia de la clasificación con subgéneros esperados (columna `esperado` en
+`data/revision_clasificacion.csv`, a partir de las notas de la revisión) para que `muestra_de_referencia` compare
+subgénero a subgénero. Luego 6 (Wikipedia/MusicBrainz), 8 (descubrimiento frente a Metacritic/ADM), 9 (reseñas
+frente a ADM) y las capturas automáticas (resto del 10). Con eso, empezar W1.

@@ -112,6 +112,21 @@ jobs:
         run: |
           python -m scraper.etiquetas_llm aplicar
           python -m scraper.pipeline --desde=clasificar_2 --git
+      # ---- Validación automática de todas las capas (scraper/validar.py + prueba en navegador) ----
+      - uses: actions/setup-node@v4
+        if: always()
+        with: {node-version: 22}
+      - name: Validación automática (prueba en navegador + comprobaciones de cada capa)
+        if: always()
+        continue-on-error: true            # un fallo de validación se ve en rojo en el resumen; no borra los datos
+        run: |
+          npm install --no-save --no-package-lock playwright@1.63.0 axe-core@4.10.2
+          npx playwright install --with-deps chromium
+          node tests/e2e/web.mjs site || echo "La prueba en navegador tiene fallos (ver docs/validacion.md)"
+          python -m scraper.validar
+          git add data/validacion.json data/validacion_web.json data/historial_validacion.json docs/validacion.md
+          git commit -q -m "Validación automática $(date -u +%F)" || exit 0
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
       - name: Guardar páginas y lecturas para la próxima ejecución
         if: always()
         uses: actions/cache/save@v4
@@ -125,6 +140,19 @@ jobs:
         run: |
           python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
           import json, os
+          if os.path.exists("data/validacion.json"):
+              v = json.load(open("data/validacion.json")); t = v.get("totales", {})
+              ic = {"ok": "🟢", "aviso": "🟡", "fallo": "🔴", "sin_datos": "⚪", "sin_comprobar": "⚫"}
+              print(f"### Validación automática: {sum(t.values())} requisitos · 🟢 {t.get('ok', 0)} · 🟡 {t.get('aviso', 0)} · "
+                    f"🔴 {t.get('fallo', 0)} · ⚪ {t.get('sin_datos', 0)} · ⚫ {t.get('sin_comprobar', 0)}\n")
+              print("| Capa | Estado |\n|---|---|")
+              orden = ["fallo", "aviso", "sin_datos", "sin_comprobar", "ok"]
+              for capa, cnt in v.get("capas", {}).items():
+                  peor = min(cnt, key=orden.index)
+                  print(f"| {capa} | {ic[peor]} " + " · ".join(f"{ic[e]} {n}" for e, n in cnt.items()) + " |")
+              for a in v.get("avisos_historial", [])[:10]:
+                  print(f"- ⚠️ {a}")
+              print("\nDetalle: docs/validacion.md\n")
           if os.path.exists("data/estado_pipeline.json"):
               p = json.load(open("data/estado_pipeline.json"))
               print(f"### Ejecución {p.get('modo')} del {p.get('inicio')} — {'terminada' if p.get('terminada') else 'a medias'}\n")
