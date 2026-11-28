@@ -1,35 +1,4 @@
 etiqueta,subgenero,origen,fecha,veces,ejemplo,nota
-2011-09-03,pendiente,,2026-11-28,1,Dave Matthews Band – Take Me Back: Live From The Gorge,
-Avant Rock,pendiente,,2026-11-28,1,Basic – Basic,
-Canterbury,pendiente,,2026-11-28,1,Memorials – All Clouds Bring Not Rain,
-englisch,pendiente,,2026-11-28,1,Joe Bonamassa – B.B. King’s Blues Summit 100,
-fastcore,pendiente,,2026-11-28,1,Fake Dust – Decrepitizing Din of the Cerebral Psyopticon,
-folkrock,pendiente,,2026-11-28,1,The Long Ryders – High Noon Hymns,
-french house,pendiente,,2026-11-28,1,Digitalism – Optimism,
-Geordie Greep,pendiente,,2026-11-28,1,Knats – A Great Day in Newcastle,
-Geordie Jazz,pendiente,,2026-11-28,1,Knats – A Great Day in Newcastle,
-Heavy Pop,pendiente,,2026-11-28,1,WU LYF – A Wave That Will Never Break,
-Jack Cooper,pendiente,,2026-11-28,1,The Sleeves – The Sleeves,
-modern jazz,pendiente,,2026-11-28,1,Knats – A Great Day in Newcastle,
-Modern Nature,pendiente,,2026-11-28,1,The Sleeves – The Sleeves,
-neobaroque,pendiente,,2026-11-28,1,Arielle Soucy – Passages,
-new orleans r&b,pendiente,,2026-11-28,1,Dr. John – Live At The Turning Point,
-nostalgia,pendiente,,2026-11-28,1,Arielle Soucy – Passages,
-paisley underground,pendiente,,2026-11-28,2,The Dream Syndicate – Sketches for Medicine Show,
-progressive electronic,pendiente,,2026-11-28,1,Tangerine Dream – 50 Years of Phaedra: At the Barbican,
-psych-rock,pendiente,,2026-11-28,1,Memorials – All Clouds Bring Not Rain,
-sad pop,pendiente,,2026-11-28,1,"The Reds, Pinks & Purples – Acknowledge Kindness",
-Saskatoon,pendiente,,2026-11-28,1,Katie Tupper – Greyhound,
-Singapore,pendiente,,2026-11-28,1,Funebrarum – Beckoning the Void of Eternal Silence,
-standards,pendiente,,2026-11-28,1,Rod Stewart – Alternate Atlantic Crossing,
-Tara Cunningham,pendiente,,2026-11-28,1,The Sleeves – The Sleeves,
-welsh,pendiente,,2026-11-28,1,Bullet for My Valentine – Social Apocalypse,
-whitebelt,pendiente,,2026-11-28,1,.gif from god – Dissimulation,
-witness architecture,pendiente,,2026-11-28,1,Stone – HAPPY BiRTHDAY,
-Wrath of the Hammer,pendiente,,2026-11-28,1,StormHammer – Wrath of the Hammer,
-Wrocław,pendiente,,2026-11-28,1,Gossip Collar – Eaten Of Worms,
-Ziggy Marley,pendiente,,2026-11-28,1,Taj Mahal and The Phantom Blues Band – Time,
-Znöwhite,pendiente,,2026-11-28,1,RattleSnakes – Shadows in the Night,
 0.5,ninguno,llm,2026-11-28,4,Rushadicus – Night of the Jick Beast,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
 00s,ninguno,llm,2026-11-22,1,"Editors – Surface, Echo & Sound","revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 1.0,ninguno,llm,2026-11-28,2,Against I – Anti Life,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
@@ -51,6 +20,7 @@ Znöwhite,pendiente,,2026-11-28,1,RattleSnakes – Shadows in the Night,
 2002-05-10 werk ii,ninguno,regla,2026-11-28,1,Mesh – The Truth Doesn’t Matter,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 2008 universal fire victim,ninguno,llm,2026-11-22,,,
 2010s,ninguno,llm,2026-11-22,2,Aaron Lewis – Give My Country Back,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
+2011-09-03,ninguno,regla,2026-11-28,1,Dave Matthews Band – Take Me Back: Live From The Gorge,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 2019,ninguno,regla,2026-11-28,1,Deceptor – Reign of Terror,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 20th-century classical music,ninguno,wikidata,2026-11-28,1,Ludovico Einaudi – Solo Piano,automático: género fuera de la taxonomía (Wikidata Q1338153: 20th-century classical music → classical music → art music → music → sound)
 21st Century Blues,ninguno,llm,2026-11-28,1,Ben Rice & The PDX Hustle – Fallen Angel,"nombre, título o género fuera de la taxonomía (revisada en sesión)"
@@ -559,6 +529,7 @@ avant-garde pop,ninguno,llm,2026-11-28,2,L’Rain – fata morgana,"revisada: gr
 avant-garde rock,experimental,llm,2026-11-28,1,Unverkalt – Héréditaire,
 avant-pop,ninguno,llm,2026-11-28,1,Purple Pilgrims – Given to the Night,"nombre, título o género fuera de la taxonomía (revisada en sesión)"
 avant-prog,prog-rock,llm,2026-11-28,1,Horse Lords – Demand to Be Taken to Heaven Alive!,
+Avant Rock,experimental,wikidata,2026-11-28,1,Basic – Basic,automático (Wikidata Q1641839): experimental rock → experimental music
 Avantasia,ninguno,llm,2026-11-28,6,After Infinity – Beyond Eternity,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
 Avante-Garde Black Metal,black-metal|avantgarde,llm,2026-11-28,1,Agenbite Misery – Remorse of Conscience,
 Avantgarde Metal,avantgarde,llm,2026-11-28,3,Aborym – Metachaos,
@@ -1107,6 +1078,7 @@ Canned Heat,ninguno,regla,2026-11-28,1,Jason Ricci & The Bad Kind with Kaitlin D
 Cannibal Corpse,ninguno,llm,2026-11-28,10,Golgothan Remains – Born From Darkness Absolute,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
 Cannibal Universe,ninguno,regla,2026-11-28,1,Osmium Gate – Cannibal Universe,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Can't Find My Way Home,ninguno,regla,2026-11-28,1,Teskey – Live at the Rhythm Room,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
+Canterbury,ninguno,regla,2026-11-28,1,Memorials – All Clouds Bring Not Rain,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Canterbury Scene,prog-rock,llm,2026-11-22,1,"SOFT MACHINE – Slightly All The Time, The Recordings 1970-1974",
 a cappella,ninguno,regla,2026-11-28,1,Tanya Tagaq – Saputjiji,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Caravan,ninguno,llm,2026-11-22,2,WILL PIKE – Elevator,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
@@ -2145,6 +2117,7 @@ Enforcer,ninguno,regla,2026-11-28,1,Tailgunner – Midnight Blitz,"sin palabra d
 Engineer Records,ninguno,regla,2026-11-28,1,Death of Youth – Nothing Is The Same Anymore,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Engines of Demoliton,ninguno,regla,2026-11-28,1,Black Label Society – Engines of Demolition,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 england,ninguno,regla,2026-11-28,1,Mesh – The Truth Doesn’t Matter,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
+englisch,ninguno,regla,2026-11-28,1,Joe Bonamassa – B.B. King’s Blues Summit 100,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 English Dogs,ninguno,llm,2026-11-28,1,Godthrymm – Projections,"nombre, título o género fuera de la taxonomía (revisada en sesión)"
 English Metal,ninguno,llm,2026-11-28,10,Underdark – O Come Forth Annihilation,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
 the English Rock Ensemble,ninguno,llm,2026-11-22,1,Rick Wakeman – Return to the Red Planet,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
@@ -2304,6 +2277,7 @@ Farm 189 Records,ninguno,regla,2026-11-28,1,The Trevor B. Power Band – Two Cro
 faroese,ninguno,llm,2026-11-22,1,Eivør – Tungl,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 Faroese Metal,ninguno,llm,2026-11-28,1,Eivør – Tungl,"nombre, título o género fuera de la taxonomía (revisada en sesión)"
 FARTBARF,ninguno,llm,2026-11-22,1,Squid Pisser – Throat Slave,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
+fastcore,hardcore|thrash,wikidata,2026-11-28,1,Fake Dust – Decrepitizing Din of the Cerebral Psyopticon,"automático (Wikidata Q1995569): thrashcore → thrash metal, hardcore punk"
 Fatal Paradox,ninguno,regla,2026-11-28,1,Hatebreed – Fatal Paradox,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Fatale,ninguno,regla,2026-11-28,1,The Night Eternal – Cold Velvet,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Fates Warning,ninguno,regla,2026-11-28,1,Black Sites – For Eternity,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
@@ -2403,6 +2377,7 @@ folkish eh,ninguno,wikidata,2026-11-28,1,Palehound – You Sing Like You're Joki
 folklore,ninguno,llm,2026-11-28,1,Moon far away – Acou,"nombre, título o género fuera de la taxonomía (revisada en sesión)"
 folkpop,folk-pop,wikidata,2026-11-28,1,Ailbhe Reddy – Kiss Big,automático (Wikidata Q11700058): folk-pop → folk-pop
 folkpunk,punk,llm,2026-11-22,1,Creekbed Carter Hogan – Peasants Revolt,propuesta: folk punk
+folkrock,folk-rock,wikidata,2026-11-28,1,The Long Ryders – High Noon Hymns,automático (Wikidata Q186472): folk rock → folk rock
 folktronica,ninguno,llm,2026-11-22,1,Bibio & Dorian Concept – Answers,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 Fondness etc,ninguno,regla,2026-11-28,1,"Shakey Graves – Fondness, Etc.","sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Footwork,ninguno,regla,2026-11-28,1,The Avalanches – No Bad Memories,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
@@ -2454,6 +2429,7 @@ Freedom Hawk,ninguno,regla,2026-11-28,1,Restless Spirit – Restless Spirit,"sin
 Freedom of Fear,ninguno,regla,2026-11-28,1,Vanta – Perpetual Selection,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Freiburg,ninguno,regla,2026-11-28,1,Lone Wanderer – Exequiae,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 french,ninguno,regla,2026-11-28,1,Dekad – A Distorted View,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
+french house,ninguno,wikidata,2026-11-28,1,Digitalism – Optimism,automático: género fuera de la taxonomía (Wikidata Q1455292: French house → house music → electronic dance music → club/dance music → electronic music)
 French Metal,ninguno,llm,2026-11-28,12,Love Sex Machine – Thriving,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
 french pop,ninguno,llm,2026-11-28,1,Babe Rainbow – Acid and Honey,"nombre, título o género fuera de la taxonomía (revisada en sesión)"
 French Rock,ninguno,llm,2026-11-28,1,Pelegrin – The Curse of Nephtar,"nombre, título o género fuera de la taxonomía (revisada en sesión)"
@@ -2552,6 +2528,8 @@ Genesis,ninguno,regla,2026-11-28,1,Burning Rope – Dissolution,"sin palabra de 
 Genotype,ninguno,regla,2026-11-28,1,Textures – Genotype,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Genres,ninguno,regla,2026-11-28,1,Kreator – Krushers of the World,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Geoff Downes,ninguno,llm,2026-11-22,1,Asia – Indigo,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
+Geordie Greep,ninguno,regla,2026-11-28,1,Knats – A Great Day in Newcastle,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
+Geordie Jazz,ninguno,wikidata,2026-11-28,1,Knats – A Great Day in Newcastle,automático: Wikidata no tiene un elemento con ese nombre
 George Gershwin,ninguno,llm,2026-11-22,1,HARMONY IN MY HEAD – The Music That Inspired The Genius Of Brian Wilson,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 George Jackson,ninguno,regla,2026-11-28,1,Janiva Magness – Truth In The Room,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 George Jones,ninguno,llm,2026-11-22,1,THE UGLY GUYS – Highway Shoes,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
@@ -2858,6 +2836,7 @@ heavy metal,heavy-metal,taxonomia,2026-11-22,,,ya es alias de la taxonomía
 heavy metal - hard rock,heavy-metal|hard-rock,llm,2026-11-22,1,Solace – Fading Failing Ruin,
 heavy metal music,heavy-metal,llm,2026-11-28,3,"Revnoir – Sometimes I feel you, sometimes I don’t",
 heavy music,ninguno,llm,2026-11-28,1,Lost in Hollywood – Lost in Hollywood,"nombre, título o género fuera de la taxonomía (revisada en sesión)"
+Heavy Pop,ninguno,wikidata,2026-11-28,1,WU LYF – A Wave That Will Never Break,"automático: en Wikidata no es un género musical (lugar, persona, sello, tema…)"
 heavy prog,prog-rock,llm,2026-11-28,1,Karnivool – In Verses,
 heavy psych,stoner-rock|psychedelic-rock,llm,2026-11-22,5,Green Lung – Necropolitan,
 heavy psych rock,stoner-rock|psychedelic-rock,llm,2026-11-22,1,Shadow of Jupiter – Bones,
@@ -3183,6 +3162,7 @@ Izthmi,ninguno,regla,2026-11-28,1,Old Moon – Home to Nowhere,"sin palabra de g
 J.P.,ninguno,llm,2026-11-28,1,Michael Falzarano – Sunrise Over the Unknown,"revisada: persona, canción, sello, lugar o formato"
 j-pop,ninguno,llm,2026-11-22,1,Haruomi Hosono – Yours Sincerely,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 Jack Barksdale,ninguno,llm,2026-11-28,1,Jack Barksdale Finds His Place on – Battleground,"revisada: persona, canción, sello, lugar o formato"
+Jack Cooper,ninguno,regla,2026-11-28,1,The Sleeves – The Sleeves,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Jack Hues,ninguno,regla,2026-11-28,1,MARTIN PAGE – The First And Last Freedom,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Jack Kerouac,ninguno,llm,2026-11-28,1,Rushadicus – Night of the Jick Beast,"revisada: persona, canción, sello, lugar o formato"
 Jack Pedler,ninguno,regla,2026-11-28,1,Lily Sazz – What Just Happened,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
@@ -4279,11 +4259,13 @@ modern female blues-rock singers,blues-rock,llm,2026-11-28,1,Heather Anne Lomax 
 modern female blues singers,modern-electric-blues,llm,2026-11-28,1,Frenchie Moe – Hi Class,
 modern harmonica blues,harmonica-blues,llm,2026-11-28,1,Russ Green – Stone Cold,
 modern harmonica maestros,harmonica-blues,llm,2026-11-28,1,Russ Green – Stone Cold,
+modern jazz,ninguno,wikidata,2026-11-28,1,Knats – A Great Day in Newcastle,automático: género fuera de la taxonomía (Wikidata Q1750049: modern jazz → jazz → popular music → music → sound)
 modern juke joint blues,modern-electric-blues,llm,2026-11-28,1,"Earl “Guitar” Williams – The Soul King of Bessemer, AL",
 Modern Life Is Lonely,ninguno,regla,2026-11-28,1,Holding Absence – Modern Life Is Lonely,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Modern Louisiana blues,louisiana-blues,llm,2026-11-28,1,Frenchie Moe – Hi Class,
 modern metal,ninguno,llm,2026-11-22,1,Ignea – Monumental,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 modern metalcore,metalcore,llm,2026-11-28,1,Rising Insane – Deathrace,
+Modern Nature,ninguno,regla,2026-11-28,1,The Sleeves – The Sleeves,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Modern New Orleans blues,louisiana-blues,llm,2026-11-28,1,Frenchie Moe – Hi Class,
 modern piano blues,piano-blues,llm,2026-11-28,1,Lily Sazz – What Just Happened,
 modern roots music,americana,llm,2026-11-28,1,JP Soars & Anne Harris – Gypsy Blue Revue,
@@ -4438,6 +4420,7 @@ neo-rockabilly,rockabilly,llm,2026-11-22,1,The Cramps – Gravest Gravy,
 neo soul,ninguno,llm,2026-11-22,,,
 neo-traditional folk,traditional-folk,llm,2026-11-28,1,Madra Salach – Gorta,
 neo-traditionalist country,traditional-country,llm,2026-11-22,,,
+neobaroque,ninguno,regla,2026-11-28,1,Arielle Soucy – Passages,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Neoclassical,ninguno,regla,2026-11-28,1,Raphael Weinroth‐Browne – Empyrean,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 neoclassical dark wave,darkwave|ethereal,llm,2026-11-28,1,Corde Oblique – All'ombra dei fanciulli in fiore,
 neoclassical darkwave,darkwave,wikidata,2026-11-28,1,Corde Oblique – All'ombra dei fanciulli in fiore,automático (Wikidata Q899116): neoclassical dark wave → dark wave
@@ -4477,6 +4460,7 @@ New Music,ninguno,llm,2026-11-28,7,Cara Luft – My Heart Will Always Be,"revisa
 New Orleans,ninguno,llm,2026-11-22,2,Kelly Hunt – Requiem For A Sleepless Night,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 new orleans funk,ninguno,llm,2026-11-28,1,Joe Krown Trio +1 featuring Papa Mali – Qualified,"nombre, título o género fuera de la taxonomía (revisada en sesión)"
 New Orleans Jazzfest,ninguno,llm,2026-11-28,1,Jonathon ‘Boogie’ Long – Courage In The Chaos,"nombre, título o género fuera de la taxonomía (revisada en sesión)"
+new orleans r&b,ninguno,regla,2026-11-28,1,Dr. John – Live At The Turning Point,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 new rave,ninguno,llm,2026-11-22,1,Bloc Party – Anatomy of a Brief Romance,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 New Self,ninguno,regla,2026-11-28,1,The Bobby Lees – New Self,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 New Sun Records,ninguno,regla,2026-11-28,1,Crystal Shawanda – Sing Pretty Blues,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
@@ -4587,6 +4571,7 @@ Norwegian Americana,americana,llm,2026-11-22,1,Embla and the Karidotters – The
 norwegian black metal,black-metal,wikidata,2026-11-28,1,Darkthrone – Pre‐Historic Metal,automático (Wikidata Q2296521): Early Norwegian black metal scene → black metal
 Norwegian Metal,ninguno,wikidata,2026-11-28,19,Extol – Aura of Decay,automático: Wikidata no tiene un elemento con ese nombre
 Norwich,ninguno,regla,2026-11-28,1,Jenny on Holiday – Quicksand Heart,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
+nostalgia,ninguno,regla,2026-11-28,1,Arielle Soucy – Passages,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Not A Sound In Heaven,ninguno,regla,2026-11-28,1,Sugar Horse – Not a Sound in Heaven,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Not Broken Enough,ninguno,regla,2026-11-28,1,Catch Your Breath – Not Broken Enough,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Not Here Not Gone,ninguno,regla,2026-11-28,1,Blackwater Holylight – Not Here Not Gone,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
@@ -4762,6 +4747,7 @@ Pain of Salvation,ninguno,llm,2026-11-22,2,Rainburn – thirty-seven,"revisada: 
 The Pain That Shapes Us,ninguno,llm,2026-11-22,1,Afterlife – The Pain That Shapes Us,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 Pain Travels,ninguno,regla,2026-11-28,1,Love Rarely – Pain Travels,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Painted Skies,ninguno,llm,2026-11-22,1,Jack Browning – Painted Skies,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
+paisley underground,ninguno,regla,2026-11-28,2,The Dream Syndicate – Sketches for Medicine Show,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Paladin,ninguno,regla,2026-11-28,1,Battering Ram – Time Masters,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 A Pale White Dot,ninguno,regla,2026-11-28,1,Periphery – A Pale White Dot,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Pale Wizard Records,ninguno,regla,2026-11-28,1,Son Of Boar – The Hand That Reigns,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
@@ -5014,6 +5000,7 @@ Progressive Americana,ninguno,wikidata,2026-11-28,1,Sara Milonovich & Daisycutte
 progressive black metal,black-metal|progressive-metal,llm,2026-11-28,7,Enslaved – Mið,
 Progressive Death,death-metal|progressive-metal,llm,2026-11-28,6,Februus – Construction of Conflict,
 progressive death metal,death-metal|progressive-metal,llm,2026-11-22,1,Extol – Aura of Decay,
+progressive electronic,ninguno,wikidata,2026-11-28,1,Tangerine Dream – 50 Years of Phaedra: At the Barbican,automático: Wikidata no tiene un elemento con ese nombre
 progressive folk,prog-rock|contemporary-folk,llm,2026-11-28,1,Motorpsycho – The Gaia II Space Corps,
 Progressive Grindcore,grindcore,llm,2026-11-28,1,Carbon Tomb – Passage to a Neutron Star,
 progressive house,ninguno,llm,2026-11-28,2,Au/Ra – heartcore,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
@@ -5041,6 +5028,7 @@ Providence RI,ninguno,regla,2026-11-28,1,Snowbeasts & Solypsis – The Portent,"
 Pryderi,ninguno,regla,2026-11-28,1,Albion – It Was In The Month Of May I,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 psych-noise,noise|psychedelic-rock,llm,2026-11-22,1,Party Dozen – 21 Bum Salute,
 psych pop,psychedelic-rock,llm,2026-11-22,1,Asher White – Love Aggregates,
+psych-rock,acid-rock|psychedelic-rock,wikidata,2026-11-28,1,Memorials – All Clouds Bring Not Rain,automático (Wikidata Q206159): psychedelic rock → psychedelic rock
 psychadelic pop,ninguno,wikidata,2026-11-28,1,ODAE – MOIREMOIREMOIRE,automático: Wikidata no tiene un elemento con ese nombre
 psychdelic rock,psychedelic-rock,llm,2026-11-22,1,The Lazy Eyes – Cheesy Love Songs,
 psychedelia,psychedelic-rock,llm,2026-11-28,2,Babe Rainbow – Acid and Honey,
@@ -5432,6 +5420,7 @@ Sacramentum,ninguno,regla,2026-11-28,1,Saidan – Fangdriller: Scars Beneath Mem
 Sacred Warrior,ninguno,regla,2026-11-28,1,Glory Of Kings – Roots Of The Past,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Sacrifice All Life,ninguno,regla,2026-11-28,1,Doomcult – Sacrifice All Life,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 sad bastard music,ninguno,regla,2026-11-28,1,Euphoria Again & Dogwood Tales – Destination Heaven,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
+sad pop,ninguno,wikidata,2026-11-28,1,"The Reds, Pinks & Purples – Acknowledge Kindness",automático: género fuera de la taxonomía (Wikidata Q108887930: sad pop → pop music → popular music → music → sound)
 sadcore,indie-rock,llm,2026-11-22,1,Arab Strap – Half‐Told Tales,
 saddle creek,ninguno,llm,2026-11-22,1,Land of Talk – Lasts,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 Sadistic Intent,ninguno,regla,2026-11-28,1,Atomic Aggressor – The Occult Forces,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
@@ -5493,6 +5482,7 @@ Sarah Steele,ninguno,regla,2026-11-28,1,Lo Steele – Only A Drop,"sin palabra d
 Sargeist,ninguno,regla,2026-11-28,1,Erbeet Azhak – Only the Vile Will Remain,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Sari Shorr,ninguno,llm,2026-11-22,1,KELLI BAKER – Mother,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 Sarina Joi Crowe,ninguno,regla,2026-11-28,1,Crystal Shawanda – Sing Pretty Blues,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
+Saskatoon,ninguno,regla,2026-11-28,1,Katie Tupper – Greyhound,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Sass Jordan,ninguno,llm,2026-11-22,1,KELLI BAKER – Mother,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 sasscore,post-hardcore,llm,2026-11-28,1,The Number Twelve Looks Like You – Howls From the Holographic Heart,
 satan,ninguno,llm,2026-11-28,3,Nunslaughter – Satanic Chaos Legions,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
@@ -5648,6 +5638,7 @@ simple minds,ninguno,regla,2026-11-28,1,Night of the Vampire – The Enchanting 
 the sims,ninguno,llm,2026-11-22,1,Joy Oladokun – Hope Is A Heavy Thing,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 Since Always Press,ninguno,llm,2026-11-28,6,Moni Jitchell – Aware,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
 Sing Pretty Blues,ninguno,llm,2026-11-28,1,Crystal Shawanda – Sing Pretty Blues,"nombre, título o género fuera de la taxonomía (revisada en sesión)"
+Singapore,ninguno,regla,2026-11-28,1,Funebrarum – Beckoning the Void of Eternal Silence,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 singer,ninguno,llm,2026-11-22,2,Sari Schorr – Running Wild,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 singer-singwriter,singer-songwriter,llm,2026-11-28,1,Katherine Priddy – These Frightening Machines,
 singer/songwriter Americana,singer-songwriter|americana,llm,2026-11-22,1,Josh Rouse – Museums and Women,
@@ -5805,6 +5796,7 @@ Stack Overflow in Corpse Pile Interface,ninguno,regla,2026-11-28,1,A Forest of S
 stage & screen,ninguno,regla,2026-11-28,1,Joshua Bassett – Easier,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Stage Dive Records,ninguno,regla,2026-11-28,1,Feldspar – Soft Side,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Stan Poplin,ninguno,llm,2026-11-28,1,Jimmy Witherspoon & Robben Ford – Jump Blues Live 1972,"nombre, título o género fuera de la taxonomía (revisada en sesión)"
+standards,ninguno,regla,2026-11-28,1,Rod Stewart – Alternate Atlantic Crossing,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Stanley Clarke,ninguno,llm,2026-11-22,1,Bob Holz – Next In Line,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 Stanley Patty,ninguno,regla,2026-11-28,1,The Dibs – Just For You,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Stars Below,ninguno,regla,2026-11-28,1,"Triosphere – Oceans Above, Stars Below","sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
@@ -6022,6 +6014,7 @@ Tankard,ninguno,regla,2026-11-28,1,Teutonic Slaughter – Cheap Food,"sin palabr
 Tannis Slimmon,ninguno,regla,2026-11-28,1,Lily Sazz – What Just Happened,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 TANZNEID,ninguno,regla,2026-11-28,1,Electric Callboy – TANZNEID,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 tape loops,ninguno,regla,2026-11-28,1,1000 Eyes – Anesthesia,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
+Tara Cunningham,ninguno,regla,2026-11-28,1,The Sleeves – The Sleeves,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Tarot,ninguno,regla,2026-11-28,1,RAM – Against,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Tartarus Records,ninguno,regla,2026-11-28,1,The Fifth Alliance – Stenahoria,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Taylor Opie,ninguno,regla,2026-11-28,1,Selwyn Birchwood – Electric Swamp Funkin’ Blues,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
@@ -6564,6 +6557,7 @@ The Weight of Sound,ninguno,regla,2026-11-28,1,Crystal Lake – The Weight of So
 Weird Al Yankovic,ninguno,llm,2026-11-22,1,The Mike Jacoby Electric Trio – Welcome to the Family,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 weird folk,psych-folk,wikidata,2026-11-28,1,Dirt Buyer – Dirt Buyer III,automático (Wikidata Q1500364): psychedelic folk → psychedelic folk
 weirdpercussion,ninguno,regla,2026-11-28,1,upsammy & Valentina Magaletti – Seismo,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
+welsh,ninguno,regla,2026-11-28,1,Bullet for My Valentine – Social Apocalypse,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Welsh blues,ninguno,llm,2026-11-28,1,Dave Thomas – Bridge Street Blues,"nombre, título o género fuera de la taxonomía (revisada en sesión)"
 Welsh Metal,ninguno,llm,2026-11-28,1,Pantheist – Uncanny Times,"nombre, título o género fuera de la taxonomía (revisada en sesión)"
 We're All Going to Be Fine,ninguno,llm,2026-11-28,2,Lost in Kyiv – We’re All Going to Be Fine,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
@@ -6591,6 +6585,7 @@ Where Silence Used to Sleep,ninguno,regla,2026-11-28,1,In Vespro – Where Silen
 Where The Light Leaves,ninguno,regla,2026-11-28,1,Varials – Where The Light Leaves,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 White Ward,ninguno,llm,2026-11-28,3,Anagnorisis – Caregriever,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
 White Wizzard,ninguno,regla,2026-11-28,1,Ravaged by the Yeti – Snowbound Horror,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
+whitebelt,ninguno,regla,2026-11-28,1,.gif from god – Dissimulation,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Whitechapel,ninguno,llm,2026-11-28,2,Complexant – Apex,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
 Who Do You Think You Are?,ninguno,regla,2026-11-28,1,Heather Anne Lomax – Who Do You Think You Are,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Who Loves The Sun,ninguno,regla,2026-11-28,1,Chat Pile – Who Loves the Sun,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
@@ -6640,6 +6635,7 @@ With Extra Sauce,ninguno,regla,2026-11-28,1,Sauce Boss – With Extra Sauce,"sin
 Within,ninguno,regla,2026-11-28,1,Protest the Hero – Within,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Within A Dream,ninguno,llm,2026-11-22,1,Osiris – Within a Dream,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 Within Temptation,ninguno,regla,2026-11-28,2,Xandria – Eclipse,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
+witness architecture,ninguno,regla,2026-11-28,1,Stone – HAPPY BiRTHDAY,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Witness to a Dying World,ninguno,regla,2026-11-28,1,Absolute Darkness – Witness to a Dying World,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Woe,ninguno,regla,2026-11-28,1,Sanctvs – De l'Abîme au Plérôme,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Woebegone Obscured,ninguno,regla,2026-11-28,1,Post Luctum – Timor Lucis,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
@@ -6666,8 +6662,10 @@ Worm,ninguno,llm,2026-11-28,2,Besotten – Eye of the Monolithicrypt,"revisada: 
 Wormhole,ninguno,llm,2026-11-28,3,Utilize the Remains – Meaningless Existence,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
 Worship,ninguno,llm,2026-11-28,2,Midnight Worship – Remember the Dawn,"revisada: grupo, persona, sello, agencia, lugar, país o estilo fuera de la taxonomía"
 Worship the Dead,ninguno,regla,2026-11-28,1,Hours of Worship – Resignation,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
+Wrath of the Hammer,ninguno,regla,2026-11-28,1,StormHammer – Wrath of the Hammer,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Wrathcult,ninguno,regla,2026-11-28,1,Shine – Wrathcult,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Wretched Heart,ninguno,regla,2026-11-28,1,Spell – Wretched Heart,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
+Wrocław,ninguno,regla,2026-11-28,1,Gossip Collar – Eaten Of Worms,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Wrong Side Of The River,ninguno,llm,2026-11-28,1,BB & The Bullets – Wrong Side of the River,"revisada: persona, canción, sello, lugar o formato"
 Wyatt Flores,ninguno,llm,2026-11-22,1,Charles Wesley Godwin – Christian Name,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
 Wynnnona Judd,ninguno,llm,2026-11-22,1,Elizabeth Cook – Great Television,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
@@ -6711,7 +6709,9 @@ The Zenith passage,ninguno,llm,2026-11-28,3,Crown Magnetar – The Hollowing of 
 Zeromancer,ninguno,regla,2026-11-28,1,Dan Heide – Change,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Zhaawande Strobel,ninguno,regla,2026-11-28,1,Crystal Shawanda – Sing Pretty Blues,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Zhariah,ninguno,regla,2026-11-28,1,Anubis – Anthromorphicide,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
+Ziggy Marley,ninguno,regla,2026-11-28,1,Taj Mahal and The Phantom Blues Band – Time,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Ziggy Modeliste,ninguno,regla,2026-11-28,1,Joanna Connor – Live On 11/11,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
 Zinny Zan,ninguno,llm,2026-11-22,1,ZAN / CODY – Beautiful’n Damned,"revisada: no es un subgénero de la taxonomía (lugar, persona, sello, tema, instrumento u otro estilo)"
+Znöwhite,ninguno,regla,2026-11-28,1,RattleSnakes – Shadows in the Night,"sin palabra de género: nombre, título, lugar o sello (regla automática)"
 Zydeco,louisiana-blues,llm,2026-11-28,1,Corey Arceneaux & The Zydeco Fusion Band – Accordion Man,propuesta: zydeco
 #zztop,ninguno,regla,2026-11-28,1,Mark Easton – Dark Horse,"sin palabra de género: nombre, título, lugar o sello (regla automática, muestra revisada)"
