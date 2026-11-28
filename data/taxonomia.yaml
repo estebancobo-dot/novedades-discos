@@ -611,7 +611,7 @@ familias:
           alias: ["cancion de autor", "canción de autor", "cantautor", "cantautora"]
 
 # Categorías de los feeds y otras etiquetas que no son géneros (se ignoran sin consultar al LLM).
-ignorar_regex: '(?i)\b(album reviews?|reviews?|news|all posts|posts?|videos?|streams?|premieres?|interviews?|playlists?|readers|pick|featured|of the (week|month|year)|best of|reissues?|box ?sets?|artist of|exclusives?|galler(y|ies)|podcasts?|tours?|mobile|charts?|uncategori[sz]ed|lists?|essentials?|features?|columns?|blog|giveaways?|contests?|special purpose|guitarist|songwriting|concept album|live album|debut album|single|singles|ep|eps|pure metal)\b'
+ignorar_regex: '(?i)\b(album reviews?|reviews?|news|all posts|posts?|videos?|streams?|premieres?|interviews?|playlists?|readers|pick|featured|of the (week|month|year)|best of|reissues?|box ?sets?|artist of|exclusives?|galler(y|ies)|podcasts?|tours?|mobile|charts?|uncategori[sz]ed|lists?|essentials?|features?|columns?|blog|giveaways?|contests?|special purpose|guitarist|songwriting|concept album|live album|debut album|single|singles|ep|eps|pure metal)\b|\b(pr|publicity|press|records|recordings|music group)\s*$|^#|^(american|belgian|brazilian|british|danish|dutch|english|french|german|irish|italian|japanese|polish|russian|spanish|swedish|norwegian|finnish|scottish|austrian|swiss|chilean|peruvian|portuguese|icelandic|belarusian|costa rican|greek|international|uk|u\.k\.|us|new zealand)\s+(metal|rock)$'
 
 # Etiquetas que no dicen nada de género (lugares, décadas, formatos…). No se
 # consultan al LLM ni cuentan como "sin encajar".

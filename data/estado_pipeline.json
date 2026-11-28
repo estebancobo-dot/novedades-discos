@@ -22,8 +22,11 @@
    "segundos": 2
   },
   "mapear": {
-   "estado": "en_curso",
-   "inicio": "2026-11-28T04:09:16+00:00"
+   "estado": "fallida",
+   "inicio": "2026-11-28T04:09:16+00:00",
+   "fin": "2026-11-28T04:32:28+00:00",
+   "segundos": 1392,
+   "codigo": -15
   }
  }
 }
