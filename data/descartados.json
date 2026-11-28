@@ -15704,18 +15704,6 @@
   ]
  },
  {
-  "artista": "Bonner Kramer and Thurston Moore",
-  "titulo": "They Came Like Swallows – Seven Requiems for the Children of Gaza",
-  "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
-  "fuentes": [
-   "wikipedia"
-  ],
-  "fecha": "2026-05-01",
-  "etiquetas": [
-   "Ambient, avant-rock"
-  ]
- },
- {
   "artista": "American Football",
   "titulo": "LP4",
   "motivo": "clasificación: fuente mixta y ningún subgénero de la taxonomía",
@@ -23009,6 +22997,18 @@
    "Pascal Ferrari",
    "Paul Cowley",
    "Rob Venables"
+  ]
+ },
+ {
+  "artista": "Bonner Kramer and Thurston Moore",
+  "titulo": "They Came Like Swallows – Seven Requiems for the Children of Gaza",
+  "motivo": "clasificación: solo subgéneros frontera y fuente mixta",
+  "fuentes": [
+   "wikipedia"
+  ],
+  "fecha": "2026-05-01",
+  "etiquetas": [
+   "Ambient, avant-rock"
   ]
  },
  {

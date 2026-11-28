@@ -172093,6 +172093,8 @@
   ],
   "subgeneros": [
    "grindcore",
+   "hardcore",
+   "thrash",
    "punk"
   ],
   "etiquetas_originales": [],
@@ -207077,15 +207079,14 @@
   "estado": "publicado",
   "sello": "Fire Records",
   "familias": [
-   "country",
    "indiepop",
    "rockmetal"
   ],
   "subgeneros": [
    "noise",
+   "acid-rock",
    "experimental",
-   "indie-rock",
-   "psych-folk"
+   "indie-rock"
   ],
   "etiquetas_originales": [],
   "descripciones": [
@@ -216213,6 +216214,7 @@
   "subgeneros": [
    "alt-country",
    "americana",
+   "folk-rock",
    "indie-rock"
   ],
   "etiquetas_originales": [],
